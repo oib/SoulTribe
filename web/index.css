@@ -1,0 +1,165 @@
+/* Landing (welcome) page styles */
+:root {
+  --welcome-color: #7c3aed;
+  --welcome-color-dark: #a78bfa;
+}
+
+.welcome-page {
+  min-height: 100vh;
+  /* Local CSS variables for Welcome page */
+  --bg-primary: #0b1220;
+  --bg-secondary: #0f172a;
+  --border-color: #1f2937;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --text-heading: #f8fafc;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.5;
+}
+
+.welcome-page .welcome-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  min-height: calc(100vh - 120px);
+}
+
+.welcome-page .welcome-card {
+  margin: 16px 0;
+  padding: 32px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+}
+
+.welcome-page .md h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+  color: var(--text-heading);
+  line-height: 1.25;
+}
+
+.welcome-page .md h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.75rem 0 1rem;
+  color: var(--text-heading);
+}
+
+.welcome-page .md p {
+  margin: 1rem 0;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+/* Dark theme variants */
+@media (prefers-color-scheme: dark) {
+  .welcome-page {
+    background: linear-gradient(135deg, #0b1220, #0b1220);
+  }
+}
+
+/* When data-theme="dark" is forced */
+html[data-theme="dark"] .welcome-page .md code {
+  background: rgba(167, 139, 250, 0.1);
+  color: #c4b5fd;
+}
+
+/* Gallery styles */
+.welcome-page .gallery {
+  margin: 24px 0 8px;
+}
+
+.welcome-page .gallery h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: var(--text-heading);
+}
+
+.welcome-page .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .welcome-page .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.welcome-page .gallery-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.welcome-page .gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.welcome-page .gallery-item figcaption {
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Two-column sections */
+.welcome-page .two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+@media (min-width: 760px) {
+  .welcome-page .two-col {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+  }
+  .welcome-page .two-col.reverse {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.welcome-page .two-col .col.text h1 {
+  font-size: 2rem;
+  margin: 0 0 12px;
+}
+
+.welcome-page .two-col .col.text h2 {
+  font-size: 1.35rem;
+  margin: 0 0 10px;
+}
+
+.welcome-page .two-col .col.text p,
+.welcome-page .two-col .col.text li {
+  color: var(--text-primary);
+}
+
+.welcome-page .two-col .col.text ol,
+.welcome-page .two-col .col.text ul {
+  padding-left: 1.25rem;
+}
+
+.welcome-page .two-col .col.illustration img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}

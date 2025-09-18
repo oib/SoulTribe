@@ -1,0 +1,182 @@
+{
+  "app": {
+    "name": "SoulTribe",
+    "tagline": "Ingħaqad ma' nies li jaqsmu l-valuri tiegħek",
+    "loading": "Qed ittella'...",
+    "error": "Kien hemm żball",
+    "retry": "Erġa' pprova",
+    "submit": "Ibgħat",
+    "cancel": "Ikkanċella",
+    "save": "Ħlief",
+    "delete": "Ħassar",
+    "edit": "Editja",
+    "back": "Lura",
+    "next": "Li jmiss",
+    "previous": "Preċedenti",
+    "skip": "Aqbeż",
+    "done": "Lest",
+    "search": "Fittex",
+    "noResults": "L-ebda riżultati",
+    "welcome": "Merħba",
+    "or": "jew",
+    "and": "u",
+    "continue": "Kompli",
+    "createAccount": "Oħloq Kont",
+    "login": "Idħol",
+    "logout": "Oħroġ",
+    "profile": "Profil",
+    "settings": "Settings",
+    "help": "Għajnuna",
+    "about": "Dwarna",
+    "contact": "Kuntatt",
+    "privacy": "Privatezza",
+    "terms": "Termini"
+  },
+  "landing": {
+    "hero": {
+      "title": "Ingħaqad mal-komunità globali tagħna",
+      "subtitle": "Qabbel ma' nies li jaqsmu l-valuri, l-interessi u l-passjonijiet tiegħek. Flimkien, nistgħu noħolqu relazzjonijiet li għandhom tifsira u jibqgħu għal żmien twil.",
+      "cta": "Ibda l-vjaġġ tiegħek"
+    },
+    "howItWorks": {
+      "title": "Kif Taħdem",
+      "steps": [
+        {
+          "title": "Oħloq il-profil tiegħek",
+          "description": "Għidilna fuq l-interessi, il-valuri u x'tfittex fil-komunità."
+        },
+        {
+          "title": "Isib lin-nies tiegħek",
+          "description": "L-algoritmu tagħna jgħaqqdek ma' nies li jaqsmu l-valuri u l-interessi tiegħek."
+        },
+        {
+          "title": "Ingħaqad u Tkabbar",
+          "description": "Ibda konversazzjonijiet, isieħeb f'events u ibni relazzjonijiet fit-tul."
+        }
+      ]
+    },
+    "features": {
+      "title": "Għalfejn Tingħaqad?",
+      "items": [
+        {
+          "title": "Komunità Sigura",
+          "description": "Il-komunità tagħna hija mibnija fuq ir-rispett, l-inklużjoni u s-sigurtà ta' kull membru."
+        },
+        {
+          "title": "Eżperjenza Personalizzata",
+          "description": "Iċċaraxxina rikkomandazzjonijiet ibbażati fuq l-interessi u l-valuri tiegħek."
+        },
+        {
+          "title": "Konnessjoni Globali",
+          "description": "Qabbel ma' nies minn madwar id-dinja li jaqsmu l-passjonijiet tiegħek."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Il-privatezza tiegħek hija l-prijorità tagħna",
+      "description": "Nipproteġu d-data tiegħek u nassiguraw ambjent sigur għal kull membru tal-komunità tagħna.",
+      "learnMore": "Aktar tagħrif dwar il-politika tal-privatezza tagħna"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Idħol",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Insejt il-password?",
+      "noAccount": "M'għandekx kont?",
+      "signUp": "Irreġistra"
+    },
+    "register": {
+      "title": "Irreġistra",
+      "name": "Isem u Kognom",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Ikkonferma l-Password",
+      "agreeTerms": "Naqbel mat-Termini u l-Kondizzjonijiet"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Editja l-Profil",
+      "basicInfo": "Informazzjoni Bażika",
+      "firstName": "L-Ewwel Isem",
+      "lastName": "L-Aħħar Isem",
+      "bio": "Dwar Jien",
+      "location": "Lokalità",
+      "interests": "Interessi"
+    },
+    "view": {
+      "memberSince": "Membru Minn",
+      "lastSeen": "L-Aħħar Deher",
+      "interests": "Interessi"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "account": {
+      "title": "Kont",
+      "changeEmail": "Biddel l-Email",
+      "changePassword": "Biddel il-Password"
+    },
+    "privacy": {
+      "title": "Privatezza",
+      "profileVisibility": "Viżibilità tal-Profil"
+    }
+  },
+  "messaging": {
+    "title": "Messaġġi",
+    "newMessage": "Messaġġ Ġdid",
+    "searchUsers": "Fittex utenti...",
+    "typeMessage": "Ikteb messaġġ...",
+    "send": "Ibgħat"
+  },
+  "friends": {
+    "title": "Ħbieb",
+    "allFriends": "Il-Ħbieb Kollha",
+    "addFriend": "Żid Ħabib",
+    "friendRequests": "Talbiet ta' Ħbiberija"
+  },
+  "events": {
+    "title": "Events",
+    "upcoming": "Events li ġejjin",
+    "create": "Oħloq Event"
+  },
+  "groups": {
+    "title": "Gruppi",
+    "discover": "Skopri Gruppi",
+    "myGroups": "Il-Gruppi Tiegħi",
+    "create": "Oħloq Grupp"
+  },
+  "search": {
+    "title": "Fittex",
+    "placeholder": "Fittex nies, gruppi u kontenut...",
+    "noResults": "L-ebda riżultati"
+  },
+  "onboarding": {
+    "welcome": "Merħba għal SoulTribe",
+    "step1": {
+      "title": "Oħloq il-Profil Tiegħek",
+      "description": "Żid ritratt u ftit kliem dwariek."
+    },
+    "step2": {
+      "title": "Aġċi l-Interessi Tiegħek",
+      "description": "X'tixtieq tagħmel? Aġċel mill-interessi tiegħek."
+    },
+    "step3": {
+      "title": "Ingħaqad ma' Nies",
+      "description": "Ibda konversazzjoni ma' nies b'interessi simili."
+    }
+  },
+  "errors": {
+    "required": "Dan il-qasam huwa meħtieġ",
+    "invalidEmail": "Daħħal email valida",
+    "passwordTooShort": "Il-password tiegħek qasira wisq",
+    "passwordsDontMatch": "Il-passwords ma jaqblux"
+  },
+  "success": {
+    "profileUpdated": "Profil aġġornat",
+    "passwordChanged": "Il-password inbidlet",
+    "messageSent": "Messa\u0121\u0121 mibg\u0127ut"
+  }
+}

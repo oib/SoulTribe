@@ -1,0 +1,182 @@
+{
+  "app": {
+    "name": "SoulTribe",
+    "tagline": "Ceangail le daoine a roinneann do luachanna",
+    "loading": "Ag lódáil...",
+    "error": "Tharla earráid",
+    "retry": "Déan iarracht arís",
+    "submit": "Seol",
+    "cancel": "Cealaigh",
+    "save": "Sábháil",
+    "delete": "Scrios",
+    "edit": "Cuir in eagar",
+    "back": "Siar",
+    "next": "Ar aghaidh",
+    "previous": "Siar",
+    "skip": "Scipeáil",
+    "done": "Críochnaithe",
+    "search": "Cuardaigh",
+    "noResults": "Gan aon torthaí",
+    "welcome": "Fáilte",
+    "or": "nó",
+    "and": "agus",
+    "continue": "Lean ar aghaidh",
+    "createAccount": "Cruthaigh Cuntas",
+    "login": "Logáil isteach",
+    "logout": "Logáil amach",
+    "profile": "Próifíl",
+    "settings": "Socruithe",
+    "help": "Cabhair",
+    "about": "Fúinn",
+    "contact": "Teagmháil",
+    "privacy": "Príobháideachas",
+    "terms": "Téarmaí"
+  },
+  "landing": {
+    "hero": {
+      "title": "Bí linn sa phobal dhomhanda",
+      "subtitle": "Déan ceangal le daoine a roinneann do luachanna, do chuid spéiseanna agus do chuid paisean. Le chéile, is féidir linn naisc bhríocha a chruthú a mhaireann.",
+      "cta": "Tosaigh do thuras"
+    },
+    "howItWorks": {
+      "title": "Conas a oibríonn sé",
+      "steps": [
+        {
+          "title": "Cruthaigh do phróifíl",
+          "description": "Inis dúinn faoi do chuid spéiseanna, luachanna agus an méid atá á lorg agat sa phobal."
+        },
+        {
+          "title": "Aimsigh do mhuintir",
+          "description": "Déanfaidh ár n-algartam ceangal a dhéanamh idir tú féin agus daoine a roinneann do luachanna agus do chuid spéiseanna."
+        },
+        {
+          "title": "Bí páirteach agus fás",
+          "description": "Tosaigh comhráite, bí rannpháirteach d'imeachtaí agus cruthaigh caidrimh fhadtéarmacha."
+        }
+      ]
+    },
+    "features": {
+      "title": "Cén fáth a bheith linn?",
+      "items": [
+        {
+          "title": "Pobal sábháilte",
+          "description": "Tá ár bpobal bunaithe ar mheas, ar chuimsiú agus ar shábháilteacht gach ball."
+        },
+        {
+          "title": "Taithí phearsanta",
+          "description": "Faigh moltaí saincheaptha bunaithe ar do chuid spéiseanna agus luachanna."
+        },
+        {
+          "title": "Nasc dhomhanda",
+          "description": "Déan ceangal le daoine ó gach cearn den domhan a roinneann do chuid paisean."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Tá do phríobháideachas ina thosaíocht againn",
+      "description": "Cosnaímid do shonraí agus cuirimid timpeallacht shábháilte ar fáil do gach ball dár bpobal.",
+      "learnMore": "Tuilleadh eolais faoinár mbeartas príobháideachta"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Logáil Isteach",
+      "email": "Ríomhphost",
+      "password": "Focal Faire",
+      "forgotPassword": "Dearmad ar do phasfhocal?",
+      "noAccount": "Gan chuntas?",
+      "signUp": "Cláraigh"
+    },
+    "register": {
+      "title": "Cláraigh",
+      "name": "Ainm agus Sloinne",
+      "email": "Ríomhphost",
+      "password": "Focal Faire",
+      "confirmPassword": "Deimhnigh Focal Faire",
+      "agreeTerms": "Aontaím leis na Téarmaí Úsáide"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Cuir Do Phróifíl in Eagar",
+      "basicInfo": "Eolas Bunscoile",
+      "firstName": "Céad Ainm",
+      "lastName": "Sloinne",
+      "bio": "Fúm Féin",
+      "location": "Suíomh",
+      "interests": "Suimeanna"
+    },
+    "view": {
+      "memberSince": "Ina Bhall Ó",
+      "lastSeen": "Feicthe Deireanach",
+      "interests": "Suimeanna"
+    }
+  },
+  "settings": {
+    "title": "Socruithe",
+    "account": {
+      "title": "Cuntas",
+      "changeEmail": "Athraigh Ríomhphost",
+      "changePassword": "Athraigh Focal Faire"
+    },
+    "privacy": {
+      "title": "Príobháideachas",
+      "profileVisibility": "Infeictheacht Próifíle"
+    }
+  },
+  "messaging": {
+    "title": "Teachtaireachtaí",
+    "newMessage": "Teachtaireacht Nua",
+    "searchUsers": "Cuardaigh Úsáideoirí...",
+    "typeMessage": "Clóscríobh teachtaireacht...",
+    "send": "Seol"
+  },
+  "friends": {
+    "title": "Cairde",
+    "allFriends": "Gach Cara",
+    "addFriend": "Cuir Cara Leis",
+    "friendRequests": "Iarratais Chairdeas"
+  },
+  "events": {
+    "title": "Imeachtaí",
+    "upcoming": "Imeachtaí le Teacht",
+    "create": "Cruthaigh Imeacht"
+  },
+  "groups": {
+    "title": "Grúpaí",
+    "discover": "Faigh Amach Grúpaí",
+    "myGroups": "Mo Ghrúpaí",
+    "create": "Cruthaigh Grúpa"
+  },
+  "search": {
+    "title": "Cuardaigh",
+    "placeholder": "Cuardaigh daoine, grúpaí agus ábhar...",
+    "noResults": "Gan aon torthaí"
+  },
+  "onboarding": {
+    "welcome": "Fáilte go SoulTribe",
+    "step1": {
+      "title": "Cruthaigh Do Phróifíl",
+      "description": "Cuir do phictiúr agus cúpla focal fút féin leis."
+    },
+    "step2": {
+      "title": "Roghnaigh Do Chuid Suimeanna",
+      "description": "Cad is maith leat a dhéanamh? Roghnaigh do chuid suimeanna."
+    },
+    "step3": {
+      "title": "Déan Cairde le Daoine",
+      "description": "Tosaigh comhrá le daoine a bhfuil suimeanna cosúla acu leat féin."
+    }
+  },
+  "errors": {
+    "required": "Tá an réimse seo riachtanach",
+    "invalidEmail": "Cuir seoladh ríomhphoist bailí isteach",
+    "passwordTooShort": "Tá an focal faire ró-ghairid",
+    "passwordsDontMatch": "Ní bhíonn na focail fhaire comhshuite"
+  },
+  "success": {
+    "profileUpdated": "Próifíl nuashonraithe",
+    "passwordChanged": "Athraíodh an focal faire",
+    "messageSent": "Teachtaireacht seolta"
+  }
+}

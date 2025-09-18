@@ -1,0 +1,152 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Willkommen",
+      "subtitle": "SoulTribe.chat ist ein Raum, der geschaffen wurde, um dir zu helfen, deinen Seelenstamm zu finden und dich mit ihm zu verbinden – Menschen, die mit deiner Energie, deinem Geist und deiner Reise in Resonanz stehen. ✨"
+    },
+    "how": {
+      "title": "So funktioniert's",
+      "step1": "<strong>Erstelle dein Profil</strong> – gib Geburtsdatum, -zeit und -ort ein, um deine persönliche Seelenkarte zu erstellen.",
+      "step2": "<strong>Entdecke deine Matches</strong> – wir heben Verbindungen basierend auf Kompatibilität und Resonanz hervor.",
+      "step3": "<strong>Beginne das Gespräch</strong> – lade Matches zum Chatten ein; sicher und privat gestaltet.",
+      "step4": "<strong>Triff dich (optional)</strong> – vereinbare einen Jitsi-Call oder ein persönliches Treffen mit gegenseitigem Einverständnis."
+    },
+    "getting_started": {
+      "title": "Erste Schritte",
+      "step1": "<strong>Erstelle dein Konto</strong> – keine Social-Media-Anmeldung erforderlich.",
+      "step2": "<strong>Vervollständige dein Profil</strong> – füge Geburtsdetails hinzu; ungefähre Zeitangaben sind in Ordnung.",
+      "step3": "<strong>Lege deine Verfügbarkeit fest</strong> – schlage lokale Zeitslots vor; wir kümmern uns um die UTC-Umrechnung.",
+      "step4": "<strong>Entdecke Matches</strong> – durchsuche Vorschläge basierend auf Resonanz.",
+      "step5": "<strong>Chatte & triff dich optional</strong> – alles innerhalb der App; plane Treffen, wenn du bereit bist."
+    },
+    "features": {
+      "title": "Funktionen",
+      "item1": "<strong>Astrologie-basiertes Matching</strong> – verbinde dich über dein Geburtshoroskop.",
+      "item2": "<strong>Intelligente Zeitzonenverwaltung</strong> – wir übernehmen die UTC-Umrechnung für dich.",
+      "item3": "<strong>Privater, sicherer Chat</strong> – Unterhaltungen bleiben auf SoulTribe.chat.",
+      "item4": "<strong>Optionale Videoanrufe über Jitsi</strong> – datenschutzfreundlich, keine Installation am Desktop nötig.",
+      "item5": "<strong>Minimalistisches, fokussiertes Design</strong> – für bedeutungsvolle Gespräche konzipiert."
+    },
+    "privacy": {
+      "title": "Datenschutz & Sicherheit",
+      "item1": "Wir fragen nur nach dem, was für seelenvolle Verbindungen notwendig ist.",
+      "item2": "Deine Profildaten werden nicht verkauft oder an Werbenetzwerke weitergegeben.",
+      "item3": "Du bestimmst, wer dich kontaktieren darf und wann du mehr preisgibst."
+    },
+    "matching": {
+      "title": "Wie das Matching funktioniert (Kurzfassung)",
+      "text": "Wir berechnen wichtige Beziehungsindikatoren aus deinem Horoskop und vergleichen sie mit anderen, um Resonanzen zu finden. Wir priorisieren Harmonie, Ergänzung und Wachstumspotenzial gegenüber generischen Beliebtheitsmetriken."
+    },
+    "protips": {
+      "title": "Profi-Tipps",
+      "item1": "Füge einige Verfügbarkeitsfenster an verschiedenen Tagen hinzu, um schneller Verbindungen zu knüpfen.",
+      "item2": "Sei in deiner Vorstellung authentisch – spezifische Angaben helfen den richtigen Leuten, dich zu finden.",
+      "item3": "Immer zuerst die Zustimmung einholen. Gehe das Tempo, das sich für dich richtig anfühlt."
+    },
+    "next": {
+      "title": "Nächste Schritte",
+      "go_dashboard": "Zum Dashboard",
+      "login_register": "Anmelden / Registrieren"
+    },
+    "global": {
+      "title": "Globale Gemeinschaft",
+      "text": "Sprich deine Sprache, verbinde dich mit der Welt. SoulTribe.chat unterstützt mehrere Sprachen, um deinen Seelenstamm näher zusammenzubringen, egal woher du kommst.",
+      "auto_title": "Automatische Übersetzung",
+      "auto_text": "Chatte mit Matches in deiner bevorzugten Sprache, mit automatischer Übersetzung bei Bedarf.",
+      "native_title": "Muttersprachliche Unterstützung",
+      "native_text": "Vollständig übersetzte Oberfläche in mehreren Sprachen, mit regelmäßigen Erweiterungen.",
+      "tz_title": "Zeitzonenbewusst",
+      "tz_text": "Automatische Zeitzonenerkennung und -umrechnung, damit du immer weißt, wann deine Matches verfügbar sind.",
+      "select_label": "Sprache wählen:"
+    }
+  },
+  "language": {
+    "en": "Englisch",
+    "de": "Deutsch"
+  },
+  "welcome": {
+    "title": "Willkommen bei SoulTribe.chat",
+    "subtitle": "Finde deine Seelenverwandten"
+  },
+  "dashboard": {
+    "title": "Übersicht",
+    "availability": "Verfügbarkeit",
+    "create_slot": "Slot erstellen",
+    "duration_hours": "Dauer (Stunden)",
+    "meetups": "Treffen",
+    "matches": "Matches",
+    "overlap_hint": "Klicke „Zeit vorschlagen“, um ein Treffen für diesen Slot vorzuschlagen."
+  },
+  "login": {
+    "title": "Willkommen",
+    "intro": "Mit bestehendem Konto anmelden oder neues registrieren.",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "display_name": "Anzeigename (für Registrierung)",
+    "register": "Registrieren",
+    "login": "Anmelden",
+    "redirect_hint": "Nach dem Login wirst du zu deinem Dashboard weitergeleitet.",
+    "go_dashboard": "Zum Dashboard"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "profile": "Profil",
+    "login": "Login",
+    "logout": "Logout",
+    "welcome": "Welcome"
+  },
+  "imprint": { "title": "Imprint" },
+  "footer": { "terms": "Terms", "privacy": "Privacy", "imprint": "Imprint" },
+  "reset_password": {
+    "title": "Reset Password",
+    "intro": "Choose a new password for your account.",
+    "new_password_label": "New password",
+    "new_password_placeholder": "new password",
+    "confirm_password_label": "Confirm new password",
+    "confirm_password_placeholder": "confirm new password",
+    "submit": "Set new password"
+  },
+  "radix": {
+    "title": "Your Radix",
+    "placeholder": "If you have set your birth data, your radix snapshot will appear here.",
+    "show_raw_json": "Show raw JSON"
+  },
+  "ai": {
+    "get_interpretation": "Get Interpretation",
+    "followup_placeholder": "Ask a follow-up…",
+    "send": "Send"
+  },
+  "profile": {
+    "title": "Dein Profil",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "primary_language_label": "Hauptsprache (für die Oberfläche)",
+    "other_languages_label": "Weitere Sprachen (für Matching)",
+    "language_input_placeholder": "Tippe, um Sprachen hinzuzufügen...",
+    "basic_info": {"legend": "Basic Information", "username_label": "Username", "username_placeholder": "username"},
+    "languages": {"legend": "Languages"},
+    "location": {
+      "legend": "Current Location",
+      "city_placeholder": "Current city (autocomplete)",
+      "use_my_location": "Use my location",
+      "detected_tz_label": "Detected timezone:",
+      "detected_tz_hint": "(auto or select)"
+    },
+    "birth": {
+      "legend": "Birth Information (for Astrology)",
+      "date_placeholder": "Birth date",
+      "hour_label": "Hour",
+      "minute_label": "Min",
+      "place_placeholder": "Birth place (city, country)",
+      "detected_tz_label": "Detected timezone:",
+      "detected_tz_hint": "(auto)",
+      "lat_placeholder": "Latitude (e.g., 48.2082)",
+      "lon_placeholder": "Longitude (e.g., 16.3738)",
+      "instructions": "Set your birth date and location to compute your radix. If you don't know the exact time, leave the time field empty and we will use a noon fallback."
+    },
+    "note": "Your profile is used to personalize matches and time zone display."
+  },
+  "notifications": {
+    "language_set_to": "Sprache gesetzt auf"
+  }
+}

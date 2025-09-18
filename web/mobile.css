@@ -1,0 +1,5 @@
+/* Shared mobile overrides */
+@media (max-width: 640px) {
+  .topbar { flex-direction: column; gap: 8px; }
+  .container { padding: 0 12px; }
+}

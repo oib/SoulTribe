@@ -1,0 +1,34 @@
+{
+  "language": { "en": "Angielski", "de": "Niemiecki", "pl": "Polski" },
+  "welcome": { "title": "Witamy w SoulTribe.chat", "subtitle": "Znajdź swoją bratnią duszę" },
+  "profile": {
+    "title": "Twój profil",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "primary_language_label": "Język główny (dla interfejsu)",
+    "other_languages_label": "Inne języki (do dopasowań)",
+    "language_input_placeholder": "Wpisz, aby dodać języki..."
+  },
+  "dashboard": {
+    "title": "Pulpit",
+    "availability": "Dostępność",
+    "create_slot": "Utwórz slot",
+    "duration_hours": "Czas trwania (godziny)",
+    "meetups": "Spotkania",
+    "matches": "Dopasowania",
+    "overlap_hint": "Kliknij „Zaproponuj ten czas”, aby zaproponować spotkanie dla tego slotu."
+  },
+  "login": {
+    "title": "Witamy",
+    "intro": "Zaloguj się na istniejące konto lub zarejestruj nowe.",
+    "email": "email",
+    "password": "hasło",
+    "display_name": "nazwa_wyświetlana (do rejestracji)",
+    "register": "Zarejestruj się",
+    "login": "Zaloguj się",
+    "redirect_hint": "Po zalogowaniu zostaniesz przekierowany do pulpitu.",
+    "go_dashboard": "Przejdź do pulpitu"
+  },
+  "nav": { "dashboard": "Pulpit", "profile": "Profil", "login": "Logowanie", "logout": "Wyloguj" },
+  "notifications": { "language_set_to": "Język ustawiony na" }
+}

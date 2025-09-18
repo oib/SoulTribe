@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile • SoulTribe.chat</title>
+  <link rel="stylesheet" href="/theme.css" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/profile.css" />
+  <link rel="stylesheet" href="/mobile.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand"><a href="/" class="link-unstyled"><strong>SoulTribe.chat</strong></a></div>
+    <div class="actions">
+      <a id="btn-dashboard-link" class="button hidden" href="/dashboard.html" data-i18n="nav.dashboard">Dashboard</a>
+      <a id="btn-login-link" class="button secondary hidden" href="/login.html" data-i18n="nav.login">Login</a>
+      <button id="btn-logout" class="button hidden" data-i18n="nav.logout">Logout</button>
+      <a id="btn-admin-link" class="button secondary" href="/admin/stats.html" style="display:none;">Admin</a>
+    </div>
+  </div>
+
+  <div class="container">
+  <section class="card">
+    <h2 data-i18n="profile.title">Your Profile</h2>
+    
+    <fieldset>
+      <legend data-i18n="profile.basic_info.legend">Basic Information</legend>
+      <div class="row" style="display:flex; gap:8px; align-items:center;">
+        <label for="displayName" class="field-label" data-i18n="profile.basic_info.username_label">Username</label>
+        <input id="displayName" placeholder="username" data-i18n-placeholder="profile.basic_info.username_placeholder" style="flex:1;" />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="profile.languages.legend">Languages</legend>
+      <div class="row" style="display:flex; gap:8px; align-items:flex-start;">
+        <div style="flex:1; display:flex; flex-direction:column; gap:8px;">
+          <!-- Primary language (for UI translation) -->
+          <label for="primaryLanguage" class="field-label" data-i18n="profile.primary_language_label">Primary language (used for UI)</label>
+          <select id="primaryLanguage" data-i18n-title="profile.primary_language_label" title="Primary language (used for UI translation)"></select>
+
+          <!-- Secondary languages (for matching) -->
+          <label for="languageInput" class="field-label" data-i18n="profile.other_languages_label">Other languages (used for matching)</label>
+          <div class="language-tag-input" id="languageTagInput">
+            <div class="tag-input-container" id="tagInputContainer">
+              <div class="selected-tags" id="selectedTags">
+                <span class="language-tag" data-lang="en">English <button type="button" class="tag-remove" data-lang="en">×</button></span>
+              </div>
+              <input type="text" id="languageInput" placeholder="Type to add languages..." data-i18n-placeholder="profile.language_input_placeholder" autocomplete="off" />
+            </div>
+            <div class="language-autocomplete" id="languageAutocomplete" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="profile.location.legend">Current Location</legend>
+      <div class="row">
+        <div class="autocomplete">
+          <input id="livePlace" placeholder="Current city (autocomplete)" data-i18n-placeholder="profile.location.city_placeholder" autocomplete="off" />
+          <div id="livePlaceList" class="autocomplete-list" style="display:none;"></div>
+        </div>
+        <button type="button" id="btn-live-geolocate" class="button secondary" data-i18n="profile.location.use_my_location">Use my location</button>
+        <input id="liveLat" type="hidden" />
+        <input id="liveLon" type="hidden" />
+        <div class="small" id="liveTzRow"><span data-i18n="profile.location.detected_tz_label">Detected timezone:</span> <span id="liveTzLabel" class="badge mono" data-i18n="profile.location.detected_tz_hint">(auto or select)</span></div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend data-i18n="profile.birth.legend">Birth Information (for Astrology)</legend>
+      <div class="row">
+        <input id="birthDate" type="date" placeholder="Birth date" data-i18n-placeholder="profile.birth.date_placeholder" required />
+        <div style="display:flex; gap:4px;">
+          <select id="birthHour" class="time-select" style="flex:1;" required>
+            <option value="" data-i18n="profile.birth.hour_label">Hour</option>
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+          </select>
+          <select id="birthMinute" class="time-select" style="flex:1;" required>
+            <option value="" data-i18n="profile.birth.minute_label">Min</option>
+            <option value="00">00</option>
+            <option value="05">05</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+            <option value="55">55</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="autocomplete">
+          <input id="birthPlace" placeholder="Birth place (city, country)" data-i18n-placeholder="profile.birth.place_placeholder" autocomplete="off" required />
+          <div id="birthPlaceList" class="autocomplete-list" style="display:none;"></div>
+        </div>
+        <input id="birthTz" type="hidden" />
+        <div class="small" id="birthTzRow"><span data-i18n="profile.birth.detected_tz_label">Detected timezone:</span> <span id="birthTzLabel" class="badge mono" data-i18n="profile.birth.detected_tz_hint">(auto)</span></div>
+      </div>
+      <div class="row">
+        <button type="button" id="btn-birth-geolocate" class="button secondary" data-i18n="profile.location.use_my_location">Use my location</button>
+      </div>
+      <div class="row">
+        <input id="birthLat" type="number" step="any" placeholder="Latitude (e.g., 48.2082)" data-i18n-placeholder="profile.birth.lat_placeholder" required />
+        <input id="birthLon" type="number" step="any" placeholder="Longitude (e.g., 16.3738)" data-i18n-placeholder="profile.birth.lon_placeholder" required />
+      </div>
+      <div class="row small" data-i18n="profile.birth.instructions">Set your birth date and location to compute your radix. If you don't know the exact time, leave the time field empty and we will use a noon fallback.</div>
+      <div class="row small" data-i18n="profile.note">Your profile is used to personalize matches and time zone display.</div>
+    </fieldset>
+      <div class="row" style="margin-top:12px;">
+        <button id="btn-profile-update" class="primary" data-i18n="profile.save">Save</button>
+      </div>
+  </section>
+  <section class="card" id="radixSection">
+    <h2 data-i18n="radix.title">Your Radix</h2>
+    <div id="radix" class="md">
+      <div class="small" data-i18n="radix.placeholder">If you have set your birth data, your radix snapshot will appear here.</div>
+      <details class="mt-8">
+        <summary class="small" data-i18n="radix.show_raw_json">Show raw JSON</summary>
+        <pre id="radixJson">(loading…)</pre>
+      </details>
+      <div id="radixPretty"></div>
+      
+
+      <div id="radixAI" class="mt-16">
+        <div class="row">
+          <button id="btn-interpret-initial" class="button" data-i18n="ai.get_interpretation">Get Interpretation</button>
+        </div>
+        <div id="aiMessages" class="list mt-8"></div>
+        <div id="aiFollowRow" class="row mt-8 gap-8" style="display:none;">
+          <input id="aiUserMsg" placeholder="Ask a follow-up…" data-i18n-placeholder="ai.followup_placeholder" class="flex-1" />
+          <button id="btn-interpret-send" class="button" data-i18n="ai.send">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <script src="/app.js"></script>
+  <script src="/i18n/i18n.js"></script>
+  <script>
+    try { window.SimpleI18n && window.SimpleI18n.init(); } catch {}
+  </script>
+  <script src="/profile.js"></script>
+  <script>
+    // Redirect to login if not authenticated, and show/hide buttons
+    (function ensureAuth(){
+      try {
+        const t = localStorage.getItem('access_token');
+        const showLogin = !t;
+        document.getElementById('btn-login-link').style.display = showLogin ? 'inline-block' : 'none';
+        document.getElementById('btn-logout').style.display = showLogin ? 'none' : 'inline-block';
+        document.getElementById('btn-dashboard-link').style.display = showLogin ? 'none' : 'inline-block';
+        if (!t) window.location.href = '/login.html';
+      } catch {}
+    })();
+    // Show Admin link only for admins/localhost
+    (async function showAdmin(){
+      try {
+        const t = localStorage.getItem('access_token');
+        const r = await fetch('/api/admin/ping', {headers:{'Authorization': t ? 'Bearer '+t : ''}});
+        if (r.ok) {
+          var el = document.getElementById('btn-admin-link'); if (el) el.style.display='inline-block';
+        }
+      } catch {}
+    })();
+  </script>
+</body>
+</html>

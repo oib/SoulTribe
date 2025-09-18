@@ -1,0 +1,95 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Bem-vindo/a",
+      "subtitle": "SoulTribe.chat é um espaço criado para te ajudar a encontrar e conectar com a tua tribo de alma — pessoas que ressoam com a tua energia, o teu espírito e a tua jornada. ✨"
+    },
+    "how": {
+      "title": "Como funciona",
+      "step1": "<strong>Cria o teu perfil</strong> — insere a data, hora e local de nascimento para gerar o teu mapa de alma único.",
+      "step2": "<strong>Descobre as tuas correspondências</strong> — destacamos conexões baseadas em compatibilidade e ressonância.",
+      "step3": "<strong>Inicia a conversa</strong> — convida correspondências para conversar; seguro e privado por design.",
+      "step4": "<strong>Encontra-te (opcional)</strong> — agenda uma chamada Jitsi ou um encontro pessoal com consentimento mútuo."
+    },
+    "getting_started": {
+      "title": "Começar",
+      "step1": "<strong>Cria a tua conta</strong> — não são necessários logins de redes sociais.",
+      "step2": "<strong>Completa o teu perfil</strong> — adiciona detalhes de nascimento; uma hora aproximada é suficiente.",
+      "step3": "<strong>Define a tua disponibilidade</strong> — propõe horários locais; nós tratamos da conversão UTC.",
+      "step4": "<strong>Descobre correspondências</strong> — explora sugestões baseadas em ressonância.",
+      "step5": "<strong>Conversa e encontra-te</strong> — tudo dentro da aplicação; agenda quando estiveres pronto/a."
+    },
+    "features": {
+      "title": "Funcionalidades",
+      "item1": "<strong>Emparelhamento baseado em astrologia</strong> — conecta-te usando o teu mapa astral.",
+      "item2": "<strong>Agendamento inteligente de fusos horários</strong> — nós tratamos das conversões UTC por ti.",
+      "item3": "<strong>Chat privado e seguro</strong> — as conversas ficam no SoulTribe.chat.",
+      "item4": "<strong>Vídeo opcional via Jitsi</strong> — amigo da privacidade, sem instalação necessária no computador.",
+      "item5": "<strong>Interface minimalista e focada</strong> — desenhada para conversas significativas."
+    },
+    "privacy": {
+      "title": "Privacidade e Segurança",
+      "item1": "Só pedimos o que é necessário para permitir conexões significativas.",
+      "item2": "Os teus dados de perfil não são vendidos nem partilhados com redes de publicidade.",
+      "item3": "Tu controlas quem pode contactar-te e quando partilhar mais informações."
+    },
+    "matching": {
+      "title": "Como funciona o emparelhamento (versão curta)",
+      "text": "Calculamos indicadores relacionais-chave do teu mapa astral e comparamo-los com os de outros para encontrar ressonância. Priorizamos harmonia, complementaridade e potencial de crescimento em vez de métricas genéricas de popularidade."
+    },
+    "protips": {
+      "title": "Dicas de especialista",
+      "item1": "Adiciona alguns horários disponíveis em dias diferentes para conexões mais rápidas.",
+      "item2": "Sê genuíno/a na tua apresentação — detalhes específicos ajudam as pessoas certas a encontrar-te.",
+      "item3": "Consentimento primeiro, sempre. Avança ao teu próprio ritmo."
+    },
+    "next": {
+      "title": "Próximos passos",
+      "go_dashboard": "Ir para o Painel",
+      "login_register": "Entrar / Registar"
+    },
+    "global": {
+      "title": "Comunidade Global",
+      "text": "Fala a tua língua, conecta-te com o mundo. SoulTribe.chat suporta vários idiomas para aproximar a tua tribo de alma, onde quer que estejas.",
+      "auto_title": "Tradução Automática",
+      "auto_text": "Conversa com correspondências no teu idioma preferido, com tradução automática quando necessário.",
+      "native_title": "Suporte a Múltiplos Idiomas",
+      "native_text": "Interface totalmente traduzida em vários idiomas, com adições regulares.",
+      "tz_title": "Consciência de Fuso Horário",
+      "tz_text": "Deteção e conversão automática de fuso horário, para que saibas sempre quando as tuas correspondências estão disponíveis.",
+      "select_label": "Selecionar idioma:"
+    }
+  },
+  "language": { "en": "Inglês", "de": "Alemão", "pt": "Português" },
+  "welcome": { "title": "Bem-vindo ao SoulTribe.chat", "subtitle": "Encontra a tua tribo de alma" },
+  "profile": {
+    "title": "O teu perfil",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "primary_language_label": "Idioma principal (para a interface)",
+    "other_languages_label": "Outros idiomas (para correspondências)",
+    "language_input_placeholder": "Escreve para adicionar idiomas..."
+  },
+  "dashboard": {
+    "title": "Painel",
+    "availability": "Disponibilidade",
+    "create_slot": "Criar período",
+    "duration_hours": "Duração (horas)",
+    "meetups": "Encontros",
+    "matches": "Correspondências",
+    "overlap_hint": "Clica em “Propor esta hora” para propor um encontro para esse período."
+  },
+  "login": {
+    "title": "Bem-vindo",
+    "intro": "Inicia sessão com uma conta existente ou regista-te.",
+    "email": "email",
+    "password": "palavra-passe",
+    "display_name": "nome_exibido (para registo)",
+    "register": "Registar",
+    "login": "Entrar",
+    "redirect_hint": "Após iniciar sessão serás redirecionado para o teu painel.",
+    "go_dashboard": "Ir para o Painel"
+  },
+  "nav": { "dashboard": "Painel", "profile": "Perfil", "login": "Entrar", "logout": "Sair" },
+  "notifications": { "language_set_to": "Idioma definido para" }
+}

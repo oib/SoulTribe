@@ -1,0 +1,95 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Welkom",
+      "subtitle": "SoulTribe.chat is een ruimte gecreëerd om je te helpen je zielsstam te vinden en ermee in contact te komen — mensen die resoneren met jouw energie, je geest en je reis. ✨"
+    },
+    "how": {
+      "title": "Hoe het werkt",
+      "step1": "<strong>Maak je profiel aan</strong> — voer je geboortedatum, -tijd en -plaats in om je unieke zielskaart te genereren.",
+      "step2": "<strong>Ontdek je matches</strong> — we belichten verbindingen op basis van compatibiliteit en resonantie.",
+      "step3": "<strong>Start het gesprek</strong> — nodig matches uit om te chatten; veilig en privé door ontwerp.",
+      "step4": "<strong>Spreek af (optioneel)</strong> — plan een Jitsi-gesprek of een persoonlijke ontmoeting met wederzijdse toestemming."
+    },
+    "getting_started": {
+      "title": "Aan de slag",
+      "step1": "<strong>Maak een account aan</strong> — geen sociale media-accounts nodig.",
+      "step2": "<strong>Voltooi je profiel</strong> — voeg geboortegegevens toe; een geschatte tijd is voldoende.",
+      "step3": "<strong>Stel je beschikbaarheid in</strong> — stel lokale tijdsloten voor; wij regelen de UTC-conversie.",
+      "step4": "<strong>Ontdek matches</strong> — blader door op resonantie gebaseerde suggesties.",
+      "step5": "<strong>Chat en spreek eventueel af</strong> — alles binnen de app; plan wanneer je er klaar voor bent."
+    },
+    "features": {
+      "title": "Kenmerken",
+      "item1": "<strong>Astrologisch bewust matchen</strong> — maak verbinding met behulp van je geboortehoroscoop.",
+      "item2": "<strong>Slimme tijdszoneplanning</strong> — wij regelen de UTC-conversies voor je.",
+      "item3": "<strong>Privé, veilige chat</strong> — gesprekken blijven op SoulTribe.chat.",
+      "item4": "<strong>Optionele video via Jitsi</strong> — privacyvriendelijk, geen installatie nodig op desktop.",
+      "item5": "<strong>Minimalistische, gerichte interface</strong> — ontworpen voor betekenisvolle gesprekken."
+    },
+    "privacy": {
+      "title": "Privacy & Veiligheid",
+      "item1": "We vragen alleen wat nodig is om zielsverbindingen mogelijk te maken.",
+      "item2": "Je profielgegevens worden niet verkocht of gedeeld met advertentienetwerken.",
+      "item3": "Jij bepaalt wie je kan benaderen en wanneer je meer wilt delen."
+    },
+    "matching": {
+      "title": "Hoe matching werkt (korte versie)",
+      "text": "We berekenen belangrijke relationele indicatoren uit je geboortehoroscoop en vergelijken deze met die van anderen om resonantie te vinden. We geven voorrang aan harmonie, complementariteit en groeipotentieel boven generieke populariteitsstatistieken."
+    },
+    "protips": {
+      "title": "Pro-tips",
+      "item1": "Voeg een paar beschikbare tijdsloten toe op verschillende dagen voor snellere verbindingen.",
+      "item2": "Wees oprecht in je introductie — specifieke details helpen de juiste mensen je te vinden.",
+      "item3": "Eerst toestemming, altijd. Ga in het tempo dat goed voelt."
+    },
+    "next": {
+      "title": "Volgende stappen",
+      "go_dashboard": "Naar het Dashboard",
+      "login_register": "Inloggen / Registreren"
+    },
+    "global": {
+      "title": "Wereldwijde gemeenschap",
+      "text": "Spreek je taal, verbind je met de wereld. SoulTribe.chat ondersteunt meerdere talen om je zielsstam dichterbij te brengen, waar je ook bent.",
+      "auto_title": "Automatische vertaling",
+      "auto_text": "Chat met matches in je voorkeurstaal, met automatische vertaling wanneer nodig.",
+      "native_title": "Ondersteuning voor moedertaal",
+      "native_text": "Volledig vertaalde interface in meerdere talen, met regelmatige toevoegingen.",
+      "tz_title": "Tijdzonebewust",
+      "tz_text": "Automatische tijdzonedetectie en -conversie, zodat je altijd weet wanneer je matches beschikbaar zijn.",
+      "select_label": "Selecteer taal:"
+    }
+  },
+  "language": { "en": "Engels", "de": "Duits", "nl": "Nederlands" },
+  "welcome": { "title": "Welkom bij SoulTribe.chat", "subtitle": "Vind jouw zielsstam" },
+  "profile": {
+    "title": "Jouw profiel",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "primary_language_label": "Primaire taal (voor de interface)",
+    "other_languages_label": "Overige talen (voor matching)",
+    "language_input_placeholder": "Typ om talen toe te voegen..."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "availability": "Beschikbaarheid",
+    "create_slot": "Tijdslot maken",
+    "duration_hours": "Duur (uren)",
+    "meetups": "Afspreken",
+    "matches": "Matches",
+    "overlap_hint": "Klik op ‘Tijd voorstellen’ om een afspraak voor dat tijdslot te voorstellen."
+  },
+  "login": {
+    "title": "Welkom",
+    "intro": "Log in met een bestaand account of registreer een nieuwe.",
+    "email": "e-mail",
+    "password": "wachtwoord",
+    "display_name": "weergavenaam (voor registratie)",
+    "register": "Registreren",
+    "login": "Inloggen",
+    "redirect_hint": "Na inloggen word je doorgestuurd naar je dashboard.",
+    "go_dashboard": "Ga naar Dashboard"
+  },
+  "nav": { "dashboard": "Dashboard", "profile": "Profiel", "login": "Inloggen", "logout": "Uitloggen" },
+  "notifications": { "language_set_to": "Taal ingesteld op" }
+}

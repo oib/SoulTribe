@@ -1,0 +1,162 @@
+/* Profile page-specific styles */
+#radixSection { margin-top: 16px; }
+
+/* Radix pretty table: normalize header/body cell sizing */
+#radixPretty table.list {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+#radixPretty table.list th,
+#radixPretty table.list td {
+  border: 1px solid var(--border-color, #1f2937);
+  vertical-align: middle;
+}
+#radixPretty table.list thead th { border-bottom: 1px solid var(--border-color, #1f2937); }
+#radixPretty table.list thead + tbody tr:first-child td { border-top: none; }
+#radixPretty table.list thead th,
+#radixPretty table.list tfoot th { text-align: center; font-weight: 600; }
+#radixPretty .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+/* Radix layout */
+#radixPretty .radix-layout { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 8px; width: 100%; }
+@media (min-width: 980px) { #radixPretty .radix-layout { grid-template-columns: 1fr; } }
+#radixPretty .radix-panel { background: #0f172a; border: 1px solid #1f2937; border-radius: 12px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); width: 100%; }
+@media (prefers-color-scheme: light) { #radixPretty .radix-panel { background: #ffffff; border-color: #e5e7eb; box-shadow: 0 1px 4px rgba(0,0,0,0.06); } }
+
+/* Combined planets/aspects table */
+#radixPretty .planets-table { width: 100%; table-layout: fixed; }
+#radixPretty .planets-table col.icon { width: auto; }
+#radixPretty .planets-table col.planet { width: auto; }
+#radixPretty .planets-table col.sign { width: 56px; }
+#radixPretty .planets-table col.deg { width: 90px; }
+#radixPretty .planets-table col.house { width: 72px; }
+#radixPretty .planets-table col.cusp { width: 100px; }
+#radixPretty .planets-table col.aspect { width: 80px; }
+#radixPretty .planets-table th, 
+#radixPretty .planets-table td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#radixPretty .planets-table thead th { overflow: visible; text-overflow: clip; white-space: nowrap; font-weight: 700; }
+#radixPretty .aspect-grid { width: 100%; }
+
+/* Alignments similar to legacy radix.css */
+#radixPretty .planets-table th:nth-child(1),
+#radixPretty .planets-table td:nth-child(1) { text-align: center; }
+#radixPretty .planets-table th:nth-child(4),
+#radixPretty .planets-table td:nth-child(4) { text-align: right; }
+
+/* Aspect grid sizing */
+#radixPretty table.aspect-grid { margin-top: 12px; width: 100%; table-layout: fixed; }
+#radixPretty table.aspect-grid col.icon { width: 2.5em; }
+#radixPretty table.aspect-grid col.aspect { width: 64px; }
+#radixPretty table.aspect-grid th,
+#radixPretty table.aspect-grid td { text-align: center; }
+
+/* Houses table helpers (legacy) */
+#radixPretty table.houses-table { table-layout: auto; }
+#radixPretty table.houses-table th:nth-child(1),
+#radixPretty table.houses-table td:nth-child(1) { width: auto; }
+#radixPretty table.houses-table th:nth-child(2),
+#radixPretty table.houses-table td:nth-child(2) { width: auto; }
+#radixPretty table.houses-table th:nth-child(3),
+#radixPretty table.houses-table td:nth-child(3) { width: auto; }
+
+#radixPretty table.list td,
+#radixPretty table.list th { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#radixPretty table.list td.mono { white-space: nowrap; }
+
+/* Radix pretty table & layout (moved from styles.css) */
+#radixPretty table.list {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+#radixPretty table.list th,
+#radixPretty table.list td { border: 1px solid var(--border-color, #1f2937); vertical-align: middle; }
+#radixPretty table.list thead th { border-bottom: 1px solid var(--border-color, #1f2937); }
+#radixPretty table.list thead + tbody tr:first-child td { border-top: none; }
+#radixPretty table.list thead th,
+#radixPretty table.list tfoot th { text-align: center; font-weight: 600; }
+#radixPretty .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+#radixPretty .radix-layout { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 8px; width: 100%; }
+@media (min-width: 980px) { #radixPretty .radix-layout { grid-template-columns: 1fr; } }
+#radixPretty .radix-panel { background: #0f172a; border: 1px solid #1f2937; border-radius: 12px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); width: 100%; }
+@media (prefers-color-scheme: light) { #radixPretty .radix-panel { background: #ffffff; border-color: #e5e7eb; box-shadow: 0 1px 4px rgba(0,0,0,0.06); } }
+#radixPretty .planets-table { width: 100%; table-layout: fixed; }
+#radixPretty .planets-table col.icon { width: auto; }
+#radixPretty .planets-table col.planet { width: auto; }
+#radixPretty .planets-table col.sign { width: 56px; }
+#radixPretty .planets-table col.deg { width: 90px; }
+#radixPretty .planets-table col.house { width: 72px; }
+#radixPretty .planets-table col.cusp { width: 100px; }
+#radixPretty .planets-table col.aspect { width: 80px; }
+#radixPretty .planets-table th, #radixPretty .planets-table td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#radixPretty .planets-table thead th { overflow: visible; text-overflow: clip; white-space: nowrap; font-weight: 700; }
+#radixPretty .aspect-grid { width: 100%; }
+#radixPretty table.houses-table { table-layout: auto; }
+#radixPretty table.houses-table th:nth-child(1), #radixPretty table.houses-table td:nth-child(1) { width: auto; }
+#radixPretty table.houses-table th:nth-child(2), #radixPretty table.houses-table td:nth-child(2) { width: auto; }
+#radixPretty table.houses-table th:nth-child(3), #radixPretty table.houses-table td:nth-child(3) { width: auto; }
+
+/* Profile autocomplete (birth place) */
+.autocomplete { position: relative; display: inline-block; min-width: 320px; }
+.autocomplete-list { position: absolute; top: 38px; left: 0; right: 0; z-index: 50; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+.autocomplete-item { padding: 8px 12px; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+.autocomplete-item:hover { background: #f3f4f6; }
+@media (prefers-color-scheme: dark) {
+  .autocomplete-list { background: #0f172a; border-color: #1f2937; box-shadow: 0 8px 24px rgba(2,6,23,0.4); }
+  .autocomplete-item:hover { background: #111827; }
+  .autocomplete-item .title { color: #e5e7eb; }
+  .autocomplete-item .sub { color: #9ca3af; }
+}
+
+/* Profile page: language selector + tag input */
+.language-selector {
+  margin: 16px 0;
+  position: relative;
+  width: 100%;
+}
+.language-selected {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 12px 16px;
+  cursor: text;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+  color: #94a3b8;
+  font-size: 14px;
+  min-height: 20px;
+  appearance: none;
+  outline: none;
+}
+.language-selected:hover { background: #0f172a; border-color: #475569; }
+.language-selected:focus { outline: none; border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25); }
+.language-options { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #1e293b; border: 1px solid #334155; border-radius: 6px; margin-top: 4px; max-height: 300px; overflow-y: auto; z-index: 100; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+.language-selector.open .language-options { display: block !important; }
+.language-option { padding: 8px 16px; display: flex; align-items: center; transition: background 0.2s; color: #e5e7eb; }
+.language-option:hover { background: #334155; }
+.language-option:focus-within { background: #334155; outline: none; }
+.language-option input[type="checkbox"] { margin-right: 12px; width: 16px; height: 16px; cursor: pointer; }
+.language-option input[type="checkbox"]:focus { outline: 2px solid #7c3aed; outline-offset: 2px; }
+.language-option label { cursor: pointer; flex: 1; color: #e5e7eb; }
+.language-selected svg { color: #cbd5e1; }
+.language-hint { font-size: 12px; color: #94a3b8; margin-left: 8px; }
+#selected-languages { flex: 1; }
+
+.language-tag-input { position: relative; width: 100%; }
+.tag-input-container { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-height: 44px; transition: all 0.2s; }
+.tag-input-container:focus-within { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25); }
+.selected-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.language-tag { background: #7c3aed; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; display: flex; align-items: center; gap: 4px; }
+.tag-remove { background: none; border: none; color: white; cursor: pointer; font-size: 10px; line-height: 1; padding: 0; margin-left: 2px; width: 8px; height: 12px; display: flex; align-items: center; justify-content: center; }
+.tag-remove:hover { color: #fbbf24; }
+#languageInput { background: transparent; border: none; outline: none; color: #e5e7eb; font-size: 14px; flex: 1; min-width: 120px; padding: 4px; }
+#languageInput::placeholder { color: #94a3b8; }
+.language-autocomplete { position: absolute; top: 100%; left: 0; right: 0; background: #1e293b; border: 1px solid #334155; border-radius: 6px; margin-top: 4px; max-height: 200px; overflow-y: auto; z-index: 100; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+.language-autocomplete-item { padding: 8px 16px; cursor: pointer; color: #e5e7eb; transition: background 0.2s; }
+.language-autocomplete-item:hover, .language-autocomplete-item.highlighted { background: #334155; }
+.language-autocomplete-item.disabled { color: #6b7280; cursor: not-allowed; }
+.language-autocomplete-item.disabled:hover { background: transparent; }

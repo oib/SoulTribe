@@ -1,0 +1,13 @@
+{
+  "name": "soultribe.chat",
+  "version": "1.0.0",
+  "description": "SoulTribe.chat - Connect with your soul tribe",
+  "scripts": {
+    "build": "echo 'Build script would run here'"
+  },
+  "dependencies": {
+    "i18next": "^23.2.0",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.4.1"
+  }
+}

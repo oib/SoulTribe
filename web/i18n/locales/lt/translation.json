@@ -1,0 +1,182 @@
+{
+  "app": {
+    "name": "SoulTribe",
+    "tagline": "Prisijunkite prie žmonių, kurie dalijasi jūsų vertybėmis",
+    "loading": "Kraunama...",
+    "error": "Įvyko klaida",
+    "retry": "Bandyti dar kartą",
+    "submit": "Pateikti",
+    "cancel": "Atšaukti",
+    "save": "Išsaugoti",
+    "delete": "Ištrinti",
+    "edit": "Redaguoti",
+    "back": "Atgal",
+    "next": "Kitas",
+    "previous": "Ankstesnis",
+    "skip": "Praleisti",
+    "done": "Baigta",
+    "search": "Ieškoti",
+    "noResults": "Rezultatų nerasta",
+    "welcome": "Sveiki atvykę",
+    "or": "arba",
+    "and": "ir",
+    "continue": "Tęsti",
+    "createAccount": "Sukurti paskyrą",
+    "login": "Prisijungti",
+    "logout": "Atsijungti",
+    "profile": "Profilis",
+    "settings": "Nustatymai",
+    "help": "Pagalba",
+    "about": "Apie mus",
+    "contact": "Kontaktai",
+    "privacy": "Privatumas",
+    "terms": "Sąlygos"
+  },
+  "landing": {
+    "hero": {
+      "title": "Prisijunkite prie mūsų globalios bendruomenės",
+      "subtitle": "Siekite ryšių su žmonėmis, kurie dalijasi jūsų vertybėmis, interesais ir aistromis.",
+      "cta": "Pradėkite savo kelionę"
+    },
+    "howItWorks": {
+      "title": "Kaip tai veikia",
+      "steps": [
+        {
+          "title": "Sukurkite savo profilį",
+          "description": "Pasisakykite apie savo pomėgius ir vertybes."
+        },
+        {
+          "title": "Susiraskite savus žmones",
+          "description": "Mūsų algoritmas sujungs jus su panašiais žmonėmis."
+        },
+        {
+          "title": "Junkitės ir tobulėkite",
+          "description": "Pradėkite pokalbius ir kurkite ilgalaikius ryšius."
+        }
+      ]
+    },
+    "features": {
+      "title": "Kodėl prisijungti?",
+      "items": [
+        {
+          "title": "Saugi bendruomenė",
+          "description": "Mūsų bendruomenė yra sukurta pagrindžiant pagarba ir saugumu."
+        },
+        {
+          "title": "Individualizuota patirtis",
+          "description": "Gaukite pritaikytas rekomendacijas pagal jūsų pomėgius."
+        },
+        {
+          "title": "Pasaulinis ryšys",
+          "description": "Siekite ryšio su žmonėmis iš viso pasaulio."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Jūsų privatumas yra mūsų prioritetas",
+      "description": "Mes saugome jūsų duomenis ir užtikriname saugią aplinką.",
+      "learnMore": "Sužinokite daugiau"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Prisijungti",
+      "email": "El. paštas",
+      "password": "Slaptažodis",
+      "forgotPassword": "Pamiršote slaptažodį?",
+      "noAccount": "Neturite paskyros?",
+      "signUp": "Užsiregistruokite"
+    },
+    "register": {
+      "title": "Registracija",
+      "name": "Vardas ir pavardė",
+      "email": "El. paštas",
+      "password": "Slaptažodis",
+      "confirmPassword": "Patvirtinkite slaptažodį",
+      "agreeTerms": "Sutinku su Naudojimo sąlygomis"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Redaguoti profilį",
+      "basicInfo": "Pagrindinė informacija",
+      "firstName": "Vardas",
+      "lastName": "Pavardė",
+      "bio": "Apie mane",
+      "location": "Vieta",
+      "interests": "Pomėgiai"
+    },
+    "view": {
+      "memberSince": "Narys nuo",
+      "lastSeen": "Paskutinį kartą matytas",
+      "interests": "Pomėgiai"
+    }
+  },
+  "settings": {
+    "title": "Nustatymai",
+    "account": {
+      "title": "Paskyra",
+      "changeEmail": "Keisti el. paštą",
+      "changePassword": "Keisti slaptažodį"
+    },
+    "privacy": {
+      "title": "Privatumas",
+      "profileVisibility": "Profilio matomumas"
+    }
+  },
+  "messaging": {
+    "title": "Žinutės",
+    "newMessage": "Nauja žinutė",
+    "searchUsers": "Ieškoti vartotojų...",
+    "typeMessage": "Įrašykite žinutę...",
+    "send": "Siųsti"
+  },
+  "friends": {
+    "title": "Draugai",
+    "allFriends": "Visi draugai",
+    "addFriend": "Pridėti draugą",
+    "friendRequests": "Draugų užklausos"
+  },
+  "events": {
+    "title": "Renginiai",
+    "upcoming": "Būsimi renginiai",
+    "create": "Sukurti renginį"
+  },
+  "groups": {
+    "title": "Grupės",
+    "discover": "Atrasti grupes",
+    "myGroups": "Mano grupės",
+    "create": "Sukurti grupę"
+  },
+  "search": {
+    "title": "Paieška",
+    "placeholder": "Ieškoti žmonių, grupių ir turinio...",
+    "noResults": "Rezultatų nerasta"
+  },
+  "onboarding": {
+    "welcome": "Sveiki atvykę į SoulTribe",
+    "step1": {
+      "title": "Sukurkite savo profilį",
+      "description": "Pridėkite savo nuotrauką ir kelis žodžius apie save."
+    },
+    "step2": {
+      "title": "Pasirinkite savo pomėgius",
+      "description": "Ką jūs mėgstate daryti? Pasirinkite savo pomėgius."
+    },
+    "step3": {
+      "title": "Junkitės prie žmonių",
+      "description": "Pradėkite pokalbį su panašiais žmonėmis."
+    }
+  },
+  "errors": {
+    "required": "Šis laukas yra privalomas",
+    "invalidEmail": "Įveskite galiojantį el. pašto adresą",
+    "passwordTooShort": "Slaptažodis per trumpas",
+    "passwordsDontMatch": "Slaptažodžiai nesutampa"
+  },
+  "success": {
+    "profileUpdated": "Profilis atnaujintas",
+    "passwordChanged": "Slaptažodis pakeistas",
+    "messageSent": "Žinutė išsiųsta"
+  }
+}

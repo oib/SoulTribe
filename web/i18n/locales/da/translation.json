@@ -1,0 +1,33 @@
+{
+  "language": { "en": "Engelsk", "de": "Tysk", "da": "Dansk" },
+  "welcome": { "title": "Velkommen til SoulTribe.chat", "subtitle": "Find din sjælsstamme" },
+  "profile": {
+    "title": "Din profil",
+    "save": "Gem",
+    "cancel": "Annuller",
+    "primary_language_label": "Primærsprog (til grænsefladen)",
+    "other_languages_label": "Andre sprog (til matching)",
+    "language_input_placeholder": "Skriv for at tilføje sprog..."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "availability": "Tilgængelighed",
+    "create_slot": "Opret tidsrum",
+    "duration_hours": "Varighed (timer)",
+    "meetups": "Møder",
+    "matches": "Matches",
+    "overlap_hint": "Klik \"Foreslå dette tidspunkt\" for at foreslå et møde for dette tidsrum."
+  },
+  "login": {
+    "title": "Velkommen",
+    "intro": "Log ind med en eksisterende konto eller registrer en ny.",
+    "email": "e-mail",
+    "password": "adgangskode",
+    "display_name": "visningsnavn (til registrering)",
+    "register": "Registrer",
+    "login": "Log ind",
+    "redirect_hint": "Efter login bliver du omdirigeret til dit dashboard.",
+    "go_dashboard": "Gå til Dashboard"
+  },
+  "nav": { "dashboard": "Dashboard", "profile": "Profil", "login": "Login", "logout": "Log ud" }
+}

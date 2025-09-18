@@ -1,0 +1,33 @@
+{
+  "language": { "en": "Englanti", "de": "Saksa", "fi": "Suomi" },
+  "welcome": { "title": "Tervetuloa SoulTribe.chat-palveluun", "subtitle": "Löydä sielunheimolaiset" },
+  "profile": {
+    "title": "Profiilisi",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "primary_language_label": "Pääkieli (käyttöliittymälle)",
+    "other_languages_label": "Muut kielet (matchausta varten)",
+    "language_input_placeholder": "Kirjoita lisätäksesi kieliä..."
+  },
+  "dashboard": {
+    "title": "Hallintapaneeli",
+    "availability": "Saatavuus",
+    "create_slot": "Luo aikaikkuna",
+    "duration_hours": "Kesto (tunnit)",
+    "meetups": "Tapaamiset",
+    "matches": "Mätsit",
+    "overlap_hint": "Napsauta \"Ehdota tätä aikaa\" ehdottaaksesi tapaamista kyseiselle ajalle."
+  },
+  "login": {
+    "title": "Tervetuloa",
+    "intro": "Kirjaudu sisään tai rekisteröidy.",
+    "email": "sähköposti",
+    "password": "salasana",
+    "display_name": "näyttönimi (rekisteröintiä varten)",
+    "register": "Rekisteröidy",
+    "login": "Kirjaudu",
+    "redirect_hint": "Kirjautumisen jälkeen sinut ohjataan hallintapaneeliin.",
+    "go_dashboard": "Siirry hallintapaneeliin"
+  },
+  "nav": { "dashboard": "Hallintapaneeli", "profile": "Profiili", "login": "Kirjaudu", "logout": "Kirjaudu ulos" }
+}

@@ -1,0 +1,94 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Velkommen",
+      "subtitle": "SoulTribe.chat er et rom skapt for å hjelpe deg med å finne og koble deg til din sjelefrende — mennesker som resonerer med din energi, din ånd og din reise. ✨"
+    },
+    "how": {
+      "title": "Slik fungerer det",
+      "step1": "<strong>Opprett din profil</strong> — legg inn fødselsdato, -tid og -sted for å generere ditt unike sjelkart.",
+      "step2": "<strong>Oppdag treff</strong> — vi fremhever forbindelser basert på kompatibilitet og resonans.",
+      "step3": "<strong>Start samtalen</strong> — inviter treff til å chatte; sikkert og privat som standard.",
+      "step4": "<strong>Møtes (valgfritt)</strong> — planlegg et Jitsi-samtal eller personlig møte med gjensidig samtykke."
+    },
+    "getting_started": {
+      "title": "Kom i gang",
+      "step1": "<strong>Opprett en konto</strong> — ingen pålogging med sosiale medier nødvendig.",
+      "step2": "<strong>Fullfør profilen din</strong> — legg til fødselsdetaljer; omtrentlig tid fungerer fint.",
+      "step3": "<strong>Angi din tilgjengelighet</strong> — foreslå lokale tidsluker; vi håndterer UTC-konverteringen.",
+      "step4": "<strong>Oppdag treff</strong> — bla gjennom forslag basert på resonans.",
+      "step5": "<strong>Chat og møt</strong> — alt i appen; planlegg når du er klar."
+    },
+    "features": {
+      "title": "Funksjoner",
+      "item1": "<strong>Astrologibasert matching</strong> — koble deg til ved hjelp av ditt fødselshoroskop.",
+      "item2": "<strong>Smart tidssonestyring</strong> — vi håndterer UTC-konverteringene for deg.",
+      "item3": "<strong>Privat, sikker chat</strong> — samtaler forblir på SoulTribe.chat.",
+      "item4": "<strong>Valgfri video via Jitsi</strong> — personvernsvennlig, ingen installasjon nødvendig på PC.",
+      "item5": "<strong>Minimalistisk, fokusert grensesnitt</strong> — designet for meningsfulle samtaler."
+    },
+    "privacy": {
+      "title": "Personvern og sikkerhet",
+      "item1": "Vi ber kun om det som er nødvendig for å muliggjøre meningsfulle forbindelser.",
+      "item2": "Din profildata selges ikke eller deles med reklamenettverk.",
+      "item3": "Du bestemmer hvem som kan kontakte deg og når du vil dele mer."
+    },
+    "matching": {
+      "title": "Slik fungerer matching (kortversjon)",
+      "text": "Vi beregner nøkkelrelasjonelle faktorer fra din fødselstema og sammenligner dem med andres for å finne resonans. Vi prioriterer harmoni, komplementaritet og vekstpotensiale fremfor generiske popularitetsmålinger."
+    },
+    "protips": {
+      "title": "Profftips",
+      "item1": "Legg til noen få tilgjengelige tidsluker på forskjellige dager for raskere forbindelser.",
+      "item2": "Vær ekte i din presentasjon — spesifikke detaljer hjelper de rette menneskene med å finne deg.",
+      "item3": "Samtykke først, alltid. Gå i ditt eget tempo."
+    },
+    "next": {
+      "title": "Neste steg",
+      "go_dashboard": "Gå til dashbordet",
+      "login_register": "Logg inn / Registrer"
+    },
+    "global": {
+      "title": "Globalt fellesskap",
+      "text": "Snakk ditt språk, koble deg til verden. SoulTribe.chat støtter flere språk for å bringe ditt sjelstamme nærmere, uansett hvor du er.",
+      "auto_title": "Automatisk oversettelse",
+      "auto_text": "Chat med dine treff på ditt foretrukne språk, med automatisk oversettelse når det trengs.",
+      "native_title": "Morsmålsstøtte",
+      "native_text": "Fullt oversatt grensesnitt på flere språk, med jevnlige oppdateringer.",
+      "tz_title": "Tidssonebevisst",
+      "tz_text": "Automatisk tidssoneoppdagelse og -konvertering, slik at du alltid vet når dine treff er tilgjengelige.",
+      "select_label": "Velg språk:"
+    }
+  },
+  "language": { "en": "Engelsk", "de": "Tysk", "no": "Norsk" },
+  "welcome": { "title": "Velkommen til SoulTribe.chat", "subtitle": "Finn din sjelsstamme" },
+  "profile": {
+    "title": "Din profil",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "primary_language_label": "Primærspråk (for grensesnittet)",
+    "other_languages_label": "Andre språk (for matching)",
+    "language_input_placeholder": "Skriv for å legge til språk..."
+  },
+  "dashboard": {
+    "title": "Dashbord",
+    "availability": "Tilgjengelighet",
+    "create_slot": "Opprett tidsluke",
+    "duration_hours": "Varighet (timer)",
+    "meetups": "Møter",
+    "matches": "Matcher",
+    "overlap_hint": "Klikk «Foreslå dette tidspunktet» for å foreslå et møte for den tidsluken."
+  },
+  "login": {
+    "title": "Velkommen",
+    "intro": "Logg inn med en eksisterende konto eller registrer en ny.",
+    "email": "e-post",
+    "password": "passord",
+    "display_name": "visningsnavn (for registrering)",
+    "register": "Registrer",
+    "login": "Logg inn",
+    "redirect_hint": "Etter innlogging blir du omdirigert til dashbordet.",
+    "go_dashboard": "Gå til dashbord"
+  },
+  "nav": { "dashboard": "Dashbord", "profile": "Profil", "login": "Logg inn", "logout": "Logg ut" }
+}

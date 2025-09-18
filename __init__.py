@@ -1,0 +1,1 @@
+# SoulTribe.chat root package

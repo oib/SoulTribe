@@ -1,0 +1,108 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Bienvenue",
+      "subtitle": "SoulTribe.chat est un espace conçu pour vous aider à trouver et à vous connecter avec votre tribu d'âmes – des personnes qui résonnent avec votre énergie, votre esprit et votre parcours. ✨"
+    },
+    "how": {
+      "title": "Comment ça marche",
+      "step1": "<strong>Créez votre profil</strong> – entrez votre date, heure et lieu de naissance pour générer votre carte d'âme unique.",
+      "step2": "<strong>Découvrez vos correspondances</strong> – nous mettons en évidence les connexions basées sur la compatibilité et la résonance.",
+      "step3": "<strong>Lancez la conversation</strong> – invitez vos correspondances à discuter ; conçu pour être sûr et privé.",
+      "step4": "<strong>Rencontrez-vous (optionnel)</strong> – planifiez un appel Jitsi ou une rencontre en personne d'un commun accord."
+    },
+    "getting_started": {
+      "title": "Pour commencer",
+      "step1": "<strong>Créez votre compte</strong> – aucune connexion via les réseaux sociaux requise.",
+      "step2": "<strong>Complétez votre profil</strong> – ajoutez vos détails de naissance ; une heure approximative convient.",
+      "step3": "<strong>Définissez vos disponibilités</strong> – proposez des créneaux horaires locaux ; nous gérons le fuseau UTC.",
+      "step4": "<strong>Découvrez des correspondances</strong> – parcourez les suggestions basées sur la résonance.",
+      "step5": "<strong>Discutez et rencontrez-vous</strong> – tout se passe dans l'application ; planifiez quand vous êtes prêt."
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "item1": "<strong>Appariement basé sur l'astrologie</strong> – connectez-vous en utilisant votre thème natal.",
+      "item2": "<strong>Planification intelligente des fuseaux horaires</strong> – nous gérons les conversions UTC pour vous.",
+      "item3": "<strong>Messagerie privée et sécurisée</strong> – les conversations restent sur SoulTribe.chat.",
+      "item4": "<strong>Vidéo optionnelle via Jitsi</strong> – respectueux de la vie privée, aucune installation requise sur ordinateur.",
+      "item5": "<strong>Interface épurée et ciblée</strong> – conçue pour des conversations significatives."
+    },
+    "privacy": {
+      "title": "Confidentialité et sécurité",
+      "item1": "Nous ne demandons que ce qui est nécessaire pour permettre des connexions authentiques.",
+      "item2": "Vos informations de profil ne sont pas vendues ni partagées avec des réseaux publicitaires.",
+      "item3": "Vous contrôlez qui peut vous contacter et quand en dire plus."
+    },
+    "matching": {
+      "title": "Comment fonctionne l'appariement (version courte)",
+      "text": "Nous calculons des indicateurs relationnels clés à partir de votre thème et les comparons à ceux des autres pour trouver des résonances. Nous privilégions l'harmonie, la complémentarité et le potentiel de croissance plutôt que des métriques génériques de popularité."
+    },
+    "protips": {
+      "title": "Conseils de pro",
+      "item1": "Ajoutez quelques créneaux de disponibilité sur différents jours pour des connexions plus rapides.",
+      "item2": "Soyez authentique dans votre présentation – les détails aident les bonnes personnes à vous trouver.",
+      "item3": "Le consentement d'abord, toujours. Allez au rythme qui vous convient."
+    },
+    "next": {
+      "title": "Prochaines étapes",
+      "go_dashboard": "Aller au tableau de bord",
+      "login_register": "Connexion / Inscription"
+    },
+    "global": {
+      "title": "Communauté mondiale",
+      "text": "Parlez votre langue, connectez-vous avec le monde. SoulTribe.chat prend en charge plusieurs langues pour rapprocher votre tribu d'âmes, où que vous soyez.",
+      "auto_title": "Traduction automatique",
+      "auto_text": "Discutez avec vos correspondances dans votre langue préférée, avec traduction automatique si nécessaire.",
+      "native_title": "Support multilingue",
+      "native_text": "Interface entièrement traduite en plusieurs langues, avec des ajouts réguliers.",
+      "tz_title": "Gestion des fuseaux horaires",
+      "tz_text": "Détection et conversion automatiques des fuseaux horaires, pour toujours savoir quand vos correspondances sont disponibles.",
+      "select_label": "Choisir la langue :"
+    }
+  },
+  "language": { "en": "Anglais", "de": "Allemand", "fr": "Français" },
+  "welcome": { "title": "Bienvenue sur SoulTribe.chat", "subtitle": "Trouve ta tribu d'âme" },
+  "profile": {
+    "title": "Ton profil",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "primary_language_label": "Langue principale (pour l'interface)",
+    "other_languages_label": "Autres langues (pour l'appariement)",
+    "language_input_placeholder": "Tape pour ajouter des langues..."
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "availability": "Disponibilités",
+    "create_slot": "Créer un créneau",
+    "duration_hours": "Durée (heures)",
+    "meetups": "Rencontres",
+    "matches": "Correspondances",
+    "overlap_hint": "Clique sur « Proposer cette heure » pour proposer une rencontre pour ce créneau."
+  },
+  "login": {
+    "title": "Bienvenue",
+    "intro": "Connecte-toi avec un compte existant ou crée-en un nouveau.",
+    "email": "email",
+    "password": "mot de passe",
+    "display_name": "nom_affiché (pour l'inscription)",
+    "register": "S'inscrire",
+    "login": "Se connecter",
+    "redirect_hint": "Après connexion, tu seras redirigé vers ton tableau de bord.",
+    "go_dashboard": "Aller au tableau de bord"
+  },
+  "nav": { "dashboard": "Tableau de bord", "profile": "Profil", "login": "Connexion", "logout": "Déconnexion", "welcome": "Welcome" },
+  "imprint": { "title": "Imprint" },
+  "footer": { "terms": "Terms", "privacy": "Privacy", "imprint": "Imprint" },
+  "reset_password": {
+    "title": "Reset Password",
+    "intro": "Choose a new password for your account.",
+    "new_password_label": "New password",
+    "new_password_placeholder": "new password",
+    "confirm_password_label": "Confirm new password",
+    "confirm_password_placeholder": "confirm new password",
+    "submit": "Set new password"
+  },
+  "radix": {"title":"Your Radix","placeholder":"If you have set your birth data, your radix snapshot will appear here.","show_raw_json":"Show raw JSON"},
+  "ai": {"get_interpretation":"Get Interpretation","followup_placeholder":"Ask a follow-up…","send":"Send"},
+  "notifications": { "language_set_to": "Langue définie sur" }
+}

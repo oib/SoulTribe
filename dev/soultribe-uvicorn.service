@@ -1,0 +1,28 @@
+# /etc/systemd/system/soultribe-uvicorn.service
+# Adjust User, Group, WorkingDirectory, and paths to .venv as needed.
+[Unit]
+Description=SoulTribe FastAPI (uvicorn)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Run as your user (adjust if using a dedicated deploy user)
+User=%i
+Group=%i
+# Set your project working directory
+WorkingDirectory=/home/%i/windsurf/soultribe.chat
+# Load environment variables (expects DATABASE_URL, SECRET_KEY, etc.)
+EnvironmentFile=/home/%i/windsurf/soultribe.chat/.env
+# Activate virtualenv uvicorn
+ExecStart=/home/%i/windsurf/soultribe.chat/.venv/bin/uvicorn main:app --host 0.0.0.0 --port 8001 --workers 2
+Restart=always
+RestartSec=3
+# Open file limit (optional)
+LimitNOFILE=65535
+# Logging
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,182 @@
+{
+  "app": {
+    "name": "SoulTribe",
+    "tagline": "Povežite se z ljudmi, ki delijo vaše vrednote",
+    "loading": "Nalaganje...",
+    "error": "Prišlo je do napake",
+    "retry": "Poskusi znova",
+    "submit": "Pošlji",
+    "cancel": "Prekliči",
+    "save": "Shrani",
+    "delete": "Izbriši",
+    "edit": "Uredi",
+    "back": "Nazaj",
+    "next": "Naprej",
+    "previous": "Nazaj",
+    "skip": "Preskoči",
+    "done": "Končano",
+    "search": "Išči",
+    "noResults": "Ni zadetkov",
+    "welcome": "Dobrodošli",
+    "or": "ali",
+    "and": "in",
+    "continue": "Nadaljuj",
+    "createAccount": "Ustvari račun",
+    "login": "Prijava",
+    "logout": "Odjava",
+    "profile": "Profil",
+    "settings": "Nastavitve",
+    "help": "Pomoč",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "privacy": "Zasebnost",
+    "terms": "Pogoji"
+  },
+  "landing": {
+    "hero": {
+      "title": "Pridružite se naši globalni skupnosti",
+      "subtitle": "Povežite se z ljudmi, ki delijo vaše vrednote, interese in strasti. Skupaj lahko gradimo pomembne povezave, ki trajajo.",
+      "cta": "Začnite svojo pot"
+    },
+    "howItWorks": {
+      "title": "Kako deluje",
+      "steps": [
+        {
+          "title": "Ustvarite svoj profil",
+          "description": "Povejte o svojih zanimanjih, vrednotah in tem, kar iščete v skupnosti."
+        },
+        {
+          "title": "Poiščite svoje ljudi",
+          "description": "Naš algoritem vas bo povezal z ljudmi, ki delijo vaše vrednote in interese."
+        },
+        {
+          "title": "Povežite se in rastite",
+          "description": "Začnite pogovore, sodelujte na dogodkih in ustvarjajte trajne povezave."
+        }
+      ]
+    },
+    "features": {
+      "title": "Zakaj se nam pridružiti?",
+      "items": [
+        {
+          "title": "Varna skupnost",
+          "description": "Naša skupnost je zgrajena na spoštovanju, vključevanju in varnosti vsakega člana."
+        },
+        {
+          "title": "Prilagojena izkušnja",
+          "description": "Prejemajte prilagojena priporočila, ki temeljijo na vaših zanimanjih in vrednotah."
+        },
+        {
+          "title": "Globalna povezanost",
+          "description": "Povežite se z ljudmi z vsega sveta, ki delijo vaše strasti."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Vaša zasebnost je naša prednostna naloga",
+      "description": "Varujemo vaše podatke in zagotavljamo varno okolje za vse naše člane.",
+      "learnMore": "Več o naši politiki zasebnosti"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Prijava",
+      "email": "E-pošta",
+      "password": "Geslo",
+      "forgotPassword": "Ste pozabili geslo?",
+      "noAccount": "Nimate računa?",
+      "signUp": "Registrirajte se"
+    },
+    "register": {
+      "title": "Registracija",
+      "name": "Ime in priimek",
+      "email": "E-pošta",
+      "password": "Geslo",
+      "confirmPassword": "Potrdite geslo",
+      "agreeTerms": "Strinjam se s pogoji uporabe"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Urejanje profila",
+      "basicInfo": "Osnovni podatki",
+      "firstName": "Ime",
+      "lastName": "Priimek",
+      "bio": "O meni",
+      "location": "Lokacija",
+      "interests": "Zanimanja"
+    },
+    "view": {
+      "memberSince": "Član od",
+      "lastSeen": "Zadnjič viden",
+      "interests": "Zanimanja"
+    }
+  },
+  "settings": {
+    "title": "Nastavitve",
+    "account": {
+      "title": "Račun",
+      "changeEmail": "Spremeni e-pošto",
+      "changePassword": "Spremeni geslo"
+    },
+    "privacy": {
+      "title": "Zasebnost",
+      "profileVisibility": "Vidnost profila"
+    }
+  },
+  "messaging": {
+    "title": "Sporočila",
+    "newMessage": "Novo sporočilo",
+    "searchUsers": "Išči uporabnike...",
+    "typeMessage": "Vnesite sporočilo...",
+    "send": "Pošlji"
+  },
+  "friends": {
+    "title": "Prijatelji",
+    "allFriends": "Vsi prijatelji",
+    "addFriend": "Dodaj prijatelja",
+    "friendRequests": "Zahteve za prijateljstvo"
+  },
+  "events": {
+    "title": "Dogodki",
+    "upcoming": "Prihajajoči dogodki",
+    "create": "Ustvari dogodek"
+  },
+  "groups": {
+    "title": "Skupine",
+    "discover": "Odkrij skupine",
+    "myGroups": "Moje skupine",
+    "create": "Ustvari skupino"
+  },
+  "search": {
+    "title": "Iskanje",
+    "placeholder": "Išči ljudi, skupine in vsebino...",
+    "noResults": "Ni zadetkov"
+  },
+  "onboarding": {
+    "welcome": "Dobrodošli v SoulTribe",
+    "step1": {
+      "title": "Ustvarite svoj profil",
+      "description": "Dodajte svojo sliko in nekaj besed o sebi."
+    },
+    "step2": {
+      "title": "Izberite svoja zanimanja",
+      "description": "Kaj vam je všeč početi? Izberite svoja zanimanja."
+    },
+    "step3": {
+      "title": "Povežite se z ljudmi",
+      "description": "Začnite pogovor s podobnimi ljudmi."
+    }
+  },
+  "errors": {
+    "required": "To polje je obvezno",
+    "invalidEmail": "Vnesite veljaven e-poštni naslov",
+    "passwordTooShort": "Geslo je prekratko",
+    "passwordsDontMatch": "Gesli se ne ujemata"
+  },
+  "success": {
+    "profileUpdated": "Profil posodobljen",
+    "passwordChanged": "Geslo spremenjeno",
+    "messageSent": "Sporočilo poslano"
+  }
+}

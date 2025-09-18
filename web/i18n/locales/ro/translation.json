@@ -1,0 +1,33 @@
+{
+  "language": { "en": "Engleză", "de": "Germană", "ro": "Română" },
+  "welcome": { "title": "Bine ai venit pe SoulTribe.chat", "subtitle": "Găsește-ți tribul sufletului" },
+  "profile": {
+    "title": "Profilul tău",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "primary_language_label": "Limba principală (pentru interfață)",
+    "other_languages_label": "Alte limbi (pentru potriviri)",
+    "language_input_placeholder": "Tastează pentru a adăuga limbi..."
+  },
+  "dashboard": {
+    "title": "Panou",
+    "availability": "Disponibilitate",
+    "create_slot": "Creează interval",
+    "duration_hours": "Durată (ore)",
+    "meetups": "Întâlniri",
+    "matches": "Potriviri",
+    "overlap_hint": "Apasă pe \"Propune această oră\" pentru a propune o întâlnire pentru acel interval."
+  },
+  "login": {
+    "title": "Bine ai venit",
+    "intro": "Autentifică-te sau creează un cont nou.",
+    "email": "email",
+    "password": "parolă",
+    "display_name": "nume_afişat (pentru înregistrare)",
+    "register": "Înregistrare",
+    "login": "Autentificare",
+    "redirect_hint": "După autentificare vei fi redirecționat la panou.",
+    "go_dashboard": "Mergi la Panou"
+  },
+  "nav": { "dashboard": "Panou", "profile": "Profil", "login": "Autentificare", "logout": "Deconectare" }
+}

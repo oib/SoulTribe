@@ -1,0 +1,33 @@
+{
+  "language": { "en": "Angol", "de": "Német", "hu": "Magyar" },
+  "welcome": { "title": "Üdvözlünk a SoulTribe.chat-en", "subtitle": "Találd meg a lélektárs közösséged" },
+  "profile": {
+    "title": "Profilod",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "primary_language_label": "Elsődleges nyelv (a felülethez)",
+    "other_languages_label": "Egyéb nyelvek (párosításhoz)",
+    "language_input_placeholder": "Írj be a nyelvek hozzáadásához..."
+  },
+  "dashboard": {
+    "title": "Vezérlőpult",
+    "availability": "Elérhetőség",
+    "create_slot": "Idősáv létrehozása",
+    "duration_hours": "Időtartam (órák)",
+    "meetups": "Találkozók",
+    "matches": "Találatok",
+    "overlap_hint": "Kattints a \"Időpont javaslata\" gombra, hogy találkozót javasolj erre az idősávra."
+  },
+  "login": {
+    "title": "Üdvözlet",
+    "intro": "Jelentkezz be vagy regisztrálj új fiókot.",
+    "email": "email",
+    "password": "jelszó",
+    "display_name": "megjelenített_név (regisztrációhoz)",
+    "register": "Regisztráció",
+    "login": "Bejelentkezés",
+    "redirect_hint": "Bejelentkezés után átirányítunk a vezérlőpultra.",
+    "go_dashboard": "Ugrás a vezérlőpultra"
+  },
+  "nav": { "dashboard": "Vezérlőpult", "profile": "Profil", "login": "Bejelentkezés", "logout": "Kijelentkezés" }
+}

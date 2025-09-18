@@ -1,0 +1,94 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Hoş Geldiniz",
+      "subtitle": "SoulTribe.chat, enerjiniz, ruhunuz ve yolculuğunuzla uyumlu insanlarla bağlantı kurmanızı sağlayan bir platformdur. ✨"
+    },
+    "how": {
+      "title": "Nasıl Çalışır?",
+      "step1": "<strong>Profil Oluştur</strong> — doğum tarihi, saati ve yerinizi girerek benzersiz ruh haritanızı oluşturun.",
+      "step2": "<strong>Eşleşmeleri Keşfet</strong> — uyum ve rezonansa dayalı bağlantıları vurguluyoruz.",
+      "step3": "<strong>Sohbeti Başlat</strong> — eşleşmelerinizi sohbete davet edin; güvenli ve özel olarak tasarlandı.",
+      "step4": "<strong>Görüşün (İsteğe Bağlı)</strong> — karşılıklı rıza ile Jitsi görüşmesi veya yüz yüze buluşma planlayın."
+    },
+    "getting_started": {
+      "title": "Başlarken",
+      "step1": "<strong>Hesap Oluştur</strong> — sosyal medya girişi gerekmez.",
+      "step2": "<strong>Profilini Tamamla</strong> — doğum bilgilerini ekle; yaklaşık saat yeterli.",
+      "step3": "<strong>Müsaitlik Zamanlarını Belirle</strong> — yerel zaman aralıkları önerin; UTC dönüşümünü biz hallederiz.",
+      "step4": "<strong>Eşleşmeleri Keşfet</strong> — uyum temelli önerileri inceleyin.",
+      "step5": "<strong>Sohbet Et ve Görüş</strong> — her şey uygulama içinde; hazır olduğunuzda planlayın."
+    },
+    "features": {
+      "title": "Özellikler",
+      "item1": "<strong>Astroloji Tabanlı Eşleştirme</strong> — doğum haritanızı kullanarak bağlantı kurun.",
+      "item2": "<strong>Akıllı Saat Dilimi Yönetimi</strong> — UTC dönüşümlerini biz hallederiz.",
+      "item3": "<strong>Özel, Güvenli Sohbet</strong> — konuşmalar SoulTribe.chat'ta kalır.",
+      "item4": "<strong>İsteğe Bağlı Jitsi Görüntülü Görüşme</strong> — gizlilik dostu, bilgisayara kurulum gerekmez.",
+      "item5": "<strong>Sade, Odaklanmış Arayüz</strong> — anlamlı sohbetler için tasarlandı."
+    },
+    "privacy": {
+      "title": "Gizlilik ve Güvenlik",
+      "item1": "Sadece anlamlı bağlantılar kurmak için gerekli bilgileri istiyoruz.",
+      "item2": "Profil verileriniz reklam ağlarıyla paylaşılmaz veya satılmaz.",
+      "item3": "Kimlerin sizinle iletişime geçebileceğine ve ne zaman daha fazla bilgi paylaşacağınıza siz karar verirsiniz."
+    },
+    "matching": {
+      "title": "Eşleştirme Nasıl Çalışır? (Kısa Versiyon)",
+      "text": "Doğum haritanızdan anahtar ilişki faktörlerini hesaplıyor ve rezonans bulmak için başkalarınınkiyle karşılaştırıyoruz. Genel popülerlik ölçütlerinden ziyade uyum, tamamlayıcılık ve büyüme potansiyeline öncelik veriyoruz."
+    },
+    "protips": {
+      "title": "Uzman İpuçları",
+      "item1": "Daha hızlı bağlantılar için farklı günlerde birkaç müsaitlik zamanı ekleyin.",
+      "item2": "Profilinizde samimi olun — belirli detaylar doğru insanların sizi bulmasına yardımcı olur.",
+      "item3": "Önce rıza, her zaman. Kendi hızınızda ilerleyin."
+    },
+    "next": {
+      "title": "Sonraki Adımlar",
+      "go_dashboard": "Panele Git",
+      "login_register": "Giriş Yap / Kayıt Ol"
+    },
+    "global": {
+      "title": "Küresel Topluluk",
+      "text": "Kendi dilinizi konuşun, dünyaya bağlanın. SoulTribe.chat, nerede olursanız olun ruh kabilelerinizi bir araya getirmek için çoklu dil desteği sunar.",
+      "auto_title": "Otomatik Çeviri",
+      "auto_text": "Tercih ettiğiniz dilde sohbet edin, gerekirse otomatik çeviri ile.",
+      "native_title": "Anadil Desteği",
+      "native_text": "Düzenli güncellemelerle çoklu dilde tam çevirili arayüz.",
+      "tz_title": "Saat Dilimi Duyarlı",
+      "tz_text": "Eşleşmelerinizin ne zaman müsait olduğunu her zaman bilmeniz için otomatik saat dilimi algılama ve dönüştürme.",
+      "select_label": "Dil Seçin:"
+    }
+  },
+  "language": { "en": "İngilizce", "de": "Almanca", "tr": "Türkçe" },
+  "welcome": { "title": "SoulTribe.chat'a hoş geldin", "subtitle": "Ruh kabileini bul" },
+  "profile": {
+    "title": "Profilin",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "primary_language_label": "Birincil dil (arayüz için)",
+    "other_languages_label": "Diğer diller (eşleştirme için)",
+    "language_input_placeholder": "Dilleri eklemek için yaz..."
+  },
+  "dashboard": {
+    "title": "Pano",
+    "availability": "Uygunluk",
+    "create_slot": "Zaman dilimi oluştur",
+    "duration_hours": "Süre (saat)",
+    "meetups": "Buluşmalar",
+    "matches": "Eşleşmeler",
+    "overlap_hint": "Bu zaman için bir buluşma önermek üzere \"Bu zamanı öner\" tıkla."
+  },
+  "login": {
+    "title": "Hoş geldin",
+    "intro": "Mevcut bir hesapla giriş yap veya yeni bir hesap oluştur.",
+    "email": "e-posta",
+    "password": "şifre",
+    "display_name": "görünen_ad (kayıt için)",
+    "register": "Kayıt ol",
+    "login": "Giriş yap",
+    "redirect_hint": "Girişten sonra panoya yönlendirileceksin.",
+    "go_dashboard": "Panoya git"
+  },
+  "nav": { "dashboard": "Pano", "profile": "Profil", "login": "Giriş", "logout": "Çıkış" }
+}

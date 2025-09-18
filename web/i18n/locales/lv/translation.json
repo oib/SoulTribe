@@ -1,0 +1,182 @@
+{
+  "app": {
+    "name": "SoulTribe",
+    "tagline": "Pievienojieties cilvēkiem, kuri dala jūsu vērtības",
+    "loading": "Ielādējas...",
+    "error": "Radās kļūda",
+    "retry": "Mēģināt vēlreiz",
+    "submit": "Iesniegt",
+    "cancel": "Atcelt",
+    "save": "Saglabāt",
+    "delete": "Dzēst",
+    "edit": "Rediģēt",
+    "back": "Atpakaļ",
+    "next": "Nākamais",
+    "previous": "Iepriekšējais",
+    "skip": "Izlaist",
+    "done": "Gatavs",
+    "search": "Meklēt",
+    "noResults": "Nav rezultātu",
+    "welcome": "Laipni lūdzam",
+    "or": "vai",
+    "and": "un",
+    "continue": "Turpināt",
+    "createAccount": "Izveidot kontu",
+    "login": "Pieslēgties",
+    "logout": "Atteikties",
+    "profile": "Profils",
+    "settings": "Iestatījumi",
+    "help": "Palīdzība",
+    "about": "Par mums",
+    "contact": "Kontakti",
+    "privacy": "Privātums",
+    "terms": "Noteikumi"
+  },
+  "landing": {
+    "hero": {
+      "title": "Pievienojieties mūsu globālajai kopienai",
+      "subtitle": "Veidojiet sakarus ar cilvēkiem, kuri dala jūsu vērtības, intereses un aizraušanās. Kopā mēs varam veidot jēgpilnas attiecības, kas saglabājas uz ilgu laiku.",
+      "cta": "Sāciet savu ceļojumu"
+    },
+    "howItWorks": {
+      "title": "Kā tas darbojas",
+      "steps": [
+        {
+          "title": "Izveidojiet savu profilu",
+          "description": "Pastāstiet par savām interesēm, vērtībām un to, ko meklējat kopienā."
+        },
+        {
+          "title": "Atrodiet savus cilvēkus",
+          "description": "Mūsu algoritms jūs savienos ar cilvēkiem, kuri dala jūsu vērtības un intereses."
+        },
+        {
+          "title": "Pievienojieties un attīstieties",
+          "description": "Sāciet sarunas, piedalieties pasākumos un veidojiet ilgtermiņa attiecības."
+        }
+      ]
+    },
+    "features": {
+      "title": "Kāpēc pievienoties?",
+      "items": [
+        {
+          "title": "Droša kopiena",
+          "description": "Mūsu kopiena ir veidota, balstoties uz cieņu, iekļaušanu un katru dalībnieku."
+        },
+        {
+          "title": "Personalizēta pieredze",
+          "description": "Saņemiet pielāgotus ieteikumus, pamatojoties uz jūsu interesēm un vērtībām."
+        },
+        {
+          "title": "Globāla savienojamība",
+          "description": "Saistieties ar cilvēkiem no visas pasaules, kuri dala jūsu aizraušanos."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Jūsu privātums ir mūsu prioritāte",
+      "description": "Mēs aizsargājam jūsu datus un nodrošinām drošu vidi visiem mūsu dalībniekiem.",
+      "learnMore": "Uzziniet vairāk par mūsu privātuma politiku"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Pieslēgšanās",
+      "email": "E-pasts",
+      "password": "Parole",
+      "forgotPassword": "Aizmirsāt paroli?",
+      "noAccount": "Vai jums nav konta?",
+      "signUp": "Reģistrējieties"
+    },
+    "register": {
+      "title": "Reģistrācija",
+      "name": "Vārds un uzvārds",
+      "email": "E-pasts",
+      "password": "Parole",
+      "confirmPassword": "Apstipriniet paroli",
+      "agreeTerms": "Piekrītu lietošanas noteikumiem"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Rediģēt profilu",
+      "basicInfo": "Pamatinformācija",
+      "firstName": "Vārds",
+      "lastName": "Uzvārds",
+      "bio": "Par mani",
+      "location": "Atrašanās vieta",
+      "interests": "Intereses"
+    },
+    "view": {
+      "memberSince": "Dalībnieks kopš",
+      "lastSeen": "Pēdējo reizi redzēts",
+      "interests": "Intereses"
+    }
+  },
+  "settings": {
+    "title": "Iestatījumi",
+    "account": {
+      "title": "Konts",
+      "changeEmail": "Mainīt e-pastu",
+      "changePassword": "Mainīt paroli"
+    },
+    "privacy": {
+      "title": "Privātums",
+      "profileVisibility": "Profila redzamība"
+    }
+  },
+  "messaging": {
+    "title": "Ziņas",
+    "newMessage": "Jauna ziņa",
+    "searchUsers": "Meklēt lietotājus...",
+    "typeMessage": "Rakstiet ziņu...",
+    "send": "Sūtīt"
+  },
+  "friends": {
+    "title": "Draugi",
+    "allFriends": "Visi draugi",
+    "addFriend": "Pievienot draugu",
+    "friendRequests": "Draudzības pieprasījumi"
+  },
+  "events": {
+    "title": "Notikumi",
+    "upcoming": "Gaidāmie notikumi",
+    "create": "Izveidot notikumu"
+  },
+  "groups": {
+    "title": "Grupas",
+    "discover": "Atklājiet grupas",
+    "myGroups": "Manas grupas",
+    "create": "Izveidot grupu"
+  },
+  "search": {
+    "title": "Meklēšana",
+    "placeholder": "Meklēt cilvēkus, grupas un saturu...",
+    "noResults": "Nav rezultātu"
+  },
+  "onboarding": {
+    "welcome": "Laipni lūgti SoulTribe",
+    "step1": {
+      "title": "Izveidojiet savu profilu",
+      "description": "Pievienojiet savu attēlu un dažus vārdus par sevi."
+    },
+    "step2": {
+      "title": "Izvēlieties savas intereses",
+      "description": "Kas jums patīk darīt? Izvēlieties savas intereses."
+    },
+    "step3": {
+      "title": "Pievienojieties cilvēkiem",
+      "description": "Sāciet sarunu ar līdzīgi domājošiem cilvēkiem."
+    }
+  },
+  "errors": {
+    "required": "Šis lauks ir obligāts",
+    "invalidEmail": "Ievadiet derīgu e-pasta adresi",
+    "passwordTooShort": "Parole ir pārāk īsa",
+    "passwordsDontMatch": "Paroles nesakrīt"
+  },
+  "success": {
+    "profileUpdated": "Profils atjaunināts",
+    "passwordChanged": "Parole nomainīta",
+    "messageSent": "Ziņa nosūtīta"
+  }
+}

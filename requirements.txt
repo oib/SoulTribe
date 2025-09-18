@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+argon2-cffi
+pyswisseph
+python-dateutil
+pytz
+sqlmodel
+psycopg2-binary
+python-dotenv
+python-jose
+alembic
+gunicorn
+email-validator
+timezonefinder

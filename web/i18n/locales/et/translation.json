@@ -1,0 +1,182 @@
+{
+  "app": {
+    "name": "SoulTribe",
+    "tagline": "Ühinege inimestega, kellel on sarnased väärtused",
+    "loading": "Laadin...",
+    "error": "Tekkis viga",
+    "retry": "Proovi uuesti",
+    "submit": "Esita",
+    "cancel": "Tühista",
+    "save": "Salvesta",
+    "delete": "Kustuta",
+    "edit": "Muuda",
+    "back": "Tagasi",
+    "next": "Järgmine",
+    "previous": "Eelmine",
+    "skip": "Jäta vahele",
+    "done": "Valmis",
+    "search": "Otsi",
+    "noResults": "Tulemusi ei leitud",
+    "welcome": "Tere tulemast",
+    "or": "või",
+    "and": "ja",
+    "continue": "Jätka",
+    "createAccount": "Loo konto",
+    "login": "Logi sisse",
+    "logout": "Logi välja",
+    "profile": "Profiil",
+    "settings": "Seaded",
+    "help": "Abi",
+    "about": "Meist",
+    "contact": "Kontakt",
+    "privacy": "Privaatsus",
+    "terms": "Tingimused"
+  },
+  "landing": {
+    "hero": {
+      "title": "Ühinege meie globaalse kogukonnaga",
+      "subtitle": "Looge ühendust inimestega, kellel on sarnased väärtused, huvid ja kirged. Koos saame luua tähendusrikkaid suhteid, mis kestavad kaua.",
+      "cta": "Alustage oma teekonda"
+    },
+    "howItWorks": {
+      "title": "Kuidas see töötab",
+      "steps": [
+        {
+          "title": "Looge endale profiil",
+          "description": "Rääkige oma huvidest, väärtustest ja sellest, mida te kogukonnast otsite."
+        },
+        {
+          "title": "Leidke oma inimesed",
+          "description": "Meie algoritm ühendab teid inimestega, kellel on sarnased väärtused ja huvid."
+        },
+        {
+          "title": "Ühinege ja kasvage",
+          "description": "Alustage vestlusi, osalege üritustel ja looge pikaajalisi suhteid."
+        }
+      ]
+    },
+    "features": {
+      "title": "Miks meiega liituda?",
+      "items": [
+        {
+          "title": "Ohutu kogukond",
+          "description": "Meie kogukond on rajatud austusele, kaasamisele ja iga liikme turvalisusele."
+        },
+        {
+          "title": "Personaalne kogemus",
+          "description": "Saage kohandatud soovitusi, mis põhinevad teie huvidel ja väärtustel."
+        },
+        {
+          "title": "Globaalne ühenduvus",
+          "description": "Looge ühendust inimestega üle kogu maailma, kellel on sarnased kirged."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Teie privaatsus on meie prioriteet",
+      "description": "Me kaitseme teie andmeid ja tagame turvalise keskkonna kõigile meie liikmetele.",
+      "learnMore": "Lisateavet meie privaatsuspoliitika kohta"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sisselogimine",
+      "email": "E-post",
+      "password": "Parool",
+      "forgotPassword": "Unustasite parooli?",
+      "noAccount": "Pole veel kontot?",
+      "signUp": "Registreeru"
+    },
+    "register": {
+      "title": "Registreerimine",
+      "name": "Nimi ja perekonnanimi",
+      "email": "E-post",
+      "password": "Parool",
+      "confirmPassword": "Kinnita parool",
+      "agreeTerms": "Nõustun kasutustingimustega"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Profiili muutmine",
+      "basicInfo": "Põhiandmed",
+      "firstName": "Eesnimi",
+      "lastName": "Perekonnanimi",
+      "bio": "Minust",
+      "location": "Asukoht",
+      "interests": "Huvid"
+    },
+    "view": {
+      "memberSince": "Liitus",
+      "lastSeen": "Viimati nähtud",
+      "interests": "Huvid"
+    }
+  },
+  "settings": {
+    "title": "Seaded",
+    "account": {
+      "title": "Konto",
+      "changeEmail": "Muuda e-posti",
+      "changePassword": "Muuda parooli"
+    },
+    "privacy": {
+      "title": "Privaatsus",
+      "profileVisibility": "Profiili nähtavus"
+    }
+  },
+  "messaging": {
+    "title": "Sõnumid",
+    "newMessage": "Uus sõnum",
+    "searchUsers": "Otsi kasutajaid...",
+    "typeMessage": "Sisesta sõnum...",
+    "send": "Saada"
+  },
+  "friends": {
+    "title": "Sõbrad",
+    "allFriends": "Kõik sõbrad",
+    "addFriend": "Lisa sõber",
+    "friendRequests": "Sõprusavaldused"
+  },
+  "events": {
+    "title": "Sündmused",
+    "upcoming": "Tulevased sündmused",
+    "create": "Loo sündmus"
+  },
+  "groups": {
+    "title": "Grupid",
+    "discover": "Avasta gruppe",
+    "myGroups": "Minu grupid",
+    "create": "Loo grupp"
+  },
+  "search": {
+    "title": "Otsing",
+    "placeholder": "Otsi inimesi, gruppe ja sisu...",
+    "noResults": "Tulemusi ei leitud"
+  },
+  "onboarding": {
+    "welcome": "Tere tulemast SoulTribe'i",
+    "step1": {
+      "title": "Loo endale profiil",
+      "description": "Lisa oma pilt ja paar sõna enda kohta."
+    },
+    "step2": {
+      "title": "Vali oma huvid",
+      "description": "Mida sulle meeldib teha? Vali oma huvialad."
+    },
+    "step3": {
+      "title": "Ühine inimestega",
+      "description": "Alusta vestlust sarnaste huvidega inimestega."
+    }
+  },
+  "errors": {
+    "required": "See väli on kohustuslik",
+    "invalidEmail": "Sisesta kehtiv e-posti aadress",
+    "passwordTooShort": "Parool on liiga lühike",
+    "passwordsDontMatch": "Paroolid ei kattu"
+  },
+  "success": {
+    "profileUpdated": "Profiil uuendatud",
+    "passwordChanged": "Parool muudetud",
+    "messageSent": "Sõnum saadetud"
+  }
+}
