@@ -1,182 +1,337 @@
 {
   "app": {
-    "name": "SoulTribe",
-    "tagline": "Prisijunkite prie žmonių, kurie dalijasi jūsų vertybėmis",
-    "loading": "Kraunama...",
-    "error": "Įvyko klaida",
-    "retry": "Bandyti dar kartą",
-    "submit": "Pateikti",
-    "cancel": "Atšaukti",
-    "save": "Išsaugoti",
-    "delete": "Ištrinti",
-    "edit": "Redaguoti",
-    "back": "Atgal",
-    "next": "Kitas",
-    "previous": "Ankstesnis",
-    "skip": "Praleisti",
-    "done": "Baigta",
-    "search": "Ieškoti",
-    "noResults": "Rezultatų nerasta",
-    "welcome": "Sveiki atvykę",
-    "or": "arba",
+    "about": "Apie mus",
     "and": "ir",
+    "back": "Atgal",
+    "cancel": "Atšaukti",
+    "contact": "Kontaktai",
     "continue": "Tęsti",
     "createAccount": "Sukurti paskyrą",
+    "delete": "Ištrinti",
+    "done": "Baigta",
+    "edit": "Redaguoti",
+    "error": "Įvyko klaida",
+    "help": "Pagalba",
+    "loading": "Kraunama...",
     "login": "Prisijungti",
     "logout": "Atsijungti",
-    "profile": "Profilis",
-    "settings": "Nustatymai",
-    "help": "Pagalba",
-    "about": "Apie mus",
-    "contact": "Kontaktai",
+    "name": "SoulTribe",
+    "next": "Kitas",
+    "noResults": "Rezultatų nerasta",
+    "or": "arba",
+    "previous": "Ankstesnis",
     "privacy": "Privatumas",
-    "terms": "Sąlygos"
-  },
-  "landing": {
-    "hero": {
-      "title": "Prisijunkite prie mūsų globalios bendruomenės",
-      "subtitle": "Siekite ryšių su žmonėmis, kurie dalijasi jūsų vertybėmis, interesais ir aistromis.",
-      "cta": "Pradėkite savo kelionę"
-    },
-    "howItWorks": {
-      "title": "Kaip tai veikia",
-      "steps": [
-        {
-          "title": "Sukurkite savo profilį",
-          "description": "Pasisakykite apie savo pomėgius ir vertybes."
-        },
-        {
-          "title": "Susiraskite savus žmones",
-          "description": "Mūsų algoritmas sujungs jus su panašiais žmonėmis."
-        },
-        {
-          "title": "Junkitės ir tobulėkite",
-          "description": "Pradėkite pokalbius ir kurkite ilgalaikius ryšius."
-        }
-      ]
-    },
-    "features": {
-      "title": "Kodėl prisijungti?",
-      "items": [
-        {
-          "title": "Saugi bendruomenė",
-          "description": "Mūsų bendruomenė yra sukurta pagrindžiant pagarba ir saugumu."
-        },
-        {
-          "title": "Individualizuota patirtis",
-          "description": "Gaukite pritaikytas rekomendacijas pagal jūsų pomėgius."
-        },
-        {
-          "title": "Pasaulinis ryšys",
-          "description": "Siekite ryšio su žmonėmis iš viso pasaulio."
-        }
-      ]
-    },
-    "privacy": {
-      "title": "Jūsų privatumas yra mūsų prioritetas",
-      "description": "Mes saugome jūsų duomenis ir užtikriname saugią aplinką.",
-      "learnMore": "Sužinokite daugiau"
-    }
+    "profile": "Profilis",
+    "retry": "Bandyti dar kartą",
+    "save": "Išsaugoti",
+    "search": "Ieškoti",
+    "settings": "Nustatymai",
+    "skip": "Praleisti",
+    "submit": "Pateikti",
+    "tagline": "Prisijunkite prie žmonių, kurie dalijasi jūsų vertybėmis",
+    "terms": "Sąlygos",
+    "welcome": "Sveiki atvykę"
   },
   "auth": {
     "login": {
-      "title": "Prisijungti",
       "email": "El. paštas",
-      "password": "Slaptažodis",
       "forgotPassword": "Pamiršote slaptažodį?",
       "noAccount": "Neturite paskyros?",
-      "signUp": "Užsiregistruokite"
+      "password": "Slaptažodis",
+      "signUp": "Užsiregistruokite",
+      "title": "Prisijungti"
     },
     "register": {
-      "title": "Registracija",
-      "name": "Vardas ir pavardė",
-      "email": "El. paštas",
-      "password": "Slaptažodis",
+      "agreeTerms": "Sutinku su Naudojimo sąlygomis",
       "confirmPassword": "Patvirtinkite slaptažodį",
-      "agreeTerms": "Sutinku su Naudojimo sąlygomis"
-    }
-  },
-  "profile": {
-    "edit": {
-      "title": "Redaguoti profilį",
-      "basicInfo": "Pagrindinė informacija",
-      "firstName": "Vardas",
-      "lastName": "Pavardė",
-      "bio": "Apie mane",
-      "location": "Vieta",
-      "interests": "Pomėgiai"
-    },
-    "view": {
-      "memberSince": "Narys nuo",
-      "lastSeen": "Paskutinį kartą matytas",
-      "interests": "Pomėgiai"
-    }
-  },
-  "settings": {
-    "title": "Nustatymai",
-    "account": {
-      "title": "Paskyra",
-      "changeEmail": "Keisti el. paštą",
-      "changePassword": "Keisti slaptažodį"
-    },
-    "privacy": {
-      "title": "Privatumas",
-      "profileVisibility": "Profilio matomumas"
-    }
-  },
-  "messaging": {
-    "title": "Žinutės",
-    "newMessage": "Nauja žinutė",
-    "searchUsers": "Ieškoti vartotojų...",
-    "typeMessage": "Įrašykite žinutę...",
-    "send": "Siųsti"
-  },
-  "friends": {
-    "title": "Draugai",
-    "allFriends": "Visi draugai",
-    "addFriend": "Pridėti draugą",
-    "friendRequests": "Draugų užklausos"
-  },
-  "events": {
-    "title": "Renginiai",
-    "upcoming": "Būsimi renginiai",
-    "create": "Sukurti renginį"
-  },
-  "groups": {
-    "title": "Grupės",
-    "discover": "Atrasti grupes",
-    "myGroups": "Mano grupės",
-    "create": "Sukurti grupę"
-  },
-  "search": {
-    "title": "Paieška",
-    "placeholder": "Ieškoti žmonių, grupių ir turinio...",
-    "noResults": "Rezultatų nerasta"
-  },
-  "onboarding": {
-    "welcome": "Sveiki atvykę į SoulTribe",
-    "step1": {
-      "title": "Sukurkite savo profilį",
-      "description": "Pridėkite savo nuotrauką ir kelis žodžius apie save."
-    },
-    "step2": {
-      "title": "Pasirinkite savo pomėgius",
-      "description": "Ką jūs mėgstate daryti? Pasirinkite savo pomėgius."
-    },
-    "step3": {
-      "title": "Junkitės prie žmonių",
-      "description": "Pradėkite pokalbį su panašiais žmonėmis."
+      "email": "El. paštas",
+      "name": "Vardas ir pavardė",
+      "password": "Slaptažodis",
+      "title": "Registracija"
     }
   },
   "errors": {
-    "required": "Šis laukas yra privalomas",
     "invalidEmail": "Įveskite galiojantį el. pašto adresą",
     "passwordTooShort": "Slaptažodis per trumpas",
-    "passwordsDontMatch": "Slaptažodžiai nesutampa"
+    "passwordsDontMatch": "Slaptažodžiai nesutampa",
+    "required": "Šis laukas yra privalomas"
+  },
+  "events": {
+    "create": "Sukurti renginį",
+    "title": "Renginiai",
+    "upcoming": "Būsimi renginiai"
+  },
+  "friends": {
+    "addFriend": "Pridėti draugą",
+    "allFriends": "Visi draugai",
+    "friendRequests": "Draugų užklausos",
+    "title": "Draugai"
+  },
+  "groups": {
+    "create": "Sukurti grupę",
+    "discover": "Atrasti grupes",
+    "myGroups": "Mano grupės",
+    "title": "Grupės"
+  },
+  "landing": {
+    "features": {
+      "items": [
+        {
+          "description": "Mūsų bendruomenė yra sukurta pagrindžiant pagarba ir saugumu.",
+          "title": "Saugi bendruomenė"
+        },
+        {
+          "description": "Gaukite pritaikytas rekomendacijas pagal jūsų pomėgius.",
+          "title": "Individualizuota patirtis"
+        },
+        {
+          "description": "Siekite ryšio su žmonėmis iš viso pasaulio.",
+          "title": "Pasaulinis ryšys"
+        }
+      ],
+      "title": "Kodėl prisijungti?",
+      "item1": "<strong>Astrologiją įtraukiantis poravimas</strong> — susisiekite naudodami savo gimimo schemą.",
+      "item2": "<strong>Išmani laiko juostų planuotė</strong> — UTC konvertavimus atliekame mes.",
+      "item3": "<strong>Tiesioginis bendravimas per Jitsi</strong> — tekstas/garso/vaizdo; niekas nėra saugoma ar įrašoma svetainėje SoulTribe.chat.",
+      "item4": "<strong>Paprasta prisijungti per nuorodą</strong> — privatus Jitsi kambarys patvirtintiems susitikimams; gerbiantis privatumą, nereikia darbalaukio diegimo.",
+      "item5": "<strong>Minimalistinė, į tikslą orientuota sąsaja</strong> — sukurta prasmingiems pokalbiams."
+    },
+    "hero": {
+      "cta": "Pradėkite savo kelionę",
+      "subtitle": "Siekite ryšių su žmonėmis, kurie dalijasi jūsų vertybėmis, interesais ir aistromis.",
+      "title": "Prisijunkite prie mūsų globalios bendruomenės"
+    },
+    "howItWorks": {
+      "steps": [
+        {
+          "description": "Pasisakykite apie savo pomėgius ir vertybes.",
+          "title": "Sukurkite savo profilį"
+        },
+        {
+          "description": "Mūsų algoritmas sujungs jus su panašiais žmonėmis.",
+          "title": "Susiraskite savus žmones"
+        },
+        {
+          "description": "Pradėkite pokalbius ir kurkite ilgalaikius ryšius.",
+          "title": "Junkitės ir tobulėkite"
+        }
+      ],
+      "title": "Kaip tai veikia"
+    },
+    "privacy": {
+      "description": "Mes saugome jūsų duomenis ir užtikriname saugią aplinką.",
+      "learnMore": "Sužinokite daugiau",
+      "title": "Jūsų privatumas yra mūsų prioritetas",
+      "item1": "Prašome tik to, kas būtina prasmingiems ryšiams kurti.",
+      "item2": "Jūsų profilio duomenys neparduodami ir nebendrinami su reklamos tinklais.",
+      "item3": "Jūs kontroliuojate, kas gali su jumis susisiekti ir kada atskleisti daugiau."
+    },
+    "page_title": "SoulTribe.chat – Raskite savo sielos bendruomenę",
+    "how": {
+      "title": "Kaip tai veikia",
+      "step1": "<strong>Sukurkite savo profilį</strong> — įveskite gimimo datą, laiką ir vietą, kad sukurtumėte unikalų sielos žemėlapį.",
+      "step2": "<strong>Atraskite atitikmenis</strong> — pabrėžiame ryšius pagal suderinamumą ir rezonansą.",
+      "step3": "<strong>Pradėkite pokalbį</strong> — pakvieskite atitikmenis bendrauti; iš prigimties saugu ir privatu.",
+      "step4": "<strong>Susitikite (neprivaloma)</strong> — suplanuokite Jitsi skambutį ar susitikimą gyvai su abipusiu sutikimu."
+    },
+    "getting_started": {
+      "title": "Pradžia",
+      "step1": "<strong>Sukurkite paskyrą</strong> — socialinis prisijungimas nereikalingas.",
+      "step2": "<strong>Užpildykite profilį</strong> — pridėkite gimimo duomenis; apytikslis laikas tinka.",
+      "step3": "<strong>Nurodykite pasiekiamumą</strong> — pasiūlykite vietinius laiko intervalus; UTC pasirūpinsime mes.",
+      "step4": "<strong>Atraskite atitikmenis</strong> — peržiūrėkite rekomendacijas pagal rezonansą.",
+      "step5": "<strong>Susirašinėkite ir, jei norite, susitikite</strong> — likite programėlėje; planuokite, kai būsite pasiruošę."
+    },
+    "matching": {
+      "title": "Kaip veikia suderinimas (trumpai)",
+      "text": "Apskaičiuojame pagrindinius santykių rodiklius iš jūsų schemos ir lyginame su kitais, kad rastume rezonansą. Pirmenybę teikiame darnai, papildomumui ir augimo potencialui, o ne bendriems populiarumo rodikliams."
+    },
+    "protips": {
+      "title": "Patarimai",
+      "item1": "Pridėkite kelis pasiekiamumo intervalus skirtingomis dienomis, kad greičiau užmegztumėte ryšius.",
+      "item2": "Būkite nuoširdūs pristatyme — konkretumas padeda jus rasti tinkamiems žmonėms.",
+      "item3": "Pirmiausia — sutikimas. Judėkite tokiu tempu, kuris jums tinka."
+    },
+    "next": {
+      "title": "Kiti žingsniai",
+      "go_dashboard": "Eiti į skydelį",
+      "login_register": "Prisijungti / Registruotis"
+    },
+    "global": {
+      "title": "Globali bendruomenė, vietinis laikas",
+      "text": "Bendraukite su panašiai mąstančiais žmonėmis visame pasaulyje su automatiniu laiko juostų konvertavimu.",
+      "auto_title": "Automatinis laiko juostos nustatymas",
+      "auto_text": "Automatiškai nustatome jūsų laiko juostą sklandžiam planavimui.",
+      "native_title": "Gimtosios kalbos palaikymas",
+      "native_text": "Bendraukite pageidaujama kalba su mūsų integruotu vertimu.",
+      "tz_title": "Laiko juostoms jautrus planavimas",
+      "tz_text": "Nebereikia skaičiuoti laiko juostų — visus konvertavimus atliksime mes.",
+      "select_label": "Pasirinkite kalbą:"
+    }
+  },
+  "login": {
+    "confirm_password": "patvirtinkite slaptažodį (registracijai)",
+    "display_name": "rodomas vardas (registracijai)",
+    "email": "el. paštas",
+    "email_not_verified": "El. paštas nepatvirtintas? ",
+    "enter_email_first": "Pirmiausia įveskite savo el. pašto adresą.",
+    "go_dashboard": "Eiti į prietaisų skydelį",
+    "intro": "Prisijunkite su esama paskyra arba užsiregistruokite naują.",
+    "login": "Prisijungti",
+    "login_required": "Reikalingas el. paštas ir slaptažodis.",
+    "page_title": "SoulTribe.chat — Prisijungti / Registruotis",
+    "password": "slaptažodis",
+    "password_mismatch": "Slaptažodžiai nesutampa.",
+    "redirect_hint": "Prisijungę būsite nukreipti į savo prietaisų skydelį.",
+    "register": "Registruotis",
+    "registration_success": "Paskyra sukurta. Prašome patvirtinti savo el. paštą.",
+    "required_fields": "Būtina užpildyti el. paštą, slaptažodį ir rodamą vardą.",
+    "resend_verification": "Išsiųsti patvirtinimo laišką dar kartą",
+    "reset_password": "Atstatyti slaptažodį",
+    "reset_sent": "Jei paskyra su šiuo el. pašto adresu egzistuoja, buvo išsiųstas slaptažodžio atstatymo laiškas.",
+    "title": "Sveiki",
+    "verification_sent": "Jei jūsų el. paštas dar nepatvirtintas, buvo išsiųstas naujas patvirtinimo laiškas."
+  },
+  "messaging": {
+    "newMessage": "Nauja žinutė",
+    "searchUsers": "Ieškoti vartotojų...",
+    "send": "Siųsti",
+    "title": "Žinutės",
+    "typeMessage": "Įrašykite žinutę..."
+  },
+  "nav": {
+    "dashboard": "Prietaisų skydelis",
+    "login": "Prisijungti",
+    "logout": "Atsijungti",
+    "profile": "Profilis",
+    "welcome": "Pradžia",
+    "home": "Pradžia",
+    "discover": "Atrasti",
+    "matches": "Atitikmenys",
+    "messages": "Žinutės"
+  },
+  "profile": {
+    "edit": {
+      "basicInfo": "Pagrindinė informacija",
+      "bio": "Apie mane",
+      "firstName": "Vardas",
+      "interests": "Pomėgiai",
+      "lastName": "Pavardė",
+      "location": "Vieta",
+      "title": "Redaguoti profilį"
+    },
+    "view": {
+      "interests": "Pomėgiai",
+      "lastSeen": "Paskutinį kartą matytas",
+      "memberSince": "Narys nuo"
+    },
+    "title": "Jūsų profilis",
+    "save": "Išsaugoti",
+    "cancel": "Atšaukti",
+    "basic_info": {
+      "legend": "Pagrindinė informacija",
+      "username_label": "Vartotojo vardas",
+      "username_placeholder": "vartotojo vardas"
+    },
+    "languages": {
+      "legend": "Kalbos"
+    },
+    "location": {
+      "legend": "Dabartinė vieta",
+      "city_placeholder": "Dabartinis miestas (automatinis užpildymas)",
+      "use_my_location": "Naudoti mano vietą",
+      "detected_tz_label": "Aptikta laiko juosta:",
+      "detected_tz_hint": "(automatiškai arba pasirinkti)"
+    },
+    "birth": {
+      "legend": "Gimimo informacija (astrologijai)",
+      "date_placeholder": "Gimimo data",
+      "hour_label": "Valanda",
+      "minute_label": "Min.",
+      "place_placeholder": "Gimimo vieta (miestas, šalis)",
+      "detected_tz_label": "Aptikta laiko juosta:",
+      "detected_tz_hint": "(automatiškai)",
+      "lat_placeholder": "Platuma (pvz., 48.2082)",
+      "lon_placeholder": "Ilguma (pvz., 16.3738)",
+      "instructions": "Nustatykite savo gimimo datą ir vietą, kad apskaičiuotume jūsų radix. Jei tikslus laikas nežinomas, palikite laiko lauką tuščią — naudosime vidurdienį."
+    },
+    "note": "Jūsų profilis naudojamas atitikmenims pritaikyti ir laiko juostos rodymui.",
+    "primary_language_label": "Pirminė kalba (naudojama sąsajoje)",
+    "other_languages_label": "Kitos kalbos (naudojama atitikimui)",
+    "language_input_placeholder": "Rašykite norėdami pridėti kalbas..."
+  },
+  "search": {
+    "noResults": "Rezultatų nerasta",
+    "placeholder": "Ieškoti žmonių, grupių ir turinio...",
+    "title": "Paieška"
+  },
+  "settings": {
+    "account": {
+      "changeEmail": "Keisti el. paštą",
+      "changePassword": "Keisti slaptažodį",
+      "title": "Paskyra"
+    },
+    "privacy": {
+      "profileVisibility": "Profilio matomumas",
+      "title": "Privatumas"
+    },
+    "title": "Nustatymai"
   },
   "success": {
-    "profileUpdated": "Profilis atnaujintas",
+    "messageSent": "Žinutė išsiųsta",
     "passwordChanged": "Slaptažodis pakeistas",
-    "messageSent": "Žinutė išsiųsta"
+    "profileUpdated": "Profilis atnaujintas"
+  },
+  "language": {
+    "en": "Anglų",
+    "de": "Vokiečių"
+  },
+  "welcome": {
+    "title": "Sveiki atvykę į SoulTribe.chat",
+    "subtitle": "Raskite savo sielos bendruomenę"
+  },
+  "radix": {
+    "title": "Jūsų Radix",
+    "placeholder": "Jei nustatėte gimimo duomenis, čia bus rodoma jūsų radix peržiūra.",
+    "show_raw_json": "Rodyti neapdorotą JSON"
+  },
+  "ai": {
+    "get_interpretation": "Gauti interpretaciją",
+    "followup_placeholder": "Užduokite papildomą klausimą…",
+    "send": "Siųsti"
+  },
+  "dashboard": {
+    "title": "Prietaisų skydelis",
+    "availability": "Pasiekiamumas",
+    "create_slot": "Sukurti laiko intervalą",
+    "duration_hours": "Trukmė (valandos)",
+    "meetups": "Susitikimai",
+    "matches": "Atitikmenys",
+    "overlap_hint": "Spustelėkite „Pasiūlyti šį laiką“ ties persidengimu, kad pasiūlytumėte susitikimą tam intervalui.",
+    "propose_time": "Pasiūlyti laiką",
+    "generate_ai_comment": "Sugeneruoti DI komentarą",
+    "slot_delete": "Ištrinti",
+    "slot_edit": "Redaguoti",
+    "active_filter_hint": "Rodomi tik per pastarąsias 30 dienų buvę aktyvūs naudotojai."
+  },
+  "imprint": {
+    "title": "Teisinė informacija"
+  },
+  "footer": {
+    "terms": "Sąlygos",
+    "privacy": "Privatumas",
+    "imprint": "Teisinė informacija"
+  },
+  "reset_password": {
+    "title": "Atstatyti slaptažodį",
+    "intro": "Pasirinkite naują slaptažodį savo paskyrai.",
+    "new_password_label": "Naujas slaptažodis",
+    "new_password_placeholder": "naujas slaptažodis",
+    "confirm_password_label": "Patvirtinti naują slaptažodį",
+    "confirm_password_placeholder": "patvirtinti naują slaptažodį",
+    "submit": "Nustatyti naują slaptažodį"
+  },
+  "notifications": {
+    "language_set_to": "Kalba nustatyta į"
   }
 }

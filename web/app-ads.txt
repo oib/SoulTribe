@@ -1,0 +1,20 @@
+# app-ads.txt for SoulTribe.chat
+replacex cdxfvbdhbetfggsxfdbvgdfbsghbdasdasdasdasdadsasdasddasasddasasdasdasdasd
+# IAB Tech Lab Authorized Sellers for Apps
+# Docs: https://iabtechlab.com/app-ads-txt/
+# Purpose: Declare authorized sellers for your mobile apps.
+#
+# FORMAT
+# <ad_system_domain>, <publisher_account_id>, <DIRECT|RESELLER>, <cert_authority_id (optional)>
+#
+# EXAMPLES (uncomment and replace with your own IDs)
+# Google AdMob / Ad Manager
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# AppLovin
+# appLovin.com, YOUR_ACCOUNT_ID, DIRECT
+#
+# Unity Ads
+# unity.com, YOUR_ACCOUNT_ID, RESELLER
+#
+# Add one line per authorized seller. Lines starting with '#' are comments.

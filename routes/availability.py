@@ -199,16 +199,14 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
     print(f"Backend returning: start={slot.start_dt_utc} (tz={getattr(slot.start_dt_utc, 'tzinfo', None)})")
     # Best-effort dual write into availability_once tstzrange table (Postgres)
     try:
-        session.exec(
-            text(
-                """
-                INSERT INTO availability_once (user_id, window_utc)
-                VALUES (:uid, tstzrange(:s, :e, '[)'))
-                ON CONFLICT DO NOTHING
-                """
-            ),
-            {"uid": user_id, "s": s, "e": e},
-        )
+        stmt = text(
+            """
+            INSERT INTO availability_once (user_id, window_utc)
+            VALUES (:uid, tstzrange(:s, :e, '[)'))
+            ON CONFLICT DO NOTHING
+            """
+        ).bindparams(uid=user_id, s=s, e=e)
+        session.exec(stmt)
         session.commit()
     except Exception as ex:
         # Do not fail request if the auxiliary table is missing
@@ -365,15 +363,13 @@ def update_slot(slot_id: int, payload: SlotUpdateIn, session=Depends(get_session
     session.refresh(slot)
     # Best-effort: maintain availability_once range index
     try:
-        session.exec(
-            text(
-                """
-                INSERT INTO availability_once (user_id, window_utc)
-                VALUES (:uid, tstzrange(:s, :e, '[)'))
-                """
-            ),
-            {"uid": user_id, "s": slot.start_dt_utc, "e": slot.end_dt_utc},
-        )
+        stmt2 = text(
+            """
+            INSERT INTO availability_once (user_id, window_utc)
+            VALUES (:uid, tstzrange(:s, :e, '[)'))
+            """
+        ).bindparams(uid=user_id, s=slot.start_dt_utc, e=slot.end_dt_utc)
+        session.exec(stmt2)
         session.commit()
     except Exception as ex:
         print(f"availability_once update skipped: {ex}")

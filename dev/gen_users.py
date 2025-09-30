@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import os
+import sys
 import random
 from datetime import datetime, timedelta, timezone
+
+# Allow importing modules from the repository root when running this script directly
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 
 from argon2 import PasswordHasher
 from dotenv import load_dotenv

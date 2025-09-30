@@ -1,34 +1,187 @@
 {
-  "language": { "en": "Angielski", "de": "Niemiecki", "pl": "Polski" },
-  "welcome": { "title": "Witamy w SoulTribe.chat", "subtitle": "Znajdź swoją bratnią duszę" },
-  "profile": {
-    "title": "Twój profil",
-    "save": "Zapisz",
-    "cancel": "Anuluj",
-    "primary_language_label": "Język główny (dla interfejsu)",
-    "other_languages_label": "Inne języki (do dopasowań)",
-    "language_input_placeholder": "Wpisz, aby dodać języki..."
-  },
   "dashboard": {
-    "title": "Pulpit",
     "availability": "Dostępność",
     "create_slot": "Utwórz slot",
     "duration_hours": "Czas trwania (godziny)",
-    "meetups": "Spotkania",
     "matches": "Dopasowania",
-    "overlap_hint": "Kliknij „Zaproponuj ten czas”, aby zaproponować spotkanie dla tego slotu."
+    "meetups": "Spotkania",
+    "overlap_hint": "Kliknij „Zaproponuj ten czas”, aby zaproponować spotkanie dla tego slotu.",
+    "title": "Pulpit",
+    "propose_time": "Zaproponuj godzinę",
+    "generate_ai_comment": "Wygeneruj komentarz AI",
+    "slot_delete": "Usuń",
+    "slot_edit": "Edytuj",
+    "active_filter_hint": "Wyświetlani są tylko użytkownicy aktywni w ciągu ostatnich 30 dni."
+  },
+  "language": {
+    "de": "Niemiecki",
+    "en": "Angielski",
+    "pl": "Polski"
   },
   "login": {
-    "title": "Witamy",
+    "confirm_password": "potwierdź hasło (do rejestracji)",
+    "display_name": "nazwa wyświetlana (do rejestracji)",
+    "email": "adres email",
+    "email_not_verified": "Email niezweryfikowany? ",
+    "enter_email_first": "Wprowadź najpierw swój adres email.",
+    "go_dashboard": "Przejdź do pulpitu",
     "intro": "Zaloguj się na istniejące konto lub zarejestruj nowe.",
-    "email": "email",
-    "password": "hasło",
-    "display_name": "nazwa_wyświetlana (do rejestracji)",
-    "register": "Zarejestruj się",
     "login": "Zaloguj się",
+    "login_required": "Wymagane są adres email i hasło.",
+    "page_title": "SoulTribe.chat — Logowanie / Rejestracja",
+    "password": "hasło",
+    "password_mismatch": "Hasła nie są identyczne.",
     "redirect_hint": "Po zalogowaniu zostaniesz przekierowany do pulpitu.",
-    "go_dashboard": "Przejdź do pulpitu"
+    "register": "Zarejestruj się",
+    "registration_success": "Konto zostało utworzone. Zweryfikuj swój adres email.",
+    "required_fields": "Wymagane są adres email, hasło i nazwa wyświetlana.",
+    "resend_verification": "Wyślij ponownie email weryfikacyjny",
+    "reset_password": "Zresetuj hasło",
+    "reset_sent": "Jeśli konto z tym adresem email istnieje, wysłaliśmy wiadomość z linkiem do resetowania hasła.",
+    "title": "Witamy",
+    "verification_sent": "Jeśli Twój adres email nie został jeszcze zweryfikowany, wysłaliśmy nowy email weryfikacyjny."
   },
-  "nav": { "dashboard": "Pulpit", "profile": "Profil", "login": "Logowanie", "logout": "Wyloguj" },
-  "notifications": { "language_set_to": "Język ustawiony na" }
+  "nav": {
+    "dashboard": "Pulpit",
+    "login": "Logowanie",
+    "logout": "Wyloguj",
+    "profile": "Profil",
+    "welcome": "Strona główna",
+    "home": "Strona główna",
+    "discover": "Odkrywaj",
+    "matches": "Dopasowania",
+    "messages": "Wiadomości"
+  },
+  "notifications": {
+    "language_set_to": "Język ustawiony na"
+  },
+  "profile": {
+    "cancel": "Anuluj",
+    "language_input_placeholder": "Wpisz, aby dodać języki...",
+    "other_languages_label": "Inne języki (do dopasowań)",
+    "primary_language_label": "Język główny (dla interfejsu)",
+    "save": "Zapisz",
+    "title": "Twój profil",
+    "basic_info": {
+      "legend": "Podstawowe informacje",
+      "username_label": "Nazwa użytkownika",
+      "username_placeholder": "nazwa użytkownika"
+    },
+    "languages": {
+      "legend": "Języki"
+    },
+    "location": {
+      "legend": "Bieżąca lokalizacja",
+      "city_placeholder": "Bieżące miasto (autouzupełnianie)",
+      "use_my_location": "Użyj mojej lokalizacji",
+      "detected_tz_label": "Wykryta strefa czasowa:",
+      "detected_tz_hint": "(automatycznie lub wybierz)"
+    },
+    "birth": {
+      "legend": "Informacje o narodzinach (do astrologii)",
+      "date_placeholder": "Data urodzenia",
+      "hour_label": "Godzina",
+      "minute_label": "Minuta",
+      "place_placeholder": "Miejsce urodzenia (miasto, kraj)",
+      "detected_tz_label": "Wykryta strefa czasowa:",
+      "detected_tz_hint": "(automatycznie)",
+      "lat_placeholder": "Szer. geogr. (np. 48.2082)",
+      "lon_placeholder": "Dł. geogr. (np. 16.3738)",
+      "instructions": "Ustaw datę i miejsce urodzenia, aby obliczyć swój radix. Jeśli nie znasz dokładnej godziny, pozostaw pole czasu puste — użyjemy domyślnie godziny 12:00."
+    },
+    "note": "Twój profil jest używany do personalizacji dopasowań i wyświetlania strefy czasowej."
+  },
+  "welcome": {
+    "subtitle": "Znajdź swoją bratnią duszę",
+    "title": "Witamy w SoulTribe.chat"
+  },
+  "landing": {
+    "page_title": "SoulTribe.chat – Znajdź swoją bratnią społeczność",
+    "hero": {
+      "title": "Witamy",
+      "subtitle": "SoulTribe.chat to przestrzeń stworzona, aby pomóc Ci znaleźć i połączyć się z Twoją bratnią społecznością — ludźmi, którzy rezonują z Twoją energią, duchem i drogą. ✨"
+    },
+    "how": {
+      "title": "Jak to działa",
+      "step1": "<strong>Utwórz swój profil</strong> — podaj datę, godzinę i miejsce urodzenia, aby wygenerować unikalną mapę duszy.",
+      "step2": "<strong>Odkryj dopasowania</strong> — podkreślamy połączenia na podstawie kompatybilności i rezonansu.",
+      "step3": "<strong>Rozpocznij rozmowę</strong> — zaproś dopasowania do czatu; bezpiecznie i prywatnie z założenia.",
+      "step4": "<strong>Spotkaj się (opcjonalnie)</strong> — umów rozmowę Jitsi lub spotkanie na żywo za obopólną zgodą."
+    },
+    "getting_started": {
+      "title": "Pierwsze kroki",
+      "step1": "<strong>Utwórz konto</strong> — logowanie przez media społecznościowe nie jest wymagane.",
+      "step2": "<strong>Uzupełnij profil</strong> — dodaj dane urodzenia; przybliżona godzina jest w porządku.",
+      "step3": "<strong>Ustaw swoją dostępność</strong> — zaproponuj lokalne przedziały czasowe; konwersje UTC bierzemy na siebie.",
+      "step4": "<strong>Odkryj dopasowania</strong> — przeglądaj propozycje oparte na rezonansie.",
+      "step5": "<strong>Czatuj i ewentualnie spotkaj się</strong> — pozostań w aplikacji; zaplanuj, gdy będziesz gotowy/a."
+    },
+    "features": {
+      "title": "Funkcje",
+      "item1": "<strong>Dopasowanie z uwzględnieniem astrologii</strong> — łącz się na podstawie swojego kosmogramu.",
+      "item2": "<strong>Inteligentne planowanie stref czasowych</strong> — dokonujemy konwersji UTC za Ciebie.",
+      "item3": "<strong>Bezpośrednia komunikacja przez Jitsi</strong> — tekst/głos/wideo; nic nie jest przechowywane ani nagrywane na SoulTribe.chat.",
+      "item4": "<strong>Łatwe dołączenie przez link</strong> — prywatny pokój Jitsi dla potwierdzonych spotkań; przyjazne prywatności, bez instalacji na komputerze.",
+      "item5": "<strong>Minimalistyczny, skupiony interfejs</strong> — zaprojektowany do wartościowych rozmów."
+    },
+    "privacy": {
+      "title": "Prywatność i bezpieczeństwo",
+      "item1": "Pytamy tylko o to, co niezbędne do umożliwienia głębokich połączeń.",
+      "item2": "Szczegóły Twojego profilu nie są sprzedawane ani udostępniane sieciom reklamowym.",
+      "item3": "Ty decydujesz, kto może się z Tobą kontaktować i kiedy udostępnić więcej."
+    },
+    "matching": {
+      "title": "Jak działa dopasowanie (w skrócie)",
+      "text": "Obliczamy kluczowe wskaźniki relacyjne z Twojego kosmogramu i porównujemy je z innymi, aby znaleźć rezonans. Priorytetem są harmonia, komplementarność i potencjał rozwoju zamiast ogólnych miar popularności."
+    },
+    "protips": {
+      "title": "Wskazówki",
+      "item1": "Dodaj kilka przedziałów dostępności w różnych dniach, aby szybciej się łączyć.",
+      "item2": "Bądź autentyczny/a w opisie — konkretne informacje pomagają właściwym osobom Cię znaleźć.",
+      "item3": "Zgoda przede wszystkim. Działaj w tempie, które jest dla Ciebie odpowiednie."
+    },
+    "next": {
+      "title": "Następne kroki",
+      "go_dashboard": "Przejdź do pulpitu",
+      "login_register": "Zaloguj / Zarejestruj"
+    },
+    "global": {
+      "title": "Globalna społeczność, lokalny czas",
+      "text": "Łącz się z podobnie myślącymi ludźmi na całym świecie dzięki automatycznej konwersji stref czasowych.",
+      "auto_title": "Automatyczne wykrywanie strefy czasowej",
+      "auto_text": "Automatycznie wykrywamy Twoją strefę czasową dla płynnego planowania.",
+      "native_title": "Wsparcie języka ojczystego",
+      "native_text": "Rozmawiaj w preferowanym języku z wbudowanym tłumaczeniem.",
+      "tz_title": "Planowanie świadome stref czasowych",
+      "tz_text": "Koniec z matematyką stref czasowych — konwersje wykonujemy za Ciebie.",
+      "select_label": "Wybierz język:"
+    }
+  },
+  "radix": {
+    "title": "Twój Radix",
+    "placeholder": "Jeśli ustawiłeś/aś dane urodzenia, tutaj pojawi się podgląd Twojego radixu.",
+    "show_raw_json": "Pokaż surowy JSON"
+  },
+  "ai": {
+    "get_interpretation": "Uzyskaj interpretację",
+    "followup_placeholder": "Zadaj pytanie uzupełniające…",
+    "send": "Wyślij"
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Warunki",
+    "privacy": "Prywatność",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Zresetuj hasło",
+    "intro": "Wybierz nowe hasło dla swojego konta.",
+    "new_password_label": "Nowe hasło",
+    "new_password_placeholder": "nowe hasło",
+    "confirm_password_label": "Potwierdź nowe hasło",
+    "confirm_password_placeholder": "potwierdź nowe hasło",
+    "submit": "Ustaw nowe hasło"
+  }
 }

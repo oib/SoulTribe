@@ -1,109 +1,187 @@
 {
+  "ai": {
+    "followup_placeholder": "Haz una pregunta de seguimiento…",
+    "get_interpretation": "Obtener interpretación",
+    "send": "Enviar"
+  },
+  "dashboard": {
+    "availability": "Disponibilidad",
+    "create_slot": "Crear franja",
+    "duration_hours": "Duración (horas)",
+    "matches": "Coincidencias",
+    "meetups": "Quedadas",
+    "overlap_hint": "Haz clic en “Proponer esta hora” para proponer una quedada para esa franja.",
+    "propose_time": "Proponer hora",
+    "generate_ai_comment": "Generar comentario IA",
+    "slot_delete": "Eliminar",
+    "slot_edit": "Editar",
+    "title": "Panel",
+    "active_filter_hint": "Solo se muestran los usuarios activos en los últimos 30 días."
+  },
+  "footer": {
+    "imprint": "Aviso legal",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "imprint": {
+    "title": "Aviso legal"
+  },
   "landing": {
-    "hero": {
-      "title": "Bienvenido/a",
-      "subtitle": "SoulTribe.chat es un espacio creado para ayudarte a encontrar y conectar con tu tribu del alma — personas que resuenan con tu energía, tu espíritu y tu viaje. ✨"
-    },
-    "how": {
-      "title": "Cómo funciona",
-      "step1": "<strong>Crea tu perfil</strong> — ingresa tu fecha, hora y lugar de nacimiento para generar tu mapa del alma único.",
-      "step2": "<strong>Descubre tus coincidencias</strong> — destacamos conexiones basadas en compatibilidad y resonancia.",
-      "step3": "<strong>Inicia la conversación</strong> — invita a tus coincidencias a chatear; seguro y privado por diseño.",
-      "step4": "<strong>Reúnanse (opcional)</strong> — programa una videollamada por Jitsi o una cita en persona con consentimiento mutuo."
+    "features": {
+      "item1": "<strong>Emparejamiento astrológico</strong> — conéctate usando tu carta natal.",
+      "item2": "<strong>Planificación inteligente de zonas horarias</strong> — nosotros manejamos las conversiones UTC por ti.",
+      "item3": "<strong>Comunicación directa vía Jitsi</strong> — texto/audio/vídeo; nada se almacena ni se graba en SoulTribe.chat.",
+      "item4": "<strong>Acceso fácil por enlace</strong> — sala privada de Jitsi para encuentros confirmados; respetuosa con la privacidad, sin instalación en escritorio.",
+      "item5": "<strong>Interfaz minimalista y enfocada</strong> — diseñada para conversaciones significativas.",
+      "title": "Características"
     },
     "getting_started": {
-      "title": "Empezar",
       "step1": "<strong>Crea tu cuenta</strong> — no se requieren inicios de sesión con redes sociales.",
       "step2": "<strong>Completa tu perfil</strong> — añade los detalles de nacimiento; la hora aproximada es suficiente.",
       "step3": "<strong>Establece tu disponibilidad</strong> — propone franjas horarias locales; nosotros nos encargamos de la conversión UTC.",
       "step4": "<strong>Descubre coincidencias</strong> — explora sugerencias basadas en la resonancia.",
-      "step5": "<strong>Chatea y reúnete</strong> — todo dentro de la aplicación; programa cuando estés listo/a."
-    },
-    "features": {
-      "title": "Características",
-      "item1": "<strong>Emparejamiento astrológico</strong> — conéctate usando tu carta natal.",
-      "item2": "<strong>Planificación inteligente de zonas horarias</strong> — nosotros manejamos las conversiones UTC por ti.",
-      "item3": "<strong>Chat privado y seguro</strong> — las conversaciones se mantienen en SoulTribe.chat.",
-      "item4": "<strong>Vídeo opcional vía Jitsi</strong> — respetuoso con la privacidad, sin necesidad de instalación en escritorio.",
-      "item5": "<strong>Interfaz minimalista y enfocada</strong> — diseñada para conversaciones significativas."
-    },
-    "privacy": {
-      "title": "Privacidad y seguridad",
-      "item1": "Solo pedimos lo necesario para permitir conexiones significativas.",
-      "item2": "Los detalles de tu perfil no se venden ni comparten con redes publicitarias.",
-      "item3": "Tú controlas quién puede contactarte y cuándo compartir más información."
-    },
-    "matching": {
-      "title": "Cómo funciona el emparejamiento (versión corta)",
-      "text": "Calculamos indicadores relacionales clave de tu carta astral y los comparamos con los de otros para encontrar resonancia. Priorizamos la armonía, la complementariedad y el potencial de crecimiento sobre métricas genéricas de popularidad."
-    },
-    "protips": {
-      "title": "Consejos profesionales",
-      "item1": "Añade algunas franjas de disponibilidad en diferentes días para conexiones más rápidas.",
-      "item2": "Sé auténtico/a en tu presentación — los detalles específicos ayudan a que las personas adecuadas te encuentren.",
-      "item3": "El consentimiento primero, siempre. Avanza al ritmo que te resulte cómodo."
-    },
-    "next": {
-      "title": "Próximos pasos",
-      "go_dashboard": "Ir al panel de control",
-      "login_register": "Iniciar sesión / Registrarse"
+      "step5": "<strong>Chatea y reúnete</strong> — todo dentro de la aplicación; programa cuando estés listo/a.",
+      "title": "Empezar"
     },
     "global": {
-      "title": "Comunidad global",
-      "text": "Habla tu idioma, conéctate con el mundo. SoulTribe.chat admite múltiples idiomas para acercar a tu tribu del alma, sin importar de dónde seas.",
-      "auto_title": "Traducción automática",
       "auto_text": "Chatea con tus coincidencias en tu idioma preferido, con traducción automática cuando sea necesario.",
-      "native_title": "Soporte multilingüe",
+      "auto_title": "Traducción automática",
       "native_text": "Interfaz completamente traducida a múltiples idiomas, con adiciones regulares.",
-      "tz_title": "Conciencia de zona horaria",
+      "native_title": "Soporte multilingüe",
+      "select_label": "Seleccionar idioma:",
+      "text": "Habla tu idioma, conéctate con el mundo. SoulTribe.chat admite múltiples idiomas para acercar a tu tribu del alma, sin importar de dónde seas.",
+      "title": "Comunidad global",
       "tz_text": "Detección y conversión automática de zonas horarias, para que siempre sepas cuándo están disponibles tus coincidencias.",
-      "select_label": "Seleccionar idioma:"
-    }
+      "tz_title": "Conciencia de zona horaria"
+    },
+    "hero": {
+      "subtitle": "SoulTribe.chat es un espacio creado para ayudarte a encontrar y conectar con tu tribu del alma — personas que resuenan con tu energía, tu espíritu y tu viaje. ✨",
+      "title": "Bienvenido/a"
+    },
+    "how": {
+      "step1": "<strong>Crea tu perfil</strong> — ingresa tu fecha, hora y lugar de nacimiento para generar tu mapa del alma único.",
+      "step2": "<strong>Descubre tus coincidencias</strong> — destacamos conexiones basadas en compatibilidad y resonancia.",
+      "step3": "<strong>Inicia la conversación</strong> — invita a tus coincidencias a chatear; seguro y privado por diseño.",
+      "step4": "<strong>Reúnanse (opcional)</strong> — programa una videollamada por Jitsi o una cita en persona con consentimiento mutuo.",
+      "title": "Cómo funciona"
+    },
+    "matching": {
+      "text": "Calculamos indicadores relacionales clave de tu carta astral y los comparamos con los de otros para encontrar resonancia. Priorizamos la armonía, la complementariedad y el potencial de crecimiento sobre métricas genéricas de popularidad.",
+      "title": "Cómo funciona el emparejamiento (versión corta)"
+    },
+    "next": {
+      "go_dashboard": "Ir al panel de control",
+      "login_register": "Iniciar sesión / Registrarse",
+      "title": "Próximos pasos"
+    },
+    "privacy": {
+      "item1": "Solo pedimos lo necesario para permitir conexiones significativas.",
+      "item2": "Los detalles de tu perfil no se venden ni comparten con redes publicitarias.",
+      "item3": "Tú controlas quién puede contactarte y cuándo compartir más información.",
+      "title": "Privacidad y seguridad"
+    },
+    "protips": {
+      "item1": "Añade algunas franjas de disponibilidad en diferentes días para conexiones más rápidas.",
+      "item2": "Sé auténtico/a en tu presentación — los detalles específicos ayudan a que las personas adecuadas te encuentren.",
+      "item3": "El consentimiento primero, siempre. Avanza al ritmo que te resulte cómodo.",
+      "title": "Consejos profesionales"
+    },
+    "page_title": "SoulTribe.chat – Encuentra tu tribu del alma"
   },
-  "language": { "en": "Inglés", "de": "Alemán", "es": "Español" },
-  "welcome": { "title": "Bienvenido a SoulTribe.chat", "subtitle": "Encuentra tu tribu del alma" },
-  "profile": {
-    "title": "Tu perfil",
-    "save": "Guardar",
-    "cancel": "Cancelar",
-    "primary_language_label": "Idioma principal (para la interfaz)",
-    "other_languages_label": "Otros idiomas (para emparejar)",
-    "language_input_placeholder": "Escribe para añadir idiomas..."
-  },
-  "dashboard": {
-    "title": "Panel",
-    "availability": "Disponibilidad",
-    "create_slot": "Crear franja",
-    "duration_hours": "Duración (horas)",
-    "meetups": "Quedadas",
-    "matches": "Coincidencias",
-    "overlap_hint": "Haz clic en “Proponer esta hora” para proponer una quedada para esa franja."
+  "language": {
+    "de": "Alemán",
+    "en": "Inglés",
+    "es": "Español"
   },
   "login": {
-    "title": "Bienvenido",
+    "confirm_password": "confirmar contraseña (para registro)",
+    "display_name": "nombre mostrado (para registro)",
+    "email": "correo electrónico",
+    "email_not_verified": "¿Correo no verificado? ",
+    "enter_email_first": "Por favor, introduce tu dirección de correo electrónico primero.",
+    "go_dashboard": "Ir al panel",
     "intro": "Inicia sesión con una cuenta existente o regístrate.",
-    "email": "correo",
+    "login": "Iniciar sesión",
+    "login_required": "Se requieren correo electrónico y contraseña.",
+    "page_title": "SoulTribe.chat — Iniciar sesión / Registrarse",
     "password": "contraseña",
-    "display_name": "nombre_mostrado (para registro)",
-    "register": "Registrarse",
-    "login": "Entrar",
+    "password_mismatch": "Las contraseñas no coinciden.",
     "redirect_hint": "Después de iniciar sesión serás redirigido a tu panel.",
-    "go_dashboard": "Ir al panel"
+    "register": "Registrarse",
+    "registration_success": "Cuenta creada. Por favor, verifica tu correo electrónico.",
+    "required_fields": "Se requieren correo electrónico, contraseña y nombre mostrado.",
+    "resend_verification": "Reenviar correo de verificación",
+    "reset_password": "Restablecer contraseña",
+    "reset_sent": "Si existe una cuenta con este correo, se ha enviado un correo para restablecer la contraseña.",
+    "title": "Bienvenido/a",
+    "verification_sent": "Si tu correo aún no está verificado, se ha enviado un nuevo correo de verificación."
   },
-  "nav": { "dashboard": "Panel", "profile": "Perfil", "login": "Entrar", "logout": "Salir", "welcome": "Welcome" }
-,
-  "imprint": { "title": "Imprint" },
-  "footer": { "terms": "Terms", "privacy": "Privacy", "imprint": "Imprint" },
+  "nav": {
+    "dashboard": "Panel",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "profile": "Perfil",
+    "welcome": "Inicio",
+    "home": "Inicio",
+    "discover": "Descubrir",
+    "matches": "Coincidencias",
+    "messages": "Mensajes"
+  },
+  "notifications": {
+    "language_set_to": "Idioma establecido a"
+  },
+  "profile": {
+    "cancel": "Cancelar",
+    "language_input_placeholder": "Escribe para añadir idiomas...",
+    "other_languages_label": "Otros idiomas (para emparejar)",
+    "primary_language_label": "Idioma principal (para la interfaz)",
+    "save": "Guardar",
+    "title": "Tu perfil",
+    "basic_info": {
+      "legend": "Información básica",
+      "username_label": "Nombre de usuario",
+      "username_placeholder": "nombre de usuario"
+    },
+    "languages": {
+      "legend": "Idiomas"
+    },
+    "location": {
+      "legend": "Ubicación actual",
+      "city_placeholder": "Ciudad actual (autocompletar)",
+      "use_my_location": "Usar mi ubicación",
+      "detected_tz_label": "Zona horaria detectada:",
+      "detected_tz_hint": "(automática o seleccionar)"
+    },
+    "birth": {
+      "legend": "Información de nacimiento (para Astrología)",
+      "date_placeholder": "Fecha de nacimiento",
+      "hour_label": "Hora",
+      "minute_label": "Minuto",
+      "place_placeholder": "Lugar de nacimiento (ciudad, país)",
+      "detected_tz_label": "Zona horaria detectada:",
+      "detected_tz_hint": "(automática)",
+      "lat_placeholder": "Latitud (p. ej., 48.2082)",
+      "lon_placeholder": "Longitud (p. ej., 16.3738)",
+      "instructions": "Establece tu fecha y lugar de nacimiento para calcular tu radix. Si no conoces la hora exacta, deja el campo de hora vacío y usaremos el mediodía por defecto."
+    },
+    "note": "Tu perfil se utiliza para personalizar coincidencias y mostrar la zona horaria."
+  },
+  "radix": {
+    "placeholder": "Si has configurado tus datos de nacimiento, aquí aparecerá una vista previa de tu radix.",
+    "show_raw_json": "Mostrar JSON sin procesar",
+    "title": "Tu Radix"
+  },
   "reset_password": {
-    "title": "Reset Password",
-    "intro": "Choose a new password for your account.",
-    "new_password_label": "New password",
-    "new_password_placeholder": "new password",
-    "confirm_password_label": "Confirm new password",
-    "confirm_password_placeholder": "confirm new password",
-    "submit": "Set new password"
+    "confirm_password_label": "Confirmar nueva contraseña",
+    "confirm_password_placeholder": "confirmar nueva contraseña",
+    "intro": "Elige una nueva contraseña para tu cuenta.",
+    "new_password_label": "Nueva contraseña",
+    "new_password_placeholder": "nueva contraseña",
+    "submit": "Establecer nueva contraseña",
+    "title": "Restablecer contraseña"
   },
-  "radix": {"title":"Your Radix","placeholder":"If you have set your birth data, your radix snapshot will appear here.","show_raw_json":"Show raw JSON"},
-  "ai": {"get_interpretation":"Get Interpretation","followup_placeholder":"Ask a follow-up…","send":"Send"},
-  "notifications": { "language_set_to": "Idioma establecido a" }
+  "welcome": {
+    "subtitle": "Encuentra tu tribu del alma",
+    "title": "Bienvenido a SoulTribe.chat"
+  }
 }

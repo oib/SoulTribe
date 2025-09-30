@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SoulTribe.chat — Login / Register</title>
+  <title data-i18n="login.page_title">SoulTribe.chat — Login / Register</title>
   <link rel="stylesheet" href="/theme.css" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/login.css" />
   <link rel="stylesheet" href="/mobile.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   
+
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
 </head>
 <body>
-  <div class="topbar">
-    <div class="brand"><a href="/" class="link-unstyled">SoulTribe.chat</a></div>
-    <div class="actions">
-      <a class="button secondary" href="/">Welcome</a>
-      <a class="button" href="/dashboard.html">Dashboard</a>
-    </div>
-  </div>
+  <!-- Navigation will be loaded here by components.js -->
+  <div data-component="navbar"></div>
+  
+  
 
   <div class="container">
     <section class="card">
@@ -33,12 +33,16 @@
           <label class="visually-hidden" for="password">Password</label>
           <input id="password" name="password" placeholder="password" data-i18n-placeholder="login.password" type="password" autocomplete="current-password" />
           <label class="visually-hidden" for="passwordConfirm">Confirm password</label>
-          <input id="passwordConfirm" name="password_confirm" placeholder="confirm password (for register)" type="password" autocomplete="new-password" />
+          <input id="passwordConfirm" name="password_confirm" placeholder="confirm password (for register)" data-i18n-placeholder="login.confirm_password" type="password" autocomplete="new-password" />
         </div>
         <div class="form-actions">
           <button type="button" id="btn-register" data-i18n="login.register">Register</button>
           <button type="submit" id="btn-login" data-i18n="login.login">Login</button>
-          <button type="button" id="btn-reset-request">Reset Password</button>
+          <button type="button" id="btn-reset-request" data-i18n="login.reset_password">Reset Password</button>
+          <div id="resend-verification-container" class="hidden">
+            <span data-i18n="login.email_not_verified">Email not verified? </span>
+            <a href="#" id="btn-resend-verification" data-i18n="login.resend_verification">Resend verification email</a>
+          </div>
         </div>
       </form>
       <div class="row muted" data-i18n="login.redirect_hint">After login you will be redirected to your dashboard.</div>
@@ -48,6 +52,7 @@
 
   <script src="/app.js"></script>
   <script src="/i18n/i18n.js"></script>
+  <script src="/js/components.js"></script>
   <script src="/login.js"></script>
   <script>
     // Redirect to dashboard if already logged in
@@ -76,5 +81,7 @@
       } catch {}
     }, 300);
   </script>
+  <!-- Footer will be loaded here by components.js -->
+  <div data-component="footer"></div>
 </body>
 </html>

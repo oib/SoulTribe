@@ -21,6 +21,7 @@ class ProfileOut(BaseModel):
     user_id: int
     display_name: Optional[str]
     birth_dt_utc: Optional[datetime]
+    birth_dt_local: Optional[str]
     birth_time_known: bool
     birth_place_name: Optional[str]
     birth_lat: Optional[float]

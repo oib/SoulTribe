@@ -1,94 +1,187 @@
 {
+  "dashboard": {
+    "availability": "Dostupnost",
+    "create_slot": "Vytvořit slot",
+    "duration_hours": "Doba trvání (hodiny)",
+    "matches": "Shody",
+    "meetups": "Setkání",
+    "overlap_hint": "Klikni na \"Navrhnout tento čas\" pro návrh setkání v daném slotu.",
+    "title": "Přehled",
+    "propose_time": "Navrhnout čas",
+    "generate_ai_comment": "Vygenerovat komentář AI",
+    "slot_delete": "Smazat",
+    "slot_edit": "Upravit",
+    "active_filter_hint": "Zobrazují se pouze uživatelé, kteří byli aktivní za posledních 30 dní."
+  },
   "landing": {
-    "hero": {
-      "title": "Vítejte",
-      "subtitle": "SoulTribe.chat je prostor vytvořený k tomu, abyste našli a spojili se se svou duševní komunitou — lidmi, kteří rezonují s vaší energií, duchem a cestou. ✨"
-    },
-    "how": {
-      "title": "Jak to funguje",
-      "step1": "<strong>Vytvořte si profil</strong> — zadejte datum, čas a místo narození pro vygenerování vaší jedinečné duševní mapy.",
-      "step2": "<strong>Objevte své shody</strong> — zvýrazňujeme spojení založená na kompatibilitě a rezonanci.",
-      "step3": "<strong>Začněte konverzaci</strong> — pozvěte shody k chatování; bezpečně a diskrétně.",
-      "step4": "<strong>Setkejte se (volitelně)</strong> — domluvte si Jitsi hovor nebo osobní setkání po vzájemném souhlasu."
+    "features": {
+      "item1": "<strong>Astrologické párování</strong> — spojte se pomocí svého nativního horoskopu.",
+      "item2": "<strong>Chytré řízení časových pásem</strong> — my se postaráme o převody UTC za vás.",
+      "item3": "<strong>Přímá komunikace přes Jitsi</strong> — text/hlas/video; na SoulTribe.chat se nic neukládá ani nenahrává.",
+      "item4": "<strong>Snadné připojení odkazem</strong> — soukromá místnost Jitsi pro potvrzené schůzky; ohleduplné k soukromí, bez instalace na desktopu.",
+      "item5": "<strong>Minimalistické, přehledné rozhraní</strong> — navrženo pro smysluplné rozhovory.",
+      "title": "Funkce"
     },
     "getting_started": {
-      "title": "Začínáme",
       "step1": "<strong>Vytvořte si účet</strong> — není nutné přihlašování přes sociální sítě.",
       "step2": "<strong>Dokončete svůj profil</strong> — přidejte údaje o narození; postačí přibližný čas.",
       "step3": "<strong>Nastavte svou dostupnost</strong> — navrhněte místní časové sloty; my se postaráme o převod UTC.",
       "step4": "<strong>Objevte shody</strong> — procházejte návrhy založené na rezonanci.",
-      "step5": "<strong>Povídejte si a potkávejte se</strong> — vše v rámci aplikace; plánujte, až budete připraveni."
-    },
-    "features": {
-      "title": "Funkce",
-      "item1": "<strong>Astrologické párování</strong> — spojte se pomocí svého nativního horoskopu.",
-      "item2": "<strong>Chytré řízení časových pásem</strong> — my se postaráme o převody UTC za vás.",
-      "item3": "<strong>Soukromý, bezpečný chat</strong> — konverzace zůstávají na SoulTribe.chat.",
-      "item4": "<strong>Volitelné video přes Jitsi</strong> — diskrétní, nevyžaduje instalaci na počítači.",
-      "item5": "<strong>Minimalistické, přehledné rozhraní</strong> — navrženo pro smysluplné rozhovory."
-    },
-    "privacy": {
-      "title": "Soukromí a bezpečnost",
-      "item1": "Žádáme pouze informace nezbytné k navázání smysluplných spojení.",
-      "item2": "Vaše profilové údaje nejsou prodávány ani sdíleny s reklamními sítěmi.",
-      "item3": "Máte kontrolu nad tím, kdo vás může kontaktovat a kdy odhalit více informací."
-    },
-    "matching": {
-      "title": "Jak funguje párování (zkrácená verze)",
-      "text": "Vypočítáváme klíčové vztahové faktory z vaší nativní mapy a porovnáváme je s ostatními, abychom našli rezonanci. Upřednostňujeme harmonii, vzájemné doplňování a růstový potenciál před obecnými měřítky popularity."
-    },
-    "protips": {
-      "title": "Profesionální tipy",
-      "item1": "Přidejte několik časových slotů v různých dnech pro rychlejší spojení.",
-      "item2": "Buďte ve svém představení upřímní — konkrétní detaily pomáhají správným lidem vás najít.",
-      "item3": "Souhlas je na prvním místě, vždy. Postupujte svým vlastním tempem."
-    },
-    "next": {
-      "title": "Další kroky",
-      "go_dashboard": "Přejít na přehled",
-      "login_register": "Přihlásit se / Registrovat"
+      "step5": "<strong>Povídejte si a potkávejte se</strong> — vše v rámci aplikace; plánujte, až budete připraveni.",
+      "title": "Začínáme"
     },
     "global": {
-      "title": "Globální komunita",
-      "text": "Mluvte svým jazykem, spojte se se světem. SoulTribe.chat podporuje více jazyků, abyste mohli najít svou duševní komunitu, ať jste kdekoli.",
-      "auto_title": "Automatický překlad",
       "auto_text": "Chatujte se svými shodami v preferovaném jazyce s automatickým překladem, když je potřeba.",
-      "native_title": "Podpora rodného jazyka",
+      "auto_title": "Automatický překlad",
       "native_text": "Plně přeložené rozhraní do více jazyků s pravidelnými aktualizacemi.",
-      "tz_title": "Respekt k časovým pásmům",
+      "native_title": "Podpora rodného jazyka",
+      "select_label": "Vyberte jazyk:",
+      "text": "Mluvte svým jazykem, spojte se se světem. SoulTribe.chat podporuje více jazyků, abyste mohli najít svou duševní komunitu, ať jste kdekoli.",
+      "title": "Globální komunita",
       "tz_text": "Automatická detekce a konverze časových pásem, abyste vždy věděli, kdy jsou vaše shody dostupné.",
-      "select_label": "Vyberte jazyk:"
-    }
+      "tz_title": "Respekt k časovým pásmům"
+    },
+    "hero": {
+      "subtitle": "SoulTribe.chat je prostor vytvořený k tomu, abyste našli a spojili se se svou duševní komunitou — lidmi, kteří rezonují s vaší energií, duchem a cestou. ✨",
+      "title": "Vítejte"
+    },
+    "how": {
+      "step1": "<strong>Vytvořte si profil</strong> — zadejte datum, čas a místo narození pro vygenerování vaší jedinečné duševní mapy.",
+      "step2": "<strong>Objevte své shody</strong> — zvýrazňujeme spojení založená na kompatibilitě a rezonanci.",
+      "step3": "<strong>Začněte konverzaci</strong> — pozvěte shody k chatování; bezpečně a diskrétně.",
+      "step4": "<strong>Setkejte se (volitelně)</strong> — domluvte si Jitsi hovor nebo osobní setkání po vzájemném souhlasu.",
+      "title": "Jak to funguje"
+    },
+    "matching": {
+      "text": "Vypočítáváme klíčové vztahové faktory z vaší nativní mapy a porovnáváme je s ostatními, abychom našli rezonanci. Upřednostňujeme harmonii, vzájemné doplňování a růstový potenciál před obecnými měřítky popularity.",
+      "title": "Jak funguje párování (zkrácená verze)"
+    },
+    "next": {
+      "go_dashboard": "Přejít na přehled",
+      "login_register": "Přihlásit se / Registrovat",
+      "title": "Další kroky"
+    },
+    "privacy": {
+      "item1": "Žádáme pouze informace nezbytné k navázání smysluplných spojení.",
+      "item2": "Vaše profilové údaje nejsou prodávány ani sdíleny s reklamními sítěmi.",
+      "item3": "Máte kontrolu nad tím, kdo vás může kontaktovat a kdy odhalit více informací.",
+      "title": "Soukromí a bezpečnost"
+    },
+    "protips": {
+      "item1": "Přidejte několik časových slotů v různých dnech pro rychlejší spojení.",
+      "item2": "Buďte ve svém představení upřímní — konkrétní detaily pomáhají správným lidem vás najít.",
+      "item3": "Souhlas je na prvním místě, vždy. Postupujte svým vlastním tempem.",
+      "title": "Profesionální tipy"
+    },
+    "page_title": "SoulTribe.chat – Najdi svou duševní komunitu"
   },
-  "language": { "en": "Angličtina", "de": "Němčina", "cs": "Čeština" },
-  "welcome": { "title": "Vítej na SoulTribe.chat", "subtitle": "Najdi svou duševní komunitu" },
-  "profile": {
-    "title": "Tvůj profil",
-    "save": "Uložit",
-    "cancel": "Zrušit",
-    "primary_language_label": "Hlavní jazyk (pro rozhraní)",
-    "other_languages_label": "Další jazyky (pro párování)",
-    "language_input_placeholder": "Piš pro přidání jazyků..."
-  },
-  "dashboard": {
-    "title": "Přehled",
-    "availability": "Dostupnost",
-    "create_slot": "Vytvořit slot",
-    "duration_hours": "Doba trvání (hodiny)",
-    "meetups": "Setkání",
-    "matches": "Shody",
-    "overlap_hint": "Klikni na \"Navrhnout tento čas\" pro návrh setkání v daném slotu."
+  "language": {
+    "cs": "Čeština",
+    "de": "Němčina",
+    "en": "Angličtina"
   },
   "login": {
-    "title": "Vítej",
-    "intro": "Přihlas se existujícím účtem nebo se zaregistruj.",
-    "email": "email",
-    "password": "heslo",
-    "display_name": "zobrazované_jméno (pro registraci)",
-    "register": "Registrovat",
+    "confirm_password": "potvrďte heslo (pro registraci)",
+    "display_name": "zobrazované jméno (pro registraci)",
+    "email": "e-mail",
+    "email_not_verified": "E-mail nebyl ověřen? ",
+    "enter_email_first": "Nejprve zadejte svou e-mailovou adresu.",
+    "go_dashboard": "Přejít na přehled",
+    "intro": "Přihlaste se ke stávajícímu účtu nebo se zaregistrujte.",
     "login": "Přihlásit se",
-    "redirect_hint": "Po přihlášení budeš přesměrován na přehled.",
-    "go_dashboard": "Přejít na přehled"
+    "login_required": "Vyžaduje se e-mail a heslo.",
+    "page_title": "SoulTribe.chat — Přihlášení / Registrace",
+    "password": "heslo",
+    "password_mismatch": "Hesla se neshodují.",
+    "redirect_hint": "Po přihlášení budete přesměrováni na přehled.",
+    "register": "Registrovat",
+    "registration_success": "Účet byl vytvořen. Ověřte prosím svůj e-mail.",
+    "required_fields": "E-mail, heslo a zobrazované jméno jsou povinné.",
+    "resend_verification": "Znovu odeslat ověřovací e-mail",
+    "reset_password": "Obnovit heslo",
+    "reset_sent": "Pokud účet s touto e-mailovou adresou existuje, byl odeslán e-mail pro obnovení hesla.",
+    "title": "Vítejte",
+    "verification_sent": "Pokud váš e-mail ještě nebyl ověřen, byl odeslán nový ověřovací e-mail."
   },
-  "nav": { "dashboard": "Přehled", "profile": "Profil", "login": "Přihlášení", "logout": "Odhlásit" }
+  "nav": {
+    "dashboard": "Přehled",
+    "login": "Přihlášení",
+    "logout": "Odhlásit",
+    "profile": "Profil",
+    "welcome": "Domů",
+    "home": "Domů",
+    "discover": "Objevuj",
+    "matches": "Shody",
+    "messages": "Zprávy"
+  },
+  "profile": {
+    "cancel": "Zrušit",
+    "language_input_placeholder": "Piš pro přidání jazyků...",
+    "other_languages_label": "Další jazyky (pro párování)",
+    "primary_language_label": "Hlavní jazyk (pro rozhraní)",
+    "save": "Uložit",
+    "title": "Tvůj profil",
+    "basic_info": {
+      "legend": "Základní informace",
+      "username_label": "Uživatelské jméno",
+      "username_placeholder": "uživatelské jméno"
+    },
+    "languages": {
+      "legend": "Jazyky"
+    },
+    "location": {
+      "legend": "Aktuální poloha",
+      "city_placeholder": "Aktuální město (automatické doplňování)",
+      "use_my_location": "Použít mou polohu",
+      "detected_tz_label": "Zjištěné časové pásmo:",
+      "detected_tz_hint": "(automaticky nebo zvolte)"
+    },
+    "birth": {
+      "legend": "Informace o narození (pro astrologii)",
+      "date_placeholder": "Datum narození",
+      "hour_label": "Hodina",
+      "minute_label": "Minuta",
+      "place_placeholder": "Místo narození (město, země)",
+      "detected_tz_label": "Zjištěné časové pásmo:",
+      "detected_tz_hint": "(automaticky)",
+      "lat_placeholder": "Zeměpisná šířka (např. 48.2082)",
+      "lon_placeholder": "Zeměpisná délka (např. 16.3738)",
+      "instructions": "Nastavte své datum a místo narození pro výpočet vašeho radixu. Pokud neznáte přesný čas, nechte pole času prázdné a použijeme poledne jako výchozí hodnotu."
+    },
+    "note": "Váš profil se používá k personalizaci shod a zobrazení časového pásma."
+  },
+  "welcome": {
+    "subtitle": "Najdi svou duševní komunitu",
+    "title": "Vítej na SoulTribe.chat"
+  },
+  "radix": {
+    "title": "Tvůj Radix",
+    "placeholder": "Pokud máš nastavené údaje o narození, zobrazí se zde náhled tvého radixu.",
+    "show_raw_json": "Zobrazit surové JSON"
+  },
+  "ai": {
+    "get_interpretation": "Získat interpretaci",
+    "followup_placeholder": "Zeptej se doplňující otázkou…",
+    "send": "Odeslat"
+  },
+  "imprint": {
+    "title": "Tiráž"
+  },
+  "footer": {
+    "terms": "Podmínky",
+    "privacy": "Soukromí",
+    "imprint": "Tiráž"
+  },
+  "reset_password": {
+    "title": "Obnovit heslo",
+    "intro": "Zvol si nové heslo ke svému účtu.",
+    "new_password_label": "Nové heslo",
+    "new_password_placeholder": "nové heslo",
+    "confirm_password_label": "Potvrdit nové heslo",
+    "confirm_password_placeholder": "potvrdit nové heslo",
+    "submit": "Nastavit nové heslo"
+  },
+  "notifications": {
+    "language_set_to": "Jazyk nastaven na"
+  }
 }

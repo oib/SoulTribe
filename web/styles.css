@@ -1,3 +1,60 @@
+/* Language Selector */
+.language-selector {
+  background: transparent;
+  color: inherit;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 4px;
+  padding: 6px 12px 6px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%239ca3af%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.5em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  padding-right: 2em;
+  transition: all 0.2s ease;
+  min-width: 140px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.language-selector option {
+  padding: 8px 12px;
+  background: white;
+  color: #1f2937;
+}
+
+.language-selector:hover {
+  border-color: #9ca3af;
+}
+
+.language-selector:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+/* Dark theme overrides */
+html[data-theme="dark"] .language-selector {
+  border-color: #4b5563;
+  background-color: #1f2937;
+}
+
+html[data-theme="dark"] .language-selector option {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+html[data-theme="dark"] .language-selector:hover {
+  border-color: #6b7280;
+}
+
 /* Radix pretty table: normalize header/body cell sizing */
 #radixPretty table.list {
   display: table;            /* override global .list display:grid */

@@ -1,182 +1,331 @@
 {
   "app": {
-    "name": "SoulTribe",
-    "tagline": "Povežite se z ljudmi, ki delijo vaše vrednote",
-    "loading": "Nalaganje...",
-    "error": "Prišlo je do napake",
-    "retry": "Poskusi znova",
-    "submit": "Pošlji",
-    "cancel": "Prekliči",
-    "save": "Shrani",
-    "delete": "Izbriši",
-    "edit": "Uredi",
-    "back": "Nazaj",
-    "next": "Naprej",
-    "previous": "Nazaj",
-    "skip": "Preskoči",
-    "done": "Končano",
-    "search": "Išči",
-    "noResults": "Ni zadetkov",
-    "welcome": "Dobrodošli",
-    "or": "ali",
+    "about": "O nas",
     "and": "in",
+    "back": "Nazaj",
+    "cancel": "Prekliči",
+    "contact": "Kontakt",
     "continue": "Nadaljuj",
     "createAccount": "Ustvari račun",
+    "delete": "Izbriši",
+    "done": "Končano",
+    "edit": "Uredi",
+    "error": "Prišlo je do napake",
+    "help": "Pomoč",
+    "loading": "Nalaganje...",
     "login": "Prijava",
     "logout": "Odjava",
-    "profile": "Profil",
-    "settings": "Nastavitve",
-    "help": "Pomoč",
-    "about": "O nas",
-    "contact": "Kontakt",
+    "name": "SoulTribe",
+    "next": "Naprej",
+    "noResults": "Ni zadetkov",
+    "or": "ali",
+    "previous": "Nazaj",
     "privacy": "Zasebnost",
-    "terms": "Pogoji"
-  },
-  "landing": {
-    "hero": {
-      "title": "Pridružite se naši globalni skupnosti",
-      "subtitle": "Povežite se z ljudmi, ki delijo vaše vrednote, interese in strasti. Skupaj lahko gradimo pomembne povezave, ki trajajo.",
-      "cta": "Začnite svojo pot"
-    },
-    "howItWorks": {
-      "title": "Kako deluje",
-      "steps": [
-        {
-          "title": "Ustvarite svoj profil",
-          "description": "Povejte o svojih zanimanjih, vrednotah in tem, kar iščete v skupnosti."
-        },
-        {
-          "title": "Poiščite svoje ljudi",
-          "description": "Naš algoritem vas bo povezal z ljudmi, ki delijo vaše vrednote in interese."
-        },
-        {
-          "title": "Povežite se in rastite",
-          "description": "Začnite pogovore, sodelujte na dogodkih in ustvarjajte trajne povezave."
-        }
-      ]
-    },
-    "features": {
-      "title": "Zakaj se nam pridružiti?",
-      "items": [
-        {
-          "title": "Varna skupnost",
-          "description": "Naša skupnost je zgrajena na spoštovanju, vključevanju in varnosti vsakega člana."
-        },
-        {
-          "title": "Prilagojena izkušnja",
-          "description": "Prejemajte prilagojena priporočila, ki temeljijo na vaših zanimanjih in vrednotah."
-        },
-        {
-          "title": "Globalna povezanost",
-          "description": "Povežite se z ljudmi z vsega sveta, ki delijo vaše strasti."
-        }
-      ]
-    },
-    "privacy": {
-      "title": "Vaša zasebnost je naša prednostna naloga",
-      "description": "Varujemo vaše podatke in zagotavljamo varno okolje za vse naše člane.",
-      "learnMore": "Več o naši politiki zasebnosti"
-    }
+    "profile": "Profil",
+    "retry": "Poskusi znova",
+    "save": "Shrani",
+    "search": "Išči",
+    "settings": "Nastavitve",
+    "skip": "Preskoči",
+    "submit": "Pošlji",
+    "tagline": "Povežite se z ljudmi, ki delijo vaše vrednote",
+    "terms": "Pogoji",
+    "welcome": "Dobrodošli"
   },
   "auth": {
     "login": {
-      "title": "Prijava",
       "email": "E-pošta",
-      "password": "Geslo",
       "forgotPassword": "Ste pozabili geslo?",
       "noAccount": "Nimate računa?",
-      "signUp": "Registrirajte se"
+      "password": "Geslo",
+      "signUp": "Registrirajte se",
+      "title": "Prijava"
     },
     "register": {
-      "title": "Registracija",
-      "name": "Ime in priimek",
-      "email": "E-pošta",
-      "password": "Geslo",
+      "agreeTerms": "Strinjam se s pogoji uporabe",
       "confirmPassword": "Potrdite geslo",
-      "agreeTerms": "Strinjam se s pogoji uporabe"
-    }
-  },
-  "profile": {
-    "edit": {
-      "title": "Urejanje profila",
-      "basicInfo": "Osnovni podatki",
-      "firstName": "Ime",
-      "lastName": "Priimek",
-      "bio": "O meni",
-      "location": "Lokacija",
-      "interests": "Zanimanja"
-    },
-    "view": {
-      "memberSince": "Član od",
-      "lastSeen": "Zadnjič viden",
-      "interests": "Zanimanja"
-    }
-  },
-  "settings": {
-    "title": "Nastavitve",
-    "account": {
-      "title": "Račun",
-      "changeEmail": "Spremeni e-pošto",
-      "changePassword": "Spremeni geslo"
-    },
-    "privacy": {
-      "title": "Zasebnost",
-      "profileVisibility": "Vidnost profila"
-    }
-  },
-  "messaging": {
-    "title": "Sporočila",
-    "newMessage": "Novo sporočilo",
-    "searchUsers": "Išči uporabnike...",
-    "typeMessage": "Vnesite sporočilo...",
-    "send": "Pošlji"
-  },
-  "friends": {
-    "title": "Prijatelji",
-    "allFriends": "Vsi prijatelji",
-    "addFriend": "Dodaj prijatelja",
-    "friendRequests": "Zahteve za prijateljstvo"
-  },
-  "events": {
-    "title": "Dogodki",
-    "upcoming": "Prihajajoči dogodki",
-    "create": "Ustvari dogodek"
-  },
-  "groups": {
-    "title": "Skupine",
-    "discover": "Odkrij skupine",
-    "myGroups": "Moje skupine",
-    "create": "Ustvari skupino"
-  },
-  "search": {
-    "title": "Iskanje",
-    "placeholder": "Išči ljudi, skupine in vsebino...",
-    "noResults": "Ni zadetkov"
-  },
-  "onboarding": {
-    "welcome": "Dobrodošli v SoulTribe",
-    "step1": {
-      "title": "Ustvarite svoj profil",
-      "description": "Dodajte svojo sliko in nekaj besed o sebi."
-    },
-    "step2": {
-      "title": "Izberite svoja zanimanja",
-      "description": "Kaj vam je všeč početi? Izberite svoja zanimanja."
-    },
-    "step3": {
-      "title": "Povežite se z ljudmi",
-      "description": "Začnite pogovor s podobnimi ljudmi."
+      "email": "E-pošta",
+      "name": "Ime in priimek",
+      "password": "Geslo",
+      "title": "Registracija"
     }
   },
   "errors": {
-    "required": "To polje je obvezno",
     "invalidEmail": "Vnesite veljaven e-poštni naslov",
     "passwordTooShort": "Geslo je prekratko",
-    "passwordsDontMatch": "Gesli se ne ujemata"
+    "passwordsDontMatch": "Gesli se ne ujemata",
+    "required": "To polje je obvezno"
   },
-  "success": {
-    "profileUpdated": "Profil posodobljen",
-    "passwordChanged": "Geslo spremenjeno",
-    "messageSent": "Sporočilo poslano"
+  "events": {
+    "create": "Ustvari dogodek",
+    "title": "Dogodki",
+    "upcoming": "Prihajajoči dogodki"
+  },
+  "friends": {
+    "addFriend": "Dodaj prijatelja",
+    "allFriends": "Vsi prijatelji",
+    "friendRequests": "Zahteve za prijateljstvo",
+    "title": "Prijatelji"
+  },
+  "groups": {
+    "create": "Ustvari skupino",
+    "discover": "Odkrij skupine",
+    "myGroups": "Moje skupine",
+    "title": "Skupine"
+  },
+  "landing": {
+    "features": {
+      "items": [
+        {
+          "description": "Naša skupnost je zgrajena na spoštovanju, vključevanju in varnosti vsakega člana.",
+          "title": "Varna skupnost"
+        },
+        {
+          "description": "Prejemajte prilagojena priporočila, ki temeljijo na vaših zanimanjih in vrednotah.",
+          "title": "Prilagojena izkušnja"
+        },
+        {
+          "description": "Povežite se z ljudmi z vsega sveta, ki delijo vaše strasti.",
+          "title": "Globalna povezanost"
+        }
+      ],
+      "title": "Zakaj se nam pridružiti?",
+      "item1": "<strong>Ujemanje z upoštevanjem astrologije</strong> — povezujte se z uporabo vaše rojstne karte.",
+      "item2": "<strong>Pametno razporejanje časovnih pasov</strong> — pretvorbe UTC opravimo namesto vas.",
+      "item3": "<strong>Neposredna komunikacija prek Jitsi</strong> — besedilo/zvok/video; na SoulTribe.chat se nič ne shranjuje ali snema.",
+      "item4": "<strong>Enostavna pridružitev prek povezave</strong> — zasebna soba Jitsi za potrjena srečanja; prijazno do zasebnosti, brez namestitve na namizju.",
+      "item5": "<strong>Minimalističen, osredotočen vmesnik</strong> — zasnovan za smiselne pogovore."
+    },
+    "hero": {
+      "cta": "Začnite svojo pot",
+      "subtitle": "Povežite se z ljudmi, ki delijo vaše vrednote, interese in strasti. Skupaj lahko gradimo pomembne povezave, ki trajajo.",
+      "title": "Pridružite se naši globalni skupnosti"
+    },
+    "howItWorks": {
+      "steps": [
+        {
+          "description": "Povejte o svojih zanimanjih, vrednotah in tem, kar iščete v skupnosti.",
+          "title": "Ustvarite svoj profil"
+        },
+        {
+          "description": "Naš algoritem vas bo povezal z ljudmi, ki delijo vaše vrednote in interese.",
+          "title": "Poiščite svoje ljudi"
+        },
+        {
+          "description": "Začnite pogovore, sodelujte na dogodkih in ustvarjajte trajne povezave.",
+          "title": "Povežite se in rastite"
+        }
+      ],
+      "title": "Kako deluje"
+    },
+    "privacy": {
+      "description": "Varujemo vaše podatke in zagotavljamo varno okolje za vse naše člane.",
+      "learnMore": "Več o naši politiki zasebnosti",
+      "title": "Vaša zasebnost je naša prednostna naloga",
+      "item1": "Prosimo le za podatke, ki so potrebni za pristne povezave.",
+      "item2": "Podrobnosti vašega profila se ne prodajajo in ne delijo z oglaševalskimi mrežami.",
+      "item3": "Vi nadzorujete, kdo vas lahko kontaktira in kdaj razkrijete več."
+    },
+    "page_title": "SoulTribe.chat – Najdi svojo dušno skupnost",
+    "how": {
+      "title": "Kako deluje",
+      "step1": "<strong>Ustvarite svoj profil</strong> — vnesite datum, čas in kraj rojstva za edinstven zemljevid duše.",
+      "step2": "<strong>Odkrijte ujemanja</strong> — izpostavimo povezave na podlagi združljivosti in resonance.",
+      "step3": "<strong>Začnite pogovor</strong> — povabite ujemanja v klepet; varno in zasebno po zasnovi.",
+      "step4": "<strong>Srečanje (neobvezno)</strong> — dogovorite klic Jitsi ali srečanje v živo z obojestranskim soglasjem."
+    },
+    "getting_started": {
+      "title": "Za začetek",
+      "step1": "<strong>Ustvarite račun</strong> — prijava prek družbenih omrežij ni potrebna.",
+      "step2": "<strong>Izpolnite svoj profil</strong> — dodajte podatke o rojstvu; približen čas je v redu.",
+      "step3": "<strong>Nastavite razpoložljivost</strong> — predlagajte lokalne termine; za UTC poskrbimo mi.",
+      "step4": "<strong>Odkrijte ujemanja</strong> — preglejte predloge, ki temeljijo na resonanci.",
+      "step5": "<strong>Klepetajte in se po želji srečajte</strong> — ostanite v aplikaciji; načrtujte, ko ste pripravljeni."
+    },
+    "matching": {
+      "title": "Kako deluje ujemanje (na kratko)",
+      "text": "Izračunamo ključne odnosne kazalnike iz vaše karte in jih primerjamo z drugimi, da najdemo resonanco. Prednost dajemo harmoniji, dopolnjevanju in potencialu za rast pred splošnimi metri popularnosti."
+    },
+    "protips": {
+      "title": "Nasveti",
+      "item1": "Dodajte nekaj terminov razpoložljivosti čez različne dni za hitrejše povezave.",
+      "item2": "Bodite pristni v uvodu — podrobnosti pomagajo pravim ljudem, da vas najdejo.",
+      "item3": "Soglasje na prvem mestu. Premikajte se v tempu, ki vam ustreza."
+    },
+    "next": {
+      "title": "Naslednji koraki",
+      "go_dashboard": "Pojdi na nadzorno ploščo",
+      "login_register": "Prijava / Registracija"
+    },
+    "global": {
+      "title": "Globalna skupnost, lokalni čas",
+      "text": "Povežite se s podobno mislečimi po vsem svetu z avtomatsko pretvorbo časovnih pasov.",
+      "auto_title": "Samodejno zaznavanje časovnega pasu",
+      "auto_text": "Vaš časovni pas zaznamo samodejno za brezhibno načrtovanje.",
+      "native_title": "Podpora za materni jezik",
+      "native_text": "Klepetajte v želenem jeziku z našim vgrajenim prevajanjem.",
+      "tz_title": "Načrtovanje, zavedno časovnih pasov",
+      "tz_text": "Brez več računanja časovnih pasov — vse pretvorbe opravimo mi.",
+      "select_label": "Izberite jezik:"
+    }
+  },
+  "login": {
+    "confirm_password": "potrdite geslo (za registracijo)",
+    "display_name": "prikazno ime (za registracijo)",
+    "email": "e-pošta",
+    "email_not_verified": "E-poštni račun ni potrjen? ",
+    "enter_email_first": "Najprej vnesite svoj e-poštni naslov.",
+    "go_dashboard": "Pojdi na nadzorno ploščo",
+    "intro": "Prijavite se z obstoječim računom ali registrirajte novega.",
+    "login": "Prijava",
+    "login_required": "Zahtevana sta e-poštni naslov in geslo.",
+    "page_title": "SoulTribe.chat — Prijava / Registracija",
+    "password": "geslo",
+    "password_mismatch": "Gesli se ne ujemata.",
+    "redirect_hint": "Po prijavi boste preusmerjeni na svojo nadzorno ploščo.",
+    "register": "Registracija",
+    "registration_success": "Račun je bil ustvarjen. Prosimo, potrdite svoj e-poštni naslov.",
+    "required_fields": "Zahtevani so e-poštni naslov, geslo in prikazno ime.",
+    "resend_verification": "Ponovno pošlji potrditveno e-pošto",
+    "reset_password": "Ponastavi geslo",
+    "reset_sent": "Če račun s tem e-poštnim naslovom obstaja, smo vam poslali e-pošto za ponastavitev gesla.",
+    "title": "Dobrodošli",
+    "verification_sent": "Če vaš e-poštni naslov še ni potrjen, smo vam poslali novo potrditveno e-pošto."
+  },
+  "messaging": {
+    "newMessage": "Novo sporočilo",
+    "searchUsers": "Išči uporabnike...",
+    "send": "Pošlji",
+    "title": "Sporočila",
+    "typeMessage": "Vnesite sporočilo..."
+  },
+  "nav": {
+    "dashboard": "Nadzorna plošča",
+    "login": "Prijava",
+    "logout": "Odjava",
+    "profile": "Profil",
+    "welcome": "Domov",
+    "home": "Domov",
+    "discover": "Odkrij",
+    "matches": "Ujemanja",
+    "messages": "Sporočila"
+  },
+  "onboarding": {
+    "step1": {
+      "description": "Dodajte svojo sliko in nekaj besed o sebi.",
+      "title": "Ustvarite svoj profil"
+    },
+    "step2": {
+      "description": "Kaj vam je všeč početi? Izberite svoja zanimanja.",
+      "title": "Izberite svoja zanimanja"
+    },
+    "step3": {
+      "description": "Začnite pogovor s podobnimi ljudmi.",
+      "title": "Povežite se z ljudmi"
+    },
+    "welcome": "Dobrodošli v SoulTribe"
+  },
+  "profile": {
+    "edit": {
+      "basicInfo": "Osnovni podatki",
+      "bio": "O meni",
+      "firstName": "Ime",
+      "interests": "Zanimanja",
+      "lastName": "Priimek",
+      "location": "Lokacija",
+      "title": "Urejanje profila"
+    },
+    "view": {
+      "interests": "Zanimanja",
+      "lastSeen": "Zadnjič viden",
+      "memberSince": "Član od"
+    },
+    "title": "Tvoj profil",
+    "save": "Shrani",
+    "cancel": "Prekliči",
+    "basic_info": {
+      "legend": "Osnovne informacije",
+      "username_label": "Uporabniško ime",
+      "username_placeholder": "uporabniško ime"
+    },
+    "languages": {
+      "legend": "Jeziki"
+    },
+    "location": {
+      "legend": "Trenutna lokacija",
+      "city_placeholder": "Trenutno mesto (samodokončanje)",
+      "use_my_location": "Uporabi mojo lokacijo",
+      "detected_tz_label": "Zaznan časovni pas:",
+      "detected_tz_hint": "(samodejno ali izberi)"
+    },
+    "birth": {
+      "legend": "Podatki o rojstvu (za astrologijo)",
+      "date_placeholder": "Datum rojstva",
+      "hour_label": "Ura",
+      "minute_label": "Minuta",
+      "place_placeholder": "Kraj rojstva (mesto, država)",
+      "detected_tz_label": "Zaznan časovni pas:",
+      "detected_tz_hint": "(samodejno)",
+      "lat_placeholder": "Zemljepisna širina (npr. 48.2082)",
+      "lon_placeholder": "Zemljepisna dolžina (npr. 16.3738)",
+      "instructions": "Nastavi datum in kraj rojstva za izračun tvojega radixa. Če natančne ure ne poznaš, pusti polje časa prazno — privzeto bomo uporabili 12.00."
+    },
+    "note": "Tvoj profil se uporablja za personalizacijo ujemanj in prikaz časovnega pasu.",
+    "primary_language_label": "Primarni jezik (uporabljen za uporabniški vmesnik)",
+    "other_languages_label": "Drugi jeziki (uporabljeni za ujemanja)",
+    "language_input_placeholder": "Vpiši za dodajanje jezikov..."
+  },
+  "search": {
+    "noResults": "Ni zadetkov",
+    "placeholder": "Išči ljudi, skupine in vsebino...",
+    "title": "Iskanje"
+  },
+  "welcome": {
+    "title": "Dobrodošli na SoulTribe.chat",
+    "subtitle": "Najdi svoje dušno pleme"
+  },
+  "radix": {
+    "title": "Tvoj radix",
+    "placeholder": "Če si nastavil(a) podatke o rojstvu, se bo tukaj prikazal predogled tvojega radixa.",
+    "show_raw_json": "Prikaži surovi JSON"
+  },
+  "ai": {
+    "get_interpretation": "Pridobi interpretacijo",
+    "followup_placeholder": "Postavi dodatno vprašanje…",
+    "send": "Pošlji"
+  },
+  "dashboard": {
+    "title": "Nadzorna plošča",
+    "availability": "Razpoložljivost",
+    "create_slot": "Ustvari termin",
+    "duration_hours": "Trajanje (ure)",
+    "meetups": "Srečanja",
+    "matches": "Ujemanja",
+    "overlap_hint": "Kliknite »Predlagaj ta čas« na prekrivanju, da predlagate srečanje za ta termin.",
+    "propose_time": "Predlagaj čas",
+    "generate_ai_comment": "Ustvari komentar UI",
+    "slot_delete": "Izbriši",
+    "slot_edit": "Uredi",
+    "active_filter_hint": "Prikazani so le uporabniki, ki so bili aktivni v zadnjih 30 dneh."
+  },
+  "imprint": {
+    "title": "Imprint"
+  },
+  "footer": {
+    "terms": "Pogoji",
+    "privacy": "Zasebnost",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Ponastavi geslo",
+    "intro": "Izberite novo geslo za svoj račun.",
+    "new_password_label": "Novo geslo",
+    "new_password_placeholder": "novo geslo",
+    "confirm_password_label": "Potrdite novo geslo",
+    "confirm_password_placeholder": "potrdite novo geslo",
+    "submit": "Nastavi novo geslo"
+  },
+  "notifications": {
+    "language_set_to": "Jezik nastavljen na"
   }
 }

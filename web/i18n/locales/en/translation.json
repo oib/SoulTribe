@@ -1,5 +1,6 @@
 {
   "landing": {
+    "page_title": "SoulTribe.chat - Find Your Soul Tribe",
     "hero": {
       "title": "Welcome",
       "subtitle": "SoulTribe.chat is a space created to help you find and connect with your soul tribe — people who resonate with your energy, your spirit, and your journey. ✨"
@@ -23,8 +24,8 @@
       "title": "Features",
       "item1": "<strong>Astrology‑aware matching</strong> — connect using your natal chart.",
       "item2": "<strong>Timezone smart scheduling</strong> — we handle UTC conversions for you.",
-      "item3": "<strong>Private, secure chat</strong> — conversations stay on SoulTribe.chat.",
-      "item4": "<strong>Optional video via Jitsi</strong> — privacy‑friendly, no install on desktop.",
+      "item3": "<strong>Direct communication via Jitsi</strong> — text/audio/video; nothing is stored or recorded on SoulTribe.chat.",
+      "item4": "<strong>Easy link join</strong> — private Jitsi room for confirmed meetups; privacy‑friendly, no desktop install required.",
       "item5": "<strong>Minimalist, focused UI</strong> — designed for meaningful conversations."
     },
     "privacy": {
@@ -49,14 +50,14 @@
       "login_register": "Login / Register"
     },
     "global": {
-      "title": "Global Community",
-      "text": "Speak your language, connect with the world. SoulTribe.chat supports multiple languages to bring your soul tribe closer, no matter where you're from.",
-      "auto_title": "Automatic Translation",
-      "auto_text": "Chat with matches in your preferred language, with automatic translation when needed.",
+      "title": "Global Community, Local Time",
+      "text": "Connect with like-minded souls across the globe with automatic timezone conversion.",
+      "auto_title": "Automatic Timezone Detection",
+      "auto_text": "We automatically detect your timezone for seamless scheduling.",
       "native_title": "Native Language Support",
-      "native_text": "Fully translated interface in multiple languages, with more being added regularly.",
-      "tz_title": "Time Zone Aware",
-      "tz_text": "Automatic time zone detection and conversion, so you'll always know when your matches are available.",
+      "native_text": "Chat in your preferred language with our built-in translation.",
+      "tz_title": "Timezone-Aware Scheduling",
+      "tz_text": "No more timezone math - we handle all the conversions for you.",
       "select_label": "Select Language:"
     }
   },
@@ -121,25 +122,45 @@
     "duration_hours": "Duration (hours)",
     "meetups": "Meetups",
     "matches": "Matches",
-    "overlap_hint": "Click “Propose this time” on an overlap to propose a meetup for that slot."
+    "overlap_hint": "Click “Propose this time” on an overlap to propose a meetup for that slot.",
+    "propose_time": "Propose time",
+    "generate_ai_comment": "Generate AI comment",
+    "slot_delete": "Delete",
+    "slot_edit": "Edit",
+    "active_filter_hint": "Only users active in the last 30 days are shown."
   },
   "login": {
+    "page_title": "SoulTribe.chat — Login / Register",
     "title": "Welcome",
     "intro": "Login with an existing account or register a new one.",
     "email": "email",
     "password": "password",
-    "display_name": "display_name (for register)",
+    "confirm_password": "confirm password (for register)",
+    "display_name": "display name (for register)",
     "register": "Register",
     "login": "Login",
     "redirect_hint": "After login you will be redirected to your dashboard.",
-    "go_dashboard": "Go to Dashboard"
+    "go_dashboard": "Go to Dashboard",
+    "reset_password": "Reset Password",
+    "resend_verification": "Resend verification email",
+    "email_not_verified": "Email not verified? ",
+    "verification_sent": "If your email is not yet verified, a new verification email has been sent.",
+    "reset_sent": "If an account with this email exists, a password reset email has been sent.",
+    "enter_email_first": "Please enter your email address first.",
+    "password_mismatch": "Passwords do not match.",
+    "required_fields": "Email, password, and display name are required.",
+    "registration_success": "Account created. Please verify your email.",
+    "login_required": "Email and password are required."
   },
   "nav": {
+    "home": "Home",
     "dashboard": "Dashboard",
+    "discover": "Discover",
+    "matches": "Matches",
+    "messages": "Messages",
     "profile": "Profile",
-    "login": "Login",
-    "logout": "Logout",
-    "welcome": "Welcome"
+    "login": "Log In",
+    "logout": "Log Out"
   },
   "imprint": {
     "title": "Imprint"

@@ -1,0 +1,95 @@
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-links">
+      <a href="/terms.html" class="footer-link" data-i18n="footer.terms">Terms</a>
+      <a href="/privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a>
+      <a href="/imprint.html" class="footer-link" data-i18n="footer.imprint">Imprint</a>
+    </div>
+    
+    <div class="footer-copyright">
+      &copy; <span id="current-year">2025</span> SoulTribe.chat. All rights reserved.
+    </div>
+    
+    <div class="footer-lang">
+      <select id="footer-language-selector" class="language-selector" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Update current year
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+  
+  // Sync language selector with the one in navbar
+  document.addEventListener('DOMContentLoaded', function() {
+    const navLangSelector = document.getElementById('language-selector');
+    const footerLangSelector = document.getElementById('footer-language-selector');
+    const footerLinks = Array.from(document.querySelectorAll('.footer-links .footer-link'));
+    const originalHrefs = footerLinks.map(a => a.getAttribute('href'));
+
+    function currentLang() {
+      // Prefer i18next setting, fallback to localStorage, default to 'en'
+      try {
+        if (window.i18next && typeof window.i18next.language === 'string') {
+          return window.i18next.language;
+        }
+      } catch {}
+      return localStorage.getItem('i18nextLng') || 'en';
+    }
+
+    function updateFooterLinkAvailability() {
+      const lang = (currentLang() || 'en').split('-')[0];
+      const isEnglish = lang === 'en';
+      footerLinks.forEach((a, idx) => {
+        if (isEnglish) {
+          a.setAttribute('href', originalHrefs[idx] || '#');
+          a.removeAttribute('aria-disabled');
+          a.removeAttribute('tabindex');
+          a.classList.remove('is-disabled');
+          a.title = '';
+        } else {
+          // Disable links in non-English locales until localized pages exist
+          a.setAttribute('aria-disabled', 'true');
+          a.setAttribute('tabindex', '-1');
+          a.classList.add('is-disabled');
+          a.title = 'Available in English only';
+          // Keep href for screen readers but prevent click navigation
+          a.addEventListener('click', function(ev) {
+            if (a.getAttribute('aria-disabled') === 'true') {
+              ev.preventDefault();
+              ev.stopPropagation();
+            }
+          });
+        }
+      });
+    }
+    
+    if (navLangSelector && footerLangSelector) {
+      // Sync from nav to footer
+      navLangSelector.addEventListener('change', (e) => {
+        footerLangSelector.value = e.target.value;
+        updateFooterLinkAvailability();
+      });
+      
+      // Sync from footer to nav
+      footerLangSelector.addEventListener('change', (e) => {
+        navLangSelector.value = e.target.value;
+        navLangSelector.dispatchEvent(new Event('change'));
+        updateFooterLinkAvailability();
+      });
+      
+      // Initial sync
+      footerLangSelector.value = navLangSelector.value;
+    }
+
+    // Also react to i18n changes if fired
+    if (window.i18next && typeof window.i18next.on === 'function') {
+      window.i18next.on('languageChanged', updateFooterLinkAvailability);
+    }
+
+    updateFooterLinkAvailability();
+  });
+</script>

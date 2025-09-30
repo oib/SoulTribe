@@ -22,7 +22,7 @@
         const passwordConfirm = $("passwordConfirm")?.value;
         if (typeof passwordConfirm === 'string' && passwordConfirm.length) {
           if (password !== passwordConfirm) {
-            try { toast('Passwords do not match', 'error'); } catch {}
+            try { toast(SimpleI18n.t('login.password_mismatch'), 'error'); } catch {}
             return;
           }
         }
@@ -33,7 +33,7 @@
           : ((email && email.includes('@')) ? email.split('@')[0] : 'Friend');
 
         if (!email || !password || !display_name) {
-          return toast("Email, password, and display name are required", "error");
+          return toast(SimpleI18n.t('login.required_fields'), "error");
         }
 
         // Debug: show payload being sent (without password)
@@ -42,7 +42,7 @@
         const data = await api("/api/auth/register", { method: "POST", body: { email, password, display_name } });
         setToken(data.access_token);
         // Notify user and then redirect to profile to complete details (including display name)
-        try { toast("Account created. Please verify your email.", "success"); } catch {}
+        try { toast(SimpleI18n.t('login.registration_success'), "success"); } catch {}
         setTimeout(() => { try { window.location.href = "/profile.html"; } catch {} }, 700);
       } catch (e) {
         show("register:ERROR", e);
@@ -63,14 +63,35 @@
     bindClick("btn-reset-request", async () => {
       try {
         const email = $("email")?.value.trim();
-        if (!email) return toast("Please enter your email first", "error");
+        if (!email) return toast(SimpleI18n.t('login.enter_email_first'), "error");
         const res = await api("/api/auth/reset-request", { method: "POST", body: { email } });
         show("reset-request", res);
-        toast("If an account exists, a reset email has been sent.", "success");
+        toast(SimpleI18n.t('login.reset_sent'), "success");
       } catch (e) {
         // Even on error we return a generic success toast for privacy
         show("reset-request:ERROR", e);
-        toast("If an account exists, a reset email has been sent.", "success");
+        toast(SimpleI18n.t('login.reset_sent'), "success");
+      }
+    });
+
+    // Resend verification email handler
+    bindClick("btn-resend-verification", async (e) => {
+      e.preventDefault();
+      try {
+        const email = $("email")?.value.trim();
+        if (!email) return toast(SimpleI18n.t('login.enter_email_first'), "error");
+        
+        const res = await api("/api/auth/resend-verification", { 
+          method: "POST", 
+          body: { email } 
+        });
+        
+        show("resend-verification", res);
+        toast(SimpleI18n.t('login.verification_sent'), "success");
+      } catch (e) {
+        show("resend-verification:ERROR", e);
+        // Always show success for privacy, even on error
+        toast(SimpleI18n.t('login.verification_sent'), "success");
       }
     });
 
@@ -79,7 +100,7 @@
       try {
         const email = $("email")?.value.trim();
         const password = $("password")?.value;
-        if (!email || !password) return toast("Email and password are required", "error");
+        if (!email || !password) return toast(SimpleI18n.t('login.login_required'), "error");
         
         const res = await api("/api/auth/login", {
           method: "POST",
@@ -96,8 +117,24 @@
         show("login:ERROR", e);
         try {
           const detail = e && e.data && e.data.detail ? e.data.detail : null;
-          const msg = detail ? (typeof detail === 'string' ? detail : (detail[0]?.msg || 'Login failed'))
-                             : (e.status === 401 ? 'Invalid credentials' : 'Login failed');
+          let msg = detail ? (typeof detail === 'string' ? detail : (detail[0]?.msg || 'Login failed'))
+                          : (e.status === 401 ? 'Invalid credentials' : 'Login failed');
+          
+          // Show resend verification link if email exists but is not verified
+          if (e.status === 401 && detail === 'Email not verified') {
+            const email = $("email")?.value.trim();
+            if (email) {
+              const resendContainer = document.getElementById('resend-verification-container');
+              if (resendContainer) {
+                resendContainer.classList.remove('hidden');
+                // Pre-fill the email in the resend link
+                const resendLink = document.getElementById('btn-resend-verification');
+                if (resendLink) {
+                  resendLink.dataset.email = email;
+                }
+              }
+            }
+          }
           toast(msg, 'error');
         } catch {}
       }

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run SoulTribe.chat maintenance cleanup every 3 hours
+
+[Timer]
+OnBootSec=5m
+OnUnitActiveSec=3h
+Persistent=true
+Unit=soultribe-cleanup.service
+
+[Install]
+WantedBy=timers.target

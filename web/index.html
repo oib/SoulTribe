@@ -3,26 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welcome • SoulTribe.chat</title>
+  <title data-i18n="landing.page_title">Welcome • SoulTribe.chat</title>
   <link rel="stylesheet" href="/theme.css" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/index.css" />
   <link rel="stylesheet" href="/mobile.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
 </head>
 <body class="welcome-page">
-  <div class="topbar">
-    <div class="brand">
-      <a href="/" class="link-unstyled">SoulTribe.chat</a>
-    </div>
-    <div class="actions">
-      <a id="btn-login-link" class="button secondary" href="/login.html">Login</a>
-      <a id="btn-dashboard-link" class="button" href="/dashboard.html">Dashboard</a>
-      <a id="btn-admin-link" class="button secondary" href="/admin/stats.html" style="display:none;">Admin</a>
-    </div>
-  </div>
+  <!-- Navigation will be loaded here by components.js -->
+  <div data-component="navbar"></div>
 
-  <div class="welcome-container">
+  <div class="container">
+    <div class="welcome-container">
     <!-- Hero -->
     <section class="card two-col">
       <div class="col text">
@@ -160,79 +160,20 @@
           </div>
         </div>
         
-        <div class="language-selector">
-          <label for="language-select" data-i18n="landing.global.select_label">Select Language:</label>
-          <select id="language-select" class="select"></select>
-        </div>
       </div>
       <div class="col illustration">
         <img src="/img/Translate.jpg" alt="Global Community" loading="lazy" />
       </div>
     </section>
+    </div>
   </div>
 
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <a href="/terms.html" data-i18n="footer.terms">Terms</a>
-      <span class="sep">•</span>
-      <a href="/privacy.html" data-i18n="footer.privacy">Privacy</a>
-      <span class="sep">•</span>
-      <a href="/imprint.html" data-i18n="footer.imprint">Imprint</a>
-    </div>
-  </footer>
+  <!-- Footer will be loaded here by components.js -->
+  <div data-component="footer"></div>
 
+  <!-- Scripts -->
   <script src="/i18n/i18n.js"></script>
-  <script src="/app.js"></script>
-  <script>
-    // Initialize i18n and bind language selector
-    document.addEventListener('DOMContentLoaded', async () => {
-      try {
-        if (window.SimpleI18n) {
-          await window.SimpleI18n.init();
-          const sel = document.getElementById('language-select');
-          if (sel) {
-            // Populate options from available languages
-            try {
-              const langs = window.SimpleI18n.languages || {};
-              sel.innerHTML = Object.entries(langs)
-                .map(([code, name]) => `<option value="${code}">${name}</option>`)
-                .join('');
-            } catch {}
-            // Set initial value to current language
-            try { sel.value = window.SimpleI18n.currentLang; } catch {}
-            sel.addEventListener('change', async (e) => {
-              try { await window.SimpleI18n.changeLanguage(e.target.value); } catch {}
-            });
-            // Keep selector in sync if language is changed elsewhere
-            window.addEventListener('languageChanged', (ev) => {
-              try { sel.value = ev.detail?.language || window.SimpleI18n.currentLang; } catch {}
-            });
-          }
-        }
-      } catch {}
-    });
-  </script>
-  <script>
-    (function toggleNav(){
-      try {
-        const t = localStorage.getItem('access_token');
-        const loggedIn = !!t;
-        var loginEl = document.getElementById('btn-login-link');
-        var dashEl = document.getElementById('btn-dashboard-link');
-        if (loginEl) loginEl.style.display = loggedIn ? 'none' : 'inline-block';
-        if (dashEl) dashEl.style.display = loggedIn ? 'inline-block' : 'none';
-      } catch {}
-    })();
-
-    // Show Admin link only for admins/localhost
-    (async function showAdmin(){
-      try {
-        const r = await fetch('/api/admin/ping', {headers:{'Authorization': localStorage.getItem('access_token') ? 'Bearer '+localStorage.getItem('access_token') : ''}});
-        if (r.ok) {
-          var el = document.getElementById('btn-admin-link'); if (el) el.style.display='inline-block';
-        }
-      } catch {}
-    })();
-  </script>
+  <script src="/js/components.js"></script>
+  <!-- Removed obsolete topbar toggle script -->
 </body>
 </html>

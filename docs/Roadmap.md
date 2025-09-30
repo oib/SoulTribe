@@ -43,9 +43,11 @@ Last updated: 2025-09-16
   - Add indexes for frequent queries (e.g., match lookups)
 - Frontend
   - Replace console with a proper app (React/Svelte)
-  - Add localization/i18n for UI strings
+  - ~~Add localization/i18n for UI strings~~ ✅ Completed (28 languages)
   - Toast system: small queue & durations per severity (partial: center‑bottom, palette, click‑to‑dismiss done)
   - CSS reorg by page/theme (done)
+  - Add language selector in user profile
+  - Implement RTL language support for Arabic, Hebrew, etc.
 
 ## Longer-Term Ideas
 - Notifications (email/push) when a strong match appears or a meetup is scheduled

@@ -9,8 +9,11 @@
   <link rel="stylesheet" href="/admin/dev.css" />
   <link rel="stylesheet" href="/mobile.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-</head>
+
+  <link rel="stylesheet" href="/css/components.css" /></head>
 <body>
+  <!-- Navigation will be loaded here by components.js -->
+  <div data-component="navbar"></div>
   <script>
     // Client-side guard: redirect non-admins quickly
     (async function guard(){
@@ -199,5 +202,7 @@
 
   <script src="/app.js"></script>
   <script src="/admin/dev.js"></script>
+  <!-- Footer will be loaded here by components.js -->
+  <div data-component="footer"></div>
 </body>
 </html>

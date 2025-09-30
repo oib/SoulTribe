@@ -1,95 +1,187 @@
 {
+  "dashboard": {
+    "availability": "Tillgänglighet",
+    "create_slot": "Skapa tidslucka",
+    "duration_hours": "Varaktighet (timmar)",
+    "matches": "Matcher",
+    "meetups": "Träffar",
+    "overlap_hint": "Klicka på \"Föreslå denna tid\" för att föreslå en träff för den tidsluckan.",
+    "title": "Instrumentpanel",
+    "propose_time": "Föreslå tid",
+    "generate_ai_comment": "Skapa AI-kommentar",
+    "slot_delete": "Ta bort",
+    "slot_edit": "Redigera",
+    "active_filter_hint": "Endast användare som varit aktiva de senaste 30 dagarna visas."
+  },
   "landing": {
-    "hero": {
-      "title": "Välkommen",
-      "subtitle": "SoulTribe.chat är en plats skapad för att hjälpa dig hitta och ansluta till din själsgrupp — människor som resonerar med din energi, din ande och din resa. ✨"
-    },
-    "how": {
-      "title": "Så fungerar det",
-      "step1": "<strong>Skapa din profil</strong> — ange födelsedatum, tid och plats för att generera din unika själskarta.",
-      "step2": "<strong>Upptäck dina matchningar</strong> — vi lyfter fram kopplingar baserade på kompatibilitet och resonans.",
-      "step3": "<strong>Starta konversationen</strong> — bjud in matchningar att chatta; säkert och privat som standard.",
-      "step4": "<strong>Träffas (frivilligt)</strong> — boka ett Jitsi-samtal eller personligt möte med ömsesidigt samtycke."
+    "features": {
+      "item1": "<strong>Astrologimedveten matchning</strong> — anslut med hjälp av din födelsehoroskop.",
+      "item2": "<strong>Smart tidszonshantering</strong> — vi hanterar UTC-konverteringar åt dig.",
+      "item3": "<strong>Direktkommunikation via Jitsi</strong> — text/ljud/video; inget sparas eller spelas in på SoulTribe.chat.",
+      "item4": "<strong>Enkel länkanslutning</strong> — privat Jitsi‑rum för bekräftade möten; integritetsvänligt, ingen installation på datorn krävs.",
+      "item5": "<strong>Minimalistiskt, fokuserat gränssnitt</strong> — designat för meningsfulla samtal.",
+      "title": "Funktioner"
     },
     "getting_started": {
-      "title": "Kom igång",
       "step1": "<strong>Skapa ett konto</strong> — inga inloggningar via sociala medier krävs.",
       "step2": "<strong>Komplettera din profil</strong> — lägg till födelsedetaljer; ungefärlig tid fungerar bra.",
       "step3": "<strong>Ange din tillgänglighet</strong> — föreslå lokala tidsluckor; vi hanterar UTC-konverteringen.",
       "step4": "<strong>Upptäck matchningar</strong> — bläddra bland förslag baserade på resonans.",
-      "step5": "<strong>Chatta och träffas</strong> — allt i appen; planera när du är redo."
-    },
-    "features": {
-      "title": "Funktioner",
-      "item1": "<strong>Astrologimedveten matchning</strong> — anslut med hjälp av din födelsehoroskop.",
-      "item2": "<strong>Smart tidszonshantering</strong> — vi hanterar UTC-konverteringar åt dig.",
-      "item3": "<strong>Privat, säker chatt</strong> — konversationer stannar på SoulTribe.chat.",
-      "item4": "<strong>Valfri video via Jitsi</strong> — integritetsvänligt, ingen installation behövs på dator.",
-      "item5": "<strong>Minimalistiskt, fokuserat gränssnitt</strong> — designat för meningsfulla samtal."
-    },
-    "privacy": {
-      "title": "Integritet & Säkerhet",
-      "item1": "Vi ber endast om det som behövs för att möjliggöra meningsfulla förbindelser.",
-      "item2": "Din profildata säljs inte eller delas med reklamnätverk.",
-      "item3": "Du bestämmer vem som kan kontakta dig och när du vill dela mer."
-    },
-    "matching": {
-      "title": "Så fungerar matchning (kort version)",
-      "text": "Vi beräknar nyckelfaktorer från din stjärnkarta och jämför dem med andras för att hitta resonans. Vi prioriterar harmoni, komplementaritet och utvecklingspotential framför generiska popularitetsmått."
-    },
-    "protips": {
-      "title": "Proffstips",
-      "item1": "Lägg till några tillgängliga tidsluckor på olika dagar för snabbare anslutningar.",
-      "item2": "Var äkta i din presentation — specifika detaljer hjälper rätt personer att hitta dig.",
-      "item3": "Samtycke först, alltid. Gå i din egen takt."
-    },
-    "next": {
-      "title": "Nästa steg",
-      "go_dashboard": "Gå till instrumentpanelen",
-      "login_register": "Logga in / Registrera"
+      "step5": "<strong>Chatta och träffas</strong> — allt i appen; planera när du är redo.",
+      "title": "Kom igång"
     },
     "global": {
-      "title": "Global gemenskap",
-      "text": "Tala ditt språk, anslut med världen. SoulTribe.chat stöder flera språk för att föra din själsgrupp närmare, var du än befinner dig.",
-      "auto_title": "Automatisk översättning",
       "auto_text": "Chatta med dina matchningar på ditt föredragna språk, med automatisk översättning vid behov.",
-      "native_title": "Stöd för modersmål",
+      "auto_title": "Automatisk översättning",
       "native_text": "Fullt översatt gränssnitt på flera språk, med regelbundna tillägg.",
-      "tz_title": "Tidszonsmedveten",
+      "native_title": "Stöd för modersmål",
+      "select_label": "Välj språk:",
+      "text": "Tala ditt språk, anslut med världen. SoulTribe.chat stöder flera språk för att föra din själsgrupp närmare, var du än befinner dig.",
+      "title": "Global gemenskap",
       "tz_text": "Automatisk tidszonsdetektering och -konvertering, så du alltid vet när dina matchningar är tillgängliga.",
-      "select_label": "Välj språk:"
-    }
+      "tz_title": "Tidszonsmedveten"
+    },
+    "hero": {
+      "subtitle": "SoulTribe.chat är en plats skapad för att hjälpa dig hitta och ansluta till din själsgrupp — människor som resonerar med din energi, din ande och din resa. ✨",
+      "title": "Välkommen"
+    },
+    "how": {
+      "step1": "<strong>Skapa din profil</strong> — ange födelsedatum, tid och plats för att generera din unika själskarta.",
+      "step2": "<strong>Upptäck dina matchningar</strong> — vi lyfter fram kopplingar baserade på kompatibilitet och resonans.",
+      "step3": "<strong>Starta konversationen</strong> — bjud in matchningar att chatta; säkert och privat som standard.",
+      "step4": "<strong>Träffas (frivilligt)</strong> — boka ett Jitsi-samtal eller personligt möte med ömsesidigt samtycke.",
+      "title": "Så fungerar det"
+    },
+    "matching": {
+      "text": "Vi beräknar nyckelfaktorer från din stjärnkarta och jämför dem med andras för att hitta resonans. Vi prioriterar harmoni, komplementaritet och utvecklingspotential framför generiska popularitetsmått.",
+      "title": "Så fungerar matchning (kort version)"
+    },
+    "next": {
+      "go_dashboard": "Gå till instrumentpanelen",
+      "login_register": "Logga in / Registrera",
+      "title": "Nästa steg"
+    },
+    "privacy": {
+      "item1": "Vi ber endast om det som behövs för att möjliggöra meningsfulla förbindelser.",
+      "item2": "Din profildata säljs inte eller delas med reklamnätverk.",
+      "item3": "Du bestämmer vem som kan kontakta dig och när du vill dela mer.",
+      "title": "Integritet & Säkerhet"
+    },
+    "protips": {
+      "item1": "Lägg till några tillgängliga tidsluckor på olika dagar för snabbare anslutningar.",
+      "item2": "Var äkta i din presentation — specifika detaljer hjälper rätt personer att hitta dig.",
+      "item3": "Samtycke först, alltid. Gå i din egen takt.",
+      "title": "Proffstips"
+    },
+    "page_title": "SoulTribe.chat – Hitta din själsgrupp"
   },
-  "language": { "en": "Engelska", "de": "Tyska", "sv": "Svenska" },
-  "welcome": { "title": "Välkommen till SoulTribe.chat", "subtitle": "Hitta din själsgrupp" },
-  "profile": {
-    "title": "Din profil",
-    "save": "Spara",
-    "cancel": "Avbryt",
-    "primary_language_label": "Primärt språk (för gränssnittet)",
-    "other_languages_label": "Andra språk (för matchning)",
-    "language_input_placeholder": "Skriv för att lägga till språk..."
-  },
-  "dashboard": {
-    "title": "Instrumentpanel",
-    "availability": "Tillgänglighet",
-    "create_slot": "Skapa tidslucka",
-    "duration_hours": "Varaktighet (timmar)",
-    "meetups": "Träffar",
-    "matches": "Matcher",
-    "overlap_hint": "Klicka på \"Föreslå denna tid\" för att föreslå en träff för den tidsluckan."
+  "language": {
+    "de": "Tyska",
+    "en": "Engelska",
+    "sv": "Svenska"
   },
   "login": {
-    "title": "Välkommen",
-    "intro": "Logga in med ett befintligt konto eller registrera ett nytt.",
-    "email": "e-post",
-    "password": "lösenord",
+    "confirm_password": "bekräfta lösenord (för registrering)",
     "display_name": "visningsnamn (för registrering)",
-    "register": "Registrera",
+    "email": "e-post",
+    "email_not_verified": "E-post inte verifierad? ",
+    "enter_email_first": "Ange din e-postadress först.",
+    "go_dashboard": "Gå till instrumentpanelen",
+    "intro": "Logga in med ett befintligt konto eller registrera ett nytt.",
     "login": "Logga in",
+    "login_required": "E-post och lösenord krävs.",
+    "page_title": "SoulTribe.chat — Logga in / Registrera",
+    "password": "lösenord",
+    "password_mismatch": "Lösenorden matchar inte.",
     "redirect_hint": "Efter inloggning omdirigeras du till din instrumentpanel.",
-    "go_dashboard": "Gå till instrumentpanelen"
+    "register": "Registrera",
+    "registration_success": "Konto skapat. Vänligen verifiera din e-post.",
+    "required_fields": "E-post, lösenord och visningsnamn krävs.",
+    "resend_verification": "Skicka verifieringsmejl igen",
+    "reset_password": "Återställ lösenord",
+    "reset_sent": "Om ett konto med den här e-postadressen finns har ett återställningsmejl skickats.",
+    "title": "Välkommen",
+    "verification_sent": "Om din e-post inte är verifierad har ett nytt verifieringsmejl skickats."
   },
-  "nav": { "dashboard": "Instrumentpanel", "profile": "Profil", "login": "Logga in", "logout": "Logga ut" },
-  "notifications": { "language_set_to": "Språk inställt på" }
+  "nav": {
+    "dashboard": "Instrumentpanel",
+    "login": "Logga in",
+    "logout": "Logga ut",
+    "profile": "Profil",
+    "welcome": "Hem",
+    "home": "Hem",
+    "discover": "Upptäck",
+    "matches": "Matcher",
+    "messages": "Meddelanden"
+  },
+  "notifications": {
+    "language_set_to": "Språk inställt på"
+  },
+  "profile": {
+    "cancel": "Avbryt",
+    "language_input_placeholder": "Skriv för att lägga till språk...",
+    "other_languages_label": "Andra språk (för matchning)",
+    "primary_language_label": "Primärt språk (för gränssnittet)",
+    "save": "Spara",
+    "title": "Din profil",
+    "basic_info": {
+      "legend": "Grundläggande information",
+      "username_label": "Användarnamn",
+      "username_placeholder": "användarnamn"
+    },
+    "languages": {
+      "legend": "Språk"
+    },
+    "location": {
+      "legend": "Nuvarande plats",
+      "city_placeholder": "Nuvarande stad (autokomplettering)",
+      "use_my_location": "Använd min plats",
+      "detected_tz_label": "Upptäckt tidszon:",
+      "detected_tz_hint": "(automatiskt eller välj)"
+    },
+    "birth": {
+      "legend": "Födelseinformation (för astrologi)",
+      "date_placeholder": "Födelsedatum",
+      "hour_label": "Timme",
+      "minute_label": "Minut",
+      "place_placeholder": "Födelseort (stad, land)",
+      "detected_tz_label": "Upptäckt tidszon:",
+      "detected_tz_hint": "(automatiskt)",
+      "lat_placeholder": "Latitud (t.ex. 48.2082)",
+      "lon_placeholder": "Longitud (t.ex. 16.3738)",
+      "instructions": "Ange ditt födelsedatum och födelseort för att beräkna din radix. Om du inte vet exakt tid, lämna tidsfältet tomt så använder vi kl. 12.00 som standard."
+    },
+    "note": "Din profil används för att anpassa matchningar och tidszonsvisning."
+  },
+  "welcome": {
+    "subtitle": "Hitta din själsgrupp",
+    "title": "Välkommen till SoulTribe.chat"
+  },
+  "radix": {
+    "title": "Din Radix",
+    "placeholder": "Om du har angett dina födelsedata visas en förhandsvisning av din radix här.",
+    "show_raw_json": "Visa rå JSON"
+  },
+  "ai": {
+    "get_interpretation": "Hämta tolkning",
+    "followup_placeholder": "Ställ en följdfråga…",
+    "send": "Skicka"
+  },
+  "imprint": {
+    "title": "Juridisk information"
+  },
+  "footer": {
+    "terms": "Villkor",
+    "privacy": "Integritet",
+    "imprint": "Juridisk information"
+  },
+  "reset_password": {
+    "title": "Återställ lösenord",
+    "intro": "Välj ett nytt lösenord för ditt konto.",
+    "new_password_label": "Nytt lösenord",
+    "new_password_placeholder": "nytt lösenord",
+    "confirm_password_label": "Bekräfta nytt lösenord",
+    "confirm_password_placeholder": "bekräfta nytt lösenord",
+    "submit": "Sätt nytt lösenord"
+  }
 }

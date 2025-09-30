@@ -5,10 +5,11 @@ from typing import Any
 from fastapi import APIRouter, Depends, HTTPException, Request
 import os
 from sqlmodel import select, func
+from sqlalchemy import delete
 
 from db import get_session
 from sqlmodel import Session
-from models import User, Profile, Radix, AvailabilitySlot, Meetup, Match
+from models import User, Profile, Radix, AvailabilitySlot, Meetup, Match, EmailVerificationToken, PasswordResetToken
 from services.jwt_auth import get_current_user_id
 
 router = APIRouter(prefix="/api/admin", tags=["admin"]) 
@@ -56,11 +57,15 @@ def get_stats(
     now = datetime.utcnow()
     day_ago = now - timedelta(days=1)
     week_ago = now - timedelta(days=7)
+    month_ago = now - timedelta(days=30)
 
     # Core counts
     users = session.exec(select(func.count()).select_from(User)).one()
     users_verified = session.exec(
         select(func.count()).select_from(User).where(User.email_verified_at.is_not(None))
+    ).one()
+    users_active_30d = session.exec(
+        select(func.count()).select_from(User).where(User.last_login_at.is_not(None), User.last_login_at >= month_ago)
     ).one()
 
     # We consider a "full radix" to be present when a Radix row exists for the user
@@ -124,6 +129,7 @@ def get_stats(
     breakdown = {
         "users.last_24h": users_last_24h,
         "slots.last_7d": slots_last_7d,
+        "users.active_30d": users_active_30d,
     }
 
     return {
@@ -133,6 +139,7 @@ def get_stats(
         "slots": slots,
         "meetups": meetups,
         "matches": matches,
+        "users_active_30d": users_active_30d,
         "ai_comments": ai_comments,
         "interpretations": interpretations,
         "recent": sorted(recent, key=lambda r: r.get("ts",""), reverse=True)[:50],
@@ -147,3 +154,77 @@ def admin_ping(request: Request, user_id: int = Depends(get_current_user_id)) ->
     if not _is_admin(request, user_id):
         raise HTTPException(status_code=403, detail="Admin only")
     return {"ok": True}
+
+
+# Cleanup unverified users older than a threshold (default 24 hours)
+@router.get("/cleanup-unverified/preview")
+def cleanup_unverified_preview(
+    request: Request,
+    hours: int = 24,
+    limit: int = 100,
+    session: Session = Depends(get_session),
+    user_id: int = Depends(get_current_user_id),
+) -> dict[str, Any]:
+    if not _is_admin(request, user_id):
+        raise HTTPException(status_code=403, detail="Admin only")
+    if hours <= 0:
+        raise HTTPException(status_code=400, detail="hours must be > 0")
+    cutoff = datetime.utcnow() - timedelta(hours=hours)
+    q = select(User).where(User.email_verified_at.is_(None), User.created_at < cutoff)
+    users = session.exec(q).all()
+    ids = [u.id for u in users if u.id is not None]
+    return {
+        "ok": True,
+        "cutoff": cutoff.isoformat() + "Z",
+        "count": len(ids),
+        "ids_preview": ids[:max(0, min(limit, 200))],
+    }
+
+
+class CleanupRunOut(dict):
+    ok: bool
+
+
+@router.post("/cleanup-unverified/run")
+def cleanup_unverified_run(
+    request: Request,
+    hours: int = 24,
+    dry_run: bool = False,
+    limit_report: int = 100,
+    session: Session = Depends(get_session),
+    user_id: int = Depends(get_current_user_id),
+) -> dict[str, Any]:
+    if not _is_admin(request, user_id):
+        raise HTTPException(status_code=403, detail="Admin only")
+    if hours <= 0:
+        raise HTTPException(status_code=400, detail="hours must be > 0")
+
+    cutoff = datetime.utcnow() - timedelta(hours=hours)
+    users = session.exec(
+        select(User).where(User.email_verified_at.is_(None), User.created_at < cutoff)
+    ).all()
+    ids = [u.id for u in users if u.id is not None]
+
+    if dry_run or not ids:
+        return {
+            "ok": True,
+            "dry_run": True,
+            "cutoff": cutoff.isoformat() + "Z",
+            "to_delete": len(ids),
+            "ids_preview": ids[:max(0, min(limit_report, 200))],
+        }
+
+    # Delete dependent tokens explicitly, then users (ON DELETE CASCADE covers others)
+    session.exec(delete(EmailVerificationToken).where(EmailVerificationToken.user_id.in_(ids)))
+    session.exec(delete(PasswordResetToken).where(PasswordResetToken.user_id.in_(ids)))
+    res = session.exec(delete(User).where(User.id.in_(ids)))
+    session.commit()
+
+    deleted = res.rowcount if getattr(res, "rowcount", -1) not in (-1, None) else len(ids)
+    return {
+        "ok": True,
+        "dry_run": False,
+        "cutoff": cutoff.isoformat() + "Z",
+        "deleted": deleted,
+        "ids_preview": ids[:max(0, min(limit_report, 200))],
+    }

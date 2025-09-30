@@ -1,0 +1,11 @@
+{
+  "sellers": [
+    {
+      "seller_id": "REPLACE_WITH_YOUR_PUBLISHER_ID",
+      "seller_type": "PUBLISHER",
+      "name": "SoulTribe.chat",
+      "domain": "soultribe.chat",
+      "is_confidential": 0
+    }
+  ]
+}

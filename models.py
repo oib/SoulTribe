@@ -16,6 +16,7 @@ class User(SQLModel, table=True):
     password_hash: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
     email_verified_at: datetime | None = None
+    last_login_at: datetime | None = None
 
 
 class EmailVerificationToken(SQLModel, table=True):

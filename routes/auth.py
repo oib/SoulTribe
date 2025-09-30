@@ -5,6 +5,7 @@ from typing import Optional
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, EmailStr, Field
 from sqlmodel import select
+from sqlalchemy import delete
 import secrets
 from argon2 import PasswordHasher
 import os
@@ -17,6 +18,7 @@ from services.jwt_auth import get_current_user_id
 from services.email import send_email
 from fastapi import Request
 from routes import admin as admin_routes
+from datetime import timedelta
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 ph = PasswordHasher()
@@ -139,14 +141,14 @@ def register(payload: RegisterIn, session=Depends(get_session)):
         session.add(radix)
         session.commit()
 
-    # Create email verification token (48h expiry)
+    # Create email verification token (24h expiry)
     now = _utcnow_naive()
     raw = secrets.token_urlsafe(32)
     ver = EmailVerificationToken(
         user_id=user.id,
         token=raw,
         created_at=now,
-        expires_at=now + timedelta(hours=48),
+        expires_at=now + timedelta(hours=24),
     )
     session.add(ver)
     session.commit()
@@ -155,16 +157,16 @@ def register(payload: RegisterIn, session=Depends(get_session)):
     token = create_access_token({"sub": str(user.id), "email": user.email})
     verification_url = f"/api/auth/verify-email?token={raw}"
 
-    # Send email (dev prints to stdout). Use BASE_URL to build absolute link.
-    base_url = os.getenv("BASE_URL", "https://soultribe.chat")
+    # Always use production URL for email verification links
+    base_url = "https://soultribe.chat"
     absolute_link = base_url.rstrip('/') + verification_url
     subj = "Verify your email — SoulTribe.chat"
-    text = f"Welcome to SoulTribe.chat!\n\nClick to verify: {absolute_link}\n\nThis link expires in 48 hours."
+    text = f"Welcome to SoulTribe.chat!\n\nClick to verify: {absolute_link}\n\nThis link expires in 24 hours."
     html = f"""
       <p>Welcome to <strong>SoulTribe.chat</strong>!</p>
       <p>Please verify your email address by clicking the link below:</p>
       <p><a href=\"{absolute_link}\">Verify Email</a></p>
-      <p>This link expires in 48 hours.</p>
+      <p>This link expires in 24 hours.</p>
     """
     try:
         send_email(user.email, subj, html, text)
@@ -176,7 +178,7 @@ def register(payload: RegisterIn, session=Depends(get_session)):
 
 
 @router.post("/login", response_model=LoginOut)
-def login(payload: LoginIn, session=Depends(get_session)):
+def login(payload: LoginIn, session=Depends(get_session), request: Request = None):
     user = session.exec(select(User).where(User.email == payload.email)).first()
     if not user:
         raise HTTPException(status_code=401, detail="Invalid credentials")
@@ -184,6 +186,23 @@ def login(payload: LoginIn, session=Depends(get_session)):
         ph.verify(user.password_hash, payload.password)
     except Exception:
         raise HTTPException(status_code=401, detail="Invalid credentials")
+    
+    # Check if email is verified; allow localhost bypass for local dev
+    if not user.email_verified_at:
+        try:
+            host = request.client.host if request and request.client else ''
+        except Exception:
+            host = ''
+        if host not in {"127.0.0.1", "::1", "localhost"}:
+            raise HTTPException(status_code=401, detail="Email not verified")
+    
+    # Record last login timestamp (UTC naive)
+    try:
+        user.last_login_at = _utcnow_naive()
+        session.add(user)
+        session.commit()
+    except Exception:
+        pass
     token = create_access_token({"sub": str(user.id), "email": user.email})
     return LoginOut(ok=True, access_token=token)
 
@@ -204,7 +223,7 @@ def reset_request(payload: ResetRequestIn, session=Depends(get_session)):
         session.add(rec)
         session.commit()
 
-        base_url = os.getenv("BASE_URL", "http://127.0.0.1:8001")
+        base_url = os.getenv("BASE_URL", "https://soultribe.chat")
         link = base_url.rstrip('/') + f"/reset-password.html?token={raw}"
         subj = "Reset your password — SoulTribe.chat"
         text = f"We received a request to reset your password.\n\nClick: {link}\n\nIf you didn't request this, ignore this email."
@@ -218,6 +237,61 @@ def reset_request(payload: ResetRequestIn, session=Depends(get_session)):
         except Exception:
             pass
     return ResetRequestOut(ok=True, message="If an account exists, a reset email has been sent.")
+
+
+@router.post("/resend-verification", response_model=ResetRequestOut)
+def resend_verification(payload: ResetRequestIn, session=Depends(get_session)):
+    """Resend the verification email for a user.
+    
+    This will resend the verification email if the user exists and is not already verified.
+    For security, always returns success even if the email doesn't exist.
+    """
+    user = session.exec(select(User).where(User.email == payload.email)).first()
+    if user and not user.email_verified_at:
+        # Delete any existing verification tokens for this user
+        session.exec(
+            delete(EmailVerificationToken).where(EmailVerificationToken.user_id == user.id)
+        )
+        
+        # Create new verification token
+        token = EmailVerificationToken(
+            user_id=user.id,
+            token=secrets.token_urlsafe(32),
+            created_at=_utcnow_naive(),
+            expires_at=_utcnow_naive() + timedelta(hours=24)  # 24 hours
+        )
+        session.add(token)
+        session.commit()
+        
+        # Send verification email
+        base_url = os.getenv("BASE_URL", "https://soultribe.chat")
+        verification_url = f"{base_url}/api/auth/verify-email?token={token.token}"
+        subj = "Verify your email — SoulTribe.chat"
+        text = f"""
+        Welcome to SoulTribe.chat!
+        
+        Click to verify your email: {verification_url}
+        
+        This link expires in 24 hours.
+        """
+        html = f"""
+        <h1>Welcome to SoulTribe.chat!</h1>
+        <p>Click the button below to verify your email address:</p>
+        <p><a href="{verification_url}" style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Verify Email</a></p>
+        <p>Or copy and paste this link in your browser:</p>
+        <p><code>{verification_url}</code></p>
+        <p>This link expires in 24 hours.</p>
+        """
+        try:
+            send_email(user.email, subj, html, text)
+        except Exception:
+            pass
+    
+    # Always return success for security
+    return ResetRequestOut(
+        ok=True, 
+        message="If an account exists and is not verified, a verification email has been sent."
+    )
 
 
 @router.post("/reset", response_model=ResetPerformOut)
@@ -268,35 +342,52 @@ def verify_email(payload: VerifyIn, request: Request, session=Depends(get_sessio
     return VerifyOut(ok=True, user_id=user.id, verified_at=now)
 
 
-class VerifyEmailLinkOut(BaseModel):
-    ok: bool
-    user_id: int
-    verified_at: datetime
+from fastapi.responses import RedirectResponse
+from fastapi import Request
 
-
-@router.get("/verify-email", response_model=VerifyEmailLinkOut)
-def verify_email_link(token: str, session=Depends(get_session)):
+@router.get("/verify-email")
+async def verify_email_link(token: str, request: Request, session=Depends(get_session)):
     """Verify an email using a one-time token sent via email.
     This is a production endpoint used in verification emails.
-    Security is enforced through token uniqueness, expiry, and one-time use."""
-    rec = session.exec(select(EmailVerificationToken).where(EmailVerificationToken.token == token)).first()
-    if not rec:
-        raise HTTPException(status_code=400, detail="Invalid or used token")
-    now = _utcnow_naive()
-    if rec.used_at is not None:
-        raise HTTPException(status_code=400, detail="Token already used")
-    exp = _to_naive_utc(rec.expires_at)
-    if exp < now:
-        raise HTTPException(status_code=400, detail="Token expired")
+    Security is enforced through token uniqueness, expiry, and one-time use.
+    
+    After successful verification, redirects to the verification success page."""
+    # Get the base URL from the request
+    base_url = "https://soultribe.chat"  # Always use production URL for redirects
+    
+    try:
+        # Verify the token
+        rec = session.exec(select(EmailVerificationToken).where(EmailVerificationToken.token == token)).first()
+        if not rec:
+            return RedirectResponse(url=f"{base_url}/verify-email.html?error=invalid_token")
+            
+        now = _utcnow_naive()
+        if rec.used_at is not None:
+            return RedirectResponse(url=f"{base_url}/verify-email.html?error=token_used")
+            
+        exp = _to_naive_utc(rec.expires_at)
+        if exp < now:
+            return RedirectResponse(url=f"{base_url}/verify-email.html?error=token_expired")
+            
+        # Get the user
+        user = session.get(User, rec.user_id)
+        if not user:
+            return RedirectResponse(url=f"{base_url}/verify-email.html?error=user_not_found")
+            
+        # Update user and token
+        user.email_verified_at = now
+        rec.used_at = now
+        session.add(user)
+        session.add(rec)
+        session.commit()
+        
+        # Redirect to success page
+        return RedirectResponse(url=f"{base_url}/verify-email.html?verified=true")
+        
+    except Exception as e:
+        # Log the error for debugging
+        print(f"Error verifying email: {str(e)}")
+        return RedirectResponse(url=f"{base_url}/verify-email.html?error=server_error")
 
-    user = session.get(User, rec.user_id)
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-
-    user.email_verified_at = now
-    rec.used_at = now
-    session.add(user)
-    session.add(rec)
-    session.commit()
-
-    return VerifyEmailLinkOut(ok=True, user_id=user.id, verified_at=now)
+    # This line is unreachable due to the return in the try block
+    pass

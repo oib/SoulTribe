@@ -1,9 +1,17 @@
 from __future__ import annotations
 from datetime import datetime, timezone
+import os
+import sys
+
+# Allow importing modules from the repository root when running this script directly
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 
 from sqlmodel import select
 
-from db import get_session, init_db
+from db import session_scope, init_db
 from models import User, Profile, Radix
 from services.radix import compute_radix_json
 
@@ -65,7 +73,7 @@ def ensure_user(session, email: str, password_hash: str = "argon2$dev", *,
 
 def main():
     init_db()
-    with get_session() as session:
+    with session_scope() as session:
         ids = []
         ids.append(ensure_user(
             session,

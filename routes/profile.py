@@ -1,5 +1,6 @@
 from __future__ import annotations
 from datetime import timezone
+from zoneinfo import ZoneInfo
 from fastapi import APIRouter, Depends, HTTPException
 import traceback
 from pydantic import BaseModel
@@ -43,10 +44,20 @@ def get_profile(user_id: int = Depends(get_current_user_id), session = Depends(g
         prof = Profile(user_id=user_id)
         session.add(prof)
         session.commit()
+    # Compute local birth datetime label if possible
+    birth_dt_local: Optional[str] = None
+    try:
+        if prof.birth_dt_utc and prof.birth_tz:
+            tz = ZoneInfo(prof.birth_tz)
+            birth_dt_local = str(prof.birth_dt_utc.astimezone(tz).replace(microsecond=0))
+    except Exception:
+        birth_dt_local = None
+
     return ProfileOut(
         user_id=user_id,
         display_name=prof.display_name,
         birth_dt_utc=prof.birth_dt_utc,
+        birth_dt_local=birth_dt_local,
         birth_time_known=prof.birth_time_known,
         birth_place_name=prof.birth_place_name,
         birth_lat=prof.birth_lat,
@@ -64,6 +75,7 @@ def get_profile(user_id: int = Depends(get_current_user_id), session = Depends(g
 class InterpretIn(BaseModel):
     message: Optional[str] = None
     history: Optional[List[Dict[str, Any]]] = None
+    lang: Optional[str] = None
 
 
 class InterpretOut(BaseModel):
@@ -79,8 +91,38 @@ def interpret_profile(payload: InterpretIn, user_id: int = Depends(get_current_u
         raise HTTPException(status_code=404, detail="Radix not available")
 
     display_name = p.display_name if (p and p.display_name) else f"user {user_id}"
+    # Resolve target language: request.lang -> profile.lang_primary -> 'en'
+    try:
+        target_lang = (payload.lang or (p.lang_primary if p and getattr(p, 'lang_primary', None) else None) or 'en').strip()
+    except Exception:
+        target_lang = 'en'
+
+    # Normalize codes like de-DE -> de, en-US -> en
+    try:
+        if '-' in target_lang:
+            target_lang = target_lang.split('-')[0]
+    except Exception:
+        pass
+
+    # Map common language codes to human-readable names for LLM clarity
+    LANG_LABELS = {
+        'en': 'English', 'de': 'German', 'fr': 'French', 'es': 'Spanish', 'it': 'Italian', 'pt': 'Portuguese',
+        'nl': 'Dutch', 'sv': 'Swedish', 'da': 'Danish', 'fi': 'Finnish', 'no': 'Norwegian', 'pl': 'Polish',
+        'cs': 'Czech', 'sk': 'Slovak', 'sl': 'Slovene', 'hu': 'Hungarian', 'ro': 'Romanian', 'bg': 'Bulgarian',
+        'el': 'Greek', 'tr': 'Turkish', 'ru': 'Russian', 'uk': 'Ukrainian', 'lt': 'Lithuanian', 'lv': 'Latvian',
+        'et': 'Estonian', 'ga': 'Irish', 'hr': 'Croatian', 'mt': 'Maltese'
+    }
+    lang_label = LANG_LABELS.get(target_lang, target_lang)
+    try:
+        print("[interpret] target_lang=", target_lang, "label=", lang_label)
+    except Exception:
+        pass
     intro = [
-        "You are an insightful but concise astrologer. Provide a short, friendly reading in plain language (2-4 sentences).",
+        "You are an insightful but concise astrologer.",
+        "Provide a short, friendly reading in plain language (2-4 sentences).",
+        f"RESPONSE LANGUAGE CODE: {target_lang}",
+        f"Respond ONLY in {lang_label} (language code: {target_lang}). Do not use any other language.",
+        "Keep astrology glyphs (e.g., ♄, ♃) as-is and do not translate names or symbols.",
         f"User: {display_name}",
         f"Radix: {json.dumps(r.json, ensure_ascii=False)}",
     ]
@@ -166,9 +208,43 @@ def update_profile(
     birth_dt_utc = None
     if payload.birth_dt is not None:
         dt = payload.birth_dt
+        # If client sent naive local datetime, interpret it in the provided birth_tz (preferred)
         if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
+            tz = None
+            try:
+                if payload.birth_tz:
+                    tz = ZoneInfo(payload.birth_tz)
+            except Exception:
+                tz = None
+            if tz is not None:
+                dt = dt.replace(tzinfo=tz)
+                try:
+                    print("[profile.update] interpret naive as local", {
+                        "naive": str(payload.birth_dt),
+                        "tz": payload.birth_tz,
+                        "utcoffset": str(dt.utcoffset()),
+                    })
+                except Exception:
+                    pass
+            else:
+                # Fallback assumption: input already UTC
+                dt = dt.replace(tzinfo=timezone.utc)
+                try:
+                    print("[profile.update] naive with no tz provided; assuming UTC", {
+                        "naive": str(payload.birth_dt)
+                    })
+                except Exception:
+                    pass
+        # Convert to UTC
         dt_utc = dt.astimezone(timezone.utc)
+        try:
+            print("[profile.update] computed birth_dt_utc", {
+                "local": str(dt),
+                "birth_tz": payload.birth_tz,
+                "utc": str(dt_utc)
+            })
+        except Exception:
+            pass
         if not payload.birth_time_known:
             dt_utc = dt_utc.replace(hour=12, minute=0, second=0, microsecond=0)
         birth_dt_utc = dt_utc
@@ -219,10 +295,20 @@ def update_profile(
             traceback.print_exc()
             # Keep profile update successful even if radix fails; return profile fields
 
+    # Also compute birth_dt_local for response
+    birth_dt_local_resp: Optional[str] = None
+    try:
+        if prof.birth_dt_utc and prof.birth_tz:
+            tz = ZoneInfo(prof.birth_tz)
+            birth_dt_local_resp = str(prof.birth_dt_utc.astimezone(tz).replace(microsecond=0))
+    except Exception:
+        birth_dt_local_resp = None
+
     return ProfileOut(
         user_id=user_id,
         display_name=prof.display_name,
         birth_dt_utc=prof.birth_dt_utc,
+        birth_dt_local=birth_dt_local_resp,
         birth_time_known=prof.birth_time_known,
         birth_place_name=prof.birth_place_name,
         birth_lat=prof.birth_lat,

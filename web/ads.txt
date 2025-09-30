@@ -1,0 +1,19 @@
+# ads.txt for SoulTribe.chat
+# IAB Tech Lab Authorized Digital Sellers file
+# Docs: https://iabtechlab.com/ads-txt/
+# Purpose: Declare which ad systems are authorized to sell inventory for this site.
+#
+# FORMAT
+# <ad_system_domain>, <publisher_account_id>, <DIRECT|RESELLER>, <cert_authority_id (optional)>
+#
+# EXAMPLES (uncomment and replace with your own IDs)
+# Google AdSense / Ad Manager
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# Xandr
+# appnexus.com, 1234, DIRECT
+#
+# Index Exchange
+# indexexchange.com, 12345, RESELLER, 50b1c356f2c5c8fc
+#
+# Add one line per authorized seller. Lines starting with '#' are comments.

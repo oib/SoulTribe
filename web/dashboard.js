@@ -12,6 +12,15 @@
     } catch { return tz; }
   }
 
+  // Validate IANA timezone identifier
+  function isValidIanaTimeZone(tz) {
+    try {
+      if (!tz || typeof tz !== 'string') return false;
+      new Intl.DateTimeFormat('en-US', { timeZone: tz });
+      return true;
+    } catch { return false; }
+  }
+
   // Build UTC ISO from a wall time expressed in a specific IANA timezone
   function buildUtcIsoFromTz(dateStr, hourStr, tz) {
     try {
@@ -151,9 +160,72 @@
   // Get API function from global scope
   const api = window.api;
   const show = window.show;
-  const toast = window.toast;
+  const toast = (...args) => {
+    try {
+      const t = (typeof window !== 'undefined') ? window.toast : null;
+      if (typeof t === 'function') return t(...args);
+    } catch {}
+    try { console.log('[toast]', ...args); } catch {}
+  };
   const currentUserId = window.currentUserId;
   const token = () => window.token;
+  const errorMessage = (err, fb) => {
+    try { if (typeof window.errorMessage === 'function') return window.errorMessage(err, fb); } catch {}
+    try { return (err && err.data && err.data.detail) ? err.data.detail : (err?.message || fb || 'Error'); } catch { return fb || 'Error'; }
+  };
+
+  // --- Browser Notifications for Meetups ---
+  function ensureNotificationPermission() {
+    try {
+      if (!('Notification' in window)) return false;
+      if (Notification.permission === 'granted') return true;
+      if (Notification.permission === 'denied') return false;
+      Notification.requestPermission().catch(() => {});
+    } catch {}
+    return false;
+  }
+
+  function getNotifiedMeetups() {
+    try {
+      const raw = localStorage.getItem('notified_meetups');
+      const set = new Set(JSON.parse(raw || '[]'));
+      return set;
+    } catch { return new Set(); }
+  }
+
+  function saveNotifiedMeetups(set) {
+    try {
+      localStorage.setItem('notified_meetups', JSON.stringify(Array.from(set)));
+    } catch {}
+  }
+
+  function notifyProposedMeetup(item) {
+    try {
+      if (!('Notification' in window)) return;
+      if (Notification.permission !== 'granted') return;
+      const otherLabel = item.other_display_name ? item.other_display_name : `user ${item.other_user_id}`;
+      const when = item.proposed_dt_utc ? new Date(item.proposed_dt_utc) : null;
+      const hh = when ? String(when.getHours()).padStart(2,'0') : '';
+      const mm = when ? String(when.getMinutes()).padStart(2,'0') : '';
+      const date = when ? `${when.getFullYear()}-${String(when.getMonth()+1).padStart(2,'0')}-${String(when.getDate()).padStart(2,'0')}` : '';
+      const title = 'Meetup proposed — needs your confirmation';
+      const body = otherLabel && when ? `${otherLabel} proposed ${date} ${hh}:${mm} (UTC)` : 'A meetup has been proposed.';
+      const n = new Notification(title, { body });
+      n.onclick = () => {
+        try { n.close(); } catch {}
+        try {
+          if (window && window.location) {
+            // Navigate to dashboard; if already there, just focus
+            if (!/\/dashboard\.html$/i.test(window.location.pathname)) {
+              window.location.href = '/dashboard.html';
+            } else {
+              window.focus();
+            }
+          }
+        } catch {}
+      };
+    } catch {}
+  }
 
   // Helper to fetch and render matches based on current input fields
   const fetchAndRenderMatches = async () => {
@@ -162,17 +234,19 @@
       console.warn('No user ID available for match finding');
       return;
     }
-    const body = { user_id, limit: 20, min_score: 50, lookahead_days: 3, max_overlaps: 5 };
+    const body = { user_id, limit: 20, min_score: 50, lookahead_days: 14, max_overlaps: 5 };
     const data = await api("/api/match/find", { method: "POST", body, auth: true });
     
     // Pretty render: candidates with score and overlaps (UTC + local)
     const cont = document.getElementById('matches');
     if (cont) {
       let items = '';
-      // Only show candidates with at least one overlap
-      const withOverlaps = Array.isArray(data) ? data.filter(c => Array.isArray(c.overlaps) && c.overlaps.length > 0) : [];
-      for (const cand of withOverlaps) {
-        const otherName = cand.other_display_name ? cand.other_display_name : `user ${cand.user_id}`;
+      // Show all candidates; if none overlaps, render without overlap chips
+      const list = Array.isArray(data) ? data : [];
+      for (const cand of list) {
+        const otherName = (cand.other_display_name && String(cand.other_display_name).trim())
+          ? String(cand.other_display_name).trim()
+          : `user ${cand.user_id}`;
         let chips = '';
         if (Array.isArray(cand.overlaps) && cand.overlaps.length) {
           for (const ov of cand.overlaps) {
@@ -193,26 +267,26 @@
             const otherBlock = (ov.b_local_start && ov.b_local_end && ov.b_tz)
               ? `
                 <div class=\"chip-col\">
-                  <div class=\"meta\">${otherName}${otherCity ? ' ('+otherCity+(tzOffsetLabel(otherCity, ov.start_dt_utc) ? ' ('+tzOffsetLabel(otherCity, ov.start_dt_utc)+')' : '')+')' : ''}</div>
+                  <div class=\"meta\">${otherName.trim() || `user ${cand.user_id}`}${otherCity ? ' ('+otherCity+(tzOffsetLabel(otherCity, ov.start_dt_utc) ? ' ('+tzOffsetLabel(otherCity, ov.start_dt_utc)+')' : '')+')' : ''}</div>
                   <div class=\"meta\">${extractDate(ov.b_local_start)}</div>
                   <div class=\"meta\">${extractTime(ov.b_local_start)}</div>
                   <div class=\"meta\">${dur}</div>
                 </div>
               ` : '';
             chips += `
-              <div class=\"chip\">
-                <div class=\"chip-grid\">
-                  <div class=\"chip-col\">
-                    <div class=\"meta\">UTC</div>
-                    <div class=\"meta\">${extractDate(ov.start_dt_utc)}</div>
-                    <div class=\"meta\">${extractTime(ov.start_dt_utc)}</div>
-                    <div class=\"meta\">${dur}</div>
+              <div class="chip">
+                <div class="chip-grid">
+                  <div class="chip-col">
+                    <div class="meta">UTC</div>
+                    <div class="meta">${extractDate(ov.start_dt_utc)}</div>
+                    <div class="meta">${extractTime(ov.start_dt_utc)}</div>
+                    <div class="meta">${dur}</div>
                   </div>
                   ${youBlock}
                   ${otherBlock}
                 </div>
-                <div class=\"item-actions\">
-                  <button class=\"button btn-meet-from-overlap\" data-cand=\"${cand.user_id}\" data-start=\"${startIso}\">Propose this time</button>
+                <div class="item-actions">
+                  <button class="button btn-meet-from-overlap" data-cand="${cand.user_id}" data-start="${startIso}" data-i18n="dashboard.propose_time">Propose time</button>
                 </div>
               </div>`;
           }
@@ -239,7 +313,7 @@
               </div>
             </div>
         ` : '';
-        const annotateBtn = !cand.comment ? `<div class="item-actions center"><button class="button secondary btn-annotate-match" data-cand="${cand.user_id}">Generate AI comment</button></div>` : '';
+        const annotateBtn = !cand.comment ? `<div class="item-actions center"><button class="button secondary btn-annotate-match" data-cand="${cand.user_id}" data-i18n="dashboard.generate_ai_comment">Generate AI comment</button></div>` : '';
         items += `
           <li class="item-card">
             <div class="item-head">
@@ -252,6 +326,7 @@
           </li>`;
       }
       cont.innerHTML = `<ul class="list">${items}</ul>`;
+      try { if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') window.SimpleI18n.updateUI(); } catch {}
       if (!items) {
         // Optional: hint when no overlaps found
         cont.innerHTML = `<div class="muted">No overlapping slots found. Add availability or try again later.</div>`;
@@ -297,6 +372,8 @@
       const data = await api("/api/meetup/list", { auth: true });
       const cont = document.getElementById('meetups');
       if (cont) {
+        // Prepare notification tracking set
+        const notified = getNotifiedMeetups();
         // Filter to upcoming meetups only (either proposed or confirmed is in the future)
         const now = new Date();
         const upcoming = (data || []).filter((item) => {
@@ -314,7 +391,9 @@
         let items = '';
         for (const item of upcoming) {
           const title = `Meetup #${item.meetup_id}`;
-          const otherLabel = item.other_display_name ? item.other_display_name : `user ${item.other_user_id}`;
+          const otherLabel = (item.other_display_name && String(item.other_display_name).trim())
+            ? String(item.other_display_name).trim()
+            : `user ${item.other_user_id}`;
           const subtitle = `Match #${item.match_id} • with ${otherLabel}`;
           const status = `<span class="badge ${item.status==='confirmed'?'success': (item.status==='canceled'?'error':'info')}">${item.status}</span>`;
 
@@ -323,8 +402,8 @@
             const utcDate = extractDate(dtUtc);
             const utcTime = extractTime(dtUtc);
             const d = new Date(dtUtc);
-            const localDate = `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())}`;
-            const localTime = `${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+            const localDate = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+            const localTime = `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
             // Determine user's timezone label and offset
             let userTz = window.liveTz || null;
             if (!userTz) { try { userTz = localStorage.getItem('live_tz'); } catch {} }
@@ -333,8 +412,8 @@
             const tzOff = tzOffsetLabel(userTz, dtUtc);
             return `
               <div class="chip">
-                ${label !== 'Proposed' ? `<div class=\"meta\" style=\"font-weight:700;\">${label}</div>` : ''}
-                ${byline ? `<div class=\"meta\">${byline}</div>` : ''}
+                ${label !== 'Proposed' ? `<div class="meta" style="font-weight:700;">${label}</div>` : ''}
+                ${byline ? `<div class="meta">${byline}</div>` : ''}
                 <div class="chip-grid">
                   <div class="chip-col">
                     <div class="meta">UTC</div>
@@ -385,6 +464,22 @@
             </li>`;
         }
         cont.innerHTML = `<ul class="list">${items}</ul>`;
+
+        // After render: send browser notifications for any newly proposed meetups awaiting confirmation
+        try {
+          if (ensureNotificationPermission()) {
+            for (const item of upcoming) {
+              const isAwaiting = item.status === 'proposed' && item.proposed_dt_utc && item.proposer_user_id !== currentUserId;
+              if (!isAwaiting) continue;
+              const key = String(item.meetup_id);
+              if (!notified.has(key)) {
+                notifyProposedMeetup(item);
+                notified.add(key);
+              }
+            }
+            saveNotifiedMeetups(notified);
+          }
+        } catch {}
       } else {
         const ts = new Date().toISOString();
         let html = `[${ts}] meetup.list:`;
@@ -420,18 +515,24 @@
               // Use stored local time and timezone from database
               localDate = extractDate(s.start_dt_local);
               localTime = extractTime(s.start_dt_local);
-              tzLabel = s.timezone;
-              tzOffset = tzOffsetLabel(tzLabel, s.start_dt_utc);
+              // Validate timezone; fallback to a safe IANA value
+              let tzCandidate = s.timezone;
+              if (!isValidIanaTimeZone(tzCandidate)) {
+                tzCandidate = (window.liveTz || localStorage.getItem('live_tz') || (Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC'));
+              }
+              tzLabel = tzCandidate;
+              tzOffset = isValidIanaTimeZone(tzCandidate) ? tzOffsetLabel(tzCandidate, s.start_dt_utc) : '';
             } else {
               // Fallback: convert UTC to user's profile timezone
               const startUTC = new Date(s.start_dt_utc);
-              const userTz = window.liveTz || localStorage.getItem('live_tz') || Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+              let userTz = window.liveTz || localStorage.getItem('live_tz') || Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+              if (!isValidIanaTimeZone(userTz)) userTz = 'UTC';
               const startLocal = new Date(startUTC.toLocaleString("en-US", {timeZone: userTz}));
               
               localDate = `${startLocal.getFullYear()}-${pad2(startLocal.getMonth()+1)}-${pad2(startLocal.getDate())}`;
               localTime = `${pad2(startLocal.getHours())}:${pad2(startLocal.getMinutes())}`;
               tzLabel = userTz;
-              tzOffset = tzOffsetLabel(userTz, s.start_dt_utc);
+              tzOffset = isValidIanaTimeZone(userTz) ? tzOffsetLabel(userTz, s.start_dt_utc) : '';
             }
             
             const utcDate = extractDate(s.start_dt_utc);
@@ -447,8 +548,8 @@
                     data-end="${s.end_dt_utc}"
                     data-local-date="${localDate}"
                     data-local-hour="${localTime.slice(0,2)}"
-                    data-tz="${tzLabel}">Edit</button>
-                  <button class="button secondary btn-delete-slot" data-id="${s.id}">Delete</button>
+                    data-tz="${isValidIanaTimeZone(tzLabel) ? tzLabel : 'UTC'}" data-i18n="dashboard.slot_edit">Edit</button>
+                  <button class="button secondary btn-delete-slot" data-id="${s.id}" data-i18n="dashboard.slot_delete">Delete</button>
                 </div>
               </div>
               <div class="chips">
@@ -490,6 +591,7 @@
             </li>`;
           }).join('');
           cont.innerHTML = `<ul class="list">${items}</ul>`;
+          try { if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') window.SimpleI18n.updateUI(); } catch {}
         } else {
           const ts = new Date().toISOString();
           let html = `[${ts}] availability.list:`;
@@ -526,8 +628,8 @@
         const b_user_id = parseInt($("createB").value, 10);
         const data = await api("/api/match/create", { method: "POST", body: { a_user_id, b_user_id }, auth: true });
         show("match.create", data);
-        // Refresh matches list on dashboard
-        try { await fetchAndRenderMatches(); } catch {}
+        // Periodically refresh meetups to catch new proposals and trigger notifications (every 20 minutes)
+        try { setInterval(() => { fetchAndRenderMeetups().catch(()=>{}); }, 1200000); } catch {}
       } catch (e) { show("match.create:ERROR", e); }
     });
 
@@ -670,7 +772,7 @@
           toast('Meetup unconfirmed');
           await fetchAndRenderMeetups();
         } catch (err) {
-          toast('Failed to unconfirm meetup', 'error');
+          toast(errorMessage(err, 'Failed to unconfirm meetup'), 'error');
           show('meetup.unconfirm:ERROR', err);
         }
       }
@@ -681,9 +783,9 @@
         try {
           await api(`/api/meetup/${meetupId}`, { method: 'DELETE', auth: true });
           toast('Meetup deleted');
-          document.getElementById('btn-meet-list')?.click();
+          try { if (window.fetchAndRenderMeetups) await window.fetchAndRenderMeetups(); } catch {}
         } catch (err) {
-          toast('Failed to delete meetup', 'error');
+          toast(errorMessage(err, 'Failed to delete meetup'), 'error');
           show('meetup.delete:ERROR', err);
         }
       }
@@ -695,9 +797,9 @@
         try {
           await api(`/api/meetup/confirm`, { method: 'POST', body: { meetup_id: meetupId, confirmed_dt_utc: dt }, auth: true });
           toast('Meetup confirmed');
-          document.getElementById('btn-meet-list')?.click();
+          await fetchAndRenderMeetups();
         } catch (err) {
-          toast('Failed to confirm meetup', 'error');
+          toast(errorMessage(err, 'Failed to confirm meetup'), 'error');
           show('meetup.confirm:ERROR', err);
         }
       }
@@ -709,17 +811,19 @@
           toast('Slot deleted');
           // Auto-refresh availability list like create slot does
           try { if (window.fetchAvailList) await window.fetchAvailList(); } catch {}
+          // Also refresh matches so the overlaps list updates immediately
+          try { if (window.fetchAndRenderMatches) await window.fetchAndRenderMatches(); } catch {}
         } catch (err) {
-          toast('Failed to delete slot', 'error');
+          toast(errorMessage(err, 'Failed to delete slot'), 'error');
           show('availability.delete:ERROR', err);
         }
       }
       
-      if (e.target.classList.contains('btn-edit-slot')) {
-        const btn = e.target;
-        const card = btn.closest('.chip');
-        if (!card) return;
-        const editor = card.querySelector('.edit-row');
+      if (e.target && typeof e.target.closest === 'function' && e.target.closest('.btn-edit-slot')) {
+        const btn = e.target.closest('.btn-edit-slot');
+        const item = btn.closest('.item-card');
+        if (!item) return;
+        const editor = item.querySelector('.edit-row');
         if (!editor) return;
         // Populate inputs with current values
         const startUtc = btn.dataset.start;
@@ -728,6 +832,8 @@
         const dEnd = new Date(endUtc);
         const sDateEl = editor.querySelector('.edit-start-date');
         const sHourEl = editor.querySelector('.edit-start-hour');
+        // Ensure the hour select has 0..23 options
+        try { populateHourOptions(sHourEl); } catch {}
         const durEl = editor.querySelector('.edit-duration-hours');
         populateHourOptions(sHourEl);
         // Prefer local prefilled values from data- attributes when available
@@ -807,8 +913,10 @@
           toast('Slot updated');
           editor.style.display = 'none';
           try { if (window.fetchAvailList) await window.fetchAvailList(); } catch {}
+          // Also refresh matches after updating a slot
+          try { if (window.fetchAndRenderMatches) await window.fetchAndRenderMatches(); } catch {}
         } catch (err) {
-          toast('Failed to update slot', 'error');
+          toast(errorMessage(err, 'Failed to update slot'), 'error');
           show('availability.patch:ERROR', err);
         }
       }
@@ -834,7 +942,7 @@
           // Revert UI on error
           btn.disabled = false;
           btn.textContent = originalText || 'Propose this time';
-          toast('Failed to propose meetup', 'error');
+          toast(errorMessage(err, 'Failed to propose meetup'), 'error');
           show('meetup.propose:ERROR', err);
         }
       }
@@ -848,7 +956,7 @@
           toast('AI comment generated');
           await fetchAndRenderMatches();
         } catch (err) {
-          toast('Failed to generate comment', 'error');
+          toast(errorMessage(err, 'Failed to generate comment'), 'error');
           show('match.annotate:ERROR', err);
         }
       }

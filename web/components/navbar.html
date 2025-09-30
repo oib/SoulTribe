@@ -1,0 +1,134 @@
+<!-- Navigation will be loaded here by components.js -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <!-- Left-aligned items (Language) -->
+    <div class="navbar-left">
+      <div class="language-selector-container">
+        <select id="language-selector" class="language-selector" aria-label="Select language">
+          <option value="de">DE - Deutsch</option>
+          <option value="en" selected>EN - English</option>
+          <option value="es">ES - Español</option>
+          <option value="fr">FR - Français</option>
+          <option value="it">IT - Italiano</option>
+          <option value="pt">PT - Português</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Brand/logo (centered) -->
+    <div class="navbar-logo-container">
+      <a href="/" class="navbar-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+          <defs>
+            <linearGradient id="cosmicGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7f5af0"/>
+              <stop offset="50%" stop-color="#5a4fcf"/>
+              <stop offset="100%" stop-color="#f3d08a"/>
+            </linearGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2.5" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                font-family="Segoe UI, sans-serif" font-size="48" font-weight="600"
+                fill="url(#cosmicGradient)" filter="url(#glow)">
+            Soul Tribe
+          </text>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Right-aligned items (Buttons) -->
+    <div class="navbar-right">
+      <!-- User Menu -->
+      <div class="user-menu" style="display: flex; align-items: center; gap: 10px;">
+        <a href="/login.html" id="login-link" class="btn btn-primary" style="display: inline-block;" data-i18n="landing.next.login_register">Login / Register</a>
+        <a href="/profile.html" id="profile-btn" class="btn btn-primary" style="display: none;" data-i18n="nav.profile">Profile</a>
+        <a href="/dashboard.html" id="dashboard-btn" class="btn btn-primary" style="display: none;" data-i18n="nav.dashboard">Dashboard</a>
+        <button id="logout-btn" class="btn btn-secondary" data-i18n="nav.logout" style="display: none;">Log Out</button>
+      </div>
+    </div>
+    
+    <button class="navbar-toggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</nav>
+
+<script>
+  // Namespaced navbar UI update to avoid colliding with page-level functions
+  function updateNavbarAuthUI() {
+    const isAuthenticated = !!localStorage.getItem('access_token');
+
+    // Toggle right-corner buttons
+    const loginLink = document.getElementById('login-link');
+    const profileBtn = document.getElementById('profile-btn');
+    const dashboardBtn = document.getElementById('dashboard-btn');
+    const logoutBtn = document.getElementById('logout-btn');
+    const onProfile = location.pathname.endsWith('/profile.html');
+    const onDashboard = location.pathname.endsWith('/dashboard.html');
+
+    if (loginLink) loginLink.style.display = isAuthenticated ? 'none' : 'inline-block';
+    // Show Profile everywhere except on profile page (there show Dashboard instead)
+    if (profileBtn) profileBtn.style.display = isAuthenticated && !onProfile ? 'inline-block' : 'none';
+    if (dashboardBtn) dashboardBtn.style.display = isAuthenticated && onProfile ? 'inline-block' : 'none';
+    if (logoutBtn) logoutBtn.style.display = isAuthenticated ? 'inline-block' : 'none';
+
+    document.body.classList.toggle('authenticated', isAuthenticated);
+    document.body.classList.toggle('guest', !isAuthenticated);
+  }
+
+  // Expose only the navbar-specific updater
+  window.updateNavbarAuthUI = updateNavbarAuthUI;
+
+  // Initialize language selector and auth state now (script runs after insertion)
+  (function initNavbar() {
+    try {
+      const langSelector = document.getElementById('language-selector');
+      const langWrap = document.querySelector('.language-selector-container');
+      // Only show language selector on landing page
+      const onLanding = document.body.classList.contains('welcome-page') || location.pathname === '/' || location.pathname.endsWith('/index.html');
+      if (langWrap && !onLanding) {
+        langWrap.style.display = 'none';
+      }
+      if (langSelector && onLanding) {
+        const savedLang = localStorage.getItem('i18nextLng') || 'en';
+        if (savedLang && langSelector.querySelector(`option[value="${savedLang}"]`)) {
+          langSelector.value = savedLang;
+        }
+        langSelector.addEventListener('change', function(e) {
+          const lang = e.target.value;
+          localStorage.setItem('i18nextLng', lang);
+          if (window.SimpleI18n && typeof SimpleI18n.changeLanguage === 'function') {
+            SimpleI18n.changeLanguage(lang);
+          } else if (window.i18next && typeof i18next.changeLanguage === 'function') {
+            i18next.changeLanguage(lang);
+          }
+        });
+      }
+
+      // Listen to storage changes for auth token from other tabs
+      window.addEventListener('storage', function(e) {
+        if (e.key === 'access_token') updateNavbarAuthUI();
+      });
+
+      // Wire logout button
+      document.getElementById('logout-btn')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('user');
+        updateNavbarAuthUI();
+        window.location.href = '/';
+      });
+
+      // Initial state
+      updateNavbarAuthUI();
+    } catch (err) {
+      console.warn('Navbar init error:', err);
+    }
+  })();
+</script>

@@ -744,7 +744,91 @@
           const secs = secsRaw
             .filter((code) => code && isValid(code) && code !== primarySelect.value);
           selectedLanguages = new Set(secs.length ? secs : Array.from(selectedLanguages));
-          try { window.selectedLanguages = selectedLanguages; } catch {}
+          // --- Prefill birth data and location from profile so values persist across navigation ---
+          try {
+            // Display name
+            if (prof?.display_name && $("displayName")) $("displayName").value = prof.display_name;
+            // Birth date/time known
+            const birthTimeKnown = !!prof?.birth_time_known;
+            // Prefer backend birth_dt_local if provided to avoid browser TZ discrepancies
+            const bdtLocal = prof?.birth_dt_local ? String(prof.birth_dt_local) : null;
+            // Fallback: use backend birth_dt_utc and convert to birth_tz for UI fields
+            const bdtUtc = prof?.birth_dt_utc ? String(prof.birth_dt_utc) : null;
+            // Start with backend tz, then normalize for Vienna if needed
+            let btz = prof?.birth_tz ? String(prof.birth_tz) : null;
+            try {
+              const place0 = $("birthPlace")?.value || prof.birth_place_name || '';
+              const blat0 = typeof prof?.birth_lat === 'number' ? prof.birth_lat : NaN;
+              const blon0 = typeof prof?.birth_lon === 'number' ? prof.birth_lon : NaN;
+              const nearVienna0 = (!Number.isNaN(blat0) && !Number.isNaN(blon0) && blat0 >= 48.1 && blat0 <= 48.35 && blon0 >= 16.2 && blon0 <= 16.6);
+              const mentionsVienna0 = /\b(Vienna|Wien)\b/i.test(place0);
+              if ((mentionsVienna0 || nearVienna0) && (!btz || btz === 'Europe/Paris')) btz = 'Europe/Vienna';
+            } catch {}
+            const birthDateEl = $("birthDate");
+            const birthHourEl = $("birthHour");
+            const birthMinuteEl = $("birthMinute");
+            if (bdtLocal) {
+              try {
+                // Expect format like "1976-08-26 17:55:00" (from backend)
+                const dateStr = bdtLocal.slice(0, 10);
+                const hh = bdtLocal.slice(11, 13);
+                const mm = bdtLocal.slice(14, 16);
+                if (birthDateEl && dateStr) birthDateEl.value = dateStr;
+                if (birthHourEl) birthHourEl.value = birthTimeKnown ? hh : '';
+                if (birthMinuteEl) birthMinuteEl.value = birthTimeKnown ? mm : '';
+                try {
+                  const lbl = document.getElementById('birthLocalLabel');
+                  const tzDisp = btz || (prof?.birth_tz ? String(prof.birth_tz) : '');
+                  if (lbl) lbl.textContent = `${dateStr} ${hh}:${mm}${tzDisp ? ` (${tzDisp})` : ''}`;
+                } catch {}
+              } catch {}
+            } else if (bdtUtc && btz) {
+              try {
+                // Ensure UTC parsing by appending Z if not present
+                const isoUtc = /Z$/i.test(bdtUtc) ? bdtUtc : (bdtUtc + 'Z');
+                const d = new Date(isoUtc);
+                const fmt = new Intl.DateTimeFormat('en-CA', {
+                  timeZone: btz,
+                  year: 'numeric', month: '2-digit', day: '2-digit',
+                  hour: '2-digit', minute: '2-digit', hour12: false,
+                });
+                const parts = Object.fromEntries(fmt.formatToParts(d).map(p => [p.type, p.value]));
+                const dateStr = `${parts.year}-${parts.month}-${parts.day}`;
+                const hh = parts.hour || '';
+                const mm = parts.minute || '';
+                if (birthDateEl && dateStr) birthDateEl.value = dateStr;
+                if (birthHourEl) birthHourEl.value = birthTimeKnown ? hh : '';
+                if (birthMinuteEl) birthMinuteEl.value = birthTimeKnown ? mm : '';
+                try {
+                  const lbl = document.getElementById('birthLocalLabel');
+                  if (lbl) lbl.textContent = `${dateStr} ${hh}:${mm} (${btz})`;
+                } catch {}
+              } catch {}
+            }
+            // Birth place fields
+            if (prof?.birth_place_name && $("birthPlace")) $("birthPlace").value = String(prof.birth_place_name);
+            if (typeof prof?.birth_lat === 'number' && $("birthLat")) $("birthLat").value = String(prof.birth_lat);
+            if (typeof prof?.birth_lon === 'number' && $("birthLon")) $("birthLon").value = String(prof.birth_lon);
+            if (prof?.birth_tz) {
+              const tzEl = $("birthTz");
+              const tzLabel = document.getElementById('birthTzLabel');
+              let tzVal = String(prof.birth_tz);
+              // Normalize Vienna naming if backend stored Europe/Paris erroneously
+              try {
+                const place = $("birthPlace")?.value || prof.birth_place_name || '';
+                const blat = typeof prof?.birth_lat === 'number' ? prof.birth_lat : NaN;
+                const blon = typeof prof?.birth_lon === 'number' ? prof.birth_lon : NaN;
+                const nearVienna = (!Number.isNaN(blat) && !Number.isNaN(blon) && blat >= 48.1 && blat <= 48.35 && blon >= 16.2 && blon <= 16.6);
+                const mentionsVienna = /\b(Vienna|Wien)\b/i.test(place);
+                if ((mentionsVienna || nearVienna) && (!tzVal || tzVal === 'Europe/Paris')) tzVal = 'Europe/Vienna';
+              } catch {}
+              if (tzEl) tzEl.value = tzVal;
+              if (tzLabel) tzLabel.textContent = tzVal;
+            }
+          } catch {}
+          // Render initial tags
+          renderTags();
+          // Wire tag UI events
         } catch {}
 
         // Initial render
@@ -800,7 +884,15 @@
     }
 
     async function callInterpret(message) {
+      // Determine preferred language order:
+      // 1) Currently selected primary language on the page
+      // 2) SimpleI18n current language
+      // 3) Omit lang to let backend use profile.lang_primary
+      let langPref = null;
+      try { langPref = document.getElementById('primaryLanguage')?.value || null; } catch {}
+      if (!langPref) langPref = (window.SimpleI18n && window.SimpleI18n.currentLang) || null;
       const body = { message: message || null, history: aiHistory };
+      if (langPref) body.lang = langPref;
       const resp = await api('/api/profile/interpret', { method: 'POST', body, auth: true });
       const reply = resp && resp.reply ? String(resp.reply) : '';
       if (reply) {
@@ -974,7 +1066,16 @@
         const birth_place_name = $("birthPlace")?.value || null;
         const birth_lat_raw = $("birthLat")?.value;
         const birth_lon_raw = $("birthLon")?.value;
-        const birth_tz = $("birthTz")?.value || null;
+        let birth_tz = $("birthTz")?.value || null;
+        // Normalize tz for Vienna if the place/coords indicate Vienna
+        try {
+          const placeTxt = $("birthPlace")?.value || '';
+          const blatN = parseFloat($("birthLat")?.value || 'NaN');
+          const blonN = parseFloat($("birthLon")?.value || 'NaN');
+          const nearV = (!Number.isNaN(blatN) && !Number.isNaN(blonN) && blatN >= 48.1 && blatN <= 48.35 && blonN >= 16.2 && blonN <= 16.6);
+          const mentionsV = /\b(Vienna|Wien)\b/i.test(placeTxt);
+          if ((mentionsV || nearV) && (!birth_tz || birth_tz === 'Europe/Paris')) birth_tz = 'Europe/Vienna';
+        } catch {}
 
         const body = { display_name };
         // Prefer the select value; if empty but we have a detected label, use it
@@ -1002,6 +1103,17 @@
         const data = await api("/api/profile", { method: "PUT", body, auth: true });
         console.info('profile.update', data);
         show("profile.update", data);
+        try {
+          const lbl = document.getElementById('birthLocalLabel');
+          if (lbl && data && data.birth_dt_utc && (data.birth_tz || body.birth_tz)) {
+            const btz2 = data.birth_tz || body.birth_tz;
+            const isoUtc2 = /Z$/i.test(String(data.birth_dt_utc)) ? String(data.birth_dt_utc) : String(data.birth_dt_utc) + 'Z';
+            const d2 = new Date(isoUtc2);
+            const fmt2 = new Intl.DateTimeFormat('en-CA', { timeZone: btz2, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false });
+            const parts2 = Object.fromEntries(fmt2.formatToParts(d2).map(p => [p.type, p.value]));
+            lbl.textContent = `${parts2.year}-${parts2.month}-${parts2.day} ${parts2.hour}:${parts2.minute} (${btz2})`;
+          }
+        } catch {}
         // Reflect new display_name in topbar immediately
         const uidEl = $('currentUserId');
         if (uidEl && display_name) uidEl.textContent = display_name;

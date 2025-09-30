@@ -8,20 +8,16 @@
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/dashboard.css" />
   <link rel="stylesheet" href="/mobile.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b1220" />
 </head>
 <body>
-  <div class="topbar">
-    <div class="brand"><a href="/" class="link-unstyled"><strong>SoulTribe.chat</strong></a></div>
-    <div>
-      <a id="btn-profile-link" class="button hidden" href="/profile.html" data-i18n="nav.profile">Profile</a>
-      <a id="btn-login-link" class="button secondary hidden" href="/login.html" data-i18n="nav.login">Login</a>
-      <button id="btn-logout" class="button hidden" data-i18n="nav.logout">Logout</button>
-      <a id="btn-admin-link" class="button secondary" href="/admin/stats.html" style="display:none;">Admin</a>
-    </div>
-  </div>
-
+  <!-- Navigation will be loaded here by components.js -->
+  <div data-component="navbar"></div>
   
 
   <div class="two-col">
@@ -83,6 +79,7 @@
 
   <section class="card">
     <h2 data-i18n="dashboard.matches">Matches</h2>
+    <div class="muted" data-i18n="dashboard.active_filter_hint">Only users active in the last 30 days are shown.</div>
     <div class="muted" data-i18n="dashboard.overlap_hint">Click “Propose this time” on an overlap to propose a meetup for that slot.</div>
     <div id="matches"></div>
   </section>
@@ -90,31 +87,18 @@
 
   <script src="/app.js"></script>
   <script src="/i18n/i18n.js"></script>
+  <script src="/js/components.js"></script>
   <script src="/dashboard.js"></script>
   <script>
     // Redirect back to login if no token
     (function ensureAuth(){
       try {
         const t = localStorage.getItem('access_token');
-        const showLogin = !t;
-        document.getElementById('btn-login-link').style.display = showLogin ? 'inline-block' : 'none';
-        document.getElementById('btn-logout').style.display = showLogin ? 'none' : 'inline-block';
-        const prof = document.getElementById('btn-profile-link');
-        if (prof) prof.style.display = showLogin ? 'none' : 'inline-block';
         if (!t) window.location.href = '/login.html';
       } catch {}
     })();
-
-    // Show Admin link only for admins/localhost
-    (async function showAdmin(){
-      try {
-        const t = localStorage.getItem('access_token');
-        const r = await fetch('/api/admin/ping', {headers:{'Authorization': t ? 'Bearer '+t : ''}});
-        if (r.ok) {
-          var el = document.getElementById('btn-admin-link'); if (el) el.style.display='inline-block';
-        }
-      } catch {}
-    })();
   </script>
+  <!-- Footer will be loaded here by components.js -->
+  <div data-component="footer"></div>
 </body>
 </html>

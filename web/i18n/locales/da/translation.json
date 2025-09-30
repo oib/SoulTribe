@@ -1,33 +1,187 @@
 {
-  "language": { "en": "Engelsk", "de": "Tysk", "da": "Dansk" },
-  "welcome": { "title": "Velkommen til SoulTribe.chat", "subtitle": "Find din sjælsstamme" },
-  "profile": {
-    "title": "Din profil",
-    "save": "Gem",
-    "cancel": "Annuller",
-    "primary_language_label": "Primærsprog (til grænsefladen)",
-    "other_languages_label": "Andre sprog (til matching)",
-    "language_input_placeholder": "Skriv for at tilføje sprog..."
-  },
   "dashboard": {
-    "title": "Dashboard",
     "availability": "Tilgængelighed",
     "create_slot": "Opret tidsrum",
     "duration_hours": "Varighed (timer)",
-    "meetups": "Møder",
     "matches": "Matches",
-    "overlap_hint": "Klik \"Foreslå dette tidspunkt\" for at foreslå et møde for dette tidsrum."
+    "meetups": "Møder",
+    "overlap_hint": "Klik \"Foreslå dette tidspunkt\" for at foreslå et møde for dette tidsrum.",
+    "title": "Dashboard",
+    "propose_time": "Foreslå tidspunkt",
+    "generate_ai_comment": "Generér AI-kommentar",
+    "slot_delete": "Slet",
+    "slot_edit": "Rediger",
+    "active_filter_hint": "Kun brugere, der har været aktive inden for de sidste 30 dage, vises."
+  },
+  "language": {
+    "da": "Dansk",
+    "de": "Tysk",
+    "en": "Engelsk"
   },
   "login": {
-    "title": "Velkommen",
-    "intro": "Log ind med en eksisterende konto eller registrer en ny.",
-    "email": "e-mail",
-    "password": "adgangskode",
+    "confirm_password": "bekræft adgangskode (til registrering)",
     "display_name": "visningsnavn (til registrering)",
-    "register": "Registrer",
+    "email": "e-mail",
+    "email_not_verified": "E-mail ikke bekræftet? ",
+    "enter_email_first": "Indtast venligst din e-mail-adresse først.",
+    "go_dashboard": "Gå til Dashboard",
+    "intro": "Log ind med en eksisterende konto eller registrer en ny.",
     "login": "Log ind",
+    "login_required": "E-mail og adgangskode er påkrævet.",
+    "page_title": "SoulTribe.chat — Log ind / Registrer",
+    "password": "adgangskode",
+    "password_mismatch": "Adgangskoderne er ikke ens.",
     "redirect_hint": "Efter login bliver du omdirigeret til dit dashboard.",
-    "go_dashboard": "Gå til Dashboard"
+    "register": "Registrer",
+    "registration_success": "Konto oprettet. Bekræft venligst din e-mail.",
+    "required_fields": "E-mail, adgangskode og visningsnavn er påkrævet.",
+    "resend_verification": "Send bekræftelsesmail igen",
+    "reset_password": "Nulstil adgangskode",
+    "reset_sent": "Hvis der findes en konto med denne e-mail, er der blevet sendt en e-mail til nulstilling af adgangskode.",
+    "title": "Velkommen",
+    "verification_sent": "Hvis din e-mail ikke er bekræftet endnu, er der blevet sendt en ny bekræftelsesmail."
   },
-  "nav": { "dashboard": "Dashboard", "profile": "Profil", "login": "Login", "logout": "Log ud" }
+  "nav": {
+    "dashboard": "Dashboard",
+    "login": "Log ind",
+    "logout": "Log ud",
+    "profile": "Profil",
+    "welcome": "Hjem",
+    "home": "Hjem",
+    "discover": "Opdag",
+    "matches": "Matches",
+    "messages": "Beskeder"
+  },
+  "profile": {
+    "cancel": "Annuller",
+    "language_input_placeholder": "Skriv for at tilføje sprog...",
+    "other_languages_label": "Andre sprog (til matching)",
+    "primary_language_label": "Primærsprog (til grænsefladen)",
+    "save": "Gem",
+    "title": "Din profil",
+    "basic_info": {
+      "legend": "Grundlæggende oplysninger",
+      "username_label": "Brugernavn",
+      "username_placeholder": "brugernavn"
+    },
+    "languages": {
+      "legend": "Sprog"
+    },
+    "location": {
+      "legend": "Nuværende placering",
+      "city_placeholder": "Nuværende by (autoudfyld)",
+      "use_my_location": "Brug min placering",
+      "detected_tz_label": "Registreret tidszone:",
+      "detected_tz_hint": "(automatisk eller vælg)"
+    },
+    "birth": {
+      "legend": "Fødselsoplysninger (til astrologi)",
+      "date_placeholder": "Fødselsdato",
+      "hour_label": "Time",
+      "minute_label": "Minut",
+      "place_placeholder": "Fødeby (by, land)",
+      "detected_tz_label": "Registreret tidszone:",
+      "detected_tz_hint": "(automatisk)",
+      "lat_placeholder": "Breddegrad (f.eks. 48.2082)",
+      "lon_placeholder": "Længdegrad (f.eks. 16.3738)",
+      "instructions": "Angiv din fødselsdato og -sted for at beregne din radix. Hvis du ikke kender det præcise tidspunkt, lad tidsfeltet være tomt, så bruger vi kl. 12 som standard."
+    },
+    "note": "Din profil bruges til at personalisere matches og visning af tidszone."
+  },
+  "welcome": {
+    "subtitle": "Find din sjælsstamme",
+    "title": "Velkommen til SoulTribe.chat"
+  },
+  "landing": {
+    "page_title": "SoulTribe.chat – Find din sjælsstamme",
+    "hero": {
+      "title": "Velkommen",
+      "subtitle": "SoulTribe.chat er et rum skabt til at hjælpe dig med at finde og forbinde med din sjælsstamme — mennesker, der resonnerer med din energi, din ånd og din rejse. ✨"
+    },
+    "how": {
+      "title": "Sådan fungerer det",
+      "step1": "<strong>Opret din profil</strong> — angiv fødselsdato, -tid og -sted for at generere dit unikke sjælskort.",
+      "step2": "<strong>Opdag dine matches</strong> — vi fremhæver forbindelser baseret på kompatibilitet og resonans.",
+      "step3": "<strong>Start samtalen</strong> — inviter matches til at chatte; sikkert og privat fra start.",
+      "step4": "<strong>Mød hinanden (valgfrit)</strong> — planlæg et Jitsi-opkald eller et fysisk møde ved gensidigt samtykke."
+    },
+    "getting_started": {
+      "title": "Kom godt i gang",
+      "step1": "<strong>Opret din konto</strong> — ingen sociale logins kræves.",
+      "step2": "<strong>Udfyld din profil</strong> — tilføj fødselsoplysninger; et cirka‑tidspunkt er fint.",
+      "step3": "<strong>Angiv din tilgængelighed</strong> — foreslå lokale tidsrum; vi håndterer UTC.",
+      "step4": "<strong>Opdag matches</strong> — gennemse anbefalinger baseret på resonans.",
+      "step5": "<strong>Chat og mød hinanden om ønsket</strong> — bliv i appen; planlæg, når du er klar."
+    },
+    "features": {
+      "title": "Funktioner",
+      "item1": "<strong>Astrologi‑bevidst matching</strong> — forbind ved hjælp af din fødselshoroskop.",
+      "item2": "<strong>Klog tidszoneplanlægning</strong> — vi håndterer UTC‑konverteringerne for dig.",
+      "item3": "<strong>Direkte kommunikation via Jitsi</strong> — tekst/lyd/video; intet gemmes eller optages på SoulTribe.chat.",
+      "item4": "<strong>Nemt at deltage via link</strong> — privat Jitsi‑rum til bekræftede møder; privatlivsvenligt, ingen desktop‑installation nødvendig.",
+      "item5": "<strong>Minimalistisk, fokuseret UI</strong> — designet til meningsfulde samtaler."
+    },
+    "privacy": {
+      "title": "Privatliv og sikkerhed",
+      "item1": "Vi beder kun om det nødvendige for at muliggøre forbundne relationer.",
+      "item2": "Dine profildata sælges eller deles ikke med annoncenetværk.",
+      "item3": "Du bestemmer, hvem der kan kontakte dig, og hvornår du deler mere."
+    },
+    "matching": {
+      "title": "Sådan fungerer matching (kort)",
+      "text": "Vi beregner vigtige relationelle indikatorer ud fra dit horoskop og sammenligner dem med andres for at finde resonans. Vi prioriterer harmoni, komplementaritet og udviklingspotentiale frem for generelle popularitetsmål."
+    },
+    "protips": {
+      "title": "Gode råd",
+      "item1": "Tilføj nogle tilgængelige tidsrum på flere dage for hurtigere forbindelser.",
+      "item2": "Vær ærlig i din intro — konkrete detaljer hjælper de rette med at finde dig.",
+      "item3": "Samtykke først, altid. Gå i det tempo, der føles rigtigt."
+    },
+    "next": {
+      "title": "Næste skridt",
+      "go_dashboard": "Gå til Dashboard",
+      "login_register": "Log ind / Registrer"
+    },
+    "global": {
+      "title": "Globalt fællesskab, lokal tid",
+      "text": "Forbind med ligesindede på tværs af kloden med automatisk tidszonekonvertering.",
+      "auto_title": "Automatisk tidszoneregistrering",
+      "auto_text": "Vi registrerer automatisk din tidszone for problemfri planlægning.",
+      "native_title": "Understøttelse af modersmål",
+      "native_text": "Chat på dit foretrukne sprog med vores indbyggede oversættelse.",
+      "tz_title": "Tidszone‑bevidst planlægning",
+      "tz_text": "Ingen flere tidszoneberegninger — vi håndterer alle konverteringer for dig.",
+      "select_label": "Vælg sprog:"
+    }
+  },
+  "radix": {
+    "title": "Din Radix",
+    "placeholder": "Hvis du har angivet dine fødselsdata, vises din radix‑oversigt her.",
+    "show_raw_json": "Vis rå JSON"
+  },
+  "ai": {
+    "get_interpretation": "Få fortolkning",
+    "followup_placeholder": "Stil et opfølgende spørgsmål…",
+    "send": "Send"
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Vilkår",
+    "privacy": "Privatliv",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Nulstil adgangskode",
+    "intro": "Vælg en ny adgangskode til din konto.",
+    "new_password_label": "Ny adgangskode",
+    "new_password_placeholder": "ny adgangskode",
+    "confirm_password_label": "Bekræft ny adgangskode",
+    "confirm_password_placeholder": "bekræft ny adgangskode",
+    "submit": "Indstil ny adgangskode"
+  },
+  "notifications": {
+    "language_set_to": "Sprog indstillet til"
+  }
 }

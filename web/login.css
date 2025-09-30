@@ -9,5 +9,38 @@
 .auth-form { display: flex; flex-direction: column; gap: 12px; max-width: 520px; }
 .auth-form .form-fields { display: flex; flex-direction: column; gap: 10px; width: 100%; }
 .auth-form input { width: 100%; min-width: 0; }
-.auth-form .form-actions { display: flex; gap: 10px; }
+.auth-form .form-actions { 
+  display: flex; 
+  gap: 10px; 
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#resend-verification-container {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+  margin-top: 12px;
+}
+
+#resend-verification-container a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+#resend-verification-container a:hover {
+  color: #3d8b40;
+  text-decoration: underline;
+}
+
+/* Hide by default, shown via JavaScript when needed */
+#resend-verification-container.hidden {
+  display: none;
+}
 .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }

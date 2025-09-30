@@ -1,182 +1,337 @@
 {
   "app": {
-    "name": "SoulTribe",
-    "tagline": "Pievienojieties cilvēkiem, kuri dala jūsu vērtības",
-    "loading": "Ielādējas...",
-    "error": "Radās kļūda",
-    "retry": "Mēģināt vēlreiz",
-    "submit": "Iesniegt",
-    "cancel": "Atcelt",
-    "save": "Saglabāt",
-    "delete": "Dzēst",
-    "edit": "Rediģēt",
-    "back": "Atpakaļ",
-    "next": "Nākamais",
-    "previous": "Iepriekšējais",
-    "skip": "Izlaist",
-    "done": "Gatavs",
-    "search": "Meklēt",
-    "noResults": "Nav rezultātu",
-    "welcome": "Laipni lūdzam",
-    "or": "vai",
+    "about": "Par mums",
     "and": "un",
+    "back": "Atpakaļ",
+    "cancel": "Atcelt",
+    "contact": "Kontakti",
     "continue": "Turpināt",
     "createAccount": "Izveidot kontu",
+    "delete": "Dzēst",
+    "done": "Gatavs",
+    "edit": "Rediģēt",
+    "error": "Radās kļūda",
+    "help": "Palīdzība",
+    "loading": "Ielādējas...",
     "login": "Pieslēgties",
     "logout": "Atteikties",
-    "profile": "Profils",
-    "settings": "Iestatījumi",
-    "help": "Palīdzība",
-    "about": "Par mums",
-    "contact": "Kontakti",
+    "name": "SoulTribe",
+    "next": "Nākamais",
+    "noResults": "Nav rezultātu",
+    "or": "vai",
+    "previous": "Iepriekšējais",
     "privacy": "Privātums",
-    "terms": "Noteikumi"
-  },
-  "landing": {
-    "hero": {
-      "title": "Pievienojieties mūsu globālajai kopienai",
-      "subtitle": "Veidojiet sakarus ar cilvēkiem, kuri dala jūsu vērtības, intereses un aizraušanās. Kopā mēs varam veidot jēgpilnas attiecības, kas saglabājas uz ilgu laiku.",
-      "cta": "Sāciet savu ceļojumu"
-    },
-    "howItWorks": {
-      "title": "Kā tas darbojas",
-      "steps": [
-        {
-          "title": "Izveidojiet savu profilu",
-          "description": "Pastāstiet par savām interesēm, vērtībām un to, ko meklējat kopienā."
-        },
-        {
-          "title": "Atrodiet savus cilvēkus",
-          "description": "Mūsu algoritms jūs savienos ar cilvēkiem, kuri dala jūsu vērtības un intereses."
-        },
-        {
-          "title": "Pievienojieties un attīstieties",
-          "description": "Sāciet sarunas, piedalieties pasākumos un veidojiet ilgtermiņa attiecības."
-        }
-      ]
-    },
-    "features": {
-      "title": "Kāpēc pievienoties?",
-      "items": [
-        {
-          "title": "Droša kopiena",
-          "description": "Mūsu kopiena ir veidota, balstoties uz cieņu, iekļaušanu un katru dalībnieku."
-        },
-        {
-          "title": "Personalizēta pieredze",
-          "description": "Saņemiet pielāgotus ieteikumus, pamatojoties uz jūsu interesēm un vērtībām."
-        },
-        {
-          "title": "Globāla savienojamība",
-          "description": "Saistieties ar cilvēkiem no visas pasaules, kuri dala jūsu aizraušanos."
-        }
-      ]
-    },
-    "privacy": {
-      "title": "Jūsu privātums ir mūsu prioritāte",
-      "description": "Mēs aizsargājam jūsu datus un nodrošinām drošu vidi visiem mūsu dalībniekiem.",
-      "learnMore": "Uzziniet vairāk par mūsu privātuma politiku"
-    }
+    "profile": "Profils",
+    "retry": "Mēģināt vēlreiz",
+    "save": "Saglabāt",
+    "search": "Meklēt",
+    "settings": "Iestatījumi",
+    "skip": "Izlaist",
+    "submit": "Iesniegt",
+    "tagline": "Pievienojieties cilvēkiem, kuri dala jūsu vērtības",
+    "terms": "Noteikumi",
+    "welcome": "Laipni lūdzam"
   },
   "auth": {
     "login": {
-      "title": "Pieslēgšanās",
       "email": "E-pasts",
-      "password": "Parole",
       "forgotPassword": "Aizmirsāt paroli?",
       "noAccount": "Vai jums nav konta?",
-      "signUp": "Reģistrējieties"
+      "password": "Parole",
+      "signUp": "Reģistrējieties",
+      "title": "Pieslēgšanās"
     },
     "register": {
-      "title": "Reģistrācija",
-      "name": "Vārds un uzvārds",
-      "email": "E-pasts",
-      "password": "Parole",
+      "agreeTerms": "Piekrītu lietošanas noteikumiem",
       "confirmPassword": "Apstipriniet paroli",
-      "agreeTerms": "Piekrītu lietošanas noteikumiem"
-    }
-  },
-  "profile": {
-    "edit": {
-      "title": "Rediģēt profilu",
-      "basicInfo": "Pamatinformācija",
-      "firstName": "Vārds",
-      "lastName": "Uzvārds",
-      "bio": "Par mani",
-      "location": "Atrašanās vieta",
-      "interests": "Intereses"
-    },
-    "view": {
-      "memberSince": "Dalībnieks kopš",
-      "lastSeen": "Pēdējo reizi redzēts",
-      "interests": "Intereses"
-    }
-  },
-  "settings": {
-    "title": "Iestatījumi",
-    "account": {
-      "title": "Konts",
-      "changeEmail": "Mainīt e-pastu",
-      "changePassword": "Mainīt paroli"
-    },
-    "privacy": {
-      "title": "Privātums",
-      "profileVisibility": "Profila redzamība"
-    }
-  },
-  "messaging": {
-    "title": "Ziņas",
-    "newMessage": "Jauna ziņa",
-    "searchUsers": "Meklēt lietotājus...",
-    "typeMessage": "Rakstiet ziņu...",
-    "send": "Sūtīt"
-  },
-  "friends": {
-    "title": "Draugi",
-    "allFriends": "Visi draugi",
-    "addFriend": "Pievienot draugu",
-    "friendRequests": "Draudzības pieprasījumi"
-  },
-  "events": {
-    "title": "Notikumi",
-    "upcoming": "Gaidāmie notikumi",
-    "create": "Izveidot notikumu"
-  },
-  "groups": {
-    "title": "Grupas",
-    "discover": "Atklājiet grupas",
-    "myGroups": "Manas grupas",
-    "create": "Izveidot grupu"
-  },
-  "search": {
-    "title": "Meklēšana",
-    "placeholder": "Meklēt cilvēkus, grupas un saturu...",
-    "noResults": "Nav rezultātu"
-  },
-  "onboarding": {
-    "welcome": "Laipni lūgti SoulTribe",
-    "step1": {
-      "title": "Izveidojiet savu profilu",
-      "description": "Pievienojiet savu attēlu un dažus vārdus par sevi."
-    },
-    "step2": {
-      "title": "Izvēlieties savas intereses",
-      "description": "Kas jums patīk darīt? Izvēlieties savas intereses."
-    },
-    "step3": {
-      "title": "Pievienojieties cilvēkiem",
-      "description": "Sāciet sarunu ar līdzīgi domājošiem cilvēkiem."
+      "email": "E-pasts",
+      "name": "Vārds un uzvārds",
+      "password": "Parole",
+      "title": "Reģistrācija"
     }
   },
   "errors": {
-    "required": "Šis lauks ir obligāts",
     "invalidEmail": "Ievadiet derīgu e-pasta adresi",
     "passwordTooShort": "Parole ir pārāk īsa",
-    "passwordsDontMatch": "Paroles nesakrīt"
+    "passwordsDontMatch": "Paroles nesakrīt",
+    "required": "Šis lauks ir obligāts"
+  },
+  "events": {
+    "create": "Izveidot notikumu",
+    "title": "Notikumi",
+    "upcoming": "Gaidāmie notikumi"
+  },
+  "friends": {
+    "addFriend": "Pievienot draugu",
+    "allFriends": "Visi draugi",
+    "friendRequests": "Draudzības pieprasījumi",
+    "title": "Draugi"
+  },
+  "groups": {
+    "create": "Izveidot grupu",
+    "discover": "Atklājiet grupas",
+    "myGroups": "Manas grupas",
+    "title": "Grupas"
+  },
+  "landing": {
+    "features": {
+      "items": [
+        {
+          "description": "Mūsu kopiena ir veidota, balstoties uz cieņu, iekļaušanu un katru dalībnieku.",
+          "title": "Droša kopiena"
+        },
+        {
+          "description": "Saņemiet pielāgotus ieteikumus, pamatojoties uz jūsu interesēm un vērtībām.",
+          "title": "Personalizēta pieredze"
+        },
+        {
+          "description": "Saistieties ar cilvēkiem no visas pasaules, kuri dala jūsu aizraušanos.",
+          "title": "Globāla savienojamība"
+        }
+      ],
+      "title": "Kāpēc pievienoties?",
+      "item1": "<strong>Astroloģiju izprotoša saskaņošana</strong> — sazinieties, izmantojot savu dzimšanas karti.",
+      "item2": "<strong>Gudra laika joslu plānošana</strong> — mēs veicam UTC pārrēķinus jūsu vietā.",
+      "item3": "<strong>Tieša saziņa caur Jitsi</strong> — teksts/audio/video; nekas netiek glabāts vai ierakstīts vietnē SoulTribe.chat.",
+      "item4": "<strong>Viega pievienošanās ar saiti</strong> — privāta Jitsi telpa apstiprinātām tikšanām; privātumu saudzējoši, nav nepieciešama instalēšana datorā.",
+      "item5": "<strong>Minimālistiska, fokusēta saskarne</strong> — radīta jēgpilnām sarunām."
+    },
+    "hero": {
+      "cta": "Sāciet savu ceļojumu",
+      "subtitle": "Veidojiet sakarus ar cilvēkiem, kuri dala jūsu vērtības, intereses un aizraušanās. Kopā mēs varam veidot jēgpilnas attiecības, kas saglabājas uz ilgu laiku.",
+      "title": "Pievienojieties mūsu globālajai kopienai"
+    },
+    "howItWorks": {
+      "steps": [
+        {
+          "description": "Pastāstiet par savām interesēm, vērtībām un to, ko meklējat kopienā.",
+          "title": "Izveidojiet savu profilu"
+        },
+        {
+          "description": "Mūsu algoritms jūs savienos ar cilvēkiem, kuri dala jūsu vērtības un intereses.",
+          "title": "Atrodiet savus cilvēkus"
+        },
+        {
+          "description": "Sāciet sarunas, piedalieties pasākumos un veidojiet ilgtermiņa attiecības.",
+          "title": "Pievienojieties un attīstieties"
+        }
+      ],
+      "title": "Kā tas darbojas"
+    },
+    "privacy": {
+      "description": "Mēs aizsargājam jūsu datus un nodrošinām drošu vidi visiem mūsu dalībniekiem.",
+      "learnMore": "Uzziniet vairāk par mūsu privātuma politiku",
+      "title": "Jūsu privātums ir mūsu prioritāte",
+      "item1": "Mēs lūdzam tikai to, kas nepieciešams dziļiem, jēgpilniem savienojumiem.",
+      "item2": "Jūsu profila dati netiek pārdoti vai kopīgoti ar reklāmas tīkliem.",
+      "item3": "Jūs kontrolējat, kas ar jums sazinās un kad atklāt vairāk."
+    },
+    "page_title": "SoulTribe.chat – Atrodi savu dvēseļu kopienu",
+    "how": {
+      "title": "Kā tas darbojas",
+      "step1": "<strong>Izveidojiet savu profilu</strong> — ievadiet dzimšanas datumu, laiku un vietu, lai izveidotu unikālu dvēseles karti.",
+      "step2": "<strong>Atklājiet atbilstības</strong> — mēs izceļam saiknes, balstoties uz saderību un rezonansi.",
+      "step3": "<strong>Sāciet sarunu</strong> — aiciniet atbilstības uz čatu; droši un privāti pēc noklusējuma.",
+      "step4": "<strong>Tiekamies (pēc izvēles)</strong> — ieplānojiet Jitsi zvanu vai tikšanos klātienē ar savstarpēju piekrišanu."
+    },
+    "getting_started": {
+      "title": "Sāciet darbu",
+      "step1": "<strong>Izveidojiet kontu</strong> — sociālo tīklu pieteikšanās nav nepieciešama.",
+      "step2": "<strong>Aizpildiet profilu</strong> — pievienojiet dzimšanas datus; aptuvenais laiks der.",
+      "step3": "<strong>Iestatiet pieejamību</strong> — piedāvājiet vietējos laika intervālus; mēs apstrādājam UTC.",
+      "step4": "<strong>Atklājiet atbilstības</strong> — pārlūkojiet ieteikumus, kas balstīti rezonansē.",
+      "step5": "<strong>Čatojiet un, ja vēlaties, satiecieties</strong> — palieciet lietotnē; plānojiet, kad esat gatavs."
+    },
+    "matching": {
+      "title": "Kā darbojas atbilstību meklēšana (īsā versija)",
+      "text": "Mēs aprēķinām galvenos attiecību rādītājus no jūsu kartes un salīdzinām tos ar citiem, lai atrastu rezonansi. Mēs dodam priekšroku harmonijai, papildināmībai un izaugsmes potenciālam pār vispārējiem popularitātes rādītājiem."
+    },
+    "protips": {
+      "title": "Padomi",
+      "item1": "Pievienojiet dažus pieejamības laikus dažādās dienās, lai ātrāk sazinātos.",
+      "item2": "Esi patiess savā ievadā — konkrētība palīdz pareizajiem cilvēkiem jūs atrast.",
+      "item3": "Piekrišana vispirms, vienmēr. Virzieties tādā tempā, kas jūtas pareizs."
+    },
+    "next": {
+      "title": "Nākamie soļi",
+      "go_dashboard": "Doties uz paneli",
+      "login_register": "Pieslēgties / Reģistrēties"
+    },
+    "global": {
+      "title": "Globāla kopiena, vietējais laiks",
+      "text": "Saistieties ar līdzīgi domājošiem cilvēkiem visā pasaulē ar automātisku laika joslu pārrēķinu.",
+      "auto_title": "Automātiska laika joslas noteikšana",
+      "auto_text": "Mēs automātiski nosakām jūsu laika joslu ērtai plānošanai.",
+      "native_title": "Dzimtās valodas atbalsts",
+      "native_text": "Tērzējiet savā vēlamajā valodā ar mūsu iebūvēto tulkošanu.",
+      "tz_title": "Laika joslu apzināta plānošana",
+      "tz_text": "Vairs nav jāskaita laika joslas — mēs veicam visus pārrēķinus jūsu vietā.",
+      "select_label": "Izvēlieties valodu:"
+    }
+  },
+  "login": {
+    "confirm_password": "apstipriniet paroli (reģistrācijai)",
+    "display_name": "redzamais vārds (reģistrācijai)",
+    "email": "e-pasts",
+    "email_not_verified": "E-pasts nav apstiprināts? ",
+    "enter_email_first": "Lūdzu, vispirms ievadiet savu e-pasta adresi.",
+    "go_dashboard": "Uz kontrolpaneli",
+    "intro": "Piesakieties ar esošu kontu vai reģistrējiet jaunu.",
+    "login": "Pieslēgties",
+    "login_required": "Nepieciešams e-pasts un parole.",
+    "page_title": "SoulTribe.chat — Pieslēgšanās / Reģistrācija",
+    "password": "parole",
+    "password_mismatch": "Paroles nesakrīt.",
+    "redirect_hint": "Pēc pieslēgšanās jūs tiksiet pāradresēts uz savu kontrolpaneli.",
+    "register": "Reģistrēties",
+    "registration_success": "Konts izveidots. Lūdzu, apstipriniet savu e-pasta adresi.",
+    "required_fields": "Nepieciešams aizpildīt e-pastu, paroli un redzamo vārdu.",
+    "resend_verification": "Atkārtoti nosūtīt apstiprinājuma e-pastu",
+    "reset_password": "Atiestatīt paroli",
+    "reset_sent": "Ja konts ar šādu e-pasta adresi pastāv, ir nosūtīts paroles atiestatīšanas e-pasts.",
+    "title": "Laipni lūdzam",
+    "verification_sent": "Ja jūsu e-pasts vēl nav apstiprināts, ir nosūtīts jauns apstiprinājuma e-pasts."
+  },
+  "messaging": {
+    "newMessage": "Jauna ziņa",
+    "searchUsers": "Meklēt lietotājus...",
+    "send": "Sūtīt",
+    "title": "Ziņas",
+    "typeMessage": "Rakstiet ziņu..."
+  },
+  "nav": {
+    "dashboard": "Kontrolpanelis",
+    "login": "Pieslēgties",
+    "logout": "Atteikties",
+    "profile": "Profils",
+    "welcome": "Sākums",
+    "home": "Sākums",
+    "discover": "Atklāt",
+    "matches": "Atbilstības",
+    "messages": "Ziņas"
+  },
+  "profile": {
+    "edit": {
+      "basicInfo": "Pamatinformācija",
+      "bio": "Par mani",
+      "firstName": "Vārds",
+      "interests": "Intereses",
+      "lastName": "Uzvārds",
+      "location": "Atrašanās vieta",
+      "title": "Rediģēt profilu"
+    },
+    "view": {
+      "interests": "Intereses",
+      "lastSeen": "Pēdējo reizi redzēts",
+      "memberSince": "Dalībnieks kopš"
+    },
+    "title": "Tavs profils",
+    "save": "Saglabāt",
+    "cancel": "Atcelt",
+    "basic_info": {
+      "legend": "Pamatinformācija",
+      "username_label": "Lietotājvārds",
+      "username_placeholder": "lietotājvārds"
+    },
+    "languages": {
+      "legend": "Valodas"
+    },
+    "location": {
+      "legend": "Pašreizējā atrašanās vieta",
+      "city_placeholder": "Pašreizējā pilsēta (automātiska aizpilde)",
+      "use_my_location": "Izmantot manu atrašanās vietu",
+      "detected_tz_label": "Noteiktā laika josla:",
+      "detected_tz_hint": "(automātiski vai izvēlēties)"
+    },
+    "birth": {
+      "legend": "Dzimšanas informācija (astrologijai)",
+      "date_placeholder": "Dzimšanas datums",
+      "hour_label": "Stunda",
+      "minute_label": "Minūte",
+      "place_placeholder": "Dzimšanas vieta (pilsēta, valsts)",
+      "detected_tz_label": "Noteiktā laika josla:",
+      "detected_tz_hint": "(automātiski)",
+      "lat_placeholder": "Platums (piem., 48.2082)",
+      "lon_placeholder": "Garums (piem., 16.3738)",
+      "instructions": "Iestatiet savu dzimšanas datumu un atrašanās vietu, lai aprēķinātu jūsu radiksu. Ja precīzu laiku nezināt, atstājiet laika lauku tukšu — pēc noklusējuma izmantosim 12:00."
+    },
+    "note": "Tavu profilu izmanto, lai personalizētu atbilstības un parādītu laika joslu.",
+    "primary_language_label": "Primārā valoda (lietotnes saskarnei)",
+    "other_languages_label": "Citas valodas (izmanto atbilstībām)",
+    "language_input_placeholder": "Rakstiet, lai pievienotu valodas..."
+  },
+  "search": {
+    "noResults": "Nav rezultātu",
+    "placeholder": "Meklēt cilvēkus, grupas un saturu...",
+    "title": "Meklēšana"
+  },
+  "settings": {
+    "account": {
+      "changeEmail": "Mainīt e-pastu",
+      "changePassword": "Mainīt paroli",
+      "title": "Konts"
+    },
+    "privacy": {
+      "profileVisibility": "Profila redzamība",
+      "title": "Privātums"
+    },
+    "title": "Iestatījumi"
   },
   "success": {
-    "profileUpdated": "Profils atjaunināts",
+    "messageSent": "Ziņa nosūtīta",
     "passwordChanged": "Parole nomainīta",
-    "messageSent": "Ziņa nosūtīta"
+    "profileUpdated": "Profils atjaunināts"
+  },
+  "language": {
+    "en": "English",
+    "de": "German"
+  },
+  "welcome": {
+    "title": "Laipni lūdzam SoulTribe.chat",
+    "subtitle": "Atrodi savu dvēseļu kopienu"
+  },
+  "radix": {
+    "title": "Tavs radikss",
+    "placeholder": "Ja esi iestatījis dzimšanas datus, šeit parādīsies tava radiksa momentuzņēmums.",
+    "show_raw_json": "Rādīt neapstrādātu JSON"
+  },
+  "ai": {
+    "get_interpretation": "Saņemt interpretāciju",
+    "followup_placeholder": "Uzdodiet papildu jautājumu…",
+    "send": "Sūtīt"
+  },
+  "dashboard": {
+    "title": "Kontrolpanelis",
+    "availability": "Pieejamība",
+    "create_slot": "Izveidot laika intervālu",
+    "duration_hours": "Ilgums (stundas)",
+    "meetups": "Tikšanās",
+    "matches": "Atbilstības",
+    "overlap_hint": "Noklikšķiniet uz \"Ierosināt šo laiku\" pārklāšanās vietā, lai ierosinātu tikšanos šim laikam.",
+    "propose_time": "Piedāvāt laiku",
+    "generate_ai_comment": "Ģenerēt MI komentāru",
+    "slot_delete": "Dzēst",
+    "slot_edit": "Rediģēt",
+    "active_filter_hint": "Tiek rādīti tikai lietotāji, kuri pēdējo 30 dienu laikā bijuši aktīvi."
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Noteikumi",
+    "privacy": "Privātums",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Atiestatīt paroli",
+    "intro": "Izvēlieties jaunu paroli savam kontam.",
+    "new_password_label": "Jauna parole",
+    "new_password_placeholder": "jauna parole",
+    "confirm_password_label": "Apstipriniet jauno paroli",
+    "confirm_password_placeholder": "apstipriniet jauno paroli",
+    "submit": "Iestatīt jaunu paroli"
+  },
+  "notifications": {
+    "language_set_to": "Valoda iestatīta uz"
   }
 }

@@ -24,11 +24,14 @@ wheels/
 venv/
 env/
 ENV/
+.venv/
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+.envrc
+.python-version
 
 # Database
 *.db
@@ -36,6 +39,10 @@ ENV/
 
 # Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # IDE
 .idea/
@@ -46,3 +53,25 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+
+# Node.js
+node_modules/
+
+# Python caches
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Coverage / reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Build artifacts (already includes many, keep additions here)
+site/
+
+# Backup files
+*.bak
+*.backup_*

@@ -31,27 +31,36 @@ Translations are applied to the UI using data attributes:
 
 The application supports the following languages:
 
-| Code | Language |
-|------|----------|
-| en | English |
-| de | Deutsch (German) |
-| fr | Français (French) |
-| es | Español (Spanish) |
-| it | Italiano (Italian) |
-| pt | Português (Portuguese) |
-| nl | Nederlands (Dutch) |
-| sv | Svenska (Swedish) |
-| no | Norsk (Norwegian) |
-| da | Dansk (Danish) |
-| fi | Suomi (Finnish) |
-| pl | Polski (Polish) |
-| cs | Čeština (Czech) |
-| hu | Magyar (Hungarian) |
-| ro | Română (Romanian) |
-| ru | Русский (Russian) |
-| uk | Українська (Ukrainian) |
-| tr | Türkçe (Turkish) |
-| el | Ελληνικά (Greek) |
+| Code | Language | Status |
+|------|----------|--------|
+| en | English | ✅ Complete |
+| de | Deutsch (German) | ✅ Complete |
+| fr | Français (French) | ✅ Complete |
+| es | Español (Spanish) | ✅ Complete |
+| it | Italiano (Italian) | ✅ Complete |
+| pt | Português (Portuguese) | ✅ Complete |
+| nl | Nederlands (Dutch) | ✅ Complete |
+| sv | Svenska (Swedish) | ✅ Complete |
+| no | Norsk (Norwegian) | ✅ Complete |
+| da | Dansk (Danish) | ✅ Complete |
+| fi | Suomi (Finnish) | ✅ Complete |
+| pl | Polski (Polish) | ✅ Complete |
+| cs | Čeština (Czech) | ✅ Complete |
+| hu | Magyar (Hungarian) | ✅ Complete |
+| ro | Română (Romanian) | ✅ Complete |
+| bg | Български (Bulgarian) | ✅ Complete |
+| sk | Slovenčina (Slovak) | ✅ Complete |
+| hr | Hrvatski (Croatian) | ✅ Complete |
+| lt | Lietuvių (Lithuanian) | ✅ Complete |
+| sl | Slovenščina (Slovenian) | ✅ Complete |
+| lv | Latviešu (Latvian) | ✅ Complete |
+| et | Eesti (Estonian) | ✅ Complete |
+| ga | Gaeilge (Irish) | ✅ Complete |
+| mt | Malti (Maltese) | ✅ Complete |
+| el | Ελληνικά (Greek) | ✅ Complete |
+| ru | Русский (Russian) | ✅ Complete |
+| tr | Türkçe (Turkish) | ✅ Complete |
+| uk | Українська (Ukrainian) | ✅ Complete |
 
 ## How to Use
 

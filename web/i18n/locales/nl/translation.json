@@ -1,95 +1,187 @@
 {
+  "dashboard": {
+    "availability": "Beschikbaarheid",
+    "create_slot": "Tijdslot maken",
+    "duration_hours": "Duur (uren)",
+    "matches": "Matches",
+    "meetups": "Afspreken",
+    "overlap_hint": "Klik op ‘Tijd voorstellen’ om een afspraak voor dat tijdslot te voorstellen.",
+    "title": "Dashboard",
+    "propose_time": "Tijd voorstellen",
+    "generate_ai_comment": "Genereer AI-opmerking",
+    "slot_delete": "Verwijderen",
+    "slot_edit": "Bewerken",
+    "active_filter_hint": "Alleen gebruikers die de afgelopen 30 dagen actief waren worden weergegeven."
+  },
   "landing": {
-    "hero": {
-      "title": "Welkom",
-      "subtitle": "SoulTribe.chat is een ruimte gecreëerd om je te helpen je zielsstam te vinden en ermee in contact te komen — mensen die resoneren met jouw energie, je geest en je reis. ✨"
-    },
-    "how": {
-      "title": "Hoe het werkt",
-      "step1": "<strong>Maak je profiel aan</strong> — voer je geboortedatum, -tijd en -plaats in om je unieke zielskaart te genereren.",
-      "step2": "<strong>Ontdek je matches</strong> — we belichten verbindingen op basis van compatibiliteit en resonantie.",
-      "step3": "<strong>Start het gesprek</strong> — nodig matches uit om te chatten; veilig en privé door ontwerp.",
-      "step4": "<strong>Spreek af (optioneel)</strong> — plan een Jitsi-gesprek of een persoonlijke ontmoeting met wederzijdse toestemming."
+    "features": {
+      "item1": "<strong>Astrologisch bewust matchen</strong> — maak verbinding met behulp van je geboortehoroscoop.",
+      "item2": "<strong>Slimme tijdszoneplanning</strong> — wij regelen de UTC-conversies voor je.",
+      "item3": "<strong>Directe communicatie via Jitsi</strong> — tekst/audio/video; er wordt niets opgeslagen of opgenomen op SoulTribe.chat.",
+      "item4": "<strong>Eenvoudig deelnemen via link</strong> — privé Jitsi‑ruimte voor bevestigde afspraken; privacyvriendelijk, geen desktopinstallatie nodig.",
+      "item5": "<strong>Minimalistische, gerichte interface</strong> — ontworpen voor betekenisvolle gesprekken.",
+      "title": "Kenmerken"
     },
     "getting_started": {
-      "title": "Aan de slag",
       "step1": "<strong>Maak een account aan</strong> — geen sociale media-accounts nodig.",
       "step2": "<strong>Voltooi je profiel</strong> — voeg geboortegegevens toe; een geschatte tijd is voldoende.",
       "step3": "<strong>Stel je beschikbaarheid in</strong> — stel lokale tijdsloten voor; wij regelen de UTC-conversie.",
       "step4": "<strong>Ontdek matches</strong> — blader door op resonantie gebaseerde suggesties.",
-      "step5": "<strong>Chat en spreek eventueel af</strong> — alles binnen de app; plan wanneer je er klaar voor bent."
-    },
-    "features": {
-      "title": "Kenmerken",
-      "item1": "<strong>Astrologisch bewust matchen</strong> — maak verbinding met behulp van je geboortehoroscoop.",
-      "item2": "<strong>Slimme tijdszoneplanning</strong> — wij regelen de UTC-conversies voor je.",
-      "item3": "<strong>Privé, veilige chat</strong> — gesprekken blijven op SoulTribe.chat.",
-      "item4": "<strong>Optionele video via Jitsi</strong> — privacyvriendelijk, geen installatie nodig op desktop.",
-      "item5": "<strong>Minimalistische, gerichte interface</strong> — ontworpen voor betekenisvolle gesprekken."
-    },
-    "privacy": {
-      "title": "Privacy & Veiligheid",
-      "item1": "We vragen alleen wat nodig is om zielsverbindingen mogelijk te maken.",
-      "item2": "Je profielgegevens worden niet verkocht of gedeeld met advertentienetwerken.",
-      "item3": "Jij bepaalt wie je kan benaderen en wanneer je meer wilt delen."
-    },
-    "matching": {
-      "title": "Hoe matching werkt (korte versie)",
-      "text": "We berekenen belangrijke relationele indicatoren uit je geboortehoroscoop en vergelijken deze met die van anderen om resonantie te vinden. We geven voorrang aan harmonie, complementariteit en groeipotentieel boven generieke populariteitsstatistieken."
-    },
-    "protips": {
-      "title": "Pro-tips",
-      "item1": "Voeg een paar beschikbare tijdsloten toe op verschillende dagen voor snellere verbindingen.",
-      "item2": "Wees oprecht in je introductie — specifieke details helpen de juiste mensen je te vinden.",
-      "item3": "Eerst toestemming, altijd. Ga in het tempo dat goed voelt."
-    },
-    "next": {
-      "title": "Volgende stappen",
-      "go_dashboard": "Naar het Dashboard",
-      "login_register": "Inloggen / Registreren"
+      "step5": "<strong>Chat en spreek eventueel af</strong> — alles binnen de app; plan wanneer je er klaar voor bent.",
+      "title": "Aan de slag"
     },
     "global": {
-      "title": "Wereldwijde gemeenschap",
-      "text": "Spreek je taal, verbind je met de wereld. SoulTribe.chat ondersteunt meerdere talen om je zielsstam dichterbij te brengen, waar je ook bent.",
-      "auto_title": "Automatische vertaling",
       "auto_text": "Chat met matches in je voorkeurstaal, met automatische vertaling wanneer nodig.",
-      "native_title": "Ondersteuning voor moedertaal",
+      "auto_title": "Automatische vertaling",
       "native_text": "Volledig vertaalde interface in meerdere talen, met regelmatige toevoegingen.",
-      "tz_title": "Tijdzonebewust",
+      "native_title": "Ondersteuning voor moedertaal",
+      "select_label": "Selecteer taal:",
+      "text": "Spreek je taal, verbind je met de wereld. SoulTribe.chat ondersteunt meerdere talen om je zielsstam dichterbij te brengen, waar je ook bent.",
+      "title": "Wereldwijde gemeenschap",
       "tz_text": "Automatische tijdzonedetectie en -conversie, zodat je altijd weet wanneer je matches beschikbaar zijn.",
-      "select_label": "Selecteer taal:"
-    }
+      "tz_title": "Tijdzonebewust"
+    },
+    "hero": {
+      "subtitle": "SoulTribe.chat is een ruimte gecreëerd om je te helpen je zielsstam te vinden en ermee in contact te komen — mensen die resoneren met jouw energie, je geest en je reis. ✨",
+      "title": "Welkom"
+    },
+    "how": {
+      "step1": "<strong>Maak je profiel aan</strong> — voer je geboortedatum, -tijd en -plaats in om je unieke zielskaart te genereren.",
+      "step2": "<strong>Ontdek je matches</strong> — we belichten verbindingen op basis van compatibiliteit en resonantie.",
+      "step3": "<strong>Start het gesprek</strong> — nodig matches uit om te chatten; veilig en privé door ontwerp.",
+      "step4": "<strong>Spreek af (optioneel)</strong> — plan een Jitsi-gesprek of een persoonlijke ontmoeting met wederzijdse toestemming.",
+      "title": "Hoe het werkt"
+    },
+    "matching": {
+      "text": "We berekenen belangrijke relationele indicatoren uit je geboortehoroscoop en vergelijken deze met die van anderen om resonantie te vinden. We geven voorrang aan harmonie, complementariteit en groeipotentieel boven generieke populariteitsstatistieken.",
+      "title": "Hoe matching werkt (korte versie)"
+    },
+    "next": {
+      "go_dashboard": "Naar het Dashboard",
+      "login_register": "Inloggen / Registreren",
+      "title": "Volgende stappen"
+    },
+    "privacy": {
+      "item1": "We vragen alleen wat nodig is om zielsverbindingen mogelijk te maken.",
+      "item2": "Je profielgegevens worden niet verkocht of gedeeld met advertentienetwerken.",
+      "item3": "Jij bepaalt wie je kan benaderen en wanneer je meer wilt delen.",
+      "title": "Privacy & Veiligheid"
+    },
+    "protips": {
+      "item1": "Voeg een paar beschikbare tijdsloten toe op verschillende dagen voor snellere verbindingen.",
+      "item2": "Wees oprecht in je introductie — specifieke details helpen de juiste mensen je te vinden.",
+      "item3": "Eerst toestemming, altijd. Ga in het tempo dat goed voelt.",
+      "title": "Pro-tips"
+    },
+    "page_title": "SoulTribe.chat – Vind jouw zielsstam"
   },
-  "language": { "en": "Engels", "de": "Duits", "nl": "Nederlands" },
-  "welcome": { "title": "Welkom bij SoulTribe.chat", "subtitle": "Vind jouw zielsstam" },
-  "profile": {
-    "title": "Jouw profiel",
-    "save": "Opslaan",
-    "cancel": "Annuleren",
-    "primary_language_label": "Primaire taal (voor de interface)",
-    "other_languages_label": "Overige talen (voor matching)",
-    "language_input_placeholder": "Typ om talen toe te voegen..."
-  },
-  "dashboard": {
-    "title": "Dashboard",
-    "availability": "Beschikbaarheid",
-    "create_slot": "Tijdslot maken",
-    "duration_hours": "Duur (uren)",
-    "meetups": "Afspreken",
-    "matches": "Matches",
-    "overlap_hint": "Klik op ‘Tijd voorstellen’ om een afspraak voor dat tijdslot te voorstellen."
+  "language": {
+    "de": "Duits",
+    "en": "Engels",
+    "nl": "Nederlands"
   },
   "login": {
-    "title": "Welkom",
-    "intro": "Log in met een bestaand account of registreer een nieuwe.",
-    "email": "e-mail",
-    "password": "wachtwoord",
+    "confirm_password": "bevestig wachtwoord (voor registratie)",
     "display_name": "weergavenaam (voor registratie)",
-    "register": "Registreren",
+    "email": "e-mailadres",
+    "email_not_verified": "E-mail niet geverifieerd? ",
+    "enter_email_first": "Vul eerst je e-mailadres in.",
+    "go_dashboard": "Ga naar Dashboard",
+    "intro": "Log in met een bestaand account of registreer een nieuwe.",
     "login": "Inloggen",
+    "login_required": "E-mailadres en wachtwoord zijn verplicht.",
+    "page_title": "SoulTribe.chat — Inloggen / Registreren",
+    "password": "wachtwoord",
+    "password_mismatch": "Wachtwoorden komen niet overeen.",
     "redirect_hint": "Na inloggen word je doorgestuurd naar je dashboard.",
-    "go_dashboard": "Ga naar Dashboard"
+    "register": "Registreren",
+    "registration_success": "Account aangemaakt. Verifieer je e-mailadres alstublieft.",
+    "required_fields": "E-mailadres, wachtwoord en weergavenaam zijn verplicht.",
+    "resend_verification": "Verificatiemail opnieuw verzenden",
+    "reset_password": "Wachtwoord opnieuw instellen",
+    "reset_sent": "Als er een account is met dit e-mailadres, is er een wachtwoordresetmail verzonden.",
+    "title": "Welkom",
+    "verification_sent": "Als je e-mailadres nog niet geverifieerd is, is er een nieuwe verificatiemail verzonden."
   },
-  "nav": { "dashboard": "Dashboard", "profile": "Profiel", "login": "Inloggen", "logout": "Uitloggen" },
-  "notifications": { "language_set_to": "Taal ingesteld op" }
+  "nav": {
+    "dashboard": "Dashboard",
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "profile": "Profiel",
+    "welcome": "Start",
+    "home": "Start",
+    "discover": "Ontdek",
+    "matches": "Matches",
+    "messages": "Berichten"
+  },
+  "notifications": {
+    "language_set_to": "Taal ingesteld op"
+  },
+  "profile": {
+    "cancel": "Annuleren",
+    "language_input_placeholder": "Typ om talen toe te voegen...",
+    "other_languages_label": "Overige talen (voor matching)",
+    "primary_language_label": "Primaire taal (voor de interface)",
+    "save": "Opslaan",
+    "title": "Jouw profiel",
+    "basic_info": {
+      "legend": "Basisinformatie",
+      "username_label": "Gebruikersnaam",
+      "username_placeholder": "gebruikersnaam"
+    },
+    "languages": {
+      "legend": "Talen"
+    },
+    "location": {
+      "legend": "Huidige locatie",
+      "city_placeholder": "Huidige stad (autocompleteren)",
+      "use_my_location": "Mijn locatie gebruiken",
+      "detected_tz_label": "Gedetecteerde tijdzone:",
+      "detected_tz_hint": "(automatisch of kiezen)"
+    },
+    "birth": {
+      "legend": "Geboortegegevens (voor astrologie)",
+      "date_placeholder": "Geboortedatum",
+      "hour_label": "Uur",
+      "minute_label": "Minuut",
+      "place_placeholder": "Geboorteplaats (stad, land)",
+      "detected_tz_label": "Gedetecteerde tijdzone:",
+      "detected_tz_hint": "(automatisch)",
+      "lat_placeholder": "Breedtegraad (bijv. 48.2082)",
+      "lon_placeholder": "Lengtegraad (bijv. 16.3738)",
+      "instructions": "Stel je geboortedatum en -plaats in om je radix te berekenen. Als je de exacte tijd niet weet, laat het tijdveld leeg; we gebruiken dan standaard 12:00."
+    },
+    "note": "Je profiel wordt gebruikt om matches te personaliseren en de tijdzone weer te geven."
+  },
+  "welcome": {
+    "subtitle": "Vind jouw zielsstam",
+    "title": "Welkom bij SoulTribe.chat"
+  },
+  "radix": {
+    "title": "Jouw Radix",
+    "placeholder": "Als je je geboortedata hebt ingesteld, verschijnt hier een momentopname van je radix.",
+    "show_raw_json": "Ruwe JSON weergeven"
+  },
+  "ai": {
+    "get_interpretation": "Krijg interpretatie",
+    "followup_placeholder": "Stel een vervolgvraag…",
+    "send": "Verzenden"
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Voorwaarden",
+    "privacy": "Privacy",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Wachtwoord opnieuw instellen",
+    "intro": "Kies een nieuw wachtwoord voor je account.",
+    "new_password_label": "Nieuw wachtwoord",
+    "new_password_placeholder": "nieuw wachtwoord",
+    "confirm_password_label": "Bevestig nieuw wachtwoord",
+    "confirm_password_placeholder": "bevestig nieuw wachtwoord",
+    "submit": "Nieuw wachtwoord instellen"
+  }
 }

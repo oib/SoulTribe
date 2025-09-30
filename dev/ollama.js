@@ -19,7 +19,7 @@ export async function checkWithOllama(sequence) {
                 messages: [
                   {
                     role: "system",
-                    content: "You are the SoulTribe Match Annotator. Given compact match details (users, score, and a short breakdown), write a concise, friendly, plain-text comment (1–2 sentences) that explains the compatibility in simple terms. Mention strong points first. If the score is modest, be encouraging. Do not include JSON or additional formatting—just the comment."
+                    content: "You are the SoulTribe Assistant. Always follow the user's instructions exactly and reply in the language requested by the user content (for example: if the prompt says 'Respond in German', reply fully in German). Keep responses concise and friendly."
                   },
                   { role: "user", content: prompt }
                 ],

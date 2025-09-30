@@ -1,33 +1,187 @@
 {
-  "language": { "en": "Engleză", "de": "Germană", "ro": "Română" },
-  "welcome": { "title": "Bine ai venit pe SoulTribe.chat", "subtitle": "Găsește-ți tribul sufletului" },
-  "profile": {
-    "title": "Profilul tău",
-    "save": "Salvează",
-    "cancel": "Anulează",
-    "primary_language_label": "Limba principală (pentru interfață)",
-    "other_languages_label": "Alte limbi (pentru potriviri)",
-    "language_input_placeholder": "Tastează pentru a adăuga limbi..."
-  },
   "dashboard": {
-    "title": "Panou",
     "availability": "Disponibilitate",
     "create_slot": "Creează interval",
     "duration_hours": "Durată (ore)",
-    "meetups": "Întâlniri",
     "matches": "Potriviri",
-    "overlap_hint": "Apasă pe \"Propune această oră\" pentru a propune o întâlnire pentru acel interval."
+    "meetups": "Întâlniri",
+    "overlap_hint": "Apasă pe \"Propune această oră\" pentru a propune o întâlnire pentru acel interval.",
+    "title": "Panou",
+    "propose_time": "Propune oră",
+    "generate_ai_comment": "Generează comentariu AI",
+    "slot_delete": "Șterge",
+    "slot_edit": "Editează",
+    "active_filter_hint": "Sunt afișați doar utilizatorii activi în ultimele 30 de zile."
+  },
+  "language": {
+    "de": "Germană",
+    "en": "Engleză",
+    "ro": "Română"
   },
   "login": {
-    "title": "Bine ai venit",
-    "intro": "Autentifică-te sau creează un cont nou.",
+    "confirm_password": "confirmă parola (pentru înregistrare)",
+    "display_name": "nume afișat (pentru înregistrare)",
     "email": "email",
-    "password": "parolă",
-    "display_name": "nume_afişat (pentru înregistrare)",
-    "register": "Înregistrare",
+    "email_not_verified": "Email-ul nu a fost verificat? ",
+    "enter_email_first": "Te rog introdu mai întâi adresa ta de email.",
+    "go_dashboard": "Mergi la Panou",
+    "intro": "Autentifică-te sau creează un cont nou.",
     "login": "Autentificare",
+    "login_required": "Sunt necesare adresa de email și parola.",
+    "page_title": "SoulTribe.chat — Autentificare / Înregistrare",
+    "password": "parolă",
+    "password_mismatch": "Parolele nu se potrivesc.",
     "redirect_hint": "După autentificare vei fi redirecționat la panou.",
-    "go_dashboard": "Mergi la Panou"
+    "register": "Înregistrare",
+    "registration_success": "Cont creat. Te rugăm să-ți verifici adresa de email.",
+    "required_fields": "Sunt necesare adresa de email, parola și numele afișat.",
+    "resend_verification": "Retrimite email de verificare",
+    "reset_password": "Resetează parola",
+    "reset_sent": "Dacă există un cont cu această adresă de email, a fost trimis un email de resetare a parolei.",
+    "title": "Bine ai venit",
+    "verification_sent": "Dacă adresa ta de email nu a fost încă verificată, a fost trimis un nou email de verificare."
   },
-  "nav": { "dashboard": "Panou", "profile": "Profil", "login": "Autentificare", "logout": "Deconectare" }
+  "nav": {
+    "dashboard": "Panou",
+    "login": "Autentificare",
+    "logout": "Deconectare",
+    "profile": "Profil",
+    "welcome": "Acasă",
+    "home": "Acasă",
+    "discover": "Descoperă",
+    "matches": "Potriviri",
+    "messages": "Mesaje"
+  },
+  "profile": {
+    "cancel": "Anulează",
+    "language_input_placeholder": "Tastează pentru a adăuga limbi...",
+    "other_languages_label": "Alte limbi (pentru potriviri)",
+    "primary_language_label": "Limba principală (pentru interfață)",
+    "save": "Salvează",
+    "title": "Profilul tău",
+    "basic_info": {
+      "legend": "Informații de bază",
+      "username_label": "Nume utilizator",
+      "username_placeholder": "nume utilizator"
+    },
+    "languages": {
+      "legend": "Limbi"
+    },
+    "location": {
+      "legend": "Locație curentă",
+      "city_placeholder": "Oraș curent (completare automată)",
+      "use_my_location": "Folosește locația mea",
+      "detected_tz_label": "Fus orar detectat:",
+      "detected_tz_hint": "(automat sau selectează)"
+    },
+    "birth": {
+      "legend": "Informații de naștere (pentru astrologie)",
+      "date_placeholder": "Data nașterii",
+      "hour_label": "Oră",
+      "minute_label": "Minut",
+      "place_placeholder": "Locul nașterii (oraș, țară)",
+      "detected_tz_label": "Fus orar detectat:",
+      "detected_tz_hint": "(automat)",
+      "lat_placeholder": "Latitudine (ex.: 48.2082)",
+      "lon_placeholder": "Longitudine (ex.: 16.3738)",
+      "instructions": "Setează data și locul nașterii pentru a-ți calcula radix-ul. Dacă nu știi ora exactă, lasă câmpul orei gol și vom folosi implicit ora 12:00."
+    },
+    "note": "Profilul tău este folosit pentru personalizarea potrivirilor și afișarea fusului orar."
+  },
+  "welcome": {
+    "subtitle": "Găsește-ți tribul sufletului",
+    "title": "Bine ai venit pe SoulTribe.chat"
+  },
+  "landing": {
+    "page_title": "SoulTribe.chat – Găsește-ți tribul sufletului",
+    "hero": {
+      "title": "Bine ai venit",
+      "subtitle": "SoulTribe.chat este un spațiu creat pentru a te ajuta să îți găsești și să te conectezi cu tribul sufletului — oameni care rezonează cu energia, spiritul și călătoria ta. ✨"
+    },
+    "how": {
+      "title": "Cum funcționează",
+      "step1": "<strong>Creează-ți profilul</strong> — introdu data, ora și locul nașterii pentru a genera harta ta unică a sufletului.",
+      "step2": "<strong>Descoperă potrivirile</strong> — evidențiem conexiunile în funcție de compatibilitate și rezonanță.",
+      "step3": "<strong>Începe conversația</strong> — invită potrivirile la chat; sigur și privat prin design.",
+      "step4": "<strong>Întâlnește-te (opțional)</strong> — programează un apel Jitsi sau o întâlnire față în față cu consimțământ reciproc."
+    },
+    "getting_started": {
+      "title": "Începe",
+      "step1": "<strong>Creează-ți contul</strong> — fără autentificări sociale.",
+      "step2": "<strong>Completează-ți profilul</strong> — adaugă detalii de naștere; ora aproximativă este în regulă.",
+      "step3": "<strong>Stabilește-ți disponibilitatea</strong> — propune intervale orare locale; de UTC ne ocupăm noi.",
+      "step4": "<strong>Descoperă potrivirile</strong> — parcurge sugestii bazate pe rezonanță.",
+      "step5": "<strong>Chatuiește și, opțional, întâlnește-te</strong> — rămâi în aplicație; programează când ești gata."
+    },
+    "features": {
+      "title": "Funcționalități",
+      "item1": "<strong>Potrivire cu conștientizare astrologică</strong> — conectează-te folosind harta natală.",
+      "item2": "<strong>Planificare inteligentă a fusurilor orare</strong> — noi facem conversiile UTC pentru tine.",
+      "item3": "<strong>Comunicare directă prin Jitsi</strong> — text/audio/video; nimic nu este stocat sau înregistrat pe SoulTribe.chat.",
+      "item4": "<strong>Alăturare ușoară prin link</strong> — cameră Jitsi privată pentru întâlniri confirmate; prietenoasă cu confidențialitatea, fără instalare pe desktop.",
+      "item5": "<strong>Interfață minimalistă și concentrată</strong> — proiectată pentru conversații cu sens."
+    },
+    "privacy": {
+      "title": "Confidențialitate și siguranță",
+      "item1": "Cerem doar ceea ce este necesar pentru a permite conexiuni autentice.",
+      "item2": "Detaliile profilului tău nu sunt vândute și nici partajate rețelelor de publicitate.",
+      "item3": "Tu controlezi cine te poate contacta și când să împărtășești mai mult."
+    },
+    "matching": {
+      "title": "Cum funcționează potrivirea (pe scurt)",
+      "text": "Calculăm indicatori relaționali cheie din harta ta și îi comparăm cu ai altora pentru a găsi rezonanță. Prioritizăm armonia, complementaritatea și potențialul de creștere, nu metrici generici de popularitate."
+    },
+    "protips": {
+      "title": "Sfaturi",
+      "item1": "Adaugă câteva intervale de disponibilitate în zile diferite pentru conexiuni mai rapide.",
+      "item2": "Fii autentic(ă) în introducere — detaliile îi ajută pe oamenii potriviți să te găsească.",
+      "item3": "Consimțământul pe primul loc, mereu. Mergi în ritmul care ți se potrivește."
+    },
+    "next": {
+      "title": "Pașii următori",
+      "go_dashboard": "Mergi la Panou",
+      "login_register": "Autentificare / Înregistrare"
+    },
+    "global": {
+      "title": "Comunitate globală, timp local",
+      "text": "Conectează-te cu suflete asemănătoare din toată lumea cu conversie automată a fusului orar.",
+      "auto_title": "Detectare automată a fusului orar",
+      "auto_text": "Detectăm automat fusul tău orar pentru programare fără întreruperi.",
+      "native_title": "Suport pentru limba maternă",
+      "native_text": "Chatuiește în limba preferată cu traducerea noastră integrată.",
+      "tz_title": "Programare conștientă de fusul orar",
+      "tz_text": "Fără calcule de fus orar — noi facem toate conversiile pentru tine.",
+      "select_label": "Selectează limba:"
+    }
+  },
+  "radix": {
+    "title": "Radix-ul tău",
+    "placeholder": "Dacă ai setat datele de naștere, aici va apărea instantaneul radix.",
+    "show_raw_json": "Afișează JSON brut"
+  },
+  "ai": {
+    "get_interpretation": "Obține interpretare",
+    "followup_placeholder": "Pune o întrebare suplimentară…",
+    "send": "Trimite"
+  },
+  "imprint": {
+    "title": "Imprint"
+  },
+  "footer": {
+    "terms": "Termeni",
+    "privacy": "Confidențialitate",
+    "imprint": "Imprint"
+  },
+  "reset_password": {
+    "title": "Resetează parola",
+    "intro": "Alege o parolă nouă pentru contul tău.",
+    "new_password_label": "Parolă nouă",
+    "new_password_placeholder": "parolă nouă",
+    "confirm_password_label": "Confirmă parola nouă",
+    "confirm_password_placeholder": "confirmă parola nouă",
+    "submit": "Setează parola nouă"
+  },
+  "notifications": {
+    "language_set_to": "Limba setată la"
+  }
 }

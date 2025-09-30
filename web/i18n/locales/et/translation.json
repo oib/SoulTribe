@@ -1,182 +1,338 @@
 {
   "app": {
-    "name": "SoulTribe",
-    "tagline": "Ühinege inimestega, kellel on sarnased väärtused",
-    "loading": "Laadin...",
-    "error": "Tekkis viga",
-    "retry": "Proovi uuesti",
-    "submit": "Esita",
-    "cancel": "Tühista",
-    "save": "Salvesta",
-    "delete": "Kustuta",
-    "edit": "Muuda",
-    "back": "Tagasi",
-    "next": "Järgmine",
-    "previous": "Eelmine",
-    "skip": "Jäta vahele",
-    "done": "Valmis",
-    "search": "Otsi",
-    "noResults": "Tulemusi ei leitud",
-    "welcome": "Tere tulemast",
-    "or": "või",
+    "about": "Meist",
     "and": "ja",
+    "back": "Tagasi",
+    "cancel": "Tühista",
+    "contact": "Kontakt",
     "continue": "Jätka",
     "createAccount": "Loo konto",
+    "delete": "Kustuta",
+    "done": "Valmis",
+    "edit": "Muuda",
+    "error": "Tekkis viga",
+    "help": "Abi",
+    "loading": "Laadin...",
     "login": "Logi sisse",
     "logout": "Logi välja",
-    "profile": "Profiil",
-    "settings": "Seaded",
-    "help": "Abi",
-    "about": "Meist",
-    "contact": "Kontakt",
+    "name": "SoulTribe",
+    "next": "Järgmine",
+    "noResults": "Tulemusi ei leitud",
+    "or": "või",
+    "previous": "Eelmine",
     "privacy": "Privaatsus",
-    "terms": "Tingimused"
-  },
-  "landing": {
-    "hero": {
-      "title": "Ühinege meie globaalse kogukonnaga",
-      "subtitle": "Looge ühendust inimestega, kellel on sarnased väärtused, huvid ja kirged. Koos saame luua tähendusrikkaid suhteid, mis kestavad kaua.",
-      "cta": "Alustage oma teekonda"
-    },
-    "howItWorks": {
-      "title": "Kuidas see töötab",
-      "steps": [
-        {
-          "title": "Looge endale profiil",
-          "description": "Rääkige oma huvidest, väärtustest ja sellest, mida te kogukonnast otsite."
-        },
-        {
-          "title": "Leidke oma inimesed",
-          "description": "Meie algoritm ühendab teid inimestega, kellel on sarnased väärtused ja huvid."
-        },
-        {
-          "title": "Ühinege ja kasvage",
-          "description": "Alustage vestlusi, osalege üritustel ja looge pikaajalisi suhteid."
-        }
-      ]
-    },
-    "features": {
-      "title": "Miks meiega liituda?",
-      "items": [
-        {
-          "title": "Ohutu kogukond",
-          "description": "Meie kogukond on rajatud austusele, kaasamisele ja iga liikme turvalisusele."
-        },
-        {
-          "title": "Personaalne kogemus",
-          "description": "Saage kohandatud soovitusi, mis põhinevad teie huvidel ja väärtustel."
-        },
-        {
-          "title": "Globaalne ühenduvus",
-          "description": "Looge ühendust inimestega üle kogu maailma, kellel on sarnased kirged."
-        }
-      ]
-    },
-    "privacy": {
-      "title": "Teie privaatsus on meie prioriteet",
-      "description": "Me kaitseme teie andmeid ja tagame turvalise keskkonna kõigile meie liikmetele.",
-      "learnMore": "Lisateavet meie privaatsuspoliitika kohta"
-    }
+    "profile": "Profiil",
+    "retry": "Proovi uuesti",
+    "save": "Salvesta",
+    "search": "Otsi",
+    "settings": "Seaded",
+    "skip": "Jäta vahele",
+    "submit": "Esita",
+    "tagline": "Ühinege inimestega, kellel on sarnased väärtused",
+    "terms": "Tingimused",
+    "welcome": "Tere tulemast"
   },
   "auth": {
     "login": {
-      "title": "Sisselogimine",
       "email": "E-post",
-      "password": "Parool",
       "forgotPassword": "Unustasite parooli?",
       "noAccount": "Pole veel kontot?",
-      "signUp": "Registreeru"
+      "password": "Parool",
+      "signUp": "Registreeru",
+      "title": "Sisselogimine"
     },
     "register": {
-      "title": "Registreerimine",
-      "name": "Nimi ja perekonnanimi",
-      "email": "E-post",
-      "password": "Parool",
+      "agreeTerms": "Nõustun kasutustingimustega",
       "confirmPassword": "Kinnita parool",
-      "agreeTerms": "Nõustun kasutustingimustega"
-    }
-  },
-  "profile": {
-    "edit": {
-      "title": "Profiili muutmine",
-      "basicInfo": "Põhiandmed",
-      "firstName": "Eesnimi",
-      "lastName": "Perekonnanimi",
-      "bio": "Minust",
-      "location": "Asukoht",
-      "interests": "Huvid"
-    },
-    "view": {
-      "memberSince": "Liitus",
-      "lastSeen": "Viimati nähtud",
-      "interests": "Huvid"
-    }
-  },
-  "settings": {
-    "title": "Seaded",
-    "account": {
-      "title": "Konto",
-      "changeEmail": "Muuda e-posti",
-      "changePassword": "Muuda parooli"
-    },
-    "privacy": {
-      "title": "Privaatsus",
-      "profileVisibility": "Profiili nähtavus"
-    }
-  },
-  "messaging": {
-    "title": "Sõnumid",
-    "newMessage": "Uus sõnum",
-    "searchUsers": "Otsi kasutajaid...",
-    "typeMessage": "Sisesta sõnum...",
-    "send": "Saada"
-  },
-  "friends": {
-    "title": "Sõbrad",
-    "allFriends": "Kõik sõbrad",
-    "addFriend": "Lisa sõber",
-    "friendRequests": "Sõprusavaldused"
-  },
-  "events": {
-    "title": "Sündmused",
-    "upcoming": "Tulevased sündmused",
-    "create": "Loo sündmus"
-  },
-  "groups": {
-    "title": "Grupid",
-    "discover": "Avasta gruppe",
-    "myGroups": "Minu grupid",
-    "create": "Loo grupp"
-  },
-  "search": {
-    "title": "Otsing",
-    "placeholder": "Otsi inimesi, gruppe ja sisu...",
-    "noResults": "Tulemusi ei leitud"
-  },
-  "onboarding": {
-    "welcome": "Tere tulemast SoulTribe'i",
-    "step1": {
-      "title": "Loo endale profiil",
-      "description": "Lisa oma pilt ja paar sõna enda kohta."
-    },
-    "step2": {
-      "title": "Vali oma huvid",
-      "description": "Mida sulle meeldib teha? Vali oma huvialad."
-    },
-    "step3": {
-      "title": "Ühine inimestega",
-      "description": "Alusta vestlust sarnaste huvidega inimestega."
+      "email": "E-post",
+      "name": "Nimi ja perekonnanimi",
+      "password": "Parool",
+      "title": "Registreerimine"
     }
   },
   "errors": {
-    "required": "See väli on kohustuslik",
     "invalidEmail": "Sisesta kehtiv e-posti aadress",
     "passwordTooShort": "Parool on liiga lühike",
-    "passwordsDontMatch": "Paroolid ei kattu"
+    "passwordsDontMatch": "Paroolid ei kattu",
+    "required": "See väli on kohustuslik"
+  },
+  "events": {
+    "create": "Loo sündmus",
+    "title": "Sündmused",
+    "upcoming": "Tulevased sündmused"
+  },
+  "friends": {
+    "addFriend": "Lisa sõber",
+    "allFriends": "Kõik sõbrad",
+    "friendRequests": "Sõprusavaldused",
+    "title": "Sõbrad"
+  },
+  "groups": {
+    "create": "Loo grupp",
+    "discover": "Avasta gruppe",
+    "myGroups": "Minu grupid",
+    "title": "Grupid"
+  },
+  "landing": {
+    "features": {
+      "items": [
+        {
+          "description": "Meie kogukond on rajatud austusele, kaasamisele ja iga liikme turvalisusele.",
+          "title": "Ohutu kogukond"
+        },
+        {
+          "description": "Saage kohandatud soovitusi, mis põhinevad teie huvidel ja väärtustel.",
+          "title": "Personaalne kogemus"
+        },
+        {
+          "description": "Looge ühendust inimestega üle kogu maailma, kellel on sarnased kirged.",
+          "title": "Globaalne ühenduvus"
+        }
+      ],
+      "title": "Miks meiega liituda?",
+      "item1": "<strong>Astrology‑aware matching</strong> — connect using your natal chart.",
+      "item2": "<strong>Timezone smart scheduling</strong> — we handle UTC conversions for you.",
+      "item3": "<strong>Otsesuhtlus Jitsi kaudu</strong> — tekst/heli/video; SoulTribe.chatis ei salvestata ega lindistata midagi.",
+      "item4": "<strong>Lihtne liitumine lingiga</strong> — privaatne Jitsi‑tuba kinnitatud kohtumisteks; privaatsussõbralik, pole vaja lauaarvutisse paigaldust.",
+      "item5": "<strong>Minimalist, focused UI</strong> — designed for meaningful conversations."
+    },
+    "hero": {
+      "cta": "Alustage oma teekonda",
+      "subtitle": "Looge ühendust inimestega, kellel on sarnased väärtused, huvid ja kirged. Koos saame luua tähendusrikkaid suhteid, mis kestavad kaua.",
+      "title": "Ühinege meie globaalse kogukonnaga"
+    },
+    "howItWorks": {
+      "steps": [
+        {
+          "description": "Rääkige oma huvidest, väärtustest ja sellest, mida te kogukonnast otsite.",
+          "title": "Looge endale profiil"
+        },
+        {
+          "description": "Meie algoritm ühendab teid inimestega, kellel on sarnased väärtused ja huvid.",
+          "title": "Leidke oma inimesed"
+        },
+        {
+          "description": "Alustage vestlusi, osalege üritustel ja looge pikaajalisi suhteid.",
+          "title": "Ühinege ja kasvage"
+        }
+      ],
+      "title": "Kuidas see töötab"
+    },
+    "privacy": {
+      "description": "Me kaitseme teie andmeid ja tagame turvalise keskkonna kõigile meie liikmetele.",
+      "learnMore": "Lisateavet meie privaatsuspoliitika kohta",
+      "title": "Teie privaatsus on meie prioriteet",
+      "item1": "Küsime ainult seda, mis on vajalik tähendusrikaste ühenduste loomiseks.",
+      "item2": "Teie profiiliandmeid ei müüda ega jagata reklaamivõrgustikega.",
+      "item3": "Teie kontrollite, kes saab teiega ühendust võtta ja millal rohkem infot jagada."
+    },
+    "page_title": "SoulTribe.chat – Leia oma hingekogukond",
+    "how": {
+      "title": "Kuidas see töötab",
+      "step1": "<strong>Loo oma profiil</strong> — sisesta sünniaeg, -kuupäev ja -koht, et luua sinu ainulaadne hingekaart.",
+      "step2": "<strong>Avasta sobivused</strong> — tõstame esile ühendused ühilduvuse ja resonantsi alusel.",
+      "step3": "<strong>Alusta vestlust</strong> — kutsu sobivusi vestlema; turvaline ja privaatne.",
+      "step4": "<strong>Kohtu (valikuline)</strong> — lepi kokku Jitsi kõne või kohtumine vastastikusel nõusolekul."
+    },
+    "getting_started": {
+      "title": "Alustamine",
+      "step1": "<strong>Loo konto</strong> — sotsiaalmeedia sisselogimist pole vaja.",
+      "step2": "<strong>Täienda profiili</strong> — lisa sünniandmed; ligikaudne aeg sobib.",
+      "step3": "<strong>Sea saadavus</strong> — paku kohaliku aja vahemikke; UTC teisendused teeme meie.",
+      "step4": "<strong>Avasta sobivused</strong> — sirvi resonantsil põhinevaid soovitusi.",
+      "step5": "<strong>Vestle ja kohtu soovi korral</strong> — hoia suhtlus rakenduses; lepi aeg kokku, kui oled valmis."
+    },
+    "matching": {
+      "title": "Kuidas sobitamine töötab (lühiülevaade)",
+      "text": "Arvutame sinu kaardist võtmetähtsusega seoseid ja võrdleme neid teistega, et leida resonantsi. Eelistame harmooniat, täiendavust ja kasvupotentsiaali, mitte üldist populaarsust."
+    },
+    "protips": {
+      "title": "Nipid",
+      "item1": "Lisa kiiremaks ühenduseks mõned saadavuse ajavahemikud eri päevadele.",
+      "item2": "Ole tutvustuses siiras — konkreetsus aitab õigetele inimestele sind leida.",
+      "item3": "Alati nõusolek esikohal. Liigu endale sobivas tempos."
+    },
+    "next": {
+      "title": "Järgmised sammud",
+      "go_dashboard": "Mine armatuurlauale",
+      "login_register": "Logi sisse / Registreeru"
+    },
+    "global": {
+      "title": "Globaalne kogukond, kohalik aeg",
+      "text": "Loo ühendusi sarnaselt mõtlevate inimestega üle maailma, automaatse ajavööndite teisendusega.",
+      "auto_title": "Automaatne ajavööndi tuvastus",
+      "auto_text": "Tuvastame sinu ajavööndi automaatselt, et ajastamine oleks sujuv.",
+      "native_title": "Emakeelne tugi",
+      "native_text": "Vestle oma eelistatud keeles sisseehitatud tõlke abil.",
+      "tz_title": "Ajavöönditeadlik ajastamine",
+      "tz_text": "Ajavööndite arvutamist enam pole — teeme kõik teisendused sinu eest.",
+      "select_label": "Vali keel:"
+    }
+  },
+  "login": {
+    "confirm_password": "kinnitage parool (registreerumiseks)",
+    "display_name": "kuvatav nimi (registreerumiseks)",
+    "email": "e-post",
+    "email_not_verified": "E-posti aadress pole kinnitatud? ",
+    "enter_email_first": "Palun sisestage kõigepealt oma e-posti aadress.",
+    "go_dashboard": "Mine armatuurlauale",
+    "intro": "Logi sisse olemasoleva kontoga või registreeri uus konto.",
+    "login": "Logi sisse",
+    "login_required": "E-posti aadress ja parool on kohustuslikud.",
+    "page_title": "SoulTribe.chat — Logi sisse / Registreeru",
+    "password": "parool",
+    "password_mismatch": "Paroolid ei kattu.",
+    "redirect_hint": "Pärast sisselogimist suunatakse teid armatuurlauale.",
+    "register": "Registreeru",
+    "registration_success": "Konto on loodud. Palun kinnitage oma e-posti aadress.",
+    "required_fields": "E-posti aadress, parool ja kuvatav nimi on kohustuslikud.",
+    "resend_verification": "Saada kinnitusmeil uuesti",
+    "reset_password": "Lähtesta parool",
+    "reset_sent": "Kui selle e-posti aadressiga konto on olemas, on teile saadetud parooli lähtestamise kiri.",
+    "title": "Tere tulemast",
+    "verification_sent": "Kui teie e-posti aadress pole veel kinnitatud, on teile saadetud uus kinnituskiri."
+  },
+  "messaging": {
+    "newMessage": "Uus sõnum",
+    "searchUsers": "Otsi kasutajaid...",
+    "send": "Saada",
+    "title": "Sõnumid",
+    "typeMessage": "Sisesta sõnum..."
+  },
+  "nav": {
+    "home": "Avaleht",
+    "dashboard": "Armatuurlaud",
+    "discover": "Avasta",
+    "matches": "Sobivused",
+    "messages": "Sõnumid",
+    "login": "Logi sisse",
+    "logout": "Logi välja",
+    "profile": "Profiil",
+    "welcome": "Avaleht"
+  },
+  "language": {
+    "en": "Inglise",
+    "de": "Saksa"
+  },
+  "onboarding": {
+    "step1": {
+      "description": "Lisa oma pilt ja paar sõna enda kohta.",
+      "title": "Loo endale profiil"
+    },
+    "step2": {
+      "description": "Mida sulle meeldib teha? Vali oma huvialad.",
+      "title": "Vali oma huvid"
+    },
+    "step3": {
+      "description": "Alusta vestlust sarnaste huvidega inimestega.",
+      "title": "Ühine inimestega"
+    },
+    "welcome": "Tere tulemast SoulTribe'i"
+  },
+  "profile": {
+    "cancel": "Loobu",
+    "language_input_placeholder": "Sisesta keel...",
+    "other_languages_label": "Teised keeled (kasutatakse sobitamiseks)",
+    "primary_language_label": "Esmane keel (kasutatakse kasutajaliideses)",
+    "save": "Salvesta",
+    "title": "Sinu profiil",
+    "basic_info": {
+      "legend": "Põhiandmed",
+      "username_label": "Kasutajanimi",
+      "username_placeholder": "kasutajanimi"
+    },
+    "languages": {
+      "legend": "Keeled"
+    },
+    "location": {
+      "legend": "Praegune asukoht",
+      "city_placeholder": "Praegune linn (automaattäitmine)",
+      "use_my_location": "Kasuta minu asukohta",
+      "detected_tz_label": "Tuvastatud ajavöönd:",
+      "detected_tz_hint": "(automaatne või vali)"
+    },
+    "birth": {
+      "legend": "Sünniandmed (astrologia jaoks)",
+      "date_placeholder": "Sünnikuupäev",
+      "hour_label": "Tund",
+      "minute_label": "Minut",
+      "place_placeholder": "Sünnikoht (linn, riik)",
+      "detected_tz_label": "Tuvastatud ajavöönd:",
+      "detected_tz_hint": "(automaatne)",
+      "lat_placeholder": "Laiuskraad (nt 48.2082)",
+      "lon_placeholder": "Pikkuskraad (nt 16.3738)",
+      "instructions": "Määra oma sünnikuupäev ja -koht, et arvutada radix. Kui täpset aega ei tea, jäta aja väli tühjaks — kasutame vaikimisi kell 12.00."
+    },
+    "note": "Sinu profiili kasutatakse sobivuste isikupärastamiseks ja ajavööndi kuvamiseks."
+  },
+  "search": {
+    "noResults": "Tulemusi ei leitud",
+    "placeholder": "Otsi inimesi, gruppe ja sisu...",
+    "title": "Otsing"
+  },
+  "settings": {
+    "account": {
+      "changeEmail": "Muuda e-posti",
+      "changePassword": "Muuda parooli",
+      "title": "Konto"
+    },
+    "privacy": {
+      "profileVisibility": "Profiili nähtavus",
+      "title": "Privaatsus"
+    },
+    "title": "Seaded"
   },
   "success": {
-    "profileUpdated": "Profiil uuendatud",
+    "messageSent": "Sõnum saadetud",
     "passwordChanged": "Parool muudetud",
-    "messageSent": "Sõnum saadetud"
+    "profileUpdated": "Profiil uuendatud"
+  },
+  "welcome": {
+    "title": "Tere tulemast SoulTribe.chati",
+    "subtitle": "Leia oma hingehõim"
+  },
+  "radix": {
+    "title": "Sinu radiks",
+    "placeholder": "Kui oled seadistanud sünniandmed, kuvatakse siin sinu radiksi vaade.",
+    "show_raw_json": "Kuva toor-JSON"
+  },
+  "ai": {
+    "get_interpretation": "Hangi tõlgendus",
+    "followup_placeholder": "Küsi täpsustav küsimus…",
+    "send": "Saada"
+  },
+  "dashboard": {
+    "title": "Töölaud",
+    "availability": "Saadavus",
+    "create_slot": "Loo aeg",
+    "duration_hours": "Kestus (tundides)",
+    "meetups": "Kohtumised",
+    "matches": "Sobitused",
+    "overlap_hint": "Klõpsa kattuvusel „Paku seda aega”, et teha selleks ajaks kohtumise ettepanek.",
+    "propose_time": "Paku aega",
+    "generate_ai_comment": "Genereeri tehisaru kommentaar",
+    "slot_delete": "Kustuta",
+    "slot_edit": "Muuda",
+    "active_filter_hint": "Kuvatakse ainult kasutajaid, kes on olnud viimase 30 päeva jooksul aktiivsed."
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Tingimused",
+    "privacy": "Privaatsus",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Lähtesta parool",
+    "intro": "Vali oma kontole uus parool.",
+    "new_password_label": "Uus parool",
+    "new_password_placeholder": "uus parool",
+    "confirm_password_label": "Kinnita uus parool",
+    "confirm_password_placeholder": "kinnita uus parool",
+    "submit": "Määra uus parool"
+  },
+  "notifications": {
+    "language_set_to": "Keel määratud:"
   }
 }

@@ -29,6 +29,7 @@ const bindClick = (id, handler) => {
     } catch (e) { return null; }
   };
 
+
   // Prefill availability (date + hour selects) to next full hour and +1h
   const pad2 = (n) => String(n).padStart(2, '0');
   const nextFullHour = () => {
@@ -175,6 +176,8 @@ const bindClick = (id, handler) => {
       try {
         if (window.fetchAvailList) await window.fetchAvailList();
       } catch {}
+      // Also refresh matches to reflect removed overlaps
+      try { if (window.fetchAndRenderMatches) await window.fetchAndRenderMatches(); } catch {}
     } catch (e) {
       show('availability.delete:ERROR', e);
     } finally {
@@ -366,8 +369,13 @@ const bindClick = (id, handler) => {
       show("availability.create", data);
       // Refresh availability list on dashboard if present
       try { if (window.fetchAvailList) await window.fetchAvailList(); } catch {}
+      // Also refresh matches so new overlaps appear without a manual reload
+      try { if (window.fetchAndRenderMatches) await window.fetchAndRenderMatches(); } catch {}
       toast('Availability slot created');
-    } catch (e) { show("availability.create:ERROR", e); }
+    } catch (e) {
+      show("availability.create:ERROR", e);
+      try { toast(errorMessage(e, 'Failed to create availability'), 'error'); } catch {}
+    }
   });
 
   // Availability list handler moved to dashboard.js
@@ -433,58 +441,22 @@ const bindClick = (id, handler) => {
     }
   };
 
-  // Simple toast notifier
-  const toast = (message, kind = 'info') => {
-    // Determine theme for readable palette
-    const isDark = (document.documentElement.getAttribute('data-theme') === 'dark') ||
-                   (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-
-    let box = document.getElementById('toastBox');
-    if (!box) {
-      box = document.createElement('div');
-      box.id = 'toastBox';
-      box.style.position = 'fixed';
-      box.style.left = '50%';
-      box.style.bottom = '16px';
-      box.style.transform = 'translateX(-50%)';
-      box.style.zIndex = '9999';
-      box.style.display = 'flex';
-      box.style.flexDirection = 'column';
-      box.style.alignItems = 'center';
-      box.style.width = '100%';
-      box.style.pointerEvents = 'none'; // clicks pass through container
-      document.body.appendChild(box);
-    }
-
-    const colors = {
-      info:  isDark ? { bg: '#0b1220', fg: '#e5e7eb', border: '#334155' } : { bg: '#eef2ff', fg: '#1f2937', border: '#c7d2fe' },
-      error: isDark ? { bg: '#2a1616', fg: '#fecaca', border: '#7f1d1d' } : { bg: '#fee2e2', fg: '#7f1d1d', border: '#fecaca' },
-      success: isDark ? { bg: '#0f2d17', fg: '#86efac', border: '#14532d' } : { bg: '#dcfce7', fg: '#14532d', border: '#bbf7d0' },
-      warn: isDark ? { bg: '#3b2e0a', fg: '#fde68a', border: '#92400e' } : { bg: '#fef3c7', fg: '#92400e', border: '#fde68a' }
-    };
-    const theme = colors[kind] || colors.info;
-
-    const item = document.createElement('div');
-    item.textContent = message;
-    item.style.pointerEvents = 'auto';
-    item.style.maxWidth = '92vw';
-    item.style.width = 'max-content';
-    item.style.background = theme.bg;
-    item.style.color = theme.fg;
-    item.style.border = `1px solid ${theme.border}`;
-    item.style.padding = '10px 14px';
-    item.style.marginTop = '8px';
-    item.style.borderRadius = '10px';
-    item.style.boxShadow = isDark ? '0 8px 16px rgba(0,0,0,0.35)' : '0 8px 16px rgba(0,0,0,0.12)';
-    item.style.fontSize = '14px';
-    item.style.fontWeight = '600';
-    item.style.backdropFilter = 'saturate(150%) blur(4px)';
-
-    // Auto-dismiss and click-to-dismiss for readability control
-    const timeout = setTimeout(() => { try { box.removeChild(item); } catch {} }, 2500);
-    item.addEventListener('click', () => { try { clearTimeout(timeout); box.removeChild(item); } catch {} });
-
-    box.appendChild(item);
+  // Toast and error helper from toast.js
+  const localToast = (...args) => { try { console.log('[toast]', ...args); } catch {} };
+  let __toastDepth = 0;
+  const toast = (...args) => {
+    // Prevent recursion if window.toast points back to this function
+    if (__toastDepth > 2) return;
+    __toastDepth++;
+    try {
+      const wt = (typeof window !== 'undefined') ? window.toast : null;
+      if (typeof wt === 'function' && wt !== toast) return wt(...args);
+      return localToast(...args);
+    } finally { __toastDepth--; }
+  };
+  const errorMessage = (err, fb) => {
+    if (typeof window.errorMessage === 'function') return window.errorMessage(err, fb);
+    try { return (err && err.data && err.data.detail) ? err.data.detail : (err?.message || fb || 'Error'); } catch { return fb || 'Error'; }
   };
 
   const setToken = (t) => {
@@ -513,7 +485,157 @@ const bindClick = (id, handler) => {
   }
 
   // Initialize auth UI on page load
-  document.addEventListener('DOMContentLoaded', updateAuthUI);
+  document.addEventListener('DOMContentLoaded', () => {
+    // Ensure toast.js is loaded so toast() is available
+    try {
+      const ensureToastLoaded = () => {
+        if (typeof window.toast === 'function') return;
+        // Only inject once
+        if (!document.getElementById('toast-js')) {
+          const s = document.createElement('script');
+          s.src = '/js/toast.js';
+          s.id = 'toast-js';
+          document.head.appendChild(s);
+        }
+      };
+      ensureToastLoaded();
+    } catch {}
+
+    updateAuthUI();
+    initLanguageSelector();
+    // Register Service Worker for offline + background notifications
+    try {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then((reg) => {
+          try { window.__swReg = reg; } catch {}
+        }).catch(() => {});
+      }
+    } catch {}
+  });
+
+  // Notification permission + SW helper (top-level)
+  async function ensureNotificationPermission() {
+    try {
+      if (!('Notification' in window)) return false;
+      if (Notification.permission === 'granted') return true;
+      if (Notification.permission === 'denied') return false;
+      const p = await Notification.requestPermission();
+      return p === 'granted';
+    } catch { return false; }
+  }
+
+  async function notifyViaSW(title, body, data = {}, tag) {
+    try {
+      const ok = await ensureNotificationPermission();
+      if (!ok) return false;
+      const reg = window.__swReg || (navigator.serviceWorker && await navigator.serviceWorker.getRegistration());
+      if (reg && navigator.serviceWorker && navigator.serviceWorker.controller) {
+        navigator.serviceWorker.controller.postMessage({ type: 'notify', title, body, data, tag });
+        return true;
+      }
+      // Fallback to direct Notification API
+      try { new Notification(title, { body }); } catch {}
+      return true;
+    } catch { return false; }
+  }
+
+  try { window.ensureNotificationPermission = ensureNotificationPermission; } catch {}
+  try { window.notifyViaSW = notifyViaSW; } catch {}
+
+  // Track if we're currently changing the language
+  let isChangingLanguage = false;
+
+  // Function to update the language selector options with only available languages
+  async function updateLanguageSelector(selector) {
+    if (!selector || !window.SimpleI18n) return;
+    
+    // Get the list of supported languages
+    const supportedLangs = await window.SimpleI18n.detectSupportedLanguages();
+    const currentLang = window.SimpleI18n.currentLang || 'en';
+    
+    // Filter languages to only include supported ones
+    const availableLanguages = Object.entries(window.SimpleI18n.languages || {})
+      .filter(([code]) => supportedLangs.includes(code));
+    
+    if (availableLanguages.length === 0) {
+      // Fallback to English if no languages are available
+      selector.innerHTML = `<option value="en" selected>EN - English</option>`;
+      return;
+    }
+    
+    // Sort languages alphabetically by name
+    availableLanguages.sort((a, b) => a[1].localeCompare(b[1]));
+    
+    // Generate options
+    selector.innerHTML = availableLanguages
+      .map(([code, name]) => {
+        const displayName = `${code.toUpperCase()} - ${name}`;
+        return `<option value="${code}" ${code === currentLang ? 'selected' : ''}>${displayName}</option>`;
+      })
+      .join('');
+  }
+
+  // Initialize language selector
+  async function initLanguageSelector() {
+    const selector = document.getElementById('language-selector');
+    if (!selector) return;
+
+    try {
+      // Initial population of the selector
+      await updateLanguageSelector(selector);
+      
+      // Handle language changes from the selector
+      selector.addEventListener('change', async (e) => {
+        if (isChangingLanguage) return;
+        
+        const selectedLang = e.target.value;
+        const previousLang = window.SimpleI18n?.currentLang;
+        
+        if (!selectedLang || selectedLang === previousLang) {
+          return;
+        }
+        
+        isChangingLanguage = true;
+        selector.disabled = true;
+        
+        try {
+          // Try to change the language
+          const success = await window.SimpleI18n.changeLanguage(selectedLang);
+          
+          if (!success) {
+            // Revert to previous language on failure
+            selector.value = previousLang || 'en';
+            toast(`Failed to load ${selectedLang} translations. Using ${previousLang || 'English'} instead.`, 'error');
+          } else {
+            // Update the selector with the new language
+            await updateLanguageSelector(selector);
+            const langName = window.SimpleI18n.languages[selectedLang] || selectedLang;
+            toast(`Language changed to ${langName}`, 'success');
+          }
+        } catch (error) {
+          console.error('Error changing language:', error);
+          selector.value = previousLang || 'en';
+          toast('An error occurred while changing the language.', 'error');
+        } finally {
+          selector.disabled = false;
+          isChangingLanguage = false;
+        }
+      });
+      
+      // Listen for language changes from other parts of the app
+      window.addEventListener('languageChanged', async (ev) => {
+        if (ev.detail?.language && selector.value !== ev.detail.language) {
+          selector.value = ev.detail.language;
+          await updateLanguageSelector(selector);
+        }
+      });
+      
+    } catch (error) {
+      console.error('Error initializing language selector:', error);
+      // Fallback to English if there's an error
+      selector.innerHTML = '<option value="en" selected>EN - English</option>';
+    }
+  }
 
   // Ensure liveTz is available (from profile) for timezone-aware conversions
   document.addEventListener('DOMContentLoaded', async () => {
@@ -698,7 +820,9 @@ const bindClick = (id, handler) => {
   // Expose global functions for dashboard.js, profile.js, and login.js
   window.api = api;
   window.show = show;
-  window.toast = toast;
+  // Provide safe fallbacks so other modules can use toast/errorMessage immediately
+  try { if (typeof window.toast !== 'function') window.toast = toast; } catch {}
+  try { if (typeof window.errorMessage !== 'function') window.errorMessage = errorMessage; } catch {}
   window.bindClick = bindClick;
   window.parseJwt = parseJwt;
   window.setToken = setToken;

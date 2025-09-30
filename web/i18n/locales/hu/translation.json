@@ -1,33 +1,187 @@
 {
-  "language": { "en": "Angol", "de": "Német", "hu": "Magyar" },
-  "welcome": { "title": "Üdvözlünk a SoulTribe.chat-en", "subtitle": "Találd meg a lélektárs közösséged" },
-  "profile": {
-    "title": "Profilod",
-    "save": "Mentés",
-    "cancel": "Mégse",
-    "primary_language_label": "Elsődleges nyelv (a felülethez)",
-    "other_languages_label": "Egyéb nyelvek (párosításhoz)",
-    "language_input_placeholder": "Írj be a nyelvek hozzáadásához..."
-  },
   "dashboard": {
-    "title": "Vezérlőpult",
     "availability": "Elérhetőség",
     "create_slot": "Idősáv létrehozása",
     "duration_hours": "Időtartam (órák)",
-    "meetups": "Találkozók",
     "matches": "Találatok",
-    "overlap_hint": "Kattints a \"Időpont javaslata\" gombra, hogy találkozót javasolj erre az idősávra."
+    "meetups": "Találkozók",
+    "overlap_hint": "Kattints a \"Időpont javaslata\" gombra, hogy találkozót javasolj erre az idősávra.",
+    "title": "Vezérlőpult",
+    "propose_time": "Időpont javaslata",
+    "generate_ai_comment": "Mesterséges intelligencia megjegyzés készítése",
+    "slot_delete": "Törlés",
+    "slot_edit": "Szerkesztés",
+    "active_filter_hint": "Csak az elmúlt 30 napban aktív felhasználók jelennek meg."
+  },
+  "language": {
+    "de": "Német",
+    "en": "Angol",
+    "hu": "Magyar"
   },
   "login": {
-    "title": "Üdvözlet",
+    "confirm_password": "jelszó megerősítése (regisztrációhoz)",
+    "display_name": "megjelenített név (regisztrációhoz)",
+    "email": "e-mail cím",
+    "email_not_verified": "Az e-mail nincs megerősítve? ",
+    "enter_email_first": "Kérjük, először add meg az e-mail címedet.",
+    "go_dashboard": "Ugrás a vezérlőpultra",
     "intro": "Jelentkezz be vagy regisztrálj új fiókot.",
-    "email": "email",
-    "password": "jelszó",
-    "display_name": "megjelenített_név (regisztrációhoz)",
-    "register": "Regisztráció",
     "login": "Bejelentkezés",
+    "login_required": "Az e-mail cím és a jelszó megadása kötelező.",
+    "page_title": "SoulTribe.chat — Bejelentkezés / Regisztráció",
+    "password": "jelszó",
+    "password_mismatch": "A jelszavak nem egyeznek.",
     "redirect_hint": "Bejelentkezés után átirányítunk a vezérlőpultra.",
-    "go_dashboard": "Ugrás a vezérlőpultra"
+    "register": "Regisztráció",
+    "registration_success": "Fiók létrehozva. Kérjük, erősítsd meg az e-mail címedet.",
+    "required_fields": "Az e-mail cím, jelszó és megjelenített név megadása kötelező.",
+    "resend_verification": "Megerősítő e-mail újraküldése",
+    "reset_password": "Jelszó visszaállítása",
+    "reset_sent": "Ha létezik fiók ezzel az e-mail címmel, egy jelszó-visszaállító e-mailt küldtünk.",
+    "title": "Üdvözlet",
+    "verification_sent": "Ha az e-mail címed még nincs megerősítve, egy új megerősítő e-mailt küldtünk."
   },
-  "nav": { "dashboard": "Vezérlőpult", "profile": "Profil", "login": "Bejelentkezés", "logout": "Kijelentkezés" }
+  "nav": {
+    "dashboard": "Vezérlőpult",
+    "login": "Bejelentkezés",
+    "logout": "Kijelentkezés",
+    "profile": "Profil",
+    "welcome": "Kezdőlap",
+    "home": "Kezdőlap",
+    "discover": "Felfedezés",
+    "matches": "Találatok",
+    "messages": "Üzenetek"
+  },
+  "profile": {
+    "cancel": "Mégse",
+    "language_input_placeholder": "Írj be a nyelvek hozzáadásához...",
+    "other_languages_label": "Egyéb nyelvek (párosításhoz)",
+    "primary_language_label": "Elsődleges nyelv (a felülethez)",
+    "save": "Mentés",
+    "title": "Profilod",
+    "basic_info": {
+      "legend": "Alapinformációk",
+      "username_label": "Felhasználónév",
+      "username_placeholder": "felhasználónév"
+    },
+    "languages": {
+      "legend": "Nyelvek"
+    },
+    "location": {
+      "legend": "Jelenlegi tartózkodási hely",
+      "city_placeholder": "Jelenlegi város (automatikus kiegészítés)",
+      "use_my_location": "Saját helyzetem használata",
+      "detected_tz_label": "Észlelt időzóna:",
+      "detected_tz_hint": "(automatikus vagy válassz)"
+    },
+    "birth": {
+      "legend": "Születési adatok (asztrológiához)",
+      "date_placeholder": "Születési dátum",
+      "hour_label": "Óra",
+      "minute_label": "Perc",
+      "place_placeholder": "Születési hely (város, ország)",
+      "detected_tz_label": "Észlelt időzóna:",
+      "detected_tz_hint": "(automatikus)",
+      "lat_placeholder": "Szélesség (pl. 48.2082)",
+      "lon_placeholder": "Hosszúság (pl. 16.3738)",
+      "instructions": "Állítsd be a születési dátumot és helyet a radix kiszámításához. Ha nem tudod a pontos időt, hagyd üresen az idő mezőt — alapértelmezésként 12:00-t használunk."
+    },
+    "note": "A profilodat a találatok személyre szabására és az időzóna megjelenítésére használjuk."
+  },
+  "welcome": {
+    "subtitle": "Találd meg a lélektárs közösséged",
+    "title": "Üdvözlünk a SoulTribe.chat-en"
+  },
+  "landing": {
+    "page_title": "SoulTribe.chat – Találd meg a lélektárs közösséged",
+    "hero": {
+      "title": "Üdvözlünk",
+      "subtitle": "A SoulTribe.chat azért jött létre, hogy segítsen megtalálni és összekapcsolódni a lélektárs közösségeddel — azokkal, akik rezonálnak az energiáddal, a szellemiségeddel és az utaddal. ✨"
+    },
+    "how": {
+      "title": "Hogyan működik",
+      "step1": "<strong>Hozd létre a profilod</strong> — add meg a születési dátumot, időt és helyet az egyedi térképedhez.",
+      "step2": "<strong>Fedezd fel a találatokat</strong> — a kompatibilitás és rezonancia alapján emeljük ki a kapcsolatokat.",
+      "step3": "<strong>Kezdd el a beszélgetést</strong> — hívd meg a találatokat csevegésre; biztonságos és privát.",
+      "step4": "<strong>Találkozz (opcionális)</strong> — egyeztess Jitsi-hívást vagy személyes találkozót kölcsönös beleegyezéssel."
+    },
+    "getting_started": {
+      "title": "Kezdés",
+      "step1": "<strong>Hozz létre fiókot</strong> — nincs szükség közösségi bejelentkezésre.",
+      "step2": "<strong>Töltsd ki a profilod</strong> — add meg a születési adatokat; a hozzávetőleges idő is megfelelő.",
+      "step3": "<strong>Állítsd be az elérhetőséged</strong> — javasolj helyi idősávokat; az UTC-átváltást mi intézzük.",
+      "step4": "<strong>Fedezd fel a találatokat</strong> — böngéssz a rezonancián alapuló ajánlások között.",
+      "step5": "<strong>Csevegj és igény szerint találkozz</strong> — maradj az alkalmazásban; akkor egyeztess, amikor készen állsz."
+    },
+    "features": {
+      "title": "Funkciók",
+      "item1": "<strong>Asztrológia-tudatos párosítás</strong> — kapcsolódj a születési képleted alapján.",
+      "item2": "<strong>Okos időzóna-kezelés</strong> — az UTC-átváltásokat mi végezzük.",
+      "item3": "<strong>Közvetlen kommunikáció Jitsin keresztül</strong> — szöveg/hang/videó; semmi sem kerül tárolásra vagy rögzítésre a SoulTribe.chat oldalon.",
+      "item4": "<strong>Egyszerű csatlakozás linken</strong> — privát Jitsi-szoba megerősített találkozókhoz; adatvédelmi szempontból kedvező, nincs szükség asztali telepítésre.",
+      "item5": "<strong>Minimalista, fókuszált felület</strong> — a valóban jelentős beszélgetésekhez tervezve."
+    },
+    "privacy": {
+      "title": "Adatvédelem és biztonság",
+      "item1": "Csak azt kérjük, ami szükséges a lélek-szintű kapcsolódásokhoz.",
+      "item2": "A profiladataidat nem adjuk el és nem osztjuk meg hirdetési hálózatokkal.",
+      "item3": "Te döntöd el, ki léphet kapcsolatba veled és mikor osztasz meg többet."
+    },
+    "matching": {
+      "title": "Hogyan működik a párosítás (röviden)",
+      "text": "A képleted kulcsfontosságú kapcsolati jelzőit számítjuk ki, és másokéval összevetve keressük a rezonanciát. A harmóniát, a kiegészítő jelleget és a fejlődési potenciált részesítjük előnyben az általános népszerűségi mutatókkal szemben."
+    },
+    "protips": {
+      "title": "Tippek",
+      "item1": "Adj meg néhány elérhetőségi idősávot több napra is a gyorsabb kapcsolódásért.",
+      "item2": "Légy őszinte a bemutatkozásban — a konkrétumok segítenek, hogy a megfelelő emberek megtaláljanak.",
+      "item3": "Mindig a beleegyezés az első. Haladj a számodra megfelelő tempóban."
+    },
+    "next": {
+      "title": "Következő lépések",
+      "go_dashboard": "Ugrás a vezérlőpultra",
+      "login_register": "Bejelentkezés / Regisztráció"
+    },
+    "global": {
+      "title": "Globális közösség, helyi idő",
+      "text": "Kapcsolódj hasonló gondolkodásúakkal világszerte automatikus időzóna-átváltással.",
+      "auto_title": "Automatikus időzóna-felismerés",
+      "auto_text": "Automatikusan felismerjük az időzónádat a zökkenőmentes egyeztetéshez.",
+      "native_title": "Anyanyelvi támogatás",
+      "native_text": "Csevegj az általad preferált nyelven a beépített fordítással.",
+      "tz_title": "Időzóna-tudatos ütemezés",
+      "tz_text": "Nem kell többé időzónákkal számolni — a konverziókat mi intézzük.",
+      "select_label": "Válassz nyelvet:"
+    }
+  },
+  "radix": {
+    "title": "A radixod",
+    "placeholder": "Ha megadtad a születési adataidat, itt fog megjelenni a radix képed.",
+    "show_raw_json": "Nyers JSON megjelenítése"
+  },
+  "ai": {
+    "get_interpretation": "Értelmezés kérése",
+    "followup_placeholder": "Tegyél fel követő kérdést…",
+    "send": "Küldés"
+  },
+  "imprint": {
+    "title": "Impresszum"
+  },
+  "footer": {
+    "terms": "Felhasználási feltételek",
+    "privacy": "Adatvédelem",
+    "imprint": "Impresszum"
+  },
+  "reset_password": {
+    "title": "Jelszó visszaállítása",
+    "intro": "Válassz új jelszót a fiókodhoz.",
+    "new_password_label": "Új jelszó",
+    "new_password_placeholder": "új jelszó",
+    "confirm_password_label": "Új jelszó megerősítése",
+    "confirm_password_placeholder": "új jelszó megerősítése",
+    "submit": "Új jelszó beállítása"
+  },
+  "notifications": {
+    "language_set_to": "Nyelv beállítva:"
+  }
 }

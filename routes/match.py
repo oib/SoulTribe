@@ -3,6 +3,7 @@ from fastapi import APIRouter, Depends, HTTPException, Response
 from pydantic import BaseModel
 from typing import Dict, Any, Optional, List
 from zoneinfo import ZoneInfo
+from datetime import datetime, timedelta
 
 from services.scoring import score_pair
 from db import get_session
@@ -112,6 +113,9 @@ def match_find(
         radices = session.exec(select(Radix)).all()
         # Build a map user_id -> profile
         profiles = {p.user_id: p for p in session.exec(select(Profile)).all()}
+        # Build a map user_id -> user (for activity filtering)
+        users = {u.id: u for u in session.exec(select(User)).all()}
+        cutoff = datetime.utcnow() - timedelta(days=30)
 
         def extract_langs(p: Profile | None) -> set[str]:
             langs: set[str] = set()
@@ -134,6 +138,16 @@ def match_find(
             other_profile = profiles.get(other_user_id)
             if other_profile is None:
                 continue
+            # Activity filter: include users unless they have a last_login_at older than cutoff.
+            # Do NOT exclude users with no last_login_at to avoid asymmetry in discovery.
+            ou = users.get(other_user_id)
+            if not ou:
+                continue
+            try:
+                if getattr(ou, 'last_login_at', None) is not None and ou.last_login_at < cutoff:
+                    continue
+            except Exception:
+                pass
             # Language intersection enforcement
             other_langs = extract_langs(other_profile)
             if target_langs and other_langs and target_langs.isdisjoint(other_langs):
@@ -351,6 +365,7 @@ def match_create(inp: MatchCreateIn, session=Depends(get_session), user_id: int 
 
 class MatchAnnotateIn(BaseModel):
     match_id: int
+    lang: Optional[str] = None
 
 
 class MatchAnnotateOut(BaseModel):
@@ -373,15 +388,20 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
     other_name = (other_prof.display_name if (other_prof and other_prof.display_name) else f"user {other_id}")
     public_other_label = "the other person"
     perspective = "A" if user_id == m.a_user_id else "B"
-    # Determine viewer's preferred language for the AI response (fallback to 'en')
+    # Determine viewer's preferred language for the AI response
     viewer_prof = pa if perspective == "A" else pb
-    resp_lang = None
     try:
-        raw = (getattr(viewer_prof, 'lang_primary', None) or 'en').strip().lower()
+        # Order: request lang -> profile.lang_primary -> 'en'
+        raw = (inp.lang or getattr(viewer_prof, 'lang_primary', None) or 'en')
+        raw = str(raw).strip().lower()
         base = raw.split('-')[0] if raw else 'en'
-        resp_lang = base if base in LANG_DISPLAY else 'en'
+        resp_lang = base if base else 'en'
     except Exception:
         resp_lang = 'en'
+    try:
+        print("[match.annotate] target_lang=", resp_lang)
+    except Exception:
+        pass
     # Derive top positive contributors from breakdown to give the AI more context
     def top_positive_contributors(bd: dict, limit: int = 6) -> list[tuple[str,int]]:
         contrib: list[tuple[str,int]] = []
@@ -426,7 +446,8 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
 
     lang_name = LANG_DISPLAY.get(resp_lang, resp_lang)
     seq = [
-        f"Please respond in {lang_name} ({resp_lang}).",
+        f"RESPONSE LANGUAGE CODE: {resp_lang}",
+        f"Please respond ONLY in {lang_name} ({resp_lang}). Do not use any other language.",
         f"Perspective: you are side {perspective}",
         # Provide only the raw breakdown data (without language) to ground the analysis
         f"Breakdown (languages removed): {json.dumps(bd_for_ai, ensure_ascii=False)}",

@@ -1,182 +1,345 @@
 {
   "app": {
-    "name": "SoulTribe",
-    "tagline": "Ingħaqad ma' nies li jaqsmu l-valuri tiegħek",
-    "loading": "Qed ittella'...",
-    "error": "Kien hemm żball",
-    "retry": "Erġa' pprova",
-    "submit": "Ibgħat",
-    "cancel": "Ikkanċella",
-    "save": "Ħlief",
-    "delete": "Ħassar",
-    "edit": "Editja",
-    "back": "Lura",
-    "next": "Li jmiss",
-    "previous": "Preċedenti",
-    "skip": "Aqbeż",
-    "done": "Lest",
-    "search": "Fittex",
-    "noResults": "L-ebda riżultati",
-    "welcome": "Merħba",
-    "or": "jew",
+    "about": "Dwarna",
     "and": "u",
+    "back": "Lura",
+    "cancel": "Ikkanċella",
+    "contact": "Kuntatt",
     "continue": "Kompli",
     "createAccount": "Oħloq Kont",
+    "delete": "Ħassar",
+    "done": "Lest",
+    "edit": "Editja",
+    "error": "Kien hemm żball",
+    "help": "Għajnuna",
+    "loading": "Qed ittella'...",
     "login": "Idħol",
     "logout": "Oħroġ",
-    "profile": "Profil",
-    "settings": "Settings",
-    "help": "Għajnuna",
-    "about": "Dwarna",
-    "contact": "Kuntatt",
+    "name": "SoulTribe",
+    "next": "Li jmiss",
+    "noResults": "L-ebda riżultati",
+    "or": "jew",
+    "previous": "Preċedenti",
     "privacy": "Privatezza",
-    "terms": "Termini"
-  },
-  "landing": {
-    "hero": {
-      "title": "Ingħaqad mal-komunità globali tagħna",
-      "subtitle": "Qabbel ma' nies li jaqsmu l-valuri, l-interessi u l-passjonijiet tiegħek. Flimkien, nistgħu noħolqu relazzjonijiet li għandhom tifsira u jibqgħu għal żmien twil.",
-      "cta": "Ibda l-vjaġġ tiegħek"
-    },
-    "howItWorks": {
-      "title": "Kif Taħdem",
-      "steps": [
-        {
-          "title": "Oħloq il-profil tiegħek",
-          "description": "Għidilna fuq l-interessi, il-valuri u x'tfittex fil-komunità."
-        },
-        {
-          "title": "Isib lin-nies tiegħek",
-          "description": "L-algoritmu tagħna jgħaqqdek ma' nies li jaqsmu l-valuri u l-interessi tiegħek."
-        },
-        {
-          "title": "Ingħaqad u Tkabbar",
-          "description": "Ibda konversazzjonijiet, isieħeb f'events u ibni relazzjonijiet fit-tul."
-        }
-      ]
-    },
-    "features": {
-      "title": "Għalfejn Tingħaqad?",
-      "items": [
-        {
-          "title": "Komunità Sigura",
-          "description": "Il-komunità tagħna hija mibnija fuq ir-rispett, l-inklużjoni u s-sigurtà ta' kull membru."
-        },
-        {
-          "title": "Eżperjenza Personalizzata",
-          "description": "Iċċaraxxina rikkomandazzjonijiet ibbażati fuq l-interessi u l-valuri tiegħek."
-        },
-        {
-          "title": "Konnessjoni Globali",
-          "description": "Qabbel ma' nies minn madwar id-dinja li jaqsmu l-passjonijiet tiegħek."
-        }
-      ]
-    },
-    "privacy": {
-      "title": "Il-privatezza tiegħek hija l-prijorità tagħna",
-      "description": "Nipproteġu d-data tiegħek u nassiguraw ambjent sigur għal kull membru tal-komunità tagħna.",
-      "learnMore": "Aktar tagħrif dwar il-politika tal-privatezza tagħna"
-    }
+    "profile": "Profil",
+    "retry": "Erġa' pprova",
+    "save": "Ħlief",
+    "search": "Fittex",
+    "settings": "Settings",
+    "skip": "Aqbeż",
+    "submit": "Ibgħat",
+    "tagline": "Ingħaqad ma' nies li jaqsmu l-valuri tiegħek",
+    "terms": "Termini",
+    "welcome": "Merħba"
   },
   "auth": {
     "login": {
-      "title": "Idħol",
       "email": "Email",
-      "password": "Password",
       "forgotPassword": "Insejt il-password?",
       "noAccount": "M'għandekx kont?",
-      "signUp": "Irreġistra"
+      "password": "Password",
+      "signUp": "Irreġistra",
+      "title": "Idħol"
     },
     "register": {
-      "title": "Irreġistra",
-      "name": "Isem u Kognom",
-      "email": "Email",
-      "password": "Password",
+      "agreeTerms": "Naqbel mat-Termini u l-Kondizzjonijiet",
       "confirmPassword": "Ikkonferma l-Password",
-      "agreeTerms": "Naqbel mat-Termini u l-Kondizzjonijiet"
-    }
-  },
-  "profile": {
-    "edit": {
-      "title": "Editja l-Profil",
-      "basicInfo": "Informazzjoni Bażika",
-      "firstName": "L-Ewwel Isem",
-      "lastName": "L-Aħħar Isem",
-      "bio": "Dwar Jien",
-      "location": "Lokalità",
-      "interests": "Interessi"
-    },
-    "view": {
-      "memberSince": "Membru Minn",
-      "lastSeen": "L-Aħħar Deher",
-      "interests": "Interessi"
-    }
-  },
-  "settings": {
-    "title": "Settings",
-    "account": {
-      "title": "Kont",
-      "changeEmail": "Biddel l-Email",
-      "changePassword": "Biddel il-Password"
-    },
-    "privacy": {
-      "title": "Privatezza",
-      "profileVisibility": "Viżibilità tal-Profil"
-    }
-  },
-  "messaging": {
-    "title": "Messaġġi",
-    "newMessage": "Messaġġ Ġdid",
-    "searchUsers": "Fittex utenti...",
-    "typeMessage": "Ikteb messaġġ...",
-    "send": "Ibgħat"
-  },
-  "friends": {
-    "title": "Ħbieb",
-    "allFriends": "Il-Ħbieb Kollha",
-    "addFriend": "Żid Ħabib",
-    "friendRequests": "Talbiet ta' Ħbiberija"
-  },
-  "events": {
-    "title": "Events",
-    "upcoming": "Events li ġejjin",
-    "create": "Oħloq Event"
-  },
-  "groups": {
-    "title": "Gruppi",
-    "discover": "Skopri Gruppi",
-    "myGroups": "Il-Gruppi Tiegħi",
-    "create": "Oħloq Grupp"
-  },
-  "search": {
-    "title": "Fittex",
-    "placeholder": "Fittex nies, gruppi u kontenut...",
-    "noResults": "L-ebda riżultati"
-  },
-  "onboarding": {
-    "welcome": "Merħba għal SoulTribe",
-    "step1": {
-      "title": "Oħloq il-Profil Tiegħek",
-      "description": "Żid ritratt u ftit kliem dwariek."
-    },
-    "step2": {
-      "title": "Aġċi l-Interessi Tiegħek",
-      "description": "X'tixtieq tagħmel? Aġċel mill-interessi tiegħek."
-    },
-    "step3": {
-      "title": "Ingħaqad ma' Nies",
-      "description": "Ibda konversazzjoni ma' nies b'interessi simili."
+      "email": "Email",
+      "name": "Isem u Kognom",
+      "password": "Password",
+      "title": "Irreġistra"
     }
   },
   "errors": {
-    "required": "Dan il-qasam huwa meħtieġ",
     "invalidEmail": "Daħħal email valida",
     "passwordTooShort": "Il-password tiegħek qasira wisq",
-    "passwordsDontMatch": "Il-passwords ma jaqblux"
+    "passwordsDontMatch": "Il-passwords ma jaqblux",
+    "required": "Dan il-qasam huwa meħtieġ"
+  },
+  "events": {
+    "create": "Oħloq Event",
+    "title": "Events",
+    "upcoming": "Events li ġejjin"
+  },
+  "friends": {
+    "addFriend": "Żid Ħabib",
+    "allFriends": "Il-Ħbieb Kollha",
+    "friendRequests": "Talbiet ta' Ħbiberija",
+    "title": "Ħbieb"
+  },
+  "groups": {
+    "create": "Oħloq Grupp",
+    "discover": "Skopri Gruppi",
+    "myGroups": "Il-Gruppi Tiegħi",
+    "title": "Gruppi"
+  },
+  "landing": {
+    "features": {
+      "items": [
+        {
+          "description": "Il-komunità tagħna hija mibnija fuq ir-rispett, l-inklużjoni u s-sigurtà ta' kull membru.",
+          "title": "Komunità Sigura"
+        },
+        {
+          "description": "Iċċaraxxina rikkomandazzjonijiet ibbażati fuq l-interessi u l-valuri tiegħek.",
+          "title": "Eżperjenza Personalizzata"
+        },
+        {
+          "description": "Qabbel ma' nies minn madwar id-dinja li jaqsmu l-passjonijiet tiegħek.",
+          "title": "Konnessjoni Globali"
+        }
+      ],
+      "title": "Għaliex tingħaqad?",
+      "item1": "<strong>Tqabbel b’għarfien tal-astrologija</strong> — qabbad billi tuża l-karta tat-twelid tiegħek.",
+      "item2": "<strong>Skedar intelliġenti ta’ żoni horarji</strong> — aħna nieħdu ħsieb il-konverżjonijiet UTC għalik.",
+      "item3": "<strong>Komunikazzjoni diretta permezz ta’ Jitsi</strong> — test/awdio/vidjo; xejn ma jinħażen jew jiġi rrekordjat fuq SoulTribe.chat.",
+      "item4": "<strong>Dħul faċli permezz ta’ link</strong> — kamra privata Jitsi għal laqgħat ikkonfermati; favur il-privatezza, bla installazzjoni fuq desktop.",
+      "item5": "<strong>UI minimalista u ffokata</strong> — maħsuba għal konversazzjonijiet sinifikanti."
+    },
+    "hero": {
+      "cta": "Ibda l-vjaġġ tiegħek",
+      "subtitle": "Qabbel ma' nies li jaqsmu l-valuri, l-interessi u l-passjonijiet tiegħek. Flimkien, nistgħu noħolqu relazzjonijiet li għandhom tifsira u jibqgħu għal żmien twil.",
+      "title": "Ingħaqad mal-komunità globali tagħna"
+    },
+    "howItWorks": {
+      "steps": [
+        {
+          "description": "Għidilna fuq l-interessi, il-valuri u x'tfittex fil-komunità.",
+          "title": "Oħloq il-profil tiegħek"
+        },
+        {
+          "description": "L-algoritmu tagħna jgħaqqdek ma' nies li jaqsmu l-valuri u l-interessi tiegħek.",
+          "title": "Isib lin-nies tiegħek"
+        },
+        {
+          "description": "Ibda konversazzjonijiet, isieħeb f'events u ibni relazzjonijiet fit-tul.",
+          "title": "Ingħaqad u Tkabbar"
+        }
+      ],
+      "title": "Kif Taħdem"
+    },
+    "privacy": {
+      "description": "Nipproteġu d-data tiegħek u nassiguraw ambjent sigur għal kull membru tal-komunità tagħna.",
+      "learnMore": "Aktar tagħrif dwar il-politika tal-privatezza tagħna",
+      "title": "Il-privatezza tiegħek hija prijorità għalina",
+      "item1": "Nitolbu biss dak li hu meħtieġ biex jisseħħu konnessjonijiet sinifikanti.",
+      "item2": "Id-dettalji tal-profil tiegħek ma jinbiegħux u lanqas ma jinqasmu ma’ networks tar-reklamar.",
+      "item3": "Inti tikkontrolla min jista’ jikkuntattjak u meta taqsam aktar."
+    },
+    "page_title": "SoulTribe.chat – Sib it-tribù tar-ruħ tiegħek",
+    "how": {
+      "title": "Kif taħdem",
+      "step1": "<strong>Oħloq il-profil tiegħek</strong> — daħħal id-data, il-ħin u l-post tat-twelid biex jinħoloq il‑mappa tar‑ruħ unika tiegħek.",
+      "step2": "<strong>Skopri t-taqbilet tiegħek</strong> — nenfasizzaw konnessjonijiet abbażi ta’ kompatibbiltà u reżonanza.",
+      "step3": "<strong>Iftaħ il-konversazzjoni</strong> — stieden it-taqbilet biex jagħmlu chat; sigur u privat b’d-disinn.",
+      "step4": "<strong>Iltaqa’ (fakultattiv)</strong> — skeda sejħa Jitsi jew laqgħa wiċċ‑imb wiċċ b’kunsens reċiproku."
+    },
+    "getting_started": {
+      "title": "Bidu",
+      "step1": "<strong>Oħloq il-kont tiegħek</strong> — m’hemmx bżonn login soċjali.",
+      "step2": "<strong>Imla l-profil tiegħek</strong> — żid id-dettalji tat-twelid; ħin approssimattiv jaqbel.",
+      "step3": "<strong>Issettja d-disponibbiltà</strong> — ipproponi slots ta’ ħin lokali; l‑UTC nieħdu ħsiebu aħna.",
+      "step4": "<strong>Skopri t-taqbilet</strong> — iċċekkja suġġerimenti bbażati fuq ir‑reżonanza.",
+      "step5": "<strong>Chat u, jekk trid, iltaqa’</strong> — ibqa’ fl‑app; skeda meta tkun lest."
+    },
+    "matching": {
+      "title": "Kif taħdem it-taqbila (fil-qosor)",
+      "text": "Inqabblu indikaturi relazzjonali ewlenin mill‑karta tiegħek u nqabbilhom ma’ oħrajn biex insibu r‑reżonanza. Nippreferu l‑armonija, il‑komplementarjetà u l‑potenzjal ta’ tkabbir fuq metriċi ġeneriċi ta’ popolarità."
+    },
+    "protips": {
+      "title": "Pariri",
+      "item1": "Żid xi slots ta’ disponibbiltà fuq jiem differenti għal konnessjoni aktar mgħaġġla.",
+      "item2": "Kun sinċier fil‑introduzzjoni tiegħek — id‑dettall jgħin lill‑persuni t-tajbin isibuk.",
+      "item3": "Il‑kunsens l-ewwel u dejjem. Mexxi bir‑ritmu li jħossok komdu."
+    },
+    "next": {
+      "title": "Il-passi li jmiss",
+      "go_dashboard": "Mur għad-Dashboard",
+      "login_register": "Idħol / Irreġistra"
+    },
+    "global": {
+      "title": "Komunità globali, ħin lokali",
+      "text": "Qabbad ma’ ruħijiet simili madwar id-dinja b’konverżjoni awtomatika taż‑żoni horarji.",
+      "auto_title": "Skoperta awtomatika taż‑żona horarja",
+      "auto_text": "Nidentifikaw iż‑żona horarja tiegħek awtomatikament għal skedar mingħajr tfixkil.",
+      "native_title": "Appoġġ għall-lingwa nattiva",
+      "native_text": "Iċċatta bil‑lingwa preferuta tiegħek bl‑għajnuna tat‑traduzzjoni mibnija ġewwa.",
+      "tz_title": "Skedar konxju taż‑żoni horarji",
+      "tz_text": "M’għadekx bżonn tikkalkula ż‑żoni horarji — aħna nieħdu ħsieb il‑konverżjonijiet kollha.",
+      "select_label": "Agħżel lingwa:"
+    }
+  },
+  "login": {
+    "confirm_password": "ikkonferma l-password (għar-reġistrazzjoni)",
+    "display_name": "isem li jidher (għar-reġistrazzjoni)",
+    "email": "email",
+    "email_not_verified": "Email mhix ikkonfermata? ",
+    "enter_email_first": "Jekk jogħġbok daħħal l-email address tiegħek l-ewwel.",
+    "go_dashboard": "Mur għad-Dashboard",
+    "intro": "Idħol b'kont eżistenti jew irreġistra kont ġdid.",
+    "login": "Idħol",
+    "login_required": "Teħtieġ email u password.",
+    "page_title": "SoulTribe.chat — Idħol / Irreġistra",
+    "password": "password",
+    "password_mismatch": "Il-passwords ma jaqblux.",
+    "redirect_hint": "Wara li tidħol, se tintbagħat lill-dashboard tiegħek.",
+    "register": "Irreġistra",
+    "registration_success": "Inħoloq il-kont. Jekk jogħġbok ivverifika l-email tiegħek.",
+    "required_fields": "Teħtieġ email, password, u isem li jidher.",
+    "resend_verification": "Ibgħat email ta' verifika oħra",
+    "reset_password": "Ibdel il-Password",
+    "reset_sent": "Jekk jeżisti kont b'din l-email, intbagħtet email biex terġa' issettja l-password.",
+    "title": "Merħba",
+    "verification_sent": "Jekk l-email tiegħek għadha mhix ikkonfermata, intbagħtet email ġdida ta' verifika."
+  },
+  "messaging": {
+    "newMessage": "Messaġġ Ġdid",
+    "searchUsers": "Fittex utenti...",
+    "send": "Ibgħat",
+    "title": "Messaġġi",
+    "typeMessage": "Ikteb messaġġ..."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "login": "Idħol",
+    "logout": "Oħroġ",
+    "profile": "Profil",
+    "welcome": "Merħba",
+    "home": "Dar",
+    "discover": "Skopri",
+    "matches": "Taqbilet",
+    "messages": "Messaġġi"
+  },
+  "onboarding": {
+    "step1": {
+      "description": "Żid ritratt u ftit kliem dwariek.",
+      "title": "Oħloq il-Profil Tiegħek"
+    },
+    "step2": {
+      "description": "X'tixtieq tagħmel? Aġċel mill-interessi tiegħek.",
+      "title": "Aġċi l-Interessi Tiegħek"
+    },
+    "step3": {
+      "description": "Ibda konversazzjoni ma' nies b'interessi simili.",
+      "title": "Ingħaqad ma' Nies"
+    },
+    "welcome": "Merħba għal SoulTribe"
+  },
+  "profile": {
+    "edit": {
+      "basicInfo": "Informazzjoni Bażika",
+      "bio": "Dwar Jien",
+      "firstName": "L-Ewwel Isem",
+      "interests": "Interessi",
+      "lastName": "L-Aħħar Isem",
+      "location": "Lokalità",
+      "title": "Editja l-Profil"
+    },
+    "view": {
+      "interests": "Interessi",
+      "lastSeen": "L-Aħħar Deher",
+      "memberSince": "Membru Minn"
+    },
+    "title": "Il-Profil Tiegħek",
+    "save": "Issejvja",
+    "cancel": "Ikkanċella",
+    "basic_info": {
+      "legend": "Informazzjoni Bażika",
+      "username_label": "Isem tal-utent",
+      "username_placeholder": "isem tal-utent"
+    },
+    "languages": {
+      "legend": "Lingwi"
+    },
+    "location": {
+      "legend": "Lokalità Kurrenti",
+      "city_placeholder": "Belt kurrenti (awto-komplet)",
+      "use_my_location": "Uża l-lokalità tiegħi",
+      "detected_tz_label": "Żona horarja skoperta:",
+      "detected_tz_hint": "(awtomatika jew agħżel)"
+    },
+    "birth": {
+      "legend": "Informazzjoni tat-twelid (għall-astrologija)",
+      "date_placeholder": "Data tat-twelid",
+      "hour_label": "Siegħa",
+      "minute_label": "Minuta",
+      "place_placeholder": "Post tat-twelid (belt, pajjiż)",
+      "detected_tz_label": "Żona horarja skoperta:",
+      "detected_tz_hint": "(awtomatika)",
+      "lat_placeholder": "Latitudni (eż. 48.2082)",
+      "lon_placeholder": "Longitudni (eż. 16.3738)",
+      "instructions": "Issettja d-data u l-post tat-twelid biex inħaddmu r-radix tiegħek. Jekk ma tafx il-ħin preċiż, ħalli l-qasam tal-ħin vojt — nużaw b'mod awtomatiku 12:00."
+    },
+    "note": "Il-profil tiegħek jintuża biex jippersonalizza t-taqbilet u juri ż-żona horarja.",
+    "primary_language_label": "Lingwa primarja (għall-UI)",
+    "other_languages_label": "Lingwi oħra (użati għat-taqbilet)",
+    "language_input_placeholder": "Ikteb biex iżżid lingwi..."
+  },
+  "search": {
+    "noResults": "L-ebda riżultati",
+    "placeholder": "Fittex nies, gruppi u kontenut...",
+    "title": "Fittex"
+  },
+  "settings": {
+    "account": {
+      "changeEmail": "Biddel l-Email",
+      "changePassword": "Biddel il-Password",
+      "title": "Kont"
+    },
+    "privacy": {
+      "profileVisibility": "Viżibilità tal-Profil",
+      "title": "Privatezza"
+    },
+    "title": "Settings"
   },
   "success": {
-    "profileUpdated": "Profil aġġornat",
+    "messageSent": "Messaġġ mibgħut",
     "passwordChanged": "Il-password inbidlet",
-    "messageSent": "Messa\u0121\u0121 mibg\u0127ut"
+    "profileUpdated": "Profil aġġornat"
+  },
+  "welcome": {
+    "title": "Merħba fuq SoulTribe.chat",
+    "subtitle": "Sib it-tribù tar-ruħ tiegħek"
+  },
+  "radix": {
+    "title": "Ir-Radix Tiegħek",
+    "placeholder": "Jekk issettjajt id‑data tat‑twelid, hawnhekk tidher stampa tar‑radix tiegħek.",
+    "show_raw_json": "Uri JSON mhux ipproċessat"
+  },
+  "ai": {
+    "get_interpretation": "Ikseb Interpretazzjoni",
+    "followup_placeholder": "Staqsi mistoqsija sussegwenti…",
+    "send": "Ibgħat"
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Termini",
+    "privacy": "Privatezza",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Irrisettja l-Password",
+    "intro": "Agħżel password ġdida għall-kont tiegħek.",
+    "new_password_label": "Password ġdida",
+    "new_password_placeholder": "password ġdida",
+    "confirm_password_label": "Ikkonferma l-password ġdida",
+    "confirm_password_placeholder": "ikkonferma l-password ġdida",
+    "submit": "Issettja password ġdida"
+  },
+  "notifications": {
+    "language_set_to": "Il-lingwa ssettjata għal"
+  },
+  "language": {
+    "en": "Ingliż",
+    "de": "Ġermaniż"
+  },
+  "dashboard": {
+    "propose_time": "Ipproponi ħin",
+    "generate_ai_comment": "Iġġenera kumment AI",
+    "slot_delete": "Ħassar",
+    "slot_edit": "Editja",
+    "active_filter_hint": "Juru biss l-utenti li kienu attivi fl-aħħar 30 jum."
   }
 }

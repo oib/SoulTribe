@@ -1,5 +1,82 @@
-/* Shared mobile overrides */
-@media (max-width: 640px) {
-  .topbar { flex-direction: column; gap: 8px; }
-  .container { padding: 0 12px; }
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* General mobile overrides */
+  .topbar { 
+    flex-direction: column; 
+    gap: 8px; 
+  }
+  
+  .container { 
+    padding: 0 12px; 
+  }
+  
+  /* Navbar mobile styles */
+  .navbar-container {
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--bg-color);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .navbar-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .hamburger {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--text-color);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-toggle.active .hamburger:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .navbar-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggle.active .hamburger:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Adjust welcome page padding for mobile */
+  .welcome-page {
+    padding-top: 56px;
+  }
+  
+  .welcome-page .welcome-container {
+    padding: 16px 12px;
+    min-height: calc(100vh - 80px);
+  }
 }

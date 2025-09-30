@@ -1,33 +1,187 @@
 {
-  "language": { "en": "Englanti", "de": "Saksa", "fi": "Suomi" },
-  "welcome": { "title": "Tervetuloa SoulTribe.chat-palveluun", "subtitle": "Löydä sielunheimolaiset" },
-  "profile": {
-    "title": "Profiilisi",
-    "save": "Tallenna",
-    "cancel": "Peruuta",
-    "primary_language_label": "Pääkieli (käyttöliittymälle)",
-    "other_languages_label": "Muut kielet (matchausta varten)",
-    "language_input_placeholder": "Kirjoita lisätäksesi kieliä..."
-  },
   "dashboard": {
-    "title": "Hallintapaneeli",
     "availability": "Saatavuus",
     "create_slot": "Luo aikaikkuna",
     "duration_hours": "Kesto (tunnit)",
-    "meetups": "Tapaamiset",
     "matches": "Mätsit",
-    "overlap_hint": "Napsauta \"Ehdota tätä aikaa\" ehdottaaksesi tapaamista kyseiselle ajalle."
+    "meetups": "Tapaamiset",
+    "overlap_hint": "Napsauta \"Ehdota tätä aikaa\" ehdottaaksesi tapaamista kyseiselle ajalle.",
+    "title": "Hallintapaneeli",
+    "propose_time": "Ehdota aikaa",
+    "generate_ai_comment": "Luo tekoälykommentti",
+    "slot_delete": "Poista",
+    "slot_edit": "Muokkaa",
+    "active_filter_hint": "Vain viimeisten 30 päivän aikana aktiiviset käyttäjät näytetään."
+  },
+  "language": {
+    "de": "Saksa",
+    "en": "Englanti",
+    "fi": "Suomi"
   },
   "login": {
-    "title": "Tervetuloa",
-    "intro": "Kirjaudu sisään tai rekisteröidy.",
-    "email": "sähköposti",
-    "password": "salasana",
+    "confirm_password": "vahvista salasana (rekisteröintiä varten)",
     "display_name": "näyttönimi (rekisteröintiä varten)",
-    "register": "Rekisteröidy",
+    "email": "sähköposti",
+    "email_not_verified": "Sähköpostia ei ole vahvistettu? ",
+    "enter_email_first": "Anna sähköpostiosoitteesi ensin.",
+    "go_dashboard": "Siirry hallintapaneeliin",
+    "intro": "Kirjaudu sisään tai rekisteröidy.",
     "login": "Kirjaudu",
+    "login_required": "Sähköposti ja salasana vaaditaan.",
+    "page_title": "SoulTribe.chat — Kirjaudu / Rekisteröidy",
+    "password": "salasana",
+    "password_mismatch": "Salasanat eivät täsmää.",
     "redirect_hint": "Kirjautumisen jälkeen sinut ohjataan hallintapaneeliin.",
-    "go_dashboard": "Siirry hallintapaneeliin"
+    "register": "Rekisteröidy",
+    "registration_success": "Tili luotu. Vahvista sähköpostisi.",
+    "required_fields": "Sähköposti, salasana ja näyttönimi vaaditaan.",
+    "resend_verification": "Lähetä vahvistussähköposti uudelleen",
+    "reset_password": "Nollaa salasana",
+    "reset_sent": "Jos tällä sähköpostiosoitteella on tili, salasanan nollaamisohjeet on lähetetty.",
+    "title": "Tervetuloa",
+    "verification_sent": "Jos sähköpostiosoitettasi ei ole vielä vahvistettu, uusi vahvistussähköposti on lähetetty."
   },
-  "nav": { "dashboard": "Hallintapaneeli", "profile": "Profiili", "login": "Kirjaudu", "logout": "Kirjaudu ulos" }
+  "nav": {
+    "dashboard": "Hallintapaneeli",
+    "login": "Kirjaudu",
+    "logout": "Kirjaudu ulos",
+    "profile": "Profiili",
+    "welcome": "Koti",
+    "home": "Koti",
+    "discover": "Tutustu",
+    "matches": "Mätsit",
+    "messages": "Viestit"
+  },
+  "profile": {
+    "cancel": "Peruuta",
+    "language_input_placeholder": "Kirjoita lisätäksesi kieliä...",
+    "other_languages_label": "Muut kielet (matchausta varten)",
+    "primary_language_label": "Pääkieli (käyttöliittymälle)",
+    "save": "Tallenna",
+    "title": "Profiilisi",
+    "basic_info": {
+      "legend": "Perustiedot",
+      "username_label": "Käyttäjätunnus",
+      "username_placeholder": "käyttäjätunnus"
+    },
+    "languages": {
+      "legend": "Kielet"
+    },
+    "location": {
+      "legend": "Nykyinen sijainti",
+      "city_placeholder": "Nykyinen kaupunki (automaattinen täydennys)",
+      "use_my_location": "Käytä sijaintiani",
+      "detected_tz_label": "Tunnistettu aikavyöhyke:",
+      "detected_tz_hint": "(automaattinen tai valitse)"
+    },
+    "birth": {
+      "legend": "Syntymätiedot (astrologiaa varten)",
+      "date_placeholder": "Syntymäpäivä",
+      "hour_label": "Tunti",
+      "minute_label": "Minuutti",
+      "place_placeholder": "Syntymäpaikka (kaupunki, maa)",
+      "detected_tz_label": "Tunnistettu aikavyöhyke:",
+      "detected_tz_hint": "(automaattinen)",
+      "lat_placeholder": "Leveysaste (esim. 48.2082)",
+      "lon_placeholder": "Pituusaste (esim. 16.3738)",
+      "instructions": "Aseta syntymäaikasi ja -paikkasi radixin laskemista varten. Jos et tiedä tarkkaa aikaa, jätä aika tyhjäksi — käytämme oletuksena klo 12.00."
+    },
+    "note": "Profiiliasi käytetään mätsien personointiin ja aikavyöhykkeen näyttämiseen."
+  },
+  "welcome": {
+    "subtitle": "Löydä sielunheimolaiset",
+    "title": "Tervetuloa SoulTribe.chat-palveluun"
+  },
+  "landing": {
+    "page_title": "SoulTribe.chat – Löydä sielunheimolaiset",
+    "hero": {
+      "title": "Tervetuloa",
+      "subtitle": "SoulTribe.chat on tila, joka auttaa sinua löytämään ja yhdistymään sielunheimolaisiin — ihmisiin, jotka resonoivat energiasi, henkesi ja matkasi kanssa. ✨"
+    },
+    "how": {
+      "title": "Miten se toimii",
+      "step1": "<strong>Luo profiilisi</strong> — syötä syntymäpäivä, -aika ja -paikka ainutlaatuista sielukarttaa varten.",
+      "step2": "<strong>Löydä mätsit</strong> — nostamme esiin yhteydet yhteensopivuuden ja resonanssin perusteella.",
+      "step3": "<strong>Aloita keskustelu</strong> — kutsu mätsit chattiin; turvallista ja yksityistä alusta alkaen.",
+      "step4": "<strong>Tapaa (valinnainen)</strong> — sovi Jitsi-puhelu tai tapaaminen yhteisellä suostumuksella."
+    },
+    "getting_started": {
+      "title": "Aloita",
+      "step1": "<strong>Luo tili</strong> — sosiaalisen median kirjautumista ei tarvita.",
+      "step2": "<strong>Täydennä profiili</strong> — lisää syntymätiedot; likimääräinen aika riittää.",
+      "step3": "<strong>Aseta saatavuus</strong> — ehdota paikallisia aikaikkunoita; UTC-muunnokset hoidamme me.",
+      "step4": "<strong>Löydä mätsit</strong> — selaa resonanssiin perustuvia ehdotuksia.",
+      "step5": "<strong>Chattaa ja halutessasi tapaa</strong> — pysy sovelluksessa; aikatauluta kun olet valmis."
+    },
+    "features": {
+      "title": "Ominaisuudet",
+      "item1": "<strong>Astrologiatietoinen mätsäys</strong> — yhdisty syntymäkartan avulla.",
+      "item2": "<strong>Älykäs aikavyöhykesuunnittelu</strong> — me hoidamme UTC-muunnokset puolestasi.",
+      "item3": "<strong>Suora viestintä Jitsin kautta</strong> — teksti/ääni/video; mitään ei tallenneta tai nauhoiteta SoulTribe.chatissa.",
+      "item4": "<strong>Helppo liittyminen linkillä</strong> — yksityinen Jitsi‑huone vahvistetuille tapaamisille; yksityisyyttä kunnioittava, ei työpöytäsovelluksen asennusta.",
+      "item5": "<strong>Minimalistinen, fokusoitu käyttöliittymä</strong> — suunniteltu merkityksellisiin keskusteluihin."
+    },
+    "privacy": {
+      "title": "Yksityisyys ja turvallisuus",
+      "item1": "Pyydämme vain sen, mikä on tarpeen merkityksellisten yhteyksien mahdollistamiseksi.",
+      "item2": "Profiilitietojasi ei myydä eikä jaeta mainosverkostoille.",
+      "item3": "Sinä päätät, kuka voi ottaa yhteyttä ja milloin jaat enemmän."
+    },
+    "matching": {
+      "title": "Miten mätsäys toimii (lyhyesti)",
+      "text": "Laskemme keskeisiä relationaalisia indikaattoreita kartastasi ja vertaamme niitä muihin resonanssin löytämiseksi. Painotamme harmoniaa, toisiaan täydentävyyttä ja kasvupotentiaalia yleisten suosio-mittareiden sijaan."
+    },
+    "protips": {
+      "title": "Vinkkejä",
+      "item1": "Lisää muutama saatavuusaika eri päiville nopeampia yhteyksiä varten.",
+      "item2": "Ole aito esittelyssäsi — yksityiskohdat auttavat oikeita ihmisiä löytämään sinut.",
+      "item3": "Suostumus ensin — aina. Etene sinulle sopivaa vauhtia."
+    },
+    "next": {
+      "title": "Seuraavat askeleet",
+      "go_dashboard": "Siirry hallintapaneeliin",
+      "login_register": "Kirjaudu / Rekisteröidy"
+    },
+    "global": {
+      "title": "Globaali yhteisö, paikallinen aika",
+      "text": "Yhdisty samanhenkisiin ihmisiin kaikkialla maailmassa automaattisen aikavyöhykemuunnoksen avulla.",
+      "auto_title": "Aikavyöhykkeen automaattinen tunnistus",
+      "auto_text": "Tunnistamme aikavyöhykkeesi automaattisesti sujuvaa aikataulutusta varten.",
+      "native_title": "Äidinkielen tuki",
+      "native_text": "Chattaa haluamallasi kielellä sisäänrakennetun käännöksen avulla.",
+      "tz_title": "Aikavyöhyketietoinen aikataulutus",
+      "tz_text": "Ei enää aikavyöhykelaskentaa — me hoidamme muunnokset puolestasi.",
+      "select_label": "Valitse kieli:"
+    }
+  },
+  "radix": {
+    "title": "Radixisi",
+    "placeholder": "Jos olet asettanut syntymätietosi, radix-näkymä näkyy tässä.",
+    "show_raw_json": "Näytä raakamuotoinen JSON"
+  },
+  "ai": {
+    "get_interpretation": "Hae tulkinta",
+    "followup_placeholder": "Kysy jatkokysymys…",
+    "send": "Lähetä"
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Ehdot",
+    "privacy": "Tietosuoja",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Nollaa salasana",
+    "intro": "Valitse uusi salasana tilillesi.",
+    "new_password_label": "Uusi salasana",
+    "new_password_placeholder": "uusi salasana",
+    "confirm_password_label": "Vahvista uusi salasana",
+    "confirm_password_placeholder": "vahvista uusi salasana",
+    "submit": "Aseta uusi salasana"
+  },
+  "notifications": {
+    "language_set_to": "Kieli asetettu:"
+  }
 }
