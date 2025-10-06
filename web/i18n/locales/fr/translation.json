@@ -145,5 +145,88 @@
   "welcome": {
     "subtitle": "Trouve ta tribu d'âme",
     "title": "Bienvenue sur SoulTribe.chat"
+  },
+  "guestGuide": {
+    "title": "Guide express Jitsi pour les invités de SoulTribe",
+    "intro": "Ce guide aide les nouveaux invités à rejoindre les salles Jitsi de SoulTribe en toute confiance. Choisissez seulement les étapes dont vous avez besoin. Texte, audio et vidéo restent facultatifs.",
+    "prejoin": {
+      "heading": "Avant de rejoindre",
+      "steps": {
+        "options": "Découvrez vos options. Jitsi prend en charge le texte, l'audio et la vidéo. Vous décidez ce qui est activé, et chaque canal peut rester éteint.",
+        "permissions": "Accordez les autorisations requises. Lorsque la page d'accueil demande l'accès, autorisez le navigateur à utiliser le micro et la caméra pour pouvoir les activer plus tard.",
+        "setup": "Préparez-vous avant d'entrer dans la salle."
+      },
+      "substeps": {
+        "name": "Nom : indiquez comment vous souhaitez être affiché auprès des autres participants.",
+        "background": "Arrière-plan : choisissez un effet de flou ou un fond virtuel si vous préférez plus de confidentialité."
+      },
+      "mic_camera_label": "Micro et caméra",
+      "mic_camera_text": "Utilisez les deux premières icônes pour les activer ou les désactiver avant de rejoindre.",
+      "devices_label": "Périphériques",
+      "devices_before_arrow": "Cliquez sur la petite flèche associée à chaque icône",
+      "devices_after_arrow": "afin de sélectionner le micro ou la webcam appropriés.",
+      "audio_tip_label": "Conseil audio",
+      "audio_tip_text": "Un casque ou des écouteurs limitent l'écho. Si vous devez utiliser des haut-parleurs, gardez un volume modéré pour éviter la résonance."
+    },
+    "browser": {
+      "heading": "Compatibilité des navigateurs",
+      "supported": "Firefox et Chrome assurent une prise en charge complète du son, de la vidéo et du chat.",
+      "unsupported": "Safari, Edge, Opera, Brave et DuckDuckGo ne sont pas encore pris en charge.",
+      "note": "D'autres navigateurs spécialisés n'ont pas été testés.",
+      "tip1": "Lorsque demandé, autorisez l'accès au micro et à la caméra depuis la barre d'adresse.",
+      "tip2": "Désactivez les bloqueurs de suivi ou ajoutez Jitsi à votre liste de sites approuvés.",
+      "tip3": "Rechargez l'onglet après avoir modifié les autorisations afin que les paramètres s'appliquent."
+    },
+    "layout": {
+      "heading": "Organisation de l'interface",
+      "description": "La zone vidéo centrale affiche les participants dont la caméra est allumée. En bas, la barre de contrôle regroupe les icônes essentielles : micro, caméra, partage d'écran, chat, liste des participants et options supplémentaires. Le panneau latéral droit vous donne accès à la liste des participants et aux écrans partagés."
+    },
+    "toolbar": {
+      "heading": "Icônes de la barre d'outils",
+      "columns": {
+        "icon": "Icône",
+        "label": "Libellé",
+        "description": "Description"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Microphone",
+          "description": "Coupez ou réactivez votre micro et sélectionnez le périphérique audio adapté."
+        },
+        "camera": {
+          "label": "Caméra",
+          "description": "Allumez ou éteignez la caméra et choisissez la source vidéo correcte."
+        },
+        "screen": {
+          "label": "Partage d'écran",
+          "description": "Partagez l'ensemble du bureau, un onglet ou une fenêtre spécifique."
+        },
+        "chat": {
+          "label": "Chat",
+          "description": "Ouvrez le chat texte pour envoyer des messages ou partager des liens."
+        },
+        "participants": {
+          "label": "Participants / Inviter",
+          "description": "Consultez la liste des présents, invitez d'autres personnes et autorisez l'entrée aux invités en attente."
+        },
+        "more": {
+          "label": "Plus d'options",
+          "description": "Accédez aux réglages de sécurité, gérez vos appareils et explorez les autres outils disponibles."
+        },
+        "hangup": {
+          "label": "Quitter",
+          "description": "Terminez l'appel et quittez la salle."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Lien rapide",
+      "cta": "Rejoignez directement sur jitsi.bubuit.net/soultribe",
+      "note": "Testez votre configuration ou rencontrez de nouveaux invités dans un cadre convivial. Aucun compte n'est requis."
+    },
+    "closing": {
+      "heading": "Mot de clôture",
+      "text": "Profitez des échanges à votre manière et à votre rythme."
+    }
   }
-, "guestGuide": { "title": "Guide express pour les invités Jitsi de SoulTribe", "intro": "Ce guide aide les nouveaux invités à rejoindre les salles Jitsi de SoulTribe en toute confiance. Choisis uniquement les étapes dont tu as besoin. Le texte, l’audio et la vidéo sont tous facultatifs.", "prejoin": { "heading": "Instructions avant de rejoindre", "steps": { "options": "<strong>Découvre tes options.</strong> Jitsi prend en charge le <strong>texte</strong>, l’<strong>audio</strong> et la <strong>vidéo</strong>. À toi de décider ce que tu actives, chaque canal peut rester désactivé.", "permissions": "<strong>Accorde les autorisations.</strong> Lorsque la page de connexion le demande, autorise ton navigateur à utiliser le micro et la caméra afin de pouvoir les activer ensuite.", "setup": "<strong>Prépare-toi avant d’entrer.</strong>" }, "substeps": { "name": "<strong>Nom :</strong> Indique comment tu souhaites apparaître auprès des autres participants.", "background": "<strong>Arrière-plan :</strong> Choisis un flou ou un fond virtuel si tu veux plus de confidentialité." }, "mic_camera_label": "Micro & caméra :", "mic_camera_text": "Utilise les deux premières icônes pour les activer ou les désactiver avant de rejoindre.", "devices_label": "Périphériques :", "devices_before_arrow": "Clique sur la petite flèche de chaque icône", "devices_after_arrow": "pour sélectionner le micro ou la webcam appropriés.", "audio_tip_label": "Astuce audio :", "audio_tip_text": "Un casque ou des écouteurs évitent l’écho. Si tu dois utiliser des haut-parleurs, garde un volume bas pour éviter les larsens." }, "browser": { "heading": "Compatibilité des navigateurs", "supported": "<strong>✅ Firefox & Chrome :</strong> prise en charge complète de l’audio, de la vidéo et du chat.", "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo :</strong> non pris en charge.", "note": "<em>D’autres navigateurs de niche n’ont pas été vérifiés.</em>", "tip1": "Active les autorisations micro/caméra dans la barre d’adresse si on te le demande.", "tip2": "Désactive les bloqueurs de traqueurs ou ajoute Jitsi à ta liste d’autorisation.", "tip3": "Recharge l’onglet après avoir modifié les autorisations pour appliquer les changements." }, "layout": { "heading": "Disposition dans la salle", "description": "La <strong>zone vidéo principale</strong> au centre affiche tous ceux dont la caméra est active. En bas se trouve la <strong>barre de contrôle</strong> avec micro, caméra, partage d’écran, chat, participants et plus encore. Utilise le tiroir à flèche sur le bord droit <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> pour ouvrir l’elenco participants et les écrans partagés." }, "toolbar": { "heading": "Icônes de la barre d’outils", "columns": { "icon": "Icône", "label": "Libellé", "description": "Description" }, "rows": { "microphone": { "label": "Microphone", "description": "Active ou coupe ton micro et ouvre le menu des périphériques avec l’icône flèche <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>." }, "camera": { "label": "Caméra", "description": "Active ou coupe ta caméra et choisis les périphériques via l’icône flèche <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>." }, "screen": { "label": "Partage d’écran", "description": "Partage ton écran ou une fenêtre. Choisis un onglet, une fenêtre ou tout le bureau." }, "chat": { "label": "Chat", "description": "Ouvre le chat texte pour envoyer des messages ou partager des liens. Clique pour afficher/masquer le panneau latéral." }, "participants": { "label": "Participants / Inviter", "description": "Invite d’autres personnes ou consulte la liste des participants. Copie le lien de la salle ou autorise les invités en attente." }, "more": { "label": "Autres options", "description": "Accède aux options de sécurité, aux réglages des périphériques ou à des outils supplémentaires. Défini un mot de passe ou ajuste le mode salle d’attente." }, "hangup": { "label": "Raccrocher", "description": "Quitte la salle." } } }, "quick": { "heading": "Lien de connexion rapide", "cta": "💫 Rejoins instantanément sur jitsi.bubuit.net/soultribe", "note": "Teste ton installation ou rencontre des invités sympathiques. Aucun compte requis." }, "closing": { "heading": "Mot de clôture", "text": "Profite de tes connexions à ta façon et à ton rythme." } } }
+}

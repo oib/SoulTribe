@@ -315,39 +315,39 @@
     "language_set_to": "Teanga socraithe mar"
   },
   "guestGuide": {
-    "title": "Treoir thapa Jitsi do chuairteoirí SoulTribe",
-    "intro": "Tugann an treoir seo cabhair do chuairteoirí nua chun páirt a ghlacadh i seomraí Jitsi SoulTribe le muinín. Roghnaigh na céimeanna atá uait amháin. Tá téacs, fuaim agus físeán roghnach.",
+    "title": "Treoir thapa Jitsi do aíonna SoulTribe",
+    "intro": "Cabhraíonn an treoir seo le haíonna nua dul isteach i seomraí Jitsi SoulTribe le muinín. Roghnaigh na céimeanna amháin a theastaíonn uait. Tá téacs, fuaim agus físeán roghnach go léir.",
     "prejoin": {
-      "heading": "Treoracha roimh dhul isteach",
+      "heading": "Roimh duit dul isteach",
       "steps": {
-        "options": "<strong>Aithnigh do roghanna.</strong> Tacaíonn Jitsi le <strong>téacs</strong>, <strong>fuaim</strong> agus <strong>físeán</strong>. Roghnaíonn tusa cad a chasfar air; is féidir gach cainéal a fhágáil múchta.",
-        "permissions": "<strong>Tabhair ceadanna.</strong> Nuair a iarrann an leathanach logála isteach rochtain, lig don bhrabhsálaí micreafón agus ceamara a úsáid ionas gur féidir leat iad a chur ar siúl níos déanaí.",
-        "setup": "<strong>Ullmhaigh tú féin roimh dhul isteach.</strong>"
+        "options": "Faigh amach do roghanna. Tacaíonn Jitsi le téacs, fuaim agus físeán. Is tú a roghnaíonn cad a ghníomhachtaítear; féadfaidh gach bealach fanacht múchta.",
+        "permissions": "Tabhair na ceadanna riachtanacha. Nuair a iarrann an leathanach logála isteach rochtain, ceadaigh don bhrabhsálaí an micreafón agus an ceamara a úsáid ionas gur féidir leat iad a chasadh air níos déanaí.",
+        "setup": "Glac nóiméad chun socrú sula dtéann tú isteach sa seomra."
       },
       "substeps": {
-        "name": "<strong>Ainm:</strong> Iontráil conas is mian leat go bhfeicfidh daoine eile thú sa chruinniú.",
-        "background": "<strong>Cúlra:</strong> Roghnaigh doiléiriú nó cúlra fíorúil más fearr leat níos mó príobháideachais."
+        "name": "Ainm: cuir isteach an t-ainm is mian leat a thaispeáint do rannpháirtithe eile.",
+        "background": "Cúlra: roghnaigh doiléire nó cúlra fíorúil más mian leat príobháideachas breise."
       },
-      "mic_camera_label": "Micreafón & ceamara:",
-      "mic_camera_text": "Úsáid na chéad dá íocón chun iad a chasadh air nó as sula nglacann tú páirt.",
-      "devices_label": "Gléasanna:",
-      "devices_before_arrow": "Cliceáil ar an tsaighead bheag ar gach íocón",
-      "devices_after_arrow": "chun an micreafón nó an ceamara ceart a roghnú.",
-      "audio_tip_label": "Leid fuaime:",
-      "audio_tip_text": "Cuireann cluasáin nó cluasáin deireadh leis an macalla. Má chaithfidh tú cainteoirí a úsáid, coinnigh an toirt íseal chun aiseolas a sheachaint."
+      "mic_camera_label": "Micreafón agus ceamara",
+      "mic_camera_text": "Úsáid an dá chéad deilbhín chun iad a chur ar siúl nó a mhúchadh sula dtéann tú isteach.",
+      "devices_label": "Gléasanna",
+      "devices_before_arrow": "Oscail an tsaighead bheag in aice le gach rialtán",
+      "devices_after_arrow": "agus roghnaigh an micreafón nó an ceamara gréasáin is mian leat a úsáid.",
+      "audio_tip_label": "Leid fuaime",
+      "audio_tip_text": "Cuidíonn cluasáin le macalla a sheachaint. Má tá gá le callairí, coinnigh an toirt íseal chun aiseolas a sheachaint."
     },
     "browser": {
       "heading": "Comhoiriúnacht brabhsálaí",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Tacaíocht iomlán d’fhuaim, d’fhíseán agus do chomhrá.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Gan tacaíocht.",
-      "note": "<em>Níor fíoraíodh brabhsálaithe eile nideoige.</em>",
-      "tip1": "Cumasaigh ceadanna micreafóin/ceamara sa bharra seolta más iarrtar é.",
-      "tip2": "Múch blocairí rianaithe nó cuir Jitsi leis an liosta ceadaithe.",
-      "tip3": "Athluchtaigh an cluaisín tar éis ceadanna a athrú chun na hathruithe a chur i bhfeidhm."
+      "supported": "Soláthraíonn Firefox agus Chrome tacaíocht iomlán do fhuaim, do fhíseán agus do chomhrá.",
+      "unsupported": "Ní thacaítear le Safari, Edge, Opera, Brave agus DuckDuckGo faoi láthair.",
+      "note": "Níor tástáladh brabhsálaithe nideoige eile.",
+      "tip1": "Má iarrtar, ceadaigh rochtain ar an micreafón agus ar an gceamara ón mbarra seoltaí.",
+      "tip2": "Díchumasaigh blocálaithe rianaithe nó cuir Jitsi le do liosta ceadaithe.",
+      "tip3": "Athluchtaigh an cluaisín tar éis ceadanna a athrú chun na nuashonruithe a chur i bhfeidhm."
     },
     "layout": {
       "heading": "Leagan amach an chomhéadain sa seomra",
-      "description": "Taispeánann an <strong>príomhlimistéar físe</strong> sa lár gach duine a bhfuil a gceamara ar siúl. Thíos tá an <strong>barra rialaithe</strong> le pictiúir eochair: micreafón, ceamara, rochtain scáileáin, comhrá, rannpháirtithe agus níos mó roghanna. Bain úsáid as an tarraiceán saighead ar an imeall deas <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0Z\"/></svg> chun liosta na rannpháirtithe agus scáileáin roinnte a oscailt."
+      "description": "Taispeánann an príomhlimistéar físe sa lár gach duine a bhfuil a gceamara ar siúl acu. Ar bun tá an barra rialaithe le deilbhíní tábhachtacha: micreafón, ceamara, comhroinnt scáileáin, comhrá, rannpháirtithe agus roghanna eile. Osclaíonn an painéal ar dheis liosta na rannpháirtithe agus scáileáin chomhroinnte."
     },
     "toolbar": {
       "heading": "Deilbhíní an bharra uirlisí",
@@ -359,42 +359,42 @@
       "rows": {
         "microphone": {
           "label": "Micreafón",
-          "description": "Athraigh do mhicreafón agus oscail roghchlár na bhfeistí leis an deilbhín saighead <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Cas an micreafón air nó as agus roghnaigh an gléas fuaime ceart."
         },
         "camera": {
           "label": "Ceamara",
-          "description": "Cas do cheamara air nó as agus roghnaigh gléasanna tríd an deilbhín saighead <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Cas an ceamara air nó as agus roghnaigh an fhoinse físe ceart."
         },
         "screen": {
-          "label": "Scáileán a roinnt",
-          "description": "Roinn do scáileán nó fuinneog. Roghnaigh cluaisín, fuinneog nó an deasc iomlán."
+          "label": "Comhroinnt scáileáin",
+          "description": "Roinn an scáileán iomlán, cluaisín ar leith nó fuinneog."
         },
         "chat": {
           "label": "Comhrá",
-          "description": "Oscail comhrá téacs chun teachtaireachtaí nó nascanna a sheoladh. Tapáil chun an painéal taoibh a chur ar siúl nó as."
+          "description": "Oscail an comhrá téacs chun teachtaireachtaí nó naisc a sheoladh."
         },
         "participants": {
           "label": "Rannpháirtithe / Tabhair cuireadh",
-          "description": "Tabhair cuireadh do dhaoine eile nó féach ar liosta reatha na rannpháirtithe. Cóipeáil nasc an tseomra nó ceadaigh aíonna atá ag fanacht."
+          "description": "Féach cé atá sa seomra, tabhair cuireadh do dhaoine eile agus glac le haíonna atá ar feitheamh."
         },
         "more": {
           "label": "Tuilleadh roghanna",
-          "description": "Oscail roghanna slándála, socruithe gléasanna nó uirlisí breise. Socraigh focal faire nó coigeartaigh mód an seomra feithimh."
+          "description": "Faigh rochtain ar shocruithe slándála, roghanna gléis agus uirlisí breise."
         },
         "hangup": {
-          "label": "Críochnaigh glao",
-          "description": "Fág an seomra."
+          "label": "Fág",
+          "description": "Críochnaigh an glao agus fág an seomra."
         }
       }
     },
     "quick": {
       "heading": "Nasc gasta le páirt a ghlacadh",
-      "cta": "💫 Glac páirt láithreach ag jitsi.bubuit.net/soultribe",
-      "note": "Tástáil do shocrú nó buail le cuairteoirí cairdiúla. Níl cuntas ag teastáil."
+      "cta": "Glac páirt láithreach ag jitsi.bubuit.net/soultribe",
+      "note": "Déan do shocrú a thástáil nó cas le haíonna cairdiúla. Ní theastaíonn aon chuntas."
     },
     "closing": {
-      "heading": "Scor-líne",
-      "text": "Bain taitneamh as nascadh ar do bhealach féin, ar do luas féin."
+      "heading": "Nóta deiridh",
+      "text": "Bain sult as nascadh le daoine eile ar do bhealach féin agus ar do luas féin."
     }
   }
 }

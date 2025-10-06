@@ -1039,86 +1039,86 @@
     "language_set_to": "Jezik postavljen na"
   },
   "guestGuide": {
-    "title": "Brzi vodič za goste Jitsi na SoulTribe",
-    "intro": "Ovaj vodič pomaže novim gostima da se s pouzdanjem pridruže SoulTribe Jitsi sobama. Odaberite samo korake koji su vam potrebni. Tekst, audio i video svi su opcionalni.",
+    "title": "Brzi vodič Jitsi za goste SoulTribe",
+    "intro": "Ovaj vodič pomaže novim gostima da se s pouzdanjem pridruže Jitsi sobama SoulTribe. Odaberite samo korake koji su vam potrebni. Tekst, zvuk i video su opcionalni.",
     "prejoin": {
-      "heading": "Upute prije pridruživanja",
+      "heading": "Upute prije ulaska",
       "steps": {
-        "options": "<strong>Upoznajte svoje mogućnosti.</strong> Jitsi podržava <strong>tekst</strong>, <strong>audio</strong> i <strong>video</strong>. Vi odlučujete što ćete uključiti; svaki kanal može ostati isključen.",
-        "permissions": "<strong>Dodijelite dozvole.</strong> Kada stranica za prijavu zatraži pristup, dopustite pregledniku korištenje mikrofona i kamere kako biste ih kasnije mogli uključiti.",
-        "setup": "<strong>Pripremite se prije ulaska.</strong>"
+        "options": "Upoznajte svoje mogućnosti. Jitsi podržava tekst, zvuk i video. Vi odlučujete što će biti uključeno i svaki kanal može ostati isključen.",
+        "permissions": "Dodijelite potrebne dozvole. Kada stranica za prijavu zatraži pristup, dopustite pregledniku da koristi mikrofon i kameru kako biste ih kasnije mogli uključiti.",
+        "setup": "Pripremite se prije nego uđete u sobu."
       },
       "substeps": {
-        "name": "<strong>Ime:</strong> Unesite kako želite da vas ostali sudionici vide u sastanku.",
-        "background": "<strong>Pozadina:</strong> Odaberite zamućenje ili virtualnu pozadinu ako želite dodatnu privatnost."
+        "name": "Ime: upišite kako želite da se vaše ime prikazuje ostalim sudionicima.",
+        "background": "Pozadina: odaberite zamućenje ili virtualnu pozadinu ako želite više privatnosti."
       },
-      "mic_camera_label": "Mikrofon i kamera:",
-      "mic_camera_text": "Upotrijebite prva dva ikona kako biste ih uključili ili isključili prije pridruživanja.",
-      "devices_label": "Uređaji:",
-      "devices_before_arrow": "Kliknite na malu strelicu na svakoj ikoni",
-      "devices_after_arrow": "kako biste odabrali odgovarajući mikrofon ili web-kameru.",
-      "audio_tip_label": "Savjet za zvuk:",
-      "audio_tip_text": "Slušalice ili headset sprječavaju odjek. Ako morate koristiti zvučnike, držite glasnoću niskom kako biste izbjegli mikrofoniju."
+      "mic_camera_label": "Mikrofon i kamera",
+      "mic_camera_text": "Upotrijebite prva dva gumba kako biste uređaje uključili ili isključili prije ulaska.",
+      "devices_label": "Uređaji",
+      "devices_before_arrow": "Kliknite na strelicu pokraj svake ikone",
+      "devices_after_arrow": "kako biste odabrali odgovarajući mikrofon ili kameru.",
+      "audio_tip_label": "Savjet za zvuk",
+      "audio_tip_text": "Slušalice pomažu u izbjegavanju jeke. Ako morate koristiti zvučnike, držite glasnoću niskom kako biste spriječili mikrofoniju."
     },
     "browser": {
       "heading": "Kompatibilnost preglednika",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> puna podrška za audio, video i chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> nije podržano.",
-      "note": "<em>Drugi specijalizirani preglednici nisu provjereni.</em>",
-      "tip1": "Omogućite dozvole za mikrofon/kameru u adresnoj traci kada se to zatraži.",
-      "tip2": "Isključite blokatore praćenja ili dodajte Jitsi na popis dopuštenih.",
-      "tip3": "Ponovno učitajte karticu nakon promjene dozvola kako bi se promjene primijenile."
+      "supported": "Preglednici Firefox i Chrome u potpunosti podržavaju zvuk, video i chat.",
+      "unsupported": "Safari, Edge, Opera, Brave i DuckDuckGo trenutačno nisu podržani.",
+      "note": "Drugi specijalizirani preglednici još nisu testirani.",
+      "tip1": "Kada se pojavi upit, omogućite pristup mikrofonu i kameri u adresnoj traci.",
+      "tip2": "Isključite blokatore praćenja ili dodajte Jitsi na popis dopuštenih web-mjesta.",
+      "tip3": "Nakon promjene dozvola osvježite karticu kako bi se primijenile postavke."
     },
     "layout": {
       "heading": "Raspored sučelja u sobi",
-      "description": "<strong>Glavno video područje</strong> u središtu prikazuje sve koji trenutačno imaju uključenu kameru. Duž dna nalazi se <strong>traka s kontrolama</strong> s ključnim ikonama, uključujući mikrofon, kameru, dijeljenje zaslona, chat, sudionike i više opcija. Upotrijebite ladicu sa strelicom na desnom rubu <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0Z\"/></svg> za otvaranje popisa sudionika i dijeljenih zaslona."
+      "description": "Glavno područje s videom u sredini prikazuje sve koji imaju uključenu kameru. Na dnu se nalazi traka s kontrolama koja sadrži ikone za mikrofon, kameru, dijeljenje zaslona, chat, popis sudionika i dodatne opcije. Desna bočna traka otvara popis sudionika i prikaze dijeljenih zaslona."
     },
     "toolbar": {
       "heading": "Ikone na traci s alatima",
       "columns": {
         "icon": "Ikona",
-        "label": "Oznaka",
+        "label": "Naziv",
         "description": "Opis"
       },
       "rows": {
         "microphone": {
           "label": "Mikrofon",
-          "description": "Uključite ili isključite mikrofon i otvorite izbornik uređaja pomoću ikone strelice <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Uključite ili isključite mikrofon i odaberite željeni uređaj u izborniku uređaja."
         },
         "camera": {
           "label": "Kamera",
-          "description": "Uključite ili isključite kameru i odaberite uređaje putem ikone strelice <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Uključite ili isključite kameru i odaberite izvor videa koji vam odgovara."
         },
         "screen": {
           "label": "Dijeljenje zaslona",
-          "description": "Podijelite svoj zaslon ili prozor. Odaberite karticu, prozor ili cijeli zaslon."
+          "description": "Podijelite cijeli zaslon, određenu karticu ili prozor."
         },
         "chat": {
           "label": "Chat",
-          "description": "Otvorite tekstualni chat za slanje poruka ili dijeljenje poveznica. Dodirnite za prikaz/skrivanje bočnog panela."
+          "description": "Otvorite tekstualni chat kako biste slali poruke ili poveznice."
         },
         "participants": {
-          "label": "Sudionici / Pozovi",
-          "description": "Pozovite druge ili pogledajte popis trenutačnih sudionika. Kopirajte poveznicu sobe ili odobrite goste koji čekaju."
+          "label": "Sudionici / Pozovite",
+          "description": "Provjerite tko je u sobi, pozovite nove sudionike i odobrite ulazak gostima koji čekaju."
         },
         "more": {
-          "label": "Više opcija",
-          "description": "Otvorite sigurnosne opcije, postavke uređaja ili dodatne alate. Postavite lozinku ili prilagodite način rada sobe za čekanje."
+          "label": "Dodatne opcije",
+          "description": "Pristupite sigurnosnim postavkama, postavkama uređaja i ostalim alatima."
         },
         "hangup": {
-          "label": "Prekini vezu",
+          "label": "Završite poziv",
           "description": "Napustite sobu."
         }
       }
     },
     "quick": {
-      "heading": "Brza poveznica za pridruživanje",
-      "cta": "💫 Pridružite se odmah na jitsi.bubuit.net/soultribe",
-      "note": "Testirajte svoju konfiguraciju ili upoznajte prijateljske goste. Nije potreban račun."
+      "heading": "Brza poveznica za priključivanje",
+      "cta": "Pridružite se odmah na jitsi.bubuit.net/soultribe",
+      "note": "Testirajte svoje postavke ili upoznajte nove goste. Nije potreban korisnički račun."
     },
     "closing": {
       "heading": "Završna poruka",
-      "text": "Uživajte u povezivanju na svoj način i svojim tempom."
+      "text": "Uživajte u povezivanju na način i tempom koji vama odgovara."
     }
   }
 }

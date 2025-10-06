@@ -63,86 +63,86 @@
     }
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "SoulTribe Jitsi guest quick-start",
+    "intro": "This guide helps first-time guests join SoulTribe Jitsi rooms with confidence. Pick only the steps you need. Text, audio, and video are all optional.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Before you join",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Learn what is available. Jitsi supports text chat, audio, and video. You decide what to enable, and each channel can remain off.",
+        "permissions": "Grant the requested permissions. When the login page asks for access, allow your browser to use the microphone and camera so you can turn them on later.",
+        "setup": "Take a moment to get set up before you enter the room."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Name: enter how you would like to appear to other participants.",
+        "background": "Background: choose blur or a virtual background if you want extra privacy."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Microphone and camera",
+      "mic_camera_text": "Use the first two buttons to toggle your mic and camera before you join.",
+      "devices_label": "Devices",
+      "devices_before_arrow": "Open the small arrow next to each device control",
+      "devices_after_arrow": "and select the microphone or webcam you want to use.",
+      "audio_tip_label": "Audio tip",
+      "audio_tip_text": "A headset or headphones helps avoid echo. If you must use speakers, keep the volume low to prevent feedback."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Browser compatibility",
+      "supported": "Firefox and Chrome offer full support for audio, video, and chat.",
+      "unsupported": "Safari, Edge, Opera, Brave, and DuckDuckGo are not supported at this time.",
+      "note": "Other niche browsers have not been verified.",
+      "tip1": "If prompted, allow microphone and camera access from the address bar.",
+      "tip2": "Disable tracker blockers or add Jitsi to your allow list.",
+      "tip3": "Reload the tab after changing permissions so the updates take effect."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Room interface overview",
+      "description": "The main video area in the center shows everyone who currently has their camera on. Along the bottom, the control bar holds the key icons for microphone, camera, screen share, chat, participants, and other options. The panel on the right opens the participant list and any shared screens."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Toolbar icons",
       "columns": {
         "icon": "Icon",
         "label": "Label",
-        "description": "Description"
+        "description": "What it does"
       },
       "rows": {
         "microphone": {
           "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Toggle your microphone and choose the device you want to use."
         },
         "camera": {
           "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Turn your camera on or off and select the correct video source."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Screen share",
+          "description": "Share your entire screen, a specific tab, or a window."
         },
         "chat": {
           "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "description": "Open the text chat to send messages or share links."
         },
         "participants": {
           "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "description": "See who is in the room, invite others, and admit guests who are waiting."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "More options",
+          "description": "Access security settings, device preferences, and additional tools."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Leave",
+          "description": "End the call and exit the room."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Quick join link",
+      "cta": "Join instantly at jitsi.bubuit.net/soultribe",
+      "note": "Test your setup or meet friendly guests. No account is required."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Closing note",
+      "text": "Enjoy connecting in the way and at the pace that works best for you."
     }
   },
   "language": {

@@ -263,39 +263,38 @@
     "profileUpdated": "Profiil uuendatud"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi külalisjuhend",
-    "intro": "See juhend aitab esmakordsetel külalistel liituda SoulTribe Jitsi ruumidega enesekindlalt. Vali ainult need sammud, mida vajad. Tekst, heli ja video on kõik vabatahtlikud.",
+    "title": "SoulTribe Jitsi külalise kiirjuhend",
+    "intro": "See juhend aitab uutel külalistel turvaliselt liituda SoulTribe Jitsi ruumidega. Valige ainult need sammud, mida vajate. Tekst, heli ja video on vabatahtlikud.",
     "prejoin": {
-      "heading": "Juhised enne liitumist",
+      "heading": "Soovitused enne liitumist",
       "steps": {
-        "options": "<strong>Tunne oma valikuid.</strong> Jitsi toetab <strong>teksti</strong>, <strong>heli</strong> ja <strong>videot</strong>. Sina otsustad, mida lubada; iga kanal võib jääda välja lülitatuks.",
-        "permissions": "<strong>Anna õigused.</strong> Kui sisselogimisleht palub luba, luba brauseril kasutada mikrofoni ja kaamerat, et saaksid need hiljem sisse lülitada.",
-        "setup": "<strong>Valmista end ette enne sisenemist.</strong>"
+        "options": "Tutvuge võimalikuga. Jitsi toetab teksti, heli ja videot. Te otsustate, mis on sisse lülitatud; iga kanal võib jääda välja lülitatuks.",
+        "permissions": "Andke vajalikud õigused. Kui sisselogimisleht küsib luba, võimaldage brauseril kasutada mikrofoni ja kaamerat, et need saaks hiljem sisse lülitada.",
+        "setup": "Valmistuge ette enne ruumi sisenemist."
       },
       "substeps": {
-        "name": "<strong>Nimi:</strong> Sisesta nimi, millega soovid teistele osalejatele paista.",
-        "background": "<strong>Taust:</strong> Vali hägustus või virtuaalne taust, kui soovid rohkem privaatsust."
+        "name": "Nimi: sisestage, kuidas soovite, et teid kohtumisel kuvatakse.",
+        "background": "Taust: valige hägusus või virtuaalne taust, kui eelistate rohkem privaatsust."
       },
-      "mic_camera_label": "Mikrofon ja kaamera:",
-      "mic_camera_text": "Kasuta kahte esimest ikooni, et need enne liitumist sisse või välja lülitada.",
-      "devices_label": "Seadmed:",
-      "devices_before_arrow": "Klõpsa iga ikooni väikesel noolel",
-      "devices_after_arrow": "et valida õige mikrofon või veebikaamera.",
-      "audio_tip_label": "Heli nõuanne:",
-      "audio_tip_text": "Kõrvaklapid aitavad vältida kaja. Kui pead kasutama valjuhääldit, hoia helitugevust madalal, et vältida tagasisidet."
+      "mic_camera_label": "Mikrofon ja kaamera",
+      "mic_camera_text": "Kasutage kahte esimest nuppu, et seadmed enne liitumist sisse või välja lülitada.",
+      "devices_label": "Seadmed",
+      "devices_after_arrow": "Valige vajadusel õige mikrofon ja veebikaamera.",
+      "audio_tip_label": "Helinõuanne",
+      "audio_tip_text": "Kõrvaklapid vähendavad kohinat ja kaja. Kui kasutate kõlareid, hoidke helitugevus madalal, et vältida tagasisidet."
     },
     "browser": {
       "heading": "Brauseri ühilduvus",
-      "supported": "<strong>✅ Firefox ja Chrome:</strong> täistoetus helile, videole ja vestlusele.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> ei ole toetatud.",
-      "note": "<em>Muude niššbrauserite ühilduvus pole kontrollitud.</em>",
-      "tip1": "Luba aadressiribalt mikrofonile ja kaamerale ligipääs, kui seda küsitakse.",
-      "tip2": "Lülita jälgimisblokkerid välja või lisa Jitsi lubatud nimekirja.",
-      "tip3": "Laadi kaart pärast õiguste muutmist uuesti, et muudatused rakenduksid."
+      "supported": "Firefox ja Chrome toetavad täielikult heli, videot ja chati.",
+      "unsupported": "Safari, Edge, Opera, Brave ja DuckDuckGo pole praegu toetatud.",
+      "note": "Teiste nišibrauserite ühilduvust pole kontrollitud.",
+      "tip1": "Kui küsitakse, lubage mikrofonile ja kaamerale juurdepääs otse aadressirealt.",
+      "tip2": "Lülitage jälgimisblokeerijad välja või lisage Jitsi lubatud saitide hulka.",
+      "tip3": "Pärast lubade muutmist värskendage kaarti, et muudatused rakenduksid."
     },
     "layout": {
-      "heading": "Liidese paigutus ruumis",
-      "description": "<strong>Põhivideoala</strong> keskel näitab kõiki, kellel on kaamera sisse lülitatud. Allosas asub <strong>juhtpult</strong> kõigi peamiste ikoonidega, sh mikrofon, kaamera, ekraani jagamine, vestlus, osalejad ja muud valikud. Kasuta paremal serval olevat noolega sahtlit <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0Z\"/></svg>, et avada osalejate nimekiri ja jagatud ekraanid."
+      "heading": "Ruumisisese kasutajaliidese paigutus",
+      "description": "Peamine videopaneel keskel näitab kõiki, kellel on kaamera sisse lülitatud. Allosas on juhtimisriba, kus on mikrofoni, kaamera, ekraanijagamisi, chat'i, osalejate ja muude valikute ikoonid. Parempoolne paneel annab juurdepääsu osalejate nimekirjale ja jagatud ekraanidele."
     },
     "toolbar": {
       "heading": "Tööriistariba ikoonid",
@@ -307,42 +306,42 @@
       "rows": {
         "microphone": {
           "label": "Mikrofon",
-          "description": "Lülita mikrofon sisse või välja ja ava seadme menüü nooleikooni <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg> abil."
+          "description": "Lülitage mikrofon sisse või välja ja valige õige heliseade."
         },
         "camera": {
           "label": "Kaamera",
-          "description": "Lülita kaamera sisse või välja ja vali seadmed nooleikooni <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg> kaudu."
+          "description": "Lülitage kaamera sisse või välja ning valige sobiv videoallikas."
         },
         "screen": {
           "label": "Ekraani jagamine",
-          "description": "Jaga oma ekraani või akent. Vali kaart, aken või kogu töölaud."
+          "description": "Jagage kogu ekraani, konkreetset kaarti või akent."
         },
         "chat": {
           "label": "Vestlus",
-          "description": "Ava tekstivestlus sõnumite või linkide jagamiseks. Puuduta külgriba avamiseks või sulgemiseks."
+          "description": "Avage tekstivestlus sõnumite või linkide edastamiseks."
         },
         "participants": {
           "label": "Osalejad / Kutsu",
-          "description": "Kutsu teisi või vaata praegust osalejate nimekirja. Kopeeri ruumi link või luba ootavad külalised."
+          "description": "Vaadake, kes ruumis on, kutsuge teisi ja andke ootel külalistele luba."
         },
         "more": {
-          "label": "Lisavalikud",
-          "description": "Ava turvavalikud, seadistusmenüüd või täiendavad tööriistad. Sea parool või kohanda ooteruumi."
+          "label": "Muud valikud",
+          "description": "Reguleerige turbe- ja seadmevalikuid ning kasutage lisatööriistu vastavalt vajadusele."
         },
         "hangup": {
           "label": "Lõpeta kõne",
-          "description": "Lahku ruumist."
+          "description": "Lahkuge ruumist ja lõpetage vestlus."
         }
       }
     },
     "quick": {
-      "heading": "Kiirliitumise link",
-      "cta": "💫 Liitu hetkega aadressil jitsi.bubuit.net/soultribe",
-      "note": "Testi oma seadistust või kohtu sõbralike külalistega. Kontot pole vaja."
+      "heading": "Kiirlink liitumiseks",
+      "cta": "Liituge hetkega aadressil jitsi.bubuit.net/soultribe",
+      "note": "Testige oma seadistust või kohtuge uute külalistega. Kontot pole vaja."
     },
     "closing": {
-      "heading": "Lõppsõna",
-      "text": "Naudi ühenduse loomist just sulle sobival viisil ja tempos."
+      "heading": "Lõppsõnad",
+      "text": "Nautige suhtlust omal moel ja omas tempos."
     }
   }
 }

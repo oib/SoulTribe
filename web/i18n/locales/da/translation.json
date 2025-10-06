@@ -185,42 +185,41 @@
     "language_set_to": "Sprog indstillet til"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Gæste Quick-Start",
-    "intro": "Denne guide hjælper nye gæster med at deltage i SoulTribe Jitsi-rum med tillid. Vælg kun de trin, du har brug for. Tekst, lyd og video er alle valgfri.",
+    "title": "Kort Jitsi-guide til gæster på SoulTribe",
+    "intro": "Denne guide hjælper nye gæster med at deltage i SoulTribes Jitsi-rum med ro i sindet. Vælg kun de trin, du har brug for. Tekst, lyd og video er frivilligt.",
     "prejoin": {
-      "heading": "Instruktioner før tilslutning",
+      "heading": "Før du går ind",
       "steps": {
-        "options": "<strong>Kend dine muligheder.</strong> Jitsi understøtter <strong>tekst</strong>, <strong>lyd</strong> og <strong>video</strong>. Du beslutter, hvad du aktiverer; hver kanal kan forblive slukket.",
-        "permissions": "<strong>Giv tilladelser.</strong> Når login-siden anmoder om adgang, tillad browseren at bruge mikrofon og kamera, så du kan tænde dem senere.",
-        "setup": "<strong>Opsæt dig før indgang.</strong>"
+        "options": "Lær mulighederne at kende. Jitsi understøtter tekst, lyd og video. Du bestemmer, hvad der skal aktiveres; hver kanal kan sagtens blive slået fra.",
+        "permissions": "Giv de nødvendige tilladelser. Når loginsiden beder om adgang, så tillad browseren at bruge mikrofonen og kameraet, så du kan tænde for dem senere.",
+        "setup": "Gør dig klar, inden du går ind i rummet."
       },
       "substeps": {
-        "name": "<strong>Navn:</strong> Indtast, hvordan du ønsker, at andre deltagere skal se dig på mødet.",
-        "background": "<strong>Baggrund:</strong> Vælg sløring eller en virtuel baggrund, hvis du ønsker mere privatliv."
+        "name": "Navn: skriv det navn, du vil have, andre ser i mødet.",
+        "background": "Baggrund: vælg sløring eller et virtuelt bagtæppe, hvis du ønsker mere privatliv."
       },
-      "mic_camera_label": "Mikrofon & kamera:",
-      "mic_camera_text": "Brug de første to ikoner til at tænde eller slukke for dem før tilslutning.",
-      "devices_label": "Enheder:",
-      "devices_before_arrow": "Klik på den lille pil for hvert ikon",
-      "devices_after_arrow": "for at vælge den rigtige mikrofon eller webcam.",
-      "audio_tip_label": "Lydtip:",
-      "audio_tip_text": "Et headset eller hovedtelefoner undgår ekko. Hvis du skal bruge højttalere, hold volumen lavt for at undgå feedback."
+      "mic_camera_label": "Mikrofon og kamera",
+      "mic_camera_text": "Brug de to første knapper til at slå dem til eller fra, inden du deltager.",
+      "devices_label": "Enheder",
+      "devices_after_arrow": "Vælg det rigtige mikrofon- eller kameraudstyr, når du bliver bedt om det.",
+      "audio_tip_label": "Lydtip",
+      "audio_tip_text": "Et headset eller hovedtelefoner forhindrer ekko. Hvis du bruger højtalere, så hold lydstyrken lav for at undgå tilbagekobling."
     },
     "browser": {
-      "heading": "Browserkompatibilitet",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Fuld støtte til lyd, video og chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Ikke understøttet.",
-      "note": "<em>Andre niche browsere er ikke blevet verificeret.</em>",
-      "tip1": "Aktivér mikrofon/kamera tilladelser i adressebjælken, hvis det anmodes.",
-      "tip2": "Sluk for tracker-blokkere eller tilføj Jitsi til tilladt liste.",
-      "tip3": "Genindlæs fanen efter ændring af tilladelser for at anvende ændringerne."
+      "heading": "Browser-kompatibilitet",
+      "supported": "Firefox og Chrome understøtter alle funktioner for lyd, video og chat.",
+      "unsupported": "Safari, Edge, Opera, Brave og DuckDuckGo er endnu ikke understøttet.",
+      "note": "Andre nichebrowsere er ikke testet.",
+      "tip1": "Tillad adgang til mikrofon og kamera via adresselinjen, når du bliver spurgt.",
+      "tip2": "Slå blokering af trackere fra, eller tilføj Jitsi som godkendt websted.",
+      "tip3": "Opdater fanen efter at have ændret tilladelser, så ændringerne træder i kraft."
     },
     "layout": {
-      "heading": "Grænseflade layout i rummet",
-      "description": "Det <strong>hoved videoområde</strong> i midten viser alle, der har kamera tændt. Nedenfor er <strong>kontrolpanelet</strong> med nøgleikoner inklusive mikrofon, kamera, skærmdeling, chat, deltagere og flere muligheder. Brug pil-skuffen på højre kant <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> for at åbne deltagerlisten og delte skærme."
+      "heading": "Sådan er rummet sat op",
+      "description": "Det midterste videoområde viser alle med kameraet tændt. Nederst finder du kontrolbjælken med ikoner for mikrofon, kamera, deling af skærm, chat, deltagere og flere muligheder. I højre side kan du åbne deltagere og skærmdelinger, når du har brug for dem."
     },
     "toolbar": {
-      "heading": "Værktøjslinje ikoner",
+      "heading": "Ikoner på værktøjslinjen",
       "columns": {
         "icon": "Ikon",
         "label": "Etiket",
@@ -229,42 +228,42 @@
       "rows": {
         "microphone": {
           "label": "Mikrofon",
-          "description": "Skift din mikrofon og åbn enhedsmenuen ved hjælp af pil-ikonet <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Skift mikrofonen til eller fra, og vælg det ønskede lydudstyr i menuen."
         },
         "camera": {
           "label": "Kamera",
-          "description": "Skift dit kamera og vælg enheder via pil-ikonet <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Tænd eller sluk kameraet, og vælg den kameraenhed, der passer dig."
         },
         "screen": {
-          "label": "Skærmdeling",
-          "description": "Del din skærm eller vindue. Vælg fane, vindue eller fuld desktop."
+          "label": "Del skærm",
+          "description": "Del enten hele skærmen, en bestemt fane eller et vindue."
         },
         "chat": {
           "label": "Chat",
-          "description": "Åbn tekstchat for at sende beskeder eller dele links. Tryk for at skifte sidepanelet."
+          "description": "Åbn tekstchatten for at sende beskeder eller dele links."
         },
         "participants": {
           "label": "Deltagere / Inviter",
-          "description": "Inviter andre eller se deltagerlisten. Kopier rumslinket eller indrøm ventende gæster."
+          "description": "Se hvem der er i rummet, inviter flere, og giv ventende gæster adgang."
         },
         "more": {
           "label": "Flere muligheder",
-          "description": "Åbn sikkerhedsindstillinger, enhedsindstillinger eller yderligere værktøjer. Indstil adgangskode eller juster ventesal tilstand."
+          "description": "Tilpas sikkerhed, vælg enheder eller få adgang til andre værktøjer efter behov."
         },
         "hangup": {
-          "label": "Læg på",
-          "description": "Forlad rummet."
+          "label": "Forlad rummet",
+          "description": "Afslut mødet og luk for forbindelsen."
         }
       }
     },
     "quick": {
-      "heading": "Hurtig tilslutningslink",
-      "cta": "💫 Deltag øjeblikkeligt på jitsi.bubuit.net/soultribe",
-      "note": "Test dit setup eller mød venlige gæster. Ingen konto påkrævet."
+      "heading": "Hurtigt link til at deltage",
+      "cta": "Deltag straks via jitsi.bubuit.net/soultribe",
+      "note": "Test din opsætning, eller mød nye gæster i et sikkert rum. Der kræves ingen konto."
     },
     "closing": {
-      "heading": "Afsluttende note",
-      "text": "Nyd at forbinde på din måde og på dine betingelser."
+      "heading": "Afsluttende besked",
+      "text": "Nyd at knytte kontakter på den måde og i det tempo, der passer dig bedst."
     }
   }
 }

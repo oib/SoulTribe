@@ -89,86 +89,85 @@
     "page_title": "SoulTribe.chat – Encuentra tu tribu del alma"
   },
   "guestGuide": {
-    "title": "Guía rápida para invitados en SoulTribe Jitsi",
-    "intro": "Esta guía ayuda a los invitados por primera vez a unirse a salas de SoulTribe Jitsi con confianza. Elige los pasos que necesites. El texto, el audio y el vídeo son opcionales.",
+    "title": "Guía rápida de Jitsi para invitados de SoulTribe",
+    "intro": "Esta guía ayuda a los invitados primerizos a participar en salas Jitsi de SoulTribe con confianza. Elige solo los pasos que necesites. Texto, audio y video son opcionales.",
     "prejoin": {
-      "heading": "Preparativos antes de entrar",
+      "heading": "Antes de unirte",
       "steps": {
-        "options": "<strong>Conoce tus opciones.</strong> Jitsi admite <strong>texto</strong>, <strong>audio</strong> y <strong>vídeo</strong>. Tú decides qué activar; cada canal puede permanecer desactivado.",
-        "permissions": "<strong>Concede permisos.</strong> Cuando la página de acceso solicite permiso, autoriza al navegador a usar el micrófono y la cámara para poder activarlos después.",
-        "setup": "<strong>Configúrate antes de entrar.</strong>"
+        "options": "Conoce tus opciones. Jitsi permite texto, audio y video. Tú decides qué activar; cualquier canal puede permanecer apagado.",
+        "permissions": "Concede los permisos necesarios. Cuando la página de acceso lo solicite, permite que el navegador use el micrófono y la cámara para poder encenderlos más tarde.",
+        "setup": "Haz los ajustes que necesites antes de entrar a la sala."
       },
       "substeps": {
-        "name": "<strong>Nombre:</strong> Indica cómo quieres que te vean las demás personas en la reunión.",
-        "background": "<strong>Fondo:</strong> Elige desenfoque o un fondo virtual si quieres más privacidad."
+        "name": "Nombre: indica cómo quieres que los demás vean tu nombre en la reunión.",
+        "background": "Fondo: elige desenfoque o un fondo virtual si prefieres mayor privacidad."
       },
-      "mic_camera_label": "Micrófono y cámara:",
-      "mic_camera_text": "Usa los dos primeros iconos para activarlos o desactivarlos antes de unirte.",
-      "devices_label": "Dispositivos:",
-      "devices_before_arrow": "Haz clic en la pequeña flecha de cada icono",
-      "devices_after_arrow": "para elegir el micrófono o la cámara correctos.",
-      "audio_tip_label": "Consejo de audio:",
-      "audio_tip_text": "Un auricular o unos cascos evitan el eco. Si tienes que usar altavoces, mantén el volumen bajo para prevenir la retroalimentación."
+      "mic_camera_label": "Micrófono y cámara",
+      "mic_camera_text": "Utiliza los dos primeros botones para encenderlos o apagarlos antes de unirte.",
+      "devices_label": "Dispositivos",
+      "devices_after_arrow": "Selecciona el micrófono o la cámara que quieras utilizar cuando se te pida.",
+      "audio_tip_label": "Consejo de audio",
+      "audio_tip_text": "Unos auriculares ayudan a evitar el eco. Si usas altavoces, mantén el volumen bajo para evitar retroalimentación."
     },
     "browser": {
       "heading": "Compatibilidad de navegadores",
-      "supported": "<strong>✅ Firefox y Chrome:</strong> Compatibilidad total con audio, vídeo y chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> No compatibles.",
-      "note": "<em>El resto de navegadores poco comunes no se han verificado.</em>",
-      "tip1": "Activa los permisos de micrófono y cámara en la barra de direcciones cuando se te indique.",
-      "tip2": "Desactiva los bloqueadores de rastreadores o añade Jitsi a la lista permitida.",
-      "tip3": "Recarga la pestaña después de cambiar permisos para que surtan efecto."
+      "supported": "Firefox y Chrome ofrecen soporte completo para audio, video y chat.",
+      "unsupported": "Safari, Edge, Opera, Brave y DuckDuckGo no están soportados actualmente.",
+      "note": "Otros navegadores de nicho no se han verificado.",
+      "tip1": "Cuando se te solicite, permite el acceso al micrófono y la cámara desde la barra de direcciones.",
+      "tip2": "Desactiva bloqueadores de seguimiento o añade Jitsi a la lista de sitios permitidos.",
+      "tip3": "Recarga la pestaña después de cambiar permisos para que los ajustes surtan efecto."
     },
     "layout": {
-      "heading": "Distribución dentro de la sala",
-      "description": "El <strong>área de vídeo principal</strong> en el centro muestra a todas las personas que tienen la cámara encendida. En la parte inferior, la <strong>barra de control</strong> reúne los iconos clave: micrófono, cámara, compartir pantalla, chat, participantes y más opciones. Usa el cajón con flecha en el borde derecho <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> para abrir la lista de participantes y las pantallas compartidas."
+      "heading": "Cómo está organizada la sala",
+      "description": "El área de video central muestra a todos los que tengan la cámara encendida. En la parte inferior está la barra de controles con iconos para el micrófono, la cámara, compartir pantalla, el chat, la lista de participantes y otras opciones. El panel lateral derecho muestra la lista de asistentes y las pantallas compartidas."
     },
     "toolbar": {
       "heading": "Iconos de la barra de herramientas",
       "columns": {
         "icon": "Icono",
-        "label": "Nombre",
+        "label": "Etiqueta",
         "description": "Descripción"
       },
       "rows": {
         "microphone": {
           "label": "Micrófono",
-          "description": "Activa o desactiva tu micrófono y abre el menú de dispositivos con el icono de flecha <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Activa o desactiva tu micrófono y elige el dispositivo correcto en el menú correspondiente."
         },
         "camera": {
           "label": "Cámara",
-          "description": "Activa o desactiva la cámara y elige el dispositivo mediante la flecha <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "description": "Enciende o apaga tu cámara y selecciona la fuente de video adecuada."
         },
         "screen": {
           "label": "Compartir pantalla",
-          "description": "Comparte tu pantalla o una ventana. Elige pestaña, ventana o escritorio completo."
+          "description": "Comparte todo tu escritorio, una pestaña en particular o una ventana."
         },
         "chat": {
           "label": "Chat",
-          "description": "Abre el chat de texto para enviar mensajes o enlaces. Toca para alternar el panel lateral."
+          "description": "Abre el chat de texto para enviar mensajes o compartir enlaces."
         },
         "participants": {
           "label": "Participantes / Invitar",
-          "description": "Invita a otras personas o revisa quién está en la sala. Copia el enlace de la sala o admite invitados en espera."
+          "description": "Revisa quién está en la sala, invita a más personas y autoriza la entrada a los invitados que aguardan."
         },
         "more": {
           "label": "Más opciones",
-          "description": "Abre opciones de seguridad, ajustes de dispositivos u otras herramientas. Configura una contraseña o ajusta el modo sala de espera."
+          "description": "Configura la seguridad, elige dispositivos y accede a herramientas adicionales."
         },
         "hangup": {
-          "label": "Colgar",
-          "description": "Sal de la sala."
+          "label": "Abandonar",
+          "description": "Sal de la sala y termina la llamada."
         }
       }
     },
     "quick": {
-      "heading": "Enlace rápido",
-      "cta": "💫 Únete al instante en jitsi.bubuit.net/soultribe",
-      "note": "Prueba tu configuración o conoce a invitados amigables. No necesitas cuenta."
+      "heading": "Enlace rápido para unirse",
+      "cta": "Únete de inmediato en jitsi.bubuit.net/soultribe",
+      "note": "Prueba tu configuración o conoce a nuevos invitados en un entorno seguro. No es necesario tener cuenta."
     },
     "closing": {
       "heading": "Mensaje final",
-      "text": "Disfruta conectando a tu manera y a tu ritmo."
+      "text": "Disfruta de conectar con otros a tu manera y a tu ritmo."
     }
   },
   "language": {
