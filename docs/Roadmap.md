@@ -28,6 +28,11 @@ Last updated: 2025-09-16
 - Security
   - ✅ Add basic rate limiting across `/api/match/*` and `/api/meetup/*` *(per-IP sliding window limits)*
   - ✅ Audit logs for annotate/meet actions *(structured JSON to `audit` logger)*
+- Documentation & i18n
+  - ✅ Guest Jitsi guide updated with full `data-i18n` coverage and localized strings (EN/DE/ES)
+  - 🔲 Provide native translations for remaining locales beyond English fallbacks
+  - 🔲 Automate translation handoff (export current strings, integrate with translators or MT workflow)
+  - 🔲 Refresh docs in `docs/Translation_Status.md` and `docs/Translation_Needs.md` once locales ship
 
 ## Medium-Term
 - Profile

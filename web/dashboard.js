@@ -12,6 +12,8 @@
     } catch { return tz; }
   }
 
+  const MATCH_REFRESH_INTERVAL_MS = 15000;
+
   // Validate IANA timezone identifier
   function isValidIanaTimeZone(tz) {
     try {

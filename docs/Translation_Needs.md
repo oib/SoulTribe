@@ -2,9 +2,11 @@
 
 This document tracks the internationalization (i18n) status of the SoulTribe.chat application.
 
-## Current Status (2025-09-18)
+## Current Status (2025-10-06)
 
-✅ **All UI elements have been translated to 28 languages** including:
+✅ **Core UI strings remain translated across 28 languages.**
+
+⚠️ **New content:** Guest-facing documentation (`web/docs/guest-jitsi-guide.html`) now has full `data-i18n` coverage. Only English, German, and Spanish include localized copy; all other locales currently fall back to English placeholders.
 
 - Core authentication flows (login, registration, password reset)
 - Navigation and UI elements
@@ -49,36 +51,8 @@ This document tracks the internationalization (i18n) status of the SoulTribe.cha
 
 ### Translation Coverage
 
-All translations are complete for the following 28 languages:
-
-1. English (en) - Source language
-2. German (de)
-3. French (fr)
-4. Spanish (es)
-5. Italian (it)
-6. Portuguese (pt)
-7. Dutch (nl)
-8. Swedish (sv)
-9. Norwegian (no)
-10. Danish (da)
-11. Finnish (fi)
-12. Polish (pl)
-13. Czech (cs)
-14. Hungarian (hu)
-15. Romanian (ro)
-16. Bulgarian (bg)
-17. Slovak (sk)
-18. Croatian (hr)
-19. Lithuanian (lt)
-20. Slovenian (sl)
-21. Latvian (lv)
-22. Estonian (et)
-23. Irish (ga)
-24. Maltese (mt)
-25. Greek (el)
-26. Russian (ru)
-27. Turkish (tr)
-28. Ukrainian (uk)
+- **Fully localized (UI + guest guide):** English (en), German (de), Spanish (es)
+- **UI localized, guest guide pending native copy:** French (fr), Italian (it), Portuguese (pt), Dutch (nl), Swedish (sv), Norwegian (no), Danish (da), Finnish (fi), Polish (pl), Czech (cs), Hungarian (hu), Romanian (ro), Bulgarian (bg), Slovak (sk), Croatian (hr), Lithuanian (lt), Slovenian (sl), Latvian (lv), Estonian (et), Irish (ga), Maltese (mt), Greek (el), Russian (ru), Turkish (tr), Ukrainian (uk)
 
 ## Maintenance
 
@@ -113,10 +87,9 @@ When making changes to the English source strings:
 
 ## Notes
 
-- All translations have been reviewed by native speakers
-- The translation memory is updated after each batch of changes
-- The UI has been tested with different text lengths and character sets
-- Right-to-left (RTL) language support is implemented for applicable languages
+- Guest Jitsi guide translations in progress; prioritize the languages listed under "guest guide pending".
+- Translation memory will be updated once new locale strings are received.
+- RTL language support remains available for previously localized surfaces.
 
 ## Implementation Notes
 
@@ -127,7 +100,12 @@ When making changes to the English source strings:
 
 ## Pending Tasks
 
-- **Implement stepwise i18n directory migration**
+- **Guest guide localization rollout**
+  1. Produce native translations for `guestGuide.*` keys in all locales beyond `en`, `de`, `es`.
+  2. QA the updated guide in each language (layout, SVG captions, table wrapping).
+  3. Update `docs/Translation_Status.md` once each locale ships.
+
+- **Implement stepwise i18n directory migration** *(unchanged)*
   1. Mirror the current `web/i18n/` tree into `src/frontend/i18n/` without removing legacy files.
   2. Update `web/i18n/i18n.js` loaders to read from the new path while keeping compatibility with existing deployments.
   3. Extend the interim build process (see `docs/dirs.md`) to copy compiled translations into `web/i18n/` until the full migration completes.

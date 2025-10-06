@@ -12,3 +12,4 @@ alembic
 gunicorn
 email-validator
 timezonefinder
+redis

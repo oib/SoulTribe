@@ -1,14 +1,19 @@
 from __future__ import annotations
+import logging
+
 from fastapi import APIRouter, Depends, HTTPException, Response
 from pydantic import BaseModel, Field
 from typing import Dict, Any, Optional, List
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 import hashlib
 import json
 
 from services.scoring import score_pair
+from services.availability import intersect_hourly_slots
+from sqlalchemy import text
 from db import get_session
-from models import Radix, Profile, User
+from models import Radix, Profile, User, AvailabilitySlot
 from models import Match
 from services.jwt_auth import get_current_user_id
 from services.rate_limit import rate_limit
@@ -18,6 +23,7 @@ import re
 import subprocess
 
 router = APIRouter(prefix="/api/match", tags=["match"])
+logger = logging.getLogger("soultribe.match")
 
 # Cache settings (seconds)
 MATCH_SCORE_CACHE_TTL = 60 * 60  # 1 hour
@@ -147,6 +153,13 @@ def _score_from_cache(key: str) -> Optional[tuple[int, Dict[str, Any]]]:
 def _store_score_cache(key: str, score: int, breakdown: Dict[str, Any]) -> None:
     payload = json.dumps({"score": score, "breakdown": breakdown}, ensure_ascii=False).encode("utf-8")
     cache_set(key, payload, MATCH_SCORE_CACHE_TTL)
+
+
+def _is_bot_user(user: Optional[User]) -> bool:
+    if not user or not getattr(user, "email", None):
+        return False
+    email = user.email.lower()
+    return email.endswith("@soultribe.chat") and email.startswith("gen")
 
 
 class MatchScoreIn(BaseModel):
@@ -283,16 +296,18 @@ def match_find(
             ou = users.get(other_user_id)
             if not ou:
                 continue
-            try:
-                if getattr(ou, 'last_login_at', None) is not None and ou.last_login_at < cutoff:
-                    continue
-            except Exception:
-                pass
+            if not _is_bot_user(ou):
+                try:
+                    if getattr(ou, 'last_login_at', None) is not None and ou.last_login_at < cutoff:
+                        continue
+                except Exception:
+                    pass
             # Language intersection enforcement
             other_langs = extract_langs(other_profile)
             if target_langs and other_langs and target_langs.isdisjoint(other_langs):
-                # No shared language → skip this candidate
-                continue
+                # No shared language → skip this candidate unless other user is a managed bot
+                if not _is_bot_user(ou):
+                    continue
             # Compute shared languages list for UI (stable order)
             shared_list = sorted(list(target_langs.intersection(other_langs))) if (target_langs and other_langs) else []
             # Determine moon_half_weight
@@ -411,17 +426,43 @@ def match_find(
 
             # If a Match already exists between these users, include its comment
             from sqlmodel import select as _select
-            existing_match = session.exec(
-                _select(Match).where(
-                    ((Match.a_user_id == inp.user_id) & (Match.b_user_id == other_user_id)) |
-                    ((Match.a_user_id == other_user_id) & (Match.b_user_id == inp.user_id))
-                )
-            ).first()
             comment = None
             comment_lang = None
             has_other = False
             mid = None
             available_langs: List[str] = []
+            existing_match = None
+            try:
+                existing_match = session.exec(
+                    _select(Match).where(
+                        ((Match.a_user_id == inp.user_id) & (Match.b_user_id == other_user_id)) |
+                        ((Match.a_user_id == other_user_id) & (Match.b_user_id == inp.user_id))
+                    )
+                ).first()
+            except Exception as ex:
+                if "comments_by_lang" in str(ex):
+                    try:
+                        session.rollback()
+                    except Exception:
+                        pass
+                    raw = session.exec(
+                        text(
+                            """
+                            SELECT id, comment
+                            FROM match
+                            WHERE (a_user_id = :user_a AND b_user_id = :user_b)
+                               OR (a_user_id = :user_b AND b_user_id = :user_a)
+                            LIMIT 1
+                            """
+                        ),
+                        params={"user_a": inp.user_id, "user_b": other_user_id}
+                    ).first()
+                    if raw:
+                        mid = raw.id if hasattr(raw, "id") else raw[0]
+                        comment = raw.comment if hasattr(raw, "comment") else raw[1]
+                else:
+                    raise
+
             if existing_match:
                 mid = existing_match.id
                 comment, comment_lang, available_langs = _pick_comment_for_viewer(existing_match, viewer_langs)
@@ -499,42 +540,164 @@ class MatchCreateOut(BaseModel):
 
 @router.post("/create", response_model=MatchCreateOut, dependencies=[Depends(rate_limit("match:create", limit=5, window_seconds=60))])
 def match_create(inp: MatchCreateIn, session=Depends(get_session), user_id: int = Depends(get_current_user_id)) -> MatchCreateOut:
-    # Ensure users exist and have radices
-    ua = session.get(User, inp.a_user_id)
-    ub = session.get(User, inp.b_user_id)
-    if ua is None or ub is None:
-        raise HTTPException(status_code=404, detail="One or both users not found")
+    logger.info(
+        "match_create: start a=%s b=%s actor=%s",
+        inp.a_user_id,
+        inp.b_user_id,
+        user_id,
+    )
+    try:
+        # Ensure users exist and have radices
+        ua = session.get(User, inp.a_user_id)
+        ub = session.get(User, inp.b_user_id)
+        if ua is None or ub is None:
+            raise HTTPException(status_code=404, detail="One or both users not found")
 
-    # Idempotency: return existing match if already present (A-B or B-A)
-    from sqlmodel import select as _select
-    existing = session.exec(
-        _select(Match).where(
-            ((Match.a_user_id == inp.a_user_id) & (Match.b_user_id == inp.b_user_id)) |
-            ((Match.a_user_id == inp.b_user_id) & (Match.b_user_id == inp.a_user_id))
+        # Idempotency: return existing match if already present (A-B or B-A)
+        from sqlmodel import select as _select
+
+        try:
+            existing = session.exec(
+                _select(Match).where(
+                    ((Match.a_user_id == inp.a_user_id) & (Match.b_user_id == inp.b_user_id)) |
+                    ((Match.a_user_id == inp.b_user_id) & (Match.b_user_id == inp.a_user_id))
+                )
+            ).first()
+        except Exception as sel_exc:
+            if "comments_by_lang" in str(sel_exc):
+                logger.warning(
+                    "match_create: legacy select fallback due to missing comments_by_lang column",
+                    exc_info=True,
+                )
+                try:
+                    session.rollback()
+                except Exception:
+                    pass
+                raw_existing = session.exec(
+                    text(
+                        """
+                        SELECT id, score_numeric
+                        FROM match
+                        WHERE (a_user_id = :user_a AND b_user_id = :user_b)
+                           OR (a_user_id = :user_b AND b_user_id = :user_a)
+                        LIMIT 1
+                        """
+                    ),
+                    params={"user_a": inp.a_user_id, "user_b": inp.b_user_id},
+                ).first()
+                if raw_existing:
+                    match_id = raw_existing.id if hasattr(raw_existing, "id") else raw_existing[0]
+                    match_score = (
+                        raw_existing.score_numeric if hasattr(raw_existing, "score_numeric") else raw_existing[1]
+                    )
+                    return MatchCreateOut(match_id=match_id, score=match_score)
+            else:
+                raise
+            existing = None
+        if existing:
+            logger.debug(
+                "match_create: existing match found id=%s score=%s",
+                existing.id,
+                existing.score_numeric,
+            )
+            return MatchCreateOut(match_id=existing.id, score=existing.score_numeric)
+
+        ra = session.get(Radix, inp.a_user_id)
+        rb = session.get(Radix, inp.b_user_id)
+        if ra is None or rb is None:
+            raise HTTPException(status_code=400, detail="One or both users missing radix")
+        pa = session.get(Profile, inp.a_user_id)
+        pb = session.get(Profile, inp.b_user_id)
+        # Determine flags
+        a_known = bool(pa.birth_time_known) if pa else True
+        b_known = bool(pb.birth_time_known) if pb else True
+        moon_half = not (a_known and b_known)
+        lp_equal = (pa and pb and (pa.lang_primary and pa.lang_primary == pb.lang_primary)) or False
+        ls_equal = (pa and pb and (pa.lang_secondary and pa.lang_secondary == pb.lang_secondary)) or False
+        # Compute score
+        score, breakdown = score_pair(
+            ra.json,
+            rb.json,
+            moon_half_weight=moon_half,
+            lang_primary_equal=bool(lp_equal),
+            lang_secondary_equal=bool(ls_equal),
         )
-    ).first()
-    if existing:
-        return MatchCreateOut(match_id=existing.id, score=existing.score_numeric)
-    ra = session.get(Radix, inp.a_user_id)
-    rb = session.get(Radix, inp.b_user_id)
-    if ra is None or rb is None:
-        raise HTTPException(status_code=400, detail="One or both users missing radix")
-    pa = session.get(Profile, inp.a_user_id)
-    pb = session.get(Profile, inp.b_user_id)
-    # Determine flags
-    a_known = bool(pa.birth_time_known) if pa else True
-    b_known = bool(pb.birth_time_known) if pb else True
-    moon_half = not (a_known and b_known)
-    lp_equal = (pa and pb and (pa.lang_primary and pa.lang_primary == pb.lang_primary)) or False
-    ls_equal = (pa and pb and (pa.lang_secondary and pa.lang_secondary == pb.lang_secondary)) or False
-    # Compute score
-    score, breakdown = score_pair(ra.json, rb.json, moon_half_weight=moon_half, lang_primary_equal=bool(lp_equal), lang_secondary_equal=bool(ls_equal))
-    # Create match
-    m = Match(a_user_id=inp.a_user_id, b_user_id=inp.b_user_id, score_numeric=score, score_json=breakdown, status="suggested")
-    session.add(m)
-    session.commit()
-    session.refresh(m)
-    return MatchCreateOut(match_id=m.id, score=score)
+        logger.debug(
+            "match_create: computed score=%s moon_half=%s lp_equal=%s ls_equal=%s",
+            score,
+            moon_half,
+            lp_equal,
+            ls_equal,
+        )
+        # Create match
+        m = Match(
+            a_user_id=inp.a_user_id,
+            b_user_id=inp.b_user_id,
+            score_numeric=score,
+            score_json=breakdown,
+            status="suggested",
+        )
+        try:
+            session.add(m)
+            session.commit()
+            session.refresh(m)
+            logger.info(
+                "match_create: created match id=%s score=%s",
+                m.id,
+                score,
+            )
+            return MatchCreateOut(match_id=m.id, score=score)
+        except Exception as commit_exc:
+            if "comments_by_lang" not in str(commit_exc):
+                raise
+            logger.warning(
+                "match_create: legacy insert fallback due to missing comments_by_lang column",
+                exc_info=True,
+            )
+            try:
+                session.rollback()
+            except Exception:
+                pass
+            raw_insert = session.exec(
+                text(
+                    """
+                    INSERT INTO match (a_user_id, b_user_id, score_numeric, score_json, status, created_at)
+                    VALUES (:a_user, :b_user, :score, :score_json::jsonb, :status, :created_at)
+                    RETURNING id
+                    """
+                ),
+                params={
+                    "a_user": inp.a_user_id,
+                    "b_user": inp.b_user_id,
+                    "score": score,
+                    "score_json": json.dumps(breakdown),
+                    "status": "suggested",
+                    "created_at": datetime.utcnow(),
+                },
+            ).first()
+            if not raw_insert:
+                raise HTTPException(status_code=500, detail="match_create failed: legacy insert returned no rows")
+            match_id = raw_insert.id if hasattr(raw_insert, "id") else raw_insert[0]
+            logger.info(
+                "match_create: legacy insert created match id=%s score=%s",
+                match_id,
+                score,
+            )
+            return MatchCreateOut(match_id=match_id, score=score)
+    except HTTPException:
+        raise
+    except Exception as exc:  # pragma: no cover - debug hook
+        try:
+            session.rollback()
+        except Exception:
+            pass
+        logger.exception(
+            "match_create: failed a=%s b=%s actor=%s",
+            inp.a_user_id,
+            inp.b_user_id,
+            user_id,
+        )
+        raise HTTPException(status_code=500, detail=f"match_create failed: {exc}")
 
 
 class MatchAnnotateIn(BaseModel):
