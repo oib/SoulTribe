@@ -185,86 +185,86 @@
     "language_set_to": "Sprog indstillet til"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "SoulTribe Jitsi Gæste Quick-Start",
+    "intro": "Denne guide hjælper nye gæster med at deltage i SoulTribe Jitsi-rum med tillid. Vælg kun de trin, du har brug for. Tekst, lyd og video er alle valgfri.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Instruktioner før tilslutning",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "<strong>Kend dine muligheder.</strong> Jitsi understøtter <strong>tekst</strong>, <strong>lyd</strong> og <strong>video</strong>. Du beslutter, hvad du aktiverer; hver kanal kan forblive slukket.",
+        "permissions": "<strong>Giv tilladelser.</strong> Når login-siden anmoder om adgang, tillad browseren at bruge mikrofon og kamera, så du kan tænde dem senere.",
+        "setup": "<strong>Opsæt dig før indgang.</strong>"
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "<strong>Navn:</strong> Indtast, hvordan du ønsker, at andre deltagere skal se dig på mødet.",
+        "background": "<strong>Baggrund:</strong> Vælg sløring eller en virtuel baggrund, hvis du ønsker mere privatliv."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Mikrofon & kamera:",
+      "mic_camera_text": "Brug de første to ikoner til at tænde eller slukke for dem før tilslutning.",
+      "devices_label": "Enheder:",
+      "devices_before_arrow": "Klik på den lille pil for hvert ikon",
+      "devices_after_arrow": "for at vælge den rigtige mikrofon eller webcam.",
+      "audio_tip_label": "Lydtip:",
+      "audio_tip_text": "Et headset eller hovedtelefoner undgår ekko. Hvis du skal bruge højttalere, hold volumen lavt for at undgå feedback."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Browserkompatibilitet",
+      "supported": "<strong>✅ Firefox & Chrome:</strong> Fuld støtte til lyd, video og chat.",
+      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Ikke understøttet.",
+      "note": "<em>Andre niche browsere er ikke blevet verificeret.</em>",
+      "tip1": "Aktivér mikrofon/kamera tilladelser i adressebjælken, hvis det anmodes.",
+      "tip2": "Sluk for tracker-blokkere eller tilføj Jitsi til tilladt liste.",
+      "tip3": "Genindlæs fanen efter ændring af tilladelser for at anvende ændringerne."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Grænseflade layout i rummet",
+      "description": "Det <strong>hoved videoområde</strong> i midten viser alle, der har kamera tændt. Nedenfor er <strong>kontrolpanelet</strong> med nøgleikoner inklusive mikrofon, kamera, skærmdeling, chat, deltagere og flere muligheder. Brug pil-skuffen på højre kant <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> for at åbne deltagerlisten og delte skærme."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Værktøjslinje ikoner",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Ikon",
+        "label": "Etiket",
+        "description": "Beskrivelse"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Mikrofon",
+          "description": "Skift din mikrofon og åbn enhedsmenuen ved hjælp af pil-ikonet <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Kamera",
+          "description": "Skift dit kamera og vælg enheder via pil-ikonet <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Skærmdeling",
+          "description": "Del din skærm eller vindue. Vælg fane, vindue eller fuld desktop."
         },
         "chat": {
           "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "description": "Åbn tekstchat for at sende beskeder eller dele links. Tryk for at skifte sidepanelet."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Deltagere / Inviter",
+          "description": "Inviter andre eller se deltagerlisten. Kopier rumslinket eller indrøm ventende gæster."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Flere muligheder",
+          "description": "Åbn sikkerhedsindstillinger, enhedsindstillinger eller yderligere værktøjer. Indstil adgangskode eller juster ventesal tilstand."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Læg på",
+          "description": "Forlad rummet."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Hurtig tilslutningslink",
+      "cta": "💫 Deltag øjeblikkeligt på jitsi.bubuit.net/soultribe",
+      "note": "Test dit setup eller mød venlige gæster. Ingen konto påkrævet."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Afsluttende note",
+      "text": "Nyd at forbinde på din måde og på dine betingelser."
     }
   }
 }

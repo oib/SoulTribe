@@ -185,86 +185,86 @@
     "submit": "Definir nova palavra-passe"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Guia rápido do Jitsi para convidados SoulTribe",
+    "intro": "Este guia ajuda novos convidados a participarem das salas Jitsi da SoulTribe com confiança. Escolha apenas as etapas de que precisa. Texto, áudio e vídeo são opcionais.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Instruções antes de entrar",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Conheça suas opções. O Jitsi suporta texto, áudio e vídeo. Você decide o que ativar; cada canal pode permanecer desativado.",
+        "permissions": "Conceda as permissões necessárias. Quando a página de login solicitar acesso, permita que o navegador use o microfone e a câmera para que você possa ativá-los depois.",
+        "setup": "Prepare-se antes de acessar a sala."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Nome: informe como deseja que os outros participantes vejam seu nome.",
+        "background": "Fundo: escolha desfoque ou um fundo virtual se quiser mais privacidade."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Microfone e câmera:",
+      "mic_camera_text": "Use os dois primeiros ícones para ligá-los ou desligá-los antes de entrar.",
+      "devices_label": "Dispositivos:",
+      "devices_before_arrow": "Clique na pequena seta de cada ícone",
+      "devices_after_arrow": "para selecionar o microfone ou a webcam certos.",
+      "audio_tip_label": "Dica de áudio:",
+      "audio_tip_text": "Um headset evita eco. Se precisar usar alto-falantes, mantenha o volume baixo para evitar microfonia."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Compatibilidade de navegadores",
+      "supported": "Firefox e Chrome oferecem suporte completo a áudio, vídeo e chat.",
+      "unsupported": "Safari, Edge, Opera, Brave e DuckDuckGo ainda não são compatíveis.",
+      "note": "Outros navegadores de nicho não foram testados.",
+      "tip1": "Quando solicitado, permita o acesso ao microfone e à câmera na barra de endereços.",
+      "tip2": "Desative bloqueadores de rastreamento ou adicione o Jitsi à lista de sites permitidos.",
+      "tip3": "Recarregue a aba após ajustar as permissões para aplicar as alterações."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Como o interface é organizado na sala",
+      "description": "A área principal de vídeo no centro mostra todos que estão com a câmera ligada. Na parte inferior, a barra de controle reúne ícones importantes como microfone, câmera, compartilhamento de tela, chat, participantes e mais opções. Use o painel à direita para acessar a lista de participantes e telas compartilhadas."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Ícones da barra de ferramentas",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Ícone",
+        "label": "Rotulo",
+        "description": "Descrição"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Microfone",
+          "description": "Ative ou desative o microfone e escolha o dispositivo desejado no menu de dispositivos."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Câmera",
+          "description": "Ligue ou desligue a câmera e selecione a fonte de vídeo adequada."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Compartilhar tela",
+          "description": "Compartilhe toda a tela, uma guia específica ou uma janela."
         },
         "chat": {
           "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "description": "Abra o chat de texto para enviar mensagens ou links."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Participantes / Convidar",
+          "description": "Veja quem está na sala, convide novos participantes e autorize convidados que aguardam."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Mais opções",
+          "description": "Acesse configurações de segurança, ajustes de dispositivos e outras ferramentas."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Encerrar chamada",
+          "description": "Saia da sala."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Link rápido para participar",
+      "cta": "Entre imediatamente em jitsi.bubuit.net/soultribe",
+      "note": "Teste sua configuração ou conheça convidados simpáticos. Não é necessário criar conta."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Mensagem final",
+      "text": "Aproveite para se conectar do seu jeito e no seu ritmo."
     }
   }
 }

@@ -343,86 +343,86 @@
     "active_filter_hint": "Juru biss l-utenti li kienu attivi fl-aħħar 30 jum."
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Gwida rapida Jitsi għall-mistednin ta' SoulTribe",
+    "intro": "Din il-gwida tgħin lill-mistednin ġodda jissieħbu fil-kmamar Jitsi ta' SoulTribe b'kunfidenza. Agħżel biss il-passi li għandek bżonn. Test, awdjo u vidjo huma kollha fakultattivi.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Istruzzjonijiet qabel ma tingħaqad",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Sir af dwar l-għażliet tiegħek. Jitsi jippermetti test, awdjo u vidjo. Int tiddeċiedi x'taħdem; kull kanal jista' jibqa' mitfi.",
+        "permissions": "Agħti permessi. Meta l-paġna tal-login titlob aċċess, ippermetti lill-browser juża l-mikrofonu u l-kamera sabiex tkun tista' ddawwarhom aktar tard.",
+        "setup": "Ip-prepara qabel tidħol fil-kamra."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Isem: daħħal kif tixtieq li jarawk il-parteċipanti l-oħra.",
+        "background": "Sfond: agħżel ċċajpar jew sfond virtwali jekk trid aktar privatezza."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Mikrofonu u kamera:",
+      "mic_camera_text": "Uża l-ewwel żewġ ikoni biex iddawwarhom fuq jew barra qabel ma tingħaqad.",
+      "devices_label": "Apparat:",
+      "devices_before_arrow": "Ikklikkja fuq il-vleġġa żgħira tal-ikona",
+      "devices_after_arrow": "biex tagħżel il-mikrofonu jew il-webcam korretti.",
+      "audio_tip_label": "Parir dwar l-awdjo:",
+      "audio_tip_text": "Headphones jgħinu biex tevita eco. Jekk għandek tuża speakers, żomm il-volum baxx biex ma tagħmilx feedback."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Kompatibbiltà tal-browser",
+      "supported": "Firefox u Chrome joffru appoġġ sħiħ għal awdjo, vidjo u chat.",
+      "unsupported": "Safari, Edge, Opera, Brave u DuckDuckGo bħalissa mhumiex appoġġjati.",
+      "note": "Browsers oħra niche għadhom ma ġewx ivverifikati.",
+      "tip1": "Jekk tintalab, ippermetti l-użu tal-mikrofonu u l-kamera mil-livell tal-indirizz.",
+      "tip2": "Itfi l-blockers tat-traċċar jew żid Jitsi mal-lista tal-postijiet permessi.",
+      "tip3": "Aġġorna t-tab wara li tbiddel il-permessi biex il-bidliet japplikaw."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Tqassim tal-interface fil-kamra",
+      "description": "Iż-żona prinċipali tal-vidjo fiċ-ċentru turi lil kulħadd li għandu l-kamera mixgħula. Taħt tiftaħ il-bar tal-kontroll b'ikoni ewlenin bħal mikrofonu, kamera, qsim tal-iskrin, chat, parteċipanti u aktar għażliet. Uża l-panel tal-vleġġa fuq in-naħa tal-lemin biex tiftaħ il-lista tal-parteċipanti u l-iskrins maqsmuma."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Ikoni tal-bar tal-għodod",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Ikona",
+        "label": "Etiketta",
+        "description": "Deskrizzjoni"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Mikrofonu",
+          "description": "Daħħal jew waqqaf il-mikrofonu u agħżel l-apparat it-tajjeb mill-menu."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Kamera",
+          "description": "Iċċaqlaq il-kamera tiegħek u agħżel webcam jew apparat tal-vidjo li jagħmel sens għalik."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Qsim tal-iskrin",
+          "description": "Aqsam l-iskrin kollu, tab speċifiku jew tieqa."
         },
         "chat": {
           "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "description": "Iftaħ chat testwali biex tibgħat messaġġi jew links."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Parteċipanti / Stieden",
+          "description": "Ara min jinsab fil-kamra, stieden nies ġodda u agħti aċċess lil ospiti li qed jistennew."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Għażliet oħra",
+          "description": "Aqbad fuq settings tas-sigurtà, għażliet tal-apparat u aktar għodod."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Temm il-kelma",
+          "description": "Oħroġ mill-kamra."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Link mgħaġġel biex tingħaqad",
+      "cta": "Ingħaqad istantanjament fuq jitsi.bubuit.net/soultribe",
+      "note": "Ittestja s-setups tiegħek jew iltaqa' ma' ospiti ġentili. Ma għandekx bżonn kont."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Messaġġ finali",
+      "text": "Gawdi l-konnessjoni bl-istil u l-pass tiegħek."
     }
   }
 }

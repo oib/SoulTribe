@@ -185,86 +185,86 @@
     "language_set_to": "Limba setată la"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Ghid rapid Jitsi pentru oaspeții SoulTribe",
+    "intro": "Acest ghid îi ajută pe noii oaspeți să se alăture cu încredere camerelor Jitsi SoulTribe. Alege doar pașii de care ai nevoie. Textul, audio și video sunt opționale.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Instrucțiuni înainte de conectare",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Cunoaște-ți opțiunile. Jitsi suportă text, audio și video. Tu decizi ce activezi; fiecare canal poate rămâne dezactivat.",
+        "permissions": "Acordă permisiunile necesare. Când pagina de autentificare solicită acces, permite browserului să folosească microfonul și camera pentru a le putea activa ulterior.",
+        "setup": "Pregătește-te înainte de a intra în sală."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Nume: introdu numele pe care dorești să-l vadă ceilalți participanți.",
+        "background": "Fundal: alege o estompare sau un fundal virtual dacă îți dorești mai multă intimitate."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Microfon și cameră:",
+      "mic_camera_text": "Folosește primele două pictograme pentru a le activa sau dezactiva înainte de conectare.",
+      "devices_label": "Dispozitive:",
+      "devices_before_arrow": "Fă clic pe săgeata mică de lângă fiecare pictogramă",
+      "devices_after_arrow": "pentru a selecta microfonul sau camera potrivită.",
+      "audio_tip_label": "Sfat audio:",
+      "audio_tip_text": "Căștile ulterioare previn ecoul. Dacă trebuie să folosești difuzoarele, menține volumul scăzut pentru a evita feedback-ul."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Compatibilitate cu browserele",
+      "supported": "Firefox și Chrome oferă suport complet pentru audio, video și chat.",
+      "unsupported": "Safari, Edge, Opera, Brave și DuckDuckGo nu sunt deocamdată compatibile.",
+      "note": "Alte browsere de nișă nu au fost verificate.",
+      "tip1": "Când ești întrebat, activează accesul la microfon și cameră din bara de adrese.",
+      "tip2": "Dezactivează blocanții de urmăritori sau adaugă Jitsi pe lista de site-uri permise.",
+      "tip3": "Reîncarcă fila după ce ai modificat permisiunile pentru a aplica schimbările."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Cum este organizată interfața în cameră",
+      "description": "Zona principală de video din centru arată toate persoanele cu camera activată. În partea de jos găsești bara de control cu pictograme cheie: microfon, cameră, partajare ecran, chat, participanți și alte opțiuni. Folosește panoul din dreapta pentru a deschide lista participanților și ecranele partajate."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Pictograme în bara de instrumente",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Pictogramă",
+        "label": "Etichetă",
+        "description": "Descriere"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Microfon",
+          "description": "Activează sau dezactivează microfonul și selectează dispozitivul dorit din meniul de dispozitive."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Cameră",
+          "description": "Activează sau dezactivează camera și alege sursa video potrivită."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Partajare ecran",
+          "description": "Partajează întregul ecran, o anumită filă sau o fereastră."
         },
         "chat": {
           "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "description": "Deschide chatul text pentru a trimite mesaje sau link-uri."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Participanți / Invită",
+          "description": "Vezi cine este în cameră, invită persoane noi și permite accesul oaspeților în așteptare."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Mai multe opțiuni",
+          "description": "Accesează setări de securitate, opțiuni de dispozitiv și alte instrumente."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Încheie apelul",
+          "description": "Părăsește camera."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Link rapid pentru a intra",
+      "cta": "Intră imediat pe jitsi.bubuit.net/soultribe",
+      "note": "Testează-ți configurația sau întâlnește oaspeți prietenoși. Nu este necesar un cont."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Mesaj de închidere",
+      "text": "Bucură-te de conexiuni în felul tău și în ritmul tău."
     }
   }
 }

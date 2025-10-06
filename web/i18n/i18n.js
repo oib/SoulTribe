@@ -1,9 +1,58 @@
-// Simple vanilla JS i18n implementation
 window.SimpleI18n = {
   currentLang: 'en',
   translations: {},
   _ready: false,
-  
+  landingReadMore: {
+    en: 'Read the guest Jitsi quick-start guide →',
+    de: 'Zur Jitsi-Gastanleitung →',
+    fr: 'Lire le guide de démarrage rapide Jitsi pour invités →',
+    es: 'Lee la guía rápida para invitados de Jitsi →',
+    it: 'Leggi la guida rapida per ospiti di Jitsi →',
+    pt: 'Leia o guia rápido para convidados do Jitsi →',
+    nl: 'Lees de Jitsi-snelstartgids voor gasten →',
+    sv: 'Läs Jitsis snabbguide för gäster →',
+    no: 'Les Jitsi-hurtigveiledningen for gjester →',
+    da: 'Læs Jitsi hurtigstartguide for gæster →',
+    fi: 'Lue Jitsin pikaopas vieraille →',
+    is: 'Lestu Jitsi-flýtihandbókina fyrir gesti →',
+    ga: 'Léigh treoir thapa aíonna Jitsi →',
+    cy: 'Darllenwch ganllaw cychwyn cyflym Jitsi ar gyfer gwesteion →',
+    mt: "Aqra l-gwida ta' bidu malajr ta' Jitsi għall-mistednin →",
+    lb: 'Lies de Jitsi Schnellstart-Guide fir Gäscht →',
+    ca: 'Llegeix la guia ràpida per a convidats de Jitsi →',
+    gl: 'Le a guía rápida para convidados de Jitsi →',
+    eu: 'Irakurri Jitsi gonbidatuentzako abiarazte-gida →',
+    pl: 'Przeczytaj przewodnik szybkiego startu Jitsi dla gości →',
+    cs: 'Přečtěte si stručného průvodce Jitsi pro hosty →',
+    sk: 'Prečítaj si rýchleho sprievodcu Jitsi pre hostí →',
+    hu: 'Olvasd el a Jitsi vendég gyorsútmutatóját →',
+    ro: 'Citește ghidul de pornire rapidă Jitsi pentru invitați →',
+    bg: 'Прочети бързото ръководство за гости на Jitsi →',
+    hr: 'Pročitaj Jitsi vodič za brzi početak za goste →',
+    sr: 'Прочитај Jitsi водич за брзи почетак за госте →',
+    sl: 'Preberi hitri vodnik Jitsi za goste →',
+    mk: 'Прочитај го Jitsi водичот за брз почеток за гости →',
+    sq: 'Lexo udhëzuesin e shpejtë të Jitsi për mysafirët →',
+    bs: 'Pročitaj Jitsi vodič za brzi start za goste →',
+    et: 'Loe Jitsi külaliste kiirstart-juhendit →',
+    lv: 'Izlasi Jitsi ātrās sākšanas ceļvedi viesiem →',
+    lt: 'Perskaityk Jitsi greito starto gidą svečiams →',
+    el: 'Διάβασε τον οδηγό γρήγορης εκκίνησης Jitsi για επισκέπτες →',
+    tr: 'Jitsi misafir hızlı başlangıç kılavuzunu oku →',
+    ru: 'Прочитай руководство быстрого старта Jitsi для гостей →',
+    uk: 'Прочитай посібник швидкого старту Jitsi для гостей →',
+    be: 'Прачытай кіраўніцтва па хуткім запуску Jitsi для гасцей →'
+  },
+
+  applyLandingReadMore(lang) {
+    if (!lang) return;
+    const copy = this.landingReadMore[lang] || this.landingReadMore.en;
+    if (!copy) return;
+    this.translations[lang] = this.translations[lang] || {};
+    const landing = this.translations[lang].landing = this.translations[lang].landing || {};
+    const features = landing.features = landing.features || {};
+    features.read_more = copy;
+  },
   // Available languages with their display names
   languages: {
     // Western & Central Europe
@@ -79,6 +128,8 @@ window.SimpleI18n = {
         deepMergeMissing(this.translations[this.currentLang], this.translations['en']);
       }
     } catch {}
+    this.applyLandingReadMore('en');
+    this.applyLandingReadMore(this.currentLang);
     // Initial UI sync
     try { this._ready = true; this.updateUI(); } catch { this._ready = true; }
     return this;
@@ -126,6 +177,7 @@ window.SimpleI18n = {
   async loadTranslations(lang) {
     // Don't reload if already loaded
     if (this.translations[lang]) {
+      this.applyLandingReadMore(lang);
       return true;
     }
     
@@ -158,6 +210,7 @@ window.SimpleI18n = {
           // Normalize structure for known schema differences (e.g., arrays vs keyed items)
           const normalized = this.normalizeTranslations(data);
           this.translations[lang] = normalized;
+          this.applyLandingReadMore(lang);
           this.availableLanguages[lang] = true;
           console.log(`Successfully loaded translations for ${lang}`);
           return true;
@@ -257,34 +310,42 @@ window.SimpleI18n = {
       console.warn(`Language '${lang}' is not supported.`);
       return false;
     }
-    
+
     if (lang === this.currentLang) {
       return true;
     }
-    
+
     const previousLang = this.currentLang;
-    
+
     try {
-      // Set the new language
-      this.currentLang = lang;
-      localStorage.setItem('selectedLanguage', lang);
-      
-      // Try to load the selected language
+      let targetLang = lang;
       const loaded = await this.loadTranslations(lang);
-      
-      // If loading failed and it's not English, try English as fallback
-      if (!loaded && lang !== 'en') {
-        console.warn(`Failed to load translations for '${lang}'. Falling back to English.`);
-        this.currentLang = 'en';
-        await this.loadTranslations('en');
-      }
-      
-      // Ensure English is loaded for fallback
-      if (this.currentLang !== 'en' && !this.translations['en']) {
-        await this.loadTranslations('en');
+
+      if (!loaded) {
+        if (lang !== 'en') {
+          console.warn(`Failed to load translations for '${lang}'. Falling back to English.`);
+          targetLang = 'en';
+          if (!this.translations['en']) {
+            const loadedEn = await this.loadTranslations('en');
+            if (!loadedEn) {
+              throw new Error("Failed to load English translations");
+            }
+          }
+        } else {
+          throw new Error("Failed to load English translations");
+        }
       }
 
-      // After both are available, deep-merge missing keys from English into the active language
+      this.currentLang = targetLang;
+      localStorage.setItem('selectedLanguage', this.currentLang);
+
+      if (this.currentLang !== 'en' && !this.translations['en']) {
+        const loadedEn = await this.loadTranslations('en');
+        if (!loadedEn) {
+          throw new Error("Failed to load English fallback");
+        }
+      }
+
       try {
         if (this.currentLang !== 'en' && this.translations['en'] && this.translations[this.currentLang]) {
           const deepMergeMissing = (target, fallback) => {
@@ -301,62 +362,69 @@ window.SimpleI18n = {
           deepMergeMissing(this.translations[this.currentLang], this.translations['en']);
         }
       } catch {}
-      
-      // Update the UI with the new language
+
+      this.applyLandingReadMore('en');
+      this.applyLandingReadMore(this.currentLang);
+
       this._ready = true;
       this.updateUI();
-      
-      // Dispatch language change event
+
       window.dispatchEvent(new CustomEvent('languageChanged', {
-        detail: { 
+        detail: {
           language: this.currentLang,
           previousLanguage: previousLang,
-          success: loaded || this.currentLang === 'en'
+          success: true
         }
       }));
-      
+
+      try {
+        const wrap = document.querySelector('.language-selector-container');
+        if (wrap) {
+          wrap.style.display = '';
+          wrap.style.visibility = 'visible';
+          wrap.style.opacity = '1';
+        }
+      } catch {}
+
       return true;
-      
+
     } catch (error) {
       console.error('Error changing language:', error);
       this.currentLang = previousLang;
-      
-      // Notify about the error
+
       window.dispatchEvent(new CustomEvent('languageChanged', {
-        detail: { 
-          language: this.currentLang,
+        detail: {
+          language: previousLang,
           previousLanguage: previousLang,
           success: false,
           error: error.message
         }
       }));
-      
       return false;
     }
   },
 
   t(key) {
     const keys = key.split('.');
-    
-    // Try current language first
-    let value = this.translations[this.currentLang];
-    let current = value;
+
+    let current = this.translations[this.currentLang];
     for (const k of keys) {
       current = current?.[k];
     }
-    if (typeof current !== 'undefined') return current;
-    
-    // If not found in current language, try English
+    if (typeof current !== 'undefined') {
+      return current;
+    }
+
     if (this.currentLang !== 'en') {
       current = this.translations['en'];
       for (const k of keys) {
         current = current?.[k];
       }
-      if (typeof current !== 'undefined') return current;
+      if (typeof current !== 'undefined') {
+        return current;
+      }
     }
-    
-    // If still not found, return the key as fallback
-    // Suppress early warnings until languages are loaded
+
     const hasCurrent = !!this.translations[this.currentLang];
     const hasEn = !!this.translations['en'];
     if (this._ready && (hasCurrent || hasEn)) {

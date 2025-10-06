@@ -562,7 +562,10 @@
         
         // Populate primary language select
         try {
-          primarySelect.innerHTML = Object.entries(languages)
+          const sortedLanguages = Object.entries(languages)
+            .sort((a, b) => a[1].localeCompare(b[1], undefined, { sensitivity: 'base' }));
+
+          primarySelect.innerHTML = sortedLanguages
             .map(([code, name]) => `<option value="${code}">${name}</option>`)
             .join('');
           // Set initial based on i18n current

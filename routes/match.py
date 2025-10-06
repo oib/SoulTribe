@@ -556,44 +556,12 @@ def match_create(inp: MatchCreateIn, session=Depends(get_session), user_id: int 
         # Idempotency: return existing match if already present (A-B or B-A)
         from sqlmodel import select as _select
 
-        try:
-            existing = session.exec(
-                _select(Match).where(
-                    ((Match.a_user_id == inp.a_user_id) & (Match.b_user_id == inp.b_user_id)) |
-                    ((Match.a_user_id == inp.b_user_id) & (Match.b_user_id == inp.a_user_id))
-                )
-            ).first()
-        except Exception as sel_exc:
-            if "comments_by_lang" in str(sel_exc):
-                logger.warning(
-                    "match_create: legacy select fallback due to missing comments_by_lang column",
-                    exc_info=True,
-                )
-                try:
-                    session.rollback()
-                except Exception:
-                    pass
-                raw_existing = session.exec(
-                    text(
-                        """
-                        SELECT id, score_numeric
-                        FROM match
-                        WHERE (a_user_id = :user_a AND b_user_id = :user_b)
-                           OR (a_user_id = :user_b AND b_user_id = :user_a)
-                        LIMIT 1
-                        """
-                    ),
-                    params={"user_a": inp.a_user_id, "user_b": inp.b_user_id},
-                ).first()
-                if raw_existing:
-                    match_id = raw_existing.id if hasattr(raw_existing, "id") else raw_existing[0]
-                    match_score = (
-                        raw_existing.score_numeric if hasattr(raw_existing, "score_numeric") else raw_existing[1]
-                    )
-                    return MatchCreateOut(match_id=match_id, score=match_score)
-            else:
-                raise
-            existing = None
+        existing = session.exec(
+            _select(Match).where(
+                ((Match.a_user_id == inp.a_user_id) & (Match.b_user_id == inp.b_user_id)) |
+                ((Match.a_user_id == inp.b_user_id) & (Match.b_user_id == inp.a_user_id))
+            )
+        ).first()
         if existing:
             logger.debug(
                 "match_create: existing match found id=%s score=%s",
@@ -637,53 +605,15 @@ def match_create(inp: MatchCreateIn, session=Depends(get_session), user_id: int 
             score_json=breakdown,
             status="suggested",
         )
-        try:
-            session.add(m)
-            session.commit()
-            session.refresh(m)
-            logger.info(
-                "match_create: created match id=%s score=%s",
-                m.id,
-                score,
-            )
-            return MatchCreateOut(match_id=m.id, score=score)
-        except Exception as commit_exc:
-            if "comments_by_lang" not in str(commit_exc):
-                raise
-            logger.warning(
-                "match_create: legacy insert fallback due to missing comments_by_lang column",
-                exc_info=True,
-            )
-            try:
-                session.rollback()
-            except Exception:
-                pass
-            raw_insert = session.exec(
-                text(
-                    """
-                    INSERT INTO match (a_user_id, b_user_id, score_numeric, score_json, status, created_at)
-                    VALUES (:a_user, :b_user, :score, :score_json::jsonb, :status, :created_at)
-                    RETURNING id
-                    """
-                ),
-                params={
-                    "a_user": inp.a_user_id,
-                    "b_user": inp.b_user_id,
-                    "score": score,
-                    "score_json": json.dumps(breakdown),
-                    "status": "suggested",
-                    "created_at": datetime.utcnow(),
-                },
-            ).first()
-            if not raw_insert:
-                raise HTTPException(status_code=500, detail="match_create failed: legacy insert returned no rows")
-            match_id = raw_insert.id if hasattr(raw_insert, "id") else raw_insert[0]
-            logger.info(
-                "match_create: legacy insert created match id=%s score=%s",
-                match_id,
-                score,
-            )
-            return MatchCreateOut(match_id=match_id, score=score)
+        session.add(m)
+        session.commit()
+        session.refresh(m)
+        logger.info(
+            "match_create: created match id=%s score=%s",
+            m.id,
+            score,
+        )
+        return MatchCreateOut(match_id=m.id, score=score)
     except HTTPException:
         raise
     except Exception as exc:  # pragma: no cover - debug hook

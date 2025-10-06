@@ -1,66 +1,48 @@
 # Email Handling in the Application
 
 ## Overview
-The application uses Python's built-in `smtplib` and `email` modules to handle email functionality. Currently, the implementation is minimal and primarily used for testing purposes.
+Transactional emails are sent through the shared helper in `services/email.py`. The helper wraps Python's `smtplib`/`email.message` modules and is now integrated with the meetup workflow (`routes/meetup.py`), so real users receive notifications without relying on standalone test scripts.
 
 ## Current Implementation
 
-### Test Scripts
-There are two test scripts available for email functionality:
+- **Module**: `services/email.py`
+- **Exports**: `send_email(to, subject, html, text=None)`
+- **Behavior**:
+  - Builds both plain-text and HTML parts (deriving plain text automatically when omitted).
+  - Sends mail via a configurable SMTP server.
+  - When `EMAIL_DEV_MODE=1`, skips SMTP and logs the message content to stdout for safe local development.
 
-1. `/dev/scripts/testmail.py`
-2. `/dev/tests/testmail.py`
+### Environment Variables
+- `EMAIL_DEV_MODE` (default `0`): set to `1` to print emails to stdout instead of sending.
+- `SMTP_HOST` (default `localhost`): hostname of the SMTP relay.
+- `SMTP_PORT` (default `25`): port used for the SMTP connection.
+- `EMAIL_FROM` (default `noreply@soultribe.chat`): sender address used in outgoing emails.
 
-Both scripts contain the same basic email sending functionality:
+No authentication or TLS is currently configured; configure the relay to handle security policy (see **Future Work**).
 
-```python
-import smtplib
-from email.message import EmailMessage
+### Call Sites
+- `routes/meetup.py`
+  - `/api/meetup/propose`: notifies the non-proposing participant with UTC and recipient-local timestamps plus a dashboard link.
+  - `/api/meetup/confirm`: emails both participants with the confirmed time and Jitsi room link.
 
-# Create email message
-msg = EmailMessage()
-msg["From"] = "test@keisanki.net"
-msg["To"] = "oib@bubuit.net"
-msg["Subject"] = "Test"
-msg.set_content("Hello world")
+Historical test scripts (`dev/scripts/testmail.py`, `dev/tests/testmail.py`) remain available for ad-hoc checks but the production code path should use `send_email`.
 
-# Send email using local SMTP server
-with smtplib.SMTP("localhost") as smtp:
-    smtp.send_message(msg)
-```
+## Configuration Checklist
+- Ensure SMTP relay reachable from the backend host (`SMTP_HOST`/`SMTP_PORT`).
+- Provide a valid sender address via `EMAIL_FROM`.
+- Set `EMAIL_DEV_MODE=1` in development to prevent accidental outbound emails.
 
-## Configuration
-
-### SMTP Server
-- The application is configured to use a local SMTP server running on `localhost`
-- No authentication is currently configured for the SMTP connection
-- The connection is not using TLS/SSL
-
-### Email Settings
-- **From Address**: `test@keisanki.net` (hardcoded in test scripts)
-- **To Address**: `oib@bubuit.net` (hardcoded in test scripts)
-
-## Integration Points
-
-Currently, email functionality is not integrated into the main application. The existing implementation is limited to test scripts and would need to be properly integrated with the application's configuration system for production use.
-
-## Future Improvements
-
-1. Move email configuration to environment variables or a configuration file
-2. Add support for SMTP authentication
-3. Implement TLS/SSL for secure email transmission
-4. Create email templates for different types of notifications
-5. Add error handling and retry logic for failed email deliveries
-6. Integrate with the application's logging system
+## Future Work
+- Support SMTP authentication and STARTTLS/SSL.
+- Introduce templating (Jinja, MJML, etc.) for richer email content.
+- Add retry/backoff with structured logging on failures.
+- Integrate with a transactional email provider if higher reliability/delivery metrics are needed.
 
 ## Testing
-
-To test the email functionality, you can run either of the test scripts:
+In development, set `EMAIL_DEV_MODE=1` and trigger the relevant endpoint (e.g., `/api/meetup/propose`). The email body will print to stdout in the service logs (`[email.dev]` prefix). For manual SMTP testing, the legacy scripts remain usable:
 
 ```bash
-python3 dev/scripts/testmail.py
-# or
-python3 dev/tests/testmail.py
+EMAIL_DEV_MODE=0 SMTP_HOST=localhost SMTP_PORT=25 python3 dev/scripts/testmail.py
 ```
 
-Make sure you have a local SMTP server running on `localhost` before testing.
+Ensure a local SMTP server is running before executing the script.

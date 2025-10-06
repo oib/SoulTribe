@@ -169,8 +169,8 @@ async function initLanguageSelector(selectorId) {
       return;
     }
     
-    // Sort languages alphabetically by name
-    availableLanguages.sort((a, b) => a[1].localeCompare(b[1]));
+    // Sort languages alphabetically by name (case-insensitive, locale-aware)
+    availableLanguages.sort((a, b) => a[1].localeCompare(b[1], undefined, { sensitivity: 'base' }));
     
     // Generate options
     selector.innerHTML = availableLanguages

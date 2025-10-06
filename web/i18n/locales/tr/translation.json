@@ -184,86 +184,86 @@
     "language_set_to": "Dil şu şekilde ayarlandı"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "SoulTribe misafirleri için hızlı Jitsi rehberi",
+    "intro": "Bu rehber, yeni misafirlerin SoulTribe Jitsi odalarına güvenle katılmalarına yardımcı olur. Sadece ihtiyaç duyduğun adımları seç. Metin, ses ve video tamamen isteğe bağlıdır.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Katılmadan önceki talimatlar",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Seçeneklerini öğren. Jitsi metin, ses ve video desteği sunar. Hangi kanalların açık olacağına sen karar ver; her birini kapalı tutabilirsin.",
+        "permissions": "Gerekli izinleri ver. Giriş sayfası erişim isterse tarayıcının mikrofon ve kamerayı kullanmasına izin ver, böylece daha sonra açabilirsin.",
+        "setup": "Odaya girmeden önce hazırlık yap."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "İsim: toplantıda adının nasıl görüneceğini yaz.",
+        "background": "Arka plan: daha fazla gizlilik istiyorsan bulanık bir arka plan veya sanal arka plan seç."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Mikrofon ve kamera",
+      "mic_camera_text": "Katılmadan önce ilk iki simgeyi kullanarak açıp kapat.",
+      "devices_label": "Cihazlar",
+      "devices_before_arrow": "Her simgedeki küçük oka tıkla",
+      "devices_after_arrow": "doğru mikrofon veya web kamerasını seç.",
+      "audio_tip_label": "Ses ipucu",
+      "audio_tip_text": "Kulaklık kullanmak yankıyı engeller. Hoparlör kullanman gerekiyorsa geri bildirimden kaçınmak için sesi düşük tut."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Tarayıcı uyumluluğu",
+      "supported": "Firefox ve Chrome, ses, video ve sohbetin tamamını destekler.",
+      "unsupported": "Safari, Edge, Opera, Brave ve DuckDuckGo şu anda desteklenmiyor.",
+      "note": "Diğer niş tarayıcılar test edilmedi.",
+      "tip1": "İstendiğinde adres çubuğundan mikrofon ve kamera izinlerini ver.",
+      "tip2": "İzleme engelleyicileri kapat veya Jitsi'yi izin verilenler listesine ekle.",
+      "tip3": "İzinleri değiştirdikten sonra sekmeyi yenile ki değişiklikler geçerli olsun."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Oda içinde arayüz nasıl görünüyor",
+      "description": "Ortadaki ana video alanı kameraları açık olan herkesi gösterir. Alt kısımdaki kontrol çubuğunda mikrofon, kamera, ekran paylaşımı, sohbet, katılımcı listesi ve diğer seçeneklerin simgeleri yer alır. Sağdaki panel sayesinde katılımcı listesi ve paylaşılan ekranlara ulaşabilirsin."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Araç çubuğundaki simgeler",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Simge",
+        "label": "Ad",
+        "description": "Açıklama"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Mikrofon",
+          "description": "Mikrofonu aç veya kapat, cihaz menüsünden uygun cihazı seç."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Kamera",
+          "description": "Kameranı açıp kapat, doğru video kaynağını seç."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Ekran paylaşımı",
+          "description": "Tüm ekranını, belirli bir sekmeyi veya pencereyi paylaş."
         },
         "chat": {
-          "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "label": "Sohbet",
+          "description": "Metinsel sohbeti açarak mesaj veya bağlantı gönder."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Katılımcılar / Davet et",
+          "description": "Kimlerin odada olduğunu gör, yeni katılımcılar davet et ve bekleyen misafirlere izin ver."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Diğer seçenekler",
+          "description": "Güvenlik ayarlarını, cihaz seçimlerini ve diğer araçları yönet."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Görüşmeyi sonlandır",
+          "description": "Odadan ayrıl."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Hızlı katılım bağlantısı",
+      "cta": "Hemen jitsi.bubuit.net/soultribe adresinden katıl",
+      "note": "Kurulumunu test et veya yeni misafirlerle tanış. Hesap gerekmez."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Kapanış mesajı",
+      "text": "Bağlantılar kurmanın keyfini kendi tarzında ve kendi hızında çıkar."
     }
   }
 }

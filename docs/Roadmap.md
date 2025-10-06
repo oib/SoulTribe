@@ -1,6 +1,6 @@
 # SoulTribe.chat — roadmap & TODOs
 
-Last updated: 2025-09-16
+Last updated: 2025-10-06
 
 ## Near-Term (High Priority)
 - Auth
@@ -24,6 +24,7 @@ Last updated: 2025-09-16
 - Meetup Flow
   - ✅ Proposer cannot confirm; only confirmer can unconfirm; either side can cancel
   - ✅ Add confirm dialogs for cancel/unconfirm *(browser prompts on dashboard actions)*
+  - ✅ Email notifications include UTC + recipient local time and direct dashboard link
   - 🔲 Optional: send calendar `.ics` download links
 - Security
   - ✅ Add basic rate limiting across `/api/match/*` and `/api/meetup/*` *(per-IP sliding window limits)*
@@ -45,6 +46,7 @@ Last updated: 2025-09-16
 - DB & Migrations
   - 🔲 Alembic in place; add more granular revisions and FK constraints
   - 🔲 Add indexes for frequent queries (e.g., match lookups)
+  - 🔲 Ship production migration adding `match.comments_by_lang` column and backfill existing rows
 - Frontend
   - Replace console with a proper app (React/Svelte)
   - ~~Add localization/i18n for UI strings~~ ✅ Completed (28 languages)

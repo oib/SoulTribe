@@ -2,12 +2,10 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from typing import Optional
-from types import SimpleNamespace
 
 import logging
 
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy import text
 from pydantic import BaseModel
 from sqlmodel import select
 
@@ -18,68 +16,30 @@ from services.jwt_auth import get_current_user_id
 from services.rate_limit import rate_limit
 from services.audit import log_meetup_event
 from services.email import send_email
+from services.email_templates import (
+    SUPPORTED_EMAIL_LANGS,
+    get_confirm_copy,
+    get_propose_copy,
+)
 
 router = APIRouter(prefix="/api/meetup", tags=["meetup"])
 logger = logging.getLogger("soultribe.meetup")
 
-_LEGACY_MATCH_DETECTED = False
+
+def _normalize_lang(code: str | None) -> str | None:
+    if not code:
+        return None
+    primary = code.split("-", 1)[0].lower()
+    return primary if primary in SUPPORTED_EMAIL_LANGS else None
 
 
-def _row_get(row, key: str, idx: int | None = None):
-    if hasattr(row, key):
-        return getattr(row, key)
-    try:
-        return row[key]
-    except (KeyError, TypeError):
-        if idx is not None:
-            try:
-                return row[idx]
-            except (IndexError, TypeError):
-                return None
-    return None
-
-
-def _mark_legacy_mode() -> None:
-    global _LEGACY_MATCH_DETECTED
-    if not _LEGACY_MATCH_DETECTED:
-        logger.warning("match.comments_by_lang column missing; enabling legacy match fallbacks")
-        _LEGACY_MATCH_DETECTED = True
-
-
-def _load_match_with_fallback(session, match_id: int):
-    try:
-        return session.get(Match, match_id)
-    except Exception as exc:
-        if "comments_by_lang" not in str(exc):
-            raise
-        _mark_legacy_mode()
-        try:
-            session.rollback()
-        except Exception:
-            pass
-        raw = session.exec(
-            text(
-                """
-                SELECT id, a_user_id, b_user_id, score_numeric, score_json, status, created_at, comment
-                FROM match
-                WHERE id = :match_id
-                LIMIT 1
-                """
-            ),
-            params={"match_id": match_id},
-        ).first()
-        if not raw:
-            return None
-        return SimpleNamespace(
-            id=_row_get(raw, "id", 0),
-            a_user_id=_row_get(raw, "a_user_id", 1),
-            b_user_id=_row_get(raw, "b_user_id", 2),
-            score_numeric=_row_get(raw, "score_numeric", 3),
-            score_json=_row_get(raw, "score_json", 4),
-            status=_row_get(raw, "status", 5),
-            created_at=_row_get(raw, "created_at", 6),
-            comment=_row_get(raw, "comment", 7),
-        )
+def _resolve_email_lang(profile: Profile | None) -> str:
+    if profile:
+        for cand in (profile.lang_primary, profile.lang_secondary):
+            lang = _normalize_lang(cand)
+            if lang:
+                return lang
+    return "en"
 
 
 class ProposeIn(BaseModel):
@@ -94,7 +54,7 @@ class ProposeOut(BaseModel):
 
 @router.post("/propose", response_model=ProposeOut, dependencies=[Depends(rate_limit("meetup:propose", limit=5, window_seconds=60))])
 def propose(inp: ProposeIn, session=Depends(get_session), user_id: int = Depends(get_current_user_id)):
-    m = _load_match_with_fallback(session, inp.match_id)
+    m = session.get(Match, inp.match_id)
     if m is None:
         log_meetup_event(meetup=None, actor_user_id=user_id, action="propose", success=False, metadata={"reason": "match_not_found", "match_id": inp.match_id})
         raise HTTPException(status_code=404, detail="Match not found")
@@ -121,8 +81,11 @@ def propose(inp: ProposeIn, session=Depends(get_session), user_id: int = Depends
     other_name = other_profile.display_name if other_profile and other_profile.display_name else (other_user.email if other_user else "there")
 
     if other_user and other_user.email_verified_at:
+        lang = _resolve_email_lang(other_profile)
+        copy = get_propose_copy(lang)
         proposed_time = "(time pending)"
         proposed_local = None
+        other_tz_label = None
         if mm.proposed_dt_utc:
             proposed_dt_utc = mm.proposed_dt_utc.astimezone(timezone.utc)
             proposed_time = proposed_dt_utc.strftime("%Y-%m-%d %H:%M UTC")
@@ -130,25 +93,26 @@ def propose(inp: ProposeIn, session=Depends(get_session), user_id: int = Depends
             if other_tz:
                 try:
                     proposed_local = proposed_dt_utc.astimezone(ZoneInfo(other_tz)).strftime("%Y-%m-%d %H:%M %Z")
+                    other_tz_label = other_tz
                 except Exception:
                     proposed_local = None
         dashboard_url = "https://soultribe.chat/login.html"
-        subject = f"SoulTribe meetup proposed by {proposer_name}"
+        subject = copy["subject"].format(proposer=proposer_name)
         html_parts = [
-            f"<p>Hi {other_name},</p>",
-            f"<p>{proposer_name} proposed a new SoulTribe meetup.</p>",
-            f"<p><strong>Proposed time (UTC):</strong> {proposed_time}</p>",
+            f"<p>{copy['intro'].format(recipient=other_name)}</p>",
+            f"<p>{copy['body'].format(proposer=proposer_name)}</p>",
+            f"<p><strong>{copy['proposed_time_utc']}:</strong> {proposed_time}</p>",
         ]
         text_parts = [
-            f"Hi {other_name},\n\n",
-            f"{proposer_name} proposed a new SoulTribe meetup.\n",
-            f"Proposed time (UTC): {proposed_time}\n",
+            f"{copy['intro'].format(recipient=other_name)}\n\n",
+            f"{copy['body'].format(proposer=proposer_name)}\n",
+            f"{copy['proposed_time_utc']}: {proposed_time}\n",
         ]
-        if proposed_local:
-            html_parts.append(f"<p><strong>Your time ({other_profile.live_tz}):</strong> {proposed_local}</p>")
-            text_parts.append(f"Your time ({other_profile.live_tz}): {proposed_local}\n")
-        html_parts.append(f"<p><a href=\"{dashboard_url}\">Open your SoulTribe dashboard</a> to confirm or suggest a different time.</p>")
-        text_parts.append(f"Visit your dashboard to confirm or suggest a different time: {dashboard_url}")
+        if proposed_local and other_tz_label:
+            html_parts.append(f"<p><strong>{copy['proposed_time_local'].format(tz=other_tz_label)}:</strong> {proposed_local}</p>")
+            text_parts.append(f"{copy['proposed_time_local'].format(tz=other_tz_label)}: {proposed_local}\n")
+        html_parts.append(f"<p><a href=\"{dashboard_url}\">{copy['cta_html']}</a>.</p>")
+        text_parts.append(f"{copy['cta_text']}: {dashboard_url}")
         html = ''.join(html_parts)
         text = ''.join(text_parts)
         try:
@@ -209,14 +173,14 @@ def confirm(inp: ConfirmIn, session=Depends(get_session), user_id: int = Depends
     confirmer_name = confirmer_profile.display_name if confirmer_profile and confirmer_profile.display_name else (confirmer_user.email if confirmer_user else "")
 
     html_body = (
-        f"<p>Your SoulTribe meetup is confirmed for <strong>{confirmed_time}</strong>.</p>"
-        f"<p>Join link: <a href=\"{url}\">{url}</a></p>"
-        "<p>You can manage the meetup from your dashboard if plans change.</p>"
+        f"<p>{{confirm_html}}</p>"
+        f"<p>{{join_label}}: <a href=\"{url}\">{url}</a></p>"
+        f"<p>{{manage_hint}}</p>"
     )
     text_body = (
-        f"Your SoulTribe meetup is confirmed for {confirmed_time}.\n"
-        f"Join link: {url}\n\n"
-        "You can manage the meetup from your dashboard if plans change."
+        f"{{confirm_text}}\n"
+        f"{{join_label}}: {url}\n\n"
+        "{{manage_hint}}"
     )
 
     for recipient, name, label in (
@@ -224,9 +188,27 @@ def confirm(inp: ConfirmIn, session=Depends(get_session), user_id: int = Depends
         (confirmer_user, confirmer_name or "there", "confirmer"),
     ):
         if recipient and recipient.email_verified_at:
-            subject = "SoulTribe meetup confirmed"
-            personalized_html = f"<p>Hi {name},</p>" + html_body
-            personalized_text = f"Hi {name},\n\n" + text_body
+            profile = proposer_profile if label == "proposer" else confirmer_profile
+            lang = _resolve_email_lang(profile)
+            copy = get_confirm_copy(lang)
+            subject = copy["subject"]
+            personalized_html = (
+                f"<p>{copy['intro_html'].format(recipient=name)}</p>"
+                + html_body.format(
+                    confirm_html=copy["meetup_confirmed_html"].format(time=confirmed_time),
+                    join_label=copy["join_label"],
+                    manage_hint=copy["manage_hint_html"],
+                    url=url,
+                )
+            )
+            personalized_text = (
+                f"{copy['intro_text'].format(recipient=name)}\n\n"
+                + text_body.format(
+                    confirm_text=copy["meetup_confirmed_text"].format(time=confirmed_time),
+                    join_label=copy["join_label"],
+                    manage_hint=copy["manage_hint_text"],
+                )
+            )
             try:
                 send_email(recipient.email, subject, personalized_html, personalized_text)
             except Exception as exc:  # pragma: no cover - best effort
@@ -276,64 +258,7 @@ def list_meetups(
             .limit(max(1, min(200, limit)))
             .offset(max(0, offset))
         )
-        try:
-            rows = session.exec(q).all()
-        except Exception as exc:
-            if "comments_by_lang" not in str(exc):
-                raise
-            _mark_legacy_mode()
-            try:
-                session.rollback()
-            except Exception:
-                pass
-            raw_rows = session.exec(
-                text(
-                    """
-                    SELECT
-                        meetup.id                 AS meetup_id,
-                        meetup.match_id           AS match_id,
-                        meetup.proposed_dt_utc    AS proposed_dt_utc,
-                        meetup.confirmed_dt_utc   AS confirmed_dt_utc,
-                        meetup.jitsi_room         AS jitsi_room,
-                        meetup.status             AS meetup_status,
-                        meetup.proposer_user_id   AS proposer_user_id,
-                        meetup.confirmer_user_id  AS confirmer_user_id,
-                        match.a_user_id           AS match_a_user_id,
-                        match.b_user_id           AS match_b_user_id
-                    FROM meetup
-                    JOIN match ON match.id = meetup.match_id
-                    WHERE (match.a_user_id = :user_id OR match.b_user_id = :user_id)
-                    ORDER BY meetup.id DESC
-                    LIMIT :lim OFFSET :off
-                    """
-                ),
-                params={
-                    "user_id": user_id,
-                    "lim": max(1, min(200, limit)),
-                    "off": max(0, offset),
-                },
-            ).all()
-
-            def _legacy_rows():
-                for raw in raw_rows:
-                    mm = SimpleNamespace(
-                        id=_row_get(raw, "meetup_id", 0),
-                        match_id=_row_get(raw, "match_id", 1),
-                        proposed_dt_utc=_row_get(raw, "proposed_dt_utc", 2),
-                        confirmed_dt_utc=_row_get(raw, "confirmed_dt_utc", 3),
-                        jitsi_room=_row_get(raw, "jitsi_room", 4),
-                        status=_row_get(raw, "meetup_status", 5),
-                        proposer_user_id=_row_get(raw, "proposer_user_id", 6),
-                        confirmer_user_id=_row_get(raw, "confirmer_user_id", 7),
-                    )
-                    match_obj = SimpleNamespace(
-                        id=_row_get(raw, "match_id", 1),
-                        a_user_id=_row_get(raw, "match_a_user_id", 8),
-                        b_user_id=_row_get(raw, "match_b_user_id", 9),
-                    )
-                    yield mm, match_obj
-
-            rows = list(_legacy_rows())
+        rows = session.exec(q).all()
 
         items: list[MeetupItem] = []
         for mm, m in rows:
@@ -417,7 +342,7 @@ def delete_meetup(meetup_id: int, session=Depends(get_session), user_id: int = D
     if mm is None:
         log_meetup_event(meetup=None, actor_user_id=user_id, action="delete", success=False, metadata={"reason": "meetup_not_found", "meetup_id": meetup_id})
         raise HTTPException(status_code=404, detail="Meetup not found")
-    m = _load_match_with_fallback(session, mm.match_id)
+    m = session.get(Match, mm.match_id)
     if m is None:
         log_meetup_event(meetup=mm, actor_user_id=user_id, action="delete", success=False, metadata={"reason": "match_not_found", "match_id": mm.match_id})
         raise HTTPException(status_code=404, detail="Match not found")

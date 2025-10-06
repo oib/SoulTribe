@@ -185,86 +185,86 @@
     "language_set_to": "Мову встановлено на"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Швидкий довідник Jitsi для гостей SoulTribe",
+    "intro": "Цей посібник допомагає новим гостям упевнено приєднатися до кімнат SoulTribe Jitsi. Оберіть лише ті кроки, які вам потрібні. Текст, аудіо та відео — опційні.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Інструкції перед входом",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Дізнайтеся про свої можливості. Jitsi підтримує текст, аудіо та відео. Ви вирішуєте, що ввімкнути; кожен канал можна залишити вимкненим.",
+        "permissions": "Надайте необхідні дозволи. Коли сторінка входу запитає доступ, дозвольте браузеру використовувати мікрофон і камеру, щоб ви могли ввімкнути їх пізніше.",
+        "setup": "Підготуйтеся перед тим, як увійти до кімнати."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Ім'я: введіть, як ви хочете, щоб вас бачили інші учасники.",
+        "background": "Тло: оберіть розмиття або віртуальне тло, якщо бажаєте більше приватності."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Мікрофон і камера",
+      "mic_camera_text": "Використайте перші дві іконки, щоб увімкнути або вимкнути їх перед входом.",
+      "devices_label": "Пристрої",
+      "devices_before_arrow": "Натисніть маленьку стрілку біля кожної іконки",
+      "devices_after_arrow": "щоб обрати відповідний мікрофон або вебкамеру.",
+      "audio_tip_label": "Порада щодо звуку",
+      "audio_tip_text": "Навушники допомагають уникнути луни. Якщо використовуєте динаміки, тримайте гучність низькою, щоб запобігти зворотному зв'язку."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Сумісність браузерів",
+      "supported": "Firefox і Chrome забезпечують повну підтримку аудіо, відео та чату.",
+      "unsupported": "Safari, Edge, Opera, Brave і DuckDuckGo наразі не підтримуються.",
+      "note": "Інші нішеві браузери не були протестовані.",
+      "tip1": "За необхідності дозволяйте доступ до мікрофона та камери через адресний рядок.",
+      "tip2": "Вимкніть блокувальники трекінгу або додайте Jitsi до списку дозволених сайтів.",
+      "tip3": "Після зміни дозволів оновіть вкладку, щоб застосувати зміни."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Як виглядає інтерфейс у кімнаті",
+      "description": "Основна відеообласть у центрі показує всіх, хто ввімкнув камеру. Унизу розташована панель керування з ключовими іконками: мікрофон, камера, спільний доступ до екрану, чат, учасники та додаткові опції. Бічна панель праворуч відкриває список учасників і спільні екрани."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Іконки на панелі інструментів",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Іконка",
+        "label": "Назва",
+        "description": "Опис"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Мікрофон",
+          "description": "Увімкніть або вимкніть мікрофон і оберіть потрібний пристрій у меню."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Камера",
+          "description": "Управляйте камерою та оберіть відповідне відеоджерело."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Спільний доступ до екрана",
+          "description": "Поділіться всім екраном, окремою вкладкою або вікном."
         },
         "chat": {
-          "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "label": "Чат",
+          "description": "Відкрийте текстовий чат, щоб надсилати повідомлення чи посилання."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Учасники / Запросити",
+          "description": "Перегляньте, хто перебуває в кімнаті, запросіть інших і надайте доступ гостям в очікуванні."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Додаткові опції",
+          "description": "Налаштуйте безпеку, виберіть пристрої або скористайтеся іншими інструментами."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Завершити розмову",
+          "description": "Покиньте кімнату."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Швидке приєднання",
+      "cta": "Приєднуйтеся миттєво на jitsi.bubuit.net/soultribe",
+      "note": "Перевірте свою конфігурацію або познайомтеся з новими гостями. Обліковий запис не потрібен."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Підсумок",
+      "text": "Насолоджуйтеся спілкуванням так, як вам зручно і у вашому темпі."
     }
   }
 }

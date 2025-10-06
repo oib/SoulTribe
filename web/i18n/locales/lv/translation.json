@@ -335,86 +335,86 @@
     "language_set_to": "Valoda iestatīta uz"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Ātrs Jitsi ceļvedis SoulTribe viesiem",
+    "intro": "Šis ceļvedis palīdz jaunajiem viesiem ar pārliecību pievienoties SoulTribe Jitsi istabām. Izvēlies tikai tos soļus, kas tev nepieciešami. Teksts, audio un video ir brīvprātīgi.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Instrukcijas pirms pievienošanās",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Iepazīsties ar savām iespējām. Jitsi atbalsta tekstu, audio un video. Tu izlem, ko ieslēgt, un katru kanālu vari atstāt izslēgtu.",
+        "permissions": "Piešķir atļaujas. Kad pieteikšanās lapa pieprasa piekļuvi, atļauj pārlūkam izmantot mikrofonu un kameru, lai tos vēlāk varētu ieslēgt.",
+        "setup": "Sagatavojies pirms ieiešanas istabā."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Vārds: ieraksti, kā vēlies, lai citi dalībnieki tevi redz sapulcē.",
+        "background": "Fons: izvēlies izpludinājumu vai virtuālu fonu, ja vēlies lielāku privātumu."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Mikrofons un kamera:",
+      "mic_camera_text": "Izmanto pirmās divas ikonas, lai pirms pievienošanās ieslēgtu vai izslēgtu mikrofonu un kameru.",
+      "devices_label": "Ierīces:",
+      "devices_before_arrow": "Klikšķini uz ikonas mazās bultiņas",
+      "devices_after_arrow": "lai izvēlētos pareizo mikrofonu vai tīmekļa kameru.",
+      "audio_tip_label": "Padoms audio kvalitātei:",
+      "audio_tip_text": "Austiņas vai austiņas palīdz izvairīties no atbalsīm. Ja nepieciešams izmantot skaļruņus, uzturi zemu skaļumu, lai novērstu atgriezenisko saiti."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Pārlūkprogrammu savietojamība",
+      "supported": "Firefox un Chrome nodrošina pilnu atbalstu audio, video un tērzēšanai.",
+      "unsupported": "Safari, Edge, Opera, Brave un DuckDuckGo pašlaik netiek atbalstītas.",
+      "note": "Citu nišas pārlūkprogrammu savietojamība nav pārbaudīta.",
+      "tip1": "Adreses joslā aktivizē mikrofonam un kamerai nepieciešamās atļaujas, ja tas tiek pieprasīts.",
+      "tip2": "Izslēdz izsekotāju bloķētājus vai pievieno Jitsi atļauto sarakstam.",
+      "tip3": "Pēc atļauju maiņas pārlādē cilni, lai izmaiņas stātos spēkā."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Interfeisa izkārtojums istabā",
+      "description": "Galvenais video laukums centrā parāda visus, kuriem ir ieslēgta kamera. Apakšā atrodas vadības panelis ar galvenajām ikonām, tostarp mikrofonu, kameru, ekrāna koplietošanu, tērzēšanu, dalībniekiem un citām iespējām. Labajā malā pieejams papildu panelis ar dalībnieku sarakstu un koplietotajiem ekrāniem."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Rīkjoslas ikonas",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Ikona",
+        "label": "Nosaukums",
+        "description": "Apraksts"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Mikrofons",
+          "description": "Pārslēdz mikrofonu un atver ierīču izvēlni, lai izvēlētos piemērota skaņas avotu."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Kamera",
+          "description": "Pārslēdz kameru un izvēlies pareizo video ierīci."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Ekrāna koplietošana",
+          "description": "Kopīgo savu ekrānu vai logu. Vari izvēlēties konkrētu cilni, logu vai visu darbvirsmu."
         },
         "chat": {
-          "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "label": "Tērzēšana",
+          "description": "Atver teksta tērzēšanu, lai sūtītu ziņas vai dalītos saitēs."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Dalībnieki / Uzaicināt",
+          "description": "Skaties, kas atrodas istabā, pievieno jaunus dalībniekus un pārvaldi gaidošos viesus."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Papildu iespējas",
+          "description": "Piekļūsti drošības iestatījumiem, ierīču opcijām un citiem rīkiem."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Beigt zvanu",
+          "description": "Pamet sapulci."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Ātrās pievienošanās saite",
+      "cta": "Pievienojies uzreiz vietnē jitsi.bubuit.net/soultribe",
+      "note": "Pārbaudi savu aparatūru vai iepazīsties ar draudzīgiem viesiem. Konts nav vajadzīgs."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Noslēguma ziņa",
+      "text": "Baudi saziņu sev ērtā veidā un piemērotā tempā."
     }
   }
 }

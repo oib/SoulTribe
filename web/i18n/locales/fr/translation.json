@@ -1,8 +1,8 @@
 {
   "ai": {
-    "followup_placeholder": "Pose une question de suivi…",
-    "get_interpretation": "Obtenir une interprétation",
-    "send": "Envoyer"
+    "followup_placeholder": "Ask a follow-up…",
+    "get_interpretation": "Get Interpretation",
+    "send": "Send"
   },
   "dashboard": {
     "availability": "Disponibilités",
@@ -10,28 +10,23 @@
     "duration_hours": "Durée (heures)",
     "matches": "Correspondances",
     "meetups": "Rencontres",
-    "overlap_hint": "Cliquez sur « Proposer une heure » pour proposer une rencontre pour ce créneau.",
-    "propose_time": "Proposer une heure",
-    "generate_ai_comment": "Générer un commentaire IA",
-    "slot_delete": "Supprimer",
-    "slot_edit": "Modifier",
-    "title": "Tableau de bord",
-    "active_filter_hint": "Seuls les utilisateurs actifs au cours des 30 derniers jours sont affichés."
+    "overlap_hint": "Clique sur « Proposer cette heure » pour proposer une rencontre pour ce créneau.",
+    "title": "Tableau de bord"
   },
   "footer": {
-    "imprint": "Mentions légales",
-    "privacy": "Confidentialité",
-    "terms": "Conditions"
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "imprint": {
-    "title": "Mentions légales"
+    "title": "Imprint"
   },
   "landing": {
     "features": {
       "item1": "<strong>Appariement basé sur l'astrologie</strong> – connectez-vous en utilisant votre thème natal.",
       "item2": "<strong>Planification intelligente des fuseaux horaires</strong> – nous gérons les conversions UTC pour vous.",
-      "item3": "<strong>Communication directe via Jitsi</strong> — texte/audio/vidéo ; rien n’est stocké ni enregistré sur SoulTribe.chat.",
-      "item4": "<strong>Accès facile par lien</strong> — salle Jitsi privée pour les rendez‑vous confirmés ; respect de la vie privée, aucune installation sur ordinateur.",
+      "item3": "<strong>Messagerie privée et sécurisée</strong> – les conversations restent sur SoulTribe.chat.",
+      "item4": "<strong>Vidéo optionnelle via Jitsi</strong> – respectueux de la vie privée, aucune installation requise sur ordinateur.",
       "item5": "<strong>Interface épurée et ciblée</strong> – conçue pour des conversations significatives.",
       "title": "Fonctionnalités"
     },
@@ -85,8 +80,7 @@
       "item2": "Soyez authentique dans votre présentation – les détails aident les bonnes personnes à vous trouver.",
       "item3": "Le consentement d'abord, toujours. Allez au rythme qui vous convient.",
       "title": "Conseils de pro"
-    },
-    "page_title": "SoulTribe.chat – Trouve ta tribu d'âme"
+    }
   },
   "language": {
     "de": "Allemand",
@@ -121,11 +115,7 @@
     "login": "Connexion",
     "logout": "Déconnexion",
     "profile": "Profil",
-    "welcome": "Accueil",
-    "home": "Accueil",
-    "discover": "Découvrir",
-    "matches": "Correspondances",
-    "messages": "Messages"
+    "welcome": "Bienvenue"
   },
   "notifications": {
     "language_set_to": "Langue définie sur"
@@ -136,135 +126,24 @@
     "other_languages_label": "Autres langues (pour l'appariement)",
     "primary_language_label": "Langue principale (pour l'interface)",
     "save": "Enregistrer",
-    "title": "Ton profil",
-    "basic_info": {
-      "legend": "Informations de base",
-      "username_label": "Nom d'utilisateur",
-      "username_placeholder": "nom d'utilisateur"
-    },
-    "languages": {
-      "legend": "Langues"
-    },
-    "location": {
-      "legend": "Localisation actuelle",
-      "city_placeholder": "Ville actuelle (saisie semi-automatique)",
-      "use_my_location": "Utiliser ma position",
-      "detected_tz_label": "Fuseau horaire détecté :",
-      "detected_tz_hint": "(auto ou sélection)"
-    },
-    "birth": {
-      "legend": "Informations de naissance (pour l'astrologie)",
-      "date_placeholder": "Date de naissance",
-      "hour_label": "Heure",
-      "minute_label": "Min",
-      "place_placeholder": "Lieu de naissance (ville, pays)",
-      "detected_tz_label": "Fuseau horaire détecté :",
-      "detected_tz_hint": "(auto)",
-      "lat_placeholder": "Latitude (ex. 48,2082)",
-      "lon_placeholder": "Longitude (ex. 16,3738)",
-      "instructions": "Définissez votre date et votre lieu de naissance pour calculer votre radix. Si vous ne connaissez pas l'heure exacte, laissez le champ de l'heure vide et nous utiliserons midi par défaut."
-    },
-    "note": "Votre profil est utilisé pour personnaliser les correspondances et l'affichage des fuseaux horaires."
+    "title": "Ton profil"
   },
   "radix": {
-    "placeholder": "Si vous avez renseigné vos données de naissance, un aperçu de votre radix apparaîtra ici.",
-    "show_raw_json": "Afficher le JSON brut",
-    "title": "Votre Radix"
+    "placeholder": "If you have set your birth data, your radix snapshot will appear here.",
+    "show_raw_json": "Show raw JSON",
+    "title": "Your Radix"
   },
   "reset_password": {
-    "confirm_password_label": "Confirmer le nouveau mot de passe",
-    "confirm_password_placeholder": "confirmer le nouveau mot de passe",
-    "intro": "Choisissez un nouveau mot de passe pour votre compte.",
-    "new_password_label": "Nouveau mot de passe",
-    "new_password_placeholder": "nouveau mot de passe",
-    "submit": "Définir le nouveau mot de passe",
-    "title": "Réinitialiser le mot de passe"
+    "confirm_password_label": "Confirm new password",
+    "confirm_password_placeholder": "confirm new password",
+    "intro": "Choose a new password for your account.",
+    "new_password_label": "New password",
+    "new_password_placeholder": "new password",
+    "submit": "Set new password",
+    "title": "Reset Password"
   },
   "welcome": {
     "subtitle": "Trouve ta tribu d'âme",
     "title": "Bienvenue sur SoulTribe.chat"
-  },
-  "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
-    "prejoin": {
-      "heading": "Pre-Join Instructions",
-      "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
-      },
-      "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
-      },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
-    },
-    "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
-    },
-    "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
-    },
-    "toolbar": {
-      "heading": "Toolbar Icons",
-      "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
-      },
-      "rows": {
-        "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
-        },
-        "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
-        },
-        "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
-        },
-        "chat": {
-          "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
-        },
-        "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
-        },
-        "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
-        },
-        "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
-        }
-      }
-    },
-    "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
-    },
-    "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
-    }
   }
-}
+, "guestGuide": { "title": "Guide express pour les invités Jitsi de SoulTribe", "intro": "Ce guide aide les nouveaux invités à rejoindre les salles Jitsi de SoulTribe en toute confiance. Choisis uniquement les étapes dont tu as besoin. Le texte, l’audio et la vidéo sont tous facultatifs.", "prejoin": { "heading": "Instructions avant de rejoindre", "steps": { "options": "<strong>Découvre tes options.</strong> Jitsi prend en charge le <strong>texte</strong>, l’<strong>audio</strong> et la <strong>vidéo</strong>. À toi de décider ce que tu actives, chaque canal peut rester désactivé.", "permissions": "<strong>Accorde les autorisations.</strong> Lorsque la page de connexion le demande, autorise ton navigateur à utiliser le micro et la caméra afin de pouvoir les activer ensuite.", "setup": "<strong>Prépare-toi avant d’entrer.</strong>" }, "substeps": { "name": "<strong>Nom :</strong> Indique comment tu souhaites apparaître auprès des autres participants.", "background": "<strong>Arrière-plan :</strong> Choisis un flou ou un fond virtuel si tu veux plus de confidentialité." }, "mic_camera_label": "Micro & caméra :", "mic_camera_text": "Utilise les deux premières icônes pour les activer ou les désactiver avant de rejoindre.", "devices_label": "Périphériques :", "devices_before_arrow": "Clique sur la petite flèche de chaque icône", "devices_after_arrow": "pour sélectionner le micro ou la webcam appropriés.", "audio_tip_label": "Astuce audio :", "audio_tip_text": "Un casque ou des écouteurs évitent l’écho. Si tu dois utiliser des haut-parleurs, garde un volume bas pour éviter les larsens." }, "browser": { "heading": "Compatibilité des navigateurs", "supported": "<strong>✅ Firefox & Chrome :</strong> prise en charge complète de l’audio, de la vidéo et du chat.", "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo :</strong> non pris en charge.", "note": "<em>D’autres navigateurs de niche n’ont pas été vérifiés.</em>", "tip1": "Active les autorisations micro/caméra dans la barre d’adresse si on te le demande.", "tip2": "Désactive les bloqueurs de traqueurs ou ajoute Jitsi à ta liste d’autorisation.", "tip3": "Recharge l’onglet après avoir modifié les autorisations pour appliquer les changements." }, "layout": { "heading": "Disposition dans la salle", "description": "La <strong>zone vidéo principale</strong> au centre affiche tous ceux dont la caméra est active. En bas se trouve la <strong>barre de contrôle</strong> avec micro, caméra, partage d’écran, chat, participants et plus encore. Utilise le tiroir à flèche sur le bord droit <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> pour ouvrir l’elenco participants et les écrans partagés." }, "toolbar": { "heading": "Icônes de la barre d’outils", "columns": { "icon": "Icône", "label": "Libellé", "description": "Description" }, "rows": { "microphone": { "label": "Microphone", "description": "Active ou coupe ton micro et ouvre le menu des périphériques avec l’icône flèche <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>." }, "camera": { "label": "Caméra", "description": "Active ou coupe ta caméra et choisis les périphériques via l’icône flèche <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>." }, "screen": { "label": "Partage d’écran", "description": "Partage ton écran ou une fenêtre. Choisis un onglet, une fenêtre ou tout le bureau." }, "chat": { "label": "Chat", "description": "Ouvre le chat texte pour envoyer des messages ou partager des liens. Clique pour afficher/masquer le panneau latéral." }, "participants": { "label": "Participants / Inviter", "description": "Invite d’autres personnes ou consulte la liste des participants. Copie le lien de la salle ou autorise les invités en attente." }, "more": { "label": "Autres options", "description": "Accède aux options de sécurité, aux réglages des périphériques ou à des outils supplémentaires. Défini un mot de passe ou ajuste le mode salle d’attente." }, "hangup": { "label": "Raccrocher", "description": "Quitte la salle." } } }, "quick": { "heading": "Lien de connexion rapide", "cta": "💫 Rejoins instantanément sur jitsi.bubuit.net/soultribe", "note": "Teste ton installation ou rencontre des invités sympathiques. Aucun compte requis." }, "closing": { "heading": "Mot de clôture", "text": "Profite de tes connexions à ta façon et à ton rythme." } } }

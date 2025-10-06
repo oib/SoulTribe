@@ -185,86 +185,86 @@
     "language_set_to": "Kieli asetettu:"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Nopea Jitsi-opas SoulTriben vieraille",
+    "intro": "Tämä opas auttaa uusia vieraita liittymään SoulTriben Jitsi-huoneisiin luottavaisin mielin. Valitse vain ne vaiheet, joita tarvitset. Teksti, ääni ja video ovat täysin vapaaehtoisia.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Ohjeet ennen liittymistä",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Tutustu vaihtoehtoihisi. Jitsi tukee tekstiä, ääntä ja videota. Päätät itse, mitä otat käyttöön; kukin kanava voi pysyä poissa päältä.",
+        "permissions": "Anna tarvittavat käyttöoikeudet. Kun kirjautumissivu pyytää mikrofonin ja kameran käyttöoikeutta, anna lupa, jotta voit kytkeä ne myöhemmin päälle.",
+        "setup": "Valmistaudu ennen kuin astut huoneeseen."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Nimi: kirjoita nimi, jonka haluat muiden näkevän kokouksessa.",
+        "background": "Tausta: valitse sumea tai virtuaalinen tausta, jos haluat enemmän yksityisyyttä."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Mikrofoni ja kamera",
+      "mic_camera_text": "Käytä kahta ensimmäistä kuvaketta laitteiden kytkemiseen päälle tai pois ennen liittymistä.",
+      "devices_label": "Laitteet",
+      "devices_before_arrow": "Klikkaa kunkin kuvakkeen pientä nuolta",
+      "devices_after_arrow": "valitaksesi sopivan mikrofonin tai verkkokameran.",
+      "audio_tip_label": "Äänivinkki",
+      "audio_tip_text": "Kuulokkeet auttavat estämään kaiun. Jos käytät kaiuttimia, pidä äänenvoimakkuus matalana palautteen välttämiseksi."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Selainyhteensopivuus",
+      "supported": "Firefox ja Chrome tarjoavat täyden tuen äänelle, videolle ja chatille.",
+      "unsupported": "Safari, Edge, Opera, Brave ja DuckDuckGo eivät toistaiseksi ole tuettuja.",
+      "note": "Muiden erikoisselainten yhteensopivuutta ei ole testattu.",
+      "tip1": "Salli pyydettäessä mikrofonin ja kameran käyttö suoraan osoitepalkista.",
+      "tip2": "Poista seurannan estot käytöstä tai lisää Jitsi sallittujen sivustojen listalle.",
+      "tip3": "Päivitä välilehti muutosten jälkeen, jotta uudet asetukset astuvat voimaan."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Huoneen käyttöliittymän asettelu",
+      "description": "Keskellä oleva päävideoluukku näyttää kaikki, joilla kamera on päällä. Alareunassa sijaitsee ohjauspaneeli, jossa on tärkeät kuvakkeet: mikrofoni, kamera, näytön jako, chat, osallistujat ja lisäasetukset. Oikealla reunalla oleva paneeli avaa osallistujaluettelon ja jaetut näytöt."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Työkalupalkin kuvakkeet",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Kuvake",
+        "label": "Selite",
+        "description": "Kuvaus"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Mikrofoni",
+          "description": "Käännä mikrofoni päälle tai pois ja valitse oikea laite laitevalikosta."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Kamera",
+          "description": "Kytke kamera päälle tai pois ja valitse sopiva videolähde."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Näytön jakaminen",
+          "description": "Jaa koko näyttö, yksittäinen välilehti tai ikkuna."
         },
         "chat": {
           "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "description": "Avaa tekstichat lähettääksesi viestejä tai linkkejä."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Osallistujat / Kutsu",
+          "description": "Näe huoneessa läsnä olevat, kutsu uusia henkilöitä ja hyväksy odottavat vieraat."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Lisäasetukset",
+          "description": "Avaa turvallisuusasetukset, laitevalinnat ja muut työkalut."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Lopeta puhelu",
+          "description": "Poistu huoneesta."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Pikalinkki liittymiseen",
+      "cta": "Liity hetkessä osoitteessa jitsi.bubuit.net/soultribe",
+      "note": "Testaa kokoonpanoasi tai tapaa ystävällisiä vieraita. Käyttäjätiliä ei tarvita."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Loppuviesti",
+      "text": "Nauti yhteyksien luomisesta omalla tavallasi ja omassa tahdissasi."
     }
   }
 }

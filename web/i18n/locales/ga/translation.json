@@ -315,86 +315,86 @@
     "language_set_to": "Teanga socraithe mar"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Treoir thapa Jitsi do chuairteoirí SoulTribe",
+    "intro": "Tugann an treoir seo cabhair do chuairteoirí nua chun páirt a ghlacadh i seomraí Jitsi SoulTribe le muinín. Roghnaigh na céimeanna atá uait amháin. Tá téacs, fuaim agus físeán roghnach.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Treoracha roimh dhul isteach",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "<strong>Aithnigh do roghanna.</strong> Tacaíonn Jitsi le <strong>téacs</strong>, <strong>fuaim</strong> agus <strong>físeán</strong>. Roghnaíonn tusa cad a chasfar air; is féidir gach cainéal a fhágáil múchta.",
+        "permissions": "<strong>Tabhair ceadanna.</strong> Nuair a iarrann an leathanach logála isteach rochtain, lig don bhrabhsálaí micreafón agus ceamara a úsáid ionas gur féidir leat iad a chur ar siúl níos déanaí.",
+        "setup": "<strong>Ullmhaigh tú féin roimh dhul isteach.</strong>"
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "<strong>Ainm:</strong> Iontráil conas is mian leat go bhfeicfidh daoine eile thú sa chruinniú.",
+        "background": "<strong>Cúlra:</strong> Roghnaigh doiléiriú nó cúlra fíorúil más fearr leat níos mó príobháideachais."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Micreafón & ceamara:",
+      "mic_camera_text": "Úsáid na chéad dá íocón chun iad a chasadh air nó as sula nglacann tú páirt.",
+      "devices_label": "Gléasanna:",
+      "devices_before_arrow": "Cliceáil ar an tsaighead bheag ar gach íocón",
+      "devices_after_arrow": "chun an micreafón nó an ceamara ceart a roghnú.",
+      "audio_tip_label": "Leid fuaime:",
+      "audio_tip_text": "Cuireann cluasáin nó cluasáin deireadh leis an macalla. Má chaithfidh tú cainteoirí a úsáid, coinnigh an toirt íseal chun aiseolas a sheachaint."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Comhoiriúnacht brabhsálaí",
+      "supported": "<strong>✅ Firefox & Chrome:</strong> Tacaíocht iomlán d’fhuaim, d’fhíseán agus do chomhrá.",
+      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Gan tacaíocht.",
+      "note": "<em>Níor fíoraíodh brabhsálaithe eile nideoige.</em>",
+      "tip1": "Cumasaigh ceadanna micreafóin/ceamara sa bharra seolta más iarrtar é.",
+      "tip2": "Múch blocairí rianaithe nó cuir Jitsi leis an liosta ceadaithe.",
+      "tip3": "Athluchtaigh an cluaisín tar éis ceadanna a athrú chun na hathruithe a chur i bhfeidhm."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Leagan amach an chomhéadain sa seomra",
+      "description": "Taispeánann an <strong>príomhlimistéar físe</strong> sa lár gach duine a bhfuil a gceamara ar siúl. Thíos tá an <strong>barra rialaithe</strong> le pictiúir eochair: micreafón, ceamara, rochtain scáileáin, comhrá, rannpháirtithe agus níos mó roghanna. Bain úsáid as an tarraiceán saighead ar an imeall deas <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 0 1 0 1.06L9.06 11l5.47 5.47a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0Z\"/></svg> chun liosta na rannpháirtithe agus scáileáin roinnte a oscailt."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Deilbhíní an bharra uirlisí",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Deilbhín",
+        "label": "Lipéad",
+        "description": "Cur síos"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Micreafón",
+          "description": "Athraigh do mhicreafón agus oscail roghchlár na bhfeistí leis an deilbhín saighead <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Ceamara",
+          "description": "Cas do cheamara air nó as agus roghnaigh gléasanna tríd an deilbhín saighead <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Scáileán a roinnt",
+          "description": "Roinn do scáileán nó fuinneog. Roghnaigh cluaisín, fuinneog nó an deasc iomlán."
         },
         "chat": {
-          "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "label": "Comhrá",
+          "description": "Oscail comhrá téacs chun teachtaireachtaí nó nascanna a sheoladh. Tapáil chun an painéal taoibh a chur ar siúl nó as."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Rannpháirtithe / Tabhair cuireadh",
+          "description": "Tabhair cuireadh do dhaoine eile nó féach ar liosta reatha na rannpháirtithe. Cóipeáil nasc an tseomra nó ceadaigh aíonna atá ag fanacht."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "Tuilleadh roghanna",
+          "description": "Oscail roghanna slándála, socruithe gléasanna nó uirlisí breise. Socraigh focal faire nó coigeartaigh mód an seomra feithimh."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Críochnaigh glao",
+          "description": "Fág an seomra."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Nasc gasta le páirt a ghlacadh",
+      "cta": "💫 Glac páirt láithreach ag jitsi.bubuit.net/soultribe",
+      "note": "Tástáil do shocrú nó buail le cuairteoirí cairdiúla. Níl cuntas ag teastáil."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Scor-líne",
+      "text": "Bain taitneamh as nascadh ar do bhealach féin, ar do luas féin."
     }
   }
 }

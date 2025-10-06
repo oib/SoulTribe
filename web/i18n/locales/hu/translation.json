@@ -185,86 +185,86 @@
     "language_set_to": "Nyelv beállítva:"
   },
   "guestGuide": {
-    "title": "SoulTribe Jitsi Guest Quick-Start",
-    "intro": "This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.",
+    "title": "Gyors Jitsi útmutató a SoulTribe vendégeinek",
+    "intro": "Ez az útmutató segít az új vendégeknek abban, hogy magabiztosan csatlakozzanak a SoulTribe Jitsi szobáihoz. Csak azokat a lépéseket válaszd, amelyekre szükséged van. A szöveg, a hang és a videó mind opcionális.",
     "prejoin": {
-      "heading": "Pre-Join Instructions",
+      "heading": "Teendők csatlakozás előtt",
       "steps": {
-        "options": "<strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.",
-        "permissions": "<strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.",
-        "setup": "<strong>Set up before entering.</strong>"
+        "options": "Ismerd meg a lehetőségeidet. A Jitsi támogatja a szöveget, a hangot és a videót. Te döntöd el, mit kapcsolsz be; minden csatornát kikapcsolva is hagyhatsz.",
+        "permissions": "Engedélyek megadása. Ha a bejelentkező oldal hozzáférést kér, engedélyezd a böngészőnek a mikrofon és a kamera használatát, hogy később be tudd kapcsolni őket.",
+        "setup": "Készülj fel, mielőtt belépsz a szobába."
       },
       "substeps": {
-        "name": "<strong>Name:</strong> Enter how you’d like others to see you in the meeting.",
-        "background": "<strong>Background:</strong> Choose blur or a virtual background if you want extra privacy."
+        "name": "Név: add meg, hogyan szeretnéd, hogy a többiek lássanak a meeting során.",
+        "background": "Háttér: válassz elmosást vagy virtuális hátteret, ha több magánszférát szeretnél."
       },
-      "mic_camera_label": "Mic & camera:",
-      "mic_camera_text": "Use the first two icons to toggle them on or off before you join.",
-      "devices_label": "Devices:",
-      "devices_before_arrow": "Click each icon’s small arrow",
-      "devices_after_arrow": "to pick the right microphone or webcam.",
-      "audio_tip_label": "Audio tip:",
-      "audio_tip_text": "A headset or headphones avoids echo. If you need to use speakers, keep the volume low to prevent feedback."
+      "mic_camera_label": "Mikrofon és kamera",
+      "mic_camera_text": "Használd az első két ikont, hogy csatlakozás előtt be- vagy kikapcsold őket.",
+      "devices_label": "Eszközök",
+      "devices_before_arrow": "Kattints az ikonok kis nyilára",
+      "devices_after_arrow": "hogy kiválaszd a megfelelő mikrofont vagy webkamerát.",
+      "audio_tip_label": "Hangtipp",
+      "audio_tip_text": "A fejhallgató segít elkerülni a visszhangot. Ha hangszórót kell használnod, tartsd alacsonyan a hangerőt a visszacsatolás elkerülése érdekében."
     },
     "browser": {
-      "heading": "Browser Compatibility",
-      "supported": "<strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.",
-      "unsupported": "<strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.",
-      "note": "<em>Other niche browsers have not been verified.</em>",
-      "tip1": "Enable mic/cam permissions in the browser address bar if prompted.",
-      "tip2": "Turn off tracker blockers or add Jitsi to the allow-list.",
-      "tip3": "Reload the tab after changing permissions to apply the new settings."
+      "heading": "Böngésző kompatibilitás",
+      "supported": "A Firefox és a Chrome teljeskörű támogatást nyújt a hanghoz, videóhoz és chathez.",
+      "unsupported": "A Safari, Edge, Opera, Brave és DuckDuckGo jelenleg nem támogatott.",
+      "note": "Más kevésbé ismert böngészők kompatibilitását nem ellenőriztük.",
+      "tip1": "Engedélyezd a mikrofon és a kamera használatát az URL-sávban, ha kéri.",
+      "tip2": "Kapcsold ki a követésblokkolókat, vagy add a Jitsit az engedélyezettek listájához.",
+      "tip3": "A módosítások alkalmazásához frissítsd az oldalt."
     },
     "layout": {
-      "heading": "In-Room Interface Layout",
-      "description": "The <strong>main video area</strong> in the center shows everyone currently on camera. Along the bottom, the <strong>control bar</strong> holds all key icons, including mic, camera, screen share, chat, participants, and more options. Use the arrow drawer on the right edge <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M14.53 4.47a.75.75 0 010 1.06L9.06 11l5.47 5.47a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0Z\"/></svg> to open the participant list and shared screens."
+      "heading": "Felület elrendezése a szobában",
+      "description": "A fő videófelület középen mindenkit megjelenít, aki bekapcsolta a kamerát. Alul található a vezérlőpult, ahol a mikrofon, kamera, képernyőmegosztás, chat, résztvevők és további funkciók ikonja látható. A jobb oldali panelen találod a résztvevők listáját és a megosztott képernyőket."
     },
     "toolbar": {
-      "heading": "Toolbar Icons",
+      "heading": "Eszköztár ikonok",
       "columns": {
-        "icon": "Icon",
-        "label": "Label",
-        "description": "Description"
+        "icon": "Ikon",
+        "label": "Megnevezés",
+        "description": "Leírás"
       },
       "rows": {
         "microphone": {
-          "label": "Microphone",
-          "description": "Toggle your microphone and open the device menu using the arrow icon <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Mikrofon",
+          "description": "Kapcsold be vagy ki mikrofonodat, és válassz eszközt az eszközmenüben."
         },
         "camera": {
-          "label": "Camera",
-          "description": "Toggle your camera and choose devices from the menu arrow <svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M20.03 16.28a.75.75 0 0 1-1.06 0L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06Z\"/></svg>."
+          "label": "Kamera",
+          "description": "Kapcsold be vagy ki a kamerát, és állítsd be a megfelelő videó eszközt."
         },
         "screen": {
-          "label": "Screen Share",
-          "description": "Share your screen or window. Click to pick a tab, window, or full desktop."
+          "label": "Képernyőmegosztás",
+          "description": "Oszd meg teljes képernyődet, egy bizonyos lapot vagy ablakot."
         },
         "chat": {
           "label": "Chat",
-          "description": "Open text chat to send messages or share links. Tap to toggle the side panel."
+          "description": "Indíts szöveges beszélgetést, küldd el üzeneteidet vagy oszd meg a linkeket."
         },
         "participants": {
-          "label": "Participants / Invite",
-          "description": "Invite others or view the current participant list. Copy the room link or admit waiting guests."
+          "label": "Résztvevők / Meghívás",
+          "description": "Tekintsd meg az aktuális résztvevőket, adj hozzá újakat vagy engedélyezd a várakozó vendégek belépését."
         },
         "more": {
-          "label": "More Options",
-          "description": "Open security options, device settings, or additional tools. Set a password or adjust lobby mode."
+          "label": "További lehetőségek",
+          "description": "Állítsd be a biztonsági opciókat, eszközbeállításokat és egyéb eszközöket."
         },
         "hangup": {
-          "label": "Hang Up",
-          "description": "Leave the room."
+          "label": "Hívás befejezése",
+          "description": "Hagyd el a szobát."
         }
       }
     },
     "quick": {
-      "heading": "Quick Join Link",
-      "cta": "💫 Join instantly at jitsi.bubuit.net/soultribe",
-      "note": "Test your setup or meet friendly guests. No account needed."
+      "heading": "Gyors csatlakozási link",
+      "cta": "Csatlakozz azonnal: jitsi.bubuit.net/soultribe",
+      "note": "Teszteld a beállításokat vagy ismerj meg barátságos vendégeket. Fiók nem szükséges."
     },
     "closing": {
-      "heading": "Closing Line",
-      "text": "Enjoy connecting in your own way, on your own terms."
+      "heading": "Záró üzenet",
+      "text": "Élvezd a kapcsolatfelvételt a saját tempódban és módon."
     }
   }
 }
