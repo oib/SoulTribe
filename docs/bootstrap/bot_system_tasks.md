@@ -65,6 +65,12 @@ This document outlines the process for converting generated test users into full
 - `bot_users_inventory.md` listing all bot users.
 - Migration and QA logs.
 
+### Locale Dataset Maintenance
+
+- **Source of truth**: Locale, naming, and language policies live in `dev/bot_locale_data.py`.
+- **Adding locales**: Append new city dictionaries (label, timezone, names, language codes). Keep arrays balanced to avoid bias when the script modulos by user ID.
+- **QA**: After updates, rerun `python dev/bot_system_migration.py` in `--dry-run` mode (see below) to verify generated assignments without committing DB changes.
+
 ---
 
 # Bot Users Inventory (Template) — `bot_users_inventory.md`
@@ -109,4 +115,68 @@ This document outlines the process for converting generated test users into full
 
 1. Ensure idempotency: reruns should update rather than duplicate.
 2. Store all mappings (before/after) in `/migrations/2025-09-bot-normalization/`.
+
+---
+
+## Automation Script (`dev/bot_system_migration.py`)
+
+- **Purpose** Converts generated test users (`%@example.com`) into standardized EU bot users.
+- **Inputs** Relies on existing `User` and `Profile` records; uses curated locale data in `dev/bot_locale_data.py` for names, languages, and time zones.
+- **Outputs**
+  - Updated records in the database (emails, hashed passwords, profiles, availability slots).
+  - Inventory and audit artifacts under `migrations/2025-09-bot-normalization/`.
+
+### Usage
+
+1. **Activate environment** ensure `.env` points to the target database and dependencies are installed (`pip install -r requirements.txt`).
+2. **Dry run review** (optional) inspect `dev/bot_locale_data.py` to confirm locale coverage.
+3. **Execute migration**
+
+   ```bash
+   python dev/bot_system_migration.py
+   ```
+
+4. **Inspect console output** for processed user count and generated file paths.
+
+### Generated Artifacts
+
+- **Inventory** `migrations/2025-09-bot-normalization/bot_users_inventory.md`
+- **Email map** `migrations/2025-09-bot-normalization/logs/email_mappings.csv`
+- **Display name map** `migrations/2025-09-bot-normalization/logs/display_name_mappings.csv`
+- **Rollback snapshot** `migrations/2025-09-bot-normalization/logs/rollback_snapshot.json`
+- **Run summary** timestamped JSON files in `migrations/2025-09-bot-normalization/logs/`
+- **State cache** `migrations/2025-09-bot-normalization/state.json` storing deterministic passwords per user ID
+
+Passwords are generated deterministically per user ID; reruns reuse existing values to keep inventory stable until a manual rotation is performed.
+
+### Optional Flags
+
+- Pass `--dry-run` to print planned changes without committing (no artifacts written).
+- Set `BOT_LOCALE_SAMPLE=<label>` to focus on a specific locale record when testing.
+- Define `BOT_TARGET_IDS=1,2,3` to scope migration to a comma-delimited list during QA.
+
+### Validation Checklist (Post-run)
+
+- **Emails** Run `SELECT email FROM user WHERE email LIKE '%@example.com';` to confirm none remain.
+- **Time zones** Spot check `profile.live_tz` and `availabilityslot.timezone` values for updated users.
+- **Slots** Validate that each bot has three one-hour slots in the 15:00–18:00 local window for the scheduled date (default: next-day).
+- **Languages** Ensure `profile.languages` includes locale primary plus English.
+- **Inventory** Review `bot_users_inventory.md`; remove or encrypt once QA finishes.
+- **Rollback readiness** Verify `logs/rollback_snapshot.json` contains pre-migration values before deleting backups.
+
+### Rollback Procedure
+
+1. Restore database from snapshot if available **OR**
+2. Write a targeted script to reapply `rollback_snapshot.json` values for affected user IDs (email, password hash, profile fields).
+3. Delete generated availability slots if reverting (match on `user_id` and `start_dt_utc`).
+
+Document rollback actions in the logs directory alongside the original run summary.
+
+---
+
+## Rerun & Monitoring Notes
+
+- **Idempotent reruns**: The script reuses existing refresh data, password hashes, and avoids duplicate availability by checking `start_dt_utc` before insert.
+- **Audit trail**: Summary JSON files in `migrations/2025-09-bot-normalization/logs/` capture each run's timestamp, user count, and file outputs—retain these for compliance.
+- **Cleanup**: Once QA approves, rotate the deterministic passwords, archive inventory files securely, and prune historic logs older than required retention.
 

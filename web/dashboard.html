@@ -25,6 +25,17 @@
     <div class="card-head" style="display:flex; align-items:center; gap:12px;">
       <h2 data-i18n="dashboard.availability">Availability</h2>
     </div>
+    <details class="muted availability-help">
+      <summary data-i18n="dashboard.slot_help_summary">What is an availability slot?</summary>
+      <p data-i18n="dashboard.slot_help_intro">Slots are the windows of time you publish so SoulTribe can suggest meetups when someone overlaps with you.</p>
+      <ol class="muted availability-help-steps">
+        <li data-i18n="dashboard.slot_help_step1">Add one or more slots for the days and hours you are free. The system saves them in your profile timezone and in UTC.</li>
+        <li data-i18n="dashboard.slot_help_step2">When matches are fetched, we compare your slots with other members' slots to find overlapping times that are still in the future.</li>
+        <li data-i18n="dashboard.slot_help_step3">Overlap chips in the Matches section show the shared window: UTC, your local time, and your match's local time.</li>
+        <li data-i18n="dashboard.slot_help_step4">Click “Propose this time” on an overlap to launch the meetup flow with that slot pre-filled.</li>
+        <li data-i18n="dashboard.slot_help_step5">If something changes, edit or delete the slot so we stop suggesting outdated times.</li>
+      </ol>
+    </details>
     <div class="avail-grid">
       <div class="avail-group">
         <input id="availStartDate" type="date" />
@@ -82,6 +93,7 @@
     <div class="muted" data-i18n="dashboard.active_filter_hint">Only users active in the last 30 days are shown.</div>
     <div class="muted" data-i18n="dashboard.overlap_hint">Click “Propose this time” on an overlap to propose a meetup for that slot.</div>
     <div id="matches"></div>
+    <div id="matchesPager" class="pager-controls"></div>
   </section>
   </div>
 

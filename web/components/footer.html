@@ -10,12 +10,6 @@
       &copy; <span id="current-year">2025</span> SoulTribe.chat. All rights reserved.
     </div>
     
-    <div class="footer-lang">
-      <select id="footer-language-selector" class="language-selector" aria-label="Select language">
-        <option value="en">English</option>
-        <option value="de">Deutsch</option>
-      </select>
-    </div>
   </div>
 </footer>
 
@@ -26,7 +20,6 @@
   // Sync language selector with the one in navbar
   document.addEventListener('DOMContentLoaded', function() {
     const navLangSelector = document.getElementById('language-selector');
-    const footerLangSelector = document.getElementById('footer-language-selector');
     const footerLinks = Array.from(document.querySelectorAll('.footer-links .footer-link'));
     const originalHrefs = footerLinks.map(a => a.getAttribute('href'));
 
@@ -50,46 +43,29 @@
           a.removeAttribute('tabindex');
           a.classList.remove('is-disabled');
           a.title = '';
+          a.onclick = null;
         } else {
-          // Disable links in non-English locales until localized pages exist
           a.setAttribute('aria-disabled', 'true');
           a.setAttribute('tabindex', '-1');
           a.classList.add('is-disabled');
           a.title = 'Available in English only';
-          // Keep href for screen readers but prevent click navigation
-          a.addEventListener('click', function(ev) {
-            if (a.getAttribute('aria-disabled') === 'true') {
-              ev.preventDefault();
-              ev.stopPropagation();
-            }
-          });
+          a.onclick = function(ev) {
+            ev.preventDefault();
+            ev.stopPropagation();
+          };
         }
       });
     }
-    
-    if (navLangSelector && footerLangSelector) {
-      // Sync from nav to footer
-      navLangSelector.addEventListener('change', (e) => {
-        footerLangSelector.value = e.target.value;
-        updateFooterLinkAvailability();
-      });
-      
-      // Sync from footer to nav
-      footerLangSelector.addEventListener('change', (e) => {
-        navLangSelector.value = e.target.value;
-        navLangSelector.dispatchEvent(new Event('change'));
-        updateFooterLinkAvailability();
-      });
-      
-      // Initial sync
-      footerLangSelector.value = navLangSelector.value;
+
+    if (navLangSelector) {
+      navLangSelector.addEventListener('change', updateFooterLinkAvailability);
+      navLangSelector.dispatchEvent(new Event('change'));
+    } else {
+      updateFooterLinkAvailability();
     }
 
     // Also react to i18n changes if fired
     if (window.i18next && typeof window.i18next.on === 'function') {
       window.i18next.on('languageChanged', updateFooterLinkAvailability);
     }
-
-    updateFooterLinkAvailability();
   });
-</script>

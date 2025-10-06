@@ -390,7 +390,7 @@ const bindClick = (id, handler) => {
     } catch (e) { show("availability.delete:ERROR", e); }
   });
 
-  const api = async (path, { method = "GET", body, auth = false } = {}) => {
+  const api = async (path, { method = "GET", body, auth = false, returnResponse = false } = {}) => {
     const headers = { "Content-Type": "application/json" };
     if (auth && token) headers["Authorization"] = `Bearer ${token}`;
     const res = await fetch(path, {
@@ -401,8 +401,8 @@ const bindClick = (id, handler) => {
     const text = await res.text();
     let data;
     try { data = JSON.parse(text); } catch { data = text; }
-    if (!res.ok) throw { status: res.status, data };
-    return data;
+    if (!res.ok) throw { status: res.status, data, response: res };
+    return returnResponse ? { data, response: res } : data;
   };
 
   const show = (label, data) => {

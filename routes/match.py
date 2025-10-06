@@ -1,23 +1,26 @@
 from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException, Response
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Dict, Any, Optional, List
-from zoneinfo import ZoneInfo
 from datetime import datetime, timedelta
+import hashlib
+import json
 
 from services.scoring import score_pair
 from db import get_session
 from models import Radix, Profile, User
 from models import Match
 from services.jwt_auth import get_current_user_id
-from models import AvailabilitySlot
-from sqlalchemy import text
-from services.availability import intersect_hourly_slots
-import json
+from services.rate_limit import rate_limit
+from services.audit import log_match_annotation
+from services.redis_client import cache_get, cache_set
 import re
 import subprocess
 
 router = APIRouter(prefix="/api/match", tags=["match"])
+
+# Cache settings (seconds)
+MATCH_SCORE_CACHE_TTL = 60 * 60  # 1 hour
 
 # Minimal display names for EU languages we support on the frontend; fallback to code
 LANG_DISPLAY = {
@@ -29,6 +32,121 @@ LANG_DISPLAY = {
     'bs': 'Bosnian', 'et': 'Estonian', 'lv': 'Latvian', 'lt': 'Lithuanian', 'el': 'Greek', 'tr': 'Turkish',
     'ru': 'Russian', 'uk': 'Ukrainian', 'be': 'Belarusian'
 }
+
+
+def _normalize_lang_code(value: Optional[str]) -> Optional[str]:
+    """Normalize language codes to a simple lowercase base form (e.g., 'de-AT' -> 'de')."""
+    if value is None:
+        return None
+    try:
+        raw = str(value).strip().lower()
+    except Exception:
+        return None
+    if not raw:
+        return None
+    base = raw.split('-')[0]
+    return base or raw
+
+
+def _ordered_unique_langs(*codes: Optional[str]) -> List[str]:
+    seen: List[str] = []
+    for code in codes:
+        norm = _normalize_lang_code(code)
+        if norm and norm not in seen:
+            seen.append(norm)
+    return seen
+
+
+def _viewer_lang_candidates(profile: Optional[Profile], override: Optional[str] = None) -> List[str]:
+    langs: List[str] = []
+    langs.extend(_ordered_unique_langs(override))
+    if profile:
+        langs.extend(_ordered_unique_langs(getattr(profile, "lang_primary", None)))
+        langs.extend(_ordered_unique_langs(getattr(profile, "lang_secondary", None)))
+        extra = getattr(profile, "languages", None)
+        if isinstance(extra, list):
+            for item in extra:
+                langs.extend(_ordered_unique_langs(item))
+    langs.extend(_ordered_unique_langs('en'))
+    langs.extend(_ordered_unique_langs('und'))
+    # Deduplicate while preserving order
+    deduped: List[str] = []
+    for code in langs:
+        if code not in deduped:
+            deduped.append(code)
+    return deduped
+
+
+def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str]) -> tuple[Optional[str], Optional[str], List[str]]:
+    """Return (comment_text, lang_code, available_langs_for_ui)."""
+    if not match:
+        return None, None, []
+
+    mapping: Dict[str, str] = {}
+    if isinstance(match.comments_by_lang, dict):
+        for key, val in match.comments_by_lang.items():
+            norm_key = _normalize_lang_code(key)
+            if not norm_key:
+                continue
+            if not isinstance(val, str):
+                continue
+            text = val.strip()
+            if not text:
+                continue
+            mapping[norm_key] = text
+
+    available_for_ui = sorted({code for code in mapping.keys() if code != 'und'})
+
+    for code in lang_candidates:
+        if code in mapping:
+            return mapping[code], code, available_for_ui
+
+    if 'und' in mapping:
+        return mapping['und'], 'und', available_for_ui
+
+    # Fallback to any stored comment if nothing matched candidate list
+    if mapping:
+        first_key = next(iter(mapping))
+        return mapping[first_key], first_key, available_for_ui
+
+    if match.comment:
+        return match.comment, None, available_for_ui
+
+    return None, None, available_for_ui
+
+
+def _hash_radix(radix: Dict[str, Any]) -> str:
+    try:
+        blob = json.dumps(radix, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    except Exception:
+        blob = json.dumps(radix, default=str).encode("utf-8")
+    return hashlib.sha256(blob).hexdigest()
+
+
+def _radix_cache_key(a_hash: str, b_hash: str, moon_half: bool, lp_equal: bool, ls_equal: bool) -> str:
+    first, second = sorted([a_hash, b_hash])
+    return f"match:score:radix:{first}:{second}:{int(moon_half)}:{int(lp_equal)}:{int(ls_equal)}"
+
+
+def _pair_cache_key(a_user_id: int, b_user_id: int, moon_half: bool, lp_equal: bool, ls_equal: bool) -> str:
+    first, second = sorted([int(a_user_id), int(b_user_id)])
+    return f"match:score:pair:{first}:{second}:{int(moon_half)}:{int(lp_equal)}:{int(ls_equal)}"
+
+
+def _score_from_cache(key: str) -> Optional[tuple[int, Dict[str, Any]]]:
+    cached = cache_get(key)
+    if not cached:
+        return None
+    try:
+        payload = json.loads(cached.decode("utf-8"))
+        return int(payload["score"]), payload.get("breakdown", {})
+    except Exception:
+        return None
+
+
+def _store_score_cache(key: str, score: int, breakdown: Dict[str, Any]) -> None:
+    payload = json.dumps({"score": score, "breakdown": breakdown}, ensure_ascii=False).encode("utf-8")
+    cache_set(key, payload, MATCH_SCORE_CACHE_TTL)
 
 
 class MatchScoreIn(BaseModel):
@@ -47,17 +165,34 @@ class MatchScoreOut(BaseModel):
     breakdown: Dict[str, Any]
 
 
-@router.post("/score", response_model=MatchScoreOut)
+@router.post("/score", response_model=MatchScoreOut, dependencies=[Depends(rate_limit("match:score", limit=20, window_seconds=60))])
 def match_score(inp: MatchScoreIn) -> MatchScoreOut:
     # If either birth time is unknown, halve moon-related weights
     moon_half = not (inp.a_birth_time_known and inp.b_birth_time_known)
-    score, breakdown = score_pair(
-        inp.a_radix,
-        inp.b_radix,
-        moon_half_weight=moon_half,
-        lang_primary_equal=bool(inp.lang_primary_equal),
-        lang_secondary_equal=bool(inp.lang_secondary_equal),
+    lp_equal = bool(inp.lang_primary_equal)
+    ls_equal = bool(inp.lang_secondary_equal)
+
+    key = _radix_cache_key(
+        _hash_radix(inp.a_radix),
+        _hash_radix(inp.b_radix),
+        moon_half,
+        lp_equal,
+        ls_equal,
     )
+
+    cached = _score_from_cache(key)
+    if cached:
+        score, breakdown = cached
+    else:
+        score, breakdown = score_pair(
+            inp.a_radix,
+            inp.b_radix,
+            moon_half_weight=moon_half,
+            lang_primary_equal=lp_equal,
+            lang_secondary_equal=ls_equal,
+        )
+        _store_score_cache(key, score, breakdown)
+
     return MatchScoreOut(score=score, breakdown=breakdown)
 
 
@@ -76,6 +211,9 @@ class MatchCandidateOut(BaseModel):
     breakdown: Dict[str, Any]
     overlaps: Optional[List[Dict[str, Any]]] = None
     comment: Optional[str] = None
+    comment_lang: Optional[str] = None
+    available_comment_langs: List[str] = Field(default_factory=list)
+    has_other_comment_langs: bool = False
     match_id: Optional[int] = None
     other_display_name: Optional[str] = None
     # New: language overlap metadata for UI
@@ -83,7 +221,7 @@ class MatchCandidateOut(BaseModel):
     primary_equal: Optional[bool] = None
 
 
-@router.post("/find", response_model=List[MatchCandidateOut])
+@router.post("/find", response_model=List[MatchCandidateOut], dependencies=[Depends(rate_limit("match:find", limit=10, window_seconds=60))])
 def match_find(
     inp: MatchFindIn,
     session=Depends(get_session),
@@ -131,6 +269,8 @@ def match_find(
 
         target_langs = extract_langs(target_profile)
 
+        viewer_langs = _viewer_lang_candidates(target_profile)
+        viewer_primary = viewer_langs[0] if viewer_langs else None
         for row in radices:
             other_user_id = row.user_id
             if other_user_id == inp.user_id:
@@ -172,13 +312,25 @@ def match_find(
                 str(target_profile.lang_primary).strip().lower() == str(other_profile.lang_primary).strip().lower()
             )
 
-            score, breakdown = score_pair(
-                target_radix.json,
-                row.json,
-                moon_half_weight=moon_half,
-                lang_primary_equal=bool(lp_equal_for_scoring),
-                lang_secondary_equal=bool(ls_equal_for_scoring),
+            cache_key = _pair_cache_key(
+                inp.user_id,
+                other_user_id,
+                moon_half,
+                lp_equal_for_scoring,
+                ls_equal_for_scoring,
             )
+            cached_score = _score_from_cache(cache_key)
+            if cached_score:
+                score, breakdown = cached_score
+            else:
+                score, breakdown = score_pair(
+                    target_radix.json,
+                    row.json,
+                    moon_half_weight=moon_half,
+                    lang_primary_equal=bool(lp_equal_for_scoring),
+                    lang_secondary_equal=bool(ls_equal_for_scoring),
+                )
+                _store_score_cache(cache_key, score, breakdown)
             # Compute availability overlaps (prefer SQL tstzrange over Python for performance)
             lookahead_days = int(inp.lookahead_days) if inp.lookahead_days is not None else 3
             max_items = int(inp.max_overlaps) if inp.max_overlaps is not None else 5
@@ -265,8 +417,27 @@ def match_find(
                     ((Match.a_user_id == other_user_id) & (Match.b_user_id == inp.user_id))
                 )
             ).first()
-            comment = existing_match.comment if existing_match else None
-            mid = existing_match.id if existing_match else None
+            comment = None
+            comment_lang = None
+            has_other = False
+            mid = None
+            available_langs: List[str] = []
+            if existing_match:
+                mid = existing_match.id
+                comment, comment_lang, available_langs = _pick_comment_for_viewer(existing_match, viewer_langs)
+                if comment_lang == 'und':
+                    comment_lang = None
+                if available_langs:
+                    # Offer alternate options if there are stored langs beyond the current one
+                    if comment_lang:
+                        has_other = any(code != comment_lang for code in available_langs)
+                    else:
+                        has_other = True
+                # Encourage regeneration when comment language differs from viewer preference
+                if viewer_primary and comment_lang and comment_lang != viewer_primary:
+                    has_other = True
+                if viewer_primary and not comment_lang:
+                    has_other = True
 
             results.append(MatchCandidateOut(
                 user_id=other_user_id,
@@ -274,6 +445,9 @@ def match_find(
                 breakdown=breakdown,
                 overlaps=enhanced_overlaps,
                 comment=comment,
+                comment_lang=comment_lang,
+                available_comment_langs=available_langs,
+                has_other_comment_langs=has_other,
                 match_id=mid,
                 other_display_name=getattr(other_profile, "display_name", None),
                 shared_languages=shared_list,
@@ -323,7 +497,7 @@ class MatchCreateOut(BaseModel):
     score: int
 
 
-@router.post("/create", response_model=MatchCreateOut)
+@router.post("/create", response_model=MatchCreateOut, dependencies=[Depends(rate_limit("match:create", limit=5, window_seconds=60))])
 def match_create(inp: MatchCreateIn, session=Depends(get_session), user_id: int = Depends(get_current_user_id)) -> MatchCreateOut:
     # Ensure users exist and have radices
     ua = session.get(User, inp.a_user_id)
@@ -371,12 +545,15 @@ class MatchAnnotateIn(BaseModel):
 class MatchAnnotateOut(BaseModel):
     match_id: int
     comment: str
+    lang: str
+    available_comment_langs: List[str] = Field(default_factory=list)
 
 
-@router.post("/annotate", response_model=MatchAnnotateOut)
+@router.post("/annotate", response_model=MatchAnnotateOut, dependencies=[Depends(rate_limit("match:annotate", limit=5, window_seconds=300))])
 def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: int = Depends(get_current_user_id)) -> MatchAnnotateOut:
     m = session.get(Match, inp.match_id)
     if m is None:
+        log_match_annotation(match=None, actor_user_id=user_id, success=False, metadata={"reason": "match_not_found", "match_id": inp.match_id})
         raise HTTPException(status_code=404, detail="Match not found")
 
     # Build a compact sequence; instruct model to use 'you' and the other's display_name
@@ -468,6 +645,7 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
 
     if completed.returncode != 0:
         err = completed.stderr.strip() or completed.stdout.strip()
+        log_match_annotation(match=m, actor_user_id=user_id, success=False, metadata={"error": err})
         raise HTTPException(status_code=502, detail=f"ollama client error: {err}")
 
     comment = (completed.stdout or "").strip()
@@ -489,12 +667,40 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
             t = re.sub(r"\bA\b", other_name, t)
         return t
     comment = sanitize_comment(comment, perspective, public_other_label)
-    # Store in DB
-    m.comment = comment
+
+    # Store in DB (localized map + legacy field)
+    existing_map: Dict[str, str] = {}
+    if isinstance(m.comments_by_lang, dict):
+        for key, val in m.comments_by_lang.items():
+            norm_key = _normalize_lang_code(key)
+            if not norm_key:
+                continue
+            if isinstance(val, str) and val.strip():
+                existing_map[norm_key] = val.strip()
+    # Store under normalized language code, or 'und' if nothing usable
+    storage_lang = _normalize_lang_code(resp_lang) or 'und'
+    existing_map[storage_lang] = comment
+    m.comments_by_lang = existing_map
+
+    if storage_lang == 'en' or not m.comment:
+        m.comment = comment
+
     session.add(m)
     session.commit()
 
-    return MatchAnnotateOut(match_id=m.id, comment=comment)
+    available_langs = sorted({code for code in existing_map.keys() if code != 'und'})
+
+    log_match_annotation(
+        match=m,
+        actor_user_id=user_id,
+        success=True,
+        metadata={
+            "lang": storage_lang,
+            "available_langs": list(sorted(existing_map.keys())),
+        },
+    )
+
+    return MatchAnnotateOut(match_id=m.id, comment=comment, lang=storage_lang, available_comment_langs=available_langs)
 
 
 # Intentionally no manual comment editing endpoint; comments are generated by the AI via /api/match/annotate

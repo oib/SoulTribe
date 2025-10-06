@@ -12,11 +12,13 @@ Last updated: 2025-09-16
 - Radix computation uses Swiss Ephemeris via `services/radix.py` and tolerates naive timestamps (treated as UTC).
 - Scoring algorithm: `services/scoring.py` returns integer scores with a simple weighted heuristic and language bonus.
 - Availability helper: `services/availability.py` computes 1‑hour step overlaps between users’ availability windows for the next N days.
+- Bot slot automation: `services/bot_slot_scheduler.schedule_random_bot_slot()` selects a bot (`gen%@soultribe.chat`), generates a one-hour slot between 15:00–18:00 local time within the next three days, and persists it (invoked on each successful user login).
+- Redis caching: `services/redis_client.py` connects to DB `1` (override with `REDIS_DB`/`REDIS_URL`) and stores match score caches under keys like `match:score:*`; DB `0` remains reserved for other apps.
 
 ## API Summary (FastAPI)
 - Auth: `routes/auth.py`
   - `POST /api/auth/register` → returns JWT and creates an email verification token
-  - `POST /api/auth/login` → returns JWT
+  - `POST /api/auth/login` → returns JWT and, on success, calls `services.bot_slot_scheduler.schedule_random_bot_slot()` to publish one new availability slot for a random bot within the next 3 days (15:00–18:00 local window)
   - `POST /api/auth/verify` (admin/localhost only) → sets `email_verified_at` (legacy dev convenience)
   - `GET /api/auth/verify-email?token=...` → one‑click verification (48h tokens, single use)
 - Profile: `routes/profile.py` (JWT)

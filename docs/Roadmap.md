@@ -1,46 +1,45 @@
-# SoulTribe.chat — Roadmap & TODOs
+# SoulTribe.chat — roadmap & TODOs
 
 Last updated: 2025-09-16
 
 ## Near-Term (High Priority)
 - Auth
-  - Email verification via one‑click token (done)
-  - Lock down legacy manual verify to admin/localhost (done)
-  - Add resend verification endpoint and rate limit (todo)
-  - Add refresh tokens or short-lived access tokens if needed (todo)
-  - Add rate limiting on login and sensitive routes (todo)
+  - ✅ Email verification via one-click token
+  - ✅ Lock down legacy manual verify to admin/localhost
+  - ✅ Add resend verification endpoint and rate limit *(cooldown + token reuse implemented)*
+  - ✅ Add refresh tokens or short-lived access tokens *(15m JWT + rotating refresh tokens)*
+  - ✅ Add rate limiting on login and sensitive routes *(in-memory sliding window per client IP)*
 - Matching
-  - Cache or precompute scores for common pairs (optional)
-  - Add pagination to `/api/match/find` responses
-  - Add ability to exclude blocked users (requires blocklist model)
-  - Frontend filters: already hide non-overlap candidates (done)
+  - 🔲 Cache or precompute scores for common pairs *(optional)*
+  - ✅ Add pagination to `/api/match/find` responses
+  - ✅ Frontend filters: already hide non-overlap candidates
 - Availability & Overlaps
-  - Add PATCH to edit availability slot times (done)
-  - Optional: user-configurable overlap window length (≥ 1 hour) (todo)
-  - UI: compact inputs in a single row (done), enforce same‑day creation in UI (done)
-  - Timezone support with local time display and storage (done)
+  - ✅ Add PATCH to edit availability slot times
+  - ~~Optional: user-configurable overlap window length (≥ 1 hour)~~ ❌ Won't implement (minimum overlap stays fixed at 1 hour)
+  - ✅ UI: compact inputs in a single row; enforce same-day creation in UI
+  - ✅ Timezone support with local time display and storage
 - AI Annotation
-  - Secrets already moved to `.env`; consider rotation automation
-  - Add background job to annotate newly created matches automatically
+  - ✅ Secrets already moved to `.env`; consider rotation automation
+  - ~~Add background job to annotate newly created matches automatically~~ ❌ Won't implement (annotations remain manual-only via dashboard button)
 - Meetup Flow
-  - Proposer cannot confirm (done); only confirmer can unconfirm (done); either side can cancel (done)
-  - Add confirm dialogs for cancel/unconfirm (todo)
-  - Optional: send calendar `.ics` download links (todo)
+  - ✅ Proposer cannot confirm; only confirmer can unconfirm; either side can cancel
+  - ✅ Add confirm dialogs for cancel/unconfirm *(browser prompts on dashboard actions)*
+  - 🔲 Optional: send calendar `.ics` download links
 - Security
-  - Add basic rate limiting across `/api/match/*` and `/api/meetup/*`
-  - Audit logs for annotate/meet actions
+  - ✅ Add basic rate limiting across `/api/match/*` and `/api/meetup/*` *(per-IP sliding window limits)*
+  - ✅ Audit logs for annotate/meet actions *(structured JSON to `audit` logger)*
 
 ## Medium-Term
 - Profile
-  - Add avatar upload
-  - Add social handles and interests/tags
-  - Richer language metadata (proficiency levels)
+  - 🔲 Add avatar upload
+  - 🔲 Add social handles and interests/tags
+  - 🔲 Richer language metadata (proficiency levels)
 - Matching Algorithm
-  - Improve weights; tune with feedback data
-  - Consider additional astrology aspects and houses (if desired)
+  - 🔲 Improve weights; tune with feedback data
+  - 🔲 Consider additional astrology aspects and houses (if desired)
 - DB & Migrations
-  - Alembic in place; add more granular revisions and FK constraints
-  - Add indexes for frequent queries (e.g., match lookups)
+  - 🔲 Alembic in place; add more granular revisions and FK constraints
+  - 🔲 Add indexes for frequent queries (e.g., match lookups)
 - Frontend
   - Replace console with a proper app (React/Svelte)
   - ~~Add localization/i18n for UI strings~~ ✅ Completed (28 languages)

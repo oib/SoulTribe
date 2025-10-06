@@ -18,10 +18,21 @@ from services.jwt_auth import get_current_user_id
 from services.email import send_email
 from fastapi import Request
 from routes import admin as admin_routes
-from datetime import timedelta
+from services.rate_limit import rate_limit
+from services.auth_tokens import (
+    mint_refresh_token,
+    get_refresh_token_record,
+    revoke_refresh_token,
+    purge_old_refresh_tokens,
+    is_refresh_token_active,
+)
+from services.bot_slot_scheduler import schedule_random_bot_slot
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 ph = PasswordHasher()
+
+RESEND_VERIFICATION_COOLDOWN = timedelta(minutes=10)
+VERIFICATION_TOKEN_TTL = timedelta(hours=24)
 
 # Datetime helpers: use naive UTC consistently for storage and comparisons
 def _utcnow_naive() -> datetime:
@@ -34,6 +45,15 @@ def _to_naive_utc(dt: datetime) -> datetime:
         return dt.astimezone(timezone.utc).replace(tzinfo=None)
     except Exception:
         return dt
+
+
+def _client_ip(request: Request | None) -> str | None:
+    if not request:
+        return None
+    client = getattr(request, "client", None)
+    if client and client.host:
+        return client.host
+    return None
 
 
 class RegisterIn(BaseModel):
@@ -54,6 +74,7 @@ class RegisterOut(BaseModel):
     user_id: int
     access_token: str
     token_type: str = "bearer"
+    refresh_token: str
     # Dev convenience: include verification URL so email provider is optional in MVP
     verification_url: Optional[str] = None
 
@@ -67,6 +88,7 @@ class LoginOut(BaseModel):
     ok: bool
     access_token: str
     token_type: str = "bearer"
+    refresh_token: str
 
 
 class ResetRequestIn(BaseModel):
@@ -88,8 +110,16 @@ class ResetPerformOut(BaseModel):
     message: str
 
 
+class RefreshIn(BaseModel):
+    refresh_token: str = Field(min_length=1)
+
+
+class RefreshOut(LoginOut):
+    pass
+
+
 @router.post("/register", response_model=RegisterOut)
-def register(payload: RegisterIn, session=Depends(get_session)):
+def register(payload: RegisterIn, request: Request, session=Depends(get_session)):
     # check for duplicate email
     existing = session.exec(select(User).where(User.email == payload.email)).first()
     if existing:
@@ -174,11 +204,28 @@ def register(payload: RegisterIn, session=Depends(get_session)):
         # Do not block registration if email fails in dev
         pass
 
-    return RegisterOut(ok=True, user_id=user.id, access_token=token, verification_url=verification_url)
+    refresh_raw, refresh_rec = mint_refresh_token(
+        user.id,
+        client_ip=_client_ip(request),
+        user_agent=request.headers.get("user-agent") if request else None,
+    )
+    session.add(refresh_rec)
+    session.flush()
+    purge_old_refresh_tokens(session, user)
+    session.commit()
+
+    return RegisterOut(
+        ok=True,
+        user_id=user.id,
+        access_token=token,
+        token_type="bearer",
+        refresh_token=refresh_raw,
+        verification_url=verification_url,
+    )
 
 
-@router.post("/login", response_model=LoginOut)
-def login(payload: LoginIn, session=Depends(get_session), request: Request = None):
+@router.post("/login", response_model=LoginOut, dependencies=[Depends(rate_limit("auth:login", limit=5, window_seconds=60))])
+def login(payload: LoginIn, request: Request, session=Depends(get_session)):
     user = session.exec(select(User).where(User.email == payload.email)).first()
     if not user:
         raise HTTPException(status_code=401, detail="Invalid credentials")
@@ -197,17 +244,35 @@ def login(payload: LoginIn, session=Depends(get_session), request: Request = Non
             raise HTTPException(status_code=401, detail="Email not verified")
     
     # Record last login timestamp (UTC naive)
+    now = _utcnow_naive()
     try:
-        user.last_login_at = _utcnow_naive()
+        user.last_login_at = now
         session.add(user)
-        session.commit()
     except Exception:
         pass
+
+    refresh_raw, refresh_rec = mint_refresh_token(
+        user.id,
+        client_ip=_client_ip(request),
+        user_agent=request.headers.get("user-agent") if request else None,
+    )
+    session.add(refresh_rec)
+    session.flush()
+    purge_old_refresh_tokens(session, user)
+    session.commit()
+
+    # Trigger: schedule one random bot availability slot on each successful login
+    try:
+        schedule_random_bot_slot(session)
+    except Exception:
+        # Never block login if the scheduler fails
+        pass
+
     token = create_access_token({"sub": str(user.id), "email": user.email})
-    return LoginOut(ok=True, access_token=token)
+    return LoginOut(ok=True, access_token=token, token_type="bearer", refresh_token=refresh_raw)
 
 
-@router.post("/reset-request", response_model=ResetRequestOut)
+@router.post("/reset-request", response_model=ResetRequestOut, dependencies=[Depends(rate_limit("auth:reset-request", limit=5, window_seconds=300))])
 def reset_request(payload: ResetRequestIn, session=Depends(get_session)):
     user = session.exec(select(User).where(User.email == payload.email)).first()
     # Always return ok for privacy; only create token if user exists
@@ -239,62 +304,89 @@ def reset_request(payload: ResetRequestIn, session=Depends(get_session)):
     return ResetRequestOut(ok=True, message="If an account exists, a reset email has been sent.")
 
 
-@router.post("/resend-verification", response_model=ResetRequestOut)
+@router.post("/resend-verification", response_model=ResetRequestOut, dependencies=[Depends(rate_limit("auth:resend-verification", limit=3, window_seconds=600))])
 def resend_verification(payload: ResetRequestIn, session=Depends(get_session)):
     """Resend the verification email for a user.
-    
+
     This will resend the verification email if the user exists and is not already verified.
     For security, always returns success even if the email doesn't exist.
     """
     user = session.exec(select(User).where(User.email == payload.email)).first()
     if user and not user.email_verified_at:
-        # Delete any existing verification tokens for this user
-        session.exec(
-            delete(EmailVerificationToken).where(EmailVerificationToken.user_id == user.id)
-        )
-        
-        # Create new verification token
-        token = EmailVerificationToken(
-            user_id=user.id,
-            token=secrets.token_urlsafe(32),
-            created_at=_utcnow_naive(),
-            expires_at=_utcnow_naive() + timedelta(hours=24)  # 24 hours
-        )
-        session.add(token)
+        now = _utcnow_naive()
+        latest_token = session.exec(
+            select(EmailVerificationToken)
+            .where(EmailVerificationToken.user_id == user.id)
+            .order_by(EmailVerificationToken.created_at.desc())
+        ).first()
+
+        token_to_send: EmailVerificationToken
+        if latest_token and latest_token.used_at is None:
+            token_created = _to_naive_utc(latest_token.created_at)
+            token_expires = _to_naive_utc(latest_token.expires_at)
+            if token_expires >= now:
+                if now - token_created < RESEND_VERIFICATION_COOLDOWN:
+                    # Cooldown active; reuse existing token without sending email again.
+                    return ResetRequestOut(
+                        ok=True,
+                        message="A verification email was sent recently. Please check your inbox in a few minutes."
+                    )
+                # Reuse token, refresh timestamps to extend validity window
+                latest_token.created_at = now
+                latest_token.expires_at = now + VERIFICATION_TOKEN_TTL
+                token_to_send = latest_token
+            else:
+                # Expired token: remove it and issue a new one
+                session.delete(latest_token)
+                session.commit()
+                new_token = EmailVerificationToken(
+                    user_id=user.id,
+                    token=secrets.token_urlsafe(32),
+                    created_at=now,
+                    expires_at=now + VERIFICATION_TOKEN_TTL,
+                )
+                token_to_send = new_token
+        else:
+            new_token = EmailVerificationToken(
+                user_id=user.id,
+                token=secrets.token_urlsafe(32),
+                created_at=now,
+                expires_at=now + VERIFICATION_TOKEN_TTL,
+            )
+            token_to_send = new_token
+
+        session.add(token_to_send)
         session.commit()
-        
+
         # Send verification email
-        base_url = os.getenv("BASE_URL", "https://soultribe.chat")
-        verification_url = f"{base_url}/api/auth/verify-email?token={token.token}"
+        base_url = os.getenv("BASE_URL", "https://soultribe.chat").rstrip('/')
+        verification_url = f"{base_url}/api/auth/verify-email?token={token_to_send.token}"
         subj = "Verify your email — SoulTribe.chat"
-        text = f"""
-        Welcome to SoulTribe.chat!
-        
-        Click to verify your email: {verification_url}
-        
-        This link expires in 24 hours.
-        """
-        html = f"""
-        <h1>Welcome to SoulTribe.chat!</h1>
-        <p>Click the button below to verify your email address:</p>
-        <p><a href="{verification_url}" style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Verify Email</a></p>
-        <p>Or copy and paste this link in your browser:</p>
-        <p><code>{verification_url}</code></p>
-        <p>This link expires in 24 hours.</p>
-        """
+        text = (
+            "Welcome to SoulTribe.chat!\n\n"
+            f"Click to verify your email: {verification_url}\n\n"
+            "This link expires in 24 hours."
+        )
+        html = (
+            "<h1>Welcome to <strong>SoulTribe.chat</strong>!</h1>"
+            "<p>Click the button below to verify your email address:</p>"
+            f"<p><a href=\"{verification_url}\" style=\"background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;\">Verify Email</a></p>"
+            "<p>Or copy and paste this link in your browser:</p>"
+            f"<p><code>{verification_url}</code></p>"
+            "<p>This link expires in 24 hours.</p>"
+        )
         try:
             send_email(user.email, subj, html, text)
         except Exception:
             pass
-    
+
     # Always return success for security
     return ResetRequestOut(
         ok=True, 
         message="If an account exists and is not verified, a verification email has been sent."
     )
 
-
-@router.post("/reset", response_model=ResetPerformOut)
+@router.post("/reset", response_model=ResetPerformOut, dependencies=[Depends(rate_limit("auth:reset", limit=5, window_seconds=300))])
 def reset_password(payload: ResetPerformIn, session=Depends(get_session)):
     rec = session.exec(select(PasswordResetToken).where(PasswordResetToken.token == payload.token)).first()
     if not rec:
@@ -315,6 +407,47 @@ def reset_password(payload: ResetPerformIn, session=Depends(get_session)):
     session.add(rec)
     session.commit()
     return ResetPerformOut(ok=True, message="Password has been reset. You can now log in.")
+
+
+@router.post(
+    "/refresh",
+    response_model=RefreshOut,
+    dependencies=[Depends(rate_limit("auth:refresh", limit=10, window_seconds=300))],
+)
+def refresh_access_token(payload: RefreshIn, session=Depends(get_session), request: Request = None):
+    record = get_refresh_token_record(session, payload.refresh_token)
+    if not record or not is_refresh_token_active(record):
+        raise HTTPException(status_code=401, detail="Invalid or expired refresh token")
+
+    user = session.get(User, record.user_id)
+    if not user:
+        revoke_refresh_token(session, record)
+        session.commit()
+        raise HTTPException(status_code=401, detail="Invalid refresh token")
+
+    # Refresh flows should count as activity; record last login timestamp
+    try:
+        user.last_login_at = _utcnow_naive()
+        session.add(user)
+    except Exception:
+        pass
+
+    revoke_refresh_token(session, record)
+
+    new_refresh_raw, new_refresh_rec = mint_refresh_token(
+        user.id,
+        client_ip=_client_ip(request),
+        user_agent=request.headers.get("user-agent") if request else None,
+    )
+
+    session.add(record)
+    session.add(new_refresh_rec)
+    session.flush()
+    purge_old_refresh_tokens(session, user)
+    session.commit()
+
+    token = create_access_token({"sub": str(user.id), "email": user.email})
+    return RefreshOut(ok=True, access_token=token, token_type="bearer", refresh_token=new_refresh_raw)
 
 
 class VerifyIn(BaseModel):

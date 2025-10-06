@@ -228,20 +228,99 @@
   }
 
   // Helper to fetch and render matches based on current input fields
-  const fetchAndRenderMatches = async () => {
+  const matchPagination = {
+    limit: 10,
+    offset: 0,
+    total: 0,
+    hasMore: false,
+    filters: {
+      min_score: 50,
+      lookahead_days: 14,
+      max_overlaps: 5,
+    },
+  };
+
+  const renderMatchesPager = () => {
+    const pager = document.getElementById('matchesPager');
+    if (!pager) return;
+    const { limit, offset, total, hasMore } = matchPagination;
+    const page = Math.floor(offset / limit) + 1;
+    const totalPages = total ? Math.ceil(total / limit) : page;
+    const prevDisabled = offset <= 0;
+    const nextDisabled = !hasMore;
+    pager.innerHTML = `
+      <div class="pager">
+        <button class="button secondary pager-prev" ${prevDisabled ? 'disabled' : ''} data-i18n="dashboard.prev">Previous</button>
+        <span class="pager-status">Page ${page}${totalPages ? ` / ${totalPages}` : ''}</span>
+        <button class="button secondary pager-next" ${nextDisabled ? 'disabled' : ''} data-i18n="dashboard.next">Next</button>
+      </div>
+    `;
+    try { if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') window.SimpleI18n.updateUI(); } catch {}
+  };
+
+  const fetchAndRenderMatches = async ({ useOffset } = {}) => {
     const user_id = currentUserId;
     if (!user_id) {
       console.warn('No user ID available for match finding');
       return;
     }
-    const body = { user_id, limit: 20, min_score: 50, lookahead_days: 14, max_overlaps: 5 };
-    const data = await api("/api/match/find", { method: "POST", body, auth: true });
-    
+    if (typeof useOffset === 'number') {
+      matchPagination.offset = Math.max(0, useOffset);
+    }
+    const body = {
+      user_id,
+      limit: matchPagination.limit,
+      offset: matchPagination.offset,
+      ...matchPagination.filters,
+    };
+    const { data, response } = await api("/api/match/find", { method: "POST", body, auth: true, returnResponse: true });
+    const totalHeader = response.headers.get('X-Total-Count');
+    const hasMoreHeader = response.headers.get('X-Has-More');
+    matchPagination.total = totalHeader ? parseInt(totalHeader, 10) || 0 : (Array.isArray(data) ? data.length : 0);
+    matchPagination.hasMore = hasMoreHeader ? hasMoreHeader.toLowerCase() === 'true' : false;
+
+    const determineViewerLang = () => {
+      try {
+        if (window.SimpleI18n && typeof window.SimpleI18n.currentLang === 'string') {
+          const lang = window.SimpleI18n.currentLang.trim();
+          if (lang) return lang.toLowerCase();
+        }
+      } catch {}
+      try {
+        const stored = localStorage.getItem('selectedLanguage');
+        if (stored) return stored.trim().toLowerCase();
+      } catch {}
+      try {
+        const nav = navigator?.language || navigator?.userLanguage;
+        if (nav) return String(nav).split('-')[0].toLowerCase();
+      } catch {}
+      return 'en';
+    };
+
+    const viewerLang = determineViewerLang();
+
+    const getLangName = (code) => {
+      if (!code) return '';
+      const normalized = String(code).toLowerCase();
+      try {
+        const map = window.SimpleI18n?.languages;
+        if (map && map[normalized]) {
+          return map[normalized];
+        }
+      } catch {}
+      return normalized.toUpperCase();
+    };
+
+    const formatLangList = (list = []) => {
+      if (!Array.isArray(list)) return '';
+      return list.filter(Boolean).map(code => getLangName(code)).join(', ');
+    };
+
     // Pretty render: candidates with score and overlaps (UTC + local)
     const cont = document.getElementById('matches');
     if (cont) {
       let items = '';
-      // Show all candidates; if none overlaps, render without overlap chips
+      // Show current page of candidates; if none overlaps, render without overlap chips
       const list = Array.isArray(data) ? data : [];
       for (const cand of list) {
         const otherName = (cand.other_display_name && String(cand.other_display_name).trim())
@@ -306,14 +385,69 @@
         // Remove languages block from body to avoid duplication
         const langBadges = '';
         const safeComment = cand.comment ? String(cand.comment).replace(/</g,'&lt;') : '';
-        const comment = safeComment ? `
+        const commentLang = cand.comment_lang ? String(cand.comment_lang).toLowerCase() : null;
+        const availableLangsRaw = Array.isArray(cand.available_comment_langs) ? cand.available_comment_langs : [];
+        const availableLangs = availableLangsRaw.map(code => String(code).toLowerCase());
+
+        let commentMeta = '';
+        if (commentLang) {
+          const badgeClass = (viewerLang && commentLang === viewerLang) ? 'badge success' : 'badge secondary';
+          const otherLangs = availableLangs.filter(code => code !== commentLang);
+          const viewerHint = (viewerLang && commentLang !== viewerLang)
+            ? `<span class="meta muted">${getLangName(viewerLang)} preferred</span>`
+            : '';
+          const otherHint = otherLangs.length
+            ? `<span class="meta muted">${formatLangList(otherLangs)}</span>`
+            : '';
+          commentMeta = `
+            <div class="item-sub comment-lang-meta">
+              <span class="${badgeClass}">${getLangName(commentLang)}</span>
+              ${viewerHint}
+              ${otherHint}
+            </div>
+          `;
+        } else if (availableLangs.length) {
+          commentMeta = `
+            <div class="item-sub comment-lang-meta muted">
+              ${formatLangList(availableLangs)}
+            </div>
+          `;
+        }
+
+        let commentBlock = '';
+        if (safeComment) {
+          commentBlock = `
             <div class="chips">
               <div class="chip">
                 <div class="item-sub">“${safeComment}”</div>
+                ${commentMeta || ''}
               </div>
             </div>
-        ` : '';
-        const annotateBtn = !cand.comment ? `<div class="item-actions center"><button class="button secondary btn-annotate-match" data-cand="${cand.user_id}" data-i18n="dashboard.generate_ai_comment">Generate AI comment</button></div>` : '';
+          `;
+        } else if (commentMeta) {
+          commentBlock = `
+            <div class="chips">
+              <div class="chip">
+                ${commentMeta}
+              </div>
+            </div>
+          `;
+        }
+
+        const preferredLang = viewerLang || 'en';
+        const baseAnnotateLabel = (window.SimpleI18n && typeof window.SimpleI18n.t === 'function')
+          ? window.SimpleI18n.t('dashboard.generate_ai_comment')
+          : 'Generate AI comment';
+        let annotateLabel = baseAnnotateLabel;
+        if (cand.comment && preferredLang) {
+          annotateLabel = `${baseAnnotateLabel} (${getLangName(preferredLang)})`;
+        }
+        const shouldOfferAnnotate = !cand.comment || cand.has_other_comment_langs;
+        const matchAttr = cand.match_id ? ` data-match-id="${cand.match_id}"` : '';
+        const annotateBtn = shouldOfferAnnotate
+          ? `<div class="item-actions center"><button class="button secondary btn-annotate-match" data-cand="${cand.user_id}" data-lang="${preferredLang}"${matchAttr}>${annotateLabel}</button></div>`
+          : '';
+
         items += `
           <li class="item-card">
             <div class="item-head">
@@ -321,7 +455,7 @@
               <div style="display:flex; gap:8px; align-items:center;">${headerLangBadge}${score}</div>
             </div>
             ${chips ? `<div class="chips">${chips}</div>` : ''}
-            ${comment}
+            ${commentBlock}
             ${annotateBtn}
           </li>`;
       }
@@ -767,6 +901,8 @@
       } catch {}
       if (e.target.classList.contains('btn-unconfirm-meetup')) {
         const meetupId = parseInt(e.target.dataset.id, 10);
+        const ok = window.confirm('Unconfirm this meetup? The time will return to proposed status.');
+        if (!ok) return;
         try {
           await api('/api/meetup/unconfirm', { method: 'POST', body: { meetup_id: meetupId }, auth: true });
           toast('Meetup unconfirmed');
@@ -775,8 +911,23 @@
           toast(errorMessage(err, 'Failed to unconfirm meetup'), 'error');
           show('meetup.unconfirm:ERROR', err);
         }
+        return;
       }
-      
+
+      if (e.target.classList.contains('btn-cancel-meetup')) {
+        const meetupId = parseInt(e.target.dataset.id, 10);
+        const ok = window.confirm('Cancel this meetup for both participants?');
+        if (!ok) return;
+        try {
+          await api('/api/meetup/cancel', { method: 'POST', body: { meetup_id: meetupId }, auth: true });
+          toast('Meetup canceled');
+          await fetchAndRenderMeetups();
+        } catch (err) {
+          toast(errorMessage(err, 'Failed to cancel meetup'), 'error');
+          show('meetup.cancel:ERROR', err);
+        }
+        return;
+      }
 
       if (e.target.classList.contains('btn-delete-meetup')) {
         const meetupId = parseInt(e.target.dataset.id, 10);
@@ -949,10 +1100,11 @@
       
       if (e.target.classList.contains('btn-annotate-match')) {
         const candId = parseInt(e.target.dataset.cand, 10);
+        const targetLang = e.target.dataset.lang || (window.SimpleI18n?.currentLang) || 'en';
         try {
           // Ensure a match exists, then annotate
           const mc = await api('/api/match/create', { method: 'POST', auth: true, body: { a_user_id: currentUserId, b_user_id: candId } });
-          await api('/api/match/annotate', { method: 'POST', auth: true, body: { match_id: mc.match_id } });
+          await api('/api/match/annotate', { method: 'POST', auth: true, body: { match_id: mc.match_id, lang: targetLang } });
           toast('AI comment generated');
           await fetchAndRenderMatches();
         } catch (err) {
@@ -971,6 +1123,21 @@
         try { fetchAndRenderMeetups(); } catch {}
       }
     } catch (e) { /* ignore */ }
+  });
+
+  document.addEventListener('click', async (e) => {
+    const pagerPrev = e.target && e.target.classList && e.target.classList.contains('pager-prev');
+    const pagerNext = e.target && e.target.classList && e.target.classList.contains('pager-next');
+    if (!pagerPrev && !pagerNext) return;
+    e.preventDefault();
+    if (pagerPrev && matchPagination.offset > 0) {
+      const nextOffset = Math.max(0, matchPagination.offset - matchPagination.limit);
+      await fetchAndRenderMatches({ useOffset: nextOffset });
+    }
+    if (pagerNext && matchPagination.hasMore) {
+      const nextOffset = matchPagination.offset + matchPagination.limit;
+      await fetchAndRenderMatches({ useOffset: nextOffset });
+    }
   });
 
   // Expose functions globally for cross-file calls

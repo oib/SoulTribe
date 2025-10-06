@@ -78,6 +78,7 @@ class Match(SQLModel, table=True):
     status: str = Field(default="suggested")
     created_at: datetime = Field(default_factory=datetime.utcnow)
     comment: str | None = None
+    comments_by_lang: dict[str, str] | None = Field(default=None, sa_column=Column(JSON))
 
 class Meetup(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
@@ -106,3 +107,14 @@ class AvailabilitySlot(SQLModel, table=True):
     end_dt_local: datetime | None = None    # User's local time when slot was created
     timezone: str | None = None             # User's timezone (IANA) when slot was created
     created_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+class RefreshToken(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    user_id: int = Field(foreign_key="user.id", ondelete="CASCADE", index=True)
+    token_hash: str = Field(index=True)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    expires_at: datetime
+    revoked_at: datetime | None = None
+    client_ip: str | None = None
+    user_agent: str | None = None

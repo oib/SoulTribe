@@ -77,13 +77,12 @@ systemctl --user start soultribe-gunicorn
 
 ### Timezone Support
 - Full timezone awareness with local time display and storage
-- Timezone hint in section headers for clarity
 - All times shown with appropriate timezone indicators
 
 ### Dashboard Improvements
 - Simplified Matches interface:
   - Uses fixed defaults (`min_score`=50, `lookahead_days`=3, `max_overlaps`=5)
-  - Always uses the logged‑in user automatically (no user id input)
+  - Always uses the logged-in user automatically (no user id input)
   - Renders only candidates with at least one overlap
 - Overlap chips show three columns (UTC • you • other) with date, time, duration; a "Propose this time" button creates a match (if needed) and proposes a meetup at that time.
 ### Meetup Flow
@@ -92,6 +91,7 @@ systemctl --user start soultribe-gunicorn
 - Either side can cancel
 - Simplified meetup card UI with cleaner action buttons
 - Removed redundant status text (relying on badges instead)
+### Backend
 ### Availability UI
 - Date, start, and end in a single row on desktop (mobile reflows to one column)
 - Same‑day enforcement when creating slots
