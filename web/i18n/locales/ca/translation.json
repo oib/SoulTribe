@@ -1,6 +1,304 @@
 {
-  "_meta": {
-    "language": "Català",
-    "note": "Stub translation; falls back to English until localized copy is provided."
+  "landing": {
+    "page_title": "SoulTribe.chat - Troba la teva soul tribe",
+    "hero": {
+      "title": "Benvinguts",
+      "subtitle": "SoulTribe.chat és un espai creat per ajudar-te a trobar i connectar amb la teva soul tribe — persones que ressonen amb la teva energia, el teu esperit i el teu camí. ✨"
+    },
+    "how": {
+      "title": "Com funciona",
+      "step1": "<strong>Crea el teu perfil</strong> — introdueix la data, l'hora i el lloc de naixement per generar el teu mapa astral únic.",
+      "step2": "<strong>Descobreix coincidències</strong> — destaquem connexions basades en la compatibilitat i la ressonància.",
+      "step3": "<strong>Inicia la conversa</strong> — convida coincidències al xat; segur i privat per disseny.",
+      "step4": "<strong>Trobeu-vos (opcional)</strong> — programa una trucada Jitsi o una trobada en persona amb consentiment mutu."
+    },
+    "getting_started": {
+      "title": "Primers passos",
+      "step1": "<strong>Crea un compte</strong> — sense connexió amb xarxes socials.",
+      "step2": "<strong>Completa el teu perfil</strong> — afegeix les dades de naixement; l'hora aproximada és vàlida.",
+      "step3": "<strong>Defineix la teva disponibilitat</strong> — proposa franges horàries locals; nosaltres gestionem el UTC.",
+      "step4": "<strong>Descobreix coincidències</strong> — explora suggeriments basats en la ressonància.",
+      "step5": "<strong>Xateja i, si vols, coneix-te</strong> — tot dins de l'app; programa-ho quan et sentis preparat/da."
+    },
+    "features": {
+      "title": "Característiques",
+      "item1": "<strong>Compatibilitat astrològica</strong> — connecta utilitzant el teu mapa natal.",
+      "item2": "<strong>Programació intel·ligent</strong> — fem totes les conversions UTC per tu.",
+      "item3": "<strong>Comunicació directa via Jitsi</strong> — text/àudio/vídeo; res s'emmagatzema ni s'enregistra a SoulTribe.chat.",
+      "item4": "<strong>Entrada fàcil via enllaç</strong> — sala Jitsi privada per a trobades confirmades; respectuosa amb la privadesa.",
+      "item5": "<strong>Interfície minimalista</strong> — dissenyada per a converses significatives.",
+      "read_more": "Llegeix la guia ràpida per a convidats de Jitsi →"
+    },
+    "privacy": {
+      "title": "Privadesa i seguretat",
+      "item1": "Només demanem el necessari per possibilitar connexions autèntiques.",
+      "item2": "Les dades del teu perfil no es venen ni es comparteixen amb xarxes publicitàries.",
+      "item3": "Tu decideixes qui et pot contactar i quan compartir més informació."
+    },
+    "matching": {
+      "title": "Com funciona el matching (versió curta)",
+      "text": "Calculem indicadors relacionals clau a partir del teu mapa i els comparem amb d'altres per trobar ressonàncies. Prioritzem l'harmonia, la complementarietat i el potencial de creixement per sobre de mètriques genèriques."
+    },
+    "protips": {
+      "title": "Consells",
+      "item1": "Afegeix diverses franges de disponibilitat en dies diferents per accelerar les connexions.",
+      "item2": "Sigues genuí/na a la teva presentació — els detalls concrets ajuden a trobar les persones adequades.",
+      "item3": "El consentiment és el primer. Avança al teu ritme."
+    },
+    "next": {
+      "title": "Pròxims passos",
+      "go_dashboard": "Ves al tauler",
+      "login_register": "Inicia sessió / Registra't"
+    },
+    "global": {
+      "title": "Comunitat global, hora local",
+      "text": "Connecta amb ànimes afins d'arreu del món amb conversió automàtica de fusos horaris.",
+      "auto_title": "Detecció automàtica del fus horari",
+      "auto_text": "Detectem automàticament el teu fus per simplificar la programació.",
+      "native_title": "Suport en llengua materna",
+      "native_text": "Xateja en el teu idioma preferit amb la traducció integrada.",
+      "tz_title": "Programació conscient del fus horari",
+      "tz_text": "Oblida't de fer càlculs — nosaltres els fem per tu.",
+      "select_label": "Tria idioma:"
+    }
+  },
+  "guestGuide": {
+    "title": "Guia ràpida de convidats de SoulTribe Jitsi",
+    "intro": "Aquesta guia ajuda els convidats que accedeixen per primera vegada a les sales Jitsi de SoulTribe. Tria només els passos que necessitis. Text, àudio i vídeo són opcionals.",
+    "prejoin": {
+      "heading": "Abans d'entrar",
+      "steps": {
+        "options": "Coneix què està disponible. Jitsi admet xat de text, àudio i vídeo. Tu decideixes què activar, cada canal pot romandre apagat.",
+        "permissions": "Concedeix els permisos sol·licitats. Quan la pàgina ho demani, permet l'ús del micròfon i de la càmera al navegador per poder activar-los més endavant.",
+        "setup": "Pren-te un moment per preparar-te abans d'entrar a la sala."
+      },
+      "substeps": {
+        "name": "Nom: escriu com vols que aparegui als altres participants.",
+        "background": "Fons: tria desenfocament o un fons virtual si vols més privadesa."
+      },
+      "mic_camera_label": "Micròfon i càmera",
+      "mic_camera_text": "Utilitza els dos primers botons per activar o desactivar el micròfon i la càmera abans d'entrar.",
+      "devices_label": "Dispositius",
+      "devices_before_arrow": "Obre la petita fletxa al costat de cada control",
+      "devices_after_arrow": "i selecciona el micròfon o la càmera que vulguis utilitzar.",
+      "audio_tip_label": "Consell d'àudio",
+      "audio_tip_text": "Uns auriculars eviten l'eco. Si uses altaveus, mantén el volum baix per evitar retorn."
+    },
+    "browser": {
+      "heading": "Navegadors",
+      "supported": "Firefox i Chrome ofereixen compatibilitat completa amb àudio, vídeo i xat.",
+      "unsupported": "Safari, Edge, Opera, Brave i DuckDuckGo no estan suportats actualment.",
+      "note": "Altres navegadors menys comuns no han estat verificats.",
+      "tip1": "Si apareix un avís, permet l'accés al micròfon i a la càmera des de la barra d'adreces.",
+      "tip2": "Desactiva bloquejadors de seguiment o afegeix Jitsi a la llista de confiança.",
+      "tip3": "Actualitza la pestanya després de canviar els permisos perquè tinguin efecte."
+    },
+    "layout": {
+      "heading": "Vista general de la sala",
+      "description": "L'àrea de vídeo central mostra tothom qui té la càmera activada. A la part inferior hi ha la barra de control amb les icones de micròfon, càmera, compartir pantalla, xat, participants i més opcions. El panell dret obre la llista de participants i qualsevol pantalla compartida."
+    },
+    "toolbar": {
+      "heading": "Icones de la barra",
+      "columns": {
+        "icon": "Icona",
+        "label": "Nom",
+        "description": "Funció"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Micròfon",
+          "description": "Activa/desactiva el micròfon i tria el dispositiu."
+        },
+        "camera": {
+          "label": "Càmera",
+          "description": "Activa/desactiva la càmera i selecciona la font."
+        },
+        "screen": {
+          "label": "Compartir pantalla",
+          "description": "Comparteix l'escriptori, una finestra o una pestanya."
+        },
+        "chat": {
+          "label": "Xat",
+          "description": "Obre el xat de text per enviar missatges o enllaços."
+        },
+        "participants": {
+          "label": "Participants / Convida",
+          "description": "Consulta qui hi és, convida persones i admet convidats en espera."
+        },
+        "more": {
+          "label": "Més opcions",
+          "description": "Accedeix a la configuració de seguretat, preferències de dispositiu i eines addicionals."
+        },
+        "hangup": {
+          "label": "Desconnecta",
+          "description": "Finalitza la trucada i surt de la sala."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Enllaç ràpid",
+      "cta": "Uneix-te immediatament a jitsi.bubuit.net/soultribe",
+      "note": "Prova la teva configuració o coneix convidats amables. No cal cap compte."
+    },
+    "closing": {
+      "heading": "Nota final",
+      "text": "Gaudeix connectant-te de la manera i al ritme que millor et vagi."
+    }
+  },
+  "language": {
+    "en": "Anglès",
+    "de": "Alemany",
+    "ca": "Català"
+  },
+  "welcome": {
+    "title": "Benvinguts a SoulTribe.chat",
+    "subtitle": "Troba la teva soul tribe"
+  },
+  "profile": {
+    "title": "El teu perfil",
+    "save": "Desa",
+    "cancel": "Cancel·la",
+    "basic_info": {
+      "legend": "Informació bàsica",
+      "username_label": "Nom d'usuari",
+      "username_placeholder": "nom d'usuari"
+    },
+    "languages": {
+      "legend": "Idiomes"
+    },
+    "location": {
+      "legend": "Ubicació actual",
+      "city_placeholder": "Ciutat actual (autocompleció)",
+      "use_my_location": "Utilitza la meva ubicació",
+      "detected_tz_label": "Fus horari detectat:",
+      "detected_tz_hint": "(automàtic o selecciona)"
+    },
+    "birth": {
+      "legend": "Informació de naixement (per a astrologia)",
+      "date_placeholder": "Data de naixement",
+      "hour_label": "Hora",
+      "minute_label": "Min",
+      "place_placeholder": "Lloc de naixement (ciutat, país)",
+      "detected_tz_label": "Fus horari detectat:",
+      "detected_tz_hint": "(automàtic)",
+      "lat_placeholder": "Latitud (ex. 41.3851)",
+      "lon_placeholder": "Longitud (ex. 2.1734)",
+      "instructions": "Introdueix la data i el lloc de naixement per calcular el teu radix. Si no saps l'hora exacta, deixa-la en blanc i utilitzarem el migdia."
+    },
+    "note": "El teu perfil ajuda a personalitzar coincidències i mostrar el fus horari correcte.",
+    "primary_language_label": "Idioma principal (per a la interfície)",
+    "other_languages_label": "Altres idiomes (per al matching)",
+    "language_input_placeholder": "Escriu per afegir idiomes..."
+  },
+  "radix": {
+    "title": "El teu radix",
+    "placeholder": "Si has introduït les dades de naixement, aquí apareixerà la teva instantània de radix.",
+    "show_raw_json": "Mostra el JSON",
+    "ai": {
+      "get_interpretation": "Rep una interpretació",
+      "followup_placeholder": "Fes una pregunta de seguiment…",
+      "send": "Envia"
+    }
+  },
+  "dashboard": {
+    "title": "Tauler",
+    "availability": "Disponibilitat",
+    "create_slot": "Crea franja",
+    "duration_hours": "Durada (hores)",
+    "meetups": "Trobades",
+    "matches": "Coincidències",
+    "overlap_hint": "Quan hi hagi coincidència, fes clic a \"Proposa aquesta hora\".",
+    "propose_time": "Proposa hora",
+    "generate_ai_comment": "Genera comentari amb IA",
+    "slot_delete": "Elimina",
+    "slot_edit": "Edita",
+    "active_filter_hint": "Només mostrem usuaris actius en els darrers 30 dies.",
+    "slot_help_summary": "Què és una franja de disponibilitat?",
+    "slot_help_intro": "Les franges són finestres de temps que publiques perquè SoulTribe pugui suggerir coincidències quan hi ha solapament.",
+    "slot_help_step1": "Afegeix una o més franges per als dies i hores en què estàs lliure. El sistema les guarda en el teu fus i en UTC.",
+    "slot_help_step2": "Quan es calculen coincidències, comparem les teves franges amb les d'altres usuaris que encara són futures.",
+    "slot_help_step3": "Les targetes de solapament mostren l'espai compartit: UTC, la teva hora local i la de la coincidència.",
+    "slot_help_step4": "Fes clic a \"Proposa aquesta hora\" per iniciar el procés amb aquesta franja.",
+    "slot_help_step5": "Si alguna cosa canvia, edita o elimina la franja per deixar de suggerir temps obsolets.",
+    "slot_help_more": "Necessites ajuda? Obre la guia completa de disponibilitat des del menú Docs."
+  },
+  "login": {
+    "page_title": "SoulTribe.chat — Inici de sessió / Registre",
+    "title": "Benvingut/da",
+    "intro": "Inicia sessió amb un compte existent o registra'n un de nou.",
+    "email": "email",
+    "confirm_password": "confirma la contrasenya (per registrar-se)",
+    "display_name": "nom a mostrar (per registrar-se)",
+    "register": "Registre",
+    "login": "Inicia sessió",
+    "redirect_hint": "Després d'iniciar sessió, aniràs al tauler.",
+    "go_dashboard": "Ves al tauler",
+    "reset_password": "Restableix la contrasenya",
+    "resend_verification": "Torna a enviar el correu de verificació",
+    "email_not_verified": "Correu no verificat? ",
+    "verification_sent": "Si el teu correu encara no està verificat, hem enviat un nou correu.",
+    "reset_sent": "Si existeix un compte amb aquest correu, enviarem un correu de restabliment.",
+    "enter_email_first": "Introdueix primer el teu correu electrònic.",
+    "password_mismatch": "Les contrasenyes no coincideixen.",
+    "required_fields": "Calen el correu, la contrasenya i el nom a mostrar.",
+    "registration_success": "Compte creat. Verifica el teu correu, si us plau.",
+    "login_required": "El correu i la contrasenya són obligatoris."
+  },
+  "nav": {
+    "home": "Inici",
+    "dashboard": "Tauler",
+    "discover": "Descobreix",
+    "matches": "Coincidències",
+    "messages": "Missatges",
+    "profile": "Perfil",
+    "login": "Inicia sessió",
+    "logout": "Tanca sessió"
+  },
+  "imprint": {
+    "title": "Avís legal"
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrasse 7/6",
+    "address_line2": "1140 Viena",
+    "address_line3": "Àustria / Europa",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "footer": {
+    "terms": "Condicions",
+    "privacy": "Privacitat",
+    "imprint": "Avís legal"
+  },
+  "privacyPage": {
+    "title": "Política de privacitat",
+    "summary_intro": "Respectem la teva privacitat. Aquesta pàgina explica com SoulTribe.chat gestiona les teves dades.",
+    "summary_heading": "Resum",
+    "summary_item1": "Només guardem allò necessari per proporcionar el servei.",
+    "summary_item2": "Els tokens d'autenticació s'emmagatzemen localment al teu dispositiu.",
+    "summary_item3": "Les dades mai no es venen.",
+    "contact_note": "Per a consultes relacionades amb la privacitat, contacta amb suport.",
+    "image_alt": "Privacitat i seguretat"
+  },
+  "termsPage": {
+    "title": "Condicions d'ús",
+    "intro": "Aquestes Condicions regulen l'ús de SoulTribe.chat. En accedir-hi o utilitzar-la, acceptes aquestes condicions.",
+    "summary_heading": "Resum",
+    "summary_item1": "Sigues respectuós/osa. Res de contingut abusiu o il·legal.",
+    "summary_item2": "Has de tenir com a mínim 18 anys per registrar-te.",
+    "summary_item3": "Podem actualitzar el servei i aquestes condicions de tant en tant.",
+    "contact_note": "Per a preguntes, contacta amb suport.",
+    "image_alt": "Condicions"
+  },
+  "reset_password": {
+    "title": "Restableix la contrasenya",
+    "intro": "Tria una contrasenya nova per al teu compte.",
+    "new_password_label": "Contrasenya nova",
+    "new_password_placeholder": "contrasenya nova",
+    "confirm_password_label": "Confirma la nova contrasenya",
+    "confirm_password_placeholder": "confirma la nova contrasenya",
+    "submit": "Estableix la nova contrasenya"
+  },
+  "notifications": {
+    "language_set_to": "L'idioma s'ha establert en"
   }
 }

@@ -1,6 +1,304 @@
 {
-  "_meta": {
-    "language": "Íslenska",
-    "note": "Stub translation; falls back to English until localized copy is provided."
+  "landing": {
+    "page_title": "SoulTribe.chat - Finndu þinn soul tribe",
+    "hero": {
+      "title": "Velkomin",
+      "subtitle": "SoulTribe.chat er vettvangur sem hjálpar þér að finna og tengjast þínum soul tribe — fólki sem stillir sig á þína orku, anda og lífsleið. ✨"
+    },
+    "how": {
+      "title": "Hvernig þetta virkar",
+      "step1": "<strong>Búðu til prófíl</strong> — sláðu inn fæðingardag, tíma og stað til að búa til þitt einstaka stjörnusnið.",
+      "step2": "<strong>Finndu samhljóm</strong> — við drögum fram tengingar byggðar á samhæfni og samhljómi.",
+      "step3": "<strong>Hafðu samband</strong> — bjóðaðu samsvörunum í spjall; öruggt og einkvæmt eftir hönnun.",
+      "step4": "<strong>Hittist (valfrjálst)</strong> — skipuleggðu Jitsi-símtal eða fund andspænis með gagnkvæmu samþykki."
+    },
+    "getting_started": {
+      "title": "Fyrstu skref",
+      "step1": "<strong>Búðu til aðgang</strong> — engin þörf á samfélagsmiðlaskráningu.",
+      "step2": "<strong>Ljúktu prófíl</strong> — bættu við fæðingargögnum; áætlaður tími er í lagi.",
+      "step3": "<strong>Settu framboð</strong> — stingdu upp á tímum á þínu staðartímabelti; við sjáum um UTC umbreytingar.",
+      "step4": "<strong>Finndu samsvörun</strong> — skoðaðu tillögur byggðar á samhljómi.",
+      "step5": "<strong>Spjallaðu og hittist ef þú vilt</strong> — allt innan appsins; skipuleggðu þegar þér hentar."
+    },
+    "features": {
+      "title": "Eiginleikar",
+      "item1": "<strong>Stjörnusamhæfni</strong> — tengstu með þínu stjörnusniði.",
+      "item2": "<strong>Skynsamleg tímasetning</strong> — við sjáum um allar UTC umbreytingar.",
+      "item3": "<strong>Bein samskipti í gegnum Jitsi</strong> — texti/hljóð/mynd; ekkert er vistað eða tekið upp á SoulTribe.chat.",
+      "item4": "<strong>Auðvelt að tengjast með krækju</strong> — einkasvæði á Jitsi fyrir staðfestar fundir; hannað með persónuvernd í huga.",
+      "item5": "<strong>Mínimalískt viðmót</strong> — gert til að styðja innihaldsrík samtöl.",
+      "read_more": "Lestu hraðleiðbeiningar fyrir Jitsi gesti →"
+    },
+    "privacy": {
+      "title": "Persónuvernd og öryggi",
+      "item1": "Við biðjum aðeins um það sem þarf til að skapa merkingarbær tengsl.",
+      "item2": "Upplýsingar úr prófílnum þínum eru hvorki seldar né deilt með auglýsingakerfum.",
+      "item3": "Þú ræður hver hefur samband við þig og hvenær þú deilir meira."
+    },
+    "matching": {
+      "title": "Hvernig samsvörun virkar (stutt útgáfa)",
+      "text": "Við reiknum lykilvísar úr kortinu þínu og berum saman við aðra til að finna samhljóm. Við setjum samræmi, samvirkni og vaxtarmöguleika ofar almennum vinsældum."
+    },
+    "protips": {
+      "title": "Góð ráð",
+      "item1": "Bættu við nokkrum framboðstímum á mismunandi dögum til að hraða tengingum.",
+      "item2": "Vertu hreinskilin(n) í kynningunni þinni — nákvæmir punktar hjálpa réttum einstaklingum að finna þig.",
+      "item3": "Samþykki kemur fyrst. Hreyfðu þig á þínum hraða."
+    },
+    "next": {
+      "title": "Næstu skref",
+      "go_dashboard": "Fara á stjórnborð",
+      "login_register": "Innskráning / Nýskráning"
+    },
+    "global": {
+      "title": "Alþjóðlegt samfélag, staðartími",
+      "text": "Tengstu skyldfólki alls staðar að úr heiminum með sjálfvirkri tímabeltisbreytingu.",
+      "auto_title": "Sjálfvirk tímabeltisskynjun",
+      "auto_text": "Við finnum sjálfkrafa tímabeltið þitt svo skipulagning sé einföld.",
+      "native_title": "Stuðningur við móðurmál",
+      "native_text": "Spjallaðu á þínu uppáhalds tungumáli með innbyggðri þýðingu.",
+      "tz_title": "Tímabeltavitund í skipulagningu",
+      "tz_text": "Engar fleiri reikningar – við sjáum um þá fyrir þig.",
+      "select_label": "Veldu tungumál:"
+    }
+  },
+  "guestGuide": {
+    "title": "SoulTribe Jitsi gestaleiðbeiningar",
+    "intro": "Þessar leiðbeiningar hjálpa gestum sem taka þátt í SoulTribe Jitsi herbergjum í fyrsta sinn. Veldu aðeins skrefin sem þú þarft. Texti, hljóð og mynd eru valkvæð.",
+    "prejoin": {
+      "heading": "Áður en þú tengist",
+      "steps": {
+        "options": "Kynntu þér hvað er í boði. Jitsi styður textaspjall, hljóð og mynd. Þú ræður hvað er virkt og hver rás getur verið slökkt.",
+        "permissions": "Veittu umbeðin leyfi. Þegar síðan biður um það, leyfðu vafranum að nota hljóðnema og myndavél svo þú getir kveikt á þeim síðar.",
+        "setup": "Taktu smá stund til að stilla allt áður en þú ferð inn."
+      },
+      "substeps": {
+        "name": "Nafn: skrifaðu hvernig þú vilt birtast fyrir aðra þátttakendur.",
+        "background": "Bakgrunnur: veldu móðu eða sýndar bakgrunn til aukins næði."
+      },
+      "mic_camera_label": "Hljóðnemi og myndavél",
+      "mic_camera_text": "Notaðu fyrstu tvo hnappana til að kveikja eða slökkva á hljóðnema og myndavél áður en þú tengist.",
+      "devices_label": "Tæki",
+      "devices_before_arrow": "Smelltu á litlu örina við hvern stjórnflöt",
+      "devices_after_arrow": "og veldu hljóðnema eða myndavél sem þú vilt nota.",
+      "audio_tip_label": "Hljóðráð",
+      "audio_tip_text": "Heyrnartól hjálpa til við að koma í veg fyrir bergmál. Ef þú notar hátalara, hafðu hljóðstyrk lágan til að forðast afturkast."
+    },
+    "browser": {
+      "heading": "Vafrar",
+      "supported": "Firefox og Chrome bjóða upp á fullan stuðning við hljóð, mynd og spjall.",
+      "unsupported": "Safari, Edge, Opera, Brave og DuckDuckGo eru ekki studdir eins og er.",
+      "note": "Aðrir minni vafrar hafa ekki verið prófaðir.",
+      "tip1": "Ef beiðni birtist, leyfðu aðgang að hljóðnema og myndavél úr veffangastikunni.",
+      "tip2": "Slökktu á rakningavörnum eða bættu Jitsi á leyfilista.",
+      "tip3": "Endurhlaðið flipann eftir að leyfum er breytt svo stillingar taki gildi."
+    },
+    "layout": {
+      "heading": "Yfirlit yfir herbergið",
+      "description": "Myndsvæðið í miðjunni sýnir alla sem hafa kveikt á myndavél. Neðst er stjórnrönd með táknum fyrir hljóðnema, myndavél, skjádeilingu, spjall, þátttakendur og fleira. Hægri spjald opnar þátttakendalista og allar deildar skjámyndir."
+    },
+    "toolbar": {
+      "heading": "Tákn á stjórnrönd",
+      "columns": {
+        "icon": "Tákn",
+        "label": "Heiti",
+        "description": "Tilgangur"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Hljóðnemi",
+          "description": "Kveiktu/slökktu á hljóðnema og veldu tækið sem þú vilt nota."
+        },
+        "camera": {
+          "label": "Myndavél",
+          "description": "Kveiktu/slökktu á myndavél og veldu rétta upptökulind."
+        },
+        "screen": {
+          "label": "Deila skjá",
+          "description": "Deildu öllum skjánum, glugga eða flipa."
+        },
+        "chat": {
+          "label": "Spjall",
+          "description": "Opnaðu textaspjall til að senda skilaboð eða tengla."
+        },
+        "participants": {
+          "label": "Þátttakendur / Bjóða",
+          "description": "Sjáðu hverjir eru í herberginu, bjóddu öðrum og samþykktu gesti sem bíða."
+        },
+        "more": {
+          "label": "Fleiri stillingar",
+          "description": "Fáðu aðgang að öryggisstillingum, búnaðarstillingum og fleiri verkfærum."
+        },
+        "hangup": {
+          "label": "Hætta",
+          "description": "Ljúktu símtalinu og farðu út úr herberginu."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Hraðtenging",
+      "cta": "Tengstu strax á jitsi.bubuit.net/soultribe",
+      "note": "Prófaðu uppsetninguna eða hittu vingjarnlegt fólk. Enginn aðgangur nauðsynlegur."
+    },
+    "closing": {
+      "heading": "Að lokum",
+      "text": "Njóttu þess að tengjast á þann hátt og með þeim hraða sem hentar þér best."
+    }
+  },
+  "language": {
+    "en": "Enska",
+    "de": "Þýska",
+    "is": "Íslenska"
+  },
+  "welcome": {
+    "title": "Velkomin á SoulTribe.chat",
+    "subtitle": "Finndu þinn soul tribe"
+  },
+  "profile": {
+    "title": "Prófíllinn þinn",
+    "save": "Vista",
+    "cancel": "Hætta við",
+    "basic_info": {
+      "legend": "Grunnupplýsingar",
+      "username_label": "Notendanafn",
+      "username_placeholder": "notendanafn"
+    },
+    "languages": {
+      "legend": "Tungumál"
+    },
+    "location": {
+      "legend": "Núverandi staðsetning",
+      "city_placeholder": "Núverandi borg (sjálfvirk leit)",
+      "use_my_location": "Nota staðsetningu mína",
+      "detected_tz_label": "Greint tímabelti:",
+      "detected_tz_hint": "(sjálfvirkt eða veldu)"
+    },
+    "birth": {
+      "legend": "Fæðingaupplýsingar (fyrir stjörnufræði)",
+      "date_placeholder": "Fæðingardagur",
+      "hour_label": "Klst",
+      "minute_label": "Mín",
+      "place_placeholder": "Fæðingarstaður (borg, land)",
+      "detected_tz_label": "Greint tímabelti:",
+      "detected_tz_hint": "(sjálfvirkt)",
+      "lat_placeholder": "Breiddargráða (t.d. 64.1265)",
+      "lon_placeholder": "Lengdargráða (t.d. -21.8174)",
+      "instructions": "Settu inn fæðingardag og stað til að reikna radix. Ef þú veist ekki nákvæman tíma, skildu hann eftir tóman og við notum hádegi."
+    },
+    "note": "Prófíllinn þinn hjálpar til við að sérsníða samsvörun og sýna rétt tímabelti.",
+    "primary_language_label": "Aðaltungumál (viðmót)",
+    "other_languages_label": "Önnur tungumál (fyrir samsvörun)",
+    "language_input_placeholder": "Skrifaðu til að bæta við tungumálum..."
+  },
+  "radix": {
+    "title": "Radix þinn",
+    "placeholder": "Ef þú hefur skráð fæðingargögn birtist radix hér.",
+    "show_raw_json": "Sýna hrátt JSON",
+    "ai": {
+      "get_interpretation": "Fá túlkun",
+      "followup_placeholder": "Spyrðu frekari spurningar…",
+      "send": "Senda"
+    }
+  },
+  "dashboard": {
+    "title": "Stjórnborð",
+    "availability": "Framboð",
+    "create_slot": "Búa til tíma",
+    "duration_hours": "Lengd (klst)",
+    "meetups": "Fundir",
+    "matches": "Samsvaranir",
+    "overlap_hint": "Smelltu á \"Stinga upp á þessum tíma\" þegar skörun finnst.",
+    "propose_time": "Stinga upp á tíma",
+    "generate_ai_comment": "Búa til AI-athugasemd",
+    "slot_delete": "Eyða",
+    "slot_edit": "Breyta",
+    "active_filter_hint": "Aðeins sýndir notendur sem voru virkir síðustu 30 daga.",
+    "slot_help_summary": "Hvað er framboðstími?",
+    "slot_help_intro": "Framboðstímar eru gluggar sem þú birtir svo SoulTribe geti boðið fundi þegar skörun finnst.",
+    "slot_help_step1": "Bættu við einum eða fleiri tímum sem henta þér. Kerfið geymir þá bæði á þínu tímabelti og í UTC.",
+    "slot_help_step2": "Við berum saman þína tíma við aðra sem eru enn í framtíðinni.",
+    "slot_help_step3": "Skörunarkort sýna sameiginlegan glugga: UTC, þinn staðartíma og tíma hins aðilans.",
+    "slot_help_step4": "Smelltu á \"Stinga upp á þessum tíma\" til að setja upp fund með þeim tíma.",
+    "slot_help_step5": "Ef eitthvað breytist, breyttu eða eyddu tíma svo gamlir tímar séu ekki boðnir.",
+    "slot_help_more": "Þarftu frekari aðstoð? Opnaðu fullar leiðbeiningar í Docs valmyndinni."
+  },
+  "login": {
+    "page_title": "SoulTribe.chat — Innskráning / Nýskráning",
+    "title": "Velkomin",
+    "intro": "Skráðu þig inn með aðgangi eða búðu til nýjan.",
+    "email": "netfang",
+    "confirm_password": "staðfestu lykilorð (fyrir nýskráningu)",
+    "display_name": "nafn til birtingar (fyrir nýskráningu)",
+    "register": "Nýskráning",
+    "login": "Innskrá",
+    "redirect_hint": "Eftir innskráningu verður þú færð/ur á stjórnborðið.",
+    "go_dashboard": "Fara á stjórnborð",
+    "reset_password": "Endursetja lykilorð",
+    "resend_verification": "Senda aftur staðfestingarpóst",
+    "email_not_verified": "Netfang ekki staðfest? ",
+    "verification_sent": "Ef netfangið var ekki staðfest sendum við nýjan staðfestingarpóst.",
+    "reset_sent": "Ef aðgangur er til með þessu netfangi sendum við leiðbeiningar til að endursetja.",
+    "enter_email_first": "Settu fyrst inn netfangið.",
+    "password_mismatch": "Lykilorðin stemma ekki.",
+    "required_fields": "Netfang, lykilorð og birtingarnafn eru nauðsynleg.",
+    "registration_success": "Aðgangur búinn til. Vinsamlegast staðfestu netfangið.",
+    "login_required": "Netfang og lykilorð eru nauðsynleg."
+  },
+  "nav": {
+    "home": "Heim",
+    "dashboard": "Stjórnborð",
+    "discover": "Uppgötva",
+    "matches": "Samsvaranir",
+    "messages": "Skilaboð",
+    "profile": "Prófíll",
+    "login": "Innskrá",
+    "logout": "Útskrá"
+  },
+  "imprint": {
+    "title": "Upplýsingar"
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrasse 7/6",
+    "address_line2": "1140 Vín",
+    "address_line3": "Austurríki / Evrópa",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "footer": {
+    "terms": "Skilmálar",
+    "privacy": "Persónuvernd",
+    "imprint": "Upplýsingar"
+  },
+  "privacyPage": {
+    "title": "Persónuverndarstefna",
+    "summary_intro": "Við virðum friðhelgi þína. Hér er yfirlit yfir hvernig SoulTribe.chat vinnur með gögn.",
+    "summary_heading": "Yfirlit",
+    "summary_item1": "Við geymum aðeins það sem þarf til að veita þjónustuna.",
+    "summary_item2": "Auðkennistákn eru geymd á þínu eigin tæki.",
+    "summary_item3": "Gögn eru aldrei seld.",
+    "contact_note": "Fyrir spurningar varðandi persónuvernd, hafðu samband við aðstoð.",
+    "image_alt": "Persónuvernd og öryggi"
+  },
+  "termsPage": {
+    "title": "Skilmálar þjónustu",
+    "intro": "Þessir skilmálar stjórna notkun SoulTribe.chat. Með því að nota síðuna samþykkir þú skilmálana.",
+    "summary_heading": "Yfirlit",
+    "summary_item1": "Vertu virðingarfyllri. Enginn móðgandi eða ólöglegur efni.",
+    "summary_item2": "Þú þarft að vera að minnsta kosti 18 ára til að skrá þig.",
+    "summary_item3": "Við gætum uppfært þjónustuna og þessa skilmála af og til.",
+    "contact_note": "Fyrir spurningar, hafðu samband við aðstoð.",
+    "image_alt": "Skilmálar"
+  },
+  "reset_password": {
+    "title": "Endursetja lykilorð",
+    "intro": "Veldu nýtt lykilorð fyrir aðganginn.",
+    "new_password_label": "Nýtt lykilorð",
+    "new_password_placeholder": "nýtt lykilorð",
+    "confirm_password_label": "Staðfestu nýtt lykilorð",
+    "confirm_password_placeholder": "staðfestu nýtt lykilorð",
+    "submit": "Vista nýtt lykilorð"
+  },
+  "notifications": {
+    "language_set_to": "Tungumál stillt á"
   }
 }

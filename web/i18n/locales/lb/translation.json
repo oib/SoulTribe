@@ -1,6 +1,300 @@
 {
-  "_meta": {
-    "language": "Lëtzebuergesch",
-    "note": "Stub translation; falls back to English until localized copy is provided."
-  }
+  "landing": {
+    "page_title": "SoulTribe.chat - Fann deng Soul-Tribe",
+    "hero": {
+      "title": "Wëllkomm",
+      "subtitle": "SoulTribe.chat ass eng Plaz, déi dir hëlleft deng Soul-Tribe ze fannen – Mënschen déi mat denger Energie, dengem Geescht an dengem Liewenswee a Resonanz ginn. ✨"
+    },
+    "how": {
+      "title": "Wéi et funktionéiert",
+      "step1": "<strong>Profil uleeën</strong> — Datum, Zäit an Uert vum Gebuert agréieren fir deng eenzegaarteg Astro-Kaart ze bauen.",
+      "step2": "<strong>Matchen entdecken</strong> — mir hiewe Verbindungen eraus déi op Resonanz a Kompatibilitéit baséieren.",
+      "step3": "<strong>Gespréich starten</strong> — lued Matchen an de Chat an; sécher a privat no Konzept.",
+      "step4": "<strong>Treffen (optional)</strong> — plang e Jitsi-Call oder e perséinlecht Treffen mat géigesäitegem Zoustëmmung."
+    },
+    "getting_started": {
+      "title": "Ufänken",
+      "step1": "<strong>Benotzerkont erstellen</strong> — keng Social-Media-Umeldung néideg.",
+      "step2": "<strong>Profil ausfëllen</strong> — add Gebuerts-Detailer derbäi; eng ongeféier Zäit geet och.",
+      "step3": "<strong>Disponibilitéit setzen</strong> — proposéier Lokal-Zäitslots; mir këmmeren eis ëm d'UTC-Konversioun.",
+      "step4": "<strong>Matchen entdecken</strong> — kuck Resonanz-baséiert Virschléi duerch.",
+      "step5": "<strong>Chatten a bei Bedarf treffen</strong> — alles am App; plan wann s de prett bass."
+    },
+    "features": {
+      "title": "Highlights",
+      "item1": "<strong>Astrologescht Matching</strong> — verbänn dech iwwer deng Natal-Kaart.",
+      "item2": "<strong>Zäit-Zonen intelligent</strong> — mir rechnen all UTC-Konversiounen fir dech.",
+      "item3": "<strong>Direkt Kommunikatioun via Jitsi</strong> — Text/Audio/Video; näischt gëtt op SoulTribe.chat gespäichert oder opgeholl.",
+      "item4": "<strong>Einfach iwwer Link bäitrieden</strong> — privat Jitsi-Raum fir confirméiert Meetups; Privatsphär-frëndlech.",
+      "item5": "<strong>Minimalistescht UI</strong> — fir déif Gespréicher designéiert.",
+      "read_more": "Lies d'Jitsi-Guide fir Gäscht →"
+    },
+    "privacy": {
+      "title": "Privatsphär & Sécherheet",
+      "item1": "Mir froen nëmmen no deem wat fir déi Verbënnung néideg ass.",
+      "item2": "Deng Profil-Donnée ënnerstëtzen keng Werbenetzwierker a ginn net verkaaft.",
+      "item3": "Du bestëmmst wien dech kontaktéiere kann a wéini's de méi deels."
+    },
+    "matching": {
+      "title": "Wéi d'Matching funktionéiert (kuerz)",
+      "text": "Mir berechnen Schlëssel-Indikatoren aus denger Kaart an vergläichen se mat anere Memberen fir Resonanzen ze fannen. Harmonie, Komplementaritéit a Potenzial fir Wuesstem stinn am Fokus."
+    },
+    "protips": {
+      "title": "Tipps",
+      "item1": "Setz e puer Disponibilitéiten iwwer verschidde Deeg fir méi séier Connectiounen.",
+      "item2": "Sief éierlech an dengem Intro – konkret Detailer hëllefen déi richteg Leit ze fannen.",
+      "item3": "Zoustëmmung ass d'Basis. Huet däin eegene Tempo."
+    },
+    "next": {
+      "title": "Nächst Schrëtt",
+      "go_dashboard": "Op de Dashboard",
+      "login_register": "Login / Umellen"
+    },
+    "global": {
+      "title": "Global Gemeinschaft, lokal Zäit",
+      "text": "Verbënn dech mat gläichgesënnten Séilen weltwäit mat automatischer Zäit-Zones Anpassung.",
+      "auto_title": "Automatesch Zäit-Zon-Erkennung",
+      "auto_text": "Mir erkennen deng Zäitzon automatesch fir d'Plangen ze vereinfachen.",
+      "native_title": "Ënnerstëtzung an der Mammesprooch",
+      "native_text": "Chat am Sprooch déi dir léif ass dank integréierter Iwwersetzung.",
+      "tz_title": "Zäit-Zon bewosst Scheduling",
+      "tz_text": "Kee Rechnen méi – mir maachen et fir dech.",
+      "select_label": "Sprooch auswielen:"
+    }
+  },
+  "guestGuide": {
+    "title": "SoulTribe Jitsi Gästeguide",
+    "intro": "Dëse Guide hëlleft Gäscht déi fir d'éischt an e SoulTribe Jitsi-Raum kommen. Hëff einfach déi Schrëtt eraus déi s du brauchs. Text, Audio a Video sinn optiounnal.",
+    "prejoin": {
+      "heading": "Virum Matmaachen",
+      "steps": {
+        "options": "Léier d'Optiounen kennen. Jitsi ënnerstëtzt Textchat, Audio a Video. Du decidéiersen wat ugeschalt gëtt.",
+        "permissions": "Gëff déi ugefaang Permissiounen. Wann d'Login-Säit freet, erlabe dem Browser Mikro a Kamera ze benotzen.",
+        "setup": "Huelt dir eng kuerz Paus fir alles anzestellen, ier s du dobäi gees."
+      },
+      "substeps": {
+        "name": "Numm: gitt un wéi s du d'Leit dech gesinn.",
+        "background": "Hannergrond: wielt Blur oder eng virtuell Kuliss fir méi Privatsphär."
+      },
+      "mic_camera_label": "Mikro a Kamera",
+      "mic_camera_text": "Déi éischt zwee Knäppercher erméiglechen et Mikro a Kamera un/aus ze schalten, éier s du ageschalt gëss.",
+      "devices_label": "Geräter",
+      "devices_before_arrow": "Klick op déi kleng Pfeil niewendrun",
+      "devices_after_arrow": "a wielt d'Gerät dat dir léif ass.",
+      "audio_tip_label": "Audiotipp",
+      "audio_tip_text": "Kopfhörer verhënneren Echo. Wann s du Lautsprecher hues, halen de Volume wéineg fir Feedback ze vermeiden."
+    },
+    "browser": {
+      "heading": "Browser",
+      "supported": "Firefox a Chrome bidden komplette Support fir Audio, Video a Chat.",
+      "unsupported": "Safari, Edge, Opera, Brave a DuckDuckGo ginn aktuell net ënnerstëtzt.",
+      "note": "Aner Browser goufen nach net getest.",
+      "tip1": "Wann eng Fro kënnt, erlaab den Access op Mikro a Kamera am Adressfeld.",
+      "tip2": "Deaktivéier Tracking-Blocker oder füüg Jitsi derer Whitelist bäi.",
+      "tip3": "Lued den Tab nei no Permissiounsännerungen."
+    },
+    "layout": {
+      "heading": "Iwwersiicht vum Raum",
+      "description": "D'Haaptvideo-Zon am Zentrum weist jiddereen mat aktiver Kamera. D'Kontrollbar ënnen huet d'Ikonen fir Mikro, Kamera, Schiermdeelen, Chat, Participanten an aner Optiounen. D'Panel op der rietser Säit weist Participanten a gedeelt Bildschiermer."
+    },
+    "toolbar": {
+      "heading": "Ikonen op der Kontrollbar",
+      "columns": {
+        "icon": "Ikon",
+        "label": "Bezeechnung",
+        "description": "Funktioun"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Mikro",
+          "description": "Schalt de Mikro un/aus a wielt dat richtegt Gerät."
+        },
+        "camera": {
+          "label": "Kamera",
+          "description": "Schalt d'Kamera un/aus a wielt d'Quell."
+        },
+        "screen": {
+          "label": "Ecran deelen",
+          "description": "Deel däin Ecran, eng Fënster oder e Browser-Tab."
+        },
+        "chat": {
+          "label": "Chat",
+          "description": "Maach den Textchat op fir Messagen oder Links."
+        },
+        "participants": {
+          "label": "Participanten / Aschätzen",
+          "description": "Kuck, wien dran ass, invitéier Leit a lëschte Gäscht derbäi."
+        },
+        "more": {
+          "label": "Méi Optiounen",
+          "description": "Zougang zu Sécherheets-, Gerät- an zousätzleche Tools."
+        },
+        "hangup": {
+          "label": "Ophänken",
+          "description": "Beenn de Ruff a verloos de Raum."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Schnëll Link",
+      "cta": "Géi direkt op jitsi.bubuit.net/soultribe",
+      "note": "Test deng Astellung oder trëff Frëndlech Gäscht. Keen Kont néideg."
+    },
+    "closing": {
+      "heading": "Ofschloss",
+      "text": "Genéisst et, dech op déi Manéier an an deem Tempo ze vernetzen, dee fir dech passt."
+    }
+  },
+  "language": {
+    "en": "Englesch",
+    "de": "Däitsch",
+    "lb": "Lëtzebuergesch"
+  },
+  "welcome": {
+    "title": "Wëllkomm op SoulTribe.chat",
+    "subtitle": "Fann deng Soul-Tribe"
+  },
+  "profile": {
+    "title": "De Profil",
+    "save": "Späicheren",
+    "cancel": "Ofbriechen",
+    "basic_info": {
+      "legend": "Basisinformatiounen",
+      "username_label": "Benotzernumm",
+      "username_placeholder": "Benotzernumm"
+    },
+    "languages": {
+      "legend": "Sproochen"
+    },
+    "location": {
+      "legend": "Aktuell Plaz",
+      "city_placeholder": "Aktuell Stad (Auto-Suggest)",
+      "use_my_location": "Meng Plaz benotzen",
+      "detected_tz_label": "Erkannt Zäitzon:",
+      "detected_tz_hint": "(automatesch oder auswielen)"
+    },
+    "birth": {
+      "legend": "Gebuertsinfo (fir Astrologie)",
+      "date_placeholder": "Gebuertsdag",
+      "hour_label": "Stonn",
+      "minute_label": "Min",
+      "place_placeholder": "Gebuertsplaz (Stad, Land)",
+      "detected_tz_label": "Erkannt Zäit:",
+      "detected_tz_hint": "(automatesch)",
+      "lat_placeholder": "Breedegrad (z.B. 49.6116)",
+      "lon_placeholder": "Längtgrad (z.B. 6.1319)",
+      "instructions": "Setz Gebuertsdatum an -plaz fir däi Radix ze rechnen. Wann s de den exakte Zäitpunkt net kenns, loos et eidel a mir benotzen Mëttes."
+    },
+    "note": "Däin Profil hëlleft d'Matching ze personaliséieren an déi richteg Zäitzon unzeweisen.",
+    "primary_language_label": "Primär Sprooch (UI)",
+    "other_languages_label": "Aner Sproochen (fir Matching)",
+    "language_input_placeholder": "Schreif fir Sproochen dobäi ze setzen..."
+  },
+  "radix": {
+    "title": "Däi Radix",
+    "placeholder": "Wann deng Gebuerts-Donnéeen gespäichert sinn, gesäis du hei däin Radix.",
+    "show_raw_json": "Roh-JSON weisen",
+    "ai": {
+      "get_interpretation": "Interpretatioun ufroen",
+      "followup_placeholder": "Nofro stellen…",
+      "send": "Schécken"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "availability": "Disponibilitéit",
+    "create_slot": "Zäitfenster uleeën",
+    "duration_hours": "Dauer (Stonnen)",
+    "meetups": "Treffen",
+    "matches": "Matchen",
+    "overlap_hint": "Wann et eng Iwwerlappung gëtt, klick op \"Dëse Moment virschloen\".",
+    "propose_time": "Dëse Moment virschloen",
+    "generate_ai_comment": "AI-Kommentar generéieren",
+    "slot_delete": "Läschen",
+    "slot_edit": "Editéieren",
+    "active_filter_hint": "Mir weisen nëmme Benotzer déi an de leschte 30 Deeg aktiv waren.",
+    "slot_help_summary": "Wat ass e Disponibilitéits-Slot?",
+    "slot_help_intro": "Slots si Zäitraim, déi s du publizéiers, sou datt SoulTribe proposéiert wann eng Iwwerlappung mat anere Membere besteet.",
+    "slot_help_step1": "Setz ee oder méi Slots fir Deeg a Stonnen, wou s du fräi bass. Mir späicheren se a denger Zäitzon an a UTC.",
+    "slot_help_step2": "Beim Matching vergläiche mir deng Slots mat deenen, déi anerer nach fräi hunn.",
+    "slot_help_step3": "Overlap-Kaarte weisen den gemeinsamen Zäitraum: UTC, deng Zäit an déi vum Match.",
+    "slot_help_step4": "Klick op \"Dëse Moment virschloen\" fir de Rendez-vous mat deem Slot ze starten.",
+    "slot_help_step5": "Wann sech eppes ännert, änner oder läsch de Slot fir al Zäiten ze vermeiden.",
+    "slot_help_more": "Brauchs nach Hëllef? Géi an d'Docs-Menü fir déi komplett Guide."
+  },
+  "login": {
+    "page_title": "SoulTribe.chat — Login / Umellen",
+    "title": "Wëllkomm",
+    "intro": "Logg dech an engem existente Kont an oder lee dir e neien un.",
+    "email": "E-Mail",
+    "confirm_password": "Passwuert bestätegen (fir Umeldung)",
+    "display_name": "Numm fir ze weisen (fir Umeldung)",
+    "register": "Umellen",
+    "login": "Umellen",
+    "redirect_hint": "No der Umeldung gees de op däi Dashboard.",
+    "go_dashboard": "Op de Dashboard",
+    "reset_password": "Passwuert zrécksetzen",
+    "resend_verification": "Verifikatiounsmail nach eng Kéier schécken",
+    "email_not_verified": "E-Mail net verifizéiert? ",
+    "verification_sent": "Wa deng E-Mail nach net confirméiert war, hu mir eng nei geschéckt.",
+    "reset_sent": "Wann et e Kont mat dëser Adress gëtt, kriss de Instruktioune fir zréckzesetzen.",
+    "enter_email_first": "Gëff fir d'éischt deng E-Mail un.",
+    "password_mismatch": "D'Passwierder stëmmen net iwwereneen.",
+    "required_fields": "E-Mail, Passwuert an Numm si verpflicht.",
+    "registration_success": "Kont erstallt. Kontrolléier deng E-Mail.",
+    "login_required": "E-Mail an Passwuert si néideg."
+  },
+  "nav": {
+    "home": "Haaptsäit",
+    "dashboard": "Dashboard",
+    "discover": "Entdecken",
+    "matches": "Matchen",
+    "messages": "Messagen",
+    "profile": "Profil",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "imprint": { "title": "Impressum" },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrasse 7/6",
+    "address_line2": "1140 Wien",
+    "address_line3": "Éisträich / Europa",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "footer": {
+    "terms": "Konditiounen",
+    "privacy": "Privatsphär",
+    "imprint": "Impressum"
+  },
+  "privacyPage": {
+    "title": "Privatsphär-Richtlinn",
+    "summary_intro": "Mir respektéieren deng Privatsphär. Hei erkläre mir wéi SoulTribe.chat mat dengem Donnéeën ëmgeet.",
+    "summary_heading": "Resumé",
+    "summary_item1": "Mir späicheren nëmme wat fir d'Servicer gebraucht gëtt.",
+    "summary_item2": "Authentifikatiouns-Token bleiwen op dengem eegene Gerät.",
+    "summary_item3": "Donnéeë ginn ni verkaaft.",
+    "contact_note": "Fir Froen zu der Privatsphär, kontaktéiers du einfach de Support.",
+    "image_alt": "Privatsphär a Sécherheet"
+  },
+  "termsPage": {
+    "title": "Benotzungsbedéngungen",
+    "intro": "Dës Konditioune regléieren d'Benotzung vun SoulTribe.chat. Mat der Notzung stëmms du hinnen zou.",
+    "summary_heading": "Resumé",
+    "summary_item1": "Sief respektvoll. Kee beleidegenden oder illegale Contenu.",
+    "summary_item2": "Du muss mindestens 18 Joer al sinn.",
+    "summary_item3": "Mir kënnen d'Déngschtleeschtung a Konditioune vu Zäit zu Zäit aktualiséieren.",
+    "contact_note": "Fir Froen kontaktéiers du de Support.",
+    "image_alt": "Konditiounen"
+  },
+  "reset_password": {
+    "title": "Passwuert zrécksetzen",
+    "intro": "Wiel e neit Passwuert fir däi Kont.",
+    "new_password_label": "Neit Passwuert",
+    "new_password_placeholder": "neit Passwuert",
+    "confirm_password_label": "Neit Passwuert bestätegen",
+    "confirm_password_placeholder": "neit Passwuert bestätegen",
+    "submit": "Neit Passwuert späicheren"
+  },
+  "notifications": { "language_set_to": "Sprooch agestallt op" }
 }

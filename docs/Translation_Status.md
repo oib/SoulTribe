@@ -30,6 +30,11 @@
 | 26. | Estonian | Eesti | et | ⚠️ Partial | Guest guide uses English fallback |
 | 27. | Irish | Gaeilge | ga | ⚠️ Partial | Guest guide uses English fallback |
 | 28. | Maltese | Malti | mt | ⚠️ Partial | Guest guide uses English fallback |
+| 29. | Bosnian | Bosanski | bs | ✅ Complete | UI + guest guide localized (2025-10-07) |
+| 30. | Catalan | Català | ca | ✅ Complete | UI + guest guide localized (2025-10-07) |
+| 31. | Galician | Galego | gl | ✅ Complete | UI + guest guide localized (2025-10-07) |
+| 32. | Icelandic | Íslenska | is | ✅ Complete | UI + guest guide localized (2025-10-07) |
+| 33. | Luxembourgish | Lëtzebuergesch | lb | ⚠️ Basic | UI strings drafted; awaiting guest guide + QA |
 
 ## Status Key:
 - ✅ Complete: All UI elements translated
@@ -41,4 +46,4 @@
 - Guest Jitsi guide currently localized in `en`, `de`, `es`. Other locales fall back to English placeholders until native translations are provided.
 - The translation system supports adding new languages by creating corresponding JSON files in `/web/i18n/locales/`.
 
-Last updated: 2025-10-06
+Last updated: 2025-10-07 — Added Bosnian, Catalan, Galician, Icelandic completions. Luxembourgish UI strings drafted; guest guide translation pending verification.

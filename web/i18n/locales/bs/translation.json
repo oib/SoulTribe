@@ -1,6 +1,304 @@
 {
-  "_meta": {
-    "language": "Bosanski",
-    "note": "Stub translation; falls back to English until localized copy is provided."
+  "landing": {
+    "page_title": "SoulTribe.chat - Pronađi svoju soul tribu",
+    "hero": {
+      "title": "Dobrodošli",
+      "subtitle": "SoulTribe.chat je prostor stvoren da ti pomogne da pronađeš i povežeš se sa svojom soul tribom — ljudima koji rezoniraju s tvojom energijom, duhom i životnim putem. ✨"
+    },
+    "how": {
+      "title": "Kako funkcioniše",
+      "step1": "<strong>Kreiraj svoj profil</strong> — unesi datum, vrijeme i mjesto rođenja kako bismo izračunali tvoju jedinstvenu astro mapu.",
+      "step2": "<strong>Otkrij poklapanja</strong> — izdvajamo veze zasnovane na rezonanci i kompatibilnosti.",
+      "step3": "<strong>Započni razgovor</strong> — pozovi poklapanja na chat; sigurno i privatno po dizajnu.",
+      "step4": "<strong>Upoznaj se (opcionalno)</strong> — zakaži Jitsi poziv ili susret uživo uz obostranu saglasnost."
+    },
+    "getting_started": {
+      "title": "Prvi koraci",
+      "step1": "<strong>Kreiraj račun</strong> — bez prijave preko društvenih mreža.",
+      "step2": "<strong>Popuni profil</strong> — dodaj podatke o rođenju; približno vrijeme je u redu.",
+      "step3": "<strong>Postavi dostupnost</strong> — predloži termine u lokalnom vremenu; mi radimo UTC proračune.",
+      "step4": "<strong>Otkrij poklapanja</strong> — pregledaj prijedloge zasnovane na rezonanci.",
+      "step5": "<strong>Ćaskaj i po želji se upoznaj</strong> — ostani u aplikaciji; zakaži kada budeš spreman/na."
+    },
+    "features": {
+      "title": "Mogućnosti",
+      "item1": "<strong>Astrološko uparivanje</strong> — poveži se koristeći svoju natalnu kartu.",
+      "item2": "<strong>Pametno zakazivanje</strong> — mi obavljamo sve UTC konverzije umjesto tebe.",
+      "item3": "<strong>Direktna komunikacija preko Jitsija</strong> — tekst/audio/video; ništa se ne snima niti čuva na SoulTribe.chat.",
+      "item4": "<strong>Jednostavno pridruživanje linkom</strong> — privatna Jitsi soba za potvrđene susrete; prijateljski prema privatnosti.",
+      "item5": "<strong>Minimalistički interfejs</strong> — dizajniran za smislen razgovor.",
+      "read_more": "Pročitaj vodič za Jitsi goste →"
+    },
+    "privacy": {
+      "title": "Privatnost i sigurnost",
+      "item1": "Tražimo samo ono što je potrebno za povezivanje.",
+      "item2": "Podaci iz tvog profila se ne prodaju i ne dijele sa oglasnim mrežama.",
+      "item3": "Ti odlučuješ ko može da te kontaktira i kada ćeš podijeliti više informacija."
+    },
+    "matching": {
+      "title": "Kako radimo uparivanje (ukratko)",
+      "text": "Izračunavamo ključne relacione pokazatelje iz tvoje karte i upoređujemo ih s drugima kako bismo pronašli rezonancu. Prioritet su harmonija, komplementarnost i potencijal za rast, a ne popularnost."
+    },
+    "protips": {
+      "title": "Savjeti",
+      "item1": "Dodaj nekoliko termina dostupnosti kroz različite dane radi bržeg povezivanja.",
+      "item2": "Budi autentičan/na u uvodu — konkretni detalji pomažu pravim ljudima da te pronađu.",
+      "item3": "Saglasnost prije svega. Kreći se tempom koji ti odgovara."
+    },
+    "next": {
+      "title": "Sljedeći koraci",
+      "go_dashboard": "Idi na kontrolnu tablu",
+      "login_register": "Prijavi se / Registruj se"
+    },
+    "global": {
+      "title": "Globalna zajednica, lokalno vrijeme",
+      "text": "Poveži se sa srodnim dušama širom svijeta uz automatsku konverziju vremenskih zona.",
+      "auto_title": "Automatsko otkrivanje vremenske zone",
+      "auto_text": "Automatski detektujemo tvoju zonu radi lakšeg zakazivanja.",
+      "native_title": "Podrška za maternji jezik",
+      "native_text": "Ćaskaj na jeziku koji ti najviše odgovara uz ugrađeni prevod.",
+      "tz_title": "Zakazivanje svjesno vremenskih zona",
+      "tz_text": "Nema više računanja vremena – mi obavljamo sve konverzije umjesto tebe.",
+      "select_label": "Odaberi jezik:"
+    }
+  },
+  "guestGuide": {
+    "title": "SoulTribe Jitsi vodič za goste",
+    "intro": "Ovaj vodič pomaže gostima koji prvi put ulaze u SoulTribe Jitsi sobe. Uzmi samo korake koji su ti potrebni. Tekst, audio i video su opcioni.",
+    "prejoin": {
+      "heading": "Prije nego što se pridružiš",
+      "steps": {
+        "options": "Saznaj koje su opcije dostupne. Jitsi podržava tekstualni chat, audio i video. Ti odlučuješ šta će biti uključeno.",
+        "permissions": "Dozvoli tražene dozvole. Ako stranica zatraži pristup, omogući mikrofon i kameru u pregledaču.",
+        "setup": "Odvoji trenutak da se pripremiš prije ulaska u sobu."
+      },
+      "substeps": {
+        "name": "Ime: unesi kako želiš da te drugi vide.",
+        "background": "Pozadina: izaberi zamućenje ili virtuelnu pozadinu ako želiš dodatnu privatnost."
+      },
+      "mic_camera_label": "Mikrofon i kamera",
+      "mic_camera_text": "Uz prva dva dugmeta uključi/isključi mikrofon i kameru prije ulaska.",
+      "devices_label": "Uređaji",
+      "devices_before_arrow": "Klikni na malu strelicu pored svake kontrole",
+      "devices_after_arrow": "i izaberi mikrofon ili kameru koju želiš koristiti.",
+      "audio_tip_label": "Savjet za zvuk",
+      "audio_tip_text": "Slušalice pomažu da izbjegneš eho. Ako koristiš zvučnike, drži jačinu nižom."
+    },
+    "browser": {
+      "heading": "Pregledači",
+      "supported": "Firefox i Chrome nude punu podršku za audio, video i chat.",
+      "unsupported": "Safari, Edge, Opera, Brave i DuckDuckGo trenutno nisu podržani.",
+      "note": "Drugi pregledači nisu testirani.",
+      "tip1": "Ako se pojavi upit, dozvoli pristup mikrofonu i kameri iz adresne trake.",
+      "tip2": "Isključi blokatore praćenja ili dodaj Jitsi na listu dozvoljenih.",
+      "tip3": "Osvježi karticu nakon promjene dozvola da se podešavanja primijene."
+    },
+    "layout": {
+      "heading": "Pregled interfejsa",
+      "description": "Glavni video prostor u centru pokazuje one koji imaju kameru. Donja traka sadrži ikone za mikrofon, kameru, dijeljenje ekrana, chat, učesnike i dodatne opcije. Desni panel otvara listu učesnika i dijeljene ekrane."
+    },
+    "toolbar": {
+      "heading": "Ikone na traci",
+      "columns": {
+        "icon": "Ikona",
+        "label": "Naziv",
+        "description": "Šta radi"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Mikrofon",
+          "description": "Uključi/isključi mikrofon i odaberi uređaj."
+        },
+        "camera": {
+          "label": "Kamera",
+          "description": "Uključi/isključi kameru i odaberi izvor."
+        },
+        "screen": {
+          "label": "Dijeljenje ekrana",
+          "description": "Podijeli ekran, prozor ili karticu."
+        },
+        "chat": {
+          "label": "Chat",
+          "description": "Otvori tekstualni chat za poruke ili linkove."
+        },
+        "participants": {
+          "label": "Učesnici / Pozovi",
+          "description": "Vidi ko je prisutan, pozovi druge i odobri goste."
+        },
+        "more": {
+          "label": "Više opcija",
+          "description": "Pristupi sigurnosnim postavkama i dodatnim alatima."
+        },
+        "hangup": {
+          "label": "Napusti",
+          "description": "Završi poziv i izađi iz sobe."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Brzi link",
+      "cta": "Pridruži se odmah na jitsi.bubuit.net/soultribe",
+      "note": "Testiraj postavke ili upoznaj prijateljske goste. Nalog nije potreban."
+    },
+    "closing": {
+      "heading": "Poruka za kraj",
+      "text": "Uživaj u povezivanju na način i tempom koji ti najviše odgovara."
+    }
+  },
+  "language": {
+    "en": "Engleski",
+    "de": "Njemački",
+    "bs": "Bosanski"
+  },
+  "welcome": {
+    "title": "Dobrodošli na SoulTribe.chat",
+    "subtitle": "Pronađi svoju soul tribu"
+  },
+  "profile": {
+    "title": "Tvoj profil",
+    "save": "Sačuvaj",
+    "cancel": "Otkaži",
+    "basic_info": {
+      "legend": "Osnovne informacije",
+      "username_label": "Korisničko ime",
+      "username_placeholder": "korisničko ime"
+    },
+    "languages": {
+      "legend": "Jezici"
+    },
+    "location": {
+      "legend": "Trenutna lokacija",
+      "city_placeholder": "Trenutni grad (autodopuna)",
+      "use_my_location": "Koristi moju lokaciju",
+      "detected_tz_label": "Detektovana vremenska zona:",
+      "detected_tz_hint": "(automatski ili odaberi)"
+    },
+    "birth": {
+      "legend": "Podaci o rođenju (za astrologiju)",
+      "date_placeholder": "Datum rođenja",
+      "hour_label": "Sat",
+      "minute_label": "Min",
+      "place_placeholder": "Mjesto rođenja (grad, država)",
+      "detected_tz_label": "Detektovana vremenska zona:",
+      "detected_tz_hint": "(automatski)",
+      "lat_placeholder": "Geografska širina (npr. 43.8563)",
+      "lon_placeholder": "Geografska dužina (npr. 18.4131)",
+      "instructions": "Postavi datum i mjesto rođenja da izračunamo tvoj radix. Ako ne znaš tačno vrijeme, ostavi prazno i koristićemo podne kao podrazumijevano."
+    },
+    "note": "Tvoj profil pomaže u personalizaciji poklapanja i prikazu vremenskih zona.",
+    "primary_language_label": "Primarni jezik (za interfejs)",
+    "other_languages_label": "Drugi jezici (za uparivanje)",
+    "language_input_placeholder": "Upiši da dodaš jezike..."
+  },
+  "radix": {
+    "title": "Tvoj radix",
+    "placeholder": "Ako si unio/la podatke o rođenju, ovdje će se pojaviti tvoj radix.",
+    "show_raw_json": "Prikaži sirovi JSON",
+    "ai": {
+      "get_interpretation": "Dobij tumačenje",
+      "followup_placeholder": "Postavi dodatno pitanje…",
+      "send": "Pošalji"
+    }
+  },
+  "dashboard": {
+    "title": "Kontrolna tabla",
+    "availability": "Dostupnost",
+    "create_slot": "Dodaj termin",
+    "duration_hours": "Trajanje (sati)",
+    "meetups": "Susreti",
+    "matches": "Poklapanja",
+    "overlap_hint": "Klikni \"Predloži ovaj termin\" kada postoji preklapanje.",
+    "propose_time": "Predloži termin",
+    "generate_ai_comment": "Generiši AI komentar",
+    "slot_delete": "Izbriši",
+    "slot_edit": "Uredi",
+    "active_filter_hint": "Prikazujemo samo korisnike aktivne u posljednjih 30 dana.",
+    "slot_help_summary": "Šta je termin dostupnosti?",
+    "slot_help_intro": "Termini su vremenski prozori koje objaviš kako bi SoulTribe mogao predložiti susrete kada se preklapanje dogodi.",
+    "slot_help_step1": "Dodaj jedan ili više termina za dane i sate kada si slobodan/na. Sistem ih čuva u tvojoj i UTC zoni.",
+    "slot_help_step2": "Kada se pretražuju poklapanja, upoređujemo tvoje termine s terminima drugih korisnika koji su još u budućnosti.",
+    "slot_help_step3": "Kartice preklapanja pokazuju zajednički termin: UTC, tvoje lokalno vrijeme i lokalno vrijeme tvog poklapanja.",
+    "slot_help_step4": "Klikni \"Predloži ovaj termin\" kako bi pokrenuo/la zakazivanje susreta s tim slotom.",
+    "slot_help_step5": "Ako se nešto promijeni, uredi ili izbriši termin da prestanemo predlagati zastarjele opcije.",
+    "slot_help_more": "Treba dodatna pomoć? Otvori kompletan vodič o dostupnosti iz menija Dokumenti."
+  },
+  "login": {
+    "page_title": "SoulTribe.chat — Prijava / Registracija",
+    "title": "Dobro došli",
+    "intro": "Prijavite se postojećim računom ili registrujte novi.",
+    "email": "email",
+    "confirm_password": "potvrdi lozinku (za registraciju)",
+    "display_name": "ime za prikaz (za registraciju)",
+    "register": "Registracija",
+    "login": "Prijava",
+    "redirect_hint": "Nakon prijave bićeš preusmjeren/a na kontrolnu tablu.",
+    "go_dashboard": "Idi na kontrolnu tablu",
+    "reset_password": "Resetuj lozinku",
+    "resend_verification": "Ponovo pošalji verifikacioni email",
+    "email_not_verified": "Email nije verifikovan? ",
+    "verification_sent": "Ako email nije verifikovan, poslali smo novu verifikacionu poruku.",
+    "reset_sent": "Ako postoji račun s ovom adresom, poslat ćemo email za reset lozinke.",
+    "enter_email_first": "Molimo prvo unesi email adresu.",
+    "password_mismatch": "Lozinke se ne poklapaju.",
+    "required_fields": "Email, lozinka i ime za prikaz su obavezni.",
+    "registration_success": "Račun je kreiran. Molimo verifikuj email.",
+    "login_required": "Email i lozinka su obavezni."
+  },
+  "nav": {
+    "home": "Početna",
+    "dashboard": "Kontrolna tabla",
+    "discover": "Otkrij",
+    "matches": "Poklapanja",
+    "messages": "Poruke",
+    "profile": "Profil",
+    "login": "Prijava",
+    "logout": "Odjava"
+  },
+  "imprint": {
+    "title": "Impresum"
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrasse 7/6",
+    "address_line2": "1140 Beč",
+    "address_line3": "Austrija / Evropa",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "footer": {
+    "terms": "Uslovi",
+    "privacy": "Privatnost",
+    "imprint": "Impresum"
+  },
+  "privacyPage": {
+    "title": "Politika privatnosti",
+    "summary_intro": "Poštujemo tvoju privatnost. Ova stranica objašnjava kako SoulTribe.chat rukuje tvojim podacima.",
+    "summary_heading": "Sažetak",
+    "summary_item1": "Čuvamo samo ono što je potrebno za pružanje usluge.",
+    "summary_item2": "Tokeni za autentikaciju čuvaju se lokalno na tvom uređaju.",
+    "summary_item3": "Podaci se nikada ne prodaju.",
+    "contact_note": "Za pitanja ili zahtjeve u vezi privatnosti kontaktiraj podršku.",
+    "image_alt": "Privatnost i sigurnost"
+  },
+  "termsPage": {
+    "title": "Uslovi korištenja",
+    "intro": "Ovi Uslovi korištenja uređuju tvoje korištenje SoulTribe.chat platforme. Korištenjem stranice prihvataš ove uslove.",
+    "summary_heading": "Sažetak",
+    "summary_item1": "Budi poštovan/na. Nema uvredljivog ili ilegalnog sadržaja.",
+    "summary_item2": "Moraš imati najmanje 18 godina da se registruješ.",
+    "summary_item3": "Možemo povremeno ažurirati uslugu i ove uslove.",
+    "contact_note": "Za pitanja kontaktiraj podršku.",
+    "image_alt": "Uslovi"
+  },
+  "reset_password": {
+    "title": "Resetuj lozinku",
+    "intro": "Izaberi novu lozinku za svoj račun.",
+    "new_password_label": "Nova lozinka",
+    "new_password_placeholder": "nova lozinka",
+    "confirm_password_label": "Potvrdi novu lozinku",
+    "confirm_password_placeholder": "potvrdi novu lozinku",
+    "submit": "Postavi novu lozinku"
+  },
+  "notifications": {
+    "language_set_to": "Jezik je postavljen na"
   }
 }

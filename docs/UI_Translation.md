@@ -61,6 +61,12 @@ The application supports the following languages:
 | ru | Русский (Russian) | ✅ Complete |
 | tr | Türkçe (Turkish) | ✅ Complete |
 | uk | Українська (Ukrainian) | ✅ Complete |
+| bs | Bosanski (Bosnian) | ✅ Complete |
+| ca | Català (Catalan) | ✅ Complete |
+| gl | Galego (Galician) | ✅ Complete |
+| is | Íslenska (Icelandic) | ✅ Complete |
+| lb | Lëtzebuergesch (Luxembourgish) | ⚠️ Basic |
+| sq | Shqip (Albanian) | ❌ Not started |
 
 ## How to Use
 
@@ -103,7 +109,7 @@ Would be referenced as:
 ### 4. Adding a New Language
 
 1. Add the language to the `languages` object in `i18n.js`
-2. Create a new directory in `web/i18n/locales/` with the language code
+2. Create a new directory in `web/i18n/locales/` with the language code (skip if it already exists)
 3. Add a `translation.json` file with all the required translations
 
 ## Technical Details

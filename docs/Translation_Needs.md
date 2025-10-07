@@ -2,11 +2,15 @@
 
 This document tracks the internationalization (i18n) status of the SoulTribe.chat application.
 
-## Current Status (2025-10-06)
+## Current Status (2025-10-07)
 
-✅ **Core UI strings remain translated across 28 languages.**
+✅ **Core UI strings remain translated across 32 languages.**
 
-⚠️ **New content:** Guest-facing documentation (`web/docs/guest-jitsi-guide.html`) now has full `data-i18n` coverage. Only English, German, and Spanish include localized copy; all other locales currently fall back to English placeholders.
+✅ **Newly localized (UI + guest guide):** Bosnian (`bs`), Catalan (`ca`), Galician (`gl`), Icelandic (`is`).
+
+⚠️ **In progress:** Luxembourgish (`lb`) — UI strings drafted, guest guide pending native copy.
+
+🟡 **Queue:** Albanian (`sq`) — awaiting full translation drop.
 
 - Core authentication flows (login, registration, password reset)
 - Navigation and UI elements
@@ -51,8 +55,9 @@ This document tracks the internationalization (i18n) status of the SoulTribe.cha
 
 ### Translation Coverage
 
-- **Fully localized (UI + guest guide):** English (en), German (de), Spanish (es)
-- **UI localized, guest guide pending native copy:** French (fr), Italian (it), Portuguese (pt), Dutch (nl), Swedish (sv), Norwegian (no), Danish (da), Finnish (fi), Polish (pl), Czech (cs), Hungarian (hu), Romanian (ro), Bulgarian (bg), Slovak (sk), Croatian (hr), Lithuanian (lt), Slovenian (sl), Latvian (lv), Estonian (et), Irish (ga), Maltese (mt), Greek (el), Russian (ru), Turkish (tr), Ukrainian (uk)
+- **Fully localized (UI + guest guide):** English (en), German (de), Spanish (es), Bosnian (bs), Catalan (ca), Galician (gl), Icelandic (is)
+- **UI localized, guest guide pending native copy:** French (fr), Italian (it), Portuguese (pt), Dutch (nl), Swedish (sv), Norwegian (no), Danish (da), Finnish (fi), Polish (pl), Czech (cs), Hungarian (hu), Romanian (ro), Bulgarian (bg), Slovak (sk), Croatian (hr), Lithuanian (lt), Slovenian (sl), Latvian (lv), Estonian (et), Irish (ga), Maltese (mt), Greek (el), Russian (ru), Turkish (tr), Ukrainian (uk), Luxembourgish (lb)
+- **Awaiting localization start:** Albanian (sq)
 
 ## Maintenance
 
@@ -101,9 +106,11 @@ When making changes to the English source strings:
 ## Pending Tasks
 
 - **Guest guide localization rollout**
-  1. Produce native translations for `guestGuide.*` keys in all locales beyond `en`, `de`, `es`.
-  2. QA the updated guide in each language (layout, SVG captions, table wrapping).
-  3. Update `docs/Translation_Status.md` once each locale ships.
+  1. Produce native translations for `guestGuide.*` keys for the remaining locales listed as "pending" (priority: `lb`, past-due EU set).
+  2. QA the updated guide in seccondary locales (layout, SVG captions, table wrapping) once local copy arrives.
+  3. Update `docs/Translation_Status.md` after each locale graduates to ✅.
+- **Upcoming drop**
+  - Integrate Albanian (`sq`) full translation package when delivered.
 
 - **Implement stepwise i18n directory migration** *(unchanged)*
   1. Mirror the current `web/i18n/` tree into `src/frontend/i18n/` without removing legacy files.
