@@ -95,6 +95,13 @@ async function loadComponents() {
           oldScript.parentNode.replaceChild(newScript, oldScript);
         });
         
+        // Localize any new nodes introduced by this component
+        try {
+          if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') {
+            window.SimpleI18n.updateUI();
+          }
+        } catch {}
+
         // Dispatch an event that this component was loaded
         component.dispatchEvent(new CustomEvent('componentLoaded', {
           detail: { component: componentName, element: component }
@@ -218,7 +225,9 @@ async function initLanguageSelector(selectorId) {
             s.value = selectedLang;
           }
         });
-        
+        if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') {
+          try { window.SimpleI18n.updateUI(); } catch {}
+        }
         const langName = window.SimpleI18n.languages[selectedLang] || selectedLang;
         // Use console.log instead of toast if toast is not available
         if (typeof toast === 'function') {
@@ -250,6 +259,9 @@ async function initLanguageSelector(selectorId) {
     if (ev.detail?.language && selector.value !== ev.detail.language) {
       selector.value = ev.detail.language;
       await updateLanguageSelector();
+      if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') {
+        try { window.SimpleI18n.updateUI(); } catch {}
+      }
     }
   });
 }

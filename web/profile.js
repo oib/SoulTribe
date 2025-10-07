@@ -10,6 +10,51 @@
   const bindClick = window.bindClick;
   const token = () => window.token;
 
+  // --- Top timezone badge helpers ---
+  function tzOffsetMinutesAt(date, tz) {
+    try {
+      const fmt = new Intl.DateTimeFormat('en-US', {
+        timeZone: tz,
+        hour: '2-digit', minute: '2-digit', timeZoneName: 'shortOffset'
+      });
+      const parts = fmt.formatToParts(date);
+      const tzName = parts.find(p => p.type === 'timeZoneName')?.value || '';
+      const m = tzName.match(/([+-])(\d{1,2})(?::?(\d{2}))?/);
+      if (!m) return 0;
+      const sign = m[1] === '-' ? -1 : 1;
+      const hh = parseInt(m[2] || '0', 10);
+      const mm = parseInt(m[3] || '0', 10);
+      return sign * (hh * 60 + mm);
+    } catch { return 0; }
+  }
+  function tzOffsetLabel(tz, atDateISO) {
+    try {
+      const at = new Date(String(atDateISO));
+      const mins = tzOffsetMinutesAt(at, tz);
+      const sign = mins < 0 ? '-' : '+';
+      const abs = Math.abs(mins);
+      const hh = String(Math.floor(abs / 60)).padStart(2, '0');
+      const mm = String(abs % 60).padStart(2, '0');
+      return `UTC${sign}${hh}:${mm}`;
+    } catch { return ''; }
+  }
+  function resolveLiveTz() {
+    let tz = null;
+    try { tz = window.liveTz || null; } catch {}
+    if (!tz) { try { tz = localStorage.getItem('live_tz'); } catch {} }
+    if (!tz) { try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch {} }
+    return tz || 'UTC';
+  }
+  function updateTopTzBadge() {
+    try {
+      const el = document.getElementById('tzTopBadgeText');
+      if (!el) return;
+      const tz = resolveLiveTz();
+      const off = tzOffsetLabel(tz, new Date().toISOString());
+      el.textContent = `Using timezone: ${tz}${off ? ` (${off})` : ''}`;
+    } catch {}
+  }
+
   // Fetch and render user's radix JSON on profile page
   async function fetchAndRenderRadix() {
     if (!token()) return;
@@ -535,6 +580,13 @@
 
   // Profile-specific event handlers
   document.addEventListener('DOMContentLoaded', async () => {
+    // Initialize top timezone badge and keep it updated when live_tz changes
+    try { updateTopTzBadge(); } catch {}
+    try {
+      window.addEventListener('storage', (ev) => {
+        if (ev && ev.key === 'live_tz') updateTopTzBadge();
+      });
+    } catch {}
     force24HourFormat();
     // Attach autocompletes after DOM is ready
     attachBirthPlaceAutocomplete();
@@ -852,6 +904,7 @@
             try { window.liveTz = tz; } catch {}
             try { localStorage.setItem('live_tz', tz); } catch {}
             if (tzLabel) tzLabel.textContent = tz;
+            try { updateTopTzBadge(); } catch {}
           }
         });
       }

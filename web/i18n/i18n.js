@@ -187,15 +187,10 @@ window.SimpleI18n = {
     }
     
     try {
-      // In development (localhost/127.0.0.1), add cache-busting to avoid stale JSON
+      // Always add cache-busting to avoid stale JSON (even behind a Service Worker)
       const base = `/i18n/locales/${lang}/translation.json`;
-      let url = base;
-      try {
-        const host = (typeof location !== 'undefined' && location.hostname) ? location.hostname : '';
-        if (host === 'localhost' || host === '127.0.0.1') {
-          url = `${base}?v=${Date.now()}`;
-        }
-      } catch {}
+      const ver = (typeof window !== 'undefined' && window.APP_BUILD_VERSION) ? window.APP_BUILD_VERSION : Date.now();
+      const url = `${base}?v=${encodeURIComponent(ver)}`;
       
       const response = await fetch(url, { 
         headers: { 'Accept': 'application/json' },

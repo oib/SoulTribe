@@ -8,67 +8,27 @@
   <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <link rel="stylesheet" href="/css/components.css" /></head>
-<body>
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+</head>
+<body class="legal-page">
   <!-- Navigation will be loaded here by components.js -->
   <div data-component="navbar"></div>
   
-  
-  
-  <div class="topbar">
-    <div class="brand">
-      <a href="/" class="link-unstyled">SoulTribe.chat</a>
-    </div>
-    <div class="actions">
-      <select id="language-selector" class="language-selector" aria-label="Select language">
-        <option value="de">DE Deutsch</option>
-        <option value="en">EN English</option>
-        <option value="es">ES Español</option>
-        <option value="fr">FR Français</option>
-        <option value="it">IT Italiano</option>
-        <option value="pt">PT Português</option>
-        <option value="nl">NL Nederlands</option>
-        <option value="sv">SV Svenska</option>
-        <option value="no">NO Norsk</option>
-        <option value="da">DA Dansk</option>
-        <option value="fi">FI Suomi</option>
-        <option value="pl">PL Polski</option>
-        <option value="cs">CS Čeština</option>
-        <option value="hu">HU Magyar</option>
-        <option value="ro">RO Română</option>
-        <option value="bg">BG Български</option>
-        <option value="el">EL Ελληνικά</option>
-        <option value="ru">RU Русский</option>
-        <option value="uk">UK Українська</option>
-        <option value="tr">TR Türkçe</option>
-        <option value="ar">AR العربية</option>
-        <option value="he">HE עברית</option>
-        <option value="fa">FA فارسی</option>
-        <option value="hi">HI हिन्दी</option>
-        <option value="bn">BN বাংলা</option>
-        <option value="zh">ZH 中文</option>
-        <option value="ja">JA 日本語</option>
-        <option value="ko">KO 한국어</option>
-      </select>
-      <a id="btn-login-link" class="button secondary" href="/login.html">Login</a>
-      <a id="btn-dashboard-link" class="button" href="/dashboard.html">Dashboard</a>
-      <a id="btn-admin-link" class="button secondary" href="/admin/stats.html" style="display:none;">Admin</a>
-    </div>
-  </div>
-
   <div class="container">
     <section class="card md">
-      <h1>Terms of Service</h1>
+      <h1 data-i18n="termsPage.title">Terms of Service</h1>
       <div class="two-col">
         <div class="card">
-          <p>These Terms of Service ("Terms") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.</p>
-          <h2>Summary</h2>
+          <p data-i18n="termsPage.intro">These Terms of Service ("Terms") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.</p>
+          <h2 data-i18n="termsPage.summary_heading">Summary</h2>
           <ul>
-            <li>Be respectful. No abusive or illegal content.</li>
-            <li>You must be at least 18 years old to register.</li>
-            <li>We may update the service and these Terms from time to time.</li>
+            <li data-i18n="termsPage.summary_item1">Be respectful. No abusive or illegal content.</li>
+            <li data-i18n="termsPage.summary_item2">You must be at least 18 years old to register.</li>
+            <li data-i18n="termsPage.summary_item3">We may update the service and these Terms from time to time.</li>
           </ul>
-          <p>For questions, please contact support.</p>
+          <p data-i18n="termsPage.contact_note">For questions, please contact support.</p>
         </div>
         <div>
           <img src="/img/Terms.jpg" alt="Terms" style="max-width:391px;width:100%;height:auto;border-radius:10px;border:1px solid #e5e7eb;object-fit:contain;" loading="lazy" />
@@ -77,7 +37,12 @@
     </section>
   </div>
 
+  <script src="/i18n/i18n.js"></script>
+  <script>
+    try { window.SimpleI18n && window.SimpleI18n.init(); } catch {}
+  </script>
   <script src="/app.js"></script>
+  <script src="/js/components.js"></script>
   <!-- Footer will be loaded here by components.js -->
   <div data-component="footer"></div>
 </body>

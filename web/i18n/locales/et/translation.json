@@ -343,5 +343,46 @@
       "heading": "Lõppsõnad",
       "text": "Nautige suhtlust omal moel ja omas tempos."
     }
+  },
+  "dashboard": {
+    "slot_help_summary": "Mis on saadavusvahemik?",
+    "slot_help_intro": "Ajavahemikud, mille avaldad, et SoulTribe saaks soovitada kohtumisi, kui keegi sinuga kattub.",
+    "slot_help_step1": "Lisa üks või mitu ajavahemikku päevade ja tundide jaoks, mil oled vaba. Süsteem salvestab need sinu profiili ajavööndis ja UTC‑s.",
+    "slot_help_step2": "Kui vasteid tuuakse, võrdleme sinu ajavahemikke teiste liikmete omadega, et leida kattuvusi, mis on veel tulevikus.",
+    "slot_help_step3": "Kattuvusmärkmed jaotises „Matches” näitavad jagatud akent: UTC, sinu kohalik aeg ja sinu vaste kohalik aeg.",
+    "slot_help_step4": "Klõpsa kattuvusel „Paku seda aega”, et alustada kohtumise voogu selle ajavahemikuga eeltäidetult.",
+    "slot_help_step5": "Kui midagi muutub, muuda või kustuta ajavahemik, et me ei pakuks aegunud aegu."
+  },
+  "footer": {
+    "terms": "Tingimused",
+    "privacy": "Privaatsus",
+    "imprint": "Impressum"
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
   }
 }

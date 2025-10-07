@@ -11,12 +11,19 @@
     "matches": "Correspondances",
     "meetups": "Rencontres",
     "overlap_hint": "Clique sur « Proposer cette heure » pour proposer une rencontre pour ce créneau.",
-    "title": "Tableau de bord"
+    "title": "Tableau de bord",
+    "slot_help_summary": "Qu’est-ce qu’un créneau de disponibilité ?",
+    "slot_help_intro": "Les créneaux sont des plages horaires que vous publiez afin que SoulTribe puisse proposer des rencontres lorsqu’une personne se chevauche avec vous.",
+    "slot_help_step1": "Ajoutez un ou plusieurs créneaux pour les jours et heures où vous êtes disponible. Le système les enregistre dans votre fuseau horaire de profil et en UTC.",
+    "slot_help_step2": "Lorsque les correspondances sont récupérées, nous comparons vos créneaux à ceux des autres membres pour trouver des chevauchements encore à venir.",
+    "slot_help_step3": "Les pastilles de chevauchement dans la section « Matches » affichent la fenêtre partagée : UTC, votre heure locale et l’heure locale de votre correspondant.",
+    "slot_help_step4": "Cliquez sur « Proposer ce créneau » pour lancer le flux de meetup avec ce créneau prérempli.",
+    "slot_help_step5": "Si quelque chose change, modifiez ou supprimez le créneau afin d’éviter de proposer des horaires obsolètes."
   },
   "footer": {
-    "imprint": "Imprint",
-    "privacy": "Privacy",
-    "terms": "Terms"
+    "imprint": "Mentions légales",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
   },
   "imprint": {
     "title": "Imprint"
@@ -228,5 +235,32 @@
       "heading": "Mot de clôture",
       "text": "Profitez des échanges à votre manière et à votre rythme."
     }
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
   }
 }

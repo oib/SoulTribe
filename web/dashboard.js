@@ -68,6 +68,27 @@
     } catch { return ''; }
   }
 
+  // --- Top timezone badge ---
+  function resolveLiveTz() {
+    let tz = null;
+    try { tz = window.liveTz || null; } catch {}
+    if (!tz) { try { tz = localStorage.getItem('live_tz'); } catch {}
+    }
+    if (!tz) { try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch {}
+    }
+    return tz || 'UTC';
+  }
+
+  function updateTopTzBadge() {
+    try {
+      const el = document.getElementById('tzTopBadgeText');
+      if (!el) return;
+      const tz = resolveLiveTz();
+      const off = tzOffsetLabel(tz, new Date().toISOString());
+      el.textContent = `Using timezone: ${tz}${off ? ` (${off})` : ''}`;
+    } catch {}
+  }
+
   // Parse a datetime string assuming UTC when timezone info is missing
   function parseAsUTC(isoLike) {
     try {
@@ -749,6 +770,14 @@
   // Dashboard-specific event handlers
   document.addEventListener('DOMContentLoaded', () => {
     const bindClick = window.bindClick;
+    // Initialize top timezone badge
+    try { updateTopTzBadge(); } catch {}
+    // Keep badge in sync across tabs when localStorage changes
+    try {
+      window.addEventListener('storage', (ev) => {
+        if (ev && ev.key === 'live_tz') updateTopTzBadge();
+      });
+    } catch {}
     
     // Bind button if present, but allow direct calls elsewhere
     bindClick("btn-avail-list", fetchAvailList);
@@ -1119,6 +1148,7 @@
     // Auto-run lists on dashboard if token present
     try {
       if (token()) {
+        try { updateTopTzBadge(); } catch {}
         try { fetchAvailList(); } catch {}
         // Delay match finding to ensure user ID is loaded, then call directly
         setTimeout(() => { try { fetchAndRenderMatches(); } catch {} }, 100);

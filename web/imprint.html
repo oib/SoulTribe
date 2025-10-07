@@ -9,65 +9,25 @@
   <link rel="stylesheet" href="/mobile.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <link rel="stylesheet" href="/css/components.css" /></head>
-<body>
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+</head>
+<body class="legal-page">
   <!-- Navigation will be loaded here by components.js -->
   <div data-component="navbar"></div>
   
-  
-  
-  <div class="topbar">
-    <div class="brand">
-      <a href="/" class="link-unstyled">SoulTribe.chat</a>
-    </div>
-    <div class="actions">
-      <select id="language-selector" class="language-selector" aria-label="Select language">
-        <option value="de">DE Deutsch</option>
-        <option value="en">EN English</option>
-        <option value="es">ES Español</option>
-        <option value="fr">FR Français</option>
-        <option value="it">IT Italiano</option>
-        <option value="pt">PT Português</option>
-        <option value="nl">NL Nederlands</option>
-        <option value="sv">SV Svenska</option>
-        <option value="no">NO Norsk</option>
-        <option value="da">DA Dansk</option>
-        <option value="fi">FI Suomi</option>
-        <option value="pl">PL Polski</option>
-        <option value="cs">CS Čeština</option>
-        <option value="hu">HU Magyar</option>
-        <option value="ro">RO Română</option>
-        <option value="bg">BG Български</option>
-        <option value="el">EL Ελληνικά</option>
-        <option value="ru">RU Русский</option>
-        <option value="uk">UK Українська</option>
-        <option value="tr">TR Türkçe</option>
-        <option value="ar">AR العربية</option>
-        <option value="he">HE עברית</option>
-        <option value="fa">FA فارسی</option>
-        <option value="hi">HI हिन्दी</option>
-        <option value="bn">BN বাংলা</option>
-        <option value="zh">ZH 中文</option>
-        <option value="ja">JA 日本語</option>
-        <option value="ko">KO 한국어</option>
-      </select>
-      <a id="btn-login-link" class="button secondary" href="/login.html">Login</a>
-      <a id="btn-dashboard-link" class="button" href="/dashboard.html">Dashboard</a>
-      <a id="btn-admin-link" class="button secondary" href="/admin/stats.html" style="display:none;">Admin</a>
-    </div>
-  </div>
-
   <div class="container">
     <section class="card md">
       <div class="two-col">
         <div>
           <h1 data-i18n="imprint.title">Imprint</h1>
           <div class="card">
-            <p><strong>Andreas Michael Fleckl</strong></p>
-            <p>Johnstrassse 7/6</p>
-            <p>1140 Vienna</p>
-            <p>Austria / Europe</p>
-            <p><a href="mailto:andreas.fleckl@soultribe.chat" class="link">andreas.fleckl@soultribe.chat</a></p>
+            <p><strong data-i18n="imprintPage.contact_name">Andreas Michael Fleckl</strong></p>
+            <p data-i18n="imprintPage.address_line1">Johnstrassse 7/6</p>
+            <p data-i18n="imprintPage.address_line2">1140 Vienna</p>
+            <p data-i18n="imprintPage.address_line3">Austria / Europe</p>
+            <p><a href="mailto:andreas.fleckl@soultribe.chat" class="link" data-i18n="imprintPage.contact_email">andreas.fleckl@soultribe.chat</a></p>
           </div>
         </div>
         <div>
@@ -85,5 +45,6 @@
     try { window.SimpleI18n && window.SimpleI18n.init(); } catch {}
   </script>
   <script src="/app.js"></script>
+  <script src="/js/components.js"></script>
 </body>
 </html>

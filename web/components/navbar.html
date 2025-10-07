@@ -1,7 +1,7 @@
 <!-- Navigation will be loaded here by components.js -->
 <nav class="navbar">
   <div class="navbar-container">
-    <!-- Left-aligned items (Language) -->
+    <!-- Left-aligned items (Language + Timezone) -->
     <div class="navbar-left">
       <div class="language-selector-container">
         <select id="language-selector" class="language-selector" aria-label="Select language">
@@ -13,6 +13,7 @@
           <option value="pt">PT - Português</option>
         </select>
       </div>
+      <span class="badge mono" id="tzTopBadgeText" style="margin-left:8px; display:none;">Using timezone: …</span>
     </div>
 
     <!-- Brand/logo (centered) -->
@@ -34,9 +35,9 @@
             </filter>
           </defs>
           <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-                font-family="Segoe UI, sans-serif" font-size="48" font-weight="600"
+                font-family="Segoe UI, sans-serif" font-size="42" font-weight="700"
                 fill="url(#cosmicGradient)" filter="url(#glow)">
-            Soul Tribe
+            SoulTribe.chat
           </text>
         </svg>
       </a>
@@ -80,6 +81,19 @@
 
     document.body.classList.toggle('authenticated', isAuthenticated);
     document.body.classList.toggle('guest', !isAuthenticated);
+
+    // Toggle timezone badge visibility: only on profile/dashboard, when authenticated
+    try {
+      const tzBadge = document.getElementById('tzTopBadgeText');
+      if (tzBadge) {
+        const onProfile = location.pathname.endsWith('/profile.html');
+        const onDashboard = location.pathname.endsWith('/dashboard.html');
+        const onLanding = document.body.classList.contains('welcome-page') || location.pathname === '/' || location.pathname.endsWith('/index.html');
+        const onGuestGuide = location.pathname.endsWith('/docs/guest-jitsi-guide.html');
+        const shouldShow = isAuthenticated && (onProfile || onDashboard) && !onLanding && !onGuestGuide;
+        tzBadge.style.display = shouldShow ? 'inline-block' : 'none';
+      }
+    } catch {}
   }
 
   // Expose only the navbar-specific updater
@@ -90,10 +104,11 @@
     try {
       const langSelector = document.getElementById('language-selector');
       const langWrap = document.querySelector('.language-selector-container');
-      // Only show language selector on landing page
+      // Show language selector only on landing page
       const onLanding = document.body.classList.contains('welcome-page') || location.pathname === '/' || location.pathname.endsWith('/index.html');
-      if (langWrap && !onLanding) {
-        langWrap.style.display = 'none';
+      const showLang = onLanding;
+      if (langWrap) {
+        langWrap.style.display = showLang ? 'flex' : 'none';
       }
       if (langSelector && onLanding) {
         const savedLang = localStorage.getItem('i18nextLng') || 'en';
@@ -114,6 +129,7 @@
       // Listen to storage changes for auth token from other tabs
       window.addEventListener('storage', function(e) {
         if (e.key === 'access_token') updateNavbarAuthUI();
+        if (e.key === 'live_tz') setNavbarTzBadge();
       });
 
       // Wire logout button
@@ -127,8 +143,39 @@
 
       // Initial state
       updateNavbarAuthUI();
+      setNavbarTzBadge();
     } catch (err) {
       console.warn('Navbar init error:', err);
     }
   })();
+
+  // --- Timezone badge computation (navbar scope) ---
+  function setNavbarTzBadge() {
+    try {
+      const el = document.getElementById('tzTopBadgeText');
+      if (!el) return;
+      // Only show for authenticated users; text can still be set regardless
+      const tz = (function resolveLiveTz(){
+        let z = null;
+        try { z = window.liveTz || null; } catch {}
+        if (!z) { try { z = localStorage.getItem('live_tz'); } catch {} }
+        if (!z) { try { z = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch {} }
+        return z || 'UTC';
+      })();
+      const off = (function tzOffsetLabel(tzId){
+        try {
+          const fmt = new Intl.DateTimeFormat('en-US', { timeZone: tzId, hour:'2-digit', minute:'2-digit', timeZoneName:'shortOffset' });
+          const parts = fmt.formatToParts(new Date());
+          const tzName = parts.find(p=>p.type==='timeZoneName')?.value || '';
+          const m = tzName.match(/([+-])(\d{1,2})(?::?(\d{2}))?/);
+          if (!m) return '';
+          const sign = m[1] === '-' ? '-' : '+';
+          const hh = String(parseInt(m[2]||'0',10)).padStart(2,'0');
+          const mm = String(parseInt(m[3]||'0',10)).padStart(2,'0');
+          return `UTC${sign}${hh}:${mm}`;
+        } catch { return ''; }
+      })(tz);
+      el.textContent = `${tz}${off ? ` (${off})` : ''}`;
+    } catch {}
+  }
 </script>

@@ -340,7 +340,14 @@
     "generate_ai_comment": "Iġġenera kumment AI",
     "slot_delete": "Ħassar",
     "slot_edit": "Editja",
-    "active_filter_hint": "Juru biss l-utenti li kienu attivi fl-aħħar 30 jum."
+    "active_filter_hint": "Juru biss l-utenti li kienu attivi fl-aħħar 30 jum.",
+    "slot_help_summary": "X’inhu slot ta’ disponibbiltà?",
+    "slot_help_intro": "Twieqi ta’ żmien li tippubblika biex SoulTribe ikun jista’ jissuġġerixxi laqgħat meta xi ħadd jikkoinċidi miegħek.",
+    "slot_help_step1": "Żid slot wieħed jew aktar għaż‑żminijiet meta tkun liberu. Is‑sistema taħżinhom fiż‑żona tal‑ħin tal‑profil tiegħek u f’UTC.",
+    "slot_help_step2": "Meta jinkisbu l‑matches, inqabblu s‑slots tiegħek ma’ dawk ta’ membri oħra biex insibu koinċidenzi li għadhom fil‑futur.",
+    "slot_help_step3": "Il‑chips tal‑koinċidenza fis‑sezzjoni “Matches” juru t‑tieqa kondiviża: UTC, il‑ħin lokali tiegħek u l‑ħin lokali tal‑pari tiegħek.",
+    "slot_help_step4": "Ikklikkja “Ipproponi dan il‑ħin” fuq koinċidenza biex tibda l‑proċess tal‑laqgħa b’dak is‑slot mimli minn qabel.",
+    "slot_help_step5": "Jekk jinbidel xi ħaġa, editja jew ħassar is‑slot sabiex ma nibqgħux nipproponu ħinijiet skaduti."
   },
   "guestGuide": {
     "title": "Gwida rapida Jitsi għall-mistednin ta' SoulTribe",
@@ -424,5 +431,32 @@
       "heading": "Messaġġ finali",
       "text": "Gawdi l-konnessjoni bl-istil u l-pass tiegħek."
     }
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
   }
 }

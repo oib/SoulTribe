@@ -14,58 +14,10 @@
 </footer>
 
 <script>
-  // Update current year
   document.getElementById('current-year').textContent = new Date().getFullYear();
   
   // Sync language selector with the one in navbar
   document.addEventListener('DOMContentLoaded', function() {
-    const navLangSelector = document.getElementById('language-selector');
-    const footerLinks = Array.from(document.querySelectorAll('.footer-links .footer-link'));
-    const originalHrefs = footerLinks.map(a => a.getAttribute('href'));
-
-    function currentLang() {
-      // Prefer i18next setting, fallback to localStorage, default to 'en'
-      try {
-        if (window.i18next && typeof window.i18next.language === 'string') {
-          return window.i18next.language;
-        }
-      } catch {}
-      return localStorage.getItem('i18nextLng') || 'en';
-    }
-
-    function updateFooterLinkAvailability() {
-      const lang = (currentLang() || 'en').split('-')[0];
-      const isEnglish = lang === 'en';
-      footerLinks.forEach((a, idx) => {
-        if (isEnglish) {
-          a.setAttribute('href', originalHrefs[idx] || '#');
-          a.removeAttribute('aria-disabled');
-          a.removeAttribute('tabindex');
-          a.classList.remove('is-disabled');
-          a.title = '';
-          a.onclick = null;
-        } else {
-          a.setAttribute('aria-disabled', 'true');
-          a.setAttribute('tabindex', '-1');
-          a.classList.add('is-disabled');
-          a.title = 'Available in English only';
-          a.onclick = function(ev) {
-            ev.preventDefault();
-            ev.stopPropagation();
-          };
-        }
-      });
-    }
-
-    if (navLangSelector) {
-      navLangSelector.addEventListener('change', updateFooterLinkAvailability);
-      navLangSelector.dispatchEvent(new Event('change'));
-    } else {
-      updateFooterLinkAvailability();
-    }
-
-    // Also react to i18n changes if fired
-    if (window.i18next && typeof window.i18next.on === 'function') {
-      window.i18next.on('languageChanged', updateFooterLinkAvailability);
-    }
+    // No additional logic needed; footer links remain active in all languages.
   });
+</script>

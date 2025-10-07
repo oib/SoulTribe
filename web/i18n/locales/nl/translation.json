@@ -11,7 +11,14 @@
     "generate_ai_comment": "Genereer AI-opmerking",
     "slot_delete": "Verwijderen",
     "slot_edit": "Bewerken",
-    "active_filter_hint": "Alleen gebruikers die de afgelopen 30 dagen actief waren worden weergegeven."
+    "active_filter_hint": "Alleen gebruikers die de afgelopen 30 dagen actief waren worden weergegeven.",
+    "slot_help_summary": "Wat is een beschikbaarheidsslot?",
+    "slot_help_intro": "Slots zijn tijdvakken die je publiceert zodat SoulTribe meetups kan voorstellen wanneer iemand met jou overlapt.",
+    "slot_help_step1": "Voeg één of meer slots toe voor de dagen en uren dat je vrij bent. Het systeem slaat ze op in je profiel‑tijdzone en in UTC.",
+    "slot_help_step2": "Wanneer matches worden opgehaald, vergelijken we jouw slots met die van andere leden om overlappende tijden te vinden die nog in de toekomst liggen.",
+    "slot_help_step3": "Overlapchips in de sectie “Matches” tonen het gedeelde venster: UTC, jouw lokale tijd en de lokale tijd van je match.",
+    "slot_help_step4": "Klik op “Dit tijdstip voorstellen” bij een overlap om de meetup‑flow te starten met dat slot vooraf ingevuld.",
+    "slot_help_step5": "Als er iets verandert, bewerk of verwijder het slot zodat we geen verouderde tijden meer voorstellen."
   },
   "landing": {
     "features": {
@@ -173,7 +180,7 @@
   "footer": {
     "terms": "Voorwaarden",
     "privacy": "Privacy",
-    "imprint": "Impressum"
+    "imprint": "Colofon"
   },
   "reset_password": {
     "title": "Wachtwoord opnieuw instellen",
@@ -266,5 +273,32 @@
       "heading": "Afsluiting",
       "text": "Geniet van het contact maken op jouw manier en in jouw tempo."
     }
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
   }
 }

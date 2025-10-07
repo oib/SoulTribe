@@ -751,6 +751,9 @@ const bindClick = (id, handler) => {
   // Inject a consistent footer across pages
   function injectSiteFooter() {
     try {
+      // Skip injection if a footer component or existing footer is already present
+      if (document.querySelector('[data-component="footer"]')) return;
+      if (document.querySelector('.site-footer')) return;
       if (document.getElementById('siteFooter')) return;
       const footer = document.createElement('footer');
       footer.id = 'siteFooter';

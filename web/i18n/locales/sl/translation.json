@@ -306,7 +306,14 @@
     "generate_ai_comment": "Ustvari komentar UI",
     "slot_delete": "Izbriši",
     "slot_edit": "Uredi",
-    "active_filter_hint": "Prikazani so le uporabniki, ki so bili aktivni v zadnjih 30 dneh."
+    "active_filter_hint": "Prikazani so le uporabniki, ki so bili aktivni v zadnjih 30 dneh.",
+    "slot_help_summary": "Kaj je termin razpoložljivosti?",
+    "slot_help_intro": "Časovna okna, ki jih objavite, da lahko SoulTribe predlaga srečanja, ko se nekdo prekriva z vami.",
+    "slot_help_step1": "Dodajte enega ali več terminov za dneve in ure, ko ste prosti. Sistem jih shrani v vašem časovnem pasu profila in v UTC.",
+    "slot_help_step2": "Ko pridobimo ujemanja, primerjamo vaše termine z termini drugih članov, da najdemo prekrivanja, ki so še v prihodnosti.",
+    "slot_help_step3": "Žetončki prekrivanja v razdelku »Matches« prikažejo skupno okno: UTC, vaš lokalni čas in lokalni čas vaše povezave.",
+    "slot_help_step4": "Kliknite »Predlagaj ta čas« na prekrivanju, da začnete proces srečanja s tem vnaprej izpolnjenim terminom.",
+    "slot_help_step5": "Če se kaj spremeni, termin uredite ali izbrišite, da ne bomo predlagali zastarelih časov."
   },
   "imprint": {
     "title": "Imprint"
@@ -410,5 +417,32 @@
       "heading": "Zaključek",
       "text": "Uživaj v povezovanju na svoj način in v svojem tempu."
     }
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
   }
 }

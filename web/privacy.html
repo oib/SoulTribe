@@ -10,76 +10,41 @@
   <link rel="stylesheet" href="/mobile.css" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <link rel="stylesheet" href="/css/components.css" /></head>
-<body>
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+</head>
+<body class="legal-page">
   <!-- Navigation will be loaded here by components.js -->
   <div data-component="navbar"></div>
   
-  
-  
-  <div class="topbar">
-    <div class="brand">
-      <a href="/" class="link-unstyled">SoulTribe.chat</a>
-    </div>
-    <div class="actions">
-      <select id="language-selector" class="language-selector" aria-label="Select language">
-        <option value="de">DE Deutsch</option>
-        <option value="en">EN English</option>
-        <option value="es">ES Español</option>
-        <option value="fr">FR Français</option>
-        <option value="it">IT Italiano</option>
-        <option value="pt">PT Português</option>
-        <option value="nl">NL Nederlands</option>
-        <option value="sv">SV Svenska</option>
-        <option value="no">NO Norsk</option>
-        <option value="da">DA Dansk</option>
-        <option value="fi">FI Suomi</option>
-        <option value="pl">PL Polski</option>
-        <option value="cs">CS Čeština</option>
-        <option value="hu">HU Magyar</option>
-        <option value="ro">RO Română</option>
-        <option value="bg">BG Български</option>
-        <option value="el">EL Ελληνικά</option>
-        <option value="ru">RU Русский</option>
-        <option value="uk">UK Українська</option>
-        <option value="tr">TR Türkçe</option>
-        <option value="ar">AR العربية</option>
-        <option value="he">HE עברית</option>
-        <option value="fa">FA فارسی</option>
-        <option value="hi">HI हिन्दी</option>
-        <option value="bn">BN বাংলা</option>
-        <option value="zh">ZH 中文</option>
-        <option value="ja">JA 日本語</option>
-        <option value="ko">KO 한국어</option>
-      </select>
-      <a id="btn-login-link" class="button secondary" href="/login.html">Login</a>
-      <a id="btn-dashboard-link" class="button" href="/dashboard.html">Dashboard</a>
-      <a id="btn-admin-link" class="button secondary" href="/admin/stats.html" style="display:none;">Admin</a>
-    </div>
-  </div>
-
   <div class="container">
     <section class="card md">
-      <h1>Privacy Policy</h1>
+      <h1 data-i18n="privacyPage.title">Privacy Policy</h1>
       <div class="two-col">
         <div class="card">
-          <p>We respect your privacy. This page outlines how SoulTribe.chat handles your data.</p>
-          <h2>Summary</h2>
+          <p data-i18n="privacyPage.summary_intro">We respect your privacy. This page outlines how SoulTribe.chat handles your data.</p>
+          <h2 data-i18n="privacyPage.summary_heading">Summary</h2>
           <ul>
-            <li>We store only what is required to provide the service.</li>
-            <li>Authentication tokens are stored locally on your device.</li>
-            <li>Data is never sold.</li>
+            <li data-i18n="privacyPage.summary_item1">We store only what is required to provide the service.</li>
+            <li data-i18n="privacyPage.summary_item2">Authentication tokens are stored locally on your device.</li>
+            <li data-i18n="privacyPage.summary_item3">Data is never sold.</li>
           </ul>
-          <p>For questions or requests related to privacy, please contact support.</p>
+          <p data-i18n="privacyPage.contact_note">For questions or requests related to privacy, please contact support.</p>
         </div>
         <div>
-          <img src="/img/privacy.jpg" alt="Privacy & Safety" width="391" height="391" style="width:391px;height:391px;border-radius:10px;border:1px solid #e5e7eb;object-fit: cover;" loading="lazy" />
+          <img src="/img/privacy.jpg" alt="Privacy & Safety" width="391" height="391" style="width:391px;height:391px;border-radius:10px;border:1px solid #e5e7eb;object-fit: cover;" loading="lazy" data-i18n-title="privacyPage.image_alt" data-i18n="privacyPage.image_alt" />
         </div>
       </div>
     </section>
   </div>
 
+  <script src="/i18n/i18n.js"></script>
+  <script>
+    try { window.SimpleI18n && window.SimpleI18n.init(); } catch {}
+  </script>
   <script src="/app.js"></script>
+  <script src="/js/components.js"></script>
   <!-- Footer will be loaded here by components.js -->
   <div data-component="footer"></div>
 </body>
