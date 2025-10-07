@@ -1,6 +1,300 @@
 {
-  "_meta": {
-    "language": "Shqip",
-    "note": "Stub translation; falls back to English until localized copy is provided."
+  "landing": {
+    "page_title": "SoulTribe.chat - Gjej fisin tënd shpirtëror",
+    "hero": {
+      "title": "Mirë se erdhe",
+      "subtitle": "SoulTribe.chat është një hapësirë e krijuar për të të ndihmuar të gjesh dhe të lidhesh me fisin tënd shpirtëror — njerëz që rezonojnë me energjinë, shpirtin dhe udhëtimin tënd. ✨"
+    },
+    "how": {
+      "title": "Si funksionon",
+      "step1": "<strong>Krijo profilin tënd</strong> — shto datën, orën dhe vendin e lindjes për të gjeneruar hartën tënde unike astrale.",
+      "step2": "<strong>Zbulo përputhjet</strong> — ne nxjerrim në pah lidhje që bazohen në rezonancë dhe përputhje.",
+      "step3": "<strong>Nis bisedën</strong> — fto përputhjet të bisedojnë; gjithçka është e sigurt dhe private.",
+      "step4": "<strong>Takohu (opsionale)</strong> — cakto një telefonatë Jitsi ose takim fizik me pëlqim të ndërsjellë."
+    },
+    "getting_started": {
+      "title": "Si të fillosh",
+      "step1": "<strong>Krijo një llogari</strong> — s’ke nevojë për login nga rrjete sociale.",
+      "step2": "<strong>Plotëso profilin</strong> — shto të dhënat e lindjes; edhe një orë e përafërt vlen.",
+      "step3": "<strong>Cakto disponueshmërinë</strong> — propozo orare lokale; ne kujdesemi për konvertimet UTC.",
+      "step4": "<strong>Zbulo përputhjet</strong> — shfleto rekomandime të bazuara në rezonancë.",
+      "step5": "<strong>Bisedo dhe, nëse dëshiron, takohu</strong> — qëndro brenda aplikacionit; planifiko kur të jesh gati."
+    },
+    "features": {
+      "title": "Veçoritë",
+      "item1": "<strong>Përputhje astrologjike</strong> — lidhu duke përdorur hartën tënde natal.",
+      "item2": "<strong>Planifikim inteligjent në zona kohore</strong> — ne bëjmë të gjitha konvertimet UTC për ty.",
+      "item3": "<strong>Komunikim i drejtpërdrejtë me Jitsi</strong> — tekst/audio/video; asgjë nuk ruhet ose regjistrohet në SoulTribe.chat.",
+      "item4": "<strong>Hyrje e lehtë me link</strong> — dhomë private Jitsi për takime të konfirmuara; miqësore me privatësinë.",
+      "item5": "<strong>Ndërfaqe minimaliste</strong> — e projektuar për biseda domethënëse.",
+      "read_more": "Lexo udhëzuesin e shpejtë të Jitsi për mysafirët →"
+    },
+    "privacy": {
+      "title": "Privatësia dhe siguria",
+      "item1": "Kërkojmë vetëm atë që është e nevojshme për të mundësuar lidhje të sinqerta.",
+      "item2": "Të dhënat e profilit tënd nuk shiten dhe nuk ndahen me rrjete reklamash.",
+      "item3": "Ti vendos kush mund të të kontaktojë dhe kur të ndash më shumë informacion."
+    },
+    "matching": {
+      "title": "Si funksionon përputhja (shkurtimisht)",
+      "text": "Llogarisim tregues të rëndësishëm nga harta jote dhe i krahasojmë me të tjerët për të gjetur rezonancë. Përparësi kanë harmonia, plotësimi dhe potenciali për rritje."
+    },
+    "protips": {
+      "title": "Këshilla",
+      "item1": "Shto disa orare të disponueshme në ditë të ndryshme për lidhje më të shpejta.",
+      "item2": "Ji i sinqertë në hyrjen tënde — detajet konkrete ndihmojnë njerëzit e duhur të të gjejnë.",
+      "item3": "Pëlqimi i ndërsjellë vjen i pari. Ec me ritmin tënd."
+    },
+    "next": {
+      "title": "Hapat e radhës",
+      "go_dashboard": "Shko te Paneli",
+      "login_register": "Hyr / Regjistrohu"
+    },
+    "global": {
+      "title": "Komunitet global, orë lokale",
+      "text": "Lidhu me shpirtra të afërt kudo në botë me konvertime automatike të zonës kohore.",
+      "auto_title": "Zbulim automatik i zonës kohore",
+      "auto_text": "Ne e njohim automatikisht zonën tënde për planifikim të lehtë.",
+      "native_title": "Mbështetje në gjuhën amtare",
+      "native_text": "Bisedo në gjuhën që të përshtatet më shumë falë përkthimit të integruar.",
+      "tz_title": "Planifikim i vetëdijshëm për zonën kohore",
+      "tz_text": "S’ka më llogaritje — ne i bëjmë për ty.",
+      "select_label": "Zgjidh gjuhën:"
+    }
+  },
+  "guestGuide": {
+    "title": "Udhëzues i shpejtë për mysafirët e SoulTribe Jitsi",
+    "intro": "Ky udhëzues ndihmon mysafirët që hyjnë për herë të parë në dhomat Jitsi të SoulTribe. Ndiq vetëm hapat që të duhen. Teksti, audio dhe video janë opsionale.",
+    "prejoin": {
+      "heading": "Para se të bashkohesh",
+      "steps": {
+        "options": "Mëso çfarë është në dispozicion. Jitsi mbështet chat tekstual, audio dhe video. Ti vendos çfarë aktivizon.",
+        "permissions": "Jep lejet e kërkuara. Kur faqja kërkon qasje, lejoje shfletuesin të përdorë mikrofonin dhe kamerën.",
+        "setup": "Merr pak kohë për t’u përgatitur para se të hysh."
+      },
+      "substeps": {
+        "name": "Emri: shkruaj si dëshiron të të shohin pjesëmarrësit.",
+        "background": "Sfondi: zgjidh mjegullim ose sfond virtual për më shumë privatësi."
+      },
+      "mic_camera_label": "Mikrofoni dhe kamera",
+      "mic_camera_text": "Përdor dy butonat e parë për të ndezur/fikur mikrofonin dhe kamerën para se të hysh.",
+      "devices_label": "Pajisjet",
+      "devices_before_arrow": "Kliko shigjetën e vogël pranë çdo kontrolli",
+      "devices_after_arrow": "dhe zgjidh pajisjen që dëshiron të përdorësh.",
+      "audio_tip_label": "Këshillë audio",
+      "audio_tip_text": "Kufjet ndihmojnë të shmangësh jehonën. Nëse përdor altoparlantë, mbaj volumin të ulët për të shmangur rikthimin."
+    },
+    "browser": {
+      "heading": "Shfletuesit",
+      "supported": "Firefox dhe Chrome japin mbështetje të plotë për audio, video dhe chat.",
+      "unsupported": "Safari, Edge, Opera, Brave dhe DuckDuckGo nuk mbështeten aktualisht.",
+      "note": "Shfletues të tjerë jo të zakonshëm nuk janë testuar.",
+      "tip1": "Nëse shfaqet kërkesë, lejo hyrjen në mikrofon dhe kamerë nga shiriti i adresës.",
+      "tip2": "Çaktivizo bllokuesit e gjurmimit ose shto Jitsi te lista e lejuar.",
+      "tip3": "Ringarko skedën pasi të ndryshosh lejet që të zbatohen."
+    },
+    "layout": {
+      "heading": "Pamja e përgjithshme e dhomës",
+      "description": "Zona kryesore e videos në qendër tregon pjesëmarrësit me kamerë aktive. Shiritin e poshtëm e përbëjnë ikonat për mikrofonin, kamerën, ndarjen e ekranit, chat-in, pjesëmarrësit dhe opsionet e tjera. Paneli në të djathtë tregon listën e pjesëmarrësve dhe ekranet e ndara."
+    },
+    "toolbar": {
+      "heading": "Ikonat e shiritit të kontrollit",
+      "columns": {
+        "icon": "Ikona",
+        "label": "Etiketa",
+        "description": "Çfarë bën"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Mikrofoni",
+          "description": "Ndize/fike mikrofonin dhe zgjidh pajisjen që përdor."
+        },
+        "camera": {
+          "label": "Kamera",
+          "description": "Ndize/fike kamerën dhe përzgjidh burimin e duhur."
+        },
+        "screen": {
+          "label": "Ndaji ekranin",
+          "description": "Ndaje të gjithë ekranin, një dritare ose një skedë."
+        },
+        "chat": {
+          "label": "Chat",
+          "description": "Hap chat-in tekstual për mesazhe ose lidhje."
+        },
+        "participants": {
+          "label": "Pjesëmarrësit / Fto",
+          "description": "Shiko kush është në dhomë, fto të tjerë dhe prano mysafirët në pritje."
+        },
+        "more": {
+          "label": "Më shumë opsione",
+          "description": "Hyr në rregullimet e sigurisë, preferencat e pajisjeve dhe mjete shtesë."
+        },
+        "hangup": {
+          "label": "Mbyll",
+          "description": "Mbyll thirrjen dhe dil nga dhoma."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Lidhja e shpejtë",
+      "cta": "Bashkohu menjëherë në jitsi.bubuit.net/soultribe",
+      "note": "Testo konfigurimin ose tako mysafirë miqësorë. Nuk kërkohet llogari."
+    },
+    "closing": {
+      "heading": "Mesazh përmbyllës",
+      "text": "Shijo lidhjen në mënyrën dhe me ritmin që të përshtatet më shumë."
+    }
+  },
+  "language": {
+    "en": "Anglisht",
+    "de": "Gjermanisht",
+    "sq": "Shqip"
+  },
+  "welcome": {
+    "title": "Mirë se erdhe në SoulTribe.chat",
+    "subtitle": "Gjej fisin tënd shpirtëror"
+  },
+  "profile": {
+    "title": "Profili yt",
+    "save": "Ruaj",
+    "cancel": "Anulo",
+    "basic_info": {
+      "legend": "Informacion bazë",
+      "username_label": "Emri i përdoruesit",
+      "username_placeholder": "emri i përdoruesit"
+    },
+    "languages": { "legend": "Gjuhët" },
+    "location": {
+      "legend": "Vendndodhja aktuale",
+      "city_placeholder": "Qyteti aktual (autokompletim)",
+      "use_my_location": "Përdor vendndodhjen time",
+      "detected_tz_label": "Zonë kohore e zbuluar:",
+      "detected_tz_hint": "(automatikisht ose zgjidh)"
+    },
+    "birth": {
+      "legend": "Të dhëna lindjeje (për astrologji)",
+      "date_placeholder": "Data e lindjes",
+      "hour_label": "Ora",
+      "minute_label": "Min",
+      "place_placeholder": "Vendi i lindjes (qytet, shtet)",
+      "detected_tz_label": "Zonë kohore e zbuluar:",
+      "detected_tz_hint": "(automatikisht)",
+      "lat_placeholder": "Gjerësi gjeografike (p.sh. 41.3275)",
+      "lon_placeholder": "Gjatësi gjeografike (p.sh. 19.8187)",
+      "instructions": "Shto datën dhe vendin e lindjes për të llogaritur radix. Nëse nuk e di orën e saktë, lëre bosh dhe ne përdorim mesditën."
+    },
+    "note": "Profili yt ndihmon të personalizohen përputhjet dhe të shfaqet zona kohore e duhur.",
+    "primary_language_label": "Gjuha kryesore (UI)",
+    "other_languages_label": "Gjuhët e tjera (për përputhje)",
+    "language_input_placeholder": "Shkruaj për të shtuar gjuhë..."
+  },
+  "radix": {
+    "title": "Radixi yt",
+    "placeholder": "Nëse ke vendosur të dhënat e lindjes, radixi yt do të shfaqet këtu.",
+    "show_raw_json": "Shfaq JSON-in bruto",
+    "ai": {
+      "get_interpretation": "Merr interpretim",
+      "followup_placeholder": "Bëj pyetje shtesë…",
+      "send": "Dërgo"
+    }
+  },
+  "dashboard": {
+    "title": "Paneli",
+    "availability": "Disponueshmëria",
+    "create_slot": "Krijo kohë",
+    "duration_hours": "Kohëzgjatja (orë)",
+    "meetups": "Takimet",
+    "matches": "Përputhjet",
+    "overlap_hint": "Kur ka përputhje, kliko \"Sugjero këtë kohë\".",
+    "propose_time": "Sugjero kohën",
+    "generate_ai_comment": "Gjenero koment me AI",
+    "slot_delete": "Fshi",
+    "slot_edit": "Redakto",
+    "active_filter_hint": "Shfaqen vetëm përdoruesit aktivë në 30 ditët e fundit.",
+    "slot_help_summary": "Çfarë është një kohë e disponueshme?",
+    "slot_help_intro": "Kohët janë dritare që publikon kështu që SoulTribe mund të propozojë takime kur ka përputhje.",
+    "slot_help_step1": "Shto një ose më shumë kohë për ditët dhe orët kur je i lirë. Sistemi i ruan si në zonën tënde, ashtu edhe në UTC.",
+    "slot_help_step2": "Kur kërkojmë përputhje, krahasojmë kohët e tua me ato të të tjerëve që janë ende në të ardhmen.",
+    "slot_help_step3": "Kartelat e përputhjes tregojnë kohën e përbashkët: UTC, ora jote lokale dhe ajo e tjetrit.",
+    "slot_help_step4": "Kliko \"Sugjero këtë kohë\" për të nisur takimin me atë slot.",
+    "slot_help_step5": "Nëse diçka ndryshon, përditëso ose fshi kohën që të mos ofrohen takime të vjetra.",
+    "slot_help_more": "Dëshiron ndihmë shtesë? Hap udhëzuesin e plotë nga menuja Docs."
+  },
+  "login": {
+    "page_title": "SoulTribe.chat — Hyr / Regjistrohu",
+    "title": "Mirë se erdhe",
+    "intro": "Hyr me një llogari ekzistuese ose regjistrohu të re.",
+    "email": "email",
+    "confirm_password": "konfirmo fjalëkalimin (për regjistrim)",
+    "display_name": "emri për t’u paraqitur (për regjistrim)",
+    "register": "Regjistrohu",
+    "login": "Hyr",
+    "redirect_hint": "Pas hyrjes do të ridrejtohesh te paneli.",
+    "go_dashboard": "Shko te paneli",
+    "reset_password": "Rivendos fjalëkalimin",
+    "resend_verification": "Ridërgo email-in e verifikimit",
+    "email_not_verified": "Email-i nuk është verifikuar? ",
+    "verification_sent": "Nëse email-i yt nuk ishte verifikuar, kemi dërguar një email të ri verifikimi.",
+    "reset_sent": "Nëse ekziston një llogari me këtë email, do të marrësh udhëzime për rivendosje.",
+    "enter_email_first": "Së pari shëno email-in.",
+    "password_mismatch": "Fjalëkalimet nuk përputhen.",
+    "required_fields": "Email-i, fjalëkalimi dhe emri për t’u paraqitur janë të detyrueshëm.",
+    "registration_success": "Llogaria u krijua. Verifiko email-in, të lutem.",
+    "login_required": "Email-i dhe fjalëkalimi janë të detyrueshëm."
+  },
+  "nav": {
+    "home": "Ballina",
+    "dashboard": "Paneli",
+    "discover": "Zbulo",
+    "matches": "Përputhjet",
+    "messages": "Mesazhet",
+    "profile": "Profili",
+    "login": "Hyr",
+    "logout": "Dil"
+  },
+  "imprint": { "title": "Imprint" },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vjenë",
+    "address_line3": "Austri / Evropë",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "footer": {
+    "terms": "Termat",
+    "privacy": "Privatësia",
+    "imprint": "Imprint"
+  },
+  "privacyPage": {
+    "title": "Politika e privatësisë",
+    "summary_intro": "Ne e respektojmë privatësinë tuaj. Këtu shpjegojmë se si SoulTribe.chat trajton të dhënat tuaja.",
+    "summary_heading": "Përmbledhje",
+    "summary_item1": "Ne ruajmë vetëm atë që nevojitet për të ofruar shërbimin.",
+    "summary_item2": "Tokenët e autentikimit ruhen lokalisht në pajisjen tënde.",
+    "summary_item3": "Të dhënat nuk shiten kurrë.",
+    "contact_note": "Për pyetje rreth privatësisë, kontakto përkrahjen.",
+    "image_alt": "Privatësia dhe siguria"
+  },
+  "termsPage": {
+    "title": "Kushtet e shërbimit",
+    "intro": "Këto Kushte rregullojnë përdorimin e SoulTribe.chat. Duke e përdorur faqen, pajtoheni me to.",
+    "summary_heading": "Përmbledhje",
+    "summary_item1": "Ji i respektueshëm. Pa përmbajtje abuzive apo të paligjshme.",
+    "summary_item2": "Duhet të jesh të paktën 18 vjeç për t’u regjistruar.",
+    "summary_item3": "Mund të përditësojmë shërbimin dhe këto kushte herë pas here.",
+    "contact_note": "Për pyetje, kontakto përkrahjen.",
+    "image_alt": "Kushtet"
+  },
+  "reset_password": {
+    "title": "Rivendos fjalëkalimin",
+    "intro": "Zgjidh një fjalëkalim të ri për llogarinë tënde.",
+    "new_password_label": "Fjalëkalim i ri",
+    "new_password_placeholder": "fjalëkalim i ri",
+    "confirm_password_label": "Konfirmo fjalëkalimin e ri",
+    "confirm_password_placeholder": "konfirmo fjalëkalimin e ri",
+    "submit": "Vendos fjalëkalimin e ri"
+  },
+  "notifications": {
+    "language_set_to": "Gjuha u vendos në"
   }
 }

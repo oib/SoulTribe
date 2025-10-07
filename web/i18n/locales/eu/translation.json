@@ -1,6 +1,300 @@
 {
-  "_meta": {
-    "language": "Euskara",
-    "note": "Stub translation; falls back to English until localized copy is provided."
+  "landing": {
+    "page_title": "SoulTribe.chat - Aurkitu zure soul tribea",
+    "hero": {
+      "title": "Ongi etorri",
+      "subtitle": "SoulTribe.chat zure soul tribea aurkitzen eta konektatzen laguntzeko sortutako espazioa da — zure energiaren, espirituaren eta ibilbidearen oihartzuna duten pertsonak. ✨"
+    },
+    "how": {
+      "title": "Nola funtzionatzen du",
+      "step1": "<strong>Sortu zure profila</strong> — sartu jaiotze data, ordua eta tokia zure mapa astral bakarra sortzeko.",
+      "step2": "<strong>Deskubritu bat-etortzeak</strong> — bateragarritasun eta erresonantzia oinarritutako loturak nabarmentzen ditugu.",
+      "step3": "<strong>Hasi elkarrizketa</strong> — gonbidatu bat-etortzeak txatera; segurua eta pribatua diseinuz.",
+      "step4": "<strong>Elkartu (aukerakoa)</strong> — antolatu Jitsi dei bat edo aurrez aurreko topaketa elkarrekiko adostasunarekin."
+    },
+    "getting_started": {
+      "title": "Hasteko",
+      "step1": "<strong>Sortu kontua</strong> — ez da sare sozialetako saiorik behar.",
+      "step2": "<strong>Osatu profila</strong> — gehitu jaiotza-datuak; ordu hurbil bat nahikoa da.",
+      "step3": "<strong>Ezarri eskuragarritasuna</strong> — proposatu ordu-tarte lokalak; guk egingo ditugu UTC bihurketak.",
+      "step4": "<strong>Deskubritu bat-etortzeak</strong> — arakatu erresonantzian oinarritutako gomendioak.",
+      "step5": "<strong>Txateatu eta, nahi izanez gero, elkartu</strong> — aplikazioan bertan; antolatu prest zaudenean."
+    },
+    "features": {
+      "title": "Ezaugarriak",
+      "item1": "<strong>Astrologia bidezko bat-etortzea</strong> — konektatu zure natal karten bidez.",
+      "item2": "<strong>Ordu-zonen kudeaketa adimenduna</strong> — guk egiten ditugu UTC bihurketak zure ordez.",
+      "item3": "<strong>Jitsi bidezko komunikazio zuzena</strong> — testua/audioa/bideoa; ezer ez da gordetzen edo grabatzen SoulTribe.chaten.",
+      "item4": "<strong>Sarbide erraza loturaz</strong> — Jitsi gela pribatua baieztatutako topaketetarako; pribatutasunarekiko errespetuzkoa.",
+      "item5": "<strong>Interfaze minimalista</strong> — elkarrizketa esanguratsuetarako diseinatua.",
+      "read_more": "Irakurri Jitsi gonbidatuentzako gida azkarra →"
+    },
+    "privacy": {
+      "title": "Pribatutasuna eta segurtasuna",
+      "item1": "Soilik beharrezkoa dena eskatzen dugu benetako loturak ahalbidetzeko.",
+      "item2": "Zure profil-datuak ez dira saltzen edo iragarki-sareekin partekatzen.",
+      "item3": "Zuk erabakitzen duzu norbaitek noiz eta zer informazio parteka dezakeen zurekin."
+    },
+    "matching": {
+      "title": "Nola funtzionatzen du bat-etortzeak (labur)",
+      "text": "Zure kartatik harreman-adierazle nagusiak kalkulatzen ditugu eta besteekin alderatzen ditugu erresonantzia bilatzeko. Lehentasuna: harmonia, osagarritasuna eta hazteko aukera."
+    },
+    "protips": {
+      "title": "Aholkuak",
+      "item1": "Gehitu eskuragarritasun-tarte batzuk egun ezberdinetan konexio azkarragoetarako.",
+      "item2": "Izan zintzo sarreran — xehetasun zehatzek laguntzen dute jende egokia zu aurkitzen.",
+      "item3": "Adostasuna lehenik. Egin aurrera zure erritmoan."
+    },
+    "next": {
+      "title": "Hurrengo urratsak",
+      "go_dashboard": "Joan panelean",
+      "login_register": "Hasi saioa / Eman izena"
+    },
+    "global": {
+      "title": "Komunitate globala, ordu lokala",
+      "text": "Konektatu antzeko arimadun pertsonekin mundu osoan ordu-zonen bihurketa automatikoarekin.",
+      "auto_title": "Ordu-zonaren detekzio automatikoa",
+      "auto_text": "Zure ordu-zona automatikoki antzematen dugu planifikazioa errazteko.",
+      "native_title": "Ama-hizkuntzaren euskarria",
+      "native_text": "Txateatu gogoko duzun hizkuntzan txertatutako itzulpenarekin.",
+      "tz_title": "Ordu-zonaz kontzientea den planifikazioa",
+      "tz_text": "Ez dago kalkulu gehiagorik — guk egiten ditugu zure ordez.",
+      "select_label": "Hautatu hizkuntza:"
+    }
+  },
+  "guestGuide": {
+    "title": "SoulTribe Jitsi gonbidatuentzako gida azkarra",
+    "intro": "Gida honek lehen aldiz SoulTribe Jitsi geletan sartzen direnei laguntzen die. Erabili behar dituzun urratsak soilik. Testua, audioa eta bideoa aukerakoak dira.",
+    "prejoin": {
+      "heading": "Sartu aurretik",
+      "steps": {
+        "options": "Ezagutu erabilgarri dauden aukerak. Jitsik testu-txata, audioa eta bideoa onartzen ditu. Zuk erabakitzen duzu zer aktibatu.",
+        "permissions": "Eman eskatutako baimenak. Orrialdeak eskatzen duenean, onartu arakatzaileak mikrofonoa eta kamera erabiltzea.",
+        "setup": "Hartu une bat prestatzeko gelan sartu aurretik."
+      },
+      "substeps": {
+        "name": "Izena: idatzi nola agertu nahi duzun besteentzat.",
+        "background": "Atzeko planoa: aukeratu lausotzea edo atzeko plano birtuala pribatutasun handiagoa izateko."
+      },
+      "mic_camera_label": "Mikrofonoa eta kamera",
+      "mic_camera_text": "Erabili lehen bi botoiak mikrofonoa eta kamera piztu/itzaltzeko sartu aurretik.",
+      "devices_label": "Gailuak",
+      "devices_before_arrow": "Ireki gezi txikia kontrol bakoitzaren ondoan",
+      "devices_after_arrow": "eta hautatu erabili nahi duzun mikrofonoa edo kamera.",
+      "audio_tip_label": "Audio aholkuak",
+      "audio_tip_text": "Aurikularrek oihartzuna saihesten laguntzen dute. Bozgorailuak erabiltzen badituzu, mantendu bolumena baxu feedback-a ekiditeko."
+    },
+    "browser": {
+      "heading": "Arakatzaileak",
+      "supported": "Firefox eta Chrome-k audio, bideo eta txat osoa onartzen dute.",
+      "unsupported": "Safari, Edge, Opera, Brave eta DuckDuckGo ez daude onartuta oraingoz.",
+      "note": "Beste arakatzaile espezifikoak ez dira egiaztatu",
+      "tip1": "Agertzen bada, baimendu mikrofono eta kamerarako sarbidea helbide-barratik.",
+      "tip2": "Desaktibatu jarraipen-blokeatzaileak edo gehitu Jitsi baimenduen zerrendan.",
+      "tip3": "Kargatu berriro fitxa baimenak aldatzean, aldaketak aplikatzeko."
+    },
+    "layout": {
+      "heading": "Gelaren ikuspegi orokorra",
+      "description": "Erdiko bideo eremuak kamera aktibatuta dutenak bistaratzen ditu. Behealdeko kontrol-barrak mikrofonoa, kamera, pantaila partekatzea, txata, parte-hartzaileak eta bestelako ikonoak ditu. Eskuineko panelak parte-hartzaileen zerrenda eta partekatutako pantailak irekitzen ditu."
+    },
+    "toolbar": {
+      "heading": "Kontrol-barrako ikonoak",
+      "columns": {
+        "icon": "Ikonoa",
+        "label": "Etiketa",
+        "description": "Zer egiten du"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Mikrofonoa",
+          "description": "Piztu/itzali mikrofonoa eta aukeratu gailua."
+        },
+        "camera": {
+          "label": "Kamera",
+          "description": "Piztu/itzali kamera eta aukeratu iturria."
+        },
+        "screen": {
+          "label": "Pantaila partekatu",
+          "description": "Partekatu pantaila osoa, leiho bat edo fitxa bat."
+        },
+        "chat": {
+          "label": "Txata",
+          "description": "Ireki testu-txata mezuak edo estekak bidaltzeko."
+        },
+        "participants": {
+          "label": "Parte-hartzaileak / Gonbidatu",
+          "description": "Ikusi nor dagoen gelan, gonbidatu beste batzuk eta onartu zain daudenak."
+        },
+        "more": {
+          "label": "Aukera gehiago",
+          "description": "Sarbidea segurtasun ezarpenetara, gailu hobespenetara eta beste tresna batzuetara."
+        },
+        "hangup": {
+          "label": "Amaitu",
+          "description": "Amaitu deia eta irten gelatik."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Esteka azkarra",
+      "cta": "Sartu berehala jitsi.bubuit.net/soultribe helbidean",
+      "note": "Probatu zure konfigurazioa edo ezagutu gonbidatu adeitsuak. Ez da konturik behar."
+    },
+    "closing": {
+      "heading": "Amaierako oharra",
+      "text": "Gozatu konektatzen zuretzat egokien den eran eta erritmoan."
+    }
+  },
+  "language": {
+    "en": "Ingelesa",
+    "de": "Alemaniera",
+    "eu": "Euskara"
+  },
+  "welcome": {
+    "title": "Ongi etorri SoulTribe.chatera",
+    "subtitle": "Aurkitu zure soul tribea"
+  },
+  "profile": {
+    "title": "Zure profila",
+    "save": "Gorde",
+    "cancel": "Utzi",
+    "basic_info": {
+      "legend": "Oinarrizko informazioa",
+      "username_label": "Erabiltzaile izena",
+      "username_placeholder": "erabiltzaile izena"
+    },
+    "languages": { "legend": "Hizkuntzak" },
+    "location": {
+      "legend": "Uneko kokapena",
+      "city_placeholder": "Uneko hiria (autobetetzea)",
+      "use_my_location": "Erabili nire kokapena",
+      "detected_tz_label": "Antzemandako ordu-zona:",
+      "detected_tz_hint": "(automatikoa edo aukeratu)"
+    },
+    "birth": {
+      "legend": "Jaiotzako datuak (astrologiarako)",
+      "date_placeholder": "Jaiotze data",
+      "hour_label": "Ordua",
+      "minute_label": "Min",
+      "place_placeholder": "Jaiotze tokia (hiria, herrialdea)",
+      "detected_tz_label": "Antzemandako ordu-zona:",
+      "detected_tz_hint": "(automatikoa)",
+      "lat_placeholder": "Latitudea (adib. 43.2630)",
+      "lon_placeholder": "Longitudea (adib. -2.9350)",
+      "instructions": "Ezarri jaiotze data eta tokia zure radix kalkulatzeko. Ordua ez badakizu, utzi hutsik eta eguerdia erabiliko dugu."
+    },
+    "note": "Zure profilak bat-etortzeak pertsonalizatzen eta ordu-zona egokia bistaratzen laguntzen du.",
+    "primary_language_label": "Hizkuntza nagusia (UI)",
+    "other_languages_label": "Beste hizkuntzak (bat-etortzeetarako)",
+    "language_input_placeholder": "Idatzi hizkuntzak gehitzeko..."
+  },
+  "radix": {
+    "title": "Zure radix",
+    "placeholder": "Jaiotzako datuak ezarrita badituzu, hemen agertuko da zure radix.",
+    "show_raw_json": "Erakutsi JSON gordina",
+    "ai": {
+      "get_interpretation": "Lortu interpretazioa",
+      "followup_placeholder": "Egin jarraipen-galdera…",
+      "send": "Bidali"
+    }
+  },
+  "dashboard": {
+    "title": "Panela",
+    "availability": "Eskuragarritasuna",
+    "create_slot": "Sortu tartea",
+    "duration_hours": "Iraupena (ordu)",
+    "meetups": "Topaketak",
+    "matches": "Bat-etortzeak",
+    "overlap_hint": "Bat-etortzea dagoenean, egin klik \"Proposatu ordu hau\" botoian.",
+    "propose_time": "Proposatu ordua",
+    "generate_ai_comment": "Sortu AI iruzkina",
+    "slot_delete": "Ezabatu",
+    "slot_edit": "Editatu",
+    "active_filter_hint": "Azken 30 egunetan aktibo egon diren erabiltzaileak erakusten dira soilik.",
+    "slot_help_summary": "Zer da eskuragarritasun tarte bat?",
+    "slot_help_intro": "Tarteak argitaratzen dituzun denbora leihoak dira, SoulTribe-k bat-etortzeetan proposatu ahal izateko.",
+    "slot_help_step1": "Gehitu tarte bat edo gehiago libre zauden egun eta ordutarako. Sistemak zure eta UTC ordu-zonetan gordeko ditu.",
+    "slot_help_step2": "Bat-etortzeak bilatzean, zure tarteak beste erabiltzaileren tarteekin alderatzen ditugu, betiere etorkizunekoak badira.",
+    "slot_help_step3": "Gainjartzearen txarteletan leiho partekatua erakusten da: UTC, zure tokiko ordua eta bestearen tokiko ordua.",
+    "slot_help_step4": "Egin klik \"Proposatu ordu hau\" botoian, topaketa prozesua hasteko tarte horrekin.",
+    "slot_help_step5": "Zerbait aldatzen bada, eguneratu edo ezabatu tartea gomendio zaharkituak saihesteko.",
+    "slot_help_more": "Laguntza behar? Ireki gida osoa Docs menutik."
+  },
+  "login": {
+    "page_title": "SoulTribe.chat — Saioa hasi / Eman izena",
+    "title": "Ongi etorri",
+    "intro": "Hasi saioa dagoen kontu batekin edo sortu berri bat.",
+    "email": "email",
+    "confirm_password": "berretsi pasahitza (erregistrorako)",
+    "display_name": "bistaratzeko izena (erregistrorako)",
+    "register": "Eman izena",
+    "login": "Hasi saioa",
+    "redirect_hint": "Saioa hasi ondoren, panelera berbideratuko zara.",
+    "go_dashboard": "Joan panelera",
+    "reset_password": "Berrezarri pasahitza",
+    "resend_verification": "Bidali berriro egiaztapen-mezua",
+    "email_not_verified": "Emaila ez dago egiaztatuta? ",
+    "verification_sent": "Zure emaila egiaztatuta ez badago, mezu berria bidali dugu.",
+    "reset_sent": "Helbide honekin kontua badago, berrezartzeko jarraibideak bidaliko ditugu.",
+    "enter_email_first": "Sartu lehenik zure emaila.",
+    "password_mismatch": "Pasahitzak ez datoz bat.",
+    "required_fields": "Emaila, pasahitza eta bistaratzeko izena derrigorrezkoak dira.",
+    "registration_success": "Kontua sortua. Egiaztatu zure emaila, mesedez.",
+    "login_required": "Emaila eta pasahitza derrigorrezkoak dira."
+  },
+  "nav": {
+    "home": "Hasiera",
+    "dashboard": "Panela",
+    "discover": "Deskubritu",
+    "matches": "Bat-etortzeak",
+    "messages": "Mezuak",
+    "profile": "Profila",
+    "login": "Saioa hasi",
+    "logout": "Amaitu saioa"
+  },
+  "imprint": { "title": "Inprimakia" },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrasse 7/6",
+    "address_line2": "1140 Viena",
+    "address_line3": "Austria / Europa",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "footer": {
+    "terms": "Baldintzak",
+    "privacy": "Pribatutasuna",
+    "imprint": "Inprimakia"
+  },
+  "privacyPage": {
+    "title": "Pribatutasun politika",
+    "summary_intro": "Zure pribatutasuna errespetatzen dugu. Orrialde honek azaltzen du SoulTribe.chat-ek nola kudeatzen dituen zure datuak.",
+    "summary_heading": "Laburpena",
+    "summary_item1": "Zerbitzua eskaintzeko beharrezkoa dena soilik gordetzen dugu.",
+    "summary_item2": "Autentifikazio tokenak tokian bertan gordetzen dira zure gailuan.",
+    "summary_item3": "Datuak ez dira inoiz saltzen.",
+    "contact_note": "Pribatutasunari buruzko galderetarako, jarri harremanetan laguntzarekin.",
+    "image_alt": "Pribatutasuna eta segurtasuna"
+  },
+  "termsPage": {
+    "title": "Zerbitzu-baldintzak",
+    "intro": "Baldintza hauek SoulTribe.chat zerbitzuaren erabilera arautzen dute. Orrialdea erabiliz, baldintzak onartzen dituzu.",
+    "summary_heading": "Laburpena",
+    "summary_item1": "Izan errespetuzkoa. Ez eduki iraingarririk edo legez kontrakorik.",
+    "summary_item2": "18 urte edo gehiago izan behar dituzu izena emateko.",
+    "summary_item3": "Noizean behin zerbitzua eta baldintzak eguneratu ditzakegu.",
+    "contact_note": "Galderetarako, jarri harremanetan laguntzarekin.",
+    "image_alt": "Baldintzak"
+  },
+  "reset_password": {
+    "title": "Berrezarri pasahitza",
+    "intro": "Aukeratu pasahitz berria zure konturako.",
+    "new_password_label": "Pasahitz berria",
+    "new_password_placeholder": "pasahitz berria",
+    "confirm_password_label": "Berretsi pasahitz berria",
+    "confirm_password_placeholder": "berretsi pasahitz berria",
+    "submit": "Ezarri pasahitz berria"
+  },
+  "notifications": {
+    "language_set_to": "Hizkuntza ezarri da"
   }
 }
