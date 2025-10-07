@@ -799,6 +799,7 @@
           const secs = secsRaw
             .filter((code) => code && isValid(code) && code !== primarySelect.value);
           selectedLanguages = new Set(secs.length ? secs : Array.from(selectedLanguages));
+          try { window.selectedLanguages = selectedLanguages; } catch {}
           // --- Prefill birth data and location from profile so values persist across navigation ---
           try {
             // Display name
@@ -905,6 +906,7 @@
             try { localStorage.setItem('live_tz', tz); } catch {}
             if (tzLabel) tzLabel.textContent = tz;
             try { updateTopTzBadge(); } catch {}
+            try { window.setNavbarTzBadge && window.setNavbarTzBadge(); } catch {}
           }
         });
       }
@@ -1117,23 +1119,23 @@
         }
         const birth_hour = $("birthHour")?.value || "";
         const birth_minute = $("birthMinute")?.value || "";
-        const birth_time_raw = (birth_hour && birth_minute) ? `${birth_hour}:${birth_minute}` : "";
-        const birth_time_known = !!birth_time_raw;
-        const birth_place_name = $("birthPlace")?.value || null;
-        const birth_lat_raw = $("birthLat")?.value;
-        const birth_lon_raw = $("birthLon")?.value;
-        let birth_tz = $("birthTz")?.value || null;
-        // Normalize tz for Vienna if the place/coords indicate Vienna
-        try {
-          const placeTxt = $("birthPlace")?.value || '';
-          const blatN = parseFloat($("birthLat")?.value || 'NaN');
-          const blonN = parseFloat($("birthLon")?.value || 'NaN');
-          const nearV = (!Number.isNaN(blatN) && !Number.isNaN(blonN) && blatN >= 48.1 && blatN <= 48.35 && blonN >= 16.2 && blonN <= 16.6);
-          const mentionsV = /\b(Vienna|Wien)\b/i.test(placeTxt);
-          if ((mentionsV || nearV) && (!birth_tz || birth_tz === 'Europe/Paris')) birth_tz = 'Europe/Vienna';
-        } catch {}
-
-        const body = { display_name };
+        const body = {
+          display_name,
+          birth_dt: buildBirthIso(),
+          birth_time_known: $('birthHour')?.value !== '' && $('birthMinute')?.value !== '',
+          birth_place_name: $('birthPlace')?.value || null,
+          birth_lat: parseFloatOrNull($('birthLat')?.value),
+          birth_lon: parseFloatOrNull($('birthLon')?.value),
+          birth_tz: $('birthTz')?.value || null,
+          live_place_name: $('livePlace')?.value || null,
+          live_lat: parseFloatOrNull($('liveLat')?.value),
+          live_lon: parseFloatOrNull($('liveLon')?.value),
+          live_tz: resolveLiveTz(),
+          lang_primary,
+          lang_secondary: null,
+          languages,
+          house_system: $('houseSystem')?.value || null,
+        };
         // Prefer the select value; if empty but we have a detected label, use it
         if (live_tz_raw) body.live_tz = live_tz_raw;
         else if (live_tz_label && live_tz_label !== '(auto or select)') body.live_tz = live_tz_label;
@@ -1144,21 +1146,23 @@
           body.lang_secondary = languages[0];
         }
         // Build birth_dt. If time is provided, include it; if not, send date-only (00:00) for backend noon fallback
-        if (birth_date && birth_time_known) {
-          body.birth_dt = `${birth_date}T${birth_time_raw}:00`;
-        } else if (birth_date) {
-          body.birth_dt = `${birth_date}T00:00:00`;
-        }
-        body.birth_time_known = birth_time_known;
-        if (birth_place_name) body.birth_place_name = birth_place_name;
-        if (birth_lat_raw) body.birth_lat = parseFloat(birth_lat_raw);
-        if (birth_lon_raw) body.birth_lon = parseFloat(birth_lon_raw);
-        if (birth_tz) body.birth_tz = birth_tz;
-
         console.log('profile.update:BODY', body);
         const data = await api("/api/profile", { method: "PUT", body, auth: true });
         console.info('profile.update', data);
         show("profile.update", data);
+        try {
+          if (primarySelectEl && data && data.lang_primary) {
+            primarySelectEl.value = data.lang_primary;
+            try { await window.SimpleI18n?.changeLanguage(data.lang_primary); } catch {}
+          }
+          if (Array.isArray(data?.languages)) {
+            selectedLanguages = new Set(
+              data.languages.filter((code) => code && code !== primarySelectEl?.value)
+            );
+            try { window.selectedLanguages = selectedLanguages; } catch {}
+            renderTags();
+          }
+        } catch {}
         try {
           const lbl = document.getElementById('birthLocalLabel');
           if (lbl && data && data.birth_dt_utc && (data.birth_tz || body.birth_tz)) {
@@ -1170,6 +1174,7 @@
             lbl.textContent = `${parts2.year}-${parts2.month}-${parts2.day} ${parts2.hour}:${parts2.minute} (${btz2})`;
           }
         } catch {}
+        try { window.setNavbarTzBadge && window.setNavbarTzBadge(); } catch {}
         // Reflect new display_name in topbar immediately
         const uidEl = $('currentUserId');
         if (uidEl && display_name) uidEl.textContent = display_name;

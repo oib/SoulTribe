@@ -257,6 +257,9 @@ def update_profile(
     if payload.birth_lat is not None:       prof.birth_lat = payload.birth_lat
     if payload.birth_lon is not None:       prof.birth_lon = payload.birth_lon
     if payload.birth_tz is not None:        prof.birth_tz = payload.birth_tz
+    if payload.live_place_name is not None: prof.live_place_name = payload.live_place_name
+    if payload.live_lat is not None:        prof.live_lat = payload.live_lat
+    if payload.live_lon is not None:        prof.live_lon = payload.live_lon
     if payload.live_tz is not None:         prof.live_tz = payload.live_tz
     if payload.lang_primary is not None:    prof.lang_primary = payload.lang_primary
     if payload.lang_secondary is not None:  prof.lang_secondary = payload.lang_secondary

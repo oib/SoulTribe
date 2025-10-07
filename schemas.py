@@ -11,6 +11,9 @@ class ProfileUpdateIn(BaseModel):
     birth_lat: Optional[float] = None
     birth_lon: Optional[float] = None
     birth_tz: Optional[str] = None
+    live_place_name: Optional[str] = None
+    live_lat: Optional[float] = None
+    live_lon: Optional[float] = None
     live_tz: Optional[str] = None
     lang_primary: Optional[str] = None
     lang_secondary: Optional[str] = None

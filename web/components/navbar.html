@@ -104,13 +104,20 @@
     try {
       const langSelector = document.getElementById('language-selector');
       const langWrap = document.querySelector('.language-selector-container');
-      // Show language selector only on landing page
-      const onLanding = document.body.classList.contains('welcome-page') || location.pathname === '/' || location.pathname.endsWith('/index.html');
-      const showLang = onLanding;
-      if (langWrap) {
-        langWrap.style.display = showLang ? 'flex' : 'none';
+      const isLandingPage = () => (
+        document.body.classList.contains('welcome-page') ||
+        location.pathname === '/' ||
+        location.pathname.endsWith('/index.html')
+      );
+
+      // Helper: enforce landing-only visibility (call on init and on language changes)
+      function enforceLangSelectorVisibility() {
+        const onLanding = isLandingPage();
+        if (langWrap) langWrap.style.display = onLanding ? 'flex' : 'none';
       }
-      if (langSelector && onLanding) {
+      // Apply initial state
+      enforceLangSelectorVisibility();
+      if (langSelector && isLandingPage()) {
         const savedLang = localStorage.getItem('i18nextLng') || 'en';
         if (savedLang && langSelector.querySelector(`option[value="${savedLang}"]`)) {
           langSelector.value = savedLang;
@@ -125,6 +132,8 @@
           }
         });
       }
+      // Re-enforce visibility whenever the app language changes
+      try { window.addEventListener('languageChanged', enforceLangSelectorVisibility); } catch {}
 
       // Listen to storage changes for auth token from other tabs
       window.addEventListener('storage', function(e) {
@@ -132,13 +141,16 @@
         if (e.key === 'live_tz') setNavbarTzBadge();
       });
 
-      // Wire logout button
+      // Wire logout button (sync with app.js setToken logic)
       document.getElementById('logout-btn')?.addEventListener('click', function(e) {
         e.preventDefault();
-        localStorage.removeItem('access_token');
-        localStorage.removeItem('user');
+        try { if (typeof window.setToken === 'function') window.setToken(null); } catch {}
+        try { window.token = null; } catch {}
+        try { localStorage.removeItem('access_token'); } catch {}
+        try { localStorage.removeItem('user'); } catch {}
         updateNavbarAuthUI();
-        window.location.href = '/';
+        // Prefer sending user to login page after logout
+        try { window.location.href = '/login.html'; } catch { window.location.href = '/'; }
       });
 
       // Initial state
@@ -178,4 +190,7 @@
       el.textContent = `${tz}${off ? ` (${off})` : ''}`;
     } catch {}
   }
+
+  // Make timezone badge updater accessible globally for other scripts (e.g., profile.js)
+  try { window.setNavbarTzBadge = setNavbarTzBadge; } catch {}
 </script>
