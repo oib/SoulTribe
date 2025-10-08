@@ -62,6 +62,15 @@
 
 <script>
   // Namespaced navbar UI update to avoid colliding with page-level functions
+  function computeNavbarBadgeVisibility() {
+    const isAuthenticated = !!localStorage.getItem('access_token');
+    const onProfile = location.pathname.endsWith('/profile.html');
+    const onDashboard = location.pathname.endsWith('/dashboard.html');
+    const onLanding = document.body.classList.contains('welcome-page') || location.pathname === '/' || location.pathname.endsWith('/index.html');
+    const onGuestGuide = location.pathname.endsWith('/docs/guest-jitsi-guide.html');
+    return isAuthenticated && (onProfile || onDashboard) && !onLanding && !onGuestGuide;
+  }
+
   function updateNavbarAuthUI() {
     const isAuthenticated = !!localStorage.getItem('access_token');
 
@@ -85,12 +94,8 @@
     // Toggle timezone badge visibility: only on profile/dashboard, when authenticated
     try {
       const tzBadge = document.getElementById('tzTopBadgeText');
+      const shouldShow = computeNavbarBadgeVisibility();
       if (tzBadge) {
-        const onProfile = location.pathname.endsWith('/profile.html');
-        const onDashboard = location.pathname.endsWith('/dashboard.html');
-        const onLanding = document.body.classList.contains('welcome-page') || location.pathname === '/' || location.pathname.endsWith('/index.html');
-        const onGuestGuide = location.pathname.endsWith('/docs/guest-jitsi-guide.html');
-        const shouldShow = isAuthenticated && (onProfile || onDashboard) && !onLanding && !onGuestGuide;
         tzBadge.style.display = shouldShow ? 'inline-block' : 'none';
       }
     } catch {}
@@ -193,4 +198,5 @@
 
   // Make timezone badge updater accessible globally for other scripts (e.g., profile.js)
   try { window.setNavbarTzBadge = setNavbarTzBadge; } catch {}
+  try { window.refreshNavbarProfile = undefined; } catch {}
 </script>

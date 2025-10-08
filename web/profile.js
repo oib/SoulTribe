@@ -10,6 +10,27 @@
   const bindClick = window.bindClick;
   const token = () => window.token;
 
+  function parseFloatOrNull(value) {
+    const str = (value ?? '').toString().trim();
+    if (!str) return null;
+    const num = Number.parseFloat(str);
+    return Number.isFinite(num) ? num : null;
+  }
+
+  function buildBirthIso() {
+    const dateEl = document.getElementById('birthDate');
+    const hourEl = document.getElementById('birthHour');
+    const minuteEl = document.getElementById('birthMinute');
+    const dateVal = (dateEl?.value || '').trim();
+    if (!dateVal) return null;
+    const hourVal = hourEl?.value ?? '';
+    const minuteVal = minuteEl?.value ?? '';
+    const hasTime = hourVal !== '' && minuteVal !== '';
+    const hh = hasTime ? String(hourVal).padStart(2, '0') : '00';
+    const mm = hasTime ? String(minuteVal).padStart(2, '0') : '00';
+    return `${dateVal}T${hh}:${mm}:00`;
+  }
+
   // --- Top timezone badge helpers ---
   function tzOffsetMinutesAt(date, tz) {
     try {
@@ -1163,6 +1184,7 @@
             renderTags();
           }
         } catch {}
+        try { if (window.setNavbarTzBadge) window.setNavbarTzBadge(); } catch {}
         try {
           const lbl = document.getElementById('birthLocalLabel');
           if (lbl && data && data.birth_dt_utc && (data.birth_tz || body.birth_tz)) {
