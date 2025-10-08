@@ -3,30 +3,31 @@
     "page_title": "SoulTribe.chat - Finndu þinn soul tribe",
     "hero": {
       "title": "Velkomin",
-      "subtitle": "SoulTribe.chat er vettvangur sem hjálpar þér að finna og tengjast þínum soul tribe — fólki sem stillir sig á þína orku, anda og lífsleið. ✨"
+      "subtitle": "SoulTribe.chat er vettvangur sem hjálpar þér að finna og tengjast þínum soul tribe — fólki sem stillir sig á þína orku, anda og lífsleið. ✨",
+      "learn_more": "Uppgötvaðu sýn SoulTribe →"
     },
     "how": {
       "title": "Hvernig þetta virkar",
-      "step1": "<strong>Búðu til prófíl</strong> — sláðu inn fæðingardag, tíma og stað til að búa til þitt einstaka stjörnusnið.",
-      "step2": "<strong>Finndu samhljóm</strong> — við drögum fram tengingar byggðar á samhæfni og samhljómi.",
-      "step3": "<strong>Hafðu samband</strong> — bjóðaðu samsvörunum í spjall; öruggt og einkvæmt eftir hönnun.",
-      "step4": "<strong>Hittist (valfrjálst)</strong> — skipuleggðu Jitsi-símtal eða fund andspænis með gagnkvæmu samþykki."
+      "step1": "Búðu til prófíl — sláðu inn fæðingardag, tíma og stað til að búa til þitt einstaka stjörnusnið.",
+      "step2": "Finndu samhljóm — við drögum fram tengingar byggðar á samhæfni og samhljómi.",
+      "step3": "Hafðu samband — bjóðaðu samsvörunum í spjall; öruggt og einkvæmt eftir hönnun.",
+      "step4": "Hittist (valfrjálst) — skipuleggðu Jitsi-símtal eða fund andspænis með gagnkvæmu samþykki."
     },
     "getting_started": {
       "title": "Fyrstu skref",
-      "step1": "<strong>Búðu til aðgang</strong> — engin þörf á samfélagsmiðlaskráningu.",
-      "step2": "<strong>Ljúktu prófíl</strong> — bættu við fæðingargögnum; áætlaður tími er í lagi.",
-      "step3": "<strong>Settu framboð</strong> — stingdu upp á tímum á þínu staðartímabelti; við sjáum um UTC umbreytingar.",
-      "step4": "<strong>Finndu samsvörun</strong> — skoðaðu tillögur byggðar á samhljómi.",
-      "step5": "<strong>Spjallaðu og hittist ef þú vilt</strong> — allt innan appsins; skipuleggðu þegar þér hentar."
+      "step1": "Búðu til aðgang — engin þörf á samfélagsmiðlaskráningu.",
+      "step2": "Ljúktu prófíl — bættu við fæðingargögnum; áætlaður tími er í lagi.",
+      "step3": "Settu framboð — stingdu upp á tímum á þínu staðartímabelti; við sjáum um UTC umbreytingar.",
+      "step4": "Finndu samsvörun — skoðaðu tillögur byggðar á samhljómi.",
+      "step5": "Spjallaðu og hittist ef þú vilt — allt innan appsins; skipuleggðu þegar þér hentar."
     },
     "features": {
       "title": "Eiginleikar",
-      "item1": "<strong>Stjörnusamhæfni</strong> — tengstu með þínu stjörnusniði.",
-      "item2": "<strong>Skynsamleg tímasetning</strong> — við sjáum um allar UTC umbreytingar.",
-      "item3": "<strong>Bein samskipti í gegnum Jitsi</strong> — texti/hljóð/mynd; ekkert er vistað eða tekið upp á SoulTribe.chat.",
-      "item4": "<strong>Auðvelt að tengjast með krækju</strong> — einkasvæði á Jitsi fyrir staðfestar fundir; hannað með persónuvernd í huga.",
-      "item5": "<strong>Mínimalískt viðmót</strong> — gert til að styðja innihaldsrík samtöl.",
+      "item1": "Stjörnusamhæfni — tengstu með þínu stjörnusniði.",
+      "item2": "Skynsamleg tímasetning — við sjáum um allar UTC umbreytingar.",
+      "item3": "Bein samskipti í gegnum Jitsi — texti/hljóð/mynd; ekkert er vistað eða tekið upp á SoulTribe.chat.",
+      "item4": "Auðvelt að tengjast með krækju — einkasvæði á Jitsi fyrir staðfestar fundir; hannað með persónuvernd í huga.",
+      "item5": "Mínimalískt viðmót — gert til að styðja innihaldsrík samtöl.",
       "read_more": "Lestu hraðleiðbeiningar fyrir Jitsi gesti →"
     },
     "privacy": {
@@ -48,7 +49,14 @@
     "next": {
       "title": "Næstu skref",
       "go_dashboard": "Fara á stjórnborð",
-      "login_register": "Innskráning / Nýskráning"
+      "login_register": "Innskráning / Nýskráning",
+      "step1": "Búðu til aðgang",
+      "step2": "Fylltu út prófílinn þinn",
+      "step3": "Búðu til tímaglugga",
+      "step4": "Fylgstu með samsvörunum",
+      "step5": "Leggðu til eða staðfestu fund",
+      "step6": "Taktu þátt í Jitsi spjallinu",
+      "read_more": "Lestu ítarlega leiðbeininguna →"
     },
     "global": {
       "title": "Alþjóðlegt samfélag, staðartími",
@@ -144,6 +152,70 @@
       "heading": "Að lokum",
       "text": "Njóttu þess að tengjast á þann hátt og með þeim hraða sem hentar þér best."
     }
+  },
+  "nextStepsGuide": {
+    "page_title": "Ítarleg leiðbeining fyrir næstu skref",
+    "title": "Ítarleg leiðbeining fyrir næstu skref",
+    "intro": "Þessar leiðbeiningar dýpka skrefin af forsíðunni og leiða þig í gegnum hverja aðgerð með ráðum og tenglum.",
+    "steps": {
+      "step1": {
+        "heading": "Búðu til aðgang",
+        "description": "Skráðu þig með netfangi til að fá aðgang að stjórnborði og prófíl. Ekki þarf samfélagsmiðlainnskráningu.",
+        "bullets": {
+          "item1": "Notaðu gilt netfang; staðfestingartenglar renna út eftir 24 klst.",
+          "item2": "Eftir staðfestingu ertu færð/ur á innskráningarsíðuna."
+        },
+        "link": "Fara á Innskrá / Nýskrá"
+      },
+      "step2": {
+        "heading": "Ljúktu prófílnum þínum",
+        "description": "Bættu við fæðingargögnum til að virkja samsvörun byggða á samhljómi. Áætlaður tími er í lagi; meiri nákvæmni bætir niðurstöður.",
+        "bullets": {
+          "item1": "Settu inn fæðingardag, tíma og stað. Ef nákvæmur tími er óþekktur, veldu áætlun.",
+          "item2": "Skrifaðu stutta kynningu sem endurspeglar áhuga þinn og ásetning. Vertu skýr og einlæg/ur."
+        },
+        "callout": "Ráð: Tímabelti prófílsins þíns er greint sjálfkrafa; þú getur skoðað það á stjórnborðinu.",
+        "link": "Breyta prófíl"
+      },
+      "step3": {
+        "heading": "Búðu til tímaglugga",
+        "description": "Bjóðaðu einn eða fleiri tíma þar sem þú ert til í að tengjast. Við vistum staðartímann og breytum í UTC fyrir skipulagningu.",
+        "bullets": {
+          "item1": "Veldu byrjunartíma á þínu tímabelti og stilltu lengd (t.d. 1–3 klst).",
+          "item2": "Margir tímagluggar á mismunandi dögum auka líkurnar á skjótum samsvörunum."
+        },
+        "callout": "Tímabelti í lagi: við umbreytum sjálfvirkt milli staðartíma og UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Opna stjórnborð"
+      },
+      "step4": {
+        "heading": "Fylgstu með samsvörunum",
+        "description": "Skoðaðu samsvörun sem er lögð til út frá samhljómi. Skoðaðu athugasemdir um samhæfni og sameiginlegan áhuga.",
+        "bullets": {
+          "item1": "Nýjar tillögur birtast þegar prófíllinn og tímagluggar eru virkir.",
+          "item2": "Notaðu síur og minnispunkta til að muna við hvern þú vilt hafa samband."
+        },
+        "callout": "Persónuvernd fyrst: þú ræður hvenær og hvernig þú tengist."
+      },
+      "step5": {
+        "heading": "Leggðu til eða staðfestu fund",
+        "description": "Ef gagnkvæmur áhugi er til staðar, leggðu til tíma innan skörunar eða samþykktu tillögu samsvörunarinnar.",
+        "bullets": {
+          "item1": "Sendu kurteisa og skýra boðskort. Bjóðaðu eitt eða tvö tímabil.",
+          "item2": "Staðfestu áætlunina í spjalli og farðu í símtal þegar þið eruð bæði tilbúin."
+        },
+        "callout": "Samþykki og vellíðan: farðu á þínum hraða. Í lagi að halda sig við textaspjall."
+      },
+      "step6": {
+        "heading": "Taktu þátt í Jitsi spjalli",
+        "description": "Notaðu Jitsi fyrir valkvætt hljóð/mynd. Vafrar á borð við Firefox og Chrome eru studdir; textaspjall er alltaf tiltækt.",
+        "bullets": {
+          "item1": "Prófaðu hljóðnema/myndavél eða haltu þeim slökktum og notaðu einungis texta.",
+          "item2": "Veldu rétt tæki með litlu örinni við hliðina á táknunum."
+        },
+        "link": "Lestu Jitsi hraðleiðbeiningar"
+      }
+    },
+    "closing": "Njóttu þess að tengjast á þann hátt sem hentar þér best."
   },
   "language": {
     "en": "Enska",
@@ -300,5 +372,64 @@
   },
   "notifications": {
     "language_set_to": "Tungumál stillt á"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Stjörnur af tengslum",
+      "subtitle": "Þar sem alheimsk hönnun hittir mannlega tengsl — hæli fyrir skyldum sálum sem leiðast af stjörnunum."
+    },
+    "vision": {
+      "heading": "✨ Sýnin",
+      "body1": "SoulTribe.chat tengir fólk þar sem fæðingarstjörnumerki eru í samræmi — býður upp á stjörnumerkjum byggð samsvörun, einkaspjall og valfrjálsar fundir til að hjálpa skyldum sálum að hitta með meðvitund og merkingu. Þetta er ekki bara vettvangur: lifandi tilraun á alheimstengslum, þar sem stjörnumerkjum verða sameiginleg tungumál empatíu frekar en spá.",
+      "body2": "Hvert kort er einstakt merki — laglínu í stjörnunum sem endurómast með öðrum og vekur viðurkenningu og dýpt. Þessi rými tekur við leitendum sem skynja að hver samskipti beri tilgang — að samtíð leiði tengsl, og að vöxtur og gleði komi fram í samböndum sem virðast ætluð. SoulTribe.chat býður upp á öruggt, lágmarks- og meðvitað umhverfi þar sem þessi tengsl geta þróast náttúrulega."
+    },
+    "transition": "Áður en við förum dýpra, skulum við fara frá hugmyndinni um alheimstengsl til samfélagsins sem það skapar — sjálfu SoulTribeinni.",
+    "soultribe": {
+      "heading": "🌠 Hvað er SoulTribe?",
+      "body1": "SoulTribe er ekki bara net eða vinnalisti — það er viðbragðssvið. Ósýnilega netið sem tengir þá sem deila tíðni, tilgangi og takti sálirinnar. Þegar þú hittir meðlimi ættkvíslar þinnar er viðurkenningin tafarlaus: samtal virðist eins og að minnast fremur en að kynna sig. Tíminn mýkir brúnir sínar og rúm með orðum verður heilagt.",
+      "body2": "Innan SoulTribe þíns ert þú fullséður — metinn fyrir kjarna þinn, ekki mynd þína. Hver einstaklingur verður spegill: sumir endurspegla styrk þína, aðrir kennslur þínar, og nokkrir minna þig á hvað þú getur orðið. Þeir vekja hugrekki, auðmennsku og þekkingu að tilheyrandi snúist ekki um líkindi heldur viðbragð.",
+      "body3": "Ættkvísl þín getur samanstendur af listamönnum, draumurum, læknum, vísindamönnum eða rólegum sálum sem ganga sannleika sinn. Það sem sameinar ykkur er ekki bakgrunnur eða trú — það er titringur."
+    },
+    "power": {
+      "heading": "🔥 Kraftur ættkvíslar",
+      "body1": "Eins og hver SoulTribe myndast með sameiginlegu viðbragði, kemur sanna styrk þess fram í sameiginlegri orku sem vex úr þessum tengslum.",
+      "body2": "Við vöxum hraðar, læknum dýpra og dreymum stærra þegar aðrir ganga við hlið okkar og vitna um leið okkar. Mennskan hefur alltaf dafnað í hringum — það er forn hönnun okkar. Ættkvísl stækkar orku: það sem einn kveikir, annar viðheldur; það sem einn dreymir, þriðji jarðar. Í þessu sameiginlega sviði margfaldast samtíðir og kolektív þróun flýtir.",
+      "body3": "Þegar þú tekur þátt gætir þú tekið eftir því hvernig eigin orka þín stækkar. Hugmyndir fá áhuga, sköpun flæðir, innsæi skarpar. Ættkvíslin verður spegill, kennari og hringur valdeflingu — áminning að leið sálirinnar var aldrei ætluð til að ganga ein.",
+      "body4": "Innan SoulTribe.chat, hugmyndin um 'ættkvísl' snýst ekki um útilokan heldur samvirkni. Hér samexista einstaklingur og samvera fagurlega. Hver einstaklingur leggur fram tíðni sína, myndandi lifandi stjörnur meðvitundar — hvert ljóspunktur lýsir hinum."
+    },
+    "astro": {
+      "heading": "☀️ Stjörnumerki og sál",
+      "body1": "Stjörnumerki á SoulTribe.chat brúar milli innsýnar og tengsla með því að virða persónuvernd þína og samþykki. Aðeins nauðsynlegar fæðingargögn eru notuð til að búa til innsýn í samhæfni, og ekkert er deilt eða geymt umfram það sem reynsla þín krefst.",
+      "body2": "Með því að nota fæðingargögn þín reiknar vettvangurinn stöður reikistjarna og ber saman við aðra til að opinbera svæði náttúrulegrar sáttar, tilfinningalegs viðbragðs og möguleika á vexti. Í stað þess að yfirgnæfa notendur með gögnum eru niðurstöður þaggaðar í skýrum vísbendingum um samhæfni — sýnandi hvar orkur jafnast og hvernig sambönd geta þróast.",
+      "body3": "Þetta er ekki kærasta eftir merki; það er sál viðbragð eftir hönnun, þar sem kort leiða skilning og tengsl. Hvort úrslitið sé rómantísk efnafræði, skapandi samvinna eða djúp vinátta, SoulTribe.chat hjálpar þér að viðurkenna hvers vegna sumar manneskjur virðast tafarlaust kunnuglegar — og hvernig hvert fundur verður spegill fyrir sál þína."
+    },
+    "soulmates": {
+      "heading": "💫 Sálufélagar og fram yfir",
+      "body1": "Orðið 'sálufélagi' takmarkar oft ímyndunina við ást, en sálufélagar birtast í mörgum myndum. Þeir geta verið vinurinn sem vekur aftur hlátur þinn, kennarinn sem kallar á mörk þín, eða ókunnuginn sem viðvera hans virðist tafarlaust kunnug. SoulTribe.chat stækkar þessa hugmynd — leiðir þig ekki til 'eins', heldur til margra sem bera hluta af þróun þinni.",
+      "body2": "Sum tengsl kveikja rafmagn — ákaf og umbreytandi. Önnur bjóða rólega frið, jarðandi orku þína í sameiginlegri kyrrð. Hver fundur er skref að heild, áminning að leið sálirinnar sé mósaík heilagra samskipta. Að hitta ættkvísl þína er að hitta sjálfan þig — endurspeglað í þúsund lifandi speglum."
+    },
+    "benefit": {
+      "heading": "🌍 Hvernig á að nýta sér",
+      "items": {
+        "item1": "Búðu til sálarkort þitt — sláðu inn fæðingargögn þín til að búa til einstakt alheimsmynstur þitt og uppgötva hvað gerir orku þína sérstaka.",
+        "item2": "Uppgötvaðu viðbragð — finndu meðlimi þar sem stjörnumerki þín endurspeglast eða bæta við þínu. Lærðu hvernig reikistjörnumerkjum gefa til kynna samhæfni, innblástur eða karmískt tilgang.",
+        "item3": "Tengstu með auðmennsku — taktu þátt í meðvituðum samtölum. SoulTribe.chat hvetur til viðveru, forvitni og virðingar. Orð verða tæki skilnings, ekki frammistöðu.",
+        "item4": "Vaxið saman — hvert samskipti er ljósaskipti. Í gegnum viðbragð, andstæður eða væga núning þróast þú. Kerfið undirstrikar bestu spegla þína fyrir lærdóm — þá sem stækka meðvitund þína frekar en endurspegla þægindasvæði þitt.",
+        "item5": "Hittið í viðveru — þegar tilbúin kemur fram náttúrulega, farið frá texta til raddar, samtali til sameiginlegrar sköpunar. Hver fundur — stafrænn eða persónulegur — verður heilagur samskipti sálanna."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Yfirlýsing fyrir sálarlega tengsl",
+      "intro": "Finndu tíðni þína og finndu ættkvísl þína.",
+      "body1": "Tengsl eru heilög — hvert samtal sem rætur hefur í viðveru getur orðið hlið að meðvitund. Tækni ætti að þjóna meðvitund, næra náin tengsl í stað afleiðingar. Stjörnumerki, notuð með samúð og skýrleika, opinberar ekki örlög heldur frelsi í gegnum skilning. Þegar ættkvíslir jafnast, mynda þær geislandi stjörnur sem skína skærara saman en aðskildar.",
+      "body2": "SoulTribe.chat minnir okkur á að við séum ekki flökkuar undir fjarlægu himni, heldur ljómandi þræður í sameiginlegri vef sköpunarinnar. Hver fundur er kveikja í stóru eldi vakningar, hvert samtal hjartsláttur í takti eitthvað stórs og heilags.",
+      "closing": "Saman minnumst við hver við erum — ein ættkvísl margra sálanna."
+    },
+    "join": {
+      "heading": "🌌 Vertu með í ferðinni",
+      "body": "Ef þessar orð hljóma í þér, búðu til prófíl þinn, skoðaðu sálarkort þitt og byrjaðu að hitta skyldar anda sem deila tíðni þinni. Hver ný tengsl eru hlið að uppgötvun, endurskoðun og vexti.",
+      "cta": "Byrjaðu ferð þína með SoulTribe",
+      "footer": "Ættkvísl þín er þegar þar úti — láttu stjörnurnar leiða þig heim."
+    }
   }
 }

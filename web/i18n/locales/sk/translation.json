@@ -22,19 +22,19 @@
   },
   "landing": {
     "features": {
-      "item1": "<strong>Astrologické spárovanie</strong> — spojte sa pomocou vášho národného horoskopu.",
-      "item2": "<strong>Inteligentné riadenie časových pásiem</strong> — my sa postaráme o konverzie UTC za vás.",
-      "item3": "<strong>Priama komunikácia cez Jitsi</strong> — text/zvuk/video; na SoulTribe.chat sa nič neukladá ani nenahráva.",
-      "item4": "<strong>Jednoduché pripojenie cez odkaz</strong> — súkromná miestnosť Jitsi pre potvrdené stretnutia; šetriace súkromie, bez potreby inštalácie.",
-      "item5": "<strong>Minimalistické, zamerané rozhranie</strong> — navrhnuté pre zmysluplné rozhovory.",
+      "item1": "Astrologické spárovanie — spojte sa pomocou vášho národného horoskopu.",
+      "item2": "Inteligentné riadenie časových pásiem — my sa postaráme o konverzie UTC za vás.",
+      "item3": "Priama komunikácia cez Jitsi — text/zvuk/video; na SoulTribe.chat sa nič neukladá ani nenahráva.",
+      "item4": "Jednoduché pripojenie cez odkaz — súkromná miestnosť Jitsi pre potvrdené stretnutia; šetriace súkromie, bez potreby inštalácie.",
+      "item5": "Minimalistické, zamerané rozhranie — navrhnuté pre zmysluplné rozhovory.",
       "title": "Funkcie"
     },
     "getting_started": {
-      "step1": "<strong>Vytvorte si účet</strong> — nevyžaduje sa prihlásenie cez sociálne siete.",
-      "step2": "<strong>Dokončite svoj profil</strong> — pridajte údaje o narodení; postačí približný čas.",
-      "step3": "<strong>Nastavte svoju dostupnosť</strong> — navrhnite miestne časové sloty; my sa postaráme o konverziu UTC.",
-      "step4": "<strong>Objavte zhody</strong> — prehliadajte návrhy založené na rezonancii.",
-      "step5": "<strong>Chatujte a stretávajte sa</strong> — všetko v rámci aplikácie; plánujte, keď budete pripravení.",
+      "step1": "Vytvorte si účet — nevyžaduje sa prihlásenie cez sociálne siete.",
+      "step2": "Dokončite svoj profil — pridajte údaje o narodení; postačí približný čas.",
+      "step3": "Nastavte svoju dostupnosť — navrhnite miestne časové sloty; my sa postaráme o konverziu UTC.",
+      "step4": "Objavte zhody — prehliadajte návrhy založené na rezonancii.",
+      "step5": "Chatujte a stretávajte sa — všetko v rámci aplikácie; plánujte, keď budete pripravení.",
       "title": "Ako začať"
     },
     "global": {
@@ -50,13 +50,14 @@
     },
     "hero": {
       "subtitle": "SoulTribe.chat je priestor vytvorený na to, aby vám pomohol nájsť a spojiť sa s vašou duševnou komunitou — ľuďmi, ktorí rezonujú s vašou energiou, duchom a cestou. ✨",
-      "title": "Vitajte"
+      "title": "Vitajte",
+      "learn_more": "Objav víziu SoulTribe →"
     },
     "how": {
-      "step1": "<strong>Vytvorte si profil</strong> — zadajte dátum, čas a miesto narodenia na vygenerovanie vašej unikátnej mapy duše.",
-      "step2": "<strong>Objavte svoje zhody</strong> — zvýrazňujeme spojenia založené na kompatibilite a rezonancii.",
-      "step3": "<strong>Začnite konverzáciu</strong> — pozvite zhody na chat; navrhnuté tak, aby bolo bezpečné a súkromné.",
-      "step4": "<strong>Stretnite sa (voliteľné)</strong> — naplánujte si hovor cez Jitsi alebo osobné stretnutie so vzájomným súhlasom.",
+      "step1": "Vytvorte si profil — zadajte dátum, čas a miesto narodenia na vygenerovanie vašej unikátnej mapy duše.",
+      "step2": "Objavte svoje zhody — zvýrazňujeme spojenia založené na kompatibilite a rezonancii.",
+      "step3": "Začnite konverzáciu — pozvite zhody na chat; navrhnuté tak, aby bolo bezpečné a súkromné.",
+      "step4": "Stretnite sa (voliteľné) — naplánujte si hovor cez Jitsi alebo osobné stretnutie so vzájomným súhlasom.",
       "title": "Ako to funguje"
     },
     "matching": {
@@ -66,7 +67,14 @@
     "next": {
       "go_dashboard": "Prejsť na nástenku",
       "login_register": "Prihlásiť sa / Registrovať",
-      "title": "Ďalšie kroky"
+      "title": "Ďalšie kroky",
+      "step1": "Vytvorte si účet",
+      "step2": "Doplňte svoj profil",
+      "step3": "Vytvorte časový slot",
+      "step4": "Sledujte nové zhody",
+      "step5": "Navrhnite alebo potvrďte stretnutie",
+      "step6": "Pripojte sa k Jitsi chatu",
+      "read_more": "Prečítajte si podrobný sprievodca →"
     },
     "privacy": {
       "item1": "Žiadame len o informácie potrebné na nadviazanie zmysluplných spojení.",
@@ -274,6 +282,70 @@
       "text": "Užívaj si spájanie sa s ostatnými podľa vlastných pravidiel a tempa."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Podrobný sprievodca ďalšími krokmi",
+    "title": "Podrobný sprievodca ďalšími krokmi",
+    "intro": "Tento sprievodca rozvíja kroky zo vstupnej stránky a sprevádza ťa každou akciou pomocou tipov a odkazov.",
+    "steps": {
+      "step1": {
+        "heading": "Vytvor si účet",
+        "description": "Zaregistruj sa pomocou e-mailu, aby si získal prístup k nástenke a profilu. Prihlásenie cez sociálne siete nie je potrebné.",
+        "bullets": {
+          "item1": "Použi platný e-mail; overovacie odkazy platia 24 hodín.",
+          "item2": "Po potvrdení budeš presmerovaný na prihlasovaciu stránku."
+        },
+        "link": "Prejsť na Prihlásiť / Registrovať"
+      },
+      "step2": {
+        "heading": "Doplň svoj profil",
+        "description": "Pridaj údaje o narodení, aby sme aktivovali zhody založené na rezonancii. Približný čas stačí; väčšia presnosť zlepšuje výsledky.",
+        "bullets": {
+          "item1": "Zadaj dátum, čas a miesto narodenia. Ak presný čas nepoznáš, zvoľ odhad.",
+          "item2": "Napíš krátky úvod, ktorý odráža tvoje záujmy a zámery. Buď konkrétny/á a autentický/á."
+        },
+        "callout": "Tip: časové pásmo profilu sa zisťuje automaticky; môžeš ho overiť na nástenke.",
+        "link": "Upraviť profil"
+      },
+      "step3": {
+        "heading": "Vytvor časový slot",
+        "description": "Ponúkni jeden alebo viac časov, keď chceš nadviazať spojenie. Ukladáme tvoj miestny čas a pre plánovanie ho konvertujeme na UTC.",
+        "bullets": {
+          "item1": "Vyber čas začiatku vo svojom časovom pásme a nastav trvanie (napr. 1–3 hodiny).",
+          "item2": "Sloty v rôznych dňoch zvyšujú šancu rýchlych zhôd."
+        },
+        "callout": "Časové pásma pod kontrolou: automaticky prevádzame medzi miestnym časom a UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Otvoriť nástenku"
+      },
+      "step4": {
+        "heading": "Sleduj nové zhody",
+        "description": "Prehliadaj odporúčané zhody na základe rezonancie. Pozri si poznámky ku kompatibilite a spoločným záujmom.",
+        "bullets": {
+          "item1": "Nové návrhy sa zobrazia, keď je profil aj sloty aktívne.",
+          "item2": "Použi filtre a poznámky, aby si mal prehľad o ľuďoch, ktorých chceš kontaktovať."
+        },
+        "callout": "Súkromie na prvom mieste: ty rozhoduješ, kedy a ako sa zapojíš."
+      },
+      "step5": {
+        "heading": "Navrhni alebo potvrď stretnutie",
+        "description": "Keď je záujem obojstranný, navrhni čas v prekrývajúcich sa oknách alebo prijmi návrh tvojej zhody.",
+        "bullets": {
+          "item1": "Pošli priateľské a presné pozvanie. Ponúkni jednu alebo dve možnosti času.",
+          "item2": "Potvrď plán v chate a prejdite na hovor, keď budete obaja pripravení."
+        },
+        "callout": "Súhlas a komfort: pohybuj sa vlastným tempom. Je úplne v poriadku zostať len pri texte."
+      },
+      "step6": {
+        "heading": "Pridaj sa do Jitsi chatu",
+        "description": "Použi Jitsi pre voliteľný zvuk/video. Desktopové prehliadače (Firefox, Chrome) sú podporované; textový chat je vždy dostupný.",
+        "bullets": {
+          "item1": "Otestuj mikrofón/kameru alebo ich nechaj vypnuté a používaj len text.",
+          "item2": "Vyber správne zariadenia cez malú šípku pri ikonách."
+        },
+        "link": "Prečítať si rýchly sprievodca Jitsi"
+      }
+    },
+    "closing": "Užívaj si spájanie tak, ako ti to najviac vyhovuje."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -300,5 +372,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Súhvezdie pripojení",
+      "subtitle": "Kde kozmický dizajn stretáva ľudské spojenie — útočisko pre príbuzné duše vedené hviezdami."
+    },
+    "vision": {
+      "heading": "✨ Vízia",
+      "body1": "SoulTribe.chat spája ľudí, ktorých narodeninové horoskopy sa harmonizujú — ponúkajú párovanie založené na astrologii, súkromné chaty a voliteľné stretnutia, aby pomohli príbuzným dušiam stretnúť sa v uvedomelej a zmysluplnej ceste. Je to viac ako platforma: živý experiment v kozmickom spojení, kde astrologia sa stáva spoločným jazykom empatie namiesto predpovedania.",
+      "body2": "Každá mapa je jedinečná signatúra — melódia v hviezdach, ktorá rezonuje s inými, aby zapálila rozpoznanie a hĺbku. Tento priestor víta hľadajúcich, ktorí cítia, že každé stretnutie nesie účel — že synchronicita vedie spojenie, a že rast a radosť vyvstávajú prostredníctvom vzťahov, ktoré sa cítia predurčené. SoulTribe.chat ponúka bezpečnú, minimalistickú a uvedomelú prostredie, kde tieto spojenia môžu prirodzene vyvíjať sa."
+    },
+    "transition": "Predtým, než sa ponoríme hlbšie, poďme prejsť od myšlienky kozmického spojenia ku komunite, ktorú vytvára — ku samej SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Čo je SoulTribe?",
+      "body1": "SoulTribe nie je len sieť alebo zoznam priateľov — je to pole rezonancie. Neviditeľná sieť, ktorá spája tých, ktorí zdieľajú frekvenciu, účel a rytmus ducha. Keď sa stretnete s členmi svojho kmeňa, rozpoznanie je okamžité: rozhovor sa cíti ako spomínanie skôr než ako predstavenie. Čas zmäkčuje svoje hrany, a priestor medzi slovami sa stáva svätý.",
+      "body2": "Vo vašej SoulTribe ste úplne viditeľní — cenení za svoju podstatu, nie za svoj obraz. Každá osoba sa stáva zrkadlom: niektorí odrážajú vaše sily, iní vaše lekcie, a niekoľkí vám pripomínajú, čo môžete stať sa. Prebúdzajú odvahu, autenticitu a poznanie, že patričnosť nie je o podobnosti ale o rezonancii.",
+      "body3": "Váš kmeň môže pozostávať z umelcov, snívačov, liečiteľov, vedcov alebo tichých duší kráčajúcich svojou pravdou. To, čo vás spája, nie je pozadie alebo viera — je to vibrácia."
+    },
+    "power": {
+      "heading": "🔥 Sila kmeňa",
+      "body1": "Tak ako každé SoulTribe sa formuje cez zdieľanú rezonanciu, jeho pravá sila sa vynára v kolektívnej energii, ktorá rastie z týchto spojení.",
+      "body2": "Rasteme rýchlejšie, liečíme hlbšie a snívame väčším, keď iní kráčajú vedľa nás a svedčia o našej ceste. Ľudia vždy prosperovali v kruhoch — je to náš starý dizajn. Kmeň zväčšuje energiu: čo jeden zapáli, druhý udržiava; čo jeden sníva, tretí uzemňuje. V tomto zdieľanom poli synchronicity sa množia a kolektívna evolúcia zrýchľuje.",
+      "body3": "Keď sa zapojíte, môžete si všimnúť, ako sa vaša vlastná energia rozširuje. Myšlienky získavajú hybnosť, kreativita tečie, intuícia sa zostruje. Kmeň sa stáva zrkadlom, učiteľom a kruhom empowermentu — pripomínajúc, že cesta duše nikdy nebola určená na chodenie sama.",
+      "body4": "V rámci SoulTribe.chat, myšlienka 'kmeňa' nie je o exkluzivite ale o synergii. Tu individualita a spolužitie koexistujú krásne. Každá osoba prispieva svojou frekvenciou, formujúc živé súhvezdie vedomia — každý bod svetla osvetľuje ostatných."
+    },
+    "astro": {
+      "heading": "☀️ Astro a duša",
+      "body1": "Astrológia na SoulTribe.chat spája insight a spojenie, ctúc vašu súkromnosť a súhlas. Len základné údaje o narodení sa používajú na generovanie insights o kompatibilite, a nič sa nezdelí alebo neuloží okrem toho, čo vyžaduje vaša skúsenosť.",
+      "body2": "Používajúc vaše detaily o narodení, platforma počíta planetárne pozície a porovnáva ich s inými, aby odhalila oblasti prirodzenej harmónie, emocionálnej rezonancie a potenciálu rastu. Namiesto preťažovania používateľov údajmi, výsledky sa destilujú do jasných indikátorov kompatibility — ukazujúc, kde energie sa vyrovnávajú a ako vzťahy môžu evoluovať.",
+      "body3": "Toto nie je randenie podľa znamenia; je to rezonancia duše podľa dizajnu, kde mapy vedú pochopenie a spojenie. Bez ohľadu na výsledok — romantická chémia, kreatívna spolupráca alebo hlboké priateľstvo — SoulTribe.chat vám pomáha rozpoznať, prečo niektorí ľudia sa cítia okamžite známi — a ako každé stretnutie sa stáva zrkadlom pre vašu dušu."
+    },
+    "soulmates": {
+      "heading": "💫 Duševní partneri a ďalej",
+      "body1": "Slovo 'duševný partner' často zužuje predstavivosť na romantiku, ale duševní partneri sa objavujú v mnohých formách. Môžu byť priateľom, ktorý prebúdza váš smiech, učiteľom, ktorý vyzyva vaše hranice, alebo cudzincem, ktorého prítomnosť sa cíti okamžite známa. SoulTribe.chat rozširuje túto myšlienku — vedúc vás nie k 'jednému', ale k mnohým, ktorí nesú kusy vašej evolúcie.",
+      "body2": "Niektoré spojenia zapália elektrinu — intenzívne a transformačné. Iné ponúkajú tichý mier, uzemňujúc vašu energiu v zdieľanom tichu. Každé stretnutie je krok k celostnosti, pripomienka, že cesta duše je mozaika svätých stretnutí. Stretnúť svoj kmeň znamená stretnúť seba — odrazeného v tisíc živých zrkadiel."
+    },
+    "benefit": {
+      "heading": "🌍 Ako benefitovať",
+      "items": {
+        "item1": "Vytvorte svoju mapu duše — zadajte svoje detaily o narodení, aby ste vygenerovali svoj jedinečný kozmický vzor a objavili, čo robí vašu energiu významnosťou.",
+        "item2": "Objavte rezonanciu — nájdite členov, ktorých mapy odrážajú alebo dopĺňajú vaše. Naučte sa, ako planetárne zarovnania indikujú harmóniu, inšpiráciu alebo karmický účel.",
+        "item3": "Spojte sa autenticky — zapojte sa do uvedomelých rozhovorov. SoulTribe.chat podporuje prítomnosť, zvedavosť a rešpekt. Slová sa stávajú nástrojmi pochopenia, nie vystúpenia.",
+        "item4": "Rastiete spolu — každé stretnutie je výmena svetla. Cez rezonanciu, kontrast alebo jemné trenie evoluujete. Systém zvýrazňuje vaše najlepšie zrkadlá učenia — tie, ktoré rozširujú vaše vedomie namiesto odrážania vašej komfortnej zóny.",
+        "item5": "Stretnite sa v prítomnosti — keď pripravenosť sa rozvinie prirodzene, prejdite od textu k hlasu, od rozhovoru ku spolu-tvoreniu. Každé stretnutie — digitálne alebo osobné — sa stáva svätým dialógom duší."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest hlbokých spojení",
+      "intro": "Nájdite svoju frekvenciu a nájdite svoj kmeň.",
+      "body1": "Spojenie je sväté — každý rozhovor zakorenený v prítomnosti môže stať sa portálom k vedomiu. Technológia by mala slúžiť vedomiu, vyživovať intimnosť namiesto rozptyľovania. Astrológia, používaná s compassion a jasnosťou, odhaľuje nie osud ale slobodu cez porozumenie. Keď kmene sa zarovnajú, formujú radiálne súhvezdia, ktoré svietia jasnejšie spolu než oddelene.",
+      "body2": "SoulTribe.chat nám pripomína, že nie sme tuláci pod vzdialeným nebom, ale svetlé nite v zdieľanom gobelíne tvorby. Každé stretnutie je iskrou vo veľkom ohni prebudenia, každý rozhovor je úder srdca v rytme niečoho rozsiahleho a svätého.",
+      "closing": "Spolu si pamätáme, kto sme — jeden kmeň mnohých duší."
+    },
+    "join": {
+      "heading": "🌌 Pridajte sa k ceste",
+      "body": "Ak tieto slová rezonujú, vytvorte svoj profil, skúmajte svoju mapu duše a začnite stretávať príbuzné duchov, ktoré zdieľajú vašu frekvenciu. Každé nové spojenie je dvere k objaveniu, refleksii a rastu.",
+      "cta": "Začnite svoju cestu SoulTribe",
+      "footer": "Váš kmeň je už tam vonku — nechajte hviezdy vás viesť domov."
+    }
   }
 }

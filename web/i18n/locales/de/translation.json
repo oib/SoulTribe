@@ -2,30 +2,31 @@
   "landing": {
     "hero": {
       "title": "Willkommen",
-      "subtitle": "SoulTribe.chat ist ein Raum, der geschaffen wurde, um dir zu helfen, deinen Seelenstamm zu finden und dich mit ihm zu verbinden – Menschen, die mit deiner Energie, deinem Geist und deiner Reise in Resonanz stehen. ✨"
+      "subtitle": "SoulTribe.chat ist ein Raum, der geschaffen wurde, um dir zu helfen, deinen Seelenstamm zu finden und dich mit ihm zu verbinden – Menschen, die mit deiner Energie, deinem Geist und deiner Reise in Resonanz stehen. ✨",
+      "learn_more": "Entdecken Sie die SoulTribe-Vision →"
     },
     "how": {
       "title": "So funktioniert's",
-      "step1": "<strong>Erstelle dein Profil</strong> – gib Geburtsdatum, -zeit und -ort ein, um deine persönliche Seelenkarte zu erstellen.",
-      "step2": "<strong>Entdecke deine Matches</strong> – wir heben Verbindungen basierend auf Kompatibilität und Resonanz hervor.",
-      "step3": "<strong>Beginne das Gespräch</strong> – lade Matches zum Chatten ein; sicher und privat gestaltet.",
-      "step4": "<strong>Triff dich (optional)</strong> – vereinbare einen Jitsi-Call oder ein persönliches Treffen mit gegenseitigem Einverständnis."
+      "step1": "Erstelle dein Profil – gib Geburtsdatum, -zeit und -ort ein, um deine persönliche Seelenkarte zu erstellen.",
+      "step2": "Entdecke deine Matches – wir heben Verbindungen basierend auf Kompatibilität und Resonanz hervor.",
+      "step3": "Beginne das Gespräch – lade Matches zum Chatten ein; sicher und privat gestaltet.",
+      "step4": "Triff dich (optional) – vereinbare einen Jitsi-Call oder ein persönliches Treffen mit gegenseitigem Einverständnis."
     },
     "getting_started": {
       "title": "Erste Schritte",
-      "step1": "<strong>Erstelle dein Konto</strong> – keine Social-Media-Anmeldung erforderlich.",
-      "step2": "<strong>Vervollständige dein Profil</strong> – füge Geburtsdetails hinzu; ungefähre Zeitangaben sind in Ordnung.",
-      "step3": "<strong>Lege deine Verfügbarkeit fest</strong> – schlage lokale Zeitslots vor; wir kümmern uns um die UTC-Umrechnung.",
-      "step4": "<strong>Entdecke Matches</strong> – durchsuche Vorschläge basierend auf Resonanz.",
-      "step5": "<strong>Chatte & triff dich optional</strong> – alles innerhalb der App; plane Treffen, wenn du bereit bist."
+      "step1": "Erstelle dein Konto – keine Social-Media-Anmeldung erforderlich.",
+      "step2": "Vervollständige dein Profil – füge Geburtsdetails hinzu; ungefähre Zeitangaben sind in Ordnung.",
+      "step3": "Lege deine Verfügbarkeit fest – schlage lokale Zeitslots vor; wir kümmern uns um die UTC-Umrechnung.",
+      "step4": "Entdecke Matches – durchsuche Vorschläge basierend auf Resonanz.",
+      "step5": "Chatte & triff dich optional – alles innerhalb der App; plane Treffen, wenn du bereit bist."
     },
     "features": {
       "title": "Funktionen",
-      "item1": "<strong>Astrologie-basiertes Matching</strong> – verbinde dich über dein Geburtshoroskop.",
-      "item2": "<strong>Intelligente Zeitzonenverwaltung</strong> – wir übernehmen die UTC-Umrechnung für dich.",
-      "item3": "<strong>Direkte Kommunikation über Jitsi</strong> — Text/Audio/Video; es wird nichts auf SoulTribe.chat gespeichert oder aufgezeichnet.",
-      "item4": "<strong>Einfacher Beitritt per Link</strong> — privater Jitsi‑Raum für bestätigte Treffen; datenschutzfreundlich, keine Installation am Desktop nötig.",
-      "item5": "<strong>Minimalistisches, fokussiertes Design</strong> – für bedeutungsvolle Gespräche konzipiert.",
+      "item1": "Astrologie-basiertes Matching – verbinde dich über dein Geburtshoroskop.",
+      "item2": "Intelligente Zeitzonenverwaltung – wir übernehmen die UTC-Umrechnung für dich.",
+      "item3": "Direkte Kommunikation über Jitsi — Text/Audio/Video; es wird nichts auf SoulTribe.chat gespeichert oder aufgezeichnet.",
+      "item4": "Einfacher Beitritt per Link — privater Jitsi‑Raum für bestätigte Treffen; datenschutzfreundlich, keine Installation am Desktop nötig.",
+      "item5": "Minimalistisches, fokussiertes Design – für bedeutungsvolle Gespräche konzipiert.",
       "read_more": "Zur Jitsi-Gastanleitung →"
     },
     "privacy": {
@@ -47,7 +48,14 @@
     "next": {
       "title": "Nächste Schritte",
       "go_dashboard": "Zum Dashboard",
-      "login_register": "Anmelden / Registrieren"
+      "login_register": "Anmelden / Registrieren",
+      "step1": "Konto erstellen",
+      "step2": "Profil ausfüllen",
+      "step3": "Zeitslot anlegen",
+      "step4": "Auf Matches achten",
+      "step5": "Treffen vorschlagen oder bestätigen",
+      "step6": "Dem Jitsi-Chat beitreten",
+      "read_more": "Zur detaillierten Anleitung →"
     },
     "global": {
       "title": "Globale Gemeinschaft",
@@ -143,6 +151,70 @@
       "heading": "Abschluss",
       "text": "Genieße Verbindungen auf deine Art und in deinem Tempo."
     }
+  },
+  "nextStepsGuide": {
+    "page_title": "Detaillierte Anleitung – nächste Schritte",
+    "title": "Detaillierte Anleitung für die nächsten Schritte",
+    "intro": "Diese Anleitung vertieft die Schritte der Landingpage und führt dich mit Tipps und Links durch jede Aktion.",
+    "steps": {
+      "step1": {
+        "heading": "Konto erstellen",
+        "description": "Registriere dich mit deiner E-Mail, um Zugang zu Dashboard und Profil zu erhalten. Social Logins sind nicht erforderlich.",
+        "bullets": {
+          "item1": "Verwende eine gültige E-Mail-Adresse; Bestätigungslinks laufen nach 24 Stunden ab.",
+          "item2": "Nach der Bestätigung wirst du zum Login weitergeleitet."
+        },
+        "link": "Zu Anmelden / Registrieren"
+      },
+      "step2": {
+        "heading": "Profil ausfüllen",
+        "description": "Füge Geburtsdaten hinzu, um resonanzbasiertes Matching zu aktivieren. Eine ungefähre Zeit reicht aus; Genauigkeit verbessert die Ergebnisse.",
+        "bullets": {
+          "item1": "Gib Geburtsdatum, -zeit und -ort an. Falls du die genaue Zeit nicht kennst, wähle eine Schätzung.",
+          "item2": "Schreibe eine kurze Vorstellung, die deine Interessen und Absichten widerspiegelt. Sei konkret und authentisch."
+        },
+        "callout": "Tipp: Deine Profil-Zeitzone wird automatisch erkannt; du kannst sie im Dashboard prüfen.",
+        "link": "Profil bearbeiten"
+      },
+      "step3": {
+        "heading": "Zeitslot anlegen",
+        "description": "Biete ein oder mehrere Zeitfenster an, zu denen du dich austauschen möchtest. Wir speichern deine lokale Zeit und wandeln sie zur Planung in UTC um.",
+        "bullets": {
+          "item1": "Wähle eine Startzeit in deiner Zeitzone und lege eine Dauer fest (z. B. 1–3 Stunden).",
+          "item2": "Zeitslots an unterschiedlichen Tagen erhöhen die Chance auf schnelle Matches."
+        },
+        "callout": "Zeitzonen im Griff: Wir übernehmen automatisch die Umrechnung zwischen Lokalzeit und UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Dashboard öffnen"
+      },
+      "step4": {
+        "heading": "Auf Matches achten",
+        "description": "Durchsuche vorgeschlagene Matches auf Basis von Resonanz. Prüfe Notizen zur Kompatibilität und gemeinsame Interessen.",
+        "bullets": {
+          "item1": "Neue Vorschläge erscheinen, sobald dein Profil und deine Slots aktiv sind.",
+          "item2": "Nutze Filter und Notizen, um festzuhalten, wen du kontaktieren möchtest."
+        },
+        "callout": "Datenschutz zuerst: Du entscheidest, wann und wie du in Kontakt trittst."
+      },
+      "step5": {
+        "heading": "Treffen vorschlagen oder bestätigen",
+        "description": "Besteht beiderseitiges Interesse, schlage einen Zeitpunkt aus den überlappenden Slots vor oder bestätige den Vorschlag deines Matches.",
+        "bullets": {
+          "item1": "Sende eine freundliche, konkrete Einladung. Schlage ein oder zwei Zeitfenster vor.",
+          "item2": "Bestätige den Plan im Chat und wechsle zum Call, sobald ihr beide bereit seid."
+        },
+        "callout": "Einvernehmen und Wohlbefinden: Gehe in deinem eigenen Tempo. Es ist völlig in Ordnung, beim Text zu bleiben."
+      },
+      "step6": {
+        "heading": "Dem Jitsi-Chat beitreten",
+        "description": "Nutze Jitsi optional für Audio/Video. Desktop-Browser (Firefox, Chrome) werden unterstützt; der Textchat steht immer bereit.",
+        "bullets": {
+          "item1": "Teste Mikrofon/Kamera oder lasse sie ausgeschaltet und nutze nur den Textchat.",
+          "item2": "Wähle die richtigen Geräte über den kleinen Pfeil neben den Symbolen."
+        },
+        "link": "Schnellstart Jitsi lesen"
+      }
+    },
+    "closing": "Erlebe Verbindungen auf die Weise, die sich für dich stimmig anfühlt."
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -299,5 +371,64 @@
     "summary_item3": "Wir können den Dienst und diese Bedingungen von Zeit zu Zeit aktualisieren.",
     "contact_note": "Bei Fragen wende dich bitte an den Support.",
     "image_alt": "Bedingungen"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Eine Konstellation der Verbindung",
+      "subtitle": "Wo kosmisches Design auf menschliche Verbindung trifft — ein Zufluchtsort für verwandte Seelen, geführt von den Sternen."
+    },
+    "vision": {
+      "heading": "✨ Die Vision",
+      "body1": "SoulTribe.chat verbindet Menschen, deren Geburtshoroskope miteinander harmonieren — es bietet astrologiebasiertes Matching, private Chats und optionale Treffen, damit sich verwandte Seelen achtsam und sinnvoll begegnen können. Es ist mehr als eine Plattform: ein lebendiges Experiment kosmischer Verbindung, in dem Astrologie zur gemeinsamen Sprache der Empathie wird statt zu einer reinen Vorhersage.",
+      "body2": "Jedes Horoskop ist eine einzigartige Signatur — eine Melodie in den Sternen, die mit anderen resoniert und Erkennen sowie Tiefe auslöst. Dieser Raum heißt Suchende willkommen, die spüren, dass jede Begegnung einen Sinn trägt — dass Synchronicität die Verbindung leitet und Wachstum wie Freude aus Beziehungen erwachsen, die sich bestimmt anfühlen. SoulTribe.chat bietet ein sicheres, minimalistisches und bewusstes Umfeld, in dem sich diese Verbindungen ganz natürlich entfalten können."
+    },
+    "transition": "Bevor wir tiefer gehen, wechseln wir von der Idee der kosmischen Verbindung zu der Gemeinschaft, die sie schafft — zur SoulTribe selbst.",
+    "soultribe": {
+      "heading": "🌠 Was ist eine SoulTribe?",
+      "body1": "Eine SoulTribe ist nicht bloß ein Netzwerk oder eine Freundesliste — sie ist ein Resonanzfeld. Das unsichtbare Netz, das jene verbindet, die Frequenz, Absicht und den Rhythmus der Seele teilen. Wenn du Mitglieder deiner Tribe triffst, ist das Wiedererkennen sofort da: Das Gespräch fühlt sich an wie Erinnerung statt Vorstellung. Die Zeit wird sanfter, und der Raum zwischen den Worten wird heilig.",
+      "body2": "In deiner SoulTribe wirst du vollständig gesehen — geschätzt für dein Wesen, nicht für dein Abbild. Jeder Mensch wird zum Spiegel: Manche reflektieren deine Stärken, andere deine Lektionen und einige erinnern dich daran, zu wem du werden kannst. Sie wecken Mut, Authentizität und das Wissen, dass Zugehörigkeit nicht auf Gleichheit, sondern auf Resonanz beruht.",
+      "body3": "Deine Tribe kann aus Künstler:innen, Träumer:innen, Heiler:innen, Wissenschaftler:innen oder stillen Seelen bestehen, die ihre Wahrheit leben. Was euch verbindet, ist nicht Herkunft oder Glaube — es ist Schwingung."
+    },
+    "power": {
+      "heading": "🔥 Die Kraft der Gemeinschaft",
+      "body1": "So wie jede SoulTribe aus gemeinsamer Resonanz entsteht, zeigt sich ihre wahre Stärke in der kollektiven Energie, die aus diesen Verbindungen wächst.",
+      "body2": "Wir wachsen schneller, heilen tiefer und träumen größer, wenn andere an unserer Seite gehen und Zeugnis ablegen. Menschen haben schon immer in Kreisen geblüht — das ist unser uraltes Design. Eine Gemeinschaft verstärkt Energie: Was eine Person entzündet, hält eine andere am Leben; wovon eine träumt, erdet eine dritte. In diesem gemeinsamen Feld vervielfachen sich Synchronicitäten und die kollektive Evolution beschleunigt sich.",
+      "body3": "Wenn du dich darauf einlässt, spürst du vielleicht, wie deine eigene Energie sich ausdehnt. Ideen gewinnen an Schwung, Kreativität fließt, Intuition wird schärfer. Die Tribe wird zum Spiegel, zur Lehrerin und zum Kreis der Ermächtigung — eine Erinnerung daran, dass der Weg der Seele nie als Soloreise gedacht war.",
+      "body4": "Bei SoulTribe.chat geht es bei der Idee einer „Tribe“ nicht um Exklusivität, sondern um Synergie. Hier koexistieren Individualität und Miteinander in Harmonie. Jede Person bringt ihre Frequenz ein und erschafft eine lebendige Konstellation des Bewusstseins — jeder Lichtpunkt erhellt die anderen."
+    },
+    "astro": {
+      "heading": "☀️ Astro & Seele",
+      "body1": "Astrologie auf SoulTribe.chat schlägt die Brücke zwischen Einsicht und Verbindung und achtet dabei auf Privatsphäre und Zustimmung. Es werden nur die nötigsten Geburtsdaten genutzt, um Einblicke in die Kompatibilität zu schaffen; nichts wird geteilt oder gespeichert, was dein Erlebnis nicht verlangt.",
+      "body2": "Anhand deiner Geburtsdaten berechnet die Plattform Planetenkonstellationen und vergleicht sie mit denen anderer, um Bereiche natürlicher Harmonie, emotionaler Resonanz und Entwicklungspotenzial aufzudecken. Statt mit Daten zu überfluten, werden die Ergebnisse zu klaren Hinweisen auf Kompatibilität verdichtet — sie zeigen, wo Energien sich ausrichten und wie Beziehungen wachsen können.",
+      "body3": "Das ist kein Dating nach Sternzeichen; es ist Seelenresonanz nach Plan, bei der Horoskope Verständnis und Verbindung leiten. Ob romantische Chemie, kreative Zusammenarbeit oder tiefe Freundschaft — SoulTribe.chat hilft dir zu verstehen, warum sich bestimmte Menschen sofort vertraut anfühlen und wie jede Begegnung zum Spiegel deiner Seele wird."
+    },
+    "soulmates": {
+      "heading": "💫 Seelenverwandte und darüber hinaus",
+      "body1": "Das Wort „Seelenverwandte“ lenkt die Fantasie oft Richtung Romantik, doch Seelenverwandte erscheinen in vielen Gestalten. Es kann die Freundin sein, die dein Lachen neu entfacht, der Lehrer, der deine Grenzen herausfordert, oder der Fremde, dessen Präsenz sofort vertraut wirkt. SoulTribe.chat erweitert dieses Verständnis — es führt dich nicht nur zu „der einen Person“, sondern zu den vielen, die Puzzleteile deiner Entwicklung in sich tragen.",
+      "body2": "Manche Verbindungen entfachen Elektrizität — intensiv und transformierend. Andere schenken stille Ruhe und erden deine Energie in gemeinsamer Stille. Jede Begegnung ist ein Schritt zur Ganzheit, eine Erinnerung daran, dass die Reise der Seele ein Mosaik heiliger Treffen ist. Sein Tribe zu treffen heißt, sich selbst zu begegnen — gespiegelt in tausend lebendigen Spiegeln."
+    },
+    "benefit": {
+      "heading": "🌍 So nutzt du es für dich",
+      "items": {
+        "item1": "Erstelle deine Seelenkarte — gib deine Geburtsdetails ein, um dein einzigartiges kosmisches Muster zu zeichnen und zu entdecken, was deine Energie unverwechselbar macht.",
+        "item2": "Entdecke Resonanz — finde Mitglieder, deren Horoskope dein eigenes widerspiegeln oder ergänzen. Erfahre, wie planetare Ausrichtungen Harmonie, Inspiration oder karmische Bestimmung anzeigen.",
+        "item3": "Verbinde dich authentisch — führe achtsame Gespräche. SoulTribe.chat fördert Präsenz, Neugier und Respekt. Worte werden zu Werkzeugen des Verständnisses statt zu Auftritten.",
+        "item4": "Wachst gemeinsam — jede Begegnung ist ein Austausch von Licht. Durch Resonanz, Kontrast oder sanfte Reibung entwickelst du dich weiter. Das System hebt die besten Lernspiegel hervor — jene, die dein Bewusstsein erweitern statt nur die Komfortzone zu spiegeln.",
+        "item5": "Trefft euch in Präsenz — wenn Bereitschaft sich organisch zeigt, wechselt von Text zu Stimme, von Gespräch zu Co-Kreation. Jedes Treffen — digital oder persönlich — wird zum heiligen Dialog der Seelen."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest für seelenvolles Verbundensein",
+      "intro": "Finde deine Frequenz, und du findest deine Tribe.",
+      "body1": "Verbundenheit ist heilig — jedes Gespräch, das in Präsenz wurzelt, kann zum Portal des Bewusstseins werden. Technologie sollte dem Bewusstsein dienen, Intimität nähren statt Ablenkung. Astrologie, genutzt mit Mitgefühl und Klarheit, zeigt nicht Schicksal, sondern Freiheit durch Verstehen. Wenn Tribes sich ausrichten, entstehen strahlende Konstellationen, die gemeinsam heller leuchten als allein.",
+      "body2": "SoulTribe.chat erinnert uns daran, dass wir keine Wanderer unter einem fernen Himmel sind, sondern leuchtende Fäden im gemeinsamen Teppich der Schöpfung. Jede Begegnung ist ein Funke im großen Feuer des Erwachens, jedes Gespräch ein Herzschlag im Rhythmus von etwas Großem und Heiligem.",
+      "closing": "Gemeinsam erinnern wir uns daran, wer wir sind — eine Tribe aus vielen Seelen."
+    },
+    "join": {
+      "heading": "🌌 Begib dich auf die Reise",
+      "body": "Wenn diese Worte in dir resonieren, erstelle dein Profil, erkunde deine Seelenkarte und beginne, Gleichgesinnte zu treffen, die deine Frequenz teilen. Jede neue Verbindung ist ein Tor zu Entdeckung, Reflexion und Wachstum.",
+      "cta": "Starte deine SoulTribe-Reise",
+      "footer": "Deine Tribe ist längst dort draußen — lass die Sterne dich nach Hause führen."
+    }
   }
 }

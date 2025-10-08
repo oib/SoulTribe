@@ -90,16 +90,17 @@
         }
       ],
       "title": "Zakaj se nam pridružiti?",
-      "item1": "<strong>Ujemanje z upoštevanjem astrologije</strong> — povezujte se z uporabo vaše rojstne karte.",
-      "item2": "<strong>Pametno razporejanje časovnih pasov</strong> — pretvorbe UTC opravimo namesto vas.",
-      "item3": "<strong>Neposredna komunikacija prek Jitsi</strong> — besedilo/zvok/video; na SoulTribe.chat se nič ne shranjuje ali snema.",
-      "item4": "<strong>Enostavna pridružitev prek povezave</strong> — zasebna soba Jitsi za potrjena srečanja; prijazno do zasebnosti, brez namestitve na namizju.",
-      "item5": "<strong>Minimalističen, osredotočen vmesnik</strong> — zasnovan za smiselne pogovore."
+      "item1": "Ujemanje z upoštevanjem astrologije — povezujte se z uporabo vaše rojstne karte.",
+      "item2": "Pametno razporejanje časovnih pasov — pretvorbe UTC opravimo namesto vas.",
+      "item3": "Neposredna komunikacija prek Jitsi — besedilo/zvok/video; na SoulTribe.chat se nič ne shranjuje ali snema.",
+      "item4": "Enostavna pridružitev prek povezave — zasebna soba Jitsi za potrjena srečanja; prijazno do zasebnosti, brez namestitve na namizju.",
+      "item5": "Minimalističen, osredotočen vmesnik — zasnovan za smiselne pogovore."
     },
     "hero": {
       "cta": "Začnite svojo pot",
       "subtitle": "Povežite se z ljudmi, ki delijo vaše vrednote, interese in strasti. Skupaj lahko gradimo pomembne povezave, ki trajajo.",
-      "title": "Pridružite se naši globalni skupnosti"
+      "title": "Pridružite se naši globalni skupnosti",
+      "learn_more": "Odkrij vizijo SoulTribe →"
     },
     "howItWorks": {
       "steps": [
@@ -129,18 +130,18 @@
     "page_title": "SoulTribe.chat – Najdi svojo dušno skupnost",
     "how": {
       "title": "Kako deluje",
-      "step1": "<strong>Ustvarite svoj profil</strong> — vnesite datum, čas in kraj rojstva za edinstven zemljevid duše.",
-      "step2": "<strong>Odkrijte ujemanja</strong> — izpostavimo povezave na podlagi združljivosti in resonance.",
-      "step3": "<strong>Začnite pogovor</strong> — povabite ujemanja v klepet; varno in zasebno po zasnovi.",
-      "step4": "<strong>Srečanje (neobvezno)</strong> — dogovorite klic Jitsi ali srečanje v živo z obojestranskim soglasjem."
+      "step1": "Ustvarite svoj profil — vnesite datum, čas in kraj rojstva za edinstven zemljevid duše.",
+      "step2": "Odkrijte ujemanja — izpostavimo povezave na podlagi združljivosti in resonance.",
+      "step3": "Začnite pogovor — povabite ujemanja v klepet; varno in zasebno po zasnovi.",
+      "step4": "Srečanje (neobvezno) — dogovorite klic Jitsi ali srečanje v živo z obojestranskim soglasjem."
     },
     "getting_started": {
       "title": "Za začetek",
-      "step1": "<strong>Ustvarite račun</strong> — prijava prek družbenih omrežij ni potrebna.",
-      "step2": "<strong>Izpolnite svoj profil</strong> — dodajte podatke o rojstvu; približen čas je v redu.",
-      "step3": "<strong>Nastavite razpoložljivost</strong> — predlagajte lokalne termine; za UTC poskrbimo mi.",
-      "step4": "<strong>Odkrijte ujemanja</strong> — preglejte predloge, ki temeljijo na resonanci.",
-      "step5": "<strong>Klepetajte in se po želji srečajte</strong> — ostanite v aplikaciji; načrtujte, ko ste pripravljeni."
+      "step1": "Ustvarite račun — prijava prek družbenih omrežij ni potrebna.",
+      "step2": "Izpolnite svoj profil — dodajte podatke o rojstvu; približen čas je v redu.",
+      "step3": "Nastavite razpoložljivost — predlagajte lokalne termine; za UTC poskrbimo mi.",
+      "step4": "Odkrijte ujemanja — preglejte predloge, ki temeljijo na resonanci.",
+      "step5": "Klepetajte in se po želji srečajte — ostanite v aplikaciji; načrtujte, ko ste pripravljeni."
     },
     "matching": {
       "title": "Kako deluje ujemanje (na kratko)",
@@ -155,7 +156,14 @@
     "next": {
       "title": "Naslednji koraki",
       "go_dashboard": "Pojdi na nadzorno ploščo",
-      "login_register": "Prijava / Registracija"
+      "login_register": "Prijava / Registracija",
+      "step1": "Ustvari račun",
+      "step2": "Izpolni svoj profil",
+      "step3": "Ustvari časovni termin",
+      "step4": "Spremljaj ujemanja",
+      "step5": "Predlagaj ali potrdi srečanje",
+      "step6": "Pridruži se Jitsi klepetu",
+      "read_more": "Preberi podrobni vodič →"
     },
     "global": {
       "title": "Globalna skupnost, lokalni čas",
@@ -418,6 +426,70 @@
       "text": "Uživaj v povezovanju na svoj način in v svojem tempu."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Podroben vodnik za naslednje korake",
+    "title": "Podroben vodnik za naslednje korake",
+    "intro": "Ta vodnik nadgrajuje korake na začetni strani in vas vodi skozi vsako dejanje z nasveti in povezavami.",
+    "steps": {
+      "step1": {
+        "heading": "Ustvarite račun",
+        "description": "Registrirajte se z e-pošto, da pridobite dostop do nadzorne plošče in profila. Prijava prek družbenih omrežij ni potrebna.",
+        "bullets": {
+          "item1": "Uporabite veljaven e-poštni naslov; potrditvene povezave potečejo po 24 urah.",
+          "item2": "Po potrditvi boste preusmerjeni na prijavno stran."
+        },
+        "link": "Pojdi na Prijava / Registracija"
+      },
+      "step2": {
+        "heading": "Izpolnite svoj profil",
+        "description": "Dodajte podatke o rojstvu, da omogočite ujemanja na podlagi resonance. Približen čas je v redu; večja natančnost izboljša rezultate.",
+        "bullets": {
+          "item1": "Vnesite datum, čas in kraj rojstva. Če natančnega časa ne poznate, izberite oceno.",
+          "item2": "Napišite kratek opis, ki odraža vaše interese in namere. Bodite konkretni in pristni."
+        },
+        "callout": "Nasvet: vaš časovni pas se zazna samodejno; na nadzorni plošči ga lahko preverite.",
+        "link": "Uredi profil"
+      },
+      "step3": {
+        "heading": "Ustvarite časovni termin",
+        "description": "Ponudite enega ali več terminov, ko želite vzpostaviti stik. Vaš lokalni čas shranimo in ga za načrtovanje pretvorimo v UTC.",
+        "bullets": {
+          "item1": "Izberite začetni čas v svojem časovnem pasu in nastavite trajanje (npr. 1–3 ure).",
+          "item2": "Termini na različnih dnevih povečajo možnost hitrih ujemanj."
+        },
+        "callout": "Časovni pasovi pod kontrolo: samodejno pretvarjamo med lokalnim časom in UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Odpri nadzorno ploščo"
+      },
+      "step4": {
+        "heading": "Spremljajte ujemanja",
+        "description": "Raziskujte predlagana ujemanja na podlagi resonance. Preglejte opombe o združljivosti in skupnih interesih.",
+        "bullets": {
+          "item1": "Nova priporočila se pojavijo, ko sta vaš profil in termini aktivni.",
+          "item2": "Uporabite filtre in opombe, da imate pregled nad ljudmi, s katerimi želite stopiti v stik."
+        },
+        "callout": "Zasebnost na prvem mestu: sami odločate, kdaj in kako vzpostaviti stik."
+      },
+      "step5": {
+        "heading": "Predlagajte ali potrdite srečanje",
+        "description": "Ko je zanimanje obojestransko, predlagajte čas v prekrivajočih se terminih ali sprejmite predlog ujemanja.",
+        "bullets": {
+          "item1": "Pošljite prijazno in natančno povabilo. Ponudite eno ali dve časovni možnosti.",
+          "item2": "Na klepetu potrdite načrt in preidite na klic, ko boste oba pripravljena."
+        },
+        "callout": "Soglasje in udobje: premikajte se v tempu, ki vam ustreza. Popolnoma v redu je ostati pri besedilu."
+      },
+      "step6": {
+        "heading": "Pridružite se klepetu Jitsi",
+        "description": "Uporabite Jitsi za neobvezno avdio/video komunikacijo. Namizni brskalniki (Firefox, Chrome) so podprti; besedilni klepet je vedno na voljo.",
+        "bullets": {
+          "item1": "Preizkusite mikrofon/kamero ali ju pustite izklopljena in uporabite samo besedilo.",
+          "item2": "S pomočjo majhne puščice ob ikonah izberite prava naprave."
+        },
+        "link": "Preberite hitri vodnik Jitsi"
+      }
+    },
+    "closing": "Uživajte v povezovanju na način, ki vam najbolj ustreza."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -444,5 +516,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Zvezdna konstelacija povezav",
+      "subtitle": "Kjer se kozmični dizajn sreča s človeško povezavo — zatočišče sorodnih duš, ki jih vodijo zvezde."
+    },
+    "vision": {
+      "heading": "✨ Vizija",
+      "body1": "SoulTribe.chat povezuje ljudi, katerih rojstni horoskopi se harmonizirajo — ponuja ujemanje na podlagi astrologije, zasebne klepete in izbirne sestanke, da pomaga sorodnim dušam srečati se na premišljeno in pomenljivo način. Je več kot platforma: živi eksperiment kozmične povezave, kjer astrologija postane skupni jezik empatije namesto prerokovanja.",
+      "body2": "Vsaka karta je edinstven podpis — melodija v zvezdah, ki rezonira z drugimi, da vžge prepoznavanje in globino. Ta prostor sprejema iskalce, ki čutijo, da vsako srečanje nosi namen — da sinhronicitet vodi povezavo, in da rast in radost izhajata iz odnosov, ki se zdijo predodrejeni. SoulTribe.chat ponuja varno, minimalistično in premišljeno okolje, kjer se te povezave lahko naravno razvijejo."
+    },
+    "transition": "Preden se poglobimo, preidimo od ideje kozmične povezave do skupnosti, ki jo ustvarja — same SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Kaj je SoulTribe?",
+      "body1": "SoulTribe ni samo omrežje ali seznam prijateljev — je polje resonance. Nevidna mreža, ki povezuje tiste, ki delijo frekvenco, namen in ritem duha. Ko srečate člane svojega plemena, prepoznavanje je takojšnje: pogovor se zdi kot spominjanje namesto uvajanja. Čas mehča svoje robove, in prostor med besedami postane svet.",
+      "body2": "V svoji SoulTribe ste popolnoma vidni — cenjeni za svojo bistvo, ne svoj obraz. Vsaka oseba postane zrcalo: nekateri odražajo vaše moči, drugi vaše lekcije, in nekateri vam spominjajo, kaj lahko postanete. Vzbujajo pogum, avtentičnost in poznavanje, da pripadnost ni o podobnosti, ampak o resonanci.",
+      "body3": "Vaše pleme lahko sestavljajo umetniki, sanjači, zdravilci, znanstveniki ali tihe duše, ki hodijo po svoji resnici. Kar vas združuje, ni ozadje ali vera — je vibracija."
+    },
+    "power": {
+      "heading": "🔥 Moč plemena",
+      "body1": "Tako kot se vsaka SoulTribe oblikuje skozi skupno resonanco, njena prava moč izhaja iz kolektivne energije, ki raste iz teh povezav.",
+      "body2": "Rastemo hitreje, zdravimo globlje in sanjamo večje, ko drugi hodijo poleg nas in pričujejo o naši poti. Ljudje so vedno uspevali v krogih — to je naš starodavni dizajn. Pleme poveča energijo: kar en vžge, drugi vzdržuje; kar en sanja, tretji zemlja. V tem skupnem polju se sinhroniciteti množijo in kolektivna evolucija pospešuje.",
+      "body3": "Ko se vključite, boste morda opazili, kako se vaša lastna energija razširi. Ideje dobijo zagon, ustvarjalnost teče, intuicija se izostri. Pleme postane zrcalo, učitelj in krog empowrmenta — spominjanje, da pot duše nikoli ni bila namenjena hoji sama.",
+      "body4": "V okviru SoulTribe.chat, ideja o 'plemenu' ni o ekskluzivnosti ampak sinergiji. Tu individualnost in skupnost koeksistirata lepo. Vsaka oseba prispeva svojo frekvenco, oblikujoč živo konstelacijo zavesti — vsaka točka svetlobe osvetljuje druge."
+    },
+    "astro": {
+      "heading": "☀️ Astro in duša",
+      "body1": "Astrologija na SoulTribe.chat povezuje vpogled in povezavo, častiva vašo zasebnost in soglasje. Uporabljeni so samo bistveni rojstni podatki za generiranje vpogledov o združljivosti, in nič se ne deli ali shranjuje onkraj tega, kar zahteva vaša izkušnja.",
+      "body2": "Z uporabo vaših rojstnih podrobnosti platforma izračuna planetarne pozicije in jih primerja z drugimi, da razkrije območja naravne harmonije, čustvene resonance in potenciala rasti. Namesto preobremenjevanja uporabnikov s podatki, rezultati se destilirajo v jasne indikatorje združljivosti — prikazujoč, kje se energije poravnajo in kako se odnosi lahko razvijajo.",
+      "body3": "To ni zmenkarija po znamenju; je resonanca duše po dizajnu, kjer karte vodijo razumevanje in povezavo. Ne glede na izid — romantična kemija, kreativno sodelovanje ali globoka prijateljstva — SoulTribe.chat vam pomaga prepoznati, zakaj se nekatere osebe takoj zdijo znane — in kako vsako srečanje postane zrcalo za vašo dušo."
+    },
+    "soulmates": {
+      "heading": "💫 Duševni partnerji in naprej",
+      "body1": "Beseda 'duševni partner' pogosto zoži domišljijo na romantiko, ampak duševni partnerji se pojavljajo v mnogih oblikah. Lahko so prijatelj, ki ponovno vzbuja vaš smeh, učitelj, ki izziva vaše meje, ali tujec, katerega prisotnost se čuti takoj znana. SoulTribe.chat razširi to idejo — vodijo vas ne k 'enem', ampak k mnogim, ki nosijo kose vaše evolucije.",
+      "body2": "Nekatere povezave vžgejo elektriko — intenzivne in transformacijske. Druge ponujajo tiho mir, začenjujoč vašo energijo v skupni tišini. Vsako srečanje je korak proti celovitosti, opomnik, da je pot duše mozaik svetih srečanj. Srečati svoje pleme pomeni srečati sebe — odraženo v tisoč živih zrcalih."
+    },
+    "benefit": {
+      "heading": "🌍 Kako koristiti",
+      "items": {
+        "item1": "Ustvarite svoj zemljevid duše — vnesite svoje rojstne podrobnosti, da generirate svoj edinstven kozmični vzorec in odkrijete, kaj naredi vašo energijo izjemno.",
+        "item2": "Odkrijte resonanco — poiščite člane, katerih karte odmevajo ali dopolnjujejo vaše. Naučite se, kako planetarna poravnava kažejo harmonijo, navdih ali karmični namen.",
+        "item3": "Povežite se avtentično — vključite se v premišljene pogovore. SoulTribe.chat spodbuja prisotnost, radovednost in spoštovanje. Besede postanejo orodja razumevanja, ne izvedbe.",
+        "item4": "Rastite skupaj — vsako srečanje je izmenjava svetlobe. Skozi resonanco, kontrast ali nežno trenje evoluirate. Sistem poudari vaše najboljše učne zrcala — tiste, ki razširijo vašo zavest namesto odražanja vaše cone udobja.",
+        "item5": "Srečajte se v prisotnosti — ko se pripravljenost naravno razvije, preidite od besedila k glasu, od pogovora k skupni ustvarjalnosti. Vsako srečanje — digitalno ali osebno — postane svet dialog duš."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest za poglobljene povezave",
+      "intro": "Najdite svojo frekvenco in najdite svoje pleme.",
+      "body1": "Povezava je sveta — vsak pogovor, ukoreninjen v prisotnosti, lahko postane portal k zavesti. Tehnologija bi morala služiti zavesti, gojiti intimnost namesto motenj. Astrologija, uporabljena s compassion in jasnostjo, razkrije ne usodo ampak svobodo skozi razumevanje. Ko se plemena poravnajo, tvorijo radične konstelacije, ki svetijo svetleje skupaj kot ločeno.",
+      "body2": "SoulTribe.chat nas spomni, da nismo potepuhi pod oddaljenim nebom, ampak svetle niti v skupnem tapiseriju ustvarjanja. Vsako srečanje je iskra v velikem ognju prebujanja, vsak pogovor utrip srca v ritmu nečesa obsežnega in svetega.",
+      "closing": "Skupaj se spominjamo, kdo smo — eno pleme mnogih duš."
+    },
+    "join": {
+      "heading": "🌌 Pridružite se poti",
+      "body": "Če te besede rezonirajo, ustvarite svoj profil, raziščite svoj zemljevid duše in začnite srečevati sorodne duhove, ki delijo vašo frekvenco. Vsaka nova povezava je vrata k odkritju, refleksiji in rasti.",
+      "cta": "Začnite svojo pot SoulTribe",
+      "footer": "Vaše pleme je že tam zunaj — naj zvezde vodijo vas domov."
+    }
   }
 }

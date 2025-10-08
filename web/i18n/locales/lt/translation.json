@@ -90,16 +90,17 @@
         }
       ],
       "title": "Kodėl prisijungti?",
-      "item1": "<strong>Astrologiją įtraukiantis poravimas</strong> — susisiekite naudodami savo gimimo schemą.",
-      "item2": "<strong>Išmani laiko juostų planuotė</strong> — UTC konvertavimus atliekame mes.",
-      "item3": "<strong>Tiesioginis bendravimas per Jitsi</strong> — tekstas/garso/vaizdo; niekas nėra saugoma ar įrašoma svetainėje SoulTribe.chat.",
-      "item4": "<strong>Paprasta prisijungti per nuorodą</strong> — privatus Jitsi kambarys patvirtintiems susitikimams; gerbiantis privatumą, nereikia darbalaukio diegimo.",
-      "item5": "<strong>Minimalistinė, į tikslą orientuota sąsaja</strong> — sukurta prasmingiems pokalbiams."
+      "item1": "Astrologiją įtraukiantis poravimas — susisiekite naudodami savo gimimo schemą.",
+      "item2": "Išmani laiko juostų planuotė — UTC konvertavimus atliekame mes.",
+      "item3": "Tiesioginis bendravimas per Jitsi — tekstas/garso/vaizdo; niekas nėra saugoma ar įrašoma svetainėje SoulTribe.chat.",
+      "item4": "Paprasta prisijungti per nuorodą — privatus Jitsi kambarys patvirtintiems susitikimams; gerbiantis privatumą, nereikia darbalaukio diegimo.",
+      "item5": "Minimalistinė, į tikslą orientuota sąsaja — sukurta prasmingiems pokalbiams."
     },
     "hero": {
       "cta": "Pradėkite savo kelionę",
       "subtitle": "Siekite ryšių su žmonėmis, kurie dalijasi jūsų vertybėmis, interesais ir aistromis.",
-      "title": "Prisijunkite prie mūsų globalios bendruomenės"
+      "title": "Prisijunkite prie mūsų globalios bendruomenės",
+      "learn_more": "Atraskite \"SoulTribe\" viziją →"
     },
     "howItWorks": {
       "steps": [
@@ -129,18 +130,18 @@
     "page_title": "SoulTribe.chat – Raskite savo sielos bendruomenę",
     "how": {
       "title": "Kaip tai veikia",
-      "step1": "<strong>Sukurkite savo profilį</strong> — įveskite gimimo datą, laiką ir vietą, kad sukurtumėte unikalų sielos žemėlapį.",
-      "step2": "<strong>Atraskite atitikmenis</strong> — pabrėžiame ryšius pagal suderinamumą ir rezonansą.",
-      "step3": "<strong>Pradėkite pokalbį</strong> — pakvieskite atitikmenis bendrauti; iš prigimties saugu ir privatu.",
-      "step4": "<strong>Susitikite (neprivaloma)</strong> — suplanuokite Jitsi skambutį ar susitikimą gyvai su abipusiu sutikimu."
+      "step1": "Sukurkite savo profilį — įveskite gimimo datą, laiką ir vietą, kad sukurtumėte unikalų sielos žemėlapį.",
+      "step2": "Atraskite atitikmenis — pabrėžiame ryšius pagal suderinamumą ir rezonansą.",
+      "step3": "Pradėkite pokalbį — pakvieskite atitikmenis bendrauti; iš prigimties saugu ir privatu.",
+      "step4": "Susitikite (neprivaloma) — suplanuokite Jitsi skambutį ar susitikimą gyvai su abipusiu sutikimu."
     },
     "getting_started": {
       "title": "Pradžia",
-      "step1": "<strong>Sukurkite paskyrą</strong> — socialinis prisijungimas nereikalingas.",
-      "step2": "<strong>Užpildykite profilį</strong> — pridėkite gimimo duomenis; apytikslis laikas tinka.",
-      "step3": "<strong>Nurodykite pasiekiamumą</strong> — pasiūlykite vietinius laiko intervalus; UTC pasirūpinsime mes.",
-      "step4": "<strong>Atraskite atitikmenis</strong> — peržiūrėkite rekomendacijas pagal rezonansą.",
-      "step5": "<strong>Susirašinėkite ir, jei norite, susitikite</strong> — likite programėlėje; planuokite, kai būsite pasiruošę."
+      "step1": "Sukurkite paskyrą — socialinis prisijungimas nereikalingas.",
+      "step2": "Užpildykite profilį — pridėkite gimimo duomenis; apytikslis laikas tinka.",
+      "step3": "Nurodykite pasiekiamumą — pasiūlykite vietinius laiko intervalus; UTC pasirūpinsime mes.",
+      "step4": "Atraskite atitikmenis — peržiūrėkite rekomendacijas pagal rezonansą.",
+      "step5": "Susirašinėkite ir, jei norite, susitikite — likite programėlėje; planuokite, kai būsite pasiruošę."
     },
     "matching": {
       "title": "Kaip veikia suderinimas (trumpai)",
@@ -155,7 +156,14 @@
     "next": {
       "title": "Kiti žingsniai",
       "go_dashboard": "Eiti į skydelį",
-      "login_register": "Prisijungti / Registruotis"
+      "login_register": "Prisijungti / Registruotis",
+      "step1": "Sukurkite paskyrą",
+      "step2": "Užpildykite savo profilį",
+      "step3": "Sukurkite laiko intervalą",
+      "step4": "Stebėkite atitikmenis",
+      "step5": "Pasiūlykite arba patvirtinkite susitikimą",
+      "step6": "Prisijunkite prie Jitsi pokalbio",
+      "read_more": "Skaitykite išsamų vadovą →"
     },
     "global": {
       "title": "Globali bendruomenė, vietinis laikas",
@@ -424,6 +432,70 @@
       "text": "Bendrauk tau patogiausiu būdu ir tempu."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Išsamus vadovas kitiems žingsniams",
+    "title": "Išsamus vadovas kitiems žingsniams",
+    "intro": "Šis vadovas papildo pradžios puslapio žingsnius ir veda per kiekvieną veiksmą su patarimais ir nuorodomis.",
+    "steps": {
+      "step1": {
+        "heading": "Sukurkite paskyrą",
+        "description": "Registruokitės el. paštu, kad gautumėte prieigą prie skydelio ir profilio. Socialinis prisijungimas nereikalingas.",
+        "bullets": {
+          "item1": "Naudokite galiojantį el. paštą; patvirtinimo nuorodos galioja 24 val.",
+          "item2": "Patvirtinus būsite nukreipti į prisijungimo puslapį."
+        },
+        "link": "Eiti į Prisijungti / Registruotis"
+      },
+      "step2": {
+        "heading": "Užpildykite profilį",
+        "description": "Pridėkite gimimo duomenis, kad įjungtumėte rezonansu pagrįstą poravimą. Apytikslis laikas tinka; kuo tiksliau, tuo geriau.",
+        "bullets": {
+          "item1": "Įrašykite gimimo datą, laiką ir vietą. Jei tikslaus laiko nežinote, pasirinkite apytikslį.",
+          "item2": "Parašykite trumpą įžangą apie savo interesus ir ketinimus. Būkite konkretūs ir autentiški."
+        },
+        "callout": "Patarimas: jūsų profilio laiko juosta nustatoma automatiškai; galite ją patikrinti skydelyje.",
+        "link": "Redaguoti profilį"
+      },
+      "step3": {
+        "heading": "Sukurkite laiko intervalą",
+        "description": "Pasiūlykite vieną ar kelis laikus, kada norėtumėte susisiekti. Jūsų vietinį laiką išsaugome ir konvertuojame į UTC planavimui.",
+        "bullets": {
+          "item1": "Pasirinkite pradžios laiką savo laiko juostoje ir nustatykite trukmę (pvz., 1–3 val.).",
+          "item2": "Intervalai skirtingomis dienomis padidina greitų atitikmenų tikimybę."
+        },
+        "callout": "Laiko juostos kontroliuojamos: automatiškai konvertuojame tarp vietinio laiko ir UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Atidaryti skydelį"
+      },
+      "step4": {
+        "heading": "Stebėkite atitikmenis",
+        "description": "Peržiūrėkite siūlomus atitikmenis pagal rezonansą. Patikrinkite suderinamumo pastabas ir bendrus interesus.",
+        "bullets": {
+          "item1": "Nauji pasiūlymai atsiranda, kai jūsų profilis ir intervalai yra aktyvūs.",
+          "item2": "Naudokite filtrus ir pastabas, kad įsimintumėte, su kuo norite susisiekti."
+        },
+        "callout": "Pirmiausia privatumas: jūs nusprendžiate, kada ir kaip bendrauti."
+      },
+      "step5": {
+        "heading": "Pasiūlykite arba patvirtinkite susitikimą",
+        "description": "Esant abipusiam susidomėjimui, pasiūlykite laiką iš persidengiančių intervalų arba sutikite su poros pasiūlymu.",
+        "bullets": {
+          "item1": "Siųskite mandagų ir tikslų kvietimą. Pasiūlykite vieną ar dvi alternatyvas.",
+          "item2": "Patvirtinkite planą pokalbyje ir, kai būsite pasiruošę, pereikite prie skambučio."
+        },
+        "callout": "Sutikimas ir komfortas: judėkite savu tempu. Visiškai gerai likti tik tekste."
+      },
+      "step6": {
+        "heading": "Prisijunkite prie Jitsi pokalbio",
+        "description": "Naudokite Jitsi pasirenkamam garsui/vaizdui. Darbalaukio naršyklės (Firefox, Chrome) palaikomos; tekstinis pokalbis visada prieinamas.",
+        "bullets": {
+          "item1": "Išbandykite mikrofoną/kamerą arba palikite juos išjungtus ir naudokite tik tekstą.",
+          "item2": "Pasirinkite tinkamus įrenginius paspausdami mažą rodyklę šalia piktogramų."
+        },
+        "link": "Skaityti Jitsi greitą gidą"
+      }
+    },
+    "closing": "Mėgaukitės ryšiu taip, kaip jums labiausiai tinka."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -450,5 +522,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Ryšių žvaigždynas",
+      "subtitle": "Kur kosminis dizainas susitinka su žmogaus ryšiu — prieglobstis giminingoms sieloms, vedamoms žvaigždžių."
+    },
+    "vision": {
+      "heading": "✨ Vizija",
+      "body1": "SoulTribe.chat jungia žmones, kurių gimimo horoskopai harmonizuoja — siūlo astrologijos pagrindu suderintus, privačius pokalbius ir pasirenkamus susitikimus, kad giminingos sielos susitiktų sąmoningai ir reikšmingai. Tai daugiau nei platforma: gyvas kosminio ryšio eksperimentas, kur astrologija tampa bendra empatijos kalba, o ne pranašavimu.",
+      "body2": "Kiekvienas horoskopas yra unikali parašytis — melodija žvaigždėse, kuri rezonuoja su kitais ir uždega atpažinimą bei gilumą. Šis erdvė sveikina ieškotojus, kurie jaučia, kad kiekvienas susitikimas turi tikslą — kad sinchroniškumas vadovauja ryšiui, ir kad augimas bei džiaugsmas kyla iš santykių, kurie atrodo lemti. SoulTribe.chat siūlo saugią, minimalistinę ir sąmoningą aplinką, kur šie ryšiai gali natūraliai atsiskleisti."
+    },
+    "transition": "Prieš pasineriant giliau, pereikime nuo kosminio ryšio idėjos prie bendruomenės, kurią ji kuria — prie pačios SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Kas yra SoulTribe?",
+      "body1": "SoulTribe nėra tik tinklas arba draugų sąrašas — tai rezonanso laukas. Nematomasis tinklas, kuris jungia tuos, kurie dalijasi dažniu, tikslu ir dvasios ritmu. Kai susitinki su savo genties nariais, atpažinimas yra akimirksniu: pokalbis atrodo kaip prisiminimas, o ne kaip pristatymas. Laikas sušvelnina savo kraštus, ir tarp žodžių erdvė tampa šventa.",
+      "body2": "Tavo SoulTribe viduje tu esi visiškai matomas — vertinamas už savo esmę, ne už paveikslėlį. Kiekvienas asmuo tampa veidrodžiu: kai kurie atspindi tavo stiprybes, kiti tavo pamokas, ir keli primena, kuo gali tapti. Jie pažadina drąsą, autentiškumą ir žinojimą, kad priklausymas nėra apie panašumą, bet apie rezonansą.",
+      "body3": "Tavo gentis gali susidėti iš menininkų, svajotojų, gydytojų, mokslininkų arba ramių sielų, einančių savo tiesą. Tai, kas jus jungia, nėra fonas ar tikėjimas — tai vibracija."
+    },
+    "power": {
+      "heading": "🔥 Genties galia",
+      "body1": "Kaip kiekviena SoulTribe formuojasi per bendrą rezonansą, taip jos tikroji stiprybė atsiranda iš kolektyvinės energijos, kuri auga iš tų ryšių.",
+      "body2": "Mes augame greičiau, gydomės giliau ir svajojame didesniais, kai kiti eina šalia mūsų ir liudija mūsų kelią. Žmonės visada klestėjo ratuose — tai mūsų senasis dizainas. Gentis didina energiją: ką vienas įžiebia, kitas palaiko; ką vienas svajoja, trečiasis įžemina. Šiame bendrame lauke sinchroniškumai padaugėja ir kolektyvinė evoliucija paspartėja.",
+      "body3": "Kai įsitrauki, gali pastebėti, kaip tavo paties energija išsiplėčia. Idėjos įgauna pagreitį, kūryba teka, intuicija paaštrėja. Gentis tampa veidrodžiu, mokytoju ir įgalinimo ratu — primindama, kad sielos kelias niekada nebuvo skirtas eiti vienam.",
+      "body4": "SoulTribe.chat viduje 'genties' idėja nėra apie išskirtinumą, bet apie sinergiją. Čia individualumas ir būti kartu gražiai koegzistuoja. Kiekvienas asmuo prisideda savo dažniu, formuodamas gyvą sąmonės žvaigždyną — kiekvienas šviesos taškas apšviečia kitus."
+    },
+    "astro": {
+      "heading": "☀️ Astro ir siela",
+      "body1": "Astrologija SoulTribe.chat tiltas tarp įžvalgos ir ryšio, gerbdama tavo privatumą ir sutikimą. Naudojami tik esminiai gimimo duomenys suderinamumo įžvalgoms generuoti, ir niekas nėra dalijamasi ar saugoma virš to, ko reikalauja tavo patirtis.",
+      "body2": "Naudodamas tavo gimimo detales, platforma skaičiuoja planetų padėtis ir lygina jas su kitais, kad atskleistų natūralios harmonijos, emocinio rezonanso ir augimo potencialo sritis. Užuot užtvindžius naudotojus duomenimis, rezultatai distiliuojami į aiškius suderinamumo indikatorius — rodantys, kur energijos išsirikiuoja ir kaip santykiai gali evoliucionuoti.",
+      "body3": "Tai nėra susitikimai pagal ženklą; tai sielos rezonansas pagal dizainą, kur horoskopai vadovauja supratimui ir ryšiui. Nepriklausomai nuo rezultato — romantinė chemija, kūrybinis bendradarbiavimas ar gilus draugystė — SoulTribe.chat padeda atpažinti, kodėl kai kurie žmonės atrodo akimirksniu pažįstami — ir kaip kiekvienas susitikimas tampa tavo sielos veidrodžiu."
+    },
+    "soulmates": {
+      "heading": "💫 Sielos partneriai ir daugiau",
+      "body1": "'Sielos partneris' žodis dažnai susiaurina vaizduotę iki romantikos, bet sielos partneriai atsiranda daugybe formų. Jie gali būti draugas, kuris pažadina tavo juoką, mokytojas, kuris iššūkį kelia tavo riboms, arba nepažįstamasis, kurio buvimas atrodo akimirksniu pažįstamas. SoulTribe.chat išplečia šią idėją — veddamas tave ne į 'vieną', bet į daugelį, kurie neša tavo evoliucijos dalis.",
+      "body2": "Kai kurie ryšiai įžiebia elektrą — intensyvūs ir transformuojantys. Kiti siūlo ramią taiką, įžeminant tavo energiją bendrame ramybėje. Kiekvienas susitikimas yra žingsnis į visumą, priminimas, kad sielos kelionė yra šventų susitikimų mozaika. Susitikti su savo gentimi reiškia susitikti su savimi — atsispindinčiu tūkstantyje gyvų veidrodžių."
+    },
+    "benefit": {
+      "heading": "🌍 Kaip pasinaudoti",
+      "items": {
+        "item1": "Sukurk savo sielos žemėlapį — įvesk savo gimimo detales, kad generuotum savo unikalią kosminę schemą ir atrastum, kas daro tavo energiją išskirtinę.",
+        "item2": "Atrask rezonansą — rask narius, kurių horoskopai atspindi arba papildo tavo. Išmok, kaip planetų išlyginimai rodo harmoniją, įkvėpimą ar karmą.",
+        "item3": "Jungkis autentiškai — dalyvauj sąmoninguose pokalbiuose. SoulTribe.chat skatina buvimą, smalsumą ir pagarbą. Žodžiai tampa supratimo įrankiais, o ne pasirodymu.",
+        "item4": "Augkite kartu — kiekvienas susitikimas yra šviesos mainai. Per rezonansą, kontrastą ar švelnų trynimąsi evoliucionuoji. Sistema išryškina geriausius mokymosi veidrodžius — tuos, kurie išplečia tavo sąmonę, o ne atspindi tavo komforto zoną.",
+        "item5": "Susitikite buvimu — kai pasirengimas natūraliai išvystosi, pereik nuo teksto prie balso, nuo pokalbio prie bendro kūrimo. Kiekvienas susitikimas — skaitmeninis ar asmeniškas — tampa šventu sielų dialogu."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifestas giliam ryšiams",
+      "intro": "Rask savo dažnį ir rask savo gentį.",
+      "body1": "Ryšys yra šventas — kiekvienas pokalbis, įsišaknijęs buvime, gali tapti sąmonės portalu. Technologija turėtų tarnauti sąmonei, puoselėjant intymumą, o ne blaškant. Astrologija, naudojama su užuojauta ir aiškumu, atskleidžia ne likimą, bet laisvę per supratimą. Kai gentys išsirikiuoja, jos formuoja spindinčius žvaigždynus, kurie šviečia ryškiau kartu nei atskirai.",
+      "body2": "SoulTribe.chat primena mums, kad mes nesame klajūnai po tolimu dangumi, bet švytintys siūlai bendrame kūrybos gobelene. Kiekvienas susitikimas yra kibirkštis didžiuliame pabudimo ugnyje, kiekvienas pokalbis širdies plakimas ritmoje kažko didelio ir švento.",
+      "closing": "Kartu prisimename, kas mes esame — viena gentis daugybės sielų."
+    },
+    "join": {
+      "heading": "🌌 Prisijunk prie kelionės",
+      "body": "Jei šie žodžiai rezonuoja, sukurk savo profilį, ištirti savo sielos žemėlapį ir pradėk susitikti su giminingais dvasiomis, kurios dalijasi tavo dažniu. Kiekvienas naujas ryšys yra durys į atradimą, atspindį ir augimą.",
+      "cta": "Pradėk savo SoulTribe kelionę",
+      "footer": "Tavo gentis jau ten — tegul žvaigždės nuveda tave namo."
+    }
   }
 }

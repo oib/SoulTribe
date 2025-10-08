@@ -22,19 +22,19 @@
   },
   "landing": {
     "features": {
-      "item1": "<strong>Astroloji Tabanlı Eşleştirme</strong> — doğum haritanızı kullanarak bağlantı kurun.",
-      "item2": "<strong>Akıllı Saat Dilimi Yönetimi</strong> — UTC dönüşümlerini biz hallederiz.",
-      "item3": "<strong>Direct communication via Jitsi</strong> — text/audio/video; nothing is stored or recorded on SoulTribe.chat.",
-      "item4": "<strong>Easy link join</strong> — private Jitsi room for confirmed meetups; privacy‑friendly, no desktop install required.",
-      "item5": "<strong>Sade, Odaklanmış Arayüz</strong> — anlamlı sohbetler için tasarlandı.",
+      "item1": "Astroloji Tabanlı Eşleştirme — doğum haritanızı kullanarak bağlantı kurun.",
+      "item2": "Akıllı Saat Dilimi Yönetimi — UTC dönüşümlerini biz hallederiz.",
+      "item3": "Direct communication via Jitsi — text/audio/video; nothing is stored or recorded on SoulTribe.chat.",
+      "item4": "Easy link join — private Jitsi room for confirmed meetups; privacy‑friendly, no desktop install required.",
+      "item5": "Sade, Odaklanmış Arayüz — anlamlı sohbetler için tasarlandı.",
       "title": "Özellikler"
     },
     "getting_started": {
-      "step1": "<strong>Hesap Oluştur</strong> — sosyal medya girişi gerekmez.",
-      "step2": "<strong>Profilini Tamamla</strong> — doğum bilgilerini ekle; yaklaşık saat yeterli.",
-      "step3": "<strong>Müsaitlik Zamanlarını Belirle</strong> — yerel zaman aralıkları önerin; UTC dönüşümünü biz hallederiz.",
-      "step4": "<strong>Eşleşmeleri Keşfet</strong> — uyum temelli önerileri inceleyin.",
-      "step5": "<strong>Sohbet Et ve Görüş</strong> — her şey uygulama içinde; hazır olduğunuzda planlayın.",
+      "step1": "Hesap Oluştur — sosyal medya girişi gerekmez.",
+      "step2": "Profilini Tamamla — doğum bilgilerini ekle; yaklaşık saat yeterli.",
+      "step3": "Müsaitlik Zamanlarını Belirle — yerel zaman aralıkları önerin; UTC dönüşümünü biz hallederiz.",
+      "step4": "Eşleşmeleri Keşfet — uyum temelli önerileri inceleyin.",
+      "step5": "Sohbet Et ve Görüş — her şey uygulama içinde; hazır olduğunuzda planlayın.",
       "title": "Başlarken"
     },
     "global": {
@@ -50,13 +50,14 @@
     },
     "hero": {
       "subtitle": "SoulTribe.chat, enerjiniz, ruhunuz ve yolculuğunuzla uyumlu insanlarla bağlantı kurmanızı sağlayan bir platformdur. ✨",
-      "title": "Hoş Geldiniz"
+      "title": "Hoş Geldiniz",
+      "learn_more": "SoulTribe vizyonunu keşfedin →"
     },
     "how": {
-      "step1": "<strong>Profil Oluştur</strong> — doğum tarihi, saati ve yerinizi girerek benzersiz ruh haritanızı oluşturun.",
-      "step2": "<strong>Eşleşmeleri Keşfet</strong> — uyum ve rezonansa dayalı bağlantıları vurguluyoruz.",
-      "step3": "<strong>Sohbeti Başlat</strong> — eşleşmelerinizi sohbete davet edin; güvenli ve özel olarak tasarlandı.",
-      "step4": "<strong>Görüşün (İsteğe Bağlı)</strong> — karşılıklı rıza ile Jitsi görüşmesi veya yüz yüze buluşma planlayın.",
+      "step1": "Profil Oluştur — doğum tarihi, saati ve yerinizi girerek benzersiz ruh haritanızı oluşturun.",
+      "step2": "Eşleşmeleri Keşfet — uyum ve rezonansa dayalı bağlantıları vurguluyoruz.",
+      "step3": "Sohbeti Başlat — eşleşmelerinizi sohbete davet edin; güvenli ve özel olarak tasarlandı.",
+      "step4": "Görüşün (İsteğe Bağlı) — karşılıklı rıza ile Jitsi görüşmesi veya yüz yüze buluşma planlayın.",
       "title": "Nasıl Çalışır?"
     },
     "matching": {
@@ -64,9 +65,16 @@
       "title": "Eşleştirme Nasıl Çalışır? (Kısa Versiyon)"
     },
     "next": {
+      "title": "Sonraki Adımlar",
       "go_dashboard": "Panele Git",
       "login_register": "Giriş Yap / Kayıt Ol",
-      "title": "Sonraki Adımlar"
+      "step1": "Bir hesap oluştur",
+      "step2": "Profilini doldur",
+      "step3": "Bir zaman dilimi oluştur",
+      "step4": "Eşleşmeleri takip et",
+      "step5": "Bir buluşma öner veya onayla",
+      "step6": "Jitsi sohbetine katıl",
+      "read_more": "Detaylı rehberi oku →"
     },
     "privacy": {
       "item1": "Sadece anlamlı bağlantılar kurmak için gerekli bilgileri istiyoruz.",
@@ -273,6 +281,70 @@
       "text": "Bağlantılar kurmanın keyfini kendi tarzında ve kendi hızında çıkar."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Sonraki adımlar için detaylı rehber",
+    "title": "Sonraki adımlar için detaylı rehber",
+    "intro": "Bu rehber, başlangıç sayfasındaki adımları genişletir ve her aksiyonda sana ipuçları ve bağlantılarla eşlik eder.",
+    "steps": {
+      "step1": {
+        "heading": "Hesap oluştur",
+        "description": "Panoya ve profiline erişmek için e-posta ile kaydol. Sosyal medya girişi gerekmez.",
+        "bullets": {
+          "item1": "Geçerli bir e-posta kullan; doğrulama bağlantıları 24 saat sonra sona erer.",
+          "item2": "Doğrulama tamamlandığında giriş sayfasına yönlendirilirsin."
+        },
+        "link": "Giriş Yap / Kayıt Ol sayfasına git"
+      },
+      "step2": {
+        "heading": "Profilini tamamla",
+        "description": "Rezonans bazlı eşleşmeleri aktifleştirmek için doğum bilgilerini ekle. Yaklaşık bir saat kabul edilebilir; daha fazla doğruluk sonuçları iyileştirir.",
+        "bullets": {
+          "item1": "Doğum tarihini, saatini ve yerini gir. Tam zamanı bilmiyorsan, bir tahmin seç.",
+          "item2": "İlgi alanlarını ve niyetlerini yansıtan kısa bir tanıtım yaz. Spesifik ve samimi ol."
+        },
+        "callout": "İpucu: Profil saat dilimin otomatik olarak algılanır; panelden kontrol edebilirsin.",
+        "link": "Profili düzenle"
+      },
+      "step3": {
+        "heading": "Zaman dilimi oluştur",
+        "description": "Bağlanmak istediğin bir veya daha fazla zaman aralığı sun. Yerel saatini saklar, planlama için UTC’ye dönüştürürüz.",
+        "bullets": {
+          "item1": "Başlangıç saatini saat diliminde seç ve süre belirle (ör. 1–3 saat).",
+          "item2": "Farklı günlere yayılan slotlar hızlı eşleşme şansını artırır."
+        },
+        "callout": "Saat dilimi yönetimi: yerel saat ile UTC arasında otomatik dönüşüm yapıyoruz (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Panoyu aç"
+      },
+      "step4": {
+        "heading": "Eşleşmeleri takip et",
+        "description": "Rezonans bazlı önerilen eşleşmeleri incele. Uyumluluk notlarını ve ortak ilgi alanlarını değerlendir.",
+        "bullets": {
+          "item1": "Profilin ve slotların aktif olduğunda yeni öneriler görünür.",
+          "item2": "Kimi bağlantı kurmak istediğini hatırlamak için filtreleri ve notları kullan."
+        },
+        "callout": "Önce gizlilik: ne zaman ve nasıl etkileşime geçeceğine sen karar verirsin."
+      },
+      "step5": {
+        "heading": "Bir buluşma öner veya onayla",
+        "description": "İlgi karşılıklıysa, çakışan zaman dilimlerinde bir zaman öner veya eşleşmenin teklifini kabul et.",
+        "bullets": {
+          "item1": "Nazik ve net bir davet gönder. Bir veya iki alternatif zaman sun.",
+          "item2": "Planı sohbetten onayla ve ikiniz de hazır olduğunuzda görüşmeye geç."
+        },
+        "callout": "Rıza ve konfor: kendi hızında ilerle. Sadece metinde kalmak tamamen kabul edilebilir."
+      },
+      "step6": {
+        "heading": "Jitsi sohbetine katıl",
+        "description": "İsteğe bağlı ses/görüntü için Jitsi’yi kullan. Masaüstü tarayıcıları (Firefox, Chrome) desteklenir; metin sohbeti her zaman açık.",
+        "bullets": {
+          "item1": "Mikrofonu/kamerayı test et veya kapalı bırakıp yalnızca metin kullan.",
+          "item2": "İkonların yanındaki küçük oka tıklayarak doğru cihazları seç."
+        },
+        "link": "Hızlı Jitsi rehberini oku"
+      }
+    },
+    "closing": "Bağlantı kurmanın tadını sana en iyi hissettiren şekilde çıkar."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -299,5 +371,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Bağlantıların Takımyıldızı",
+      "subtitle": "Kozmik tasarımın insan bağlantısıyla buluştuğu yer — yıldızlar tarafından yönlendirilen benzer ruhlar için bir sığınak."
+    },
+    "vision": {
+      "heading": "✨ Vizyon",
+      "body1": "SoulTribe.chat, doğum haritalarının uyumlu olduğu insanları bağlar — benzer ruhların bilinçli ve anlamlı bir şekilde buluşmasına yardımcı olmak için astroloji tabanlı eşleştirme, özel sohbetler ve isteğe bağlı buluşmalar sunar. Bu sadece bir platformdan fazlası: kozmik bağlantıdaki yaşayan bir deney, burada astroloji öngörü yerine empati için paylaşılan bir dil haline gelir.",
+      "body2": "Her harita benzersiz bir imza — yıldızlardaki bir melodi, başkalarıyla rezonansa girerek tanıma ve derinliği ateşler. Bu alan, her karşılaşmanın bir amacı olduğunu hisseden arayanları karşılar — senkronicitenin bağlantıyı yönlendirdiği, ve büyüme ve sevincin kader gibi hissedilen ilişkilerden ortaya çıktığı. SoulTribe.chat, bu bağlantıların doğal olarak gelişebileceği güvenli, minimalist ve bilinçli bir ortam sunar."
+    },
+    "transition": "Daha derinlere dalmadan önce, kozmik bağlantı fikrinden yarattığı topluluğa geçelim — SoulTribe'in kendisi.",
+    "soultribe": {
+      "heading": "🌠 SoulTribe Nedir?",
+      "body1": "SoulTribe sadece bir ağ veya arkadaş listesi değildir — bir rezonans alanıdır. Frekans, amaç ve ruh ritmini paylaşanları bağlayan görünmez ağ. Kabilenizin üyeleriyle karşılaştığınızda, tanıma anlık olur: sohbet hatırlamak gibi hissedilir tanıtmak yerine. Zaman kenarlarını yumuşatır, ve kelimeler arasındaki alan kutsal olur.",
+      "body2": "SoulTribe'inizde tamamen görülürsünüz — özünüz için değerlenirsiniz, imajınız değil. Her kişi bir ayna olur: bazıları güçlerinizi yansıtır, diğerleri derslerinizi, ve bazıları size ne olabileceğinizi hatırlatır. Cesaret, otantiklik ve ait olmanın benzerlik hakkında değil rezonans hakkında olduğu bilinci uyandırırlar.",
+      "body3": "Kabileniz sanatçılardan, rüya görenlerden, şifacılardan, bilim insanlarından veya kendi hakikatlarını yürüyen sessiz ruhlardan oluşabilir. Sizi birleştiren şey arka plan veya inanç değildir — titreşimdir."
+    },
+    "power": {
+      "heading": "🔥 Bir Kabilenin Gücü",
+      "body1": "Her SoulTribe'nin paylaşılan rezonans yoluyla oluşması gibi, gerçek gücü bu bağlantılardan büyüyen kolektif enerjide ortaya çıkar.",
+      "body2": "Diğerleri yanımızda yürürken ve yolumuza tanık olurken daha hızlı büyürüz, daha derin iyileşiriz ve daha büyük rüya görürüz. İnsanlar her zaman çemberlerde gelişmiştir — bu eski tasarımımızdır. Bir kabile enerjiyi büyütür: biri ateşler, diğeri sürdürür; biri rüya görür, üçüncüsü topraklar. Bu paylaşılan alanda senkroniciteler çoğalır ve kolektif evrim hızlanır.",
+      "body3": "Katıldığınızda, kendi enerjinizin nasıl genişlediğini fark edebilirsiniz. Fikirler momentum kazanır, yaratıcılık akar, sezgi keskinleşir. Kabile bir ayna, öğretmen ve güçlendirme çemberi olur — ruh yolunun asla yalnız yürümek için tasarlanmadığını hatırlatarak.",
+      "body4": "SoulTribe.chat içinde 'kabile' fikri dışlama hakkında değil sinerji hakkında. Burada bireysellik ve birlikte olma güzelce bir arada var olur. Her kişi frekansıyla katkıda bulunur, canlı bir bilinç takımyıldızı oluşturur — her ışık noktası diğerlerini aydınlatır."
+    },
+    "astro": {
+      "heading": "☀️ Astro ve Ruh",
+      "body1": "SoulTribe.chat'teki astroloji içgörü ve bağlantıyı köprü kurar, gizliliğinizi ve rızanızı onurlandırarak. Sadece temel doğum verileri uyumluluk içgörülerini oluşturmak için kullanılır, ve deneyimleriniz için gerekenin ötesinde hiçbir şey paylaşılmaz veya saklanmaz.",
+      "body2": "Doğum detaylarınızı kullanarak platform gezegen pozisyonlarını hesaplar ve onları başkalarıyla karşılaştırarak doğal uyum, duygusal rezonans ve büyüme potansiyeli alanlarını ortaya çıkarır. Kullanıcıları veriyle ezmek yerine, sonuçlar net uyumluluk göstergelerine damıtılır — enerjilerin nerede hizalandığını ve ilişkilerin nasıl gelişebileceğini göstererek.",
+      "body3": "Bu burç işaretine göre çıkmak değil; tasarımda ruh rezonansı, haritaların anlayış ve bağlantıyı yönlendirdiği. Sonuç romantik kimya, yaratıcı işbirliği veya derin arkadaşlık olsun, SoulTribe.chat bazı insanların neden anında tanıdık hissettiğini anlamanıza yardımcı olur — ve her toplantının ruhunuz için bir ayna haline nasıl geldiğini."
+    },
+    "soulmates": {
+      "heading": "💫 Ruh Eşleri ve Ötesi",
+      "body1": "'Ruh eşi' kelimesi genellikle hayali romantizme daraltır, ancak ruh eşleri birçok formda ortaya çıkar. Gülüşünüzü yeniden canlandıran arkadaş, sınırlarınızı zorlayan öğretmen veya varlığı anında tanıdık hissettiren yabancı olabilirler. SoulTribe.chat bu fikri genişletir — sizi 'tek' değil, evriminizi taşıyan birçok kişiye yönlendirerek.",
+      "body2": "Bazı bağlantılar elektrik ateşler — yoğun ve dönüştürücü. Diğerleri sessiz barış sunar, enerjinizi paylaşılan dinginlikte topraklar. Her toplantı bütünlüğe doğru bir adım, ruh yolculuğunun kutsal karşılaşmalar mozaiği olduğu hatırlatıcısı. Kabilenizle karşılaşmak kendinizle karşılaşmak anlamına gelir — bin yaşayan aynada yansıtılmış."
+    },
+    "benefit": {
+      "heading": "🌍 Nasıl Yararlanılır",
+      "items": {
+        "item1": "Ruh Haritanızı Oluşturun — doğum detaylarınızı girin, benzersiz kozmik modelinizi oluşturun ve enerjinizi özel kılanı keşfedin.",
+        "item2": "Rezonansı Keşfedin — haritaları sizinkilere yankılanan veya tamamlayan üyeleri bulun. Gezegen hizalamasının uyum, ilham veya karmik amaç gösterdiğini öğrenin.",
+        "item3": "Otantik Bağlanın — bilinçli sohbetlere katılın. SoulTribe.chat varlığı, merakı ve saygıyı teşvik eder. Kelimeler anlayış araçları olur, performans değil.",
+        "item4": "Birlikte Büyüyün — her karşılaşma ışık alışverişidir. Rezonans, kontrast veya nazik sürtünme yoluyla gelişirsiniz. Sistem en iyi öğrenme aynalarınızı vurgular — farkındalığınızı genişletenler, konfor alanınızı yansıtmak yerine.",
+        "item5": "Varlıkta Buluşun — hazır olma doğal olarak açıldığında, metinden sese, sohbetten ortak yaratmaya geçin. Her toplantı — dijital veya kişisel — ruhların kutsal diyaloğu olur."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Derin Bağlantılar Manifestosu",
+      "intro": "Frekansınızı bulun ve kabilenizi bulun.",
+      "body1": "Bağlantı kutsal — varlığa kök salmış her sohbet bilinç portalı olabilir. Teknoloji bilinci hizmet etmeli, dikkat dağıtmak yerine yakınlığı beslemeli. Astroloji, compassion ve açıklıkla kullanıldığında, kader değil anlayış yoluyla özgürlük ortaya çıkarır. Kabileler hizalandığında, birlikte daha parlak parlayan radyant takımyıldızlar oluşturur.",
+      "body2": "SoulTribe.chat bize uzak bir gök altında gezgin olmadığımızı hatırlatır, yaratılışın paylaşılan dokusunda ışıklı iplikleriz. Her toplantı uyanışın büyük ateşindeki bir kıvılcım, her sohbet geniş ve kutsal bir şeyin ritmindeki kalp atışıdır.",
+      "closing": "Birlikte kim olduğumuzu hatırlıyoruz — birçok ruhun bir kabilesi."
+    },
+    "join": {
+      "heading": "🌌 Yolculuğa Katılın",
+      "body": "Bu sözler rezonansa girerse, profilinizi oluşturun, ruh haritanızı keşfedin ve frekansınızı paylaşan benzer ruhlarla buluşmaya başlayın. Her yeni bağlantı keşif, refleksiyon ve büyüme için bir kapı.",
+      "cta": "SoulTribe yolculuğunuza başlayın",
+      "footer": "Kabileniz zaten orada dışarıda — yıldızların sizi eve yönlendirmesine izin verin."
+    }
   }
 }

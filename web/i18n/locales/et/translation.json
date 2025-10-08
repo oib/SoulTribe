@@ -94,7 +94,8 @@
     "hero": {
       "cta": "Alustage oma teekonda",
       "subtitle": "Looge ühendust inimestega, kellel on sarnased väärtused, huvid ja kirged. Koos saame luua tähendusrikkaid suhteid, mis kestavad kaua.",
-      "title": "Ühinege meie globaalse kogukonnaga"
+      "title": "Ühinege meie globaalse kogukonnaga",
+      "learn_more": "Avasta SoulTribe'i visioon →"
     },
     "howItWorks": {
       "steps": [
@@ -124,18 +125,18 @@
     "page_title": "SoulTribe.chat – Leia oma hingekogukond",
     "how": {
       "title": "Kuidas see töötab",
-      "step1": "<strong>Loo oma profiil</strong> — sisesta sünniaeg, -kuupäev ja -koht, et luua sinu ainulaadne hingekaart.",
-      "step2": "<strong>Avasta sobivused</strong> — tõstame esile ühendused ühilduvuse ja resonantsi alusel.",
-      "step3": "<strong>Alusta vestlust</strong> — kutsu sobivusi vestlema; turvaline ja privaatne.",
-      "step4": "<strong>Kohtu (valikuline)</strong> — lepi kokku Jitsi kõne või kohtumine vastastikusel nõusolekul."
+      "step1": "Loo oma profiil — sisesta sünniaeg, -kuupäev ja -koht, et luua sinu ainulaadne hingekaart.",
+      "step2": "Avasta sobivused — tõstame esile ühendused ühilduvuse ja resonantsi alusel.",
+      "step3": "Alusta vestlust — kutsu sobivusi vestlema; turvaline ja privaatne.",
+      "step4": "Kohtu (valikuline) — lepi kokku Jitsi kõne või kohtumine vastastikusel nõusolekul."
     },
     "getting_started": {
       "title": "Alustamine",
-      "step1": "<strong>Loo konto</strong> — sotsiaalmeedia sisselogimist pole vaja.",
-      "step2": "<strong>Täienda profiili</strong> — lisa sünniandmed; ligikaudne aeg sobib.",
-      "step3": "<strong>Sea saadavus</strong> — paku kohaliku aja vahemikke; UTC teisendused teeme meie.",
-      "step4": "<strong>Avasta sobivused</strong> — sirvi resonantsil põhinevaid soovitusi.",
-      "step5": "<strong>Vestle ja kohtu soovi korral</strong> — hoia suhtlus rakenduses; lepi aeg kokku, kui oled valmis."
+      "step1": "Loo konto — sotsiaalmeedia sisselogimist pole vaja.",
+      "step2": "Täienda profiili — lisa sünniandmed; ligikaudne aeg sobib.",
+      "step3": "Sea saadavus — paku kohaliku aja vahemikke; UTC teisendused teeme meie.",
+      "step4": "Avasta sobivused — sirvi resonantsil põhinevaid soovitusi.",
+      "step5": "Vestle ja kohtu soovi korral — hoia suhtlus rakenduses; lepi aeg kokku, kui oled valmis."
     },
     "matching": {
       "title": "Kuidas sobitamine töötab (lühiülevaade)",
@@ -150,7 +151,14 @@
     "next": {
       "title": "Järgmised sammud",
       "go_dashboard": "Mine armatuurlauale",
-      "login_register": "Logi sisse / Registreeru"
+      "login_register": "Logi sisse / Registreeru",
+      "step1": "Loo konto",
+      "step2": "Täida oma profiil",
+      "step3": "Loo ajavahemik",
+      "step4": "Jälgi sobivusi",
+      "step5": "Paku kohtumist või kinnita",
+      "step6": "Liitu Jitsi vestlusega",
+      "read_more": "Loe üksikasjalikku juhendit →"
     },
     "global": {
       "title": "Globaalne kogukond, kohalik aeg",
@@ -344,6 +352,70 @@
       "text": "Nautige suhtlust omal moel ja omas tempos."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Detailne juhend järgmisteks sammudeks",
+    "title": "Detailne juhend järgmisteks sammudeks",
+    "intro": "See juhend laiendab avalehe samme ja juhendab sind iga tegevuse juures nõuannete ja linkidega.",
+    "steps": {
+      "step1": {
+        "heading": "Loo konto",
+        "description": "Registreeru oma e-posti aadressiga, et pääseda ligi armatuurlauale ja profiilile. Sotsiaalmeedia sisselogimisi pole vaja.",
+        "bullets": {
+          "item1": "Kasuta kehtivat e-posti; kinnituse lingid aeguvad 24 tunni jooksul.",
+          "item2": "Pärast kinnitamist suunatakse sind sisselogimisse."
+        },
+        "link": "Mine Logi sisse / Registreeru"
+      },
+      "step2": {
+        "heading": "Täida oma profiil",
+        "description": "Lisa sünniandmed, et lubada resonantsil põhinevat sobitamist. Ligikaudne kellaaeg sobib; täpsem aeg parandab tulemusi.",
+        "bullets": {
+          "item1": "Sisesta sünniaeg, -kuupäev ja -koht. Kui täpset aega ei tea, vali hinnang.",
+          "item2": "Kirjuta lühike tutvustus, mis peegeldab sinu huve ja eesmärke. Ole konkreetne ja ehe."
+        },
+        "callout": "Nipp: Sinu profiili ajavöönd tuvastatakse automaatselt; saad seda armatuurlaual kontrollida.",
+        "link": "Muuda profiili"
+      },
+      "step3": {
+        "heading": "Loo ajavahemik",
+        "description": "Paku üks või mitu ajavahemikku, mil oled valmis ühendust võtma. Salvestame sinu kohaliku aja ja teisendame selle planeerimiseks UTC-ks.",
+        "bullets": {
+          "item1": "Vali algusaeg oma ajavööndis ja määra kestus (nt 1–3 tundi).",
+          "item2": "Ajavahemikud eri päevadel suurendavad kiiremate sobivuste võimalust."
+        },
+        "callout": "Ajavööndid kontrolli all: konverteerime automaatselt kohaliku aja ja UTC (<span class=\"mono\">UTC±HH:MM</span>) vahel.",
+        "link": "Ava armatuurlaud"
+      },
+      "step4": {
+        "heading": "Hoia silm peal sobivustel",
+        "description": "Uuri resonantsil põhinevaid soovitusi. Vaata ühilduvuse märkmeid ja ühiseid huvisid.",
+        "bullets": {
+          "item1": "Uued soovitused ilmuvad siis, kui sinu profiil ja ajavahemikud on aktiivsed.",
+          "item2": "Kasuta filtreid ja märkmeid, et meelde jätta, kellega soovid ühendust võtta."
+        },
+        "callout": "Privaatsus eelkõige: sina otsustad, millal ja kuidas suhtled."
+      },
+      "step5": {
+        "heading": "Paku või kinnita kohtumine",
+        "description": "Kui huvi on vastastikune, paku aeg kattuvate ajavahemike sees või võta vastu teise osapoole ettepanek.",
+        "bullets": {
+          "item1": "Saada sõbralik ja konkreetne kutse. Paku üks või kaks ajavarianti.",
+          "item2": "Kinnita plaan vestluses ja liigu kõnele, kui olete mõlemad valmis."
+        },
+        "callout": "Nõusolek ja mugavus: liigu endale sobivas tempos. On täiesti okei jääda ainult tekstivestlusesse."
+      },
+      "step6": {
+        "heading": "Liitu Jitsi vestlusega",
+        "description": "Kasuta Jitsi võimalusel heli- või videokõnedeks. Lauaarvuti brauserid (Firefox, Chrome) on toetatud; tekstivestlus on alati saadaval.",
+        "bullets": {
+          "item1": "Proovi mikrofoni ja kaamerat või hoia need välja lülitatud ning kasuta ainult teksti.",
+          "item2": "Vali õiged seadmed väikese noole abil, mis on ikoonide kõrval."
+        },
+        "link": "Loe Jitsi kiirjuhendit"
+      }
+    },
+    "closing": "Naudi ühenduse loomist just sel viisil, mis sulle kõige paremini sobib."
+  },
   "dashboard": {
     "slot_help_summary": "Mis on saadavusvahemik?",
     "slot_help_intro": "Ajavahemikud, mille avaldad, et SoulTribe saaks soovitada kohtumisi, kui keegi sinuga kattub.",
@@ -384,5 +456,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Ühenduste tähtkuju",
+      "subtitle": "Seal, kus kosmiline kujundus kohtub inimliku ühendusega — varjupaik sarnastele hingedele, keda juhivad tähed."
+    },
+    "vision": {
+      "heading": "✨ Visioon",
+      "body1": "SoulTribe.chat ühendab inimesi, kelle sünnikaardid harmoneeruvad — see pakub astroloogial põhinevat sobitamist, privaatseid vestlusi ja valikulisi kohtumisi, et sarnased hinged leiaksid üksteist teadlikult ja tähendusrikkalt. See on rohkem kui platvorm: elav katse kosmilise ühenduse loomisel, kus astroloogia muutub jagatud empaatiakeeleks, mitte pelgalt ennustuseks.",
+      "body2": "Iga kaart on ainulaadne allkiri — meloodia tähtedes, mis resoneerub teistega ja süütab äratundmise ning sügavuse. See ruum tervitab otsijaid, kes tajuvad, et igal kohtumisel on oma eesmärk — et ühendust juhib sünkroonsus ning kasv ja rõõm tärkavad suhetest, mis tunduvad määratud. SoulTribe.chat pakub turvalist, minimalistlikku ja teadlikku keskkonda, kus need ühendused saavad loomulikult avaneda."
+    },
+    "transition": "Enne kui sügavamale liigume, astume kosmilise ühenduse ideest üle kogukonnale, mida see loob — SoulTribe’ile endale.",
+    "soultribe": {
+      "heading": "🌠 Mis on SoulTribe?",
+      "body1": "SoulTribe ei ole pelgalt võrgustik ega sõprade nimekiri — see on resonantsiväli. See on nähtamatu võrk, mis ühendab neid, kes jagavad sagedust, eesmärki ja vaimu rütmi. Kui kohtud oma hõimu liikmetega, on äratundmine kohene: vestlus tundub nagu meenutus, mitte tutvustus. Aeg pehmendab oma servi ning sõnadevaheline ruum muutub pühaks.",
+      "body2": "Oma SoulTribe’i sees ollakse nähtud tervikuna — hinnatakse sinu olemust, mitte kuvandit. Iga inimene muutub peegliks: mõni peegeldab sinu tugevusi, teine õppetunde ja mõni tuletab meelde, kelleks saad kasvada. Nad äratavad julgust, autentsust ja teadmist, et kuulumine ei tähenda sarnasust, vaid resonantsi.",
+      "body3": "Sinu hõim võib koosneda kunstnikest, unistajatest, tervendajatest, teadlastest või vaiksetest hingedest, kes käivad oma tõe teed. Teid ühendab mitte taust või usk, vaid vibratsioon."
+    },
+    "power": {
+      "heading": "🔥 Hõimu jõud",
+      "body1": "Nii nagu iga SoulTribe tekib ühise resonantsi kaudu, ilmneb ka selle tõeline jõud kollektiivsest energiast, mis nendest ühendustest kasvab.",
+      "body2": "Me kasvame kiiremini, terveneme sügavamalt ja unistame suuremalt, kui keegi kõnnib meie kõrval ja on tunnistajaks. Inimesed on alati ringides õitsenud — see on meie muistne ülesehitus. Hõim võimendab energiat: mis ühe sütitab, seda hoiab teine; millest üks unistab, selle maandab kolmas. Selles ühises väljas mitmekordistuvad sünkroonsused ja kollektiivne areng kiireneb.",
+      "body3": "Kui end kaasad, võid märgata, kuidas sinu energia laieneb. Ideed saavad hoo, loovus voolab, intuitsioon teravneb. Hõim muutub peegliks, õpetajaks ja väestavaks ringiks — meenutuseks, et hinge teekond ei olnud kunagi mõeldud üksinda käimiseks.",
+      "body4": "SoulTribe.chat maailmas ei räägi „hõimu“ mõte eksklusiivsusest, vaid sünergiast. Siin eksisteerivad individuaalsus ja koosolemine kaunilt kõrvuti. Iga inimene annab oma sageduse, luues elava teadlikkuse tähtkuju — iga valguspunkt valgustab teisi."
+    },
+    "astro": {
+      "heading": "☀️ Astro ja hing",
+      "body1": "Astroloogia SoulTribe.chat platvormil ühendab sisekaemuse ja suhte loomise, austades samal ajal privaatsust ja nõusolekut. Ühilduvusvihjete loomiseks kasutatakse ainult hädavajalikke sünniandmeid ning midagi ei jagata ega salvestata rohkem kui sinu kogemus nõuab.",
+      "body2": "Sünniandmete põhjal arvutab platvorm planeetide asendeid ja võrdleb neid teistega, et paljastada loomuliku harmoonia, emotsionaalse resonantsi ja kasvupotentsiaali alasid. Selle asemel, et kasutajat andmetega üle koormata, destilleeritakse tulemused selgeteks ühilduvuse näidikuteks — need näitavad, kus energiad joondduvad ja kuidas suhted võivad areneda.",
+      "body3": "See pole kohting teenäo järgi; see on hingede resonants, mis on teadlikult kavandatud. Kaardid juhatavad mõistmise ja ühenduse poole. Olgu tulemuseks romantiline keemia, loominguline koostöö või sügav sõprus, SoulTribe.chat aitab mõista, miks teatud inimesed tunduvad koheselt tuttavad — ja kuidas iga kohtumine muutub su hinge peegliks."
+    },
+    "soulmates": {
+      "heading": "💫 Hingesugulased ja edasi",
+      "body1": "Sõna „hingesugulane“ kitsendab kujutlusvõimet tihti romantikale, kuid hingesugulased ilmuvad paljudes vormides. See võib olla sõber, kes äratab su naeru uuesti ellu, õpetaja, kes seab sinu piirid proovile, või võõras, kelle kohalolu tundub kohe tuttavlik. SoulTribe.chat laiendab seda ideed — see juhatab sind mitte ainult „selle õige“, vaid paljude juurde, kes kannavad tükikesi sinu arengust.",
+      "body2": "Mõned ühendused süütavad elektri — intensiivsed ja muundavad. Teised pakuvad vaikset rahu ning maandavad sinu energia jagatud vaikuses. Iga kohtumine on samm terviklikkuse poole, meenutus, et hinge rännak on pühalike kohtumiste mosaiik. Oma hõimu leidmine tähendab iseenda kohtamist — peegeldatuna tuhandes elavas peeglis."
+    },
+    "benefit": {
+      "heading": "🌍 Kuidas sellest kasu saada",
+      "items": {
+        "item1": "Loo oma hingekaart — sisesta sünniandmed, et joonistada oma ainulaadne kosmiline muster ja avastada, mis teeb sinu energia eriliseks.",
+        "item2": "Avasta resonants — leia liikmeid, kelle kaardid kajavad või täiendavad sinu oma. Õpi, kuidas planeetide joondumised viitavad harmooniale, inspiratsioonile või karmikale eesmärgile.",
+        "item3": "Ühendu autentselt — osale teadlikes vestlustes. SoulTribe.chat julgustab kohalolekut, uudishimu ja lugupidamist. Sõnadest saavad mõistmise tööriistad, mitte esinemine.",
+        "item4": "Kasvage koos — iga kohtumine on valguse vahetus. Resonantsi, kontrasti või õrna hõõrdumise kaudu arened. Süsteem tõstab esile parimad õppepeeglid — need, mis laiendavad sinu teadlikkust, selle asemel et peegeldada mugavustsooni.",
+        "item5": "Kohtuge kohalolekus — kui valmidus tekib loomulikult, liikuge tekstist hääleni, vestlusest koosloomiseni. Iga kohtumine — digitaalne või silmast silma — on hingede püha dialoog."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest hingestatud ühenduse jaoks",
+      "intro": "Leia oma sagedus ja leiad oma hõimu.",
+      "body1": "Ühendus on püha — iga vestlus, mis juurdub kohalolekus, võib muutuda teadlikkuse väravaks. Tehnoloogia peaks teenima teadlikkust, toitma lähedust, mitte hajutama. Astroloogia, kui seda kasutatakse kaastunde ja selgusega, ei paljasta saatust, vaid vabadust läbi mõistmise. Kui hõimud üksteisega joondavad, moodustavad nad säravad tähtkujud, mis koos säravad heledamalt kui eraldiseisvalt.",
+      "body2": "SoulTribe.chat tuletab meelde, et me pole rändurid kauge taeva all, vaid säravad niidid jagatud loomisvaibas. Iga kohtumine on säde ärkamise suures tules, iga vestlus südamelöök millegi suure ja püha rütmis.",
+      "closing": "Üheskoos tuletame meelde, kes me oleme — üks hõim paljudest hingedest."
+    },
+    "join": {
+      "heading": "🌌 Liitu selle teekonnaga",
+      "body": "Kui need sõnad sinuga resoneeruvad, loo oma profiil, uuri oma hingekaarti ja alusta sarnaste vaimude kohtamist, kes jagavad sinu sagedust. Iga uus ühendus on uks avastamiseni, peegelduseni ja kasvuni.",
+      "cta": "Alusta oma SoulTribe teekonda",
+      "footer": "Sinu hõim on juba kusagil olemas — lase tähtedel su koduteed näidata."
+    }
   }
 }

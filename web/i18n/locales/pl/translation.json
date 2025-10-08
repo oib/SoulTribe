@@ -106,30 +106,31 @@
     "page_title": "SoulTribe.chat – Znajdź swoją bratnią społeczność",
     "hero": {
       "title": "Witamy",
-      "subtitle": "SoulTribe.chat to przestrzeń stworzona, aby pomóc Ci znaleźć i połączyć się z Twoją bratnią społecznością — ludźmi, którzy rezonują z Twoją energią, duchem i drogą. ✨"
+      "subtitle": "SoulTribe.chat to przestrzeń stworzona, aby pomóc Ci znaleźć i połączyć się z Twoją bratnią społecznością — ludźmi, którzy rezonują z Twoją energią, duchem i drogą. ✨",
+      "learn_more": "Odkryj wizję SoulTribe →"
     },
     "how": {
       "title": "Jak to działa",
-      "step1": "<strong>Utwórz swój profil</strong> — podaj datę, godzinę i miejsce urodzenia, aby wygenerować unikalną mapę duszy.",
-      "step2": "<strong>Odkryj dopasowania</strong> — podkreślamy połączenia na podstawie kompatybilności i rezonansu.",
-      "step3": "<strong>Rozpocznij rozmowę</strong> — zaproś dopasowania do czatu; bezpiecznie i prywatnie z założenia.",
-      "step4": "<strong>Spotkaj się (opcjonalnie)</strong> — umów rozmowę Jitsi lub spotkanie na żywo za obopólną zgodą."
+      "step1": "Utwórz swój profil — podaj datę, godzinę i miejsce urodzenia, aby wygenerować unikalną mapę duszy.",
+      "step2": "Odkryj dopasowania — podkreślamy połączenia na podstawie kompatybilności i rezonansu.",
+      "step3": "Rozpocznij rozmowę — zaproś dopasowania do czatu; bezpiecznie i prywatnie z założenia.",
+      "step4": "Spotkaj się (opcjonalnie) — umów rozmowę Jitsi lub spotkanie na żywo za obopólną zgodą."
     },
     "getting_started": {
       "title": "Pierwsze kroki",
-      "step1": "<strong>Utwórz konto</strong> — logowanie przez media społecznościowe nie jest wymagane.",
-      "step2": "<strong>Uzupełnij profil</strong> — dodaj dane urodzenia; przybliżona godzina jest w porządku.",
-      "step3": "<strong>Ustaw swoją dostępność</strong> — zaproponuj lokalne przedziały czasowe; konwersje UTC bierzemy na siebie.",
-      "step4": "<strong>Odkryj dopasowania</strong> — przeglądaj propozycje oparte na rezonansie.",
-      "step5": "<strong>Czatuj i ewentualnie spotkaj się</strong> — pozostań w aplikacji; zaplanuj, gdy będziesz gotowy/a."
+      "step1": "Utwórz konto — logowanie przez media społecznościowe nie jest wymagane.",
+      "step2": "Uzupełnij profil — dodaj dane urodzenia; przybliżona godzina jest w porządku.",
+      "step3": "Ustaw swoją dostępność — zaproponuj lokalne przedziały czasowe; konwersje UTC bierzemy na siebie.",
+      "step4": "Odkryj dopasowania — przeglądaj propozycje oparte na rezonansie.",
+      "step5": "Czatuj i ewentualnie spotkaj się — pozostań w aplikacji; zaplanuj, gdy będziesz gotowy/a."
     },
     "features": {
       "title": "Funkcje",
-      "item1": "<strong>Dopasowanie z uwzględnieniem astrologii</strong> — łącz się na podstawie swojego kosmogramu.",
-      "item2": "<strong>Inteligentne planowanie stref czasowych</strong> — dokonujemy konwersji UTC za Ciebie.",
-      "item3": "<strong>Bezpośrednia komunikacja przez Jitsi</strong> — tekst/głos/wideo; nic nie jest przechowywane ani nagrywane na SoulTribe.chat.",
-      "item4": "<strong>Łatwe dołączenie przez link</strong> — prywatny pokój Jitsi dla potwierdzonych spotkań; przyjazne prywatności, bez instalacji na komputerze.",
-      "item5": "<strong>Minimalistyczny, skupiony interfejs</strong> — zaprojektowany do wartościowych rozmów."
+      "item1": "Dopasowanie z uwzględnieniem astrologii — łącz się na podstawie swojego kosmogramu.",
+      "item2": "Inteligentne planowanie stref czasowych — dokonujemy konwersji UTC za Ciebie.",
+      "item3": "Bezpośrednia komunikacja przez Jitsi — tekst/głos/wideo; nic nie jest przechowywane ani nagrywane na SoulTribe.chat.",
+      "item4": "Łatwe dołączenie przez link — prywatny pokój Jitsi dla potwierdzonych spotkań; przyjazne prywatności, bez instalacji na komputerze.",
+      "item5": "Minimalistyczny, skupiony interfejs — zaprojektowany do wartościowych rozmów."
     },
     "privacy": {
       "title": "Prywatność i bezpieczeństwo",
@@ -150,7 +151,14 @@
     "next": {
       "title": "Następne kroki",
       "go_dashboard": "Przejdź do pulpitu",
-      "login_register": "Zaloguj / Zarejestruj"
+      "login_register": "Zaloguj / Zarejestruj",
+      "step1": "Utwórz konto",
+      "step2": "Uzupełnij swój profil",
+      "step3": "Utwórz slot czasowy",
+      "step4": "Obserwuj dopasowania",
+      "step5": "Zaproponuj lub potwierdź spotkanie",
+      "step6": "Dołącz do czatu Jitsi",
+      "read_more": "Przeczytaj szczegółowy przewodnik →"
     },
     "global": {
       "title": "Globalna społeczność, lokalny czas",
@@ -274,6 +282,70 @@
       "text": "Ciesz się kontaktem na swój sposób i we własnym tempie."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Szczegółowy przewodnik po kolejnych krokach",
+    "title": "Szczegółowy przewodnik po kolejnych krokach",
+    "intro": "Ten przewodnik rozwija kroki ze strony startowej i prowadzi przez każdą czynność, oferując wskazówki oraz linki.",
+    "steps": {
+      "step1": {
+        "heading": "Utwórz konto",
+        "description": "Zarejestruj się z użyciem adresu email, aby uzyskać dostęp do pulpitu i profilu. Logowanie społecznościowe nie jest wymagane.",
+        "bullets": {
+          "item1": "Użyj ważnego adresu email; linki weryfikacyjne wygasają po 24 godzinach.",
+          "item2": "Po potwierdzeniu zostaniesz przekierowany na stronę logowania."
+        },
+        "link": "Przejdź do Logowanie / Rejestracja"
+      },
+      "step2": {
+        "heading": "Uzupełnij profil",
+        "description": "Dodaj dane urodzenia, aby aktywować dopasowania oparte na rezonansie. Przybliżona godzina jest w porządku; większa precyzja poprawia wyniki.",
+        "bullets": {
+          "item1": "Wprowadź datę, godzinę i miejsce urodzenia. Jeśli nie znasz dokładnej godziny, wybierz przybliżony czas.",
+          "item2": "Napisz krótki opis odzwierciedlający Twoje zainteresowania i intencje. Bądź konkretny/a i autentyczny/a."
+        },
+        "callout": "Wskazówka: strefa czasowa profilu jest wykrywana automatycznie; sprawdzisz ją na pulpicie.",
+        "link": "Edytuj profil"
+      },
+      "step3": {
+        "heading": "Utwórz slot czasowy",
+        "description": "Zaproponuj jeden lub więcej przedziałów, w których chcesz się łączyć. Zapisujemy Twój czas lokalny i konwertujemy go do UTC na potrzeby planowania.",
+        "bullets": {
+          "item1": "Wybierz godzinę rozpoczęcia w swojej strefie i ustaw czas trwania (np. 1–3 godziny).",
+          "item2": "Sloty w różne dni zwiększają szansę na szybkie dopasowania."
+        },
+        "callout": "Strefy czasowe pod kontrolą: automatycznie konwertujemy między czasem lokalnym a UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Otwórz pulpit"
+      },
+      "step4": {
+        "heading": "Obserwuj dopasowania",
+        "description": "Przeglądaj proponowane dopasowania oparte na rezonansie. Sprawdzaj notatki o kompatybilności i wspólnych zainteresowaniach.",
+        "bullets": {
+          "item1": "Nowe propozycje pojawią się, gdy profil i sloty są aktywne.",
+          "item2": "Korzystaj z filtrów i notatek, aby pamiętać, z kim chcesz się skontaktować."
+        },
+        "callout": "Prywatność przede wszystkim: sam/a decydujesz, kiedy i jak się angażować."
+      },
+      "step5": {
+        "heading": "Zaproponuj lub potwierdź spotkanie",
+        "description": "Gdy zainteresowanie jest obustronne, zaproponuj termin w nakładających się slotach lub zaakceptuj propozycję dopasowania.",
+        "bullets": {
+          "item1": "Wyślij uprzejme, precyzyjne zaproszenie. Zaproponuj jedną lub dwie opcje czasowe.",
+          "item2": "Potwierdź plan na czacie i przejdź do rozmowy, gdy oboje będziecie gotowi."
+        },
+        "callout": "Zgoda i komfort: działaj we własnym tempie. W pełni akceptowalne jest pozostanie przy tekście."
+      },
+      "step6": {
+        "heading": "Dołącz do czatu Jitsi",
+        "description": "Używaj Jitsi do opcjonalnego audio/wideo. Przeglądarki desktopowe (Firefox, Chrome) są wspierane; czat tekstowy jest zawsze dostępny.",
+        "bullets": {
+          "item1": "Przetestuj mikrofon/kamerę lub pozostaw je wyłączone i korzystaj tylko z tekstu.",
+          "item2": "Wybierz właściwe urządzenia za pomocą małej strzałki obok ikon."
+        },
+        "link": "Przeczytaj szybki przewodnik Jitsi"
+      }
+    },
+    "closing": "Ciesz się nawiązywaniem kontaktu w sposób, który najbardziej Ci odpowiada."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -300,5 +372,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Konstelacja połączeń",
+      "subtitle": "Gdzie kosmiczny design spotyka ludzkie połączenie — sanktuarium dla pokrewnych dusz prowadzonych przez gwiazdy."
+    },
+    "vision": {
+      "heading": "✨ Wizja",
+      "body1": "SoulTribe.chat łączy ludzi, których horoskopy urodzeniowe harmonizują — oferuje astrologiczne dopasowanie, prywatne czaty i opcjonalne spotkania, aby pomóc pokrewnym duszom spotkać się w sposób świadomy i znaczący. To więcej niż platforma: żywy eksperyment w kosmicznym połączeniu, gdzie astrologia staje się wspólnym językiem empatii zamiast przepowiedni.",
+      "body2": "Każdy horoskop jest unikalną sygnaturą — melodią w gwiazdach, która rezonuje z innymi, by zapalić rozpoznanie i głębię. Ta przestrzeń wita poszukiwaczy, którzy czują, że każde spotkanie ma cel — że synchroniczność prowadzi połączenie, a wzrost i radość wyłaniają się z relacji, które wydają się przeznaczone. SoulTribe.chat oferuje bezpieczne, minimalistyczne i świadome środowisko, gdzie te połączenia mogą naturalnie rozwijać się."
+    },
+    "transition": "Zanim zagłębimy się głębiej, przejdźmy od idei kosmicznego połączenia do społeczności, którą tworzy — samej SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Co to jest SoulTribe?",
+      "body1": "SoulTribe to nie tylko sieć lub lista przyjaciół — to pole rezonansu. Niewidzialna sieć, która łączy tych, którzy dzielą częstotliwość, cel i rytm ducha. Gdy spotykasz członków swojego plemienia, rozpoznanie jest natychmiastowe: rozmowa wydaje się pamiętaniem raczej niż przedstawianiem. Czas zmiękcza jej krawędzie, a przestrzeń między słowami staje się święta.",
+      "body2": "Wewnątrz swojej SoulTribe jesteś w pełni widziany — ceniony za swoją istotę, nie obraz. Każda osoba staje się lustrem: niektórzy odbijają twoje siły, inni twoje lekcje, a kilku przypomina ci, czym możesz się stać. Budzą odwagę, autentyczność i wiedzę, że przynależność nie chodzi o podobieństwo, ale rezonans.",
+      "body3": "Twoje plemię może składać się z artystów, marzycieli, uzdrowicieli, naukowców lub cichych dusz chodzących swoją prawdą. To, co was jednoczy, to nie tło czy wiara — to wibracja."
+    },
+    "power": {
+      "heading": "🔥 Moc plemienia",
+      "body1": "Tak jak każda SoulTribe formuje się przez wspólny rezonans, jej prawdziwa siła wyłania się w zbiorowej energii, która rośnie z tych połączeń.",
+      "body2": "Rosnąmy szybciej, leczymy głębiej i marzymy większymi, gdy inni idą obok nas i świadczą o naszej drodze. Ludzie zawsze prosperowali w kręgach — to nasz starożytny design. Plemię powiększa energię: co jeden rozpala, drugi podtrzymuje; co jeden marzy, trzeci uziemia. W tym wspólnym polu synchroniczności mnożą się i zbiorowa ewolucja przyspiesza.",
+      "body3": "Gdy angażujesz się, możesz zauważyć, jak twoja własna energia się rozszerza. Pomysły zyskują impet, kreatywność płynie, intuicja wyostrza się. Plemię staje się lustrem, nauczycielem i kręgiem wzmocnienia — przypominając, że ścieżka duszy nigdy nie była przeznaczona do chodzenia samotnie.",
+      "body4": "Wewnątrz SoulTribe.chat, idea 'plemienia' nie chodzi o ekskluzywność, ale synergię. Tutaj indywidualność i wspólnota współistnieją pięknie. Każda osoba wnosi swoją częstotliwość, formując żywą konstelację świadomości — każdy punkt światła oświetla innych."
+    },
+    "astro": {
+      "heading": "☀️ Astro i dusza",
+      "body1": "Astrologia na SoulTribe.chat łączy wgląd i połączenie, szanując twoją prywatność i zgodę. Tylko istotne dane urodzeniowe są używane do generowania wglądów w zgodność, i nic nie jest dzielone ani przechowywane poza tym, czego wymaga twoje doświadczenie.",
+      "body2": "Używając twoich szczegółów urodzeniowych, platforma oblicza pozycje planetarne i porównuje je z innymi, by odsłonić obszary naturalnej harmonii, emocjonalnego rezonansu i potencjalnego wzrostu. Zamiast przytłaczać użytkowników danymi, wyniki są destylowane do jasnych wskaźników zgodności — pokazujących, gdzie energie się wyrównują i jak relacje mogą ewoluować.",
+      "body3": "To nie randkowanie według znaku; to rezonans duszy według designu, gdzie horoskopy prowadzą zrozumienie i połączenie. Niezależnie od wyniku — romantyczna chemia, kreatywna współpraca czy głęboka przyjaźń — SoulTribe.chat pomaga rozpoznać, dlaczego niektóre osoby czują się natychmiast znane — i jak każde spotkanie staje się lustrem dla twojej duszy."
+    },
+    "soulmates": {
+      "heading": "💫 Towarzysze duszy i dalej",
+      "body1": "Słowo 'towarzysz duszy' często zawęża wyobraźnię do romansu, ale towarzysze duszy pojawiają się w wielu formach. Mogą być przyjacielem, który odbudza twój śmiech, nauczycielem, który wyzwala twoje granice, lub obcym, którego obecność czuje się natychmiast znana. SoulTribe.chat rozszerza tę ideę — prowadząc cię nie do 'jednego', ale do wielu, którzy niosą kawałki twojej ewolucji.",
+      "body2": "Niektóre połączenia zapalają elektryczność — intensywne i transformujące. Inne oferują cichy pokój, uziemiając twoją energię w wspólnej ciszy. Każde spotkanie jest krokiem ku całości, przypomnieniem, że podróż duszy jest mozaiką świętych spotkań. Spotkać swoje plemię znaczy spotkać siebie — odbitego w tysiącu żywych luster."
+    },
+    "benefit": {
+      "heading": "🌍 Jak skorzystać",
+      "items": {
+        "item1": "Stwórz swoją mapę duszy — wprowadź swoje szczegóły urodzeniowe, by wygenerować swój unikalny kosmiczny wzór i odkryć, co sprawia, że twoja energia jest wyjątkowa.",
+        "item2": "Odkryj rezonans — znajdź członków, których horoskopy odbijają lub uzupełniają twoje. Naucz się, jak planetarne wyrównania wskazują harmonię, inspirację lub karmiczny cel.",
+        "item3": "Połącz autentycznie — angażuj się w świadome rozmowy. SoulTribe.chat zachęca do obecności, ciekawości i szacunku. Słowa stają się narzędziami zrozumienia, nie wykonania.",
+        "item4": "Rosnijcie razem — każde spotkanie jest wymianą światła. Przez rezonans, kontrast lub łagodne tarcie ewoluujesz. System podkreśla twoje najlepsze lustra nauki — te, które rozszerzają twoją świadomość zamiast odbijać twoją strefę komfortu.",
+        "item5": "Spotkajcie się w obecności — gdy gotowość rozwija się naturalnie, przejdź od tekstu do głosu, od rozmowy do współ-twórczości. Każde spotkanie — cyfrowe czy osobiste — staje się świętym dialogiem dusz."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest głębokiego połączenia",
+      "intro": "Znajdź swoją częstotliwość i znajdź swoje plemię.",
+      "body1": "Połączenie jest święte — każda rozmowa zakorzeniona w obecności może stać się portalem do świadomości. Technologia powinna służyć świadomości, odżywiając intymność zamiast rozproszenia. Astrologia, używana z współczuciem i jasnością, ujawnia nie przeznaczenie, ale wolność przez zrozumienie. Gdy plemiona wyrównują się, formują promienne konstelacje, które świecą jaśniej razem niż oddzielnie.",
+      "body2": "SoulTribe.chat przypomina nam, że nie jesteśmy wędrowcami pod odległym niebem, ale świetlistymi niciami w wspólnym gobelinie kreacji. Każde spotkanie jest iskrą w wielkim ogniu przebudzenia, każda rozmowa uderzeniem serca w rytmie czegoś wielkiego i świętego.",
+      "closing": "Razem pamiętamy, kim jesteśmy — jedno plemię wielu dusz."
+    },
+    "join": {
+      "heading": "🌌 Dołącz do podróży",
+      "body": "Jeśli te słowa rezonują, stwórz swój profil, eksploruj swoją mapę duszy i zacznij spotykać pokrewne duchy, które dzielą twoją częstotliwość. Każde nowe połączenie jest drzwiami do odkrycia, refleksji i wzrostu.",
+      "cta": "Rozpocznij swoją podróż SoulTribe",
+      "footer": "Twoje plemię już tam jest — pozwól gwiazdom prowadzić cię do domu."
+    }
   }
 }

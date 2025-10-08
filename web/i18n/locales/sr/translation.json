@@ -3,30 +3,31 @@
     "page_title": "SoulTribe.chat - Пронађи своју душевну заједницу",
     "hero": {
       "title": "Добро дошли",
-      "subtitle": "SoulTribe.chat је простор направљен да ти помогне да пронађеш и повежеш се са својом душевном заједницом — људима који резонују са твојом енергијом, духом и путем. ✨"
+      "subtitle": "SoulTribe.chat је простор направљен да ти помогне да пронађеш и повежеш се са својом душевном заједницом — људима који резонују са твојом енергијом, духом и путем. ✨",
+      "learn_more": "Откриј визију SoulTribe →"
     },
     "how": {
       "title": "Како функционише",
-      "step1": "<strong>Креирај свој профил</strong> — унеси датум, време и место рођења како бисмо генерисали твоју јединствену астрo карту.",
-      "step2": "<strong>Откриј подударности</strong> — истичемо везе засноване на компатибилности и резонанци.",
-      "step3": "<strong>Започни разговор</strong> — позови подударности на ћаскање; безбедно и приватно по дизајну.",
-      "step4": "<strong>Упознајте се (опционо)</strong> — закажи Jitsi позив или сусрет уживо уз обострану сагласност."
+      "step1": "Креирај свој профил — унеси датум, време и место рођења како бисмо генерисали твоју јединствену астрo карту.",
+      "step2": "Откриј подударности — истичемо везе засноване на компатибилности и резонанци.",
+      "step3": "Започни разговор — позови подударности на ћаскање; безбедно и приватно по дизајну.",
+      "step4": "Упознајте се (опционо) — закажи Jitsi позив или сусрет уживо уз обострану сагласност."
     },
     "getting_started": {
       "title": "Почетак",
-      "step1": "<strong>Креирај налог</strong> — без пријаве преко друштвених мрежа.",
-      "step2": "<strong>Попуни профил</strong> — додај податке о рођењу; приближно време је у реду.",
-      "step3": "<strong>Постави доступност</strong> — предложи локалне термине; ми радимо UTC конверзије.",
-      "step4": "<strong>Откриј подударности</strong> — прегледај препоруке засноване на резонанци.",
-      "step5": "<strong>Ћаскај и, по жељи, упознај се</strong> — све у апликацији; закажи када будеш спреман/на."
+      "step1": "Креирај налог — без пријаве преко друштвених мрежа.",
+      "step2": "Попуни профил — додај податке о рођењу; приближно време је у реду.",
+      "step3": "Постави доступност — предложи локалне термине; ми радимо UTC конверзије.",
+      "step4": "Откриј подударности — прегледај препоруке засноване на резонанци.",
+      "step5": "Ћаскај и, по жељи, упознај се — све у апликацији; закажи када будеш спреман/на."
     },
     "features": {
       "title": "Функције",
-      "item1": "<strong>Астролошко подударање</strong> — повежи се користећи своју наталну карту.",
-      "item2": "<strong>Планирање по временским зонама</strong> — све UTC конверзије радимо за тебе.",
-      "item3": "<strong>Директна комуникација преко Jitsi</strong> — текст/аудио/видео; ништа се не снима нити чува на SoulTribe.chat.",
-      "item4": "<strong>Једноставно придруживање линком</strong> — приватна Jitsi соба за потврђене сусрете; пријатељски према приватности.",
-      "item5": "<strong>Минималистички интерфејс</strong> — дизајниран за смислене разговоре.",
+      "item1": "Астролошко подударање — повежи се користећи своју наталну карту.",
+      "item2": "Планирање по временским зонама — све UTC конверзије радимо за тебе.",
+      "item3": "Директна комуникација преко Jitsi — текст/аудио/видео; ништа се не снима нити чува на SoulTribe.chat.",
+      "item4": "Једноставно придруживање линком — приватна Jitsi соба за потврђене сусрете; пријатељски према приватности.",
+      "item5": "Минималистички интерфејс — дизајниран за смислене разговоре.",
       "read_more": "Прочитај водич за Jitsi госте →"
     },
     "privacy": {
@@ -48,7 +49,14 @@
     "next": {
       "title": "Следећи кораци",
       "go_dashboard": "Иди на таблу",
-      "login_register": "Пријава / Регистрација"
+      "login_register": "Пријава / Регистрација",
+      "step1": "Креирај налог",
+      "step2": "Попуни свој профил",
+      "step3": "Креирај временски слот",
+      "step4": "Прати подударности",
+      "step5": "Предложи или потврди сусрет",
+      "step6": "Придружи се Jitsi чету",
+      "read_more": "Прочитај детаљни водич →"
     },
     "global": {
       "title": "Глобална заједница, локално време",
@@ -145,6 +153,70 @@
       "text": "Уживај у повезивању на начин и темпом који ти највише одговара."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Детаљан водич за следеће кораке",
+    "title": "Детаљан водич за следеће кораке",
+    "intro": "Овај водич продубљује кораке почетне странице и води те кроз сваки корак уз савете и корисне линкове.",
+    "steps": {
+      "step1": {
+        "heading": "Креирај налог",
+        "description": "Региструј се путем имејла да би приступио/ла табли и свом профилу. Пријава преко друштвених мрежа није потребна.",
+        "bullets": {
+          "item1": "Користи важећи имејл; верификациони линкови истичу после 24 часа.",
+          "item2": "Након потврде бићеш преусмерен/а на страницу за пријаву."
+        },
+        "link": "Иди на Пријава / Регистрација"
+      },
+      "step2": {
+        "heading": "Попуни свој профил",
+        "description": "Додај податке о рођењу да активираш резонантна подударања. Приближно време је у реду; већа прецизност даје боље резултате.",
+        "bullets": {
+          "item1": "Унеси датум, време и место рођења. Ако не знаш тачно време, изабери процену.",
+          "item2": "Напиши кратак увод који одражава твоја интересовања и намере. Буди конкретан/на и аутентичан/на."
+        },
+        "callout": "Савет: временска зона профила се аутоматски детектује; можеш је проверити на табли.",
+        "link": "Уреди профил"
+      },
+      "step3": {
+        "heading": "Креирај временски слот",
+        "description": "Понуди један или више термина када желиш да се повежеш. Чувамо твоје локално време и конвертујемо га у UTC ради заказивања.",
+        "bullets": {
+          "item1": "Одабери време почетка у свом временском појасу и подеси трајање (нпр. 1–3 сата).",
+          "item2": "Слотови у различитим данима повећавају шансу за брза подударања."
+        },
+        "callout": "Часовне зоне под контролом: аутоматски конвертујемо између локалног времена и UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Отвори таблу"
+      },
+      "step4": {
+        "heading": "Прати подударности",
+        "description": "Истражи предложена подударања заснована на резонанци. Погледај белешке о компатибилности и заједничким интересима.",
+        "bullets": {
+          "item1": "Нови предлози се појављују када су профил и слотови активни.",
+          "item2": "Користи филтере и белешке да запамтиш са ким желиш да се повежеш."
+        },
+        "callout": "Приватност на првом месту: ти одлучујеш када и како ће доћи до контакта."
+      },
+      "step5": {
+        "heading": "Предложи или потврди сусрет",
+        "description": "Када је интересовање обострано, предложи време у преклапајућим слотовима или прихвати предлог подударности.",
+        "bullets": {
+          "item1": "Пошаљи љубазну и прецизну позивницу. Понуди једну или две временске алтернативе.",
+          "item2": "Потврди план у чету и пређи на позив када обоје будете спремни."
+        },
+        "callout": "Сагласност и комфор: крени својим темпом. Савршено је у реду остати само на тексту."
+      },
+      "step6": {
+        "heading": "Придружи се Jitsi чету",
+        "description": "Користи Jitsi за опционални аудио/видео. Desktop прегледачи (Firefox, Chrome) су подржани; текстуални чет је увек доступан.",
+        "bullets": {
+          "item1": "Тестирај микрофон/камеру или их остави искључене и користи само текст.",
+          "item2": "Изабери одговарајуће уређаје преко мале стрелице поред икона."
+        },
+        "link": "Прочитај брзи Jitsi водич"
+      }
+    },
+    "closing": "Уживај у повезивању на начин који ти највише прија."
+  },
   "language": {
     "en": "Енглески",
     "de": "Немачки",
@@ -163,7 +235,9 @@
       "username_label": "Корисничко име",
       "username_placeholder": "корисничко име"
     },
-    "languages": { "legend": "Језици" },
+    "languages": {
+      "legend": "Језици"
+    },
     "location": {
       "legend": "Тренутна локација",
       "city_placeholder": "Град (аутоматско довршавање)",
@@ -252,7 +326,9 @@
     "login": "Пријава",
     "logout": "Одјава"
   },
-  "imprint": { "title": "Импресум" },
+  "imprint": {
+    "title": "Импресум"
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrasse 7/6",
@@ -296,5 +372,64 @@
   },
   "notifications": {
     "language_set_to": "Језик је постављен на"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — A Constellation of Connection",
+      "subtitle": "Where cosmic design meets human connection — a sanctuary for kindred souls guided by the stars."
+    },
+    "vision": {
+      "heading": "✨ The Vision",
+      "body1": "SoulTribe.chat connects people whose birth charts harmonize — offering astrology-based matching, private chats, and optional meetups to help kindred souls meet in a mindful, meaningful way. It is more than a platform: a living experiment in cosmic connection, where astrology becomes a shared language of empathy rather than prediction.",
+      "body2": "Each chart is a unique signature — a melody in the stars that resonates with others to spark recognition and depth. This space welcomes seekers who sense that every encounter carries purpose — that synchronicity guides connection, and that growth and joy emerge through relationships that feel destined. SoulTribe.chat offers a safe, minimalist, and conscious environment where these connections can naturally unfold."
+    },
+    "transition": "Before delving deeper, let’s move from the idea of cosmic connection to the community it creates — the SoulTribe itself.",
+    "soultribe": {
+      "heading": "🌠 What Is a SoulTribe?",
+      "body1": "A SoulTribe is not just a network or a list of friends — it is a resonance field. It is the invisible web that connects those who share frequency, purpose, and rhythm of spirit. When you meet members of your tribe, recognition is instant: conversation feels like remembering rather than introducing. Time softens its edges, and the space between words becomes sacred.",
+      "body2": "Within your SoulTribe, you are fully seen — valued for your essence, not your image. Each person becomes a mirror: some reflect your strengths, others your lessons, and a few remind you of what you are capable of becoming. They awaken courage, authenticity, and the knowing that belonging is not about similarity but resonance.",
+      "body3": "Your tribe may consist of artists, dreamers, healers, scientists, or quiet souls walking their truth. What unites you is not background or belief — it is vibration."
+    },
+    "power": {
+      "heading": "🔥 The Power of a Tribe",
+      "body1": "Just as every SoulTribe forms through shared resonance, its true strength emerges in the collective energy that grows from those connections.",
+      "body2": "We grow faster, heal deeper, and dream bigger when we are witnessed by others walking beside us. Humans have always thrived in circles — it is our ancient design. A tribe magnifies energy: what one sparks, another sustains; what one dreams, another grounds. In this shared field, synchronicities multiply and collective evolution accelerates.",
+      "body3": "As you engage, you may notice how your own energy expands. Ideas find momentum, creativity flows, intuition sharpens. The tribe becomes a mirror, a teacher, and a circle of empowerment — reminding you that the path of the soul was never meant to be walked alone.",
+      "body4": "Within SoulTribe.chat, the idea of a “tribe” is not about exclusivity but synergy. Here, individuality and togetherness coexist beautifully. Each person contributes their frequency, forming a living constellation of consciousness — each point of light illuminating the others."
+    },
+    "astro": {
+      "heading": "☀️ Astro & Soul",
+      "body1": "Astrology on SoulTribe.chat bridges insight and connection while honoring your privacy and consent. Only essential birth data is used to generate compatibility insights, and nothing is shared or stored beyond what’s needed for your experience.",
+      "body2": "Using your birth details, the platform calculates planetary positions and compares them with others to reveal areas of natural harmony, emotional resonance, and potential growth. Instead of overwhelming users with data, results are distilled into clear indicators of compatibility — showing where energies align and how relationships can evolve.",
+      "body3": "This is not dating by sign; it is soul resonance by design, where charts guide understanding and connection. Whether the outcome is romantic chemistry, creative collaboration, or a deep friendship, SoulTribe.chat helps you recognize why certain people feel instantly familiar — and how every meeting becomes a mirror for your soul."
+    },
+    "soulmates": {
+      "heading": "💫 Soulmates and Beyond",
+      "body1": "The word soulmate often narrows the imagination to romance, but soulmates appear in many forms. They can be the friend who reawakens your laughter, the teacher who challenges your limits, or the stranger whose presence feels instantly familiar. SoulTribe.chat expands this idea — guiding you not to “the one,” but to the many who carry pieces of your evolution.",
+      "body2": "Some connections ignite electricity — intense and transformative. Others offer quiet peace, grounding your energy in shared stillness. Each meeting is a step toward wholeness, a reminder that the soul’s journey is a mosaic of sacred encounters. To meet your tribe is to meet yourself — reflected in a thousand living mirrors."
+    },
+    "benefit": {
+      "heading": "🌍 How to Benefit",
+      "items": {
+        "item1": "Create Your Soul Map — enter your birth details to generate your unique cosmic pattern and discover what makes your energy distinct.",
+        "item2": "Discover Resonance — find members whose charts echo or complement your own. Learn how planetary alignments indicate harmony, inspiration, or karmic purpose.",
+        "item3": "Connect Authentically — engage in mindful conversation. SoulTribe.chat encourages presence, curiosity, and respect. Words become instruments of understanding, not performance.",
+        "item4": "Grow Together — each encounter is an exchange of light. Through resonance, contrast, or gentle friction, you evolve. The system highlights your best learning mirrors — those who expand your awareness rather than mirror your comfort zone.",
+        "item5": "Meet in Presence — when readiness unfolds naturally, move from text to voice, from conversation to co-creation. Every meeting — digital or in-person — becomes a sacred dialogue of souls."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifesto for Soulful Connection",
+      "intro": "Find your frequency, and find your tribe.",
+      "body1": "Connection is sacred — every conversation rooted in presence can become a portal to awareness. Technology should serve consciousness, nurturing intimacy instead of distraction. Astrology, used with compassion and clarity, reveals not destiny but freedom through understanding. When tribes align, they form radiant constellations that shine brighter together than alone.",
+      "body2": "SoulTribe.chat reminds us that we are not wanderers beneath a distant sky, but luminous threads in a shared tapestry of creation. Each meeting is a spark in the greater fire of awakening, each conversation a heartbeat in the rhythm of something vast and sacred.",
+      "closing": "Together, we remember who we are — one tribe of many souls."
+    },
+    "join": {
+      "heading": "🌌 Join the Journey",
+      "body": "If these words resonate, create your profile, explore your soul map, and begin meeting kindred spirits who share your frequency. Each new connection is a doorway to discovery, reflection, and growth.",
+      "cta": "Start your SoulTribe journey",
+      "footer": "Your tribe is already out there — let the stars guide you home."
+    }
   }
 }

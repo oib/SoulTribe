@@ -3,30 +3,31 @@
     "page_title": "SoulTribe.chat - Troba la teva soul tribe",
     "hero": {
       "title": "Benvinguts",
-      "subtitle": "SoulTribe.chat és un espai creat per ajudar-te a trobar i connectar amb la teva soul tribe — persones que ressonen amb la teva energia, el teu esperit i el teu camí. ✨"
+      "subtitle": "SoulTribe.chat és un espai creat per ajudar-te a trobar i connectar amb la teva soul tribe — persones que ressonen amb la teva energia, el teu esperit i el teu camí. ✨",
+      "learn_more": "Descobriu la visió SoulTribe →"
     },
     "how": {
       "title": "Com funciona",
-      "step1": "<strong>Crea el teu perfil</strong> — introdueix la data, l'hora i el lloc de naixement per generar el teu mapa astral únic.",
-      "step2": "<strong>Descobreix coincidències</strong> — destaquem connexions basades en la compatibilitat i la ressonància.",
-      "step3": "<strong>Inicia la conversa</strong> — convida coincidències al xat; segur i privat per disseny.",
-      "step4": "<strong>Trobeu-vos (opcional)</strong> — programa una trucada Jitsi o una trobada en persona amb consentiment mutu."
+      "step1": "Crea el teu perfil — introdueix la data, l'hora i el lloc de naixement per generar el teu mapa astral únic.",
+      "step2": "Descobreix coincidències — destaquem connexions basades en la compatibilitat i la ressonància.",
+      "step3": "Inicia la conversa — convida coincidències al xat; segur i privat per disseny.",
+      "step4": "Trobeu-vos (opcional) — programa una trucada Jitsi o una trobada en persona amb consentiment mutu."
     },
     "getting_started": {
       "title": "Primers passos",
-      "step1": "<strong>Crea un compte</strong> — sense connexió amb xarxes socials.",
-      "step2": "<strong>Completa el teu perfil</strong> — afegeix les dades de naixement; l'hora aproximada és vàlida.",
-      "step3": "<strong>Defineix la teva disponibilitat</strong> — proposa franges horàries locals; nosaltres gestionem el UTC.",
-      "step4": "<strong>Descobreix coincidències</strong> — explora suggeriments basats en la ressonància.",
-      "step5": "<strong>Xateja i, si vols, coneix-te</strong> — tot dins de l'app; programa-ho quan et sentis preparat/da."
+      "step1": "Crea un compte — sense connexió amb xarxes socials.",
+      "step2": "Completa el teu perfil — afegeix les dades de naixement; l'hora aproximada és vàlida.",
+      "step3": "Defineix la teva disponibilitat — proposa franges horàries locals; nosaltres gestionem el UTC.",
+      "step4": "Descobreix coincidències — explora suggeriments basats en la ressonància.",
+      "step5": "Xateja i, si vols, coneix-te — tot dins de l'app; programa-ho quan et sentis preparat/da."
     },
     "features": {
       "title": "Característiques",
-      "item1": "<strong>Compatibilitat astrològica</strong> — connecta utilitzant el teu mapa natal.",
-      "item2": "<strong>Programació intel·ligent</strong> — fem totes les conversions UTC per tu.",
-      "item3": "<strong>Comunicació directa via Jitsi</strong> — text/àudio/vídeo; res s'emmagatzema ni s'enregistra a SoulTribe.chat.",
-      "item4": "<strong>Entrada fàcil via enllaç</strong> — sala Jitsi privada per a trobades confirmades; respectuosa amb la privadesa.",
-      "item5": "<strong>Interfície minimalista</strong> — dissenyada per a converses significatives.",
+      "item1": "Compatibilitat astrològica — connecta utilitzant el teu mapa natal.",
+      "item2": "Programació intel·ligent — fem totes les conversions UTC per tu.",
+      "item3": "Comunicació directa via Jitsi — text/àudio/vídeo; res s'emmagatzema ni s'enregistra a SoulTribe.chat.",
+      "item4": "Entrada fàcil via enllaç — sala Jitsi privada per a trobades confirmades; respectuosa amb la privadesa.",
+      "item5": "Interfície minimalista — dissenyada per a converses significatives.",
       "read_more": "Llegeix la guia ràpida per a convidats de Jitsi →"
     },
     "privacy": {
@@ -48,7 +49,14 @@
     "next": {
       "title": "Pròxims passos",
       "go_dashboard": "Ves al tauler",
-      "login_register": "Inicia sessió / Registra't"
+      "login_register": "Inicia sessió / Registra't",
+      "step1": "Crea un compte",
+      "step2": "Completa el teu perfil",
+      "step3": "Crea una franja horària",
+      "step4": "Estigues atent/a a coincidències",
+      "step5": "Proposa o confirma una trobada",
+      "step6": "Uneix-te al xat Jitsi",
+      "read_more": "Llegeix la guia detallada →"
     },
     "global": {
       "title": "Comunitat global, hora local",
@@ -144,6 +152,70 @@
       "heading": "Nota final",
       "text": "Gaudeix connectant-te de la manera i al ritme que millor et vagi."
     }
+  },
+  "nextStepsGuide": {
+    "page_title": "Guia detallada de següents passos",
+    "title": "Guia detallada de següents passos",
+    "intro": "Aquesta guia amplia les passes de la pàgina inicial i t'acompanya en cada acció amb consells i enllaços.",
+    "steps": {
+      "step1": {
+        "heading": "Crea un compte",
+        "description": "Registra't amb el teu correu per accedir al tauler i al perfil. No calen xarxes socials.",
+        "bullets": {
+          "item1": "Utilitza un correu vàlid; els enllaços de verificació caduquen al cap de 24 hores.",
+          "item2": "Després de confirmar, se't redirigirà a la pàgina d'inici de sessió."
+        },
+        "link": "Ves a Inicia sessió / Registra't"
+      },
+      "step2": {
+        "heading": "Completa el teu perfil",
+        "description": "Afegeix les dades de naixement per habilitar coincidències basades en la ressonància. L'hora aproximada també serveix.",
+        "bullets": {
+          "item1": "Introdueix data, hora i lloc de naixement. Si no saps l'hora exacta, tria una aproximació.",
+          "item2": "Escriu una breu presentació que reflecteixi interessos i intencions. Sigues específic/a i genuí/na."
+        },
+        "callout": "Consell: El fus horari del perfil es detecta automàticament; el pots revisar al tauler.",
+        "link": "Edita el perfil"
+      },
+      "step3": {
+        "heading": "Crea una franja horària",
+        "description": "Ofereix una o més franges en què estiguis disponible. Guardem l'hora local i la convertim a UTC per planificar.",
+        "bullets": {
+          "item1": "Tria l'hora d'inici en el teu fus horari i defineix la durada (p. ex. 1–3 hores).",
+          "item2": "Afegir franges en dies diferents augmenta les possibilitats de coincidències ràpides."
+        },
+        "callout": "Coneixement de fusos: convertim automàticament la teva hora local a UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Obre el tauler"
+      },
+      "step4": {
+        "heading": "Estigues atent/a a coincidències",
+        "description": "Explora les coincidències suggerides segons la ressonància. Revisa notes de compatibilitat i interessos compartits.",
+        "bullets": {
+          "item1": "Apareixen noves propostes quan el teu perfil i franges estan disponibles.",
+          "item2": "Fes servir filtres i notes per seguir a qui vols contactar."
+        },
+        "callout": "Privadesa primer: tu decideixes quan i com participar."
+      },
+      "step5": {
+        "heading": "Proposa o confirma una trobada",
+        "description": "Quan l'interès és mutu, proposa una hora dins les franges solapades o accepta una proposta de la coincidència.",
+        "bullets": {
+          "item1": "Envia una invitació amable i concreta. Ofereix un o dos horaris possibles.",
+          "item2": "Confirma el pla al xat i passa a una trucada quan tots dos estigueu preparats."
+        },
+        "callout": "Consentiment i comoditat: avança al teu ritme. Està bé quedar-se només amb text."
+      },
+      "step6": {
+        "heading": "Uneix-te al xat Jitsi",
+        "description": "Utilitza Jitsi per a veu/vídeo opcional. Els navegadors d'escriptori (Firefox, Chrome) són compatibles; el xat de text sempre està disponible.",
+        "bullets": {
+          "item1": "Prova el micròfon/la càmera o mantén-los apagats i usa només el text.",
+          "item2": "Selecciona els dispositius adequats amb la fletxa petita al costat de les icones."
+        },
+        "link": "Llegeix la guia ràpida de Jitsi"
+      }
+    },
+    "closing": "Gaudeix connectant-te de la manera que et faci sentir millor."
   },
   "language": {
     "en": "Anglès",
@@ -300,5 +372,64 @@
   },
   "notifications": {
     "language_set_to": "L'idioma s'ha establert en"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Una constel·lació de connexions",
+      "subtitle": "On el disseny còsmic es troba amb la connexió humana — un refugi per a les ànimes afins guiades per les estrelles."
+    },
+    "vision": {
+      "heading": "✨ La visió",
+      "body1": "SoulTribe.chat connecta persones les cartes natals de les quals harmonitzen — ofereix emparellaments basats en l’astrologia, xats privats i trobades opcionals per ajudar que les ànimes afins es trobin d’una manera conscient i plena de significat. És més que una plataforma: un experiment viu de connexió còsmica, on l’astrologia esdevé un llenguatge compartit d’empatia i no pas de predicció.",
+      "body2": "Cada carta és una signatura única — una melodia a les estrelles que ressona amb altres persones i encén el reconeixement i la profunditat. Aquest espai acull cercadors que perceben que cada encontre té propòsit — que és la sincronicitat qui guia la connexió, i que el creixement i l’alegria emergeixen de relacions que semblen destinades. SoulTribe.chat ofereix un entorn segur, minimalista i conscient on aquestes connexions poden desplegar-se de forma natural."
+    },
+    "transition": "Abans d’anar més enllà, passem de la idea de connexió còsmica a la comunitat que crea — la pròpia SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Què és una SoulTribe?",
+      "body1": "Una SoulTribe no és només una xarxa ni una llista d’amics — és un camp de ressonància. És la xarxa invisible que connecta aquells que comparteixen freqüència, propòsit i ritme d’esperit. Quan coneixes membres del teu clan, el reconeixement és immediat: la conversa sembla un record, no pas una presentació. El temps en suavitza les vores i l’espai entre paraules esdevé sagrat.",
+      "body2": "Dins de la teva SoulTribe et veuen completament — valoren la teva essència, no la teva imatge. Cada persona es converteix en un mirall: alguns reflecteixen les teves fortaleses, d’altres els aprenentatges, i alguns et recorden allò que ets capaç d’arribar a ser. Desperten coratge, autenticitat i la certesa que pertànyer no es tracta de semblança, sinó de ressonància.",
+      "body3": "El teu clan pot estar format per artistes, somiadors, sanadors, científics o ànimes silencioses que viuen la seva veritat. El que us uneix no és l’origen ni la creença — és la vibració."
+    },
+    "power": {
+      "heading": "🔥 El poder del clan",
+      "body1": "Així com cada SoulTribe neix d’una ressonància compartida, la seva veritable força sorgeix de l’energia col·lectiva que creix a partir d’aquestes connexions.",
+      "body2": "Cresquem més ràpid, guarim més profundament i somiem més en gran quan altres persones caminen al nostre costat i ens fan de testimoni. Els humans sempre hem prosperat en cercles — és el nostre disseny ancestral. Un clan magnifica l’energia: allò que encén una persona, una altra ho sosté; el que somia una, una altra ho materialitza. En aquest camp compartit, les sincronicitats es multipliquen i l’evolució col·lectiva s’accelera.",
+      "body3": "Quan t’hi impliques, potser notes com la teva pròpia energia s’expandeix. Les idees agafen embranzida, la creativitat flueix, la intuïció s’afina. El clan es converteix en mirall, mestre i cercle d’empoderament — recordant-te que el camí de l’ànima mai no va ser pensat per recórrer-lo sol.",
+      "body4": "A SoulTribe.chat, la idea de “tribu” no va d’exclusivitat, sinó de sinergia. Aquí la individualitat i el sentit de comunitat conviuen amb harmonia. Cada membre aporta la seva freqüència, formant una constel·lació viva de consciència — cada punt de llum il·lumina els altres."
+    },
+    "astro": {
+      "heading": "☀️ Astro i ànima",
+      "body1": "L’astrologia a SoulTribe.chat uneix insight i connexió tot honorant la teva privadesa i consentiment. Només es fan servir les dades de naixement essencials per generar indicadors de compatibilitat, i no es comparteix ni emmagatzema res més enllà del necessari per a la teva experiència.",
+      "body2": "A partir de les teves dades de naixement, la plataforma calcula les posicions planetàries i les compara amb les d’altres persones per revelar àrees d’harmonia natural, de ressonància emocional i de potencial de creixement. En lloc de saturar-te amb informació, els resultats es destil·len en indicadors clars de compatibilitat — mostrant on s’alineen les energies i com poden evolucionar les relacions.",
+      "body3": "Això no és un servei de cites per signe; és ressonància d’ànima per disseny, on les cartes guien la comprensió i la connexió. Tant si el resultat és química romàntica, col·laboració creativa o una gran amistat, SoulTribe.chat t’ajuda a reconèixer per què certes persones et semblen immediatament familiars — i com cada encontre es converteix en un mirall per a l’ànima."
+    },
+    "soulmates": {
+      "heading": "💫 Ànimes afins i més enllà",
+      "body1": "La paraula «ànima bessona» sovint redueix la imaginació al romanticisme, però les ànimes afins apareixen de moltes formes. Poden ser l’amic que desperta de nou el teu riure, el mestre que desafia els teus límits o l’estrany la presència del qual et resulta immediatament familiar. SoulTribe.chat amplia aquesta idea — et guia no cap a «la persona», sinó cap a les moltes que porten peces de la teva evolució.",
+      "body2": "Algunes connexions encenen electricitat — intenses i transformadores. D’altres ofereixen una pau serena, arrelant la teva energia en una quietud compartida. Cada encontre és un pas cap a la plenitud, un recordatori que el viatge de l’ànima és un mosaic de trobades sagrades. Conèixer el teu clan és conèixer-te a tu mateix — reflectit en mil miralls vius."
+    },
+    "benefit": {
+      "heading": "🌍 Com aprofitar-ho",
+      "items": {
+        "item1": "Crea el teu mapa de l’ànima — introdueix les teves dades de naixement per generar el teu patró còsmic únic i descobrir què fa distintiva la teva energia.",
+        "item2": "Descobreix la ressonància — troba persones les cartes de les quals ressonen o complementen la teva. Aprèn com els alineaments planetaris indiquen harmonia, inspiració o propòsit kàrmic.",
+        "item3": "Connecta de manera autèntica — participa en converses conscients. SoulTribe.chat fomenta la presència, la curiositat i el respecte. Les paraules esdevenen instruments de comprensió, no d’actuació.",
+        "item4": "Creixeu junts — cada encontre és un intercanvi de llum. A través de la ressonància, el contrast o una dolça fricció, evoluciones. El sistema destaca els millors miralls d’aprenentatge — aquells que amplien la teva consciència en lloc de reflectir la zona de confort.",
+        "item5": "Trobeu-vos en presència — quan la preparació sorgeixi de forma natural, passeu del text a la veu, de la conversa a la cocreació. Cada encontre — digital o presencial — es converteix en un diàleg sagrat entre ànimes."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest per a una connexió amb ànima",
+      "intro": "Trobau la vostra freqüència i trobareu el vostre clan.",
+      "body1": "La connexió és sagrada — cada conversa arrelada en la presència pot convertir-se en un portal cap a la consciència. La tecnologia ha de servir la consciència, nodrint la intimitat en lloc de la distracció. L’astrologia, emprada amb compassió i claredat, no revela destinació sinó llibertat a través de la comprensió. Quan els clans s’alineen, formen constel·lacions radiants que brillen més plegats que aïllats.",
+      "body2": "SoulTribe.chat ens recorda que no som caminants sota un cel distant, sinó fils lluminosos en una tapisseria compartida de creació. Cada encontre és una espurna en el gran foc del despertar, cada conversa el batec d’un cor en el ritme d’alguna cosa immensa i sagrada.",
+      "closing": "Junts recordem qui som — un sol clan de moltes ànimes."
+    },
+    "join": {
+      "heading": "🌌 Uneix-te al viatge",
+      "body": "Si aquestes paraules ressonen amb tu, crea el teu perfil, explora el teu mapa de l’ànima i comença a conèixer esperits afins que comparteixen la teva freqüència. Cada nova connexió és una porta cap al descobriment, la reflexió i el creixement.",
+      "cta": "Comença el teu viatge a SoulTribe",
+      "footer": "El teu clan ja és allà fora — deixa que les estrelles et guiïn a casa."
+    }
   }
 }

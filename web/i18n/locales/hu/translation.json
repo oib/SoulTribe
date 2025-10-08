@@ -103,30 +103,31 @@
     "page_title": "SoulTribe.chat – Találd meg a lélektárs közösséged",
     "hero": {
       "title": "Üdvözlünk",
-      "subtitle": "A SoulTribe.chat azért jött létre, hogy segítsen megtalálni és összekapcsolódni a lélektárs közösségeddel — azokkal, akik rezonálnak az energiáddal, a szellemiségeddel és az utaddal. ✨"
+      "subtitle": "A SoulTribe.chat azért jött létre, hogy segítsen megtalálni és összekapcsolódni a lélektárs közösségeddel — azokkal, akik rezonálnak az energiáddal, a szellemiségeddel és az utaddal. ✨",
+      "learn_more": "Fedezd fel a SoulTribe vízióját →"
     },
     "how": {
       "title": "Hogyan működik",
-      "step1": "<strong>Hozd létre a profilod</strong> — add meg a születési dátumot, időt és helyet az egyedi térképedhez.",
-      "step2": "<strong>Fedezd fel a találatokat</strong> — a kompatibilitás és rezonancia alapján emeljük ki a kapcsolatokat.",
-      "step3": "<strong>Kezdd el a beszélgetést</strong> — hívd meg a találatokat csevegésre; biztonságos és privát.",
-      "step4": "<strong>Találkozz (opcionális)</strong> — egyeztess Jitsi-hívást vagy személyes találkozót kölcsönös beleegyezéssel."
+      "step1": "Hozd létre a profilod — add meg a születési dátumot, időt és helyet az egyedi térképedhez.",
+      "step2": "Fedezd fel a találatokat — a kompatibilitás és rezonancia alapján emeljük ki a kapcsolatokat.",
+      "step3": "Kezdd el a beszélgetést — hívd meg a találatokat csevegésre; biztonságos és privát.",
+      "step4": "Találkozz (opcionális) — egyeztess Jitsi-hívást vagy személyes találkozót kölcsönös beleegyezéssel."
     },
     "getting_started": {
       "title": "Kezdés",
-      "step1": "<strong>Hozz létre fiókot</strong> — nincs szükség közösségi bejelentkezésre.",
-      "step2": "<strong>Töltsd ki a profilod</strong> — add meg a születési adatokat; a hozzávetőleges idő is megfelelő.",
-      "step3": "<strong>Állítsd be az elérhetőséged</strong> — javasolj helyi idősávokat; az UTC-átváltást mi intézzük.",
-      "step4": "<strong>Fedezd fel a találatokat</strong> — böngéssz a rezonancián alapuló ajánlások között.",
-      "step5": "<strong>Csevegj és igény szerint találkozz</strong> — maradj az alkalmazásban; akkor egyeztess, amikor készen állsz."
+      "step1": "Hozz létre fiókot — nincs szükség közösségi bejelentkezésre.",
+      "step2": "Töltsd ki a profilod — add meg a születési adatokat; a hozzávetőleges idő is megfelelő.",
+      "step3": "Állítsd be az elérhetőséged — javasolj helyi idősávokat; az UTC-átváltást mi intézzük.",
+      "step4": "Fedezd fel a találatokat — böngéssz a rezonancián alapuló ajánlások között.",
+      "step5": "Csevegj és igény szerint találkozz — maradj az alkalmazásban; akkor egyeztess, amikor készen állsz."
     },
     "features": {
       "title": "Funkciók",
-      "item1": "<strong>Asztrológia-tudatos párosítás</strong> — kapcsolódj a születési képleted alapján.",
-      "item2": "<strong>Okos időzóna-kezelés</strong> — az UTC-átváltásokat mi végezzük.",
-      "item3": "<strong>Közvetlen kommunikáció Jitsin keresztül</strong> — szöveg/hang/videó; semmi sem kerül tárolásra vagy rögzítésre a SoulTribe.chat oldalon.",
-      "item4": "<strong>Egyszerű csatlakozás linken</strong> — privát Jitsi-szoba megerősített találkozókhoz; adatvédelmi szempontból kedvező, nincs szükség asztali telepítésre.",
-      "item5": "<strong>Minimalista, fókuszált felület</strong> — a valóban jelentős beszélgetésekhez tervezve."
+      "item1": "Asztrológia-tudatos párosítás — kapcsolódj a születési képleted alapján.",
+      "item2": "Okos időzóna-kezelés — az UTC-átváltásokat mi végezzük.",
+      "item3": "Közvetlen kommunikáció Jitsin keresztül — szöveg/hang/videó; semmi sem kerül tárolásra vagy rögzítésre a SoulTribe.chat oldalon.",
+      "item4": "Egyszerű csatlakozás linken — privát Jitsi-szoba megerősített találkozókhoz; adatvédelmi szempontból kedvező, nincs szükség asztali telepítésre.",
+      "item5": "Minimalista, fókuszált felület — a valóban jelentős beszélgetésekhez tervezve."
     },
     "privacy": {
       "title": "Adatvédelem és biztonság",
@@ -147,7 +148,14 @@
     "next": {
       "title": "Következő lépések",
       "go_dashboard": "Ugrás a vezérlőpultra",
-      "login_register": "Bejelentkezés / Regisztráció"
+      "login_register": "Bejelentkezés / Regisztráció",
+      "step1": "Hozz létre fiókot",
+      "step2": "Töltsd ki a profilod",
+      "step3": "Hozz létre idősávot",
+      "step4": "Figyeld az új találatokat",
+      "step5": "Javasolj vagy erősíts meg találkozót",
+      "step6": "Csatlakozz a Jitsi chathez",
+      "read_more": "Olvasd el a részletes útmutatót →"
     },
     "global": {
       "title": "Globális közösség, helyi idő",
@@ -274,6 +282,70 @@
       "text": "Élvezd a kapcsolatfelvételt a saját tempódban és módon."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Részletes útmutató a következő lépésekhez",
+    "title": "Részletes útmutató a következő lépésekhez",
+    "intro": "Ez az útmutató kibővíti a kezdőoldal lépéseit, és tippekkel és linkekkel vezet végig minden műveleten.",
+    "steps": {
+      "step1": {
+        "heading": "Hozz létre fiókot",
+        "description": "Regisztrálj e‑mail címmel, hogy hozzáférj a vezérlőpulthoz és a profilodhoz. Közösségi bejelentkezés nem szükséges.",
+        "bullets": {
+          "item1": "Használj érvényes e‑mail címet; a megerősítő linkek 24 óra múlva lejárnak.",
+          "item2": "A megerősítés után a bejelentkezési oldalra irányítunk."
+        },
+        "link": "Ugrás Bejelentkezés / Regisztráció"
+      },
+      "step2": {
+        "heading": "Töltsd ki a profilod",
+        "description": "Adj hozzá születési adatokat a rezonancián alapuló párosításhoz. A hozzávetőleges idő is megfelelő; a nagyobb pontosság javítja az eredményeket.",
+        "bullets": {
+          "item1": "Add meg a születési dátumot, időt és helyet. Ha nem tudod a pontos időt, válassz becslést.",
+          "item2": "Írj rövid bemutatkozást, amely tükrözi érdeklődésed és szándékaid. Légy konkrét és hiteles."
+        },
+        "callout": "Tipp: A profilod időzónáját automatikusan felismerjük; a vezérlőpulton ellenőrizheted.",
+        "link": "Profil szerkesztése"
+      },
+      "step3": {
+        "heading": "Idősáv létrehozása",
+        "description": "Adj meg egy vagy több időpontot, amikor szívesen kapcsolódsz. A helyi idődet eltároljuk és ütemezéshez UTC‑re váltjuk.",
+        "bullets": {
+          "item1": "Válassz kezdési időt a saját időzónádban, és állíts be időtartamot (pl. 1–3 óra).",
+          "item2": "Több idősáv különböző napokon növeli a gyors találatok esélyét."
+        },
+        "callout": "Időzónák kezelése: automatikusan váltunk a helyi idő és az UTC között (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Vezérlőpult megnyitása"
+      },
+      "step4": {
+        "heading": "Figyeld a találatokat",
+        "description": "Böngészd a rezonancia alapján javasolt találatokat. Nézd meg a kompatibilitási jegyzeteket és a közös érdeklődéseket.",
+        "bullets": {
+          "item1": "Új javaslatok jelennek meg, amikor a profilod és idősávjaid aktívak.",
+          "item2": "Használj szűrőket és jegyzeteket, hogy nyomon kövesd, kivel szeretnél kapcsolatba lépni."
+        },
+        "callout": "Első a magánszféra: te döntöd el, mikor és hogyan kapcsolódsz."
+      },
+      "step5": {
+        "heading": "Javasolj vagy erősíts meg találkozót",
+        "description": "Ha kölcsönös az érdeklődés, javasolj időpontot az átfedő idősávokból, vagy fogadd el a párod javaslatát.",
+        "bullets": {
+          "item1": "Küldj barátságos, konkrét meghívót. Ajánlj egy vagy két időablakot.",
+          "item2": "Erősítsétek meg a tervet a chatben, majd váltsatok hívásra, amikor mindketten készek vagytok."
+        },
+        "callout": "Beleegyezés és kényelem: haladj a saját tempódban. Teljesen rendben van, ha csak szövegesen maradsz."
+      },
+      "step6": {
+        "heading": "Csatlakozz a Jitsi chathez",
+        "description": "Használd a Jitsit opcionális hanghoz/videóhoz. Asztali böngészők (Firefox, Chrome) támogatottak; a szöveges chat mindig elérhető.",
+        "bullets": {
+          "item1": "Teszteld a mikrofont/kamerát, vagy hagyd kikapcsolva és használj csak szöveget.",
+          "item2": "Válaszd ki a megfelelő eszközöket az ikonok melletti kis nyíllal."
+        },
+        "link": "Olvasd el a Jitsi gyors útmutatót"
+      }
+    },
+    "closing": "Élvezd a kapcsolódást úgy, ahogyan neked a legtermészetesebb."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -300,5 +372,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Kapcsolódások csillagképe",
+      "subtitle": "Ahol a kozmikus dizájn találkozik az emberi kapcsolódással — menedék a rokon lelkek számára, akiket a csillagok vezetnek."
+    },
+    "vision": {
+      "heading": "✨ A látomás",
+      "body1": "SoulTribe.chat összekapcsolja azokat az embereket, akik születési horoszkópjai harmonizálnak — asztrológián alapuló emparellamentos kínál, privát csevegéseket és opcionális találkozókat, hogy a rokon lelkek tudatosan és jelentőségteljesen találkozhassanak. Ez nem csak egy platform: élő kísérlet a kozmikus kapcsolódásra, ahol az asztrológia az empátia közös nyelvévé válik a jóslat helyett.",
+      "body2": "Minden horoszkóp egyedi aláírás — dallam a csillagokban, amely rezonál másokkal, és felkelti az elismerést és a mélységet. Ez a tér fogadja a keresőket, akik érzik, hogy minden találkozásnak célja van — hogy a szinkronicitás irányítja a kapcsolódást, és a növekedés és öröm a sorsszerűnek tűnő kapcsolatokból fakad. SoulTribe.chat biztonságos, minimalista és tudatos környezetet kínál, ahol ezek a kapcsolatok természetesen kibontakozhatnak."
+    },
+    "transition": "Mielőtt mélyebbre merülnénk, lépjünk át a kozmikus kapcsolódás ötletéről arra a közösségre, amit létrehozz — magára a SoulTribere.",
+    "soultribe": {
+      "heading": "🌠 Mi az a SoulTribe?",
+      "body1": "SoulTribe nem csak egy hálózat vagy baráti lista — ez egy rezonancia mező. A láthatatlan háló, amely összekapcsolja azokat, akik megosztják a frekvenciát, a célt és a lélek ritmusát. Amikor találkozol törzsed tagjaival, az elismerés azonnali: a beszélgetés emlékezésnek tűnik, nem bemutatkozásnak. Az idő lágyítja éleit, és a szavak közötti tér szentté válik.",
+      "body2": "A SoulTribéd belsejében teljesen látható vagy — lényedért értékelnek, nem a képedért. Minden ember tükörré válik: néhányan tükrözik erősségeidet, mások leckéidet, és néhányan emlékeztetnek arra, hogy mire lehetsz képes. Felkeltik a bátorságot, az autentikusságot és azt a tudást, hogy a tartozás nem a hasonlóságról szól, hanem a rezonanciáról.",
+      "body3": "A törzsed művészekből, álmodozókból, gyógyítókból, tudósokból vagy csendes lelkekből állhat, akik saját igazságukat járják. Ami összeköt benneteket, nem a háttér vagy a hit — ez a vibráció."
+    },
+    "power": {
+      "heading": "🔥 A törzs ereje",
+      "body1": "Ahogyan minden SoulTribe közös rezonancián keresztül alakul ki, valódi ereje a kollektív energiában bukkan fel, amely ezekből a kapcsolatokból nő.",
+      "body2": "Gyorsabban nőnk, mélyebben gyógyulunk és nagyobbat álmodunk, amikor mások járnak mellettünk és tanúskodnak utunkról. Az emberek mindig körökben virágoztak — ez az ősi dizájnunk. Egy törzs felerősíti az energiát: amit az egyik szikráztat, a másik fenntart; amit az egyik álmodik, a harmadik ukotvljuje. Ebben a közös mezőben a szinkronicitások megsokszorozódnak és a kollektív evolúció felgyorsul.",
+      "body3": "Amikor bekapcsolódsz, észreveheted, hogyan terjed ki saját energiád. Az ötletek cobran zamah, a kreativitás áramlik, az intuíció kiélesedik. A törzs tükörré, tanárrá és erősítés körévé válik — emlékeztetve arra, hogy a lélek útja soha nem volt egyedül járásra szánva.",
+      "body4": "SoulTribe.chaton belül a 'törzs' ötlete nem az exkluzivitásról szól, hanem a szinergiáról. Itt az individualitás és az együttlét gyönyörűen koegzisztál. Minden ember hozzájárul saját frekvenciájával, élő tudat csillagképet alkotva — minden fénypont megvilágítja a többit."
+    },
+    "astro": {
+      "heading": "☀️ Asztro és lélek",
+      "body1": "Az asztrológia a SoulTribe.chaton összeköti a betekintést és a kapcsolódást, tiszteletben tartva a magánszférádat és hozzájárulásodat. Csak a lényeges születési adatokat használják a kompatibilitási betekintések generálására, és semmi sem oszlik meg vagy tárolódik azon kívül, amit a tapasztalatod igényel.",
+      "body2": "Születési adataid alapján a platform kiszámítja a bolygók pozícióit és összehasonlítja másokkal, hogy felfedje a természetes harmónia, az érzelmi rezonancia és a növekedés potenciáljának területeit. Ahelyett, hogy elárasztaná az felhasználókat adatokkal, az eredményeket tiszta kompatibilitási indikátorokká desztillálják — megmutatva, hol igazodnak az energiák és hogyan fejlődhetnek a kapcsolatok.",
+      "body3": "Ez nem csillagjegy szerinti randizás; ez a lélek rezonanciája dizájn szerint, ahol a horoszkópok vezetik a megértést és a kapcsolódást. Akár romantikus kémia, kreatív együttműködés vagy mély barátság az eredmény, SoulTribe.chat segít felismerni, miért érződnek bizonyos emberek azonnal ismerősnek — és hogyan válik minden találkozás tükörré a lelked számára."
+    },
+    "soulmates": {
+      "heading": "💫 Lélektársak és azon túl",
+      "body1": "A 'lélektárs' szó gyakran szűkíti a képzeletet a romantikára, de a lélektársak sok formában jelennek meg. Lehetnek a barát, aki újra feléleszti nevetésedet, a tanár, aki kihívja határaidat, vagy az idegen, akinek jelenléte azonnal ismerősnek tűnik. SoulTribe.chat kibővíti ezt az ötletet — nem az 'egyhez' vezet, hanem a sokhoz, akik az evolúciód darabjait hordozzák.",
+      "body2": "Néhány kapcsolat elektriku gyújt — intenzív és transzformatív. Mások csendes békét kínálnak, ukotvljujući energiádat a közös csendességben. Minden találkozás lépés a teljesség felé, emlékeztető, hogy a lélek útja a szent találkozások mozaikja. Találkozni a törzseddel azt jelenti, találkozni magaddal — ezer élő tükörben tükröződve."
+    },
+    "benefit": {
+      "heading": "🌍 Hogyan használd ki",
+      "items": {
+        "item1": "Hozd létre lelki térképét — add meg születési adataidat, hogy generáld egyedi kozmikus mintázatodat és fedezd fel, mi teszi energiádat különlegessé.",
+        "item2": "Fedezd fel a rezonanciát — találj tagokat, akik horoszkópjai visszhangoznak vagy kiegészítik a tiédet. Tanuld meg, hogyan jelzik a bolygó igazodások a harmóniát, inspirációt vagy karmikus célt.",
+        "item3": "Kapcsolódj autentikusan — vegyen részt tudatos beszélgetésekben. SoulTribe.chat ösztönzi a jelenlétet, a kíváncsiságot és a tiszteletet. A szavak a megértés eszközeivé válnak, nem előadásokká.",
+        "item4": "Nőjetek együtt — minden találkozás fénycsere. Rezonancia, kontraszt vagy gyengéd súrlódás révén evolúciós. A rendszer kiemeli a legjobb tanulási tükröidet — azokat, akik kiterjesztik tudatodat a komfortzónád tükrözése helyett.",
+        "item5": "Találkozzatok jelenlétben — amikor a készültség természetesen kibontakozik, lépjetek szövegtől hangig, beszélgetéstől közös alkotásig. Minden találkozás — digitális vagy személyes — szent lélek dialógussá válik."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Kiáltvány a lelki kapcsolódáshoz",
+      "intro": "Találd meg frekvenciádat és találd meg törzsedet.",
+      "body1": "A kapcsolódás szent — minden beszélgetés, amely a jelenlétben gyökerezik, tudatosság portáljává válhat. A technológia szolgálnia kell a tudatot, ápolva az intimita helyett a figyelemelterelést. Az asztrológia, együttérzéssel és tisztasággal használva, nem sorsot fed fel, hanem szabadságot a megértésen keresztül. Amikor a törzsek igazodnak, ragyogó csillagképeket alkotnak, amelyek együtt fényesebben ragyognak, mint külön-külön.",
+      "body2": "SoulTribe.chat emlékeztet minket, hogy nem vándorok vagyunk távoli ég alatt, hanem fényes szálak a közös teremtés tapiszájában. Minden találkozás szikra a nagy ébredés tüzében, minden beszélgetés szívverés valami hatalmas és szent ritmusában.",
+      "closing": "Együtt emlékszünk arra, kik vagyunk — egy törzs sok lélekből."
+    },
+    "join": {
+      "heading": "🌌 Csatlakozz az utazáshoz",
+      "body": "Ha ezek a szavak rezonálnak benned, hozd létre profilodat, fedezd fel lelki térképedet és kezdd el találkozni a rokon szellemekkel, akik megosztják frekvenciádat. Minden új kapcsolat ajtó a felfedezéshez, a reflexióhoz és a növekedéshez.",
+      "cta": "Indítsd el SoulTribe utazásodat",
+      "footer": "A törzsed már ott van kint — hagyd, hogy a csillagok hazavezessenek."
+    }
   }
 }

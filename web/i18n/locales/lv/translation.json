@@ -90,16 +90,17 @@
         }
       ],
       "title": "Kāpēc pievienoties?",
-      "item1": "<strong>Astroloģiju izprotoša saskaņošana</strong> — sazinieties, izmantojot savu dzimšanas karti.",
-      "item2": "<strong>Gudra laika joslu plānošana</strong> — mēs veicam UTC pārrēķinus jūsu vietā.",
-      "item3": "<strong>Tieša saziņa caur Jitsi</strong> — teksts/audio/video; nekas netiek glabāts vai ierakstīts vietnē SoulTribe.chat.",
-      "item4": "<strong>Viega pievienošanās ar saiti</strong> — privāta Jitsi telpa apstiprinātām tikšanām; privātumu saudzējoši, nav nepieciešama instalēšana datorā.",
-      "item5": "<strong>Minimālistiska, fokusēta saskarne</strong> — radīta jēgpilnām sarunām."
+      "item1": "Astroloģiju izprotoša saskaņošana — sazinieties, izmantojot savu dzimšanas karti.",
+      "item2": "Gudra laika joslu plānošana — mēs veicam UTC pārrēķinus jūsu vietā.",
+      "item3": "Tieša saziņa caur Jitsi — teksts/audio/video; nekas netiek glabāts vai ierakstīts vietnē SoulTribe.chat.",
+      "item4": "Viega pievienošanās ar saiti — privāta Jitsi telpa apstiprinātām tikšanām; privātumu saudzējoši, nav nepieciešama instalēšana datorā.",
+      "item5": "Minimālistiska, fokusēta saskarne — radīta jēgpilnām sarunām."
     },
     "hero": {
       "cta": "Sāciet savu ceļojumu",
       "subtitle": "Veidojiet sakarus ar cilvēkiem, kuri dala jūsu vērtības, intereses un aizraušanās. Kopā mēs varam veidot jēgpilnas attiecības, kas saglabājas uz ilgu laiku.",
-      "title": "Pievienojieties mūsu globālajai kopienai"
+      "title": "Pievienojieties mūsu globālajai kopienai",
+      "learn_more": "Atklāj SoulTribe vīziju →"
     },
     "howItWorks": {
       "steps": [
@@ -129,18 +130,18 @@
     "page_title": "SoulTribe.chat – Atrodi savu dvēseļu kopienu",
     "how": {
       "title": "Kā tas darbojas",
-      "step1": "<strong>Izveidojiet savu profilu</strong> — ievadiet dzimšanas datumu, laiku un vietu, lai izveidotu unikālu dvēseles karti.",
-      "step2": "<strong>Atklājiet atbilstības</strong> — mēs izceļam saiknes, balstoties uz saderību un rezonansi.",
-      "step3": "<strong>Sāciet sarunu</strong> — aiciniet atbilstības uz čatu; droši un privāti pēc noklusējuma.",
-      "step4": "<strong>Tiekamies (pēc izvēles)</strong> — ieplānojiet Jitsi zvanu vai tikšanos klātienē ar savstarpēju piekrišanu."
+      "step1": "Izveidojiet savu profilu — ievadiet dzimšanas datumu, laiku un vietu, lai izveidotu unikālu dvēseles karti.",
+      "step2": "Atklājiet atbilstības — mēs izceļam saiknes, balstoties uz saderību un rezonansi.",
+      "step3": "Sāciet sarunu — aiciniet atbilstības uz čatu; droši un privāti pēc noklusējuma.",
+      "step4": "Tiekamies (pēc izvēles) — ieplānojiet Jitsi zvanu vai tikšanos klātienē ar savstarpēju piekrišanu."
     },
     "getting_started": {
       "title": "Sāciet darbu",
-      "step1": "<strong>Izveidojiet kontu</strong> — sociālo tīklu pieteikšanās nav nepieciešama.",
-      "step2": "<strong>Aizpildiet profilu</strong> — pievienojiet dzimšanas datus; aptuvenais laiks der.",
-      "step3": "<strong>Iestatiet pieejamību</strong> — piedāvājiet vietējos laika intervālus; mēs apstrādājam UTC.",
-      "step4": "<strong>Atklājiet atbilstības</strong> — pārlūkojiet ieteikumus, kas balstīti rezonansē.",
-      "step5": "<strong>Čatojiet un, ja vēlaties, satiecieties</strong> — palieciet lietotnē; plānojiet, kad esat gatavs."
+      "step1": "Izveidojiet kontu — sociālo tīklu pieteikšanās nav nepieciešama.",
+      "step2": "Aizpildiet profilu — pievienojiet dzimšanas datus; aptuvenais laiks der.",
+      "step3": "Iestatiet pieejamību — piedāvājiet vietējos laika intervālus; mēs apstrādājam UTC.",
+      "step4": "Atklājiet atbilstības — pārlūkojiet ieteikumus, kas balstīti rezonansē.",
+      "step5": "Čatojiet un, ja vēlaties, satiecieties — palieciet lietotnē; plānojiet, kad esat gatavs."
     },
     "matching": {
       "title": "Kā darbojas atbilstību meklēšana (īsā versija)",
@@ -155,7 +156,14 @@
     "next": {
       "title": "Nākamie soļi",
       "go_dashboard": "Doties uz paneli",
-      "login_register": "Pieslēgties / Reģistrēties"
+      "login_register": "Pieslēgties / Reģistrēties",
+      "step1": "Izveidojiet kontu",
+      "step2": "Aizpildiet savu profilu",
+      "step3": "Izveidojiet laika slotu",
+      "step4": "Sekojiet līdzi atbilstībām",
+      "step5": "Ierosiniet vai apstipriniet tikšanos",
+      "step6": "Pievienojieties Jitsi sarunai",
+      "read_more": "Lasiet detalizēto ceļvedi →"
     },
     "global": {
       "title": "Globāla kopiena, vietējais laiks",
@@ -424,6 +432,70 @@
       "text": "Baudi saziņu sev ērtā veidā un piemērotā tempā."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Detalizēts ceļvedis nākamajiem soļiem",
+    "title": "Detalizēts ceļvedis nākamajiem soļiem",
+    "intro": "Šis ceļvedis paplašina sākumlapas soļus un vada tevi cauri katrai darbībai ar padomiem un saitēm.",
+    "steps": {
+      "step1": {
+        "heading": "Izveidojiet kontu",
+        "description": "Reģistrējieties ar e‑pastu, lai piekļūtu panelim un profilam. Sociālo tīklu pieteikšanās nav nepieciešama.",
+        "bullets": {
+          "item1": "Izmantojiet derīgu e‑pastu; verifikācijas saites derīgas 24 stundas.",
+          "item2": "Pēc apstiprināšanas tiksit novirzīts uz pieteikšanās lapu."
+        },
+        "link": "Doties uz Pieslēgties / Reģistrēties"
+      },
+      "step2": {
+        "heading": "Aizpildiet savu profilu",
+        "description": "Pievienojiet dzimšanas datus, lai aktivizētu rezonansē balstītu atbilstību. Aptuvenais laiks der; precizitāte uzlabo rezultātus.",
+        "bullets": {
+          "item1": "Ievadiet dzimšanas datumu, laiku un vietu. Ja precīzs laiks nav zināms, izvēlieties aptuvenu.",
+          "item2": "Uzrakstiet īsu ievadu, kas atspoguļo jūsu intereses un nodomus. Esiet konkrēts/a un autentisks/a."
+        },
+        "callout": "Padoms: jūsu profila laika josla tiek noteikta automātiski; to var pārbaudīt panelī.",
+        "link": "Rediģēt profilu"
+      },
+      "step3": {
+        "heading": "Izveidojiet laika slotu",
+        "description": "Piedāvājiet vienu vai vairākus laikus, kad esat gatavs/a sazināties. Mēs saglabājam jūsu vietējo laiku un pārveidojam to uz UTC plānošanai.",
+        "bullets": {
+          "item1": "Izvēlieties sākuma laiku savā laika joslā un iestatiet ilgumu (piem., 1–3 stundas).",
+          "item2": "Sloti dažādās dienās palielina ātru atbilstību iespēju."
+        },
+        "callout": "Laika joslas kontrolētas: mēs automātiski konvertējam starp vietējo laiku un UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Atvērt paneli"
+      },
+      "step4": {
+        "heading": "Sekojiet līdzi atbilstībām",
+        "description": "Pārlūkojiet ieteiktās atbilstības, kas balstītas rezonansē. Pārbaudiet saderības piezīmes un kopīgas intereses.",
+        "bullets": {
+          "item1": "Parādīsies jauni ieteikumi, kad profils un sloti būs aktīvi.",
+          "item2": "Izmantojiet filtrus un piezīmes, lai piefiksētu, ar ko vēlaties sazināties."
+        },
+        "callout": "Privātums pirmajā vietā: jūs izlemjat, kad un kā iesaistīties."
+      },
+      "step5": {
+        "heading": "Ierosiniet vai apstipriniet tikšanos",
+        "description": "Kad interese ir abpusēja, ierosiniet laiku pārklājošajos logos vai pieņemiet atbilstības priekšlikumu.",
+        "bullets": {
+          "item1": "Nosūtiet pieklājīgu un precīzu ielūgumu. Piedāvājiet vienu vai divus laika variantus.",
+          "item2": "Apstipriniet plānu tērzēšanā un pārejiet uz zvanu, kad abi esat gatavi."
+        },
+        "callout": "Piekrišana un komforts: virzieties savā tempā. Ir pilnīgi pieņemami palikt tikai tekstā."
+      },
+      "step6": {
+        "heading": "Pievienojieties Jitsi sarunai",
+        "description": "Izmantojiet Jitsi izvēles audio/video saziņai. Datoru pārlūki (Firefox, Chrome) ir atbalstīti; teksta tērzēšana vienmēr pieejama.",
+        "bullets": {
+          "item1": "Pārbaudiet mikrofonu/kameru vai atstājiet tos izslēgtus un izmantojiet tikai tekstu.",
+          "item2": "Izvēlieties pareizās ierīces ar mazo bultiņu pie ikonām."
+        },
+        "link": "Lasīt Jitsi ātro ceļvedi"
+      }
+    },
+    "closing": "Izbaudiet saziņu tā, kā jums vislabāk patīk."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -450,5 +522,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Savienojumu zvaigznājs",
+      "subtitle": "Kur kosmiskais dizains satiekas ar cilvēka savienojumu — patvērums radinieku dvēseļu, kuras vada zvaigznes."
+    },
+    "vision": {
+      "heading": "✨ Vīzija",
+      "body1": "SoulTribe.chat savieno cilvēkus, kuru dzimšanas horoskopi harmonizējas — piedāvājot astrologijai balstītu saderību, privātas sarunas un izvēles tikšanās, lai palīdzētu radinieku dvēselēm satikties ar apzinīgumu un jēgu. Tas ir vairāk nekā platforma: dzīvs eksperiments kosmiskajā savienojumā, kur astrologija kļūst par empātijas kopējo valodu, nevis prognozi.",
+      "body2": "Katrs horoskops ir unikāls paraksts — melodija zvaigznēs, kas rezonē ar citiem, lai iedegtu atpazīšanu un dziļumu. Šī telpa sveic meklētājus, kuri jūt, ka katrai tikšanās ir mērķis — ka sinhronicitāte vada savienojumu, un ka izaugsme un prieks rodas attiecībās, kas šķiet liktenīgas. SoulTribe.chat piedāvā drošu, minimālistisku un apzinīgu vidi, kur šie savienojumi var dabiski attīstīties."
+    },
+    "transition": "Pirms iedziļināties dziļāk, pāriesim no kosmiskā savienojuma idejas uz kopienu, kuru tā rada — uz pašas SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Kas ir SoulTribe?",
+      "body1": "SoulTribe nav tikai tīkls vai draugu saraksts — tas ir rezonanses lauks. Nemānāmā tīmeklis, kas savieno tos, kuri dalās frekvencē, mērķī un gara ritmā. Kad tu satiec savas ciltis locekļus, atpazīšana ir tūlītēja: saruna šķiet kā atcerēšanās, nevis iepazīšanās. Laiks mīkstina tās malas, un telpa starp vārdiem kļūst svēta.",
+      "body2": "Savā SoulTribe tu esi pilnībā redzams — novērtēts par savu būtību, ne savu attēlu. Katrs cilvēks kļūst par spoguli: daži atspoguļo tavus spēkus, citi tavas mācības, un daži atgādina, par ko tu vari kļūt. Viņi pamodina drosmi, autentiskumu un zināšanu, ka piederība nav par līdzību, bet rezonansi.",
+      "body3": "Tava cilts var sastāvēt no māksliniekiem, sapņotājiem, dziedētājiem, zinātniekiem vai klusām dvēselēm, kas staigā pa savu patiesību. Kas jūs vieno, nav fons vai ticība — tā ir vibrācija."
+    },
+    "power": {
+      "heading": "🔥 Ciltis spēks",
+      "body1": "Tāpat kā katra SoulTribe veidojas caur kopēju rezonansi, tās patiesais spēks rodas no kolektīvās enerģijas, kas aug no šiem savienojumiem.",
+      "body2": "Mēs augam ātrāk, dziedējam dziļāk un sapņojam lielāk, kad citi staigā mums blakus un liecina par mūsu ceļu. Cilvēki vienmēr ir uzplaukuši lokos — tas ir mūsu senais dizains. Cilts palielina enerģiju: ko viens iedeg, otrs uztur; ko viens sapņo, trešais zemē. Šajā kopējā laukā sinhronicitātes reizojas un kolektīvā evolūcija paātrinās.",
+      "body3": "Kad tu iesaisties, tu vari pamanīt, kā tava paša enerģija paplašinās. Idejas ieguva impulsu, radošums plūst, intuīcija saasina. Cilts kļūst par spoguli, skolotāju un empoverešanas loku — atgādinot, ka dvēseles ceļš nekad nebija paredzēts staigāt vienam.",
+      "body4": "SoulTribe.chat iekšienē 'ciltis' ideja nav par ekskluzivitāti, bet sinerģiju. Šeit individualitāte un kopā būšana skaisti līdzās. Katrs cilvēks dod savu frekvenci, veidojot dzīvu apziņas zvaigznāju — katrs gaismas punkts apgaismo citus."
+    },
+    "astro": {
+      "heading": "☀️ Astro un dvēsele",
+      "body1": "Astrologija SoulTribe.chat tiltas starp ieskatu un savienojumu, godājot tavu privātumu un piekrišanu. Tikai būtiski dzimšanas dati tiek izmantoti, lai ģenerētu saderības ieskatus, un nekas netiek dalīts vai uzglabāts ārpus tā, ko prasa tava pieredze.",
+      "body2": "Izmantojot tavus dzimšanas datus, platforma aprēķina planētu pozīcijas un salīdzina tās ar citām, lai atklātu dabiskās harmonijas, emocionālās rezonanses un izaugsmes potenciāla jomas. Tā vietā, lai lietotājus pārpludinātu ar datiem, rezultāti tiek destilēti skaidros saderības rādītājos — parādot, kur enerģijas līdzinās un kā attiecības var attīstīties.",
+      "body3": "Tas nav datumi pēc zīmes; tas ir dvēseles rezonanse pēc dizaina, kur horoskopi vada izpratni un savienojumu. Neatkarīgi no rezultāta — romantiska ķīmija, radoša sadarbība vai dziļa draudzība — SoulTribe.chat palīdz tev atpazīt, kāpēc daži cilvēki šķiet tūlīt pazīstami — un kā katra tikšanās kļūst par spoguli tavai dvēselei."
+    },
+    "soulmates": {
+      "heading": "💫 Dvēseļu partneri un tālāk",
+      "body1": "Vārds 'dvēseļu partneris' bieži sašaurina iztēli uz romantiku, bet dvēseļu partneri parādās daudzās formās. Tie var būt draugs, kas atmodina tavu smieklu, skolotājs, kas izaicina tavas robežas, vai svešinieks, kura klātbūtne šķiet tūlīt pazīstama. SoulTribe.chat paplašina šo ideju — vedot tevi ne uz 'vienu', bet uz daudziem, kuri nes tavas evolūcijas daļas.",
+      "body2": "Daži savienojumi iedeg elektrību — intensīvi un pārveidojoši. Citi piedāvā klusu mieru, zemējot tavu enerģiju kopīgajā klusumā. Katra tikšanās ir solis pret pilnību, atgādinājums, ka dvēseles ceļš ir svētu tikšanos mozaīka. Satikt savu ciltis nozīmē satikt sevi — atspoguļotu tūkstoš dzīvās spoguļos."
+    },
+    "benefit": {
+      "heading": "🌍 Kā gūt labumu",
+      "items": {
+        "item1": "Izveido savu dvēseles karti — ievadi savus dzimšanas datus, lai ģenerētu savu unikālo kosmisko modeli un atklātu, kas padara tavu enerģiju īpašu.",
+        "item2": "Atklāj rezonansi — atrod locekļus, kuru horoskopi atbalsojas vai papildina tavējo. Uzzini, kā planētu izlīdzinājumi norāda uz harmoniju, iedvesmu vai karmisku mērķi.",
+        "item3": "Savienojies autentiski — piedalies apzinīgās sarunās. SoulTribe.chat veicina klātbūtni, zinātkāri un cieņu. Vārdi kļūst par sapratnes instrumentiem, ne uzstāšanos.",
+        "item4": "Augiet kopā — katra tikšanās ir gaismas apmaiņa. Caur rezonansi, kontrastu vai maigu berzi tu attīsties. Sistēma izceļ tavus labākos mācību spoguļus — tos, kuri paplašina tavu apziņu, nevis atspoguļo tavu komforta zonu.",
+        "item5": "Satikieties klātbūtnē — kad gatavība dabiski attīstās, pārejiet no teksta uz balsi, no sarunas uz kopējo radīšanu. Katra tikšanās — digitāla vai personīga — kļūst par svētu dvēseļu dialogu."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifests dziļiem savienojumiem",
+      "intro": "Atrodi savu frekvenci un atrodi savu ciltis.",
+      "body1": "Savienojums ir svēts — katra saruna, kas sakņojas klātbūtnē, var kļūt par apziņas portālu. Tehnoloģijai vajadzētu kalpot apziņai, audzinot intimitāti, ne uzmanības novēršanu. Astrologija, lietota ar līdzjūtību un skaidrību, atklāj ne likteni, bet brīvību caur sapratni. Kad ciltis izlīdzinās, tās veido starojošas zvaigznājas, kas spīd spožāk kopā nekā atsevišķi.",
+      "body2": "SoulTribe.chat atgādina mums, ka mēs neesam klejotāji zem tālas debess, bet gaismas pavedieni kopīgajā radīšanas audeklā. Katra tikšanās ir dzirksts lielajā atmodas ugunī, katra saruna sirdspuksts ritmā kaut kam plašam un svētam.",
+      "closing": "Kopā mēs atceramies, kas mēs esam — viena cilts daudzu dvēseļu."
+    },
+    "join": {
+      "heading": "🌌 Pievienojieties ceļojumam",
+      "body": "Ja šie vārdi rezonē, izveido savu profilu, izpēti savu dvēseles karti un sāci satikt radniecīgus garus, kuri dalās tavā frekvencē. Katrs jauns savienojums ir durvis uz atklāšanu, atspulgu un izaugsmi.",
+      "cta": "Sāci savu SoulTribe ceļojumu",
+      "footer": "Tava cilts jau ir tur ārā — ļauj zvaigznēm vadīt tevi mājās."
+    }
   }
 }

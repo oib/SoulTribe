@@ -90,17 +90,16 @@
         }
       ],
       "title": "Cén fáth a bheith linn?",
-      "item1": "Meaitseáil ar eolas na réalteolaíochta — ceangail ag úsáid do chairt bhreithe.",
-      "item2": "Sceidealú cliste crios ama — déanaimid tiontuithe UTC duitse.",
-      "item3": "Cumarsáid dhíreach trí Jitsi — téacs/fuaim/físeán; ní stóráiltear ná taifeadtar aon rud ar SoulTribe.chat.",
-      "item4": "Nasc éasca le páirt a ghlacadh — seomra príobháideach Jitsi do chruinnithe deimhnithe; cairdiúil don phríobháideachas, gan suiteáil deisce.",
-      "item5": "Comhéadan íostach, dírithe — deartha do chomhráite bríocha."
+      "item1": "<strong>Meaitseáil ar eolas na réalteolaíochta</strong> — ceangail ag úsáid do chairt bhreithe.",
+      "item2": "<strong>Sceidealú cliste crios ama</strong> — déanaimid tiontuithe UTC duitse.",
+      "item3": "<strong>Cumarsáid dhíreach trí Jitsi</strong> — téacs/fuaim/físeán; ní stóráiltear ná taifeadtar aon rud ar SoulTribe.chat.",
+      "item4": "<strong>Nasc éasca le páirt a ghlacadh</strong> — seomra príobháideach Jitsi do chruinnithe deimhnithe; cairdiúil don phríobháideachas, gan suiteáil deisce.",
+      "item5": "<strong>Comhéadan íostach, dírithe</strong> — deartha do chomhráite bríocha."
     },
     "hero": {
       "cta": "Tosaigh do thuras",
       "subtitle": "Déan ceangal le daoine a roinneann do luachanna, do chuid spéiseanna agus do chuid paisean. Le chéile, is féidir linn naisc bhríocha a chruthú a mhaireann.",
-      "title": "Bí linn sa phobal dhomhanda",
-      "learn_more": "Faigh amach fís SoulTribe →"
+      "title": "Bí linn sa phobal dhomhanda"
     },
     "howItWorks": {
       "steps": [
@@ -130,18 +129,18 @@
     "page_title": "SoulTribe.chat – Faigh Do Threibh Anama",
     "how": {
       "title": "Conas a Oibríonn Sé",
-      "step1": "Cruthaigh Do Phróifíl — cuir dáta, am agus áit bhreithe leis chun do léarscáil anama uathúil a ghiniúint.",
-      "step2": "Aimsigh Do Mheaitseálacha — leagaimid béim ar naisc bunaithe ar chomhoiriúnacht agus ar athshondas.",
-      "step3": "Tosaigh an Comhrá — tabhair cuireadh do mheaitseálacha le haghaidh comhrá; sábháilte agus príobháideach ó thús.",
-      "step4": "Buail le Chéile (Roghnach) — sceidealigh glao Jitsi nó cruinniú duine le duine le toiliú frithpháirteach."
+      "step1": "<strong>Cruthaigh Do Phróifíl</strong> — cuir dáta, am agus áit bhreithe leis chun do léarscáil anama uathúil a ghiniúint.",
+      "step2": "<strong>Aimsigh Do Mheaitseálacha</strong> — leagaimid béim ar naisc bunaithe ar chomhoiriúnacht agus ar athshondas.",
+      "step3": "<strong>Tosaigh an Comhrá</strong> — tabhair cuireadh do mheaitseálacha le haghaidh comhrá; sábháilte agus príobháideach ó thús.",
+      "step4": "<strong>Buail le Chéile (Roghnach)</strong> — sceidealigh glao Jitsi nó cruinniú duine le duine le toiliú frithpháirteach."
     },
     "getting_started": {
       "title": "Ag Tosú",
-      "step1": "Cruthaigh do chuntas — níl logáil isteach sóisialta de dhíth.",
-      "step2": "Comhlánaigh do phróifíl — cuir sonraí breithe leis; tá am thart inghlactha.",
-      "step3": "Socraigh d’infhaighteacht — mol sliotáin ama áitiúla; déanaimid UTC.",
-      "step4": "Aimsigh meaitseálacha — breathnaigh ar mholtaí bunaithe ar athshondas.",
-      "step5": "Seol comhrá & bualadh le chéile más mian leat — fan san aip; sceideal nuair a bhíonn tú réidh."
+      "step1": "<strong>Cruthaigh do chuntas</strong> — níl logáil isteach sóisialta de dhíth.",
+      "step2": "<strong>Comhlánaigh do phróifíl</strong> — cuir sonraí breithe leis; tá am thart inghlactha.",
+      "step3": "<strong>Socraigh d’infhaighteacht</strong> — mol sliotáin ama áitiúla; déanaimid UTC.",
+      "step4": "<strong>Aimsigh meaitseálacha</strong> — breathnaigh ar mholtaí bunaithe ar athshondas.",
+      "step5": "<strong>Seol comhrá & bualadh le chéile más mian leat</strong> — fan san aip; sceideal nuair a bhíonn tú réidh."
     },
     "matching": {
       "title": "Conas a Oibríonn Meaitseáil (Leagan Gearr)",
@@ -493,4 +492,3 @@
     "contact_note": "For questions or requests related to privacy, please contact support.",
     "image_alt": "Privacy & Safety"
   }
-}

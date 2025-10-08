@@ -30,19 +30,19 @@
   },
   "landing": {
     "features": {
-      "item1": "<strong>Appariement basé sur l'astrologie</strong> – connectez-vous en utilisant votre thème natal.",
-      "item2": "<strong>Planification intelligente des fuseaux horaires</strong> – nous gérons les conversions UTC pour vous.",
-      "item3": "<strong>Messagerie privée et sécurisée</strong> – les conversations restent sur SoulTribe.chat.",
-      "item4": "<strong>Vidéo optionnelle via Jitsi</strong> – respectueux de la vie privée, aucune installation requise sur ordinateur.",
-      "item5": "<strong>Interface épurée et ciblée</strong> – conçue pour des conversations significatives.",
+      "item1": "Appariement basé sur l'astrologie – connectez-vous en utilisant votre thème natal.",
+      "item2": "Planification intelligente des fuseaux horaires – nous gérons les conversions UTC pour vous.",
+      "item3": "Messagerie privée et sécurisée – les conversations restent sur SoulTribe.chat.",
+      "item4": "Vidéo optionnelle via Jitsi – respectueux de la vie privée, aucune installation requise sur ordinateur.",
+      "item5": "Interface épurée et ciblée – conçue pour des conversations significatives.",
       "title": "Fonctionnalités"
     },
     "getting_started": {
-      "step1": "<strong>Créez votre compte</strong> – aucune connexion via les réseaux sociaux requise.",
-      "step2": "<strong>Complétez votre profil</strong> – ajoutez vos détails de naissance ; une heure approximative convient.",
-      "step3": "<strong>Définissez vos disponibilités</strong> – proposez des créneaux horaires locaux ; nous gérons le fuseau UTC.",
-      "step4": "<strong>Découvrez des correspondances</strong> – parcourez les suggestions basées sur la résonance.",
-      "step5": "<strong>Discutez et rencontrez-vous</strong> – tout se passe dans l'application ; planifiez quand vous êtes prêt.",
+      "step1": "Créez votre compte – aucune connexion via les réseaux sociaux requise.",
+      "step2": "Complétez votre profil – ajoutez vos détails de naissance ; une heure approximative convient.",
+      "step3": "Définissez vos disponibilités – proposez des créneaux horaires locaux ; nous gérons le fuseau UTC.",
+      "step4": "Découvrez des correspondances – parcourez les suggestions basées sur la résonance.",
+      "step5": "Discutez et rencontrez-vous – tout se passe dans l'application ; planifiez quand vous êtes prêt.",
       "title": "Pour commencer"
     },
     "global": {
@@ -58,13 +58,14 @@
     },
     "hero": {
       "subtitle": "SoulTribe.chat est un espace conçu pour vous aider à trouver et à vous connecter avec votre tribu d'âmes – des personnes qui résonnent avec votre énergie, votre esprit et votre parcours. ✨",
-      "title": "Bienvenue"
+      "title": "Bienvenue",
+      "learn_more": "Découvrez la vision SoulTribe →"
     },
     "how": {
-      "step1": "<strong>Créez votre profil</strong> – entrez votre date, heure et lieu de naissance pour générer votre carte d'âme unique.",
-      "step2": "<strong>Découvrez vos correspondances</strong> – nous mettons en évidence les connexions basées sur la compatibilité et la résonance.",
-      "step3": "<strong>Lancez la conversation</strong> – invitez vos correspondances à discuter ; conçu pour être sûr et privé.",
-      "step4": "<strong>Rencontrez-vous (optionnel)</strong> – planifiez un appel Jitsi ou une rencontre en personne d'un commun accord.",
+      "step1": "Créez votre profil – entrez votre date, heure et lieu de naissance pour générer votre carte d'âme unique.",
+      "step2": "Découvrez vos correspondances – nous mettons en évidence les connexions basées sur la compatibilité et la résonance.",
+      "step3": "Lancez la conversation – invitez vos correspondances à discuter ; conçu pour être sûr et privé.",
+      "step4": "Rencontrez-vous (optionnel) – planifiez un appel Jitsi ou une rencontre en personne d'un commun accord.",
       "title": "Comment ça marche"
     },
     "matching": {
@@ -74,7 +75,14 @@
     "next": {
       "go_dashboard": "Aller au tableau de bord",
       "login_register": "Connexion / Inscription",
-      "title": "Prochaines étapes"
+      "title": "Prochaines étapes",
+      "step1": "Créer un compte",
+      "step2": "Compléter votre profil",
+      "step3": "Créer un créneau horaire",
+      "step4": "Surveiller les correspondances",
+      "step5": "Proposer ou confirmer une rencontre",
+      "step6": "Rejoindre le chat Jitsi",
+      "read_more": "Lire le guide détaillé →"
     },
     "privacy": {
       "item1": "Nous ne demandons que ce qui est nécessaire pour permettre des connexions authentiques.",
@@ -236,6 +244,70 @@
       "text": "Profitez des échanges à votre manière et à votre rythme."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Guide détaillé des prochaines étapes",
+    "title": "Guide détaillé des prochaines étapes",
+    "intro": "Ce guide approfondit les étapes de la page d’accueil et vous accompagne dans chaque action avec des conseils et des liens.",
+    "steps": {
+      "step1": {
+        "heading": "Créer un compte",
+        "description": "Inscrivez-vous avec votre adresse e-mail pour accéder au tableau de bord et à votre profil. Aucune connexion via les réseaux sociaux n’est nécessaire.",
+        "bullets": {
+          "item1": "Utilisez une adresse valide ; les liens de vérification expirent après 24 heures.",
+          "item2": "Après confirmation, vous serez redirigé vers la page de connexion."
+        },
+        "link": "Aller à Connexion / Inscription"
+      },
+      "step2": {
+        "heading": "Compléter votre profil",
+        "description": "Ajoutez vos informations de naissance pour activer l’appariement basé sur la résonance. Une heure approximative suffit ; plus elle est précise, meilleurs sont les résultats.",
+        "bullets": {
+          "item1": "Saisissez la date, l’heure et le lieu de naissance. Si vous ne connaissez pas l’heure exacte, choisissez une estimation.",
+          "item2": "Rédigez une courte présentation qui reflète vos centres d’intérêt et vos intentions. Soyez précis et authentique."
+        },
+        "callout": "Astuce : le fuseau horaire de votre profil est détecté automatiquement ; vous pouvez le vérifier dans le tableau de bord.",
+        "link": "Modifier le profil"
+      },
+      "step3": {
+        "heading": "Créer un créneau horaire",
+        "description": "Proposez un ou plusieurs créneaux pendant lesquels vous êtes disponible. Nous enregistrons votre heure locale et la convertissons en UTC pour la planification.",
+        "bullets": {
+          "item1": "Choisissez une heure de début dans votre fuseau horaire et définissez une durée (par exemple 1–3 heures).",
+          "item2": "Des créneaux sur plusieurs jours augmentent les chances de trouver rapidement des correspondances."
+        },
+        "callout": "Gestion des fuseaux horaires : nous convertissons automatiquement entre l’heure locale et l’UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Ouvrir le tableau de bord"
+      },
+      "step4": {
+        "heading": "Surveiller les correspondances",
+        "description": "Parcourez les correspondances suggérées en fonction de la résonance. Vérifiez les notes de compatibilité et les intérêts communs.",
+        "bullets": {
+          "item1": "De nouvelles suggestions apparaissent lorsque votre profil et vos créneaux sont actifs.",
+          "item2": "Utilisez les filtres et les notes pour garder en mémoire les personnes que vous souhaitez contacter."
+        },
+        "callout": "Confidentialité d’abord : vous décidez quand et comment entrer en contact."
+      },
+      "step5": {
+        "heading": "Proposer ou confirmer une rencontre",
+        "description": "Lorsque l’intérêt est mutuel, proposez un horaire parmi les créneaux qui se chevauchent ou acceptez la proposition de votre match.",
+        "bullets": {
+          "item1": "Envoyez une invitation conviviale et précise. Proposez un ou deux créneaux.",
+          "item2": "Confirmez le plan dans le chat, puis passez à un appel lorsque vous êtes tous les deux prêts."
+        },
+        "callout": "Consentement et confort : avancez à votre rythme. Il est tout à fait possible de rester sur un échange textuel."
+      },
+      "step6": {
+        "heading": "Rejoindre le chat Jitsi",
+        "description": "Utilisez Jitsi pour la voix ou la vidéo en option. Les navigateurs de bureau (Firefox, Chrome) sont pris en charge ; le chat texte reste toujours disponible.",
+        "bullets": {
+          "item1": "Testez micro/caméra ou laissez-les coupés et restez sur le texte.",
+          "item2": "Choisissez les bons périphériques via la petite flèche à côté des icônes."
+        },
+        "link": "Lire le guide rapide Jitsi"
+      }
+    },
+    "closing": "Profitez de créer du lien de la manière qui vous convient le mieux."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -262,5 +334,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Une constellation de connexion",
+      "subtitle": "Là où le dessein cosmique rencontre le lien humain — un refuge pour les âmes apparentées guidées par les étoiles."
+    },
+    "vision": {
+      "heading": "✨ La vision",
+      "body1": "SoulTribe.chat relie des personnes dont les cartes natales se répondent — en proposant des correspondances basées sur l’astrologie, des conversations privées et des rencontres optionnelles pour que les âmes apparentées se retrouvent de manière consciente et porteuse de sens. C’est plus qu’une plateforme : une expérimentation vivante de la connexion cosmique où l’astrologie devient un langage partagé d’empathie plutôt qu’un outil de prédiction.",
+      "body2": "Chaque carte est une signature unique — une mélodie dans les étoiles qui résonne avec d’autres et fait naître reconnaissance et profondeur. Cet espace accueille les chercheurs qui sentent que chaque rencontre porte un sens — que la synchronicité guide la connexion, et que la croissance comme la joie émergent de relations qui semblent destinées. SoulTribe.chat propose un environnement sûr, minimaliste et conscient où ces liens peuvent s’épanouir naturellement."
+    },
+    "transition": "Avant d’aller plus loin, passons de l’idée de connexion cosmique à la communauté qu’elle engendre — la SoulTribe elle-même.",
+    "soultribe": {
+      "heading": "🌠 Qu’est-ce qu’une SoulTribe ?",
+      "body1": "Une SoulTribe n’est pas simplement un réseau ni une liste d’amis — c’est un champ de résonance. La toile invisible qui relie celles et ceux qui partagent fréquence, intention et rythme de l’esprit. Lorsque tu rencontres les membres de ta tribu, la reconnaissance est immédiate : la conversation ressemble à un souvenir plutôt qu’à une présentation. Le temps arrondit ses angles et l’espace entre les mots devient sacré.",
+      "body2": "Au sein de ta SoulTribe, tu es vu·e pleinement — on valorise ton essence, pas ton image. Chaque personne devient un miroir : certaines reflètent tes forces, d’autres tes leçons, et quelques-unes te rappellent ce que tu peux devenir. Elles éveillent courage, authenticité et la certitude que l’appartenance ne repose pas sur la similarité mais sur la résonance.",
+      "body3": "Ta tribu peut être composée d’artistes, de rêveurs, de guérisseurs, de scientifiques ou d’âmes silencieuses qui marchent leur vérité. Ce qui vous unit n’est pas l’origine ni la croyance — c’est la vibration."
+    },
+    "power": {
+      "heading": "🔥 La force de la tribu",
+      "body1": "Tout comme chaque SoulTribe naît d’une résonance partagée, sa véritable force se révèle dans l’énergie collective qui jaillit de ces connexions.",
+      "body2": "Nous grandissons plus vite, guérissons plus profondément et rêvons plus grand lorsque d’autres marchent à nos côtés et témoignent de notre chemin. L’être humain a toujours prospéré en cercles — c’est notre design ancestral. Une tribu amplifie l’énergie : ce qu’une personne allume, une autre le nourrit ; ce dont l’une rêve, une troisième l’ancre. Dans ce champ partagé, les synchronicités se multiplient et l’évolution collective s’accélère.",
+      "body3": "En t’impliquant, tu peux sentir ta propre énergie s’étendre. Les idées prennent de l’élan, la créativité circule, l’intuition s’affine. La tribu devient miroir, enseignante et cercle d’empouvoirement — rappelant que le chemin de l’âme n’a jamais été pensé pour être parcouru seul.",
+      "body4": "Sur SoulTribe.chat, la notion de <em>tribu</em> ne renvoie pas à l’exclusivité mais à la synergie. Ici, individualité et ensemble coexistent en beauté. Chacun apporte sa fréquence, formant une constellation vivante de conscience — chaque point de lumière illumine les autres."
+    },
+    "astro": {
+      "heading": "☀️ Astro & âme",
+      "body1": "L’astrologie sur SoulTribe.chat fait le pont entre intuition et lien tout en respectant ta vie privée et ton consentement. Seules les données de naissance essentielles sont utilisées pour générer des indications de compatibilité, et rien n’est partagé ou conservé au-delà de ce qu’exige ton expérience.",
+      "body2": "À partir de tes informations de naissance, la plateforme calcule les positions planétaires et les compare à celles d’autres membres pour révéler des zones d’harmonie naturelle, de résonance émotionnelle et de croissance potentielle. Au lieu de surcharger d’informations, les résultats sont condensés en indicateurs clairs de compatibilité — montrant où les énergies s’alignent et comment les relations peuvent évoluer.",
+      "body3": "Ce n’est pas un service de rencontres basé sur les signes ; c’est une résonance d’âme intentionnelle, où les cartes guident la compréhension et la connexion. Qu’il s’agisse de chimie romantique, de collaboration créative ou d’une profonde amitié, SoulTribe.chat t’aide à reconnaître pourquoi certaines personnes te semblent immédiatement familières — et comment chaque rencontre devient un miroir pour ton âme."
+    },
+    "soulmates": {
+      "heading": "💫 Âmes sœurs et au-delà",
+      "body1": "Le mot « âme sœur » réduit souvent l’imagination à la romance, mais les âmes sœurs se manifestent sous de nombreuses formes. Cela peut être l’ami qui ravive ton rire, l’enseignant qui défie tes limites ou l’inconnu dont la présence semble instantanément familière. SoulTribe.chat élargit cette idée — il te guide non pas vers « la » personne, mais vers les nombreuses qui portent des fragments de ton évolution.",
+      "body2": "Certaines connexions déclenchent l’électricité — intenses et transformatrices. D’autres offrent une paix silencieuse, ancrant ton énergie dans un calme partagé. Chaque rencontre est un pas vers la complétude, un rappel que le voyage de l’âme est une mosaïque de rencontres sacrées. Rencontrer ta tribu, c’est te rencontrer toi-même — reflété·e dans mille miroirs vivants."
+    },
+    "benefit": {
+      "heading": "🌍 Comment en profiter",
+      "items": {
+        "item1": "Crée ta carte de l’âme — saisis tes données de naissance pour générer ton motif cosmique unique et découvrir ce qui rend ton énergie singulière.",
+        "item2": "Découvre la résonance — trouve des membres dont les cartes reflètent ou complètent la tienne. Apprends comment les alignements planétaires indiquent harmonie, inspiration ou vocation karmique.",
+        "item3": "Connecte-toi avec authenticité — engage des conversations conscientes. SoulTribe.chat encourage la présence, la curiosité et le respect. Les mots deviennent des instruments de compréhension plutôt que de performance.",
+        "item4": "Grandissez ensemble — chaque rencontre est un échange de lumière. Par la résonance, le contraste ou une douce friction, tu évolues. La plateforme met en avant tes meilleurs miroirs d’apprentissage — ceux qui élargissent ta conscience au lieu de refléter ta zone de confort.",
+        "item5": "Retrouvez-vous en présence — lorsque la disponibilité émerge naturellement, passez du texte à la voix, de la conversation à la co-création. Chaque rencontre — en ligne ou en personne — devient un dialogue sacré des âmes."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifeste pour une connexion habitée",
+      "intro": "Trouve ta fréquence et tu trouveras ta tribu.",
+      "body1": "La connexion est sacrée — chaque conversation enracinée dans la présence peut devenir un portail vers la conscience. La technologie devrait servir la conscience, nourrir l’intimité plutôt que la distraction. L’astrologie, utilisée avec compassion et clarté, ne révèle pas le destin mais la liberté par la compréhension. Lorsque les tribus s’alignent, elles forment des constellations rayonnantes qui brillent plus fort ensemble que séparément.",
+      "body2": "SoulTribe.chat nous rappelle que nous ne sommes pas des voyageurs sous un ciel lointain, mais des fils lumineux tissés dans une tapisserie de création partagée. Chaque rencontre est une étincelle dans un feu plus vaste d’éveil, chaque conversation un battement de cœur dans le rythme de quelque chose de grand et de sacré.",
+      "closing": "Ensemble, nous nous souvenons de qui nous sommes — une seule tribu rassemblant de nombreuses âmes."
+    },
+    "join": {
+      "heading": "🌌 Rejoins le voyage",
+      "body": "Si ces mots résonnent en toi, crée ton profil, explore la carte de ton âme et commence à rencontrer des esprits affins qui partagent ta fréquence. Chaque nouvelle connexion est une porte vers la découverte, la réflexion et la croissance.",
+      "cta": "Commence ton voyage SoulTribe",
+      "footer": "Ta tribu est déjà là dehors — laisse les étoiles te guider jusqu’à la maison."
+    }
   }
 }

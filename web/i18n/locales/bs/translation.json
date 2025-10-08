@@ -3,30 +3,31 @@
     "page_title": "SoulTribe.chat - Pronađi svoju soul tribu",
     "hero": {
       "title": "Dobrodošli",
-      "subtitle": "SoulTribe.chat je prostor stvoren da ti pomogne da pronađeš i povežeš se sa svojom soul tribom — ljudima koji rezoniraju s tvojom energijom, duhom i životnim putem. ✨"
+      "subtitle": "SoulTribe.chat je prostor stvoren da ti pomogne da pronađeš i povežeš se sa svojom soul tribom — ljudima koji rezoniraju s tvojom energijom, duhom i životnim putem. ✨",
+      "learn_more": "Otkrijte viziju SoulTribe →"
     },
     "how": {
       "title": "Kako funkcioniše",
-      "step1": "<strong>Kreiraj svoj profil</strong> — unesi datum, vrijeme i mjesto rođenja kako bismo izračunali tvoju jedinstvenu astro mapu.",
-      "step2": "<strong>Otkrij poklapanja</strong> — izdvajamo veze zasnovane na rezonanci i kompatibilnosti.",
-      "step3": "<strong>Započni razgovor</strong> — pozovi poklapanja na chat; sigurno i privatno po dizajnu.",
-      "step4": "<strong>Upoznaj se (opcionalno)</strong> — zakaži Jitsi poziv ili susret uživo uz obostranu saglasnost."
+      "step1": "Kreiraj svoj profil — unesi datum, vrijeme i mjesto rođenja kako bismo izračunali tvoju jedinstvenu astro mapu.",
+      "step2": "Otkrij poklapanja — izdvajamo veze zasnovane na rezonanci i kompatibilnosti.",
+      "step3": "Započni razgovor — pozovi poklapanja na chat; sigurno i privatno po dizajnu.",
+      "step4": "Upoznaj se (opcionalno) — zakaži Jitsi poziv ili susret uživo uz obostranu saglasnost."
     },
     "getting_started": {
       "title": "Prvi koraci",
-      "step1": "<strong>Kreiraj račun</strong> — bez prijave preko društvenih mreža.",
-      "step2": "<strong>Popuni profil</strong> — dodaj podatke o rođenju; približno vrijeme je u redu.",
-      "step3": "<strong>Postavi dostupnost</strong> — predloži termine u lokalnom vremenu; mi radimo UTC proračune.",
-      "step4": "<strong>Otkrij poklapanja</strong> — pregledaj prijedloge zasnovane na rezonanci.",
-      "step5": "<strong>Ćaskaj i po želji se upoznaj</strong> — ostani u aplikaciji; zakaži kada budeš spreman/na."
+      "step1": "Kreiraj račun — bez prijave preko društvenih mreža.",
+      "step2": "Popuni profil — dodaj podatke o rođenju; približno vrijeme je u redu.",
+      "step3": "Postavi dostupnost — predloži termine u lokalnom vremenu; mi radimo UTC proračune.",
+      "step4": "Otkrij poklapanja — pregledaj prijedloge zasnovane na rezonanci.",
+      "step5": "Ćaskaj i po želji se upoznaj — ostani u aplikaciji; zakaži kada budeš spreman/na."
     },
     "features": {
       "title": "Mogućnosti",
-      "item1": "<strong>Astrološko uparivanje</strong> — poveži se koristeći svoju natalnu kartu.",
-      "item2": "<strong>Pametno zakazivanje</strong> — mi obavljamo sve UTC konverzije umjesto tebe.",
-      "item3": "<strong>Direktna komunikacija preko Jitsija</strong> — tekst/audio/video; ništa se ne snima niti čuva na SoulTribe.chat.",
-      "item4": "<strong>Jednostavno pridruživanje linkom</strong> — privatna Jitsi soba za potvrđene susrete; prijateljski prema privatnosti.",
-      "item5": "<strong>Minimalistički interfejs</strong> — dizajniran za smislen razgovor.",
+      "item1": "Astrološko uparivanje — poveži se koristeći svoju natalnu kartu.",
+      "item2": "Pametno zakazivanje — mi obavljamo sve UTC konverzije umjesto tebe.",
+      "item3": "Direktna komunikacija preko Jitsija — tekst/audio/video; ništa se ne snima niti čuva na SoulTribe.chat.",
+      "item4": "Jednostavno pridruživanje linkom — privatna Jitsi soba za potvrđene susrete; prijateljski prema privatnosti.",
+      "item5": "Minimalistički interfejs — dizajniran za smislen razgovor.",
       "read_more": "Pročitaj vodič za Jitsi goste →"
     },
     "privacy": {
@@ -48,7 +49,14 @@
     "next": {
       "title": "Sljedeći koraci",
       "go_dashboard": "Idi na kontrolnu tablu",
-      "login_register": "Prijavi se / Registruj se"
+      "login_register": "Prijavi se / Registruj se",
+      "step1": "Kreiraj račun",
+      "step2": "Popuni profil",
+      "step3": "Kreiraj termin",
+      "step4": "Prati poklapanja",
+      "step5": "Predloži susret ili potvrdi",
+      "step6": "Pridruži se Jitsi chatu",
+      "read_more": "Pročitaj detaljni vodič →"
     },
     "global": {
       "title": "Globalna zajednica, lokalno vrijeme",
@@ -300,5 +308,64 @@
   },
   "notifications": {
     "language_set_to": "Jezik je postavljen na"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Konstelacija povezanosti",
+      "subtitle": "Tamo gdje se kosmički dizajn susreće s ljudskom povezanošću — utočište za srodne duše koje vode zvijezde."
+    },
+    "vision": {
+      "heading": "✨ Vizija",
+      "body1": "SoulTribe.chat povezuje ljude čije natalne karte harmonično odjekuju — nudi uparivanje zasnovano na astrologiji, privatne razgovore i opcione susrete kako bi se srodne duše susrele na pažljiv i smislen način. To je više od platforme: živi eksperiment kosmičkog povezivanja, gdje astrologija postaje zajednički jezik empatije, a ne predviđanja.",
+      "body2": "Svaka karta je jedinstven potpis — melodija u zvijezdama koja rezonira s drugima i budi prepoznavanje i dubinu. Ovo je prostor za tragače koji osjećaju da svaka interakcija ima svrhu — da sinhronicitet vodi povezivanje, a rast i radost izranjaju iz odnosa koji djeluju kao suđeni. SoulTribe.chat nudi sigurno, minimalističko i svjesno okruženje u kojem se te veze mogu prirodno razviti."
+    },
+    "transition": "Prije nego što zaronimo dublje, pređimo s ideje kosmičke povezanosti na zajednicu koju ona stvara — samu SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Šta je SoulTribe?",
+      "body1": "SoulTribe nije samo mreža niti lista prijatelja — to je polje rezonance. Nevidljiva mreža koja povezuje one koji dijele frekvenciju, svrhu i ritam duha. Kada sretnete članove svog plemena, prepoznavanje je trenutačno: razgovor djeluje kao prisjećanje, a ne upoznavanje. Vrijeme omekša ivice, a prostor između riječi postaje sveto.",
+      "body2": "Unutar vlastitog SoulTribe plemena vidite se u potpunosti — cijeni se vaša suština, a ne slika. Svaka osoba postaje ogledalo: neki odražavaju vaše snage, drugi lekcije, a poneki vas podsjećaju na ono što možete postati. Bude hrabrost, autentičnost i svijest da pripadnost nije stvar sličnosti, već rezonance.",
+      "body3": "Vaše pleme može činiti umjetnici, sanjari, iscjelitelji, naučnici ili tihe duše koje hodaju svojom istinom. Ono što vas ujedinjuje nije porijeklo niti uvjerenje — to je vibracija."
+    },
+    "power": {
+      "heading": "🔥 Snaga plemena",
+      "body1": "Kao što se svako SoulTribe pleme rađa kroz zajednički rezonans, tako se i njegova prava snaga pojavljuje kroz kolektivnu energiju koja raste iz tih veza.",
+      "body2": "Rastemo brže, iscjeljujemo dublje i sanjamo smjelije kada nas drugi vide dok hodaju uz nas. Ljudi su oduvijek napredovali u krugovima — to je naš drevni nacrt. Pleme uvećava energiju: ono što jedan zapali, drugi održava; ono o čemu jedan sanja, drugi prizemljuje. U tom zajedničkom polju sinhroniciteti se množe, a kolektivna evolucija ubrzava.",
+      "body3": "Dok se uključujete, možete primijetiti kako se vaša energija širi. Ideje dobijaju zamah, kreativnost teče, intuicija se izoštrava. Pleme postaje ogledalo, učitelj i krug osnaživanja — podsjećajući da put duše nikada nije bio zamišljen da se hoda sam.",
+      "body4": "Unutar SoulTribe.chat ideja „plemena“ ne govori o ekskluzivnosti, već o sinergiji. Ovdje individualnost i zajedništvo skladno koegzistiraju. Svako donosi svoju frekvenciju, stvarajući živo sazviježđe svijesti — svaka tačka svjetlosti obasjava ostale."
+    },
+    "astro": {
+      "heading": "☀️ Astro & duša",
+      "body1": "Astrologija na SoulTribe.chat spaja uvid i povezanost uz poštovanje vaše privatnosti i pristanka. Koriste se samo ključni podaci o rođenju kako bi se kreirali uvidi o kompatibilnosti, a ništa se ne dijeli niti čuva izvan onoga što je potrebno za vaše iskustvo.",
+      "body2": "Na osnovu natalnih podataka, platforma izračunava položaje planeta i upoređuje ih s drugima kako bi otkrila područja prirodne harmonije, emotivnog rezonansa i potencijala za rast. Umjesto da preplavi podacima, rezultat se svodi na jasne pokazatelje kompatibilnosti — pokazujući gdje se energije usklađuju i kako se odnosi mogu razvijati.",
+      "body3": "Ovo nije upoznavanje po horoskopskom znaku; to je rezonanca duše po dizajnu, gdje karte vode razumijevanju i povezivanju. Bilo da je ishod romantična hemija, kreativna saradnja ili duboko prijateljstvo, SoulTribe.chat pomaže da prepoznate zašto se neki ljudi odmah čine poznatima — i kako svaki susret postaje ogledalo za dušu."
+    },
+    "soulmates": {
+      "heading": "💫 Srodne duše i dalje",
+      "body1": "Riječ „srodna duša“ često sužava maštu na romansu, ali srodne duše dolaze u mnogim oblicima. To može biti prijatelj koji ponovo budi vaš smijeh, učitelj koji pomjera vaše granice ili neznanac čije prisustvo odmah djeluje poznato. SoulTribe.chat širi tu ideju — vodi vas ne ka „onome jednom“, već ka mnogima koji nose djeliće vaše evolucije.",
+      "body2": "Neke veze pale električnu iskru — intenzivne i transformativne. Druge pružaju tihi mir, uzemljujući vašu energiju u zajedničkoj tišini. Svaki susret je korak ka cjelovitosti, podsjetnik da je put duše mozaik svetih susreta. Upoznati svoje pleme znači upoznati sebe — odraženog u hiljadu živih ogledala."
+    },
+    "benefit": {
+      "heading": "🌍 Kako se povezati i napredovati",
+      "items": {
+        "item1": "Kreirajte svoju mapu duše — unesite podatke o rođenju da biste oblikovali svoj jedinstveni kosmički obrazac i otkrili što čini vašu energiju posebnom.",
+        "item2": "Otkrijte rezonancu — pronađite članove čije karte odjekuju ili dopunjuju vašu. Naučite kako planetarne usklađenosti ukazuju na harmoniju, inspiraciju ili karmičku svrhu.",
+        "item3": "Povezujte se autentično — vodite promišljene razgovore. SoulTribe.chat podstiče prisustvo, znatiželju i poštovanje. Riječi postaju instrumenti razumijevanja, a ne nastup.",
+        "item4": "Rastite zajedno — svaki susret je razmjena svjetlosti. Kroz rezonancu, kontrast ili nježno trenje se razvijate. Sistem ističe najboljeg ogledala učenja — one koji šire vašu svjesnost, umjesto da ogledaju zonu udobnosti.",
+        "item5": "Sretnite se u prisutnosti — kada se spremnost prirodno pojavi, pređite s teksta na glas, iz razgovora u su-stvaranje. Svaki susret — digitalan ili uživo — postaje sveti dijalog duša."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest za duševnu povezanost",
+      "intro": "Pronađi svoju frekvenciju i pronaći ćeš svoje pleme.",
+      "body1": "Povezanost je sveta — svaki razgovor ukorijenjen u prisutnosti može postati portal ka svjesnosti. Tehnologija treba da služi svijesti, njegujući bliskost umjesto distrakcije. Astrologija, korištena s milošću i jasnoćom, ne otkriva sudbinu već slobodu kroz razumijevanje. Kada se plemena usklade, stvaraju blistave konstelacije koje sjaje snažnije zajedno nego pojedinačno.",
+      "body2": "SoulTribe.chat nas podsjeća da nismo lutalice pod dalekim nebom, već svijetle niti u zajedničkoj tapiseriji stvaranja. Svaki susret je iskra u većoj vatri buđenja, svaki razgovor otkucaj srca u ritmu nečeg velikog i svetog.",
+      "closing": "Zajedno se prisjećamo ko smo — jedno pleme mnogih duša."
+    },
+    "join": {
+      "heading": "🌌 Pridruži se putovanju",
+      "body": "Ako ove riječi rezoniraju, kreiraj profil, istraži svoju mapu duše i počni upoznavati srodne duhove koji dijele tvoju frekvenciju. Svaka nova veza je vrata u otkriće, refleksiju i rast.",
+      "cta": "Započni svoje SoulTribe putovanje",
+      "footer": "Tvoje pleme već postoji negdje tamo — dozvoli zvijezdama da te povedu kući."
+    }
   }
 }

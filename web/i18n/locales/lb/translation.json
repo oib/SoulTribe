@@ -3,30 +3,31 @@
     "page_title": "SoulTribe.chat - Fann deng Soul-Tribe",
     "hero": {
       "title": "Wëllkomm",
-      "subtitle": "SoulTribe.chat ass eng Plaz, déi dir hëlleft deng Soul-Tribe ze fannen – Mënschen déi mat denger Energie, dengem Geescht an dengem Liewenswee a Resonanz ginn. ✨"
+      "subtitle": "SoulTribe.chat ass eng Plaz, déi dir hëlleft deng Soul-Tribe ze fannen – Mënschen déi mat denger Energie, dengem Geescht an dengem Liewenswee a Resonanz ginn. ✨",
+      "learn_more": "Entdeckt d'SoulTribe-Vision →"
     },
     "how": {
       "title": "Wéi et funktionéiert",
-      "step1": "<strong>Profil uleeën</strong> — Datum, Zäit an Uert vum Gebuert agréieren fir deng eenzegaarteg Astro-Kaart ze bauen.",
-      "step2": "<strong>Matchen entdecken</strong> — mir hiewe Verbindungen eraus déi op Resonanz a Kompatibilitéit baséieren.",
-      "step3": "<strong>Gespréich starten</strong> — lued Matchen an de Chat an; sécher a privat no Konzept.",
-      "step4": "<strong>Treffen (optional)</strong> — plang e Jitsi-Call oder e perséinlecht Treffen mat géigesäitegem Zoustëmmung."
+      "step1": "Profil uleeën — Datum, Zäit an Uert vum Gebuert agréieren fir deng eenzegaarteg Astro-Kaart ze bauen.",
+      "step2": "Matchen entdecken — mir hiewe Verbindungen eraus déi op Resonanz a Kompatibilitéit baséieren.",
+      "step3": "Gespréich starten — lued Matchen an de Chat an; sécher a privat no Konzept.",
+      "step4": "Treffen (optional) — plang e Jitsi-Call oder e perséinlecht Treffen mat géigesäitegem Zoustëmmung."
     },
     "getting_started": {
       "title": "Ufänken",
-      "step1": "<strong>Benotzerkont erstellen</strong> — keng Social-Media-Umeldung néideg.",
-      "step2": "<strong>Profil ausfëllen</strong> — add Gebuerts-Detailer derbäi; eng ongeféier Zäit geet och.",
-      "step3": "<strong>Disponibilitéit setzen</strong> — proposéier Lokal-Zäitslots; mir këmmeren eis ëm d'UTC-Konversioun.",
-      "step4": "<strong>Matchen entdecken</strong> — kuck Resonanz-baséiert Virschléi duerch.",
-      "step5": "<strong>Chatten a bei Bedarf treffen</strong> — alles am App; plan wann s de prett bass."
+      "step1": "Benotzerkont erstellen — keng Social-Media-Umeldung néideg.",
+      "step2": "Profil ausfëllen — add Gebuerts-Detailer derbäi; eng ongeféier Zäit geet och.",
+      "step3": "Disponibilitéit setzen — proposéier Lokal-Zäitslots; mir këmmeren eis ëm d'UTC-Konversioun.",
+      "step4": "Matchen entdecken — kuck Resonanz-baséiert Virschléi duerch.",
+      "step5": "Chatten a bei Bedarf treffen — alles am App; plan wann s de prett bass."
     },
     "features": {
       "title": "Highlights",
-      "item1": "<strong>Astrologescht Matching</strong> — verbänn dech iwwer deng Natal-Kaart.",
-      "item2": "<strong>Zäit-Zonen intelligent</strong> — mir rechnen all UTC-Konversiounen fir dech.",
-      "item3": "<strong>Direkt Kommunikatioun via Jitsi</strong> — Text/Audio/Video; näischt gëtt op SoulTribe.chat gespäichert oder opgeholl.",
-      "item4": "<strong>Einfach iwwer Link bäitrieden</strong> — privat Jitsi-Raum fir confirméiert Meetups; Privatsphär-frëndlech.",
-      "item5": "<strong>Minimalistescht UI</strong> — fir déif Gespréicher designéiert.",
+      "item1": "Astrologescht Matching — verbänn dech iwwer deng Natal-Kaart.",
+      "item2": "Zäit-Zonen intelligent — mir rechnen all UTC-Konversiounen fir dech.",
+      "item3": "Direkt Kommunikatioun via Jitsi — Text/Audio/Video; näischt gëtt op SoulTribe.chat gespäichert oder opgeholl.",
+      "item4": "Einfach iwwer Link bäitrieden — privat Jitsi-Raum fir confirméiert Meetups; Privatsphär-frëndlech.",
+      "item5": "Minimalistescht UI — fir déif Gespréicher designéiert.",
       "read_more": "Lies d'Jitsi-Guide fir Gäscht →"
     },
     "privacy": {
@@ -48,7 +49,14 @@
     "next": {
       "title": "Nächst Schrëtt",
       "go_dashboard": "Op de Dashboard",
-      "login_register": "Login / Umellen"
+      "login_register": "Login / Umellen",
+      "step1": "Erstell e Kont",
+      "step2": "Fëll däi Profil aus",
+      "step3": "Leet eng Zäitslot un",
+      "step4": "Huel d'Matche/Résonnënten am A",
+      "step5": "Schlo oder bestäteg e Meetup vir",
+      "step6": "Maach mat am Jitsi-Chat",
+      "read_more": "Lies de detailléierte Guide →"
     },
     "global": {
       "title": "Global Gemeinschaft, lokal Zäit",
@@ -144,6 +152,70 @@
       "heading": "Ofschloss",
       "text": "Genéisst et, dech op déi Manéier an an deem Tempo ze vernetzen, dee fir dech passt."
     }
+  },
+  "nextStepsGuide": {
+    "page_title": "Detailleierte Guide fir déi nächst Schrëtt",
+    "title": "Detailleierte Guide fir déi nächst Schrëtt",
+    "intro": "Dëse Guide geet méi déif an d’Schrëtt vun der Haaptsäit an a féiert dech duerch all Aktioun mat Tipps a Linken.",
+    "steps": {
+      "step1": {
+        "heading": "Erstell e Kont",
+        "description": "Mell dech mat denger E‑Mail un, fir op den Dashboard an däi Profil zouzegräifen. Social‑Login ass net néideg.",
+        "bullets": {
+          "item1": "Benotz eng valabel E‑Mail; Verifikatiouns‑Linke lafen no 24 Stonnen of.",
+          "item2": "No der Confirmatioun gëss de op d’Login‑Säit weidergeleet."
+        },
+        "link": "Op Login / Umellen goen"
+      },
+      "step2": {
+        "heading": "Fëll däi Profil aus",
+        "description": "Füüüg Gebuertsdate bäi, fir Resonanz‑baséiert Matching z’erméiglechen. Eng ongeféier Zäit geet; méi Genauegkeet verbessert d’Resultater.",
+        "bullets": {
+          "item1": "Gëff Gebuertsdatum, ‑zäit an ‑plaz un. Wann d’exakt Zäit onbekannt ass, wielt eng Schätzung.",
+          "item2": "Schreif eng kuerz Aféierung, déi deng Interessen an Intentioune reflektéiert. Sief konkret an authentesch."
+        },
+        "callout": "Tipp: Deng Profil‑Zäitzon gëtt automatesch erkannt; s de kanns se um Dashboard nokucken.",
+        "link": "Profil änneren"
+      },
+      "step3": {
+        "heading": "Leet eng Zäitslot un",
+        "description": "Bidd eng oder méi Zäitraim un, wou s du wëlls verbannen. Mir späicheren deng lokal Zäit a konvertéiere se op UTC fir d’Plangen.",
+        "bullets": {
+          "item1": "Wielt eng Startzäit an denger Zäitzon a setz eng Dauer (z. B. 1–3 Stonnen).",
+          "item2": "Slots iwwer verschidde Deeg erhéijen d’Chance op séier Matcher."
+        },
+        "callout": "Zäitzonen am Grëff: mir konvertéiere automatesch tëscht lokaler Zäit an UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Dashboard opmaachen"
+      },
+      "step4": {
+        "heading": "Huel Matcher am A",
+        "description": "Kuck no proposéierte Matcher op Basis vu Resonanz. Kuck Notize fir Kompatibilitéit a gemeinsam Interessen.",
+        "bullets": {
+          "item1": "Nei Virschléi erschéngen, soubal Profil a Slots aktiv sinn.",
+          "item2": "Benotz Filteren a Notizen, fir am Iwwerbléck ze halen, wien s de wëlls kontaktéieren."
+        },
+        "callout": "Privatsphär fir d’éischt: s du decidéiers wéini a wéi s du dech engagéiers."
+      },
+      "step5": {
+        "heading": "Schlo e Meetup vir oder bestäteg",
+        "description": "Wann géigesäitegen Interessi besteet, proposéier eng Zäit am iwwerlappenden Zäitraum oder akzeptéier de Virschlag vum Match.",
+        "bullets": {
+          "item1": "Schéck eng frëndlech, präzis Invitatioun a bidd eng oder zwou Zäitsfënsteren un.",
+          "item2": "Bestätegt de Plang am Chat a gitt an e Ruff, wann dir béid prett sidd."
+        },
+        "callout": "Zoustëmmung a Wuelbefannen: hëls däin eegene Tempo. Et ass okay beim Text ze bleiwen."
+      },
+      "step6": {
+        "heading": "Maach mat am Jitsi‑Chat",
+        "description": "Benotz Jitsi fir optional Audio/Video. Desktop‑Browser (Firefox, Chrome) si supportéiert; Textchat ass ëmmer verfügbar.",
+        "bullets": {
+          "item1": "Test Mikro/Kamera oder looss se aus a benotz just Text.",
+          "item2": "Wielt déi richteg Geräter iwwer de klenge Pfeil nieft den Ikonen."
+        },
+        "link": "Lies de schnelle Jitsi‑Guide"
+      }
+    },
+    "closing": "Genéisst d’Verbannen op déi Manéier, déi dir am beschte läit."
   },
   "language": {
     "en": "Englesch",
@@ -254,7 +326,9 @@
     "login": "Login",
     "logout": "Logout"
   },
-  "imprint": { "title": "Impressum" },
+  "imprint": {
+    "title": "Impressum"
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrasse 7/6",
@@ -296,5 +370,66 @@
     "confirm_password_placeholder": "neit Passwuert bestätegen",
     "submit": "Neit Passwuert späicheren"
   },
-  "notifications": { "language_set_to": "Sprooch agestallt op" }
+  "notifications": {
+    "language_set_to": "Sprooch agestallt op"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Eng Konstellatioun vu Verbindungen",
+      "subtitle": "Wou kosmesch Design mat menschlecher Verbindung trëfft — e Schutz fir verwandte Séilen, déi vun de Stären gefouert ginn."
+    },
+    "vision": {
+      "heading": "✨ Déi Visoun",
+      "body1": "SoulTribe.chat verbënnt Leit, déi hir Gebuertsstiern harmoniséieren — bitt astrologiebasischt Matchen, privat Chat a fakultativ Treffen, fir verwandte Séilen ze hëllefen op eng bewosst an bedeitend Manéier ze treffen. Et ass méi wéi eng Plattform: e liewege Experiment vun kosmescher Verbindung, wou Astrologie eng gedeelt Sprooch vun Empathie gëtt anstatt Virsëtzung.",
+      "body2": "Jiddere Stier ass eng eenzegaarteg Ënnerschrëft — eng Melodie an den Stären, déi mat aneren ressonéiert a Erkennung an Déift entzündt. Dëse Raum begrësst déi, déi spieren, datt all Begegnung e Zweck huet — datt Synkronizitéit d'Verbindung leet, a datt Wuesstum an Freed duerch Relatiounen entsteet, déi bestëmmt schéngen. SoulTribe.chat bitt e sécheren, minimalisteschen a bewossten Ëmfeld, wou dës Verbindungen natierlech entfalte kënnen."
+    },
+    "transition": "Ier mer méi déif ginn, lass eis vun der Iddi vun kosmescher Verbindung op d'Gemeinschaft, déi se schaaft — op d'SoulTribe selwer — wiesselen.",
+    "soultribe": {
+      "heading": "🌠 Wat ass eng SoulTribe?",
+      "body1": "SoulTribe ass net just e Netzwierk oder eng Lëscht vu Frënn — et ass e Resonanzfeld. D'onsichtbar Web, déi déi verbënnt, déi Frequenz, Zweck a Rhythmus vum Géist deelen. Wann du Member vun denger Tribi trëffs, ass d'Erkennung direkt: d'Gespréich fillt sech wéi Erënnerung anstatt Virstellung. D'Zäit mächert hir Ränner weicher, a de Raum tëscht de Wierder gëtt hellig.",
+      "body2": "An denger SoulTribe bass du voll gesinn — geschätzt fir deng Wesen, net deng Bild. Jiddere Persoun gëtt e Spigel: e puer reflektéieren deng Stäerkten, anerer deng Lektiounen, a puer erënneren un wat du kaans ginn. Si wecken Courage, Authentizitéit a d'Wëssen, datt Gehören net iwwer Ähnlechkeet geet, mä iwwer Resonanz.",
+      "body3": "Deng Tribi kann aus Kënschtler, Dréimung, Heeler, Wëssenschaftler oder roueg Séilen bestoen, déi hir Wourecht goen. Wat Iech verbënnt ass net Hannergrond oder Glawen — et ass Vibratioun."
+    },
+    "power": {
+      "heading": "🔥 D'Kraaft vun enger Tribi",
+      "body1": "Genauss wéi all SoulTribe duerch gedeelt Resonanz entsteet, kënnt hir wierklech Kraaft aus der kollektiver Energie, déi aus dësen Verbindungen wuess.",
+      "body2": "Mir wuessen méi séier, heelen méi déif a dréimen méi grouss, wann anerer nebs eis goen an eisem Wee Zeien ginn. Mënschen hunn ëmmer an Zirkelen gedeeft — et ass eise aalt Design. Eng Tribi vergréissert Energie: wat een entzündt, e pueren erhält; wat een dréimt, e Drëtten erdaalt. An dësem gedeelten Feld multipliéieren Synkronizitéiten a kollektiv Evolutioun beschleunegt.",
+      "body3": "Wann du dich engagéiers, kéins du bemierken, wéi deng eegen Energie se erweidert. Iddien kréien Momentum, Kreativitéit fléisst, Intuitioun schärft. D'Tribi gëtt Spigel, Léier a Zirkel vun Empowerment — erënnernd drun, datt de Wee vun der Séil ni geduecht war fir eleng ze goen.",
+      "body4": "Op SoulTribe.chat, d'Idee vun 'Tribi' geet net ëm Exklusivitéit mä Synergie. Hei koexistéieren Individualitéit a Zesummesetzen schéin. Jiddere Persoun drot hir Frequenz bei, formt eng lieweg Konstellatioun vu Bewosstsein — jiddere Liichtpunkt beleechtert d'änner."
+    },
+    "astro": {
+      "heading": "☀️ Astro a Séil",
+      "body1": "Astrologie op SoulTribe.chat verbënnt Intuitioun a Verbindung, respektéiert deng Privatsphär a Zouhimmung. Nëmmen wesentlech Gebuertsdaten ginn benotzt fir Kompatibilitéitsinsichten ze generéieren, a näischt gëtt gedeelt oder gespäichert ausser deem, wat deng Erfahrung verlaangt.",
+      "body2": "Mam Gebrauch vun dengen Gebuertsdetailer berechent d'Plattform Planéitenpositiounen a vergläicht se mat aneren, fir Beräicher vu natierlecher Harmonie, emotionaler Resonanz a Wuesstumspotential opzedecken. Anstatt d'Benotzer mat Donnéeën ze iwwerlaaschten, ginn d'Resultater an kloer Indikatoren vu Kompatibilitéit destilléiert — weisen, wou Energien se ausriichten a wéi Relatiounen évolvéieren kënnen.",
+      "body3": "Dëst ass net Date no Zeechen; et ass Séilresonanz no Design, wou Stier Verständnis a Verbindung leeden. Egal ob d'Resultat romantesch Chimie, kreativ Kollaboratioun oder déif Frëndschaft ass, SoulTribe.chat hëlleft dir ze erkennen, firwat verschidde Leit direkt vertraut fillen — a wéi all Begegnung e Spigel fir deng Séil gëtt."
+    },
+    "soulmates": {
+      "heading": "💫 Séilpartner a méi",
+      "body1": "D'Wuert 'Séilpartner' limitéiert dacks d'Imaginatioun op Romantik, mä Séilpartner erschéngen an ville Formen. Si kënnen de Frënd sinn, deen deng Lach erëm weckt, de Léier, deen deng Limitten erausfuerdert, oder den Unbekannten, dessen Präsenz direkt vertraut fillt. SoulTribe.chat erweidert dës Iddi — féiert dech net op den 'Einen', mä op d'Villen, déi Stécker vun denger Evolutioun droen.",
+      "body2": "Verschidde Verbindungen entzünden Elektrizitéit — intensiv a transformativ. Anerer bidden roueg Fridden, erdaalen deng Energie an gedeelt Rou. All Begegnung ass e Schrëtt op Vollständegkeet, e Erinnerung drun, datt d'Rees vun der Séil e Mosaik vu helligen Begegnungen ass. Deng Tribi treffen ass dech selwer treffen — reflektéiert an dausend liewegen Spegelen."
+    },
+    "benefit": {
+      "heading": "🌍 Wéi profitéieren",
+      "items": {
+        "item1": "Erstelle deng Séilkaart — gëff deng Gebuertsdetailer an fir deng eenzegaarteg kosmesch Muster ze generéieren a ze entdecken, wat deng Energie besonnesch mécht.",
+        "item2": "Entdeck Resonanz — fann Member, déi hir Stier widderhuelen oder kompletéieren deng. Lier wéi Planéitenalignementer Harmonie, Inspiratioun oder karmescht Zweck ukaze.",
+        "item3": "Verbind authentesch — bedeel dech un bewosst Gespréicher. SoulTribe.chat encouragéiert Präsenz, Kuriostéit a Respekt. Wierder ginn Instrumenter vu Verständnis, net Performance.",
+        "item4": "Wuesst zesummen — all Begegnung ass e Liichtaustausch. Duerch Resonanz, Kontrast oder zart Reibung, évoluéiers du. Den System markéiert deng bescht Léierenspeigelen — déi, déi deng Bewosstsein erweideren anstatt deng Komfortzoun ze reflektéieren.",
+        "item5": "Trefft Iech a Präsenz — wann Bereitschaft natierlech entfalt, geet vun Text op Stëmm, vun Gespréich op Co-Kreatioun. All Begegnung — digital oder perséinlech — gëtt e helligen Dialog vu Séilen."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest fir déif Verbindungen",
+      "intro": "Fann deng Frequenz, a finn deng Tribi.",
+      "body1": "Verbindung ass hellig — all Gespréich, dat a Präsenz verwurzelt ass, kann e Portal zur Bewosstsein ginn. Technologie sollt Bewosstsein déngen, Intimität ernähren anstatt Distraction. Astrologie, mat Mëtsëllechkeet a Klarheet benotzt, reveléiert net Schicksal mä Fräiheet duerch Verständnis. Wann Tribien se alignéieren, forme se strahlend Konstellatiounen, déi méi hell schéngen zesummen wéi separat.",
+      "body2": "SoulTribe.chat erënnert eis drun, datt mir net Wanderer ënner engem fernen Himmel sinn, mä lieweg Fiedemen am gedeelten Tapiss vun der Kreatioun. All Begegnung ass eng Fonk am groussen Feier vum Erwachen, all Gespréich e Häerzschlag am Rhythmus vun eppes Groussen a Helligen.",
+      "closing": "Zesummen erënnere mir eis, wien mir sinn — eng Tribi vu ville Séilen."
+    },
+    "join": {
+      "heading": "🌌 Maach mat bei der Rees",
+      "body": "Wann dës Wierder an dir resonéieren, erstelle deng Profil, entdeck deng Séilkaart a fäng un verwandte Geister ze treffen, déi deng Frequenz deelen. All nei Verbindung ass eng Dier zu Entdeckung, Reflexioun a Wuesstum.",
+      "cta": "Start deng SoulTribe Rees",
+      "footer": "Deng Tribi ass scho dobaussen — lass d'Stären dech heemféieren."
+    }
+  }
 }

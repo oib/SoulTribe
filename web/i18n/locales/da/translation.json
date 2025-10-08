@@ -103,30 +103,31 @@
     "page_title": "SoulTribe.chat – Find din sjælsstamme",
     "hero": {
       "title": "Velkommen",
-      "subtitle": "SoulTribe.chat er et rum skabt til at hjælpe dig med at finde og forbinde med din sjælsstamme — mennesker, der resonnerer med din energi, din ånd og din rejse. ✨"
+      "subtitle": "SoulTribe.chat er et rum skabt til at hjælpe dig med at finde og forbinde med din sjælsstamme — mennesker, der resonnerer med din energi, din ånd og din rejse. ✨",
+      "learn_more": "Opdag SoulTribe-visionen →"
     },
     "how": {
       "title": "Sådan fungerer det",
-      "step1": "<strong>Opret din profil</strong> — angiv fødselsdato, -tid og -sted for at generere dit unikke sjælskort.",
-      "step2": "<strong>Opdag dine matches</strong> — vi fremhæver forbindelser baseret på kompatibilitet og resonans.",
-      "step3": "<strong>Start samtalen</strong> — inviter matches til at chatte; sikkert og privat fra start.",
-      "step4": "<strong>Mød hinanden (valgfrit)</strong> — planlæg et Jitsi-opkald eller et fysisk møde ved gensidigt samtykke."
+      "step1": "Opret din profil — angiv fødselsdato, -tid og -sted for at generere dit unikke sjælskort.",
+      "step2": "Opdag dine matches — vi fremhæver forbindelser baseret på kompatibilitet og resonans.",
+      "step3": "Start samtalen — inviter matches til at chatte; sikkert og privat fra start.",
+      "step4": "Mød hinanden (valgfrit) — planlæg et Jitsi-opkald eller et fysisk møde ved gensidigt samtykke."
     },
     "getting_started": {
       "title": "Kom godt i gang",
-      "step1": "<strong>Opret din konto</strong> — ingen sociale logins kræves.",
-      "step2": "<strong>Udfyld din profil</strong> — tilføj fødselsoplysninger; et cirka‑tidspunkt er fint.",
-      "step3": "<strong>Angiv din tilgængelighed</strong> — foreslå lokale tidsrum; vi håndterer UTC.",
-      "step4": "<strong>Opdag matches</strong> — gennemse anbefalinger baseret på resonans.",
-      "step5": "<strong>Chat og mød hinanden om ønsket</strong> — bliv i appen; planlæg, når du er klar."
+      "step1": "Opret din konto — ingen sociale logins kræves.",
+      "step2": "Udfyld din profil — tilføj fødselsoplysninger; et cirka‑tidspunkt er fint.",
+      "step3": "Angiv din tilgængelighed — foreslå lokale tidsrum; vi håndterer UTC.",
+      "step4": "Opdag matches — gennemse anbefalinger baseret på resonans.",
+      "step5": "Chat og mød hinanden om ønsket — bliv i appen; planlæg, når du er klar."
     },
     "features": {
       "title": "Funktioner",
-      "item1": "<strong>Astrologi‑bevidst matching</strong> — forbind ved hjælp af din fødselshoroskop.",
-      "item2": "<strong>Klog tidszoneplanlægning</strong> — vi håndterer UTC‑konverteringerne for dig.",
-      "item3": "<strong>Direkte kommunikation via Jitsi</strong> — tekst/lyd/video; intet gemmes eller optages på SoulTribe.chat.",
-      "item4": "<strong>Nemt at deltage via link</strong> — privat Jitsi‑rum til bekræftede møder; privatlivsvenligt, ingen desktop‑installation nødvendig.",
-      "item5": "<strong>Minimalistisk, fokuseret UI</strong> — designet til meningsfulde samtaler."
+      "item1": "Astrologi‑bevidst matching — forbind ved hjælp af din fødselshoroskop.",
+      "item2": "Klog tidszoneplanlægning — vi håndterer UTC‑konverteringerne for dig.",
+      "item3": "Direkte kommunikation via Jitsi — tekst/lyd/video; intet gemmes eller optages på SoulTribe.chat.",
+      "item4": "Nemt at deltage via link — privat Jitsi‑rum til bekræftede møder; privatlivsvenligt, ingen desktop‑installation nødvendig.",
+      "item5": "Minimalistisk, fokuseret UI — designet til meningsfulde samtaler."
     },
     "privacy": {
       "title": "Privatliv og sikkerhed",
@@ -147,7 +148,14 @@
     "next": {
       "title": "Næste skridt",
       "go_dashboard": "Gå til Dashboard",
-      "login_register": "Log ind / Registrer"
+      "login_register": "Log ind / Registrer",
+      "step1": "Opret en konto",
+      "step2": "Udfyld din profil",
+      "step3": "Opret et tidsrum",
+      "step4": "Hold øje med matches",
+      "step5": "Foreslå eller bekræft et møde",
+      "step6": "Deltag i Jitsi-chatten",
+      "read_more": "Læs den detaljerede guide →"
     },
     "global": {
       "title": "Globalt fællesskab, lokal tid",
@@ -273,6 +281,70 @@
       "text": "Nyd at knytte kontakter på den måde og i det tempo, der passer dig bedst."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Detaljeret guide til næste skridt",
+    "title": "Detaljeret guide til næste skridt",
+    "intro": "Guiden uddyber trinnene fra landingssiden og fører dig gennem hver handling med tips og links.",
+    "steps": {
+      "step1": {
+        "heading": "Opret en konto",
+        "description": "Registrér dig med din e-mail for at få adgang til dashboard og profil. Sociale logins er ikke nødvendige.",
+        "bullets": {
+          "item1": "Brug en gyldig e-mail; bekræftelseslinket udløber efter 24 timer.",
+          "item2": "Når du har bekræftet, bliver du sendt videre til login."
+        },
+        "link": "Gå til Log ind / Registrer"
+      },
+      "step2": {
+        "heading": "Udfyld din profil",
+        "description": "Tilføj fødselsoplysninger for at aktivere matching baseret på resonans. Et cirka-tidspunkt er helt fint.",
+        "bullets": {
+          "item1": "Indtast fødselsdato, tidspunkt og sted. Hvis du ikke kender det præcise tidspunkt, så vælg et estimat.",
+          "item2": "Skriv en kort intro, der afspejler dine interesser og intentioner. Vær konkret og ærlig."
+        },
+        "callout": "Tip: Vi finder automatisk din profils tidszone; du kan tjekke den på dashboardet.",
+        "link": "Redigér profil"
+      },
+      "step3": {
+        "heading": "Opret et tidsrum",
+        "description": "Tilbyd et eller flere tidsrum, hvor du gerne vil mødes. Vi gemmer din lokale tid og konverterer til UTC til planlægning.",
+        "bullets": {
+          "item1": "Vælg starttidspunkt i din tidszone, og angiv varighed (fx 1–3 timer).",
+          "item2": "Flere tidsrum på forskellige dage øger chancen for hurtige matches."
+        },
+        "callout": "Tidszoner håndteres automatisk: vi konverterer mellem lokal tid og UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Åbn dashboard"
+      },
+      "step4": {
+        "heading": "Hold øje med matches",
+        "description": "Gennemse foreslåede matches baseret på resonans. Tjek noter om kompatibilitet og delte interesser.",
+        "bullets": {
+          "item1": "Der dukker nye forslag op, når din profil og tidsrum er aktive.",
+          "item2": "Brug filtre og noter til at holde styr på, hvem du vil kontakte."
+        },
+        "callout": "Privatliv først: du bestemmer, hvornår og hvordan du engagerer dig."
+      },
+      "step5": {
+        "heading": "Foreslå eller bekræft et møde",
+        "description": "Når interessen er gensidig, kan du foreslå et tidspunkt inden for overlappende slots eller acceptere din matchs forslag.",
+        "bullets": {
+          "item1": "Send en venlig og præcis invitation. Tilbyd et eller to tidsvinduer.",
+          "item2": "Bekræft planen i chatten, og gå videre til et opkald, når begge er klar."
+        },
+        "callout": "Samtykke og komfort: gå i dit eget tempo. Det er fint at blive i tekstformat."
+      },
+      "step6": {
+        "heading": "Deltag i Jitsi-chatten",
+        "description": "Brug Jitsi til valgfri lyd/video. Desktop-browsere (Firefox, Chrome) understøttes; tekstchat er altid tilgængelig.",
+        "bullets": {
+          "item1": "Test mikrofon/kamera, eller lad dem være slukkede og brug kun tekst.",
+          "item2": "Vælg de rigtige enheder med den lille pil ved siden af ikonene."
+        },
+        "link": "Læs den hurtige Jitsi-guide"
+      }
+    },
+    "closing": "Nyd at forbinde på den måde, der føles rigtig for dig."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -299,5 +371,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Et konstellation af forbindelser",
+      "subtitle": "Hvor kosmisk design møder menneskelig forbindelse — et fristed for beslægtede sjæle, guidet af stjernerne."
+    },
+    "vision": {
+      "heading": "✨ Visionen",
+      "body1": "SoulTribe.chat forbinder mennesker, hvis fødselshoroskop harmonerer — den tilbyder astrologisk baseret matchning, private chats og valgfrie møder, så beslægtede sjæle kan finde hinanden på en opmærksom og meningsfuld måde. Det er mere end en platform: et levende eksperiment i kosmisk forbindelse, hvor astrologi bliver et fælles sprog for empati frem for forudsigelse.",
+      "body2": "Hvert horoskop er en unik signatur — en melodi i stjernerne, der resonerer med andre og vækker genkendelse og dybde. Dette rum byder søgende velkommen, som mærker, at hver eneste interaktion har et formål — at det er synkroniciteten, der guider forbindelsen, og at vækst og glæde spirer gennem relationer, der føles skæbnebestemte. SoulTribe.chat tilbyder et sikkert, minimalistisk og bevidst miljø, hvor disse forbindelser kan udfolde sig naturligt."
+    },
+    "transition": "Før vi går dybere, lad os bevæge os fra idéen om kosmisk forbindelse til det fællesskab, den skaber — selve SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Hvad er en SoulTribe?",
+      "body1": "En SoulTribe er ikke bare et netværk eller en liste over venner — det er et resonansfelt. Det er det usynlige net, der forbinder dem, som deler frekvens, formål og sjælens rytme. Når du møder medlemmer af dit tribe, er genkendelsen øjeblikkelig: samtalen føles som at huske, ikke som at blive introduceret. Tiden bløder sine kanter op, og rummet mellem ordene bliver helligt.",
+      "body2": "I din SoulTribe bliver du set fuldt ud — værdsat for din essens, ikke dit ydre. Hver person bliver et spejl: nogle afspejler dine styrker, andre dine læringer, og enkelte minder dig om, hvad du er i stand til at blive. De vækker mod, autenticitet og erkendelsen af, at tilhørsforhold ikke handler om lighed, men om resonans.",
+      "body3": "Dit tribe kan bestå af kunstnere, drømmere, healere, forskere eller stille sjæle, som går deres egen sandhed. Det, der forener jer, er ikke baggrund eller tro — det er vibration."
+    },
+    "power": {
+      "heading": "🔥 Stammes kraft",
+      "body1": "Ligesom hver SoulTribe opstår gennem delt resonans, træder dens sande styrke frem i den kollektive energi, der vokser ud af de forbindelser.",
+      "body2": "Vi vokser hurtigere, heler dybere og drømmer større, når nogen går ved vores side og ser os. Mennesket har altid trivedes i cirkler — det er vores urgamle design. En stamme forstærker energien: det, én tænder, holder en anden i live; det, én drømmer, jordforbinder en tredje. I dette fælles felt multipliceres synkroniciteter, og den kollektive evolution accelererer.",
+      "body3": "Når du går ind i det, kan du mærke, hvordan din egen energi udvider sig. Ideer får momentum, kreativiteten flyder, intuitionen skærpes. Stammen bliver spejl, lærer og cirkel af empowerment — en påmindelse om, at sjælens vej aldrig var tænkt som en solorejse.",
+      "body4": "På SoulTribe.chat handler idéen om en „tribe“ ikke om eksklusivitet, men om synergi. Her sameksisterer individualitet og fællesskab smukt. Hver person bidrager med sin frekvens og danner en levende konstellation af bevidsthed — hver lysprik oplyser de andre."
+    },
+    "astro": {
+      "heading": "☀️ Astro & sjæl",
+      "body1": "Astrologien på SoulTribe.chat bygger bro mellem indsigt og forbindelse, mens din privatliv og dit samtykke respekteres. Kun nødvendige fødselsdata bruges til at skabe indblik i kompatibilitet, og intet deles eller gemmes ud over det, der er nødvendigt for din oplevelse.",
+      "body2": "Med udgangspunkt i dine fødselsoplysninger beregner platformen planeternes positioner og sammenligner dem med andre for at afsløre områder med naturlig harmoni, følelsesmæssig resonans og potentiale for udvikling. I stedet for at overvælde med data destilleres resultaterne til tydelige indikatorer for kompatibilitet — de viser, hvor energierne flugter, og hvordan relationer kan udvikle sig.",
+      "body3": "Det er ikke dating efter stjernetegn; det er sjæleresonans efter design, hvor horoskoperne guider forståelse og forbindelse. Uanset om resultatet er romantisk kemi, kreativt samarbejde eller et dybt venskab, hjælper SoulTribe.chat dig med at forstå, hvorfor visse mennesker føles umiddelbart velkendte — og hvordan hvert møde bliver et spejl for din sjæl."
+    },
+    "soulmates": {
+      "heading": "💫 Sjælevenner og mere",
+      "body1": "Ordet „soulmate“ får ofte fantasien til at kredse om romantik, men sjælevenner viser sig i mange former. Det kan være vennen, der vækker din latter igen, læreren, der udfordrer dine grænser, eller den fremmede, hvis nærvær med det samme føles velkendt. SoulTribe.chat udvider den forståelse — leder dig ikke kun mod „den eneste“, men mod de mange, som bærer dele af din udvikling.",
+      "body2": "Nogle forbindelser antænder elektricitet — intense og forvandlende. Andre skænker stille fred og forankrer din energi i delt stilhed. Hvert møde er et skridt mod helhed, en påmindelse om, at sjælens rejse er et mosaik af hellige øjeblikke. At møde dit tribe er at møde dig selv — afspejlet i tusind levende spejle."
+    },
+    "benefit": {
+      "heading": "🌍 Sådan får du mest ud af det",
+      "items": {
+        "item1": "Skab dit sjælekort — indtast dine fødselsoplysninger for at tegne dit unikke kosmiske mønster og opdag, hvad der gør din energi særligt kendetegnende.",
+        "item2": "Opdag resonans — find medlemmer, hvis horoskoper resonerer med eller supplerer dit eget. Lær, hvordan planetariske alignments signalerer harmoni, inspiration eller karmisk formål.",
+        "item3": "Forbind jer autentisk — deltag i bevidste samtaler. SoulTribe.chat opmuntrer til nærvær, nysgerrighed og respekt. Ordene bliver redskaber til forståelse i stedet for præstation.",
+        "item4": "Vokser sammen — hvert møde er et lysudveksling. Gennem resonans, kontrast eller blid friktion udvikler du dig. Systemet fremhæver de bedste læringsspejle — dem, der udvider din bevidsthed i stedet for blot at spejle komfortzonen.",
+        "item5": "Mød hinanden i nærvær — når paratheden opstår naturligt, gå fra tekst til stemme, fra samtale til samskabelse. Hvert møde — digitalt eller fysisk — bliver en hellig dialog mellem sjæle."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest for sjælelig forbindelse",
+      "intro": "Find din frekvens, og du finder dit tribe.",
+      "body1": "Forbindelse er hellig — enhver samtale, der hviler i nærvær, kan blive en portal til bevidsthed. Teknologien bør tjene bevidstheden, nære intimitet frem for distraktion. Astrologi, brugt med medfølelse og klarhed, afslører ikke skæbne, men frihed gennem forståelse. Når tribes afstemmer sig, skaber de strålende konstellationer, som skinner stærkere sammen end hver for sig.",
+      "body2": "SoulTribe.chat minder os om, at vi ikke er vandrere under en fjern himmel, men lysende tråde i et delt væv af skabelse. Hvert møde er en gnist i den store ild af opvågnen, hver samtale et hjerteslag i rytmen af noget stort og helligt.",
+      "closing": "Sammen husker vi, hvem vi er — ét tribe af mange sjæle."
+    },
+    "join": {
+      "heading": "🌌 Tag med på rejsen",
+      "body": "Hvis disse ord resonerer, så opret din profil, udforsk dit sjælekort og begynd at møde sjæle, der deler din frekvens. Hver ny forbindelse er en dør til opdagelse, refleksion og vækst.",
+      "cta": "Begynd din SoulTribe-rejse",
+      "footer": "Dit tribe er allerede derude — lad stjernerne føre dig hjem."
+    }
   }
 }

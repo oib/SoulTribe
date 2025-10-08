@@ -3,30 +3,31 @@
     "page_title": "SoulTribe.chat - Aurkitu zure soul tribea",
     "hero": {
       "title": "Ongi etorri",
-      "subtitle": "SoulTribe.chat zure soul tribea aurkitzen eta konektatzen laguntzeko sortutako espazioa da — zure energiaren, espirituaren eta ibilbidearen oihartzuna duten pertsonak. ✨"
+      "subtitle": "SoulTribe.chat zure soul tribea aurkitzen eta konektatzen laguntzeko sortutako espazioa da — zure energiaren, espirituaren eta ibilbidearen oihartzuna duten pertsonak. ✨",
+      "learn_more": "Ezagutu SoulTribe ikuspegia →"
     },
     "how": {
       "title": "Nola funtzionatzen du",
-      "step1": "<strong>Sortu zure profila</strong> — sartu jaiotze data, ordua eta tokia zure mapa astral bakarra sortzeko.",
-      "step2": "<strong>Deskubritu bat-etortzeak</strong> — bateragarritasun eta erresonantzia oinarritutako loturak nabarmentzen ditugu.",
-      "step3": "<strong>Hasi elkarrizketa</strong> — gonbidatu bat-etortzeak txatera; segurua eta pribatua diseinuz.",
-      "step4": "<strong>Elkartu (aukerakoa)</strong> — antolatu Jitsi dei bat edo aurrez aurreko topaketa elkarrekiko adostasunarekin."
+      "step1": "Sortu zure profila — sartu jaiotze data, ordua eta tokia zure mapa astral bakarra sortzeko.",
+      "step2": "Deskubritu bat-etortzeak — bateragarritasun eta erresonantzia oinarritutako loturak nabarmentzen ditugu.",
+      "step3": "Hasi elkarrizketa — gonbidatu bat-etortzeak txatera; segurua eta pribatua diseinuz.",
+      "step4": "Elkartu (aukerakoa) — antolatu Jitsi dei bat edo aurrez aurreko topaketa elkarrekiko adostasunarekin."
     },
     "getting_started": {
       "title": "Hasteko",
-      "step1": "<strong>Sortu kontua</strong> — ez da sare sozialetako saiorik behar.",
-      "step2": "<strong>Osatu profila</strong> — gehitu jaiotza-datuak; ordu hurbil bat nahikoa da.",
-      "step3": "<strong>Ezarri eskuragarritasuna</strong> — proposatu ordu-tarte lokalak; guk egingo ditugu UTC bihurketak.",
-      "step4": "<strong>Deskubritu bat-etortzeak</strong> — arakatu erresonantzian oinarritutako gomendioak.",
-      "step5": "<strong>Txateatu eta, nahi izanez gero, elkartu</strong> — aplikazioan bertan; antolatu prest zaudenean."
+      "step1": "Sortu kontua — ez da sare sozialetako saiorik behar.",
+      "step2": "Osatu profila — gehitu jaiotza-datuak; ordu hurbil bat nahikoa da.",
+      "step3": "Ezarri eskuragarritasuna — proposatu ordu-tarte lokalak; guk egingo ditugu UTC bihurketak.",
+      "step4": "Deskubritu bat-etortzeak — arakatu erresonantzian oinarritutako gomendioak.",
+      "step5": "Txateatu eta, nahi izanez gero, elkartu — aplikazioan bertan; antolatu prest zaudenean."
     },
     "features": {
       "title": "Ezaugarriak",
-      "item1": "<strong>Astrologia bidezko bat-etortzea</strong> — konektatu zure natal karten bidez.",
-      "item2": "<strong>Ordu-zonen kudeaketa adimenduna</strong> — guk egiten ditugu UTC bihurketak zure ordez.",
-      "item3": "<strong>Jitsi bidezko komunikazio zuzena</strong> — testua/audioa/bideoa; ezer ez da gordetzen edo grabatzen SoulTribe.chaten.",
-      "item4": "<strong>Sarbide erraza loturaz</strong> — Jitsi gela pribatua baieztatutako topaketetarako; pribatutasunarekiko errespetuzkoa.",
-      "item5": "<strong>Interfaze minimalista</strong> — elkarrizketa esanguratsuetarako diseinatua.",
+      "item1": "Astrologia bidezko bat-etortzea — konektatu zure natal karten bidez.",
+      "item2": "Ordu-zonen kudeaketa adimenduna — guk egiten ditugu UTC bihurketak zure ordez.",
+      "item3": "Jitsi bidezko komunikazio zuzena — testua/audioa/bideoa; ezer ez da gordetzen edo grabatzen SoulTribe.chaten.",
+      "item4": "Sarbide erraza loturaz — Jitsi gela pribatua baieztatutako topaketetarako; pribatutasunarekiko errespetuzkoa.",
+      "item5": "Interfaze minimalista — elkarrizketa esanguratsuetarako diseinatua.",
       "read_more": "Irakurri Jitsi gonbidatuentzako gida azkarra →"
     },
     "privacy": {
@@ -48,7 +49,14 @@
     "next": {
       "title": "Hurrengo urratsak",
       "go_dashboard": "Joan panelean",
-      "login_register": "Hasi saioa / Eman izena"
+      "login_register": "Hasi saioa / Eman izena",
+      "step1": "Sortu kontu bat",
+      "step2": "Osatu zure profila",
+      "step3": "Sortu ordu-tarte bat",
+      "step4": "Adi bat-etortzeei",
+      "step5": "Proposatu edo baieztatu topaketa",
+      "step6": "Sartu Jitsi txatean",
+      "read_more": "Irakurri gida xehea →"
     },
     "global": {
       "title": "Komunitate globala, ordu lokala",
@@ -163,7 +171,9 @@
       "username_label": "Erabiltzaile izena",
       "username_placeholder": "erabiltzaile izena"
     },
-    "languages": { "legend": "Hizkuntzak" },
+    "languages": {
+      "legend": "Hizkuntzak"
+    },
     "location": {
       "legend": "Uneko kokapena",
       "city_placeholder": "Uneko hiria (autobetetzea)",
@@ -252,7 +262,9 @@
     "login": "Saioa hasi",
     "logout": "Amaitu saioa"
   },
-  "imprint": { "title": "Inprimakia" },
+  "imprint": {
+    "title": "Inprimakia"
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrasse 7/6",
@@ -296,5 +308,64 @@
   },
   "notifications": {
     "language_set_to": "Hizkuntza ezarri da"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Konexioen konstelazioa",
+      "subtitle": "Kosmoseko diseinua gizakiaren loturarekin bat datorren tokia — izarrek gidatutako arima senideen babeslekua."
+    },
+    "vision": {
+      "heading": "✨ Ikuskizuna",
+      "body1": "SoulTribe.chatek jaiotza-kartak harmonian dituzten pertsonak konektatzen ditu — astrologian oinarritutako loturak, txat pribatuak eta aukerazko topaketak eskainiz, arima senideek elkar kontzienteki eta zentzu osoz aurki dezaten. Plataformatik harago doa: konexio kosmikoaren esperimentu bizia, non astrologia iragarpen baten ordez enpatia partekatuaren hizkuntza bihurtzen den.",
+      "body2": "Karta bakoitza sinadura bakarra da — izarretan dabilen melodia, besteekin bat eginda, aitortza eta sakontasuna pizten dituena. Espazio honek bilatzaileak hartzen ditu, hitzordu orok helburua duela sumatzen dutenak — sinkroniak gidatzen duela lotura, eta hazkundea eta poza aurrez erabakita dauden harremanetan agertzen direla. SoulTribe.chatek giro segurua, minimalista eta kontzientea eskaintzen du, lotura hauek modu naturalean lor daitezen."
+    },
+    "transition": "Sakonago joan aurretik, egin dezagun jauzi konexio kosmikoaren ideiatik sortzen duen komunitatera — SoulTribe berera.",
+    "soultribe": {
+      "heading": "🌠 Zer da SoulTribe bat?",
+      "body1": "SoulTribe ez da soilik sare bat edo lagunen zerrenda — erresonantzia-eremua da. Frekuentzia, asmo eta espirituaren erritmo bera partekatzen dutenak lotzen dituen ikusezin sare fina. Zure tribeko kideekin topo egiten duzunean, aitortza berehala dator: elkarrizketa aurkezpen bat baino, oroitzapen bat balitz bezala da. Denborak ertzak biribildu eta hitzen arteko tartea sakratu bihurtzen da.",
+      "body2": "Zure SoulTribe barruan osotasunean ikusten zaituzte — zure esentziagatik baloratzen zaituzte, ez irudiagatik. Pertsona bakoitza ispilua bihurtzen da: batzuek indarguneak erakusten dizkizute, beste batzuek ikasgaiak eta gutxi batzuek nor bilaka zaitezkeen gogorarazten dizute. Ausardia, benetakotasuna eta jakintza pizten dute; pertenentzia ez dela antzekotasuna, baizik eta erresonantzia.",
+      "body3": "Zure tribua artistek, ameslariek, sendagileek, zientzialariek edo beren egia isilean ibiltzen diren arimek osatu dezakete. Elkartutzen zaituena ez da jatorria edo sinesmena — bibrazioa baizik."
+    },
+    "power": {
+      "heading": "🔥 Tribu baten indarra",
+      "body1": "SoulTribe oro erresonantzia partekatuaren bitartez eratzen den bezala, bere egiazko indarra lotura horietatik hazten den energia kolektiboan agertzen da.",
+      "body2": "Azkarago hazten gara, sakonago sendatzen eta handiago amesten dugu besteak gure ondoan doazenean eta lekuko direnean. Gizakiak betidanik egin du aurrera zirkuluetan — gure diseinu zaharrena da. Tribu batek energiaren indarra biderkatzen du: batek pizten duena besteak mantentzen du; batek amesten duena hirugarrenak lurretik lotzen du. Eremu partekatu honetan sinkroniak ugaritu eta bilakaera kolektiboa azkartzen da.",
+      "body3": "Parte hartzen duzunean, agian nabarituko duzu zeure energia nola hedatzen den. Ideiak abiadura hartzen dute, sormena isurtzen da, intuizioa zorrozten da. Tribua ispilu, irakasle eta ahalduntze-zirkulu bihurtzen da — gogoraraziz arimaren bidea ez zela inoiz bakarrik egiteko asmatua.",
+      "body4": "SoulTribe.chat barnean, <em>tribu</em>aren ideia ez da esklusibotasunaz, baizik eta sinergiaz. Hemen, indibidualtasuna eta elkarrekin egotea edertasunez bizikidetu. Pertsona bakoitzak bere frekuentzia eramaten du, kontzientziaren konstelazio bizia osatuz — argi-puntu bakoitzak besteak argitzen ditu."
+    },
+    "astro": {
+      "heading": "☀️ Astro eta arima",
+      "body1": "SoulTribe.chateko astrologiak intuizioa eta lotura uztartzen ditu, zure pribatutasuna eta baimena errespetatuz. Bateragarritasun-adierazleak sortzeko ezinbestekoak diren jaiotza-datuak soilik erabiltzen dira, eta zure esperientziarako beharrezkoa dena baino ez da partekatzen edo gordetzen.",
+      "body2": "Zure jaiotza xehetasunetatik abiatuta, plataformak planeten kokapenak kalkulatzen ditu eta besteenekin alderatzen ditu harmonia naturalaren, erresonantzia emozionalaren eta hazkunde potentzialaren eremuak agerian uzteko. Erabiltzaileari datuekin gainkargatu beharrean, emaitzak bateragarritasunaren adierazle argi bihurtzen dira — energiek non bat egiten duten eta harremanak nola eboluzionatu daitezkeen erakutsiz.",
+      "body3": "Ez da zodiakoaren arabera ligatzeko tresna; diseinu kontzienteko arima-erresonantzia da, non kartak ulermenera eta loturara gidatzen duten. Emaitza erromantika, lankidetza sortzailea edo adiskidetasun sakona izan, SoulTribe.chatek laguntzen dizu jakiten zergatik sentitzen diren pertsona jakin batzuk berehala ezagun, eta nola bihurtzen den topaketa oro zure arimaren ispilu."
+    },
+    "soulmates": {
+      "heading": "💫 Arima senideak eta haratago",
+      "body1": "<em>Hingesugulaua</em> hitzak maiz irudimena romantikara mugatzen du, baina arima senideak askotarikoak izan daitezke. Zure barrearen txinparta pizten duen laguna, zure mugak desafiatzen dituen irakaslea edo bere presentzia berehala ezaguna egiten zaizun ezezaguna. SoulTribe.chatek ideia hori zabaltzen du — ez zara pertsona bakarraren bila, baizik eta zure eboluzioaren zatiak daramatzaten askoren bila.",
+      "body2": "Zenbait loturak elektrizitatea pizten dute — intentsuak eta eraldatzaileak. Beste batzuk bake isila eskaintzen dute, zure energia partekatutako isiltasunean ainguratuz. Topaketa bakoitza osotasunerantz urratsa da, gogorarazten duena arimaren bidaia topaketa sakratuen mosaikoa dela. Zure tribua ezagutzea zeure burua ezagutzea da — mila ispilutan islatua."
+    },
+    "benefit": {
+      "heading": "🌍 Nola baliatu",
+      "items": {
+        "item1": "Sortu zure arimaren mapa — sartu zure jaiotza-datuak, zure kosmoseko eredu bakarra marrazteko eta zure energia berezi bihurtzen duena aurkitzeko.",
+        "item2": "Aurkitu erresonantzia — bilatu zure karta islatzen edo osatzen duten kideak. Ikasi nola adierazten dituzten planeten lerrokatzeek harmonia, inspirazio edo karmako xedea.",
+        "item3": "Konektatu benetan — parte hartu elkarrizketa kontzienteetan. SoulTribe.chatek presentzia, jakin-mina eta errespetua sustatzen ditu. Hitzak ulermen tresna bihurtzen dira, ez antzezpena.",
+        "item4": "Hazi elkarrekin — topaketa bakoitza argi-trukea da. Erresonantziaren, kontrastearen edo ukitu leun baten bidez eboluzionatzen duzu. Sistemak ikasteko ispilu onenak nabarmentzen ditu — kontzientzia zabaltzen duten horiek, ez mugikortasun eremu bera islatzen dutenak.",
+        "item5": "Biltzaitezte presentzian — prestasuna modu naturalean agertzen denean, igaro testutik ahotsera, elkarrizketatik elkar-sorkuntzara. Topaketa bakoitza — digitalean edo aurrez aurre — arimen elkarrizketa sakratua bihurtzen da."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest arimarekin konektatzeko",
+      "intro": "Aurkitu zure maiztasuna eta aurkituko duzu zure tribua.",
+      "body1": "Konexioa sakratua da — presente egotean errotzen den elkarrizketa bakoitza kontzientziarako atari bihur daiteke. Teknologiak kontzientziari zerbitzatu behar dio, hurbiltasuna elikatuz eta ez desbideratuz. Astrolojiak, erruki eta argitasunarekin erabilita, ez du patua agerian uzten baizik eta askatasuna ulermenaren bidez. Heliak bat datozenean, elkarrekin bakarrik baino distiratsuagoak diren konstelazioak sortzen dituzte.",
+      "body2": "SoulTribe.chatek gogorarazten digu ez garela zeru urrunpeko ibiltariak, sortzearen partekatutako tapizerian dantzan doazen hari argitsuak baizik. Topaketa bakoitza esnatze-su handiagoan piztutako txinparta da, elkarrizketa bakoitza zerbait handi eta sakratuaren erritmoan dabilen bihotz taupada.",
+      "closing": "Elkarrekin gogoratzen dugu nor garen — arima askoren tribe bakarra."
+    },
+    "join": {
+      "heading": "🌌 Hasi bidaia hau",
+      "body": "Hitzez hauetan oihartzuna aurkitzen baduzu, sortu zure profila, esploratu zure arimaren mapa eta hasi zure maiztasuna partekatzen duten arima kidetasunak ezagutzen. Konexio berri bakoitza aurkikuntzarako, islapenerako eta hazkunderako ate bat da.",
+      "cta": "Hasi zure SoulTribe bidaia",
+      "footer": "Zure tribua dagoeneko han dago — utzi izarrei etxerako bidea erakusten."
+    }
   }
 }

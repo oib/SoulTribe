@@ -22,19 +22,19 @@
   },
   "landing": {
     "features": {
-      "item1": "<strong>Astrologisch bewust matchen</strong> — maak verbinding met behulp van je geboortehoroscoop.",
-      "item2": "<strong>Slimme tijdszoneplanning</strong> — wij regelen de UTC-conversies voor je.",
-      "item3": "<strong>Directe communicatie via Jitsi</strong> — tekst/audio/video; er wordt niets opgeslagen of opgenomen op SoulTribe.chat.",
-      "item4": "<strong>Eenvoudig deelnemen via link</strong> — privé Jitsi‑ruimte voor bevestigde afspraken; privacyvriendelijk, geen desktopinstallatie nodig.",
-      "item5": "<strong>Minimalistische, gerichte interface</strong> — ontworpen voor betekenisvolle gesprekken.",
+      "item1": "Astrologisch bewust matchen — maak verbinding met behulp van je geboortehoroscoop.",
+      "item2": "Slimme tijdszoneplanning — wij regelen de UTC-conversies voor je.",
+      "item3": "Directe communicatie via Jitsi — tekst/audio/video; er wordt niets opgeslagen of opgenomen op SoulTribe.chat.",
+      "item4": "Eenvoudig deelnemen via link — privé Jitsi‑ruimte voor bevestigde afspraken; privacyvriendelijk, geen desktopinstallatie nodig.",
+      "item5": "Minimalistische, gerichte interface — ontworpen voor betekenisvolle gesprekken.",
       "title": "Kenmerken"
     },
     "getting_started": {
-      "step1": "<strong>Maak een account aan</strong> — geen sociale media-accounts nodig.",
-      "step2": "<strong>Voltooi je profiel</strong> — voeg geboortegegevens toe; een geschatte tijd is voldoende.",
-      "step3": "<strong>Stel je beschikbaarheid in</strong> — stel lokale tijdsloten voor; wij regelen de UTC-conversie.",
-      "step4": "<strong>Ontdek matches</strong> — blader door op resonantie gebaseerde suggesties.",
-      "step5": "<strong>Chat en spreek eventueel af</strong> — alles binnen de app; plan wanneer je er klaar voor bent.",
+      "step1": "Maak een account aan — geen sociale media-accounts nodig.",
+      "step2": "Voltooi je profiel — voeg geboortegegevens toe; een geschatte tijd is voldoende.",
+      "step3": "Stel je beschikbaarheid in — stel lokale tijdsloten voor; wij regelen de UTC-conversie.",
+      "step4": "Ontdek matches — blader door op resonantie gebaseerde suggesties.",
+      "step5": "Chat en spreek eventueel af — alles binnen de app; plan wanneer je er klaar voor bent.",
       "title": "Aan de slag"
     },
     "global": {
@@ -50,13 +50,14 @@
     },
     "hero": {
       "subtitle": "SoulTribe.chat is een ruimte gecreëerd om je te helpen je zielsstam te vinden en ermee in contact te komen — mensen die resoneren met jouw energie, je geest en je reis. ✨",
-      "title": "Welkom"
+      "title": "Welkom",
+      "learn_more": "Ontdek de SoulTribe-visie →"
     },
     "how": {
-      "step1": "<strong>Maak je profiel aan</strong> — voer je geboortedatum, -tijd en -plaats in om je unieke zielskaart te genereren.",
-      "step2": "<strong>Ontdek je matches</strong> — we belichten verbindingen op basis van compatibiliteit en resonantie.",
-      "step3": "<strong>Start het gesprek</strong> — nodig matches uit om te chatten; veilig en privé door ontwerp.",
-      "step4": "<strong>Spreek af (optioneel)</strong> — plan een Jitsi-gesprek of een persoonlijke ontmoeting met wederzijdse toestemming.",
+      "step1": "Maak je profiel aan — voer je geboortedatum, -tijd en -plaats in om je unieke zielskaart te genereren.",
+      "step2": "Ontdek je matches — we belichten verbindingen op basis van compatibiliteit en resonantie.",
+      "step3": "Start het gesprek — nodig matches uit om te chatten; veilig en privé door ontwerp.",
+      "step4": "Spreek af (optioneel) — plan een Jitsi-gesprek of een persoonlijke ontmoeting met wederzijdse toestemming.",
       "title": "Hoe het werkt"
     },
     "matching": {
@@ -66,7 +67,14 @@
     "next": {
       "go_dashboard": "Naar het Dashboard",
       "login_register": "Inloggen / Registreren",
-      "title": "Volgende stappen"
+      "title": "Volgende stappen",
+      "step1": "Maak een account aan",
+      "step2": "Vul je profiel in",
+      "step3": "Maak een tijdslot",
+      "step4": "Houd de matches in de gaten",
+      "step5": "Stel een afspraak voor of bevestig",
+      "step6": "Doe mee aan de Jitsi-chat",
+      "read_more": "Lees de uitgebreide gids →"
     },
     "privacy": {
       "item1": "We vragen alleen wat nodig is om zielsverbindingen mogelijk te maken.",
@@ -274,6 +282,70 @@
       "text": "Geniet van het contact maken op jouw manier en in jouw tempo."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Uitgebreide gids voor de volgende stappen",
+    "title": "Uitgebreide gids voor de volgende stappen",
+    "intro": "Deze gids gaat dieper in op de stappen van de startpagina en begeleidt je bij elke actie met tips en links.",
+    "steps": {
+      "step1": {
+        "heading": "Maak een account aan",
+        "description": "Registreer je met je e-mailadres om toegang te krijgen tot het dashboard en je profiel. Een sociaal login is niet nodig.",
+        "bullets": {
+          "item1": "Gebruik een geldig e-mailadres; verificatielinks verlopen na 24 uur.",
+          "item2": "Na bevestiging word je doorgestuurd naar de inlogpagina."
+        },
+        "link": "Ga naar Inloggen / Registreren"
+      },
+      "step2": {
+        "heading": "Vul je profiel in",
+        "description": "Voeg geboortegegevens toe om resonantiegestuurde matches te activeren. Een geschatte tijd is prima; meer precisie verbetert de resultaten.",
+        "bullets": {
+          "item1": "Voer geboortedatum, -tijd en -plaats in. Als je de exacte tijd niet weet, kies dan een schatting.",
+          "item2": "Schrijf een korte introductie die je interesses en intenties weergeeft. Wees specifiek en authentiek."
+        },
+        "callout": "Tip: de tijdzone van je profiel wordt automatisch gedetecteerd; je kunt deze controleren in het dashboard.",
+        "link": "Profiel bewerken"
+      },
+      "step3": {
+        "heading": "Maak een tijdslot",
+        "description": "Bied één of meerdere momenten aan waarop je beschikbaar bent. We slaan je lokale tijd op en converteren deze naar UTC voor de planning.",
+        "bullets": {
+          "item1": "Kies een starttijd in je eigen tijdzone en stel een duur in (bijv. 1–3 uur).",
+          "item2": "Slots op verschillende dagen vergroten de kans op snelle matches."
+        },
+        "callout": "Tijdzones onder controle: we converteren automatisch tussen lokale tijd en UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Dashboard openen"
+      },
+      "step4": {
+        "heading": "Houd matches in de gaten",
+        "description": "Bekijk voorgestelde matches op basis van resonantie. Lees notities over compatibiliteit en gedeelde interesses.",
+        "bullets": {
+          "item1": "Nieuwe suggesties verschijnen zodra je profiel en slots actief zijn.",
+          "item2": "Gebruik filters en notities om bij te houden met wie je wilt contact opnemen."
+        },
+        "callout": "Privacy eerst: jij beslist wanneer en hoe je contact zoekt."
+      },
+      "step5": {
+        "heading": "Stel een afspraak voor of bevestig",
+        "description": "Wanneer de interesse wederzijds is, stel dan een tijd voor binnen overlappende slots of accepteer het voorstel van je match.",
+        "bullets": {
+          "item1": "Stuur een vriendelijke en duidelijke uitnodiging. Bied één of twee tijdsopties aan.",
+          "item2": "Bevestig het plan in de chat en stap over op een call wanneer jullie beiden klaar zijn."
+        },
+        "callout": "Toestemming en comfort: volg je eigen tempo. Het is prima om bij tekst te blijven."
+      },
+      "step6": {
+        "heading": "Doe mee aan de Jitsi-chat",
+        "description": "Gebruik Jitsi voor optioneel audio/video-contact. Desktopbrowsers (Firefox, Chrome) worden ondersteund; tekstchat is altijd beschikbaar.",
+        "bullets": {
+          "item1": "Test je microfoon/camera of laat ze uit en gebruik alleen tekst.",
+          "item2": "Kies de juiste apparaten via het kleine pijltje naast de pictogrammen."
+        },
+        "link": "Lees de snelle Jitsi-gids"
+      }
+    },
+    "closing": "Geniet van het verbinden op de manier die voor jou het beste voelt."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -300,5 +372,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Een sterrenbeeld van verbinding",
+      "subtitle": "Waar kosmisch ontwerp ontmoet menselijke verbinding — een heiligdom voor verwante zielen geleid door de sterren."
+    },
+    "vision": {
+      "heading": "✨ De visie",
+      "body1": "SoulTribe.chat verbindt mensen wiens geboortehoroscopen harmoniseren — biedt astrologie-gebaseerde matching, privé-chats en optionele ontmoetingen om verwante zielen op een bewuste en betekenisvolle manier te helpen ontmoeten. Het is meer dan een platform: een levend experiment in kosmische verbinding, waar astrologie een gedeelde taal van empathie wordt in plaats van voorspelling.",
+      "body2": "Elke horoscoop is een unieke handtekening — een melodie in de sterren die resoneert met anderen om herkenning en diepte te ontbranden. Deze ruimte verwelkomt zoekers die voelen dat elke ontmoeting doel heeft — dat synchroniciteit verbinding leidt, en dat groei en vreugde ontstaan uit relaties die voorbestemd lijken. SoulTribe.chat biedt een veilige, minimalistische en bewuste omgeving waar deze verbindingen natuurlijk kunnen ontvouwen."
+    },
+    "transition": "Voordat we dieper ingaan, laten we bewegen van het idee van kosmische verbinding naar de gemeenschap die het creëert — de SoulTribe zelf.",
+    "soultribe": {
+      "heading": "🌠 Wat is een SoulTribe?",
+      "body1": "SoulTribe is niet alleen een netwerk of lijst van vrienden — het is een resonantieveld. Het onzichtbare web dat diegenen verbindt die frequentie, doel en ritme van geest delen. Wanneer je leden van je stam ontmoet, is herkenning instant: gesprek voelt als herinneren eerder dan introduceren. Tijd verzacht zijn randen, en de ruimte tussen woorden wordt heilig.",
+      "body2": "Binnen je SoulTribe word je volledig gezien — gewaardeerd voor je essentie, niet je beeld. Elke persoon wordt een spiegel: sommigen weerspiegelen je krachten, anderen je lessen, en een paar herinneren je aan wat je kunt worden. Ze wekken moed, authenticiteit en het weten dat behoren niet gaat over gelijkenis maar resonantie.",
+      "body3": "Je stam kan bestaan uit kunstenaars, dromers, genezers, wetenschappers of stille zielen die hun waarheid bewandelen. Wat jullie verenigt is niet achtergrond of geloof — het is vibratie."
+    },
+    "power": {
+      "heading": "🔥 De kracht van een stam",
+      "body1": "Net zoals elke SoulTribe vormt door gedeelde resonantie, ontstaat zijn ware kracht uit de collectieve energie die groeit uit die verbindingen.",
+      "body2": "We groeien sneller, genezen dieper en dromen groter wanneer anderen naast ons lopen en getuigen van onze weg. Mensen hebben altijd gebloeid in cirkels — het is ons oude ontwerp. Een stam vergroot energie: wat één ontsteekt, een ander onderhoudt; wat één droomt, een ander grondt. In dit gedeelde veld vermenigvuldigen synchroniciteiten en versnelt collectieve evolutie.",
+      "body3": "Wanneer je je engageert, kun je merken hoe je eigen energie uitbreidt. Ideeën krijgen momentum, creativiteit stroomt, intuïtie scherpt. De stam wordt een spiegel, leraar en cirkel van empowerment — herinnerend dat het pad van de ziel nooit bedoeld was om alleen te worden bewandeld.",
+      "body4": "Binnen SoulTribe.chat, het idee van 'stam' gaat niet over exclusiviteit maar synergie. Hier coëxisteren individualiteit en samenzijn prachtig. Elke persoon draagt bij met hun frequentie, vormend een levend sterrenbeeld van bewustzijn — elk lichtpunt verlicht de anderen."
+    },
+    "astro": {
+      "heading": "☀️ Astro en ziel",
+      "body1": "Astrologie op SoulTribe.chat overbrugt inzicht en verbinding terwijl het je privacy en toestemming eerbiedigt. Alleen essentiële geboortedata worden gebruikt om compatibiliteitsinzichten te genereren, en niets wordt gedeeld of opgeslagen buiten wat nodig is voor je ervaring.",
+      "body2": "Met behulp van je geboortedetails berekent het platform planetaire posities en vergelijkt ze met anderen om gebieden van natuurlijke harmonie, emotionele resonantie en groeipotentieel te onthullen. In plaats van gebruikers te overweldigen met data, worden resultaten gedestilleerd tot duidelijke compatibiliteitsindicatoren — tonend waar energieën uitlijnen en hoe relaties kunnen evolueren.",
+      "body3": "Dit is niet daten per teken; het is zielresonantie per ontwerp, waar horoscopen begrip en verbinding leiden. Of de uitkomst romantische chemie, creatieve samenwerking of diepe vriendschap is, SoulTribe.chat helpt je te erkennen waarom bepaalde mensen zich instant vertrouwd voelen — en hoe elke ontmoeting een spiegel wordt voor je ziel."
+    },
+    "soulmates": {
+      "heading": "💫 Zielpartners en verder",
+      "body1": "Het woord 'zielpartner' vernauwt vaak de verbeelding tot romantiek, maar zielpartners verschijnen in veel vormen. Ze kunnen de vriend zijn die je lachen herontsteekt, de leraar die je limieten uitdaagt, of de vreemdeling wiens aanwezigheid zich instant vertrouwd voelt. SoulTribe.chat breidt dit idee uit — leid je niet naar 'de ene', maar naar de velen die stukken van je evolutie dragen.",
+      "body2": "Sommige verbindingen ontsteken elektriciteit — intens en transformerend. Anderen bieden stille vrede, grondend je energie in gedeelde stilte. Elke ontmoeting is een stap naar volledigheid, een herinnering dat de reis van de ziel een mozaïek is van heilige ontmoetingen. Je stam ontmoeten betekent jezelf ontmoeten — weerspiegeld in duizend levende spiegels."
+    },
+    "benefit": {
+      "heading": "🌍 Hoe te profiteren",
+      "items": {
+        "item1": "Creëer je zielkaart — voer je geboortedetails in om je unieke kosmische patroon te genereren en ontdek wat je energie onderscheidt.",
+        "item2": "Ontdek resonantie — vind leden wiens horoscopen weerklinken of complementeren met de jouwe. Leer hoe planetaire uitlijningen harmonie, inspiratie of karmisch doel aangeven.",
+        "item3": "Verbind authentiek — neem deel aan bewuste gesprekken. SoulTribe.chat moedigt aanwezigheid, nieuwsgierigheid en respect aan. Woorden worden instrumenten van begrip, niet prestaties.",
+        "item4": "Groei samen — elke ontmoeting is een uitwisseling van licht. Door resonantie, contrast of zachte wrijving evolueer je. Het systeem benadrukt je beste leerspiegels — die je bewustzijn uitbreiden in plaats van je comfortzone weer te geven.",
+        "item5": "Ontmoet in aanwezigheid — wanneer gereedheid natuurlijk ontvouwt, ga van tekst naar stem, van gesprek naar co-creatie. Elke ontmoeting — digitaal of persoonlijk — wordt een heilige dialoog van zielen."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest voor diepgaande verbinding",
+      "intro": "Vind je frequentie en vind je stam.",
+      "body1": "Verbinding is heilig — elke conversatie geworteld in aanwezigheid kan een portaal worden naar bewustzijn. Technologie zou bewustzijn moeten dienen, intimiteit koesteren in plaats van afleiding. Astrologie, gebruikt met compassie en helderheid, onthult niet lot maar vrijheid door begrip. Wanneer stammen uitlijnen, vormen ze stralende sterrenbeelden die helderder schijnen samen dan apart.",
+      "body2": "SoulTribe.chat herinnert ons dat we geen zwervers zijn onder een verre hemel, maar lichtgevende draden in een gedeeld tapijt van creatie. Elke ontmoeting is een vonk in het grote vuur van ontwaken, elke conversatie een hartslag in het ritme van iets groots en heiligs.",
+      "closing": "Samen herinneren we wie we zijn — één stam van vele zielen."
+    },
+    "join": {
+      "heading": "🌌 Sluit je aan bij de reis",
+      "body": "Als deze woorden resoneren, creëer je profiel, verken je zielkaart en begin verwante geesten te ontmoeten die je frequentie delen. Elke nieuwe verbinding is een deur naar ontdekking, reflectie en groei.",
+      "cta": "Start je SoulTribe reis",
+      "footer": "Je stam is al daar buiten — laat de sterren je naar huis leiden."
+    }
   }
 }

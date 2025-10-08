@@ -3,30 +3,31 @@
     "page_title": "SoulTribe.chat - Find Your Soul Tribe",
     "hero": {
       "title": "Welcome",
-      "subtitle": "SoulTribe.chat is a space created to help you find and connect with your soul tribe — people who resonate with your energy, your spirit, and your journey. ✨"
+      "subtitle": "SoulTribe.chat is a space created to help you find and connect with your soul tribe — people who resonate with your energy, your spirit, and your journey. ✨",
+      "learn_more": "Discover the SoulTribe vision →"
     },
     "how": {
       "title": "How It Works",
-      "step1": "<strong>Create Your Profile</strong> — enter birth date, time, and place to generate your unique soul map.",
-      "step2": "<strong>Discover Your Matches</strong> — we highlight connections based on compatibility and resonance.",
-      "step3": "<strong>Start the Conversation</strong> — invite matches to chat; safe and private by design.",
-      "step4": "<strong>Meet Up (Optional)</strong> — schedule a Jitsi call or in‑person meetup with mutual consent."
+      "step1": "Create Your Profile — enter birth date, time, and place to generate your unique soul map.",
+      "step2": "Discover Your Matches — we highlight connections based on compatibility and resonance.",
+      "step3": "Start the Conversation — invite matches to chat; safe and private by design.",
+      "step4": "Meet Up (Optional) — schedule a Jitsi call or in‑person meetup with mutual consent."
     },
     "getting_started": {
       "title": "Getting Started",
-      "step1": "<strong>Create your account</strong> — no social logins required.",
-      "step2": "<strong>Complete your profile</strong> — add birth details; approximate time is okay.",
-      "step3": "<strong>Set your availability</strong> — propose local time slots; we handle UTC.",
-      "step4": "<strong>Discover matches</strong> — browse resonance‑based suggestions.",
-      "step5": "<strong>Chat & optionally meet</strong> — keep it in‑app; schedule when ready."
+      "step1": "Create your account — no social logins required.",
+      "step2": "Complete your profile — add birth details; approximate time is okay.",
+      "step3": "Set your availability — propose local time slots; we handle UTC.",
+      "step4": "Discover matches — browse resonance‑based suggestions.",
+      "step5": "Chat & optionally meet — keep it in‑app; schedule when ready."
     },
     "features": {
       "title": "Features",
-      "item1": "<strong>Astrology‑aware matching</strong> — connect using your natal chart.",
-      "item2": "<strong>Timezone smart scheduling</strong> — we handle UTC conversions for you.",
-      "item3": "<strong>Direct communication via Jitsi</strong> — text/audio/video; nothing is stored or recorded on SoulTribe.chat.",
-      "item4": "<strong>Easy link join</strong> — private Jitsi room for confirmed meetups; privacy‑friendly, no desktop install required.",
-      "item5": "<strong>Minimalist, focused UI</strong> — designed for meaningful conversations.",
+      "item1": "Astrology‑aware matching — connect using your natal chart.",
+      "item2": "Timezone smart scheduling — we handle UTC conversions for you.",
+      "item3": "Direct communication via Jitsi — text/audio/video; nothing is stored or recorded on SoulTribe.chat.",
+      "item4": "Easy link join — private Jitsi room for confirmed meetups; privacy‑friendly, no desktop install required.",
+      "item5": "Minimalist, focused UI — designed for meaningful conversations.",
       "read_more": "Read the guest Jitsi quick-start guide →"
     },
     "privacy": {
@@ -48,7 +49,14 @@
     "next": {
       "title": "Next Steps",
       "go_dashboard": "Go to Dashboard",
-      "login_register": "Login / Register"
+      "login_register": "Login / Register",
+      "step1": "Create an account",
+      "step2": "Fill your profile",
+      "step3": "Create a time slot",
+      "step4": "Watch out for matches",
+      "step5": "Propose a meetup or confirm",
+      "step6": "Join the Jitsi chat",
+      "read_more": "Read the detailed guide →"
     },
     "global": {
       "title": "Global Community, Local Time",
@@ -60,6 +68,65 @@
       "tz_title": "Timezone-Aware Scheduling",
       "tz_text": "No more timezone math - we handle all the conversions for you.",
       "select_label": "Select Language:"
+    }
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — A Constellation of Connection",
+      "subtitle": "Where cosmic design meets human connection — a sanctuary for kindred souls guided by the stars."
+    },
+    "vision": {
+      "heading": "✨ The Vision",
+      "body1": "SoulTribe.chat connects people whose birth charts harmonize — offering astrology-based matching, private chats, and optional meetups to help kindred souls meet in a mindful, meaningful way. It is more than a platform: a living experiment in cosmic connection, where astrology becomes a shared language of empathy rather than prediction.",
+      "body2": "Each chart is a unique signature — a melody in the stars that resonates with others to spark recognition and depth. This space welcomes seekers who sense that every encounter carries purpose — that synchronicity guides connection, and that growth and joy emerge through relationships that feel destined. SoulTribe.chat offers a safe, minimalist, and conscious environment where these connections can naturally unfold."
+    },
+    "transition": "Before delving deeper, let’s move from the idea of cosmic connection to the community it creates — the SoulTribe itself.",
+    "soultribe": {
+      "heading": "🌠 What Is a SoulTribe?",
+      "body1": "A SoulTribe is not just a network or a list of friends — it is a resonance field. It is the invisible web that connects those who share frequency, purpose, and rhythm of spirit. When you meet members of your tribe, recognition is instant: conversation feels like remembering rather than introducing. Time softens its edges, and the space between words becomes sacred.",
+      "body2": "Within your SoulTribe, you are fully seen — valued for your essence, not your image. Each person becomes a mirror: some reflect your strengths, others your lessons, and a few remind you of what you are capable of becoming. They awaken courage, authenticity, and the knowing that belonging is not about similarity but resonance.",
+      "body3": "Your tribe may consist of artists, dreamers, healers, scientists, or quiet souls walking their truth. What unites you is not background or belief — it is vibration."
+    },
+    "power": {
+      "heading": "🔥 The Power of a Tribe",
+      "body1": "Just as every SoulTribe forms through shared resonance, its true strength emerges in the collective energy that grows from those connections.",
+      "body2": "We grow faster, heal deeper, and dream bigger when we are witnessed by others walking beside us. Humans have always thrived in circles — it is our ancient design. A tribe magnifies energy: what one sparks, another sustains; what one dreams, another grounds. In this shared field, synchronicities multiply and collective evolution accelerates.",
+      "body3": "As you engage, you may notice how your own energy expands. Ideas find momentum, creativity flows, intuition sharpens. The tribe becomes a mirror, a teacher, and a circle of empowerment — reminding you that the path of the soul was never meant to be walked alone.",
+      "body4": "Within SoulTribe.chat, the idea of a “tribe” is not about exclusivity but synergy. Here, individuality and togetherness coexist beautifully. Each person contributes their frequency, forming a living constellation of consciousness — each point of light illuminating the others."
+    },
+    "astro": {
+      "heading": "☀️ Astro & Soul",
+      "body1": "Astrology on SoulTribe.chat bridges insight and connection while honoring your privacy and consent. Only essential birth data is used to generate compatibility insights, and nothing is shared or stored beyond what’s needed for your experience.",
+      "body2": "Using your birth details, the platform calculates planetary positions and compares them with others to reveal areas of natural harmony, emotional resonance, and potential growth. Instead of overwhelming users with data, results are distilled into clear indicators of compatibility — showing where energies align and how relationships can evolve.",
+      "body3": "This is not dating by sign; it is soul resonance by design, where charts guide understanding and connection. Whether the outcome is romantic chemistry, creative collaboration, or a deep friendship, SoulTribe.chat helps you recognize why certain people feel instantly familiar — and how every meeting becomes a mirror for your soul."
+    },
+    "soulmates": {
+      "heading": "💫 Soulmates and Beyond",
+      "body1": "The word soulmate often narrows the imagination to romance, but soulmates appear in many forms. They can be the friend who reawakens your laughter, the teacher who challenges your limits, or the stranger whose presence feels instantly familiar. SoulTribe.chat expands this idea — guiding you not to “the one,” but to the many who carry pieces of your evolution.",
+      "body2": "Some connections ignite electricity — intense and transformative. Others offer quiet peace, grounding your energy in shared stillness. Each meeting is a step toward wholeness, a reminder that the soul’s journey is a mosaic of sacred encounters. To meet your tribe is to meet yourself — reflected in a thousand living mirrors."
+    },
+    "benefit": {
+      "heading": "🌍 How to Benefit",
+      "items": {
+        "item1": "Create Your Soul Map — enter your birth details to generate your unique cosmic pattern and discover what makes your energy distinct.",
+        "item2": "Discover Resonance — find members whose charts echo or complement your own. Learn how planetary alignments indicate harmony, inspiration, or karmic purpose.",
+        "item3": "Connect Authentically — engage in mindful conversation. SoulTribe.chat encourages presence, curiosity, and respect. Words become instruments of understanding, not performance.",
+        "item4": "Grow Together — each encounter is an exchange of light. Through resonance, contrast, or gentle friction, you evolve. The system highlights your best learning mirrors — those who expand your awareness rather than mirror your comfort zone.",
+        "item5": "Meet in Presence — when readiness unfolds naturally, move from text to voice, from conversation to co-creation. Every meeting — digital or in-person — becomes a sacred dialogue of souls."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifesto for Soulful Connection",
+      "intro": "Find your frequency, and find your tribe.",
+      "body1": "Connection is sacred — every conversation rooted in presence can become a portal to awareness. Technology should serve consciousness, nurturing intimacy instead of distraction. Astrology, used with compassion and clarity, reveals not destiny but freedom through understanding. When tribes align, they form radiant constellations that shine brighter together than alone.",
+      "body2": "SoulTribe.chat reminds us that we are not wanderers beneath a distant sky, but luminous threads in a shared tapestry of creation. Each meeting is a spark in the greater fire of awakening, each conversation a heartbeat in the rhythm of something vast and sacred.",
+      "closing": "Together, we remember who we are — one tribe of many souls."
+    },
+    "join": {
+      "heading": "🌌 Join the Journey",
+      "body": "If these words resonate, create your profile, explore your soul map, and begin meeting kindred spirits who share your frequency. Each new connection is a doorway to discovery, reflection, and growth.",
+      "cta": "Start your SoulTribe journey",
+      "footer": "Your tribe is already out there — let the stars guide you home."
     }
   },
   "guestGuide": {
@@ -144,6 +211,70 @@
       "heading": "Closing note",
       "text": "Enjoy connecting in the way and at the pace that works best for you."
     }
+  },
+  "nextStepsGuide": {
+    "page_title": "Getting Started • Detailed Next Steps",
+    "title": "Detailed Next Steps Guide",
+    "intro": "This guide expands the landing page steps and walks you through each action with tips and links.",
+    "steps": {
+      "step1": {
+        "heading": "Create an account",
+        "description": "Register with your email to access your dashboard and profile. No social logins required.",
+        "bullets": {
+          "item1": "Use a valid email; verification links expire after 24 hours.",
+          "item2": "After confirming, you'll be redirected to login."
+        },
+        "link": "Go to Login / Register"
+      },
+      "step2": {
+        "heading": "Fill your profile",
+        "description": "Add your birth details to enable resonance-based matching. Approximate birth time is fine; more accurate improves results.",
+        "bullets": {
+          "item1": "Enter birth date, time, and place. If you don't know the exact time, pick an estimate.",
+          "item2": "Write a short intro that reflects your interests and intentions. Be specific and genuine."
+        },
+        "callout": "Tip: Your profile timezone is detected automatically; you can review it in your dashboard.",
+        "link": "Edit Profile"
+      },
+      "step3": {
+        "heading": "Create a time slot",
+        "description": "Offer one or more time slots when you'd be open to connect. We store your local time and convert to UTC for scheduling.",
+        "bullets": {
+          "item1": "Pick a start time in your local timezone; choose a duration (e.g., 1–3 hours).",
+          "item2": "Adding slots on multiple days increases the chance of quick matches."
+        },
+        "callout": "Timezone aware: We handle conversions between your local time and UTC automatically (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Open Dashboard"
+      },
+      "step4": {
+        "heading": "Watch out for matches",
+        "description": "Browse suggested matches based on resonance. Check compatibility notes and shared interests.",
+        "bullets": {
+          "item1": "New suggestions appear as your profile and slots are available.",
+          "item2": "Use filters and notes to track who you'd like to contact."
+        },
+        "callout": "Privacy first: Your details remain private. You choose when and how to engage."
+      },
+      "step5": {
+        "heading": "Propose a meetup or confirm",
+        "description": "When interest is mutual, propose a time within overlapping slots or accept a proposal from your match.",
+        "bullets": {
+          "item1": "Send a friendly, specific invitation. Suggest one or two time windows.",
+          "item2": "Confirm the plan in chat, then move to a call when both are ready."
+        },
+        "callout": "Consent and comfort: move at your own pace. It's okay to keep it text-only."
+      },
+      "step6": {
+        "heading": "Join the Jitsi chat",
+        "description": "Use Jitsi for optional voice/video. Desktop browsers (Firefox, Chrome) are supported. Text chat is always available.",
+        "bullets": {
+          "item1": "Test mic/camera, or keep them off and use text only.",
+          "item2": "Pick the right devices via the small arrow next to mic/cam icons."
+        },
+        "link": "Read the Jitsi quick-start"
+      }
+    },
+    "closing": "Enjoy connecting in a way that feels right for you."
   },
   "language": {
     "en": "English",

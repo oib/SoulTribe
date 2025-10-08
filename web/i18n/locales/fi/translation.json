@@ -103,30 +103,31 @@
     "page_title": "SoulTribe.chat – Löydä sielunheimolaiset",
     "hero": {
       "title": "Tervetuloa",
-      "subtitle": "SoulTribe.chat on tila, joka auttaa sinua löytämään ja yhdistymään sielunheimolaisiin — ihmisiin, jotka resonoivat energiasi, henkesi ja matkasi kanssa. ✨"
+      "subtitle": "SoulTribe.chat on tila, joka auttaa sinua löytämään ja yhdistymään sielunheimolaisiin — ihmisiin, jotka resonoivat energiasi, henkesi ja matkasi kanssa. ✨",
+      "learn_more": "Tutustu SoulTribe-visioon →"
     },
     "how": {
       "title": "Miten se toimii",
-      "step1": "<strong>Luo profiilisi</strong> — syötä syntymäpäivä, -aika ja -paikka ainutlaatuista sielukarttaa varten.",
-      "step2": "<strong>Löydä mätsit</strong> — nostamme esiin yhteydet yhteensopivuuden ja resonanssin perusteella.",
-      "step3": "<strong>Aloita keskustelu</strong> — kutsu mätsit chattiin; turvallista ja yksityistä alusta alkaen.",
-      "step4": "<strong>Tapaa (valinnainen)</strong> — sovi Jitsi-puhelu tai tapaaminen yhteisellä suostumuksella."
+      "step1": "Luo profiilisi — syötä syntymäpäivä, -aika ja -paikka ainutlaatuista sielukarttaa varten.",
+      "step2": "Löydä mätsit — nostamme esiin yhteydet yhteensopivuuden ja resonanssin perusteella.",
+      "step3": "Aloita keskustelu — kutsu mätsit chattiin; turvallista ja yksityistä alusta alkaen.",
+      "step4": "Tapaa (valinnainen) — sovi Jitsi-puhelu tai tapaaminen yhteisellä suostumuksella."
     },
     "getting_started": {
       "title": "Aloita",
-      "step1": "<strong>Luo tili</strong> — sosiaalisen median kirjautumista ei tarvita.",
-      "step2": "<strong>Täydennä profiili</strong> — lisää syntymätiedot; likimääräinen aika riittää.",
-      "step3": "<strong>Aseta saatavuus</strong> — ehdota paikallisia aikaikkunoita; UTC-muunnokset hoidamme me.",
-      "step4": "<strong>Löydä mätsit</strong> — selaa resonanssiin perustuvia ehdotuksia.",
-      "step5": "<strong>Chattaa ja halutessasi tapaa</strong> — pysy sovelluksessa; aikatauluta kun olet valmis."
+      "step1": "Luo tili — sosiaalisen median kirjautumista ei tarvita.",
+      "step2": "Täydennä profiili — lisää syntymätiedot; likimääräinen aika riittää.",
+      "step3": "Aseta saatavuus — ehdota paikallisia aikaikkunoita; UTC-muunnokset hoidamme me.",
+      "step4": "Löydä mätsit — selaa resonanssiin perustuvia ehdotuksia.",
+      "step5": "Chattaa ja halutessasi tapaa — pysy sovelluksessa; aikatauluta kun olet valmis."
     },
     "features": {
       "title": "Ominaisuudet",
-      "item1": "<strong>Astrologiatietoinen mätsäys</strong> — yhdisty syntymäkartan avulla.",
-      "item2": "<strong>Älykäs aikavyöhykesuunnittelu</strong> — me hoidamme UTC-muunnokset puolestasi.",
-      "item3": "<strong>Suora viestintä Jitsin kautta</strong> — teksti/ääni/video; mitään ei tallenneta tai nauhoiteta SoulTribe.chatissa.",
-      "item4": "<strong>Helppo liittyminen linkillä</strong> — yksityinen Jitsi‑huone vahvistetuille tapaamisille; yksityisyyttä kunnioittava, ei työpöytäsovelluksen asennusta.",
-      "item5": "<strong>Minimalistinen, fokusoitu käyttöliittymä</strong> — suunniteltu merkityksellisiin keskusteluihin."
+      "item1": "Astrologiatietoinen mätsäys — yhdisty syntymäkartan avulla.",
+      "item2": "Älykäs aikavyöhykesuunnittelu — me hoidamme UTC-muunnokset puolestasi.",
+      "item3": "Suora viestintä Jitsin kautta — teksti/ääni/video; mitään ei tallenneta tai nauhoiteta SoulTribe.chatissa.",
+      "item4": "Helppo liittyminen linkillä — yksityinen Jitsi‑huone vahvistetuille tapaamisille; yksityisyyttä kunnioittava, ei työpöytäsovelluksen asennusta.",
+      "item5": "Minimalistinen, fokusoitu käyttöliittymä — suunniteltu merkityksellisiin keskusteluihin."
     },
     "privacy": {
       "title": "Yksityisyys ja turvallisuus",
@@ -147,7 +148,14 @@
     "next": {
       "title": "Seuraavat askeleet",
       "go_dashboard": "Siirry hallintapaneeliin",
-      "login_register": "Kirjaudu / Rekisteröidy"
+      "login_register": "Kirjaudu / Rekisteröidy",
+      "step1": "Luo tili",
+      "step2": "Täytä profiilisi",
+      "step3": "Luo aikaikkuna",
+      "step4": "Seuraa mätsäyksiä",
+      "step5": "Ehdota tai vahvista tapaaminen",
+      "step6": "Liity Jitsi-chattiin",
+      "read_more": "Lue yksityiskohtainen opas →"
     },
     "global": {
       "title": "Globaali yhteisö, paikallinen aika",
@@ -274,6 +282,70 @@
       "text": "Nauti yhteyksien luomisesta omalla tavallasi ja omassa tahdissasi."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Yksityiskohtainen opas seuraaville askeleille",
+    "title": "Yksityiskohtainen opas seuraaville askeleille",
+    "intro": "Tämä opas syventää aloitussivun vaiheita ja johdattaa sinut jokaiseen toimintaan vinkkien ja linkkien avulla.",
+    "steps": {
+      "step1": {
+        "heading": "Luo tili",
+        "description": "Rekisteröidy sähköpostiosoitteellasi päästäksesi hallintapaneeliin ja profiiliin. Sosiaalisen median kirjautumista ei tarvita.",
+        "bullets": {
+          "item1": "Käytä voimassa olevaa sähköpostia; vahvistuslinkit vanhenevat 24 tunnissa.",
+          "item2": "Vahvistuksen jälkeen sinut ohjataan kirjautumissivulle."
+        },
+        "link": "Siirry Kirjaudu / Rekisteröidy"
+      },
+      "step2": {
+        "heading": "Täydennä profiilisi",
+        "description": "Lisää syntymätiedot resonanssiin perustuvaa mätsäystä varten. Arvioitu kellonaika riittää; tarkkuus parantaa osumia.",
+        "bullets": {
+          "item1": "Syötä syntymäpäivä, -aika ja -paikka. Jos et tiedä tarkkaa aikaa, valitse arvio.",
+          "item2": "Kirjoita lyhyt esittely, joka kuvaa kiinnostuksen kohteesi ja aikomuksesi. Ole täsmällinen ja aito."
+        },
+        "callout": "Vinkki: Profiilisi aikavyöhyke tunnistetaan automaattisesti; voit tarkistaa sen hallintapaneelista.",
+        "link": "Muokkaa profiilia"
+      },
+      "step3": {
+        "heading": "Luo aikaikkuna",
+        "description": "Tarjoa yksi tai useampi aika, jolloin olet valmis kohtaamaan. Tallennamme paikallisen aikasi ja muunname sen UTC-muotoon aikataulutusta varten.",
+        "bullets": {
+          "item1": "Valitse aloitusaika omalla aikavyöhykkeellä ja määritä kesto (esim. 1–3 tuntia).",
+          "item2": "Useat aikaikkunat eri päiville kasvattavat nopeiden mätsien mahdollisuutta."
+        },
+        "callout": "Aikavyöhykkeet hallussa: teemme automaattisesti muutokset paikallisen ajan ja UTC:n välillä (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Avaa hallintapaneeli"
+      },
+      "step4": {
+        "heading": "Seuraa mätsäyksiä",
+        "description": "Tutki resonanssin perusteella ehdotettuja mätsäyksiä. Katso yhteensopivuusmuistiinpanoja ja yhteisiä kiinnostuksia.",
+        "bullets": {
+          "item1": "Uusia ehdotuksia ilmestyy, kun profiilisi ja aikaikkunasi ovat aktiiviset.",
+          "item2": "Käytä suodattimia ja muistiinpanoja pitääksesi kirjaa niistä, joihin haluat ottaa yhteyttä."
+        },
+        "callout": "Yksityisyys ensin: sinä päätät, milloin ja miten osallistut."
+      },
+      "step5": {
+        "heading": "Ehdota tai vahvista tapaaminen",
+        "description": "Kun kiinnostus on molemminpuolista, ehdota aikaa päällekkäisistä ikkunoista tai hyväksy mätsisi ehdotus.",
+        "bullets": {
+          "item1": "Lähetä ystävällinen ja täsmällinen kutsu. Tarjoa yksi tai kaksi aikavaihtoehtoa.",
+          "item2": "Vahvista suunnitelma chatissa ja siirry puheluun, kun olette valmiita."
+        },
+        "callout": "Suostumus ja mukavuus: etenet omaan tahtiisi. On täysin ok pysyä pelkässä tekstissä."
+      },
+      "step6": {
+        "heading": "Liity Jitsi-chattiin",
+        "description": "Käytä Jitsiä valinnaiseen ääni- tai videokeskusteluun. Työpöytäselaimet (Firefox, Chrome) ovat tuettuja; tekstichat on aina käytettävissä.",
+        "bullets": {
+          "item1": "Testaa mikrofoni/kamera tai pidä ne pois päältä ja käytä pelkkää tekstiä.",
+          "item2": "Valitse oikeat laitteet ikonien vieressä olevalla pienellä nuolella."
+        },
+        "link": "Lue Jitsi pikalinkkiopas"
+      }
+    },
+    "closing": "Nauti yhteyksien luomisesta tavalla, joka tuntuu sinusta oikealta."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -300,5 +372,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Yhteyden tähtikuvio",
+      "subtitle": "Paikka, jossa kosminen suunnittelu kohtaa inhimillisen yhteyden — tähtien ohjaamien sukulaissielujen turvasatama."
+    },
+    "vision": {
+      "heading": "✨ Näky",
+      "body1": "SoulTribe.chat yhdistää ihmisiä, joiden syntymäkartat resonoivat keskenään — se tarjoaa astrologiaan perustuvaa matchausta, yksityisiä keskusteluja ja valinnaisia tapaamisia, jotta sukulaissielut voisivat kohdata tietoisesti ja merkityksellisesti. Se on enemmän kuin alusta: elävä koe kosmisesta yhteydestä, jossa astrologiasta tulee jaettu empatian kieli ennustamisen sijaan.",
+      "body2": "Jokainen kartta on ainutlaatuinen allekirjoitus — tähtiin kirjoitettu melodia, joka resonoi muiden kanssa ja herättää tunnistamisen sekä syvyyden. Tämä tila toivottaa tervetulleiksi etsijät, jotka tuntevat, että jokaisella kohtaamisella on tarkoitus — että synkronia johtaa yhteyttä ja että kasvu ja ilo nousevat suhteista, jotka tuntuvat tarkoitetuilta. SoulTribe.chat tarjoaa turvallisen, minimalistisen ja tietoisen ympäristön, jossa nämä yhteydet voivat avautua luonnollisesti."
+    },
+    "transition": "Ennen kuin menemme syvemmälle, siirrytään kosmisen yhteyden ideasta siihen yhteisöön, jonka se synnyttää — itse SoulTribeen.",
+    "soultribe": {
+      "heading": "🌠 Mikä on SoulTribe?",
+      "body1": "SoulTribe ei ole pelkkä verkosto tai ystävälista — se on resonanssikenttä. Näkymätön verkko, joka yhdistää ne, jotka jakavat saman taajuuden, tarkoituksen ja hengen rytmin. Kun kohtaat tribesi jäseniä, tunnistaminen on välitön: keskustelu tuntuu muistelulta eikä esittäytymiseltä. Aika pehmenee ja sanojen välinen tila muuttuu pyhäksi.",
+      "body2": "Omassa SoulTribessasi sinut nähdään kokonaan — sinua arvostetaan olemuksesi, ei kuvasi vuoksi. Jokainen ihminen muuttuu peiliksi: osa heijastaa vahvuuksiasi, toiset opetuksiasi ja muutama muistuttaa siitä, miksi olet kykenevä. He herättävät rohkeuden, aitouden ja tiedon siitä, että kuuluminen ei synny samankaltaisuudesta vaan resonanssista.",
+      "body3": "Tribesi voi koostua taiteilijoista, unelmoijista, parantajista, tiedeihmisistä tai hiljaisista sieluista, jotka kulkevat omaa totuuttaan. Se, mikä teitä yhdistää, ei ole tausta tai usko — se on värähtely."
+    },
+    "power": {
+      "heading": "🔥 Hengen yhteisön voima",
+      "body1": "Kuten jokainen SoulTribe syntyy jaetun resonanssin kautta, sen todellinen voima ilmenee niiden yhteyksien synnyttämässä energiassa.",
+      "body2": "Kasvamme nopeammin, paranemme syvemmin ja unelmoimme suuremmin, kun joku kulkee rinnallamme ja näkee meidät. Ihmiset ovat aina kukoistaneet piireissä — se on muinainen rakenteemme. Yhteisö vahvistaa energiaa: mitä yksi kipinöi, toinen ylläpitää; mistä yksi unelmoi, kolmas juurruttaa. Tässä jaetussa kentässä synkroniat moninkertaistuvat ja kollektiivinen kehitys kiihtyy.",
+      "body3": "Kun osallistut, saatat huomata oman energiasi laajenevan. Ideat saavat vauhtia, luovuus virtaa, intuitio terävöityy. Yhteisöstä tulee peili, opettaja ja voimaannuttava piiri — muistutus siitä, ettei sielun polkua ollut tarkoitus kulkea yksin.",
+      "body4": "SoulTribe.chatissa <em>tribe</em>-ajatus ei tarkoita eksklusiivisuutta vaan synergiaa. Täällä yksilöllisyys ja yhdessäolo elävät kauniisti rinnakkain. Jokainen tuo oman taajuutensa ja muodostaa tietoisuuden elävän tähtikuvion — jokainen valopiste valaisee toisia."
+    },
+    "astro": {
+      "heading": "☀️ Astro ja sielu",
+      "body1": "Astrologia SoulTribe.chatissa yhdistää oivalluksen ja yhteyden, samalla kun kunnioitetaan yksityisyyttäsi ja suostumustasi. Yhteensopivuuden vihjeiden luomiseen käytetään vain välttämättömiä syntymätietoja eikä mitään jaeta tai tallenneta yli sen, mitä kokemuksesi edellyttää.",
+      "body2": "Syntymätietojesi perusteella alusta laskee planeettojen sijainnit ja vertaa niitä muiden tietoihin paljastaakseen luonnollisen harmonian, tunneresonanssin ja kasvupotentiaalin alueita. Sen sijaan, että sinut hukutettaisiin dataan, tulokset tiivistetään selkeiksi yhteensopivuuden indikaattoreiksi — ne osoittavat, missä energiat linjautuvat ja miten suhteet voivat kehittyä.",
+      "body3": "Tämä ei ole horoskooppien perusteella tehty treffipalvelu; se on suunniteltu sielun resonanssi, jossa kartat ohjaavat ymmärrykseen ja yhteyteen. Olipa lopputuloksena romanttinen kemia, luova yhteistyö tai syvä ystävyys, SoulTribe.chat auttaa tunnistamaan, miksi tietyt ihmiset tuntuvat heti tutuilta — ja miten jokainen kohtaaminen toimii sielusi peilinä."
+    },
+    "soulmates": {
+      "heading": "💫 Sielunkumppanit ja sen yli",
+      "body1": "Sana <em>sielunkumppani</em> kaventaa usein mielikuvituksen romantiikkaan, mutta sielunkumppanit ilmestyvät monissa muodoissa. He voivat olla se ystävä, joka herättää naurusi uudelleen, opettaja, joka haastaa rajasi, tai tuntematon, jonka läsnäolo tuntuu hetkessä kotoisalta. SoulTribe.chat laajentaa tätä ajatusta — se ei johdata sinua vain yhden oikean äärelle, vaan monien luo, jotka kantavat palaasi mukana.",
+      "body2": "Jotkin yhteydet sytyttävät sähköä — intensiivistä ja muuttavaa. Toiset tarjoavat hiljaista rauhaa ja ankkuroivat energiasi jaettuun tyyneyteen. Jokainen kohtaaminen on askel kohti kokonaisuutta, muistutus siitä, että sielun matka on pyhien kohtaamisten mosaiikki. Tribesi tapaaminen on itsesi kohtaamista — heijastuneena tuhansissa elävissä peileissä."
+    },
+    "benefit": {
+      "heading": "🌍 Kuinka hyödyntää",
+      "items": {
+        "item1": "Luo sielun karttasi — syötä syntymätietosi, jotta saat ainutlaatuisen kosmisen kuvion ja löydät, mikä tekee energiastasi ainutlaatuisen.",
+        "item2": "Löydä resonanssi — etsi jäseniä, joiden kartat heijastavat tai täydentävät omaasi. Opettele, miten planeettojen linjaukset kertovat harmoniasta, inspiraatiosta tai karmisesta tarkoituksesta.",
+        "item3": "Yhdisty autenttisesti — osallistu tietoisiiin keskusteluihin. SoulTribe.chat rohkaisee läsnäoloa, uteliaisuutta ja kunnioitusta. Sanoista tulee ymmärryksen välineitä, ei esiintymistä.",
+        "item4": "Kasvakaa yhdessä — jokainen tapaaminen on valon vaihto. Resonanssin, kontrastin tai lempeän kitkan avulla kehityt. Järjestelmä korostaa parhaita oppimispeilejä — niitä, jotka laajentavat tietoisuuttasi eivätkä vain heijasta mukavuusaluetta.",
+        "item5": "Kohdatkaa läsnäolossa — kun valmius syntyy luonnollisesti, siirtykää tekstistä ääneen, keskustelusta yhteisluomiseen. Jokaisesta tapaamisesta — digitaalisesta tai kasvokkain — tulee sielujen pyhä dialogi."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifesto sielukkaaseen yhteyteen",
+      "intro": "Löydä oma taajuutesi ja löydät tribesi.",
+      "body1": "Yhteys on pyhä — jokainen läsnäoloon juurtunut keskustelu voi avata tietoisuuden portin. Tekniikan tulee palvella tietoisuutta, ravita läheisyyttä eikä viedä huomiota harhaan. Astrologia, kun sitä käytetään myötätunnolla ja selkeydellä, ei paljasta kohtaloa vaan vapautta ymmärryksen kautta. Kun tribet asettuvat linjaan, ne muodostavat säteileviä tähtikuvioita, jotka loistavat kirkkaammin yhdessä kuin erillään.",
+      "body2": "SoulTribe.chat muistuttaa meitä, ettemme ole kaukaisen taivaan alla harhailevia matkaajia, vaan yhteisen luomisen tapettiin kudottuja valon säikeitä. Jokainen kohtaaminen on kipinä suuremmassa heräämisen tulessa, jokainen keskustelu sydämenlyönti jonkin laajan ja pyhän rytmissä.",
+      "closing": "Yhdessä muistamme, keitä olemme — yksi tribu monista sieluista."
+    },
+    "join": {
+      "heading": "🌌 Liity matkalle",
+      "body": "Jos nämä sanat resonoivat sinussa, luo profiilisi, tutki sielun karttaasi ja ala tavata hengenheimolaisia, jotka jakavat taajuutesi. Jokainen uusi yhteys on ovi löytöihin, peilaukseen ja kasvuun.",
+      "cta": "Aloita SoulTribe-matkasi",
+      "footer": "Tribusi on jo tuolla — anna tähtien opastaa sinut kotiin."
+    }
   }
 }

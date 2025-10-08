@@ -90,16 +90,17 @@
         }
       ],
       "title": "Għaliex tingħaqad?",
-      "item1": "<strong>Tqabbel b’għarfien tal-astrologija</strong> — qabbad billi tuża l-karta tat-twelid tiegħek.",
-      "item2": "<strong>Skedar intelliġenti ta’ żoni horarji</strong> — aħna nieħdu ħsieb il-konverżjonijiet UTC għalik.",
-      "item3": "<strong>Komunikazzjoni diretta permezz ta’ Jitsi</strong> — test/awdio/vidjo; xejn ma jinħażen jew jiġi rrekordjat fuq SoulTribe.chat.",
-      "item4": "<strong>Dħul faċli permezz ta’ link</strong> — kamra privata Jitsi għal laqgħat ikkonfermati; favur il-privatezza, bla installazzjoni fuq desktop.",
-      "item5": "<strong>UI minimalista u ffokata</strong> — maħsuba għal konversazzjonijiet sinifikanti."
+      "item1": "Tqabbel b’għarfien tal-astrologija — qabbad billi tuża l-karta tat-twelid tiegħek.",
+      "item2": "Skedar intelliġenti ta’ żoni horarji — aħna nieħdu ħsieb il-konverżjonijiet UTC għalik.",
+      "item3": "Komunikazzjoni diretta permezz ta’ Jitsi — test/awdio/vidjo; xejn ma jinħażen jew jiġi rrekordjat fuq SoulTribe.chat.",
+      "item4": "Dħul faċli permezz ta’ link — kamra privata Jitsi għal laqgħat ikkonfermati; favur il-privatezza, bla installazzjoni fuq desktop.",
+      "item5": "UI minimalista u ffokata — maħsuba għal konversazzjonijiet sinifikanti."
     },
     "hero": {
       "cta": "Ibda l-vjaġġ tiegħek",
       "subtitle": "Qabbel ma' nies li jaqsmu l-valuri, l-interessi u l-passjonijiet tiegħek. Flimkien, nistgħu noħolqu relazzjonijiet li għandhom tifsira u jibqgħu għal żmien twil.",
-      "title": "Ingħaqad mal-komunità globali tagħna"
+      "title": "Ingħaqad mal-komunità globali tagħna",
+      "learn_more": "Skopri l-viżjoni SoulTribe →"
     },
     "howItWorks": {
       "steps": [
@@ -129,18 +130,18 @@
     "page_title": "SoulTribe.chat – Sib it-tribù tar-ruħ tiegħek",
     "how": {
       "title": "Kif taħdem",
-      "step1": "<strong>Oħloq il-profil tiegħek</strong> — daħħal id-data, il-ħin u l-post tat-twelid biex jinħoloq il‑mappa tar‑ruħ unika tiegħek.",
-      "step2": "<strong>Skopri t-taqbilet tiegħek</strong> — nenfasizzaw konnessjonijiet abbażi ta’ kompatibbiltà u reżonanza.",
-      "step3": "<strong>Iftaħ il-konversazzjoni</strong> — stieden it-taqbilet biex jagħmlu chat; sigur u privat b’d-disinn.",
-      "step4": "<strong>Iltaqa’ (fakultattiv)</strong> — skeda sejħa Jitsi jew laqgħa wiċċ‑imb wiċċ b’kunsens reċiproku."
+      "step1": "Oħloq il-profil tiegħek — daħħal id-data, il-ħin u l-post tat-twelid biex jinħoloq il‑mappa tar‑ruħ unika tiegħek.",
+      "step2": "Skopri t-taqbilet tiegħek — nenfasizzaw konnessjonijiet abbażi ta’ kompatibbiltà u reżonanza.",
+      "step3": "Iftaħ il-konversazzjoni — stieden it-taqbilet biex jagħmlu chat; sigur u privat b’d-disinn.",
+      "step4": "Iltaqa’ (fakultattiv) — skeda sejħa Jitsi jew laqgħa wiċċ‑imb wiċċ b’kunsens reċiproku."
     },
     "getting_started": {
       "title": "Bidu",
-      "step1": "<strong>Oħloq il-kont tiegħek</strong> — m’hemmx bżonn login soċjali.",
-      "step2": "<strong>Imla l-profil tiegħek</strong> — żid id-dettalji tat-twelid; ħin approssimattiv jaqbel.",
-      "step3": "<strong>Issettja d-disponibbiltà</strong> — ipproponi slots ta’ ħin lokali; l‑UTC nieħdu ħsiebu aħna.",
-      "step4": "<strong>Skopri t-taqbilet</strong> — iċċekkja suġġerimenti bbażati fuq ir‑reżonanza.",
-      "step5": "<strong>Chat u, jekk trid, iltaqa’</strong> — ibqa’ fl‑app; skeda meta tkun lest."
+      "step1": "Oħloq il-kont tiegħek — m’hemmx bżonn login soċjali.",
+      "step2": "Imla l-profil tiegħek — żid id-dettalji tat-twelid; ħin approssimattiv jaqbel.",
+      "step3": "Issettja d-disponibbiltà — ipproponi slots ta’ ħin lokali; l‑UTC nieħdu ħsiebu aħna.",
+      "step4": "Skopri t-taqbilet — iċċekkja suġġerimenti bbażati fuq ir‑reżonanza.",
+      "step5": "Chat u, jekk trid, iltaqa’ — ibqa’ fl‑app; skeda meta tkun lest."
     },
     "matching": {
       "title": "Kif taħdem it-taqbila (fil-qosor)",
@@ -155,7 +156,14 @@
     "next": {
       "title": "Il-passi li jmiss",
       "go_dashboard": "Mur għad-Dashboard",
-      "login_register": "Idħol / Irreġistra"
+      "login_register": "Idħol / Irreġistra",
+      "step1": "Oħloq kont",
+      "step2": "Imla l-profil tiegħek",
+      "step3": "Oħloq slot ta' ħin",
+      "step4": "Oqgħod attent/a għat-taqbilet",
+      "step5": "Proponi jew ikkonferma laqgħa",
+      "step6": "Ingħaqad mal-chat ta' Jitsi",
+      "read_more": "Aqra l-gwida dettaljata →"
     },
     "global": {
       "title": "Komunità globali, ħin lokali",
@@ -432,6 +440,70 @@
       "text": "Gawdi l-konnessjoni bl-istil u l-pass tiegħek."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Gwida dettaljata għall-passi li jmiss",
+    "title": "Gwida dettaljata għall-passi li jmiss",
+    "intro": "Din il-gwida tespandi l-passi tal-paġna prinċipali u tiggwidak f’kull azzjoni b’pariri u links.",
+    "steps": {
+      "step1": {
+        "heading": "Oħloq kont",
+        "description": "Irreġistra bl‑email tiegħek biex taċċessa d‑dashboard u l‑profil. Mhux meħtieġ login soċjali.",
+        "bullets": {
+          "item1": "Uża email valida; links ta’ verifika jiskadu wara 24 siegħa.",
+          "item2": "Wara l‑konferma, tintbagħat lejn il‑paġna tad‑dħul."
+        },
+        "link": "Mur għal Idħol / Irreġistra"
+      },
+      "step2": {
+        "heading": "Imla l‑profil tiegħek",
+        "description": "Żid id‑dettalji tat‑twelid biex tattiva tqabbil ibbażat fuq ir‑reżonanza. Ħin approssimattiv jaqbel; iktar preċiżjoni tfisser riżultati aħjar.",
+        "bullets": {
+          "item1": "Daħħal data, ħin u post tat‑twelid. Jekk ma tafx il‑ħin eżatt, agħżel stima.",
+          "item2": "Ikteb introduzzjoni qasira li tirrifletti l‑interessi u l‑intenzjonijiet tiegħek. Kun konkrett/a u awtentiku/a."
+        },
+        "callout": "Parir: iż‑żona horarja tal‑profil tiġi skoperta awtomatikament; tista’ tivverifikaha mid‑dashboard.",
+        "link": "Editja l‑profil"
+      },
+      "step3": {
+        "heading": "Oħloq slot ta’ ħin",
+        "description": "Offri wieħed jew aktar ħinijiet meta tkun lest/a biex tikkonnettja. Aħna nħażnu l‑ħin lokali tiegħek u nikkonvertuh għal UTC għax‑skedar.",
+        "bullets": {
+          "item1": "Agħżel ħin tal‑bidu fiż‑żona horarja tiegħek u issettja t‑tul (eż. 1–3 sigħat).",
+          "item2": "Slots fuq jiem differenti jiżdiedu ċ‑ċans ta’ tqabbil malajr."
+        },
+        "callout": "Żoni horarji taħt kontroll: aħna nikkonvertu awtomatikament bejn ħin lokali u UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Iftaħ id‑Dashboard"
+      },
+      "step4": {
+        "heading": "Oqgħod attent/a għat‑taqbilet",
+        "description": "Esplora tqabliet suġġeriti abbażi tar‑reżonanza. Iċċekkja noti ta’ kompatibbiltà u interessi kondiviżi.",
+        "bullets": {
+          "item1": "Jidhru suġġerimenti ġodda meta l‑profil u s‑slots ikunu attivi.",
+          "item2": "Uża filtri u noti biex iżżomm rekord ta’ min tixtieq tikkuntattja."
+        },
+        "callout": "Il‑privatezza l‑ewwel: inti tiddeċiedi meta u kif tinvolvi ruħek."
+      },
+      "step5": {
+        "heading": "Proponi jew ikkonferma laqgħa",
+        "description": "Meta jkun hemm interess reċiproku, ipproponi ħin fi ħdan slots li jikkoinċidu jew aċċetta l‑proposta tal‑match tiegħek.",
+        "bullets": {
+          "item1": "Ibgħat stedina ħelwa u preċiża. Offri tieqa waħda jew tnejn.",
+          "item2": "Ikkonferma l‑pjan fil‑chat u għaddi għal sejħa meta tkunu t‑tnejn lesti."
+        },
+        "callout": "Kunsens u kumdità: mexxi bir‑ritmu tiegħek. Huwa perfettament tajjeb tibqa’ fuq test biss."
+      },
+      "step6": {
+        "heading": "Ingħaqad mal‑chat ta’ Jitsi",
+        "description": "Uża Jitsi għal awdjo/vidjo fakultattiv. Browsers fuq desktop (Firefox, Chrome) huma appoġġjati; chat bil‑kitba dejjem disponibbli.",
+        "bullets": {
+          "item1": "Ittestja l‑mikrofonu/kamera jew ħallihom mitfija u uża biss test.",
+          "item2": "Agħżel l‑apparati korretti permezz tal‑vleġġa żgħira ħdejn l‑ikoni."
+        },
+        "link": "Aqra l‑gwida rapida ta’ Jitsi"
+      }
+    },
+    "closing": "Gawdi li tikkonnettja b’mod li jħossok tajjeb."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -458,5 +530,64 @@
     "summary_item3": "We may update the service and these Terms from time to time.",
     "contact_note": "For questions, please contact support.",
     "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Kostellazzjoni ta’ konnessjonijiet",
+      "subtitle": "Fejn id-disinn kosmiku jiltaqa’ mal-konnessjoni umana — santwarju għal ruħiet qribin immexxija mill-istilel."
+    },
+    "vision": {
+      "heading": "✨ Il-viżjoni",
+      "body1": "SoulTribe.chat tgħaqqad lin-nies li l-oriżonti tat-twelid tagħhom armonizzaw — toffri tqabbil ibbażat fuq l-astroloġija, chats privati, u laqgħat fakultattivi biex jgħinu ruħiet qribin jiltaqgħu b’mod konsċju u sinifikanti. Huwa aktar minn pjattaforma: esperiment ħaj ta’ konnessjoni kosmika, fejn l-astroloġija ssir lingwa komuni ta’ empatija aktar milli tbassir.",
+      "body2": "Kull oriżont huwa sinjatura unika — melodija fl-istilel li tirrisona ma’ oħrajn biex tqajjem għarfien u fond. Dan l-ispazju jilqa’ lit-tfittxija li jħossu li kull laqgħa għandha skop — li s-sinkronija tmexxi l-konnessjoni, u li t-tkabbir u l-ferħ joħorġu minn relazzjonijiet li jidhru maħsubin. SoulTribe.chat toffri ambjent sigur, minimalista u konsċju fejn dawn il-konnessjonijiet jistgħu jinħolqu b’mod naturali."
+    },
+    "transition": "Qabel ma nidħlu aktar fil-fond, ejjew nimxu mill-idea tal-konnessjoni kosmika għall-komunità li toħloq — is-SoulTribe innifisha.",
+    "soultribe": {
+      "heading": "🌠 X’inhu SoulTribe?",
+      "body1": "SoulTribe mhuwiex biss netwerk jew lista ta’ ħbieb — huwa qasam ta’ risonanza. Il-web invisibbli li jgħaqqad lil dawk li jaqsmu frekwenza, skop, u ritmu ta’ spirtu. Meta tiltaqa’ ma’ membri tat-tribù tiegħek, il-għarfien huwa istantanju: il-konversazzjoni tħoss bħal tifkir aktar milli introduzzjoni. Il-ħin iħallix it-truf tagħha, u l-ispazju bejn il-kliem isir sagru.",
+      "body2": "Fi ħdan is-SoulTribe tiegħek, int muri kompletament — stmati għall-essenza tiegħek, mhux għall-immaġni tiegħek. Kull persuna ssir mera: xi wħud jirriflettu s-saħħiet tiegħek, oħrajn il-lezzjonijiet tiegħek, u ftit jiftakru f’dak li tista’ ssir. Hum jagħtu ħajja lill-kuraġġ, awtentiċità, u l-għarfien li l-appartenenza mhix dwar is-similarità iżda dwar ir-risonanza.",
+      "body3": "It-tribù tiegħek tista’ tkun magħmula minn artisti, ħolmu, fejqan, xjentisti, jew ruħiet kwiet li jimxu fil-verità tagħhom. Dak li jgħaqqadna mhux sfond jew twemmin — huwa vibrazzjoni."
+    },
+    "power": {
+      "heading": "🔥 Il-qawwa ta’ tribù",
+      "body1": "Bħalma kull SoulTribe tinforma permezz ta’ risonanza maqsuma, il-qawwa vera tagħha toħroġ mill-enerġija kollettiva li tikber minn dawn il-konnessjonijiet.",
+      "body2": "Inkabbir aktar malajr, infiq aktar fil-fond, u noħolmu ikbar meta oħrajn jimxu magħna u jixhdu t-triq tagħna. Il-bnedmin dejjem iffjorixxew fi ċrieki — huwa d-disinn antik tagħna. Tribù tkabbar l-enerġija: dak li wieħed jixgħel, ieħor isostni; dak li wieħed joħol, ieħor iħabbar. F’dan il-qasam maqsum, is-sinkroniji jimmultiplikaw u l-evoluzzjoni kollettiva taċċellera.",
+      "body3": "Meta tinvolvi ruħek, tista’ tinnota kif l-enerġija tiegħek tinfirex. L-ideat jiksbew slancio, il-kreatività tinżel, l-intwizzjoni tissaħħaħ. It-tribù ssir mera, għalliema, u ċirku ta’ empowriment — tfakkrek li t-triq tar-ruħ qatt ma kienet maħsuba biex timxi waħedha.",
+      "body4": "Fi ħdan SoulTribe.chat, l-idea ta’ 'tribù' mhix dwar esklużività iżda sinerġija. Hawnhekk, l-individualità u l-imħabba maqsuma ko-eżistu b’mod sabiħ. Kull persuna tikkontribwixxi l-frekwenza tagħha, tiffurma kostellazzjoni ħajja ta’ kuxjenza — kull punt ta’ dawl jidwi lil l-oħrajn."
+    },
+    "astro": {
+      "heading": "☀️ Astro u ruħ",
+      "body1": "L-astroloġija fuq SoulTribe.chat tgħaqqad l-għerf u l-konnessjoni filwaqt li tirrispetta l-privatezza u l-kunsens tiegħek. Biss data ta’ twelid essenzjali tintuża biex tiġġenera għerf dwar kompatibbiltà, u xejn ma jiġi maqsum jew maħżun aktar minn dak meħtieġ għall-esperjenza tiegħek.",
+      "body2": "Bl-użu tad-dettalji tat-twelid tiegħek, il-pjattaforma tikkalkula pożizzjonijiet planetarji u tqabbilhom ma’ oħrajn biex tiżvela żoni ta’ armonija naturali, risonanza emozjonali, u potenzjal ta’ tkabbir. Minflok tgħabbi l-utenti bid-data, ir-riżultati jiġu distillati f’indikaturi ċari ta’ kompatibbiltà — juru fejn l-enerġiji jallinjaw u kif ir-relazzjonijiet jistgħu jevolvu.",
+      "body3": "Dan mhux dating skont is-sinjal; huwa risonanza ta’ ruħ skont id-disinn, fejn l-oriżonti jmexxu l-fehim u l-konnessjoni. Kemm jekk ir-riżultat huwa kimika romantika, kollaborazzjoni kreattiva, jew ħbiberija profonda, SoulTribe.chat tgħinek tifhem għaliex ċerti nies jidhru istantanjament familjari — u kif kull laqgħa ssir mera għar-ruħ tiegħek."
+    },
+    "soulmates": {
+      "heading": "💫 Sħab ta’ ruħ u lil hinn",
+      "body1": "Il-kelma 'sħab ta’ ruħ' spiss iżżewweq l-immaġinazzjoni għar-romantika, iżda sħab ta’ ruħ jidhru f’forom varji. Jistgħu jkunu l-ħabib li jerġa’ jqajjem id-daħk tiegħek, l-għalliem li jisfida l-limiti tiegħek, jew il-barrani li l-preżenza tiegħu tħoss istantanjament familjari. SoulTribe.chat tespandi din l-idea — tmexxik mhux lejn 'dak wieħed', iżda lejn il-ħafna li jġorru biċċiet ta’ l-evoluzzjoni tiegħek.",
+      "body2": "Xi konnessjonijiet jaqbadu l-elettriku — intensi u transformativi. Oħrajn joffru paċi kwiet, iħabbru l-enerġija tiegħek f’kwiet maqsum. Kull laqgħa hija pass lejn il-kompletezza, tfakkira li l-vjaġġ tar-ruħ huwa możaika ta’ laqgħat sagri. Liltaqa’ mat-tribù tiegħek ifisser tiltaqa’ miegħek innifsek — rifless f’mille mera ħajjin."
+    },
+    "benefit": {
+      "heading": "🌍 Kif tibbenefika",
+      "items": {
+        "item1": "Oħloq il-mappa tar-ruħ tiegħek — daħħal id-dettalji tat-twelid tiegħek biex tiġġenera l-mudell kosmiku uniku tiegħek u skopri dak li jagħmel l-enerġija tiegħek distintiva.",
+        "item2": "Skopri risonanza — sib membri li l-oriżonti tagħhom jirriflettu jew jikkomplementaw lil dawk tiegħek. Tgħallim kif l-allinjamenti planetarji jindikaw armonija, ispirazzjoni, jew skop karmiku.",
+        "item3": "Qabbad awtentikament — involvi ruħek f’konversazzjonijiet konsċjużi. SoulTribe.chat tħeġġeġ preżenza, kuriżità, u rispett. Il-kliem isir strumenti ta’ fehim, mhux ta’ prestazzjoni.",
+        "item4": "Ikbru flimkien — kull laqgħa hija skambju ta’ dawl. Permezz ta’ risonanza, kuntrast, jew frizzjoni ħafifa, tevvolvi. Is-sistema tagħti prominenza lill-meri tal-għalliema aħjar tiegħek — dawk li jespandu l-kuxjenza tiegħek minflok jirriflettu ż-żona ta’ kumdità tiegħek.",
+        "item5": "Iltaqgħu fil-preżenza — meta l-prontezza tinfirex b’mod naturali, mexxi minn test għal vuċi, minn konversazzjoni għal ko-kreazzjoni. Kull laqgħa — diġitali jew personali — ssir dialoġu sagru ta’ ruħiet."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest għal konnessjonijiet profondi",
+      "intro": "Sib il-frekwenza tiegħek, u sib it-tribù tiegħek.",
+      "body1": "Il-konnessjoni hija sagra — kull konversazzjoni mgħaddsa fil-preżenza tista’ ssir port għall-kuxjenza. It-teknoloġija għandha sservi l-kuxjenza, tnissi l-intimità aktar milli distrazzjoni. L-astroloġija, użata bi kompassjoni u ċarezza, tiżvela mhux destin iżda libertà permezz ta’ fehim. Meta t-tribujiet jallinjaw, jiffurmaw kostellazzjonijiet radjanti li jdawlu aktar qawwija flimkien milli separatament.",
+      "body2": "SoulTribe.chat ifakkarna li m’aħniex vaganti taħt sema ‘il bogħod, iżda ħjut luminużi f’tapit maqsum ta’ kreazzjoni. Kull laqgħa hija xarika fin-nar kbir ta’ l-istennija, kull konversazzjoni battita ta’ qalb f’ritmu ta’ xi ħaġa wiesgħa u sagra.",
+      "closing": "Flimkien nifakkru min aħna — tribù waħda ta’ ruħiet ħafna."
+    },
+    "join": {
+      "heading": "🌌 Ingħaqad mal-vjaġġ",
+      "body": "Jekk dawn il-kliem jirriflettu, oħloq il-profil tiegħek, esplora l-mappa tar-ruħ tiegħek, u ibda tiltaqa’ ma’ spiriti qribin li jaqsmu l-frekwenza tiegħek. Kull konnessjoni ġdida hija bieb għall-iskoperta, riflessjoni, u tkabbir.",
+      "cta": "Ibda l-vjaġġ SoulTribe tiegħek",
+      "footer": "It-tribù tiegħek diġà hemm barra — ħalli l-istilel jmexxuk id-dar."
+    }
   }
 }

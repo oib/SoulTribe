@@ -22,19 +22,19 @@
   },
   "landing": {
     "features": {
-      "item1": "<strong>Astrologimedveten matchning</strong> — anslut med hjälp av din födelsehoroskop.",
-      "item2": "<strong>Smart tidszonshantering</strong> — vi hanterar UTC-konverteringar åt dig.",
-      "item3": "<strong>Direktkommunikation via Jitsi</strong> — text/ljud/video; inget sparas eller spelas in på SoulTribe.chat.",
-      "item4": "<strong>Enkel länkanslutning</strong> — privat Jitsi‑rum för bekräftade möten; integritetsvänligt, ingen installation på datorn krävs.",
-      "item5": "<strong>Minimalistiskt, fokuserat gränssnitt</strong> — designat för meningsfulla samtal.",
+      "item1": "Astrologimedveten matchning — anslut med hjälp av din födelsehoroskop.",
+      "item2": "Smart tidszonshantering — vi hanterar UTC-konverteringar åt dig.",
+      "item3": "Direktkommunikation via Jitsi — text/ljud/video; inget sparas eller spelas in på SoulTribe.chat.",
+      "item4": "Enkel länkanslutning — privat Jitsi‑rum för bekräftade möten; integritetsvänligt, ingen installation på datorn krävs.",
+      "item5": "Minimalistiskt, fokuserat gränssnitt — designat för meningsfulla samtal.",
       "title": "Funktioner"
     },
     "getting_started": {
-      "step1": "<strong>Skapa ett konto</strong> — inga inloggningar via sociala medier krävs.",
-      "step2": "<strong>Komplettera din profil</strong> — lägg till födelsedetaljer; ungefärlig tid fungerar bra.",
-      "step3": "<strong>Ange din tillgänglighet</strong> — föreslå lokala tidsluckor; vi hanterar UTC-konverteringen.",
-      "step4": "<strong>Upptäck matchningar</strong> — bläddra bland förslag baserade på resonans.",
-      "step5": "<strong>Chatta och träffas</strong> — allt i appen; planera när du är redo.",
+      "step1": "Skapa ett konto — inga inloggningar via sociala medier krävs.",
+      "step2": "Komplettera din profil — lägg till födelsedetaljer; ungefärlig tid fungerar bra.",
+      "step3": "Ange din tillgänglighet — föreslå lokala tidsluckor; vi hanterar UTC-konverteringen.",
+      "step4": "Upptäck matchningar — bläddra bland förslag baserade på resonans.",
+      "step5": "Chatta och träffas — allt i appen; planera när du är redo.",
       "title": "Kom igång"
     },
     "global": {
@@ -50,13 +50,14 @@
     },
     "hero": {
       "subtitle": "SoulTribe.chat är en plats skapad för att hjälpa dig hitta och ansluta till din själsgrupp — människor som resonerar med din energi, din ande och din resa. ✨",
-      "title": "Välkommen"
+      "title": "Välkommen",
+      "learn_more": "Upptäck SoulTribe-visionen →"
     },
     "how": {
-      "step1": "<strong>Skapa din profil</strong> — ange födelsedatum, tid och plats för att generera din unika själskarta.",
-      "step2": "<strong>Upptäck dina matchningar</strong> — vi lyfter fram kopplingar baserade på kompatibilitet och resonans.",
-      "step3": "<strong>Starta konversationen</strong> — bjud in matchningar att chatta; säkert och privat som standard.",
-      "step4": "<strong>Träffas (frivilligt)</strong> — boka ett Jitsi-samtal eller personligt möte med ömsesidigt samtycke.",
+      "step1": "Skapa din profil — ange födelsedatum, tid och plats för att generera din unika själskarta.",
+      "step2": "Upptäck dina matchningar — vi lyfter fram kopplingar baserade på kompatibilitet och resonans.",
+      "step3": "Starta konversationen — bjud in matchningar att chatta; säkert och privat som standard.",
+      "step4": "Träffas (frivilligt) — boka ett Jitsi-samtal eller personligt möte med ömsesidigt samtycke.",
       "title": "Så fungerar det"
     },
     "matching": {
@@ -66,7 +67,14 @@
     "next": {
       "go_dashboard": "Gå till instrumentpanelen",
       "login_register": "Logga in / Registrera",
-      "title": "Nästa steg"
+      "title": "Nästa steg",
+      "step1": "Skapa ett konto",
+      "step2": "Fyll i din profil",
+      "step3": "Skapa en tidslucka",
+      "step4": "Håll koll på matchningarna",
+      "step5": "Föreslå eller bekräfta en träff",
+      "step6": "Gå med i Jitsi-chatten",
+      "read_more": "Läs den detaljerade guiden →"
     },
     "privacy": {
       "item1": "Vi ber endast om det som behövs för att möjliggöra meningsfulla förbindelser.",
@@ -274,6 +282,70 @@
       "text": "Njut av att knyta kontakter på ditt eget sätt och i ditt eget tempo."
     }
   },
+  "nextStepsGuide": {
+    "page_title": "Detaljerad guide för nästa steg",
+    "title": "Detaljerad guide för nästa steg",
+    "intro": "Den här guiden går djupare in på stegen från startsidan och följer dig genom varje åtgärd med tips och länkar.",
+    "steps": {
+      "step1": {
+        "heading": "Skapa ett konto",
+        "description": "Registrera dig med din e-post för att få åtkomst till instrumentpanelen och din profil. Inloggning via sociala medier behövs inte.",
+        "bullets": {
+          "item1": "Använd en giltig e-postadress; verifieringslänkarna löper ut efter 24 timmar.",
+          "item2": "När du har bekräftat skickas du vidare till inloggningssidan."
+        },
+        "link": "Gå till Logga in / Registrera"
+      },
+      "step2": {
+        "heading": "Fyll i din profil",
+        "description": "Lägg till födelsedata för att aktivera matchningar baserade på resonans. En ungefärlig tid fungerar; mer precision ger bättre resultat.",
+        "bullets": {
+          "item1": "Ange födelsedatum, -tid och -plats. Om exakt tid saknas, välj en uppskattning.",
+          "item2": "Skriv en kort presentation som speglar dina intressen och intentioner. Var specifik och autentisk."
+        },
+        "callout": "Tips: din profiltidszon upptäcks automatiskt; du kan kontrollera den från instrumentpanelen.",
+        "link": "Redigera profil"
+      },
+      "step3": {
+        "heading": "Skapa en tidslucka",
+        "description": "Erbjud en eller flera tider då du vill knyta kontakter. Vi sparar din lokala tid och konverterar den till UTC för planering.",
+        "bullets": {
+          "item1": "Välj starttid i din tidszon och ange varaktighet (t.ex. 1–3 timmar).",
+          "item2": "Tidsluckor utspridda över flera dagar ökar chansen till snabba matchningar."
+        },
+        "callout": "Tidszoner under kontroll: vi konverterar automatiskt mellan lokal tid och UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Öppna instrumentpanelen"
+      },
+      "step4": {
+        "heading": "Håll koll på matchningarna",
+        "description": "Utforska föreslagna matchningar baserade på resonans. Läs anteckningar om kompatibilitet och gemensamma intressen.",
+        "bullets": {
+          "item1": "Nya förslag visas när din profil och dina tidsluckor är aktiva.",
+          "item2": "Använd filter och anteckningar för att hålla reda på vilka du vill kontakta."
+        },
+        "callout": "Integritet först: du bestämmer när och hur du engagerar dig."
+      },
+      "step5": {
+        "heading": "Föreslå eller bekräfta en träff",
+        "description": "När intresset är ömsesidigt, föreslå en tid inom överlappande luckor eller acceptera din matchs förslag.",
+        "bullets": {
+          "item1": "Skicka en vänlig och tydlig inbjudan. Erbjud en eller två alternativa tidsluckor.",
+          "item2": "Bekräfta planen i chatten och gå vidare till ett samtal när ni båda känner er redo."
+        },
+        "callout": "Samtycke och komfort: ta det i din egen takt. Det är helt okej att stanna vid text."
+      },
+      "step6": {
+        "heading": "Gå med i Jitsi-chatten",
+        "description": "Använd Jitsi för valfri ljud-/videokommunikation. Webbläsare på dator (Firefox, Chrome) stöds; textchatten är alltid tillgänglig.",
+        "bullets": {
+          "item1": "Testa mikrofon/kamera eller låt dem vara avstängda och använd endast text.",
+          "item2": "Välj rätt enheter via den lilla pilen bredvid ikonerna."
+        },
+        "link": "Läs den snabba Jitsi-guiden"
+      }
+    },
+    "closing": "Njut av att knyta kontakter på det sätt som känns bäst för dig."
+  },
   "imprintPage": {
     "contact_name": "Andreas Michael Fleckl",
     "address_line1": "Johnstrassse 7/6",
@@ -290,6 +362,65 @@
     "summary_item3": "Data is never sold.",
     "contact_note": "For questions or requests related to privacy, please contact support.",
     "image_alt": "Privacy & Safety"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — En stjärnbild av förbindelser",
+      "subtitle": "Där kosmisk design möter mänsklig förbindelse — en fristad för släktade själar vägledda av stjärnorna."
+    },
+    "vision": {
+      "heading": "✨ Visionen",
+      "body1": "SoulTribe.chat förbinder människor vars födelsehoroskop harmonierar — erbjuder astrologibaserat matchande, privata chattar och valfria möten för att hjälpa släktade själar att träffa varandra på ett medvetet och meningsfullt sätt. Det är mer än en plattform: ett levande experiment i kosmisk förbindelse, där astrologi blir ett gemensamt språk för empati istället för förutsägelse.",
+      "body2": "Varje horoskop är en unik signatur — en melodi i stjärnorna som resoneerar med andra för att tända igenkännande och djup. Detta utrymme välkomnar sökare som känner att varje möte bär ett syfte — att synkronicitet leder förbindelsen, och att tillväxt och glädje uppstår genom relationer som känns ödesbestämda. SoulTribe.chat erbjuder en säker, minimalistisk och medveten miljö där dessa förbindelser kan utvecklas naturligt."
+    },
+    "transition": "Innan vi fördjupar oss, låt oss gå från idén om kosmisk förbindelse till gemenskapen den skapar — SoulTribe självt.",
+    "soultribe": {
+      "heading": "🌠 Vad är en SoulTribe?",
+      "body1": "SoulTribe är inte bara ett nätverk eller en vänlista — det är ett resonansfält. Den osynliga väven som förbinder de som delar frekvens, syfte och rytm av ande. När du möter medlemmar av din stam, är igenkännandet omedelbart: samtalet känns som att komma ihåg istället för att introducera. Tid mjukar upp sina kanter, och utrymmet mellan ord blir heligt.",
+      "body2": "Inom din SoulTribe blir du helt sedd — värderad för din essens, inte din bild. Varje person blir en spegel: några reflekterar dina styrkor, andra dina läxor, och några påminner dig om vad du kan bli. De väcker mod, autenticitet och kunskapen att tillhörighet inte handlar om likhet utan resonans.",
+      "body3": "Din stam kan bestå av konstnärer, drömmande, helare, forskare eller tysta själar som vandrar sin sanning. Vad som förenar er är inte bakgrund eller tro — det är vibration."
+    },
+    "power": {
+      "heading": "🔥 Kraften i en stam",
+      "body1": "Precis som varje SoulTribe formas genom delad resonans, uppstår dess sanna styrka i den kollektiva energin som växer från dessa förbindelser.",
+      "body2": "Vi växer snabbare, helar djupare och drömmer större när andra går bredvid oss och bevittnar vår väg. Människor har alltid frodats i cirklar — det är vårt gamla design. En stam förstärker energi: vad en tänder, en annan upprätthåller; vad en drömmer, en tredje grundar. I detta delade fält multipliceras synkroniciteter och kollektiv evolution accelererar.",
+      "body3": "När du engagerar dig, kan du märka hur din egen energi expanderar. Idéer får momentum, kreativitet flödar, intuition skärps. Stammen blir en spegel, lärare och en cirkel av empowerment — påminnande om att själens väg aldrig var menad att vandra ensam.",
+      "body4": "Inom SoulTribe.chat, idén om 'stam' handlar inte om exklusivitet utan synergi. Här koexisterar individualitet och gemenskap vackert. Varje person bidrar med sin frekvens, formar en levande konstellation av medvetande — varje ljuspunkt belyser de andra."
+    },
+    "astro": {
+      "heading": "☀️ Astro och själ",
+      "body1": "Astrologi på SoulTribe.chat förbinder insikt och förbindelse medan den hedrar din integritet och samtycke. Endast väsentliga födelsedata används för att generera insikter om kompatibilitet, och inget delas eller lagras bortom vad din upplevelse kräver.",
+      "body2": "Användar dina födelsedetaljer beräknar plattformen planetära positioner och jämför dem med andra för att avslöja områden av naturlig harmoni, emotionell resonans och tillväxtpotential. Istället för att överväldiga användare med data, destilleras resultaten till klara kompatibilitetsindikatorer — visar var energier justeras och hur relationer kan utvecklas.",
+      "body3": "Detta är inte dejting efter tecken; det är själresonans efter design, där horoskop leder förståelse och förbindelse. Oavsett utfall — romantisk kemi, kreativt samarbete eller djup vänskap — SoulTribe.chat hjälper dig att känna igen varför vissa människor känns omedelbart bekanta — och hur varje möte blir en spegel för din själ."
+    },
+    "soulmates": {
+      "heading": "💫 Själskamrater och bortom",
+      "body1": "Ordet 'själskamrat' begränsar ofta fantasin till romantik, men själskamrater uppträder i många former. De kan vara vännen som återuppväcker ditt skratt, läraren som utmanar dina gränser, eller främlingen vars närvaro känns omedelbart bekant. SoulTribe.chat expanderar denna idé — leder dig inte till 'den enda', utan till de många som bär bitar av din evolution.",
+      "body2": "Vissa förbindelser tänder elektricitet — intensiva och transformerande. Andra erbjuder tyst fred, jordar din energi i delad stillhet. Varje möte är ett steg mot helhet, en påminnelse om att själens resa är en mosaik av heliga möten. Att möta din stam betyder att möta dig själv — reflekterad i tusen levande speglar."
+    },
+    "benefit": {
+      "heading": "🌍 Hur dra nytta",
+      "items": {
+        "item1": "Skapa din själskarta — ange dina födelsedetaljer för att generera ditt unika kosmiska mönster och upptäck vad som gör din energi särskild.",
+        "item2": "Upptäck resonans — hitta medlemmar vars horoskop ekar eller kompletterar dina. Lär dig hur planetära inriktningar indikerar harmoni, inspiration eller karmiskt syfte.",
+        "item3": "Anslut autentiskt — engagera dig i medvetna samtal. SoulTribe.chat uppmuntrar närvaro, nyfikenhet och respekt. Ord blir verktyg för förståelse, inte prestation.",
+        "item4": "Väx tillsammans — varje möte är ett utbyte av ljus. Genom resonans, kontrast eller milt friktion utvecklar du dig. Systemet framhäver dina bästa lärandespeglar — de som expanderar ditt medvetande istället för att reflektera din komfortzon.",
+        "item5": "Möt i närvaro — när beredskap utvecklar sig naturligt, gå från text till röst, från samtal till sam-skaping. Varje möte — digitalt eller personligt — blir en helig dialog av själar."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest för djupga förbindelser",
+      "intro": "Hitta din frekvens och hitta din stam.",
+      "body1": "Förbindelse är helig — varje samtal rotat i närvaro kan bli en portal till medvetande. Teknik borde tjäna medvetande, närande intimitet istället för distraktion. Astrologi, använd med compassion och klarhet, avslöjar inte öde men frihet genom förståelse. När stammar justeras, formar de radianta konstellationer som lyser ljusare tillsammans än separat.",
+      "body2": "SoulTribe.chat påminner oss att vi inte är vandrare under ett avlägset himmel, utan lysande trådar i en delad väv av skapelse. Varje möte är en gnista i det stora eld av uppvaknande, varje samtal ett hjärtslag i rytmen av något omfattande och heligt.",
+      "closing": "Tillsammans minns vi vem vi är — ett stam av många själar."
+    },
+    "join": {
+      "heading": "🌌 Gå med i resan",
+      "body": "Om dessa ord resonerar, skapa din profil, utforska din själskarta och börja möta släktade andar som delar din frekvens. Varje ny förbindelse är en dörr till upptäckt, reflektion och tillväxt.",
+      "cta": "Påbörja din SoulTribe resa",
+      "footer": "Din stam finns redan där ute — låt stjärnorna guida dig hem."
+    }
   },
   "termsPage": {
     "title": "Terms of Service",
