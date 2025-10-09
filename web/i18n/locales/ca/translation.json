@@ -262,7 +262,18 @@
     "note": "El teu perfil ajuda a personalitzar coincidències i mostrar el fus horari correcte.",
     "primary_language_label": "Idioma principal (per a la interfície)",
     "other_languages_label": "Altres idiomes (per al matching)",
-    "language_input_placeholder": "Escriu per afegir idiomes..."
+    "language_input_placeholder": "Escriu per afegir idiomes...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "radix": {
     "title": "El teu radix",
@@ -294,7 +305,27 @@
     "slot_help_step3": "Les targetes de solapament mostren l'espai compartit: UTC, la teva hora local i la de la coincidència.",
     "slot_help_step4": "Fes clic a \"Proposa aquesta hora\" per iniciar el procés amb aquesta franja.",
     "slot_help_step5": "Si alguna cosa canvia, edita o elimina la franja per deixar de suggerir temps obsolets.",
-    "slot_help_more": "Necessites ajuda? Obre la guia completa de disponibilitat des del menú Docs."
+    "slot_help_more": "Necessites ajuda? Obre la guia completa de disponibilitat des del menú Docs.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "login": {
     "page_title": "SoulTribe.chat — Inici de sessió / Registre",

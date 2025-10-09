@@ -18,7 +18,27 @@
     "slot_help_step2": "Når matches hentes, sammenligner vi dine tidsrum med andre medlemmers for at finde overlap, som stadig ligger i fremtiden.",
     "slot_help_step3": "Overlap‑chips i afsnittet ”Matches” viser det fælles vindue: UTC, din lokale tid og din matchs lokale tid.",
     "slot_help_step4": "Klik ”Foreslå dette tidspunkt” på et overlap for at starte mødeforløbet med dette tidsrum forudfyldt.",
-    "slot_help_step5": "Hvis noget ændrer sig, redigér eller slet tidsrummet, så vi ikke foreslår forældede tider."
+    "slot_help_step5": "Hvis noget ændrer sig, redigér eller slet tidsrummet, så vi ikke foreslår forældede tider.",
+    "notifications": {
+      "proposed_title": "Møde foreslået — kræver din bekræftelse",
+      "proposed_body": "{other} foreslog {time}",
+      "proposed_body_fallback": "Et møde er blevet foreslået.",
+      "confirmed_title": "Møde bekræftet",
+      "confirmed_body": "{other} bekræftede {time}",
+      "confirmed_body_fallback": "Dit møde er bekræftet.",
+      "unconfirmed_title": "Møde skal planlægges igen",
+      "unconfirmed_body": "{other} ændrede mødet tilbage til foreslået tilstand.",
+      "unconfirmed_body_fallback": "Dit møde skal bekræftes igen. Tjek dashboardet for detaljer.",
+      "canceled_title": "Møde aflyst",
+      "canceled_body": "{other} aflyste mødet.",
+      "canceled_body_fallback": "Et møde blev aflyst.",
+      "deleted_title": "Møde slettet",
+      "deleted_body": "{other} slettede mødeposten.",
+      "deleted_body_fallback": "En mødepost blev slettet.",
+      "permission_request": "Tillad browser-notifikationer for at holde dig opdateret om møder.",
+      "permission_denied": "Browser-notifikationer er i øjeblikket blokeret.",
+      "permission_granted": "Browser-notifikationer aktiveret."
+    }
   },
   "language": {
     "da": "Dansk",
@@ -95,7 +115,18 @@
       "lon_placeholder": "Længdegrad (f.eks. 16.3738)",
       "instructions": "Angiv din fødselsdato og -sted for at beregne din radix. Hvis du ikke kender det præcise tidspunkt, lad tidsfeltet være tomt, så bruger vi kl. 12 som standard."
     },
-    "note": "Din profil bruges til at personalisere matches og visning af tidszone."
+    "note": "Din profil bruges til at personalisere matches og visning af tidszone.",
+    "notifications": {
+      "legend": "Notifikationer",
+      "browser_label": "Browser-notifikationer",
+      "browser_help": "Vis beskeder på denne enhed, når møder kræver din opmærksomhed.",
+      "browser_grant": "Aktivér browser-notifikationer",
+      "browser_denied": "Browser-notifikationer er blokeret i browserens indstillinger.",
+      "email_label": "E-mail-notifikationer",
+      "email_help": "Send mødeopdateringer til din verificerede e-mailadresse.",
+      "email_disabled": "Bekræft din e-mail for at modtage mødeopdateringer.",
+      "save_notice": "Disse indstillinger gælder for fremtidige møder."
+    }
   },
   "welcome": {
     "subtitle": "Find din sjælsstamme",

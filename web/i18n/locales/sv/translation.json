@@ -18,7 +18,27 @@
     "slot_help_step2": "När matchningar hämtas jämför vi dina tidsfönster med andras för att hitta överlapp som fortfarande ligger i framtiden.",
     "slot_help_step3": "Överlappningschip i avsnittet ”Matches” visar det delade fönstret: UTC, din lokala tid och din matchs lokala tid.",
     "slot_help_step4": "Klicka på ”Föreslå denna tid” vid en överlappning för att starta mötesflödet med den tidsluckan förifylld.",
-    "slot_help_step5": "Om något ändras, redigera eller ta bort tidsluckan så att vi slutar föreslå föråldrade tider."
+    "slot_help_step5": "Om något ändras, redigera eller ta bort tidsluckan så att vi slutar föreslå föråldrade tider.",
+    "notifications": {
+      "proposed_title": "Möte föreslaget — behöver din bekräftelse",
+      "proposed_body": "{other} föreslog {time}",
+      "proposed_body_fallback": "Ett möte har föreslagits.",
+      "confirmed_title": "Möte bekräftat",
+      "confirmed_body": "{other} bekräftade {time}",
+      "confirmed_body_fallback": "Ditt möte är bekräftat.",
+      "unconfirmed_title": "Möte behöver omplaneras",
+      "unconfirmed_body": "{other} återställde mötet till föreslaget läge.",
+      "unconfirmed_body_fallback": "Ditt möte behöver bekräftas igen. Kontrollera instrumentpanelen för detaljer.",
+      "canceled_title": "Möte avbokades",
+      "canceled_body": "{other} avbokade mötet.",
+      "canceled_body_fallback": "Ett möte avbokades.",
+      "deleted_title": "Möte raderat",
+      "deleted_body": "{other} raderade mötesposten.",
+      "deleted_body_fallback": "En mötespost raderades.",
+      "permission_request": "Tillåt webbläsaraviseringar för att hålla dig uppdaterad om möten.",
+      "permission_denied": "Webbläsaraviseringar är för närvarande blockerade.",
+      "permission_granted": "Webbläsaraviseringar aktiverade."
+    }
   },
   "landing": {
     "features": {
@@ -168,7 +188,18 @@
       "lon_placeholder": "Longitud (t.ex. 16.3738)",
       "instructions": "Ange ditt födelsedatum och födelseort för att beräkna din radix. Om du inte vet exakt tid, lämna tidsfältet tomt så använder vi kl. 12.00 som standard."
     },
-    "note": "Din profil används för att anpassa matchningar och tidszonsvisning."
+    "note": "Din profil används för att anpassa matchningar och tidszonsvisning.",
+    "notifications": {
+      "legend": "Aviseringar",
+      "browser_label": "Webbläsaraviseringar",
+      "browser_help": "Visa aviseringar på den här enheten när möten kräver din uppmärksamhet.",
+      "browser_grant": "Aktivera webbläsaraviseringar",
+      "browser_denied": "Webbläsaraviseringar är blockerade i webbläsarens inställningar.",
+      "email_label": "E-postaviseringar",
+      "email_help": "Skicka mötesuppdateringar till din verifierade e-postadress.",
+      "email_disabled": "Verifiera din e-post för att få mötesuppdateringar.",
+      "save_notice": "Dessa inställningar gäller för framtida möten."
+    }
   },
   "welcome": {
     "subtitle": "Hitta din själsgrupp",

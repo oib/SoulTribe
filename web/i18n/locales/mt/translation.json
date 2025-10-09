@@ -283,7 +283,18 @@
     "note": "Il-profil tiegħek jintuża biex jippersonalizza t-taqbilet u juri ż-żona horarja.",
     "primary_language_label": "Lingwa primarja (għall-UI)",
     "other_languages_label": "Lingwi oħra (użati għat-taqbilet)",
-    "language_input_placeholder": "Ikteb biex iżżid lingwi..."
+    "language_input_placeholder": "Ikteb biex iżżid lingwi...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "search": {
     "noResults": "L-ebda riżultati",
@@ -359,7 +370,27 @@
     "slot_help_step2": "Meta jinkisbu l‑matches, inqabblu s‑slots tiegħek ma’ dawk ta’ membri oħra biex insibu koinċidenzi li għadhom fil‑futur.",
     "slot_help_step3": "Il‑chips tal‑koinċidenza fis‑sezzjoni “Matches” juru t‑tieqa kondiviża: UTC, il‑ħin lokali tiegħek u l‑ħin lokali tal‑pari tiegħek.",
     "slot_help_step4": "Ikklikkja “Ipproponi dan il‑ħin” fuq koinċidenza biex tibda l‑proċess tal‑laqgħa b’dak is‑slot mimli minn qabel.",
-    "slot_help_step5": "Jekk jinbidel xi ħaġa, editja jew ħassar is‑slot sabiex ma nibqgħux nipproponu ħinijiet skaduti."
+    "slot_help_step5": "Jekk jinbidel xi ħaġa, editja jew ħassar is‑slot sabiex ma nibqgħux nipproponu ħinijiet skaduti.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "guestGuide": {
     "title": "Gwida rapida Jitsi għall-mistednin ta' SoulTribe",

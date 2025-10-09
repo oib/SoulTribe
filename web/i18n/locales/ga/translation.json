@@ -283,7 +283,18 @@
     "note": "Úsáidtear do phróifíl chun meaitseálacha agus taispeáint crios ama a phearsanú.",
     "primary_language_label": "Príomhtheanga (úsáidte don chomhéadan)",
     "other_languages_label": "Teangacha eile (úsáidte don mheaitseáil)",
-    "language_input_placeholder": "Clóscríobh chun teangacha a chur leis..."
+    "language_input_placeholder": "Clóscríobh chun teangacha a chur leis...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "ai": {
     "get_interpretation": "Faigh léirmhíniú",
@@ -311,7 +322,27 @@
     "slot_help_step2": "Nuair a fhaightear meaitseálacha, cuirimid do shliotáin i gcomparáid le shliotáin baill eile chun forluíthe a aimsiú atá fós sa todhchaí.",
     "slot_help_step3": "Taispeánann na sliseanna forluíte i rannán “Matches” an fhuinneog roinnte: UTC, d’am logánta agus am logánta do pháirtí.",
     "slot_help_step4": "Cliceáil “Mol an t‑am seo” ar fhorluí chun an sreabhadh cruinnithe a thosú leis an sliotán sin réamhlíonta.",
-    "slot_help_step5": "Má athraíonn rud éigin, cuir an sliotán in eagar nó scrios é ionas nach molfaimid amanna as dáta."
+    "slot_help_step5": "Má athraíonn rud éigin, cuir an sliotán in eagar nó scrios é ionas nach molfaimid amanna as dáta.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "imprint": {
     "title": "Fógra dlí"

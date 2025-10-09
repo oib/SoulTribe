@@ -18,7 +18,27 @@
     "slot_help_step2": "Når treff hentes, sammenligner vi tidslukene dine med andre medlemmers for å finne overlapper som fortsatt ligger frem i tid.",
     "slot_help_step3": "Overlapp-brikker i seksjonen «Matches» viser det delte vinduet: UTC, din lokale tid og din matchs lokale tid.",
     "slot_help_step4": "Klikk «Foreslå dette tidspunktet» på en overlapp for å starte møteflyten med denne tidsluken forhåndsutfylt.",
-    "slot_help_step5": "Hvis noe endrer seg, rediger eller slett tidsluken slik at vi slutter å foreslå utdaterte tider."
+    "slot_help_step5": "Hvis noe endrer seg, rediger eller slett tidsluken slik at vi slutter å foreslå utdaterte tider.",
+    "notifications": {
+      "proposed_title": "Møte foreslått — trenger bekreftelse",
+      "proposed_body": "{other} foreslo {time}",
+      "proposed_body_fallback": "Et møte er foreslått.",
+      "confirmed_title": "Møte bekreftet",
+      "confirmed_body": "{other} bekreftet {time}",
+      "confirmed_body_fallback": "Møtet ditt er bekreftet.",
+      "unconfirmed_title": "Møte må planlegges på nytt",
+      "unconfirmed_body": "{other} satte møtet tilbake til foreslått status.",
+      "unconfirmed_body_fallback": "Møtet ditt må bekreftes på nytt. Se dashbordet for detaljer.",
+      "canceled_title": "Møte avlyst",
+      "canceled_body": "{other} avlyste møtet.",
+      "canceled_body_fallback": "Et møte ble avlyst.",
+      "deleted_title": "Møte slettet",
+      "deleted_body": "{other} slettet møteoppføringen.",
+      "deleted_body_fallback": "En møteoppføring ble slettet.",
+      "permission_request": "Tillat nettleservarsler for å holde deg oppdatert på møter.",
+      "permission_denied": "Nettleservarsler er for øyeblikket blokkert.",
+      "permission_granted": "Nettleservarsler aktivert."
+    }
   },
   "landing": {
     "features": {
@@ -165,7 +185,18 @@
       "lon_placeholder": "Lengdegrad (f.eks. 16.3738)",
       "instructions": "Angi din fødselsdato og -sted for å beregne radix. Hvis du ikke kjenner nøyaktig tidspunkt, la tidsfeltet stå tomt, så bruker vi kl. 12.00 som standard."
     },
-    "note": "Profilen din brukes til å tilpasse treff og vise tidssone."
+    "note": "Profilen din brukes til å tilpasse treff og vise tidssone.",
+    "notifications": {
+      "legend": "Varsler",
+      "browser_label": "Nettleservarsler",
+      "browser_help": "Vis varsler på denne enheten når møter trenger oppmerksomheten din.",
+      "browser_grant": "Aktiver nettleservarsler",
+      "browser_denied": "Nettleservarsler er blokkert i nettleserinnstillingene.",
+      "email_label": "E-postvarsler",
+      "email_help": "Send møteoppdateringer til den verifiserte e-postadressen din.",
+      "email_disabled": "Bekreft e-posten din for å motta møteoppdateringer.",
+      "save_notice": "Disse innstillingene gjelder for kommende møter."
+    }
   },
   "welcome": {
     "subtitle": "Finn din sjelsstamme",

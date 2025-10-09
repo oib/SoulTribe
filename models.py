@@ -52,6 +52,8 @@ class Profile(SQLModel, table=True):
     lang_secondary: str | None = None
     languages: list[str] | None = Field(default=None, sa_column=Column(JSON))
     house_system: str | None = None
+    notify_email_meetups: bool = Field(default=True)
+    notify_browser_meetups: bool = Field(default=True)
 
 class Radix(SQLModel, table=True):
     # Allow population by alias, so we can use alias="json" for the DB/API while the Python attribute is different

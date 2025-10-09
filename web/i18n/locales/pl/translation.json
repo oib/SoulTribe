@@ -18,7 +18,27 @@
     "slot_help_step2": "Podczas pobierania dopasowań porównujemy Twoje sloty ze slotami innych członków, aby znaleźć nakładające się terminy, które są jeszcze w przyszłości.",
     "slot_help_step3": "Etykiety nakładania w sekcji „Dopasowania” pokazują wspólne okno: UTC, Twój czas lokalny i czas lokalny Twojego dopasowania.",
     "slot_help_step4": "Kliknij „Zaproponuj ten termin” przy nakładaniu, aby uruchomić proces spotkania z wstępnie wypełnionym slotem.",
-    "slot_help_step5": "Jeśli coś się zmieni, edytuj lub usuń slot, aby nie sugerować nieaktualnych terminów."
+    "slot_help_step5": "Jeśli coś się zmieni, edytuj lub usuń slot, aby nie sugerować nieaktualnych terminów.",
+    "notifications": {
+      "proposed_title": "Zaproponowano spotkanie — wymaga potwierdzenia",
+      "proposed_body": "{other} zaproponował(a) {time}",
+      "proposed_body_fallback": "Zaproponowano spotkanie.",
+      "confirmed_title": "Spotkanie potwierdzone",
+      "confirmed_body": "{other} potwierdził(a) {time}",
+      "confirmed_body_fallback": "Twoje spotkanie zostało potwierdzone.",
+      "unconfirmed_title": "Spotkanie do ponownego ustalenia",
+      "unconfirmed_body": "{other} przywrócił(a) spotkanie do statusu propozycji.",
+      "unconfirmed_body_fallback": "Twoje spotkanie wymaga ponownego potwierdzenia. Sprawdź szczegóły w panelu.",
+      "canceled_title": "Spotkanie odwołane",
+      "canceled_body": "{other} odwołał(a) spotkanie.",
+      "canceled_body_fallback": "Odwołano spotkanie.",
+      "deleted_title": "Spotkanie usunięte",
+      "deleted_body": "{other} usunął/ęła wpis spotkania.",
+      "deleted_body_fallback": "Usunięto wpis spotkania.",
+      "permission_request": "Zezwól na powiadomienia przeglądarki, aby być na bieżąco ze spotkaniami.",
+      "permission_denied": "Powiadomienia przeglądarki są obecnie zablokowane.",
+      "permission_granted": "Powiadomienia przeglądarki włączone."
+    }
   },
   "language": {
     "de": "Niemiecki",
@@ -98,7 +118,18 @@
       "lon_placeholder": "Dł. geogr. (np. 16.3738)",
       "instructions": "Ustaw datę i miejsce urodzenia, aby obliczyć swój radix. Jeśli nie znasz dokładnej godziny, pozostaw pole czasu puste — użyjemy domyślnie godziny 12:00."
     },
-    "note": "Twój profil jest używany do personalizacji dopasowań i wyświetlania strefy czasowej."
+    "note": "Twój profil jest używany do personalizacji dopasowań i wyświetlania strefy czasowej.",
+    "notifications": {
+      "legend": "Powiadomienia",
+      "browser_label": "Powiadomienia przeglądarki",
+      "browser_help": "Wyświetlaj alerty na tym urządzeniu, gdy spotkania wymagają Twojej uwagi.",
+      "browser_grant": "Włącz powiadomienia przeglądarki",
+      "browser_denied": "Powiadomienia przeglądarki są zablokowane w ustawieniach przeglądarki.",
+      "email_label": "Powiadomienia e-mail",
+      "email_help": "Wysyłaj aktualizacje spotkań na zweryfikowany adres e-mail.",
+      "email_disabled": "Zweryfikuj swój e-mail, aby otrzymywać aktualizacje spotkań.",
+      "save_notice": "Te preferencje obowiązują przy przyszłych spotkaniach."
+    }
   },
   "welcome": {
     "subtitle": "Znajdź swoją bratnią duszę",

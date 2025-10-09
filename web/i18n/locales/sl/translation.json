@@ -283,7 +283,18 @@
     "note": "Tvoj profil se uporablja za personalizacijo ujemanj in prikaz časovnega pasu.",
     "primary_language_label": "Primarni jezik (uporabljen za uporabniški vmesnik)",
     "other_languages_label": "Drugi jeziki (uporabljeni za ujemanja)",
-    "language_input_placeholder": "Vpiši za dodajanje jezikov..."
+    "language_input_placeholder": "Vpiši za dodajanje jezikov...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "search": {
     "noResults": "Ni zadetkov",
@@ -325,7 +336,27 @@
     "slot_help_step2": "Ko pridobimo ujemanja, primerjamo vaše termine z termini drugih članov, da najdemo prekrivanja, ki so še v prihodnosti.",
     "slot_help_step3": "Žetončki prekrivanja v razdelku »Matches« prikažejo skupno okno: UTC, vaš lokalni čas in lokalni čas vaše povezave.",
     "slot_help_step4": "Kliknite »Predlagaj ta čas« na prekrivanju, da začnete proces srečanja s tem vnaprej izpolnjenim terminom.",
-    "slot_help_step5": "Če se kaj spremeni, termin uredite ali izbrišite, da ne bomo predlagali zastarelih časov."
+    "slot_help_step5": "Če se kaj spremeni, termin uredite ali izbrišite, da ne bomo predlagali zastarelih časov.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "imprint": {
     "title": "Imprint"

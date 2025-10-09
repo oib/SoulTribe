@@ -18,7 +18,27 @@
     "slot_help_step2": "Při načítání shod porovnáváme vaše sloty se sloty ostatních členů, abychom našli překryvy, které jsou stále v budoucnu.",
     "slot_help_step3": "Žetonky překryvů v sekci „Matches“ ukazují společné okno: UTC, váš místní čas a místní čas vašeho protějšku.",
     "slot_help_step4": "Klikněte na „Navrhnout tento čas“ u překryvu pro zahájení domlouvání schůzky s tímto slotem předvyplněným.",
-    "slot_help_step5": "Pokud se něco změní, slot upravte nebo smažte, abychom nenavrhovali zastaralé termíny."
+    "slot_help_step5": "Pokud se něco změní, slot upravte nebo smažte, abychom nenavrhovali zastaralé termíny.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "landing": {
     "features": {
@@ -165,7 +185,18 @@
       "lon_placeholder": "Zeměpisná délka (např. 16.3738)",
       "instructions": "Nastavte své datum a místo narození pro výpočet vašeho radixu. Pokud neznáte přesný čas, nechte pole času prázdné a použijeme poledne jako výchozí hodnotu."
     },
-    "note": "Váš profil se používá k personalizaci shod a zobrazení časového pásma."
+    "note": "Váš profil se používá k personalizaci shod a zobrazení časového pásma.",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "welcome": {
     "subtitle": "Najdi svou duševní komunitu",

@@ -18,7 +18,27 @@
     "slot_help_step2": "Wanneer matches worden opgehaald, vergelijken we jouw slots met die van andere leden om overlappende tijden te vinden die nog in de toekomst liggen.",
     "slot_help_step3": "Overlapchips in de sectie “Matches” tonen het gedeelde venster: UTC, jouw lokale tijd en de lokale tijd van je match.",
     "slot_help_step4": "Klik op “Dit tijdstip voorstellen” bij een overlap om de meetup‑flow te starten met dat slot vooraf ingevuld.",
-    "slot_help_step5": "Als er iets verandert, bewerk of verwijder het slot zodat we geen verouderde tijden meer voorstellen."
+    "slot_help_step5": "Als er iets verandert, bewerk of verwijder het slot zodat we geen verouderde tijden meer voorstellen.",
+    "notifications": {
+      "proposed_title": "Afspraak voorgesteld — graag bevestigen",
+      "proposed_body": "{other} stelde {time} voor",
+      "proposed_body_fallback": "Er is een afspraak voorgesteld.",
+      "confirmed_title": "Afspraak bevestigd",
+      "confirmed_body": "{other} bevestigde {time}",
+      "confirmed_body_fallback": "Je afspraak is bevestigd.",
+      "unconfirmed_title": "Afspraak opnieuw te plannen",
+      "unconfirmed_body": "{other} heeft de afspraak teruggezet naar voorgesteld.",
+      "unconfirmed_body_fallback": "Je afspraak moet opnieuw worden bevestigd. Bekijk het dashboard voor details.",
+      "canceled_title": "Afspraak geannuleerd",
+      "canceled_body": "{other} heeft de afspraak geannuleerd.",
+      "canceled_body_fallback": "Er is een afspraak geannuleerd.",
+      "deleted_title": "Afspraak verwijderd",
+      "deleted_body": "{other} heeft de afspraakvermelding verwijderd.",
+      "deleted_body_fallback": "Er is een afspraakvermelding verwijderd.",
+      "permission_request": "Sta browsermeldingen toe om op de hoogte te blijven van afspraken.",
+      "permission_denied": "Browsermeldingen zijn momenteel geblokkeerd.",
+      "permission_granted": "Browsermeldingen ingeschakeld."
+    }
   },
   "landing": {
     "features": {
@@ -168,7 +188,18 @@
       "lon_placeholder": "Lengtegraad (bijv. 16.3738)",
       "instructions": "Stel je geboortedatum en -plaats in om je radix te berekenen. Als je de exacte tijd niet weet, laat het tijdveld leeg; we gebruiken dan standaard 12:00."
     },
-    "note": "Je profiel wordt gebruikt om matches te personaliseren en de tijdzone weer te geven."
+    "note": "Je profiel wordt gebruikt om matches te personaliseren en de tijdzone weer te geven.",
+    "notifications": {
+      "legend": "Meldingen",
+      "browser_label": "Browsermeldingen",
+      "browser_help": "Toon meldingen op dit apparaat wanneer afspraken je aandacht nodig hebben.",
+      "browser_grant": "Browsermeldingen inschakelen",
+      "browser_denied": "Browsermeldingen zijn geblokkeerd in de browserinstellingen.",
+      "email_label": "E-mailmeldingen",
+      "email_help": "Stuur afspraakupdates naar je geverifieerde e-mailadres.",
+      "email_disabled": "Verifieer je e-mailadres om afspraakupdates te ontvangen.",
+      "save_notice": "Deze voorkeuren gelden voor toekomstige afspraken."
+    }
   },
   "welcome": {
     "subtitle": "Vind jouw zielsstam",

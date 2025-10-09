@@ -25,7 +25,27 @@
     "slot_help_step2": "Al obtener coincidencias, comparamos tus slots con los de otros miembros para encontrar superposiciones que aún estén en el futuro.",
     "slot_help_step3": "Las fichas de superposición en la sección “Matches” muestran la ventana compartida: UTC, tu hora local y la hora local de tu match.",
     "slot_help_step4": "Haz clic en “Proponer esta hora” en una superposición para iniciar el flujo de meetup con ese slot pre‑rellenado.",
-    "slot_help_step5": "Si algo cambia, edita o elimina el slot para que dejemos de sugerir horas desactualizadas."
+    "slot_help_step5": "Si algo cambia, edita o elimina el slot para que dejemos de sugerir horas desactualizadas.",
+    "notifications": {
+      "proposed_title": "Quedada propuesta — necesita tu confirmación",
+      "proposed_body": "{other} propuso {time}",
+      "proposed_body_fallback": "Se ha propuesto una quedada.",
+      "confirmed_title": "Quedada confirmada",
+      "confirmed_body": "{other} confirmó {time}",
+      "confirmed_body_fallback": "Tu quedada está confirmada.",
+      "unconfirmed_title": "Quedada sin confirmar",
+      "unconfirmed_body": "{other} devolvió la quedada al estado propuesto.",
+      "unconfirmed_body_fallback": "Tu quedada quedó sin confirmar. Revisa el panel para más detalles.",
+      "canceled_title": "Quedada cancelada",
+      "canceled_body": "{other} canceló la quedada.",
+      "canceled_body_fallback": "Se canceló una quedada.",
+      "deleted_title": "Quedada eliminada",
+      "deleted_body": "{other} eliminó el registro de la quedada.",
+      "deleted_body_fallback": "Se eliminó un registro de quedada.",
+      "permission_request": "Permite las notificaciones del navegador para mantenerte al día con las quedadas.",
+      "permission_denied": "Las notificaciones del navegador están bloqueadas actualmente.",
+      "permission_granted": "Notificaciones del navegador activadas."
+    }
   },
   "footer": {
     "imprint": "Aviso legal",
@@ -329,7 +349,18 @@
       "lon_placeholder": "Longitud (p. ej., 16.3738)",
       "instructions": "Establece tu fecha y lugar de nacimiento para calcular tu radix. Si no conoces la hora exacta, deja el campo de hora vacío y usaremos el mediodía por defecto."
     },
-    "note": "Tu perfil se utiliza para personalizar coincidencias y mostrar la zona horaria."
+    "note": "Tu perfil se utiliza para personalizar coincidencias y mostrar la zona horaria.",
+    "notifications": {
+      "legend": "Notificaciones",
+      "browser_label": "Notificaciones del navegador",
+      "browser_help": "Muestra avisos en este dispositivo cuando una quedada necesita tu atención.",
+      "browser_grant": "Activar notificaciones del navegador",
+      "browser_denied": "Las notificaciones del navegador están bloqueadas en la configuración del navegador.",
+      "email_label": "Notificaciones por correo",
+      "email_help": "Enviar actualizaciones de quedadas a tu correo verificado.",
+      "email_disabled": "Verifica tu correo para recibir actualizaciones de quedadas.",
+      "save_notice": "Estas preferencias se aplican a las próximas quedadas."
+    }
   },
   "radix": {
     "placeholder": "Si has configurado tus datos de nacimiento, aquí aparecerá una vista previa de tu radix.",

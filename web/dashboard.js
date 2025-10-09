@@ -151,6 +151,19 @@
     } catch { return ''; }
   }
 
+  function formatUtcDisplay(isoLike) {
+    try {
+      if (!isoLike) return '';
+      const d = new Date(isoLike);
+      const y = d.getUTCFullYear();
+      const m = String(d.getUTCMonth() + 1).padStart(2, '0');
+      const day = String(d.getUTCDate()).padStart(2, '0');
+      const hh = String(d.getUTCHours()).padStart(2, '0');
+      const mm = String(d.getUTCMinutes()).padStart(2, '0');
+      return `${y}-${m}-${day} ${hh}:${mm} UTC`;
+    } catch { return ''; }
+  }
+
   // Pad numbers to 2 digits
   const pad2 = (n) => String(n).padStart(2, '0');
 
@@ -197,6 +210,9 @@
     try { return (err && err.data && err.data.detail) ? err.data.detail : (err?.message || fb || 'Error'); } catch { return fb || 'Error'; }
   };
 
+  const recentMeetupActions = new Map();
+  let lastMeetupSnapshot = new Map();
+
   // --- Browser Notifications for Meetups ---
   function ensureNotificationPermission() {
     try {
@@ -208,37 +224,34 @@
     return false;
   }
 
-  function getNotifiedMeetups() {
+  function getNotifiedMeetupEvents() {
     try {
       const raw = localStorage.getItem('notified_meetups');
-      const set = new Set(JSON.parse(raw || '[]'));
-      return set;
-    } catch { return new Set(); }
+      const parsed = JSON.parse(raw || '[]');
+      if (Array.isArray(parsed)) {
+        return new Set(parsed.map((entry) => String(entry)));
+      }
+    } catch {}
+    return new Set();
   }
 
-  function saveNotifiedMeetups(set) {
+  function saveNotifiedMeetupEvents(set) {
     try {
       localStorage.setItem('notified_meetups', JSON.stringify(Array.from(set)));
     } catch {}
   }
 
-  function notifyProposedMeetup(item) {
+  function notifyMeetupEvent(notifiedSet, eventKey, title, body) {
+    if (!eventKey) return;
+    if (!('Notification' in window)) return;
+    if (Notification.permission !== 'granted') return;
+    if (notifiedSet.has(eventKey)) return;
     try {
-      if (!('Notification' in window)) return;
-      if (Notification.permission !== 'granted') return;
-      const otherLabel = item.other_display_name ? item.other_display_name : `user ${item.other_user_id}`;
-      const when = item.proposed_dt_utc ? new Date(item.proposed_dt_utc) : null;
-      const hh = when ? String(when.getHours()).padStart(2,'0') : '';
-      const mm = when ? String(when.getMinutes()).padStart(2,'0') : '';
-      const date = when ? `${when.getFullYear()}-${String(when.getMonth()+1).padStart(2,'0')}-${String(when.getDate()).padStart(2,'0')}` : '';
-      const title = 'Meetup proposed — needs your confirmation';
-      const body = otherLabel && when ? `${otherLabel} proposed ${date} ${hh}:${mm} (UTC)` : 'A meetup has been proposed.';
       const n = new Notification(title, { body });
       n.onclick = () => {
         try { n.close(); } catch {}
         try {
           if (window && window.location) {
-            // Navigate to dashboard; if already there, just focus
             if (!/\/dashboard\.html$/i.test(window.location.pathname)) {
               window.location.href = '/dashboard.html';
             } else {
@@ -247,6 +260,135 @@
           }
         } catch {}
       };
+    } catch {}
+    notifiedSet.add(eventKey);
+  }
+
+  function markMeetupAction(id, action) {
+    const key = String(id);
+    let actionMap = recentMeetupActions.get(key);
+    if (!actionMap) {
+      actionMap = new Map();
+      recentMeetupActions.set(key, actionMap);
+    }
+    actionMap.set(action, Date.now());
+  }
+
+  function wasRecentMeetupAction(id, action, maxAgeMs = 15000) {
+    const key = String(id);
+    const actionMap = recentMeetupActions.get(key);
+    if (!actionMap) return false;
+    const ts = actionMap.get(action);
+    if (!ts) return false;
+    if (Date.now() - ts <= maxAgeMs) return true;
+    actionMap.delete(action);
+    if (!actionMap.size) {
+      recentMeetupActions.delete(key);
+    }
+    return false;
+  }
+
+  function handleMeetupNotifications(upcomingList) {
+    try {
+      const list = Array.isArray(upcomingList) ? upcomingList : [];
+      const notified = getNotifiedMeetupEvents();
+      const snapshot = new Map();
+
+      for (const item of list) {
+        const id = String(item.meetup_id);
+        const prev = lastMeetupSnapshot.get(id) || {};
+        snapshot.set(id, {
+          status: item.status,
+          proposed_dt_utc: item.proposed_dt_utc,
+          confirmed_dt_utc: item.confirmed_dt_utc,
+          proposer_user_id: item.proposer_user_id,
+          confirmer_user_id: item.confirmer_user_id,
+        });
+
+        const otherLabel = item.other_display_name ? item.other_display_name : `user ${item.other_user_id}`;
+        const proposedDisplay = formatUtcDisplay(item.proposed_dt_utc);
+        const confirmedDisplay = formatUtcDisplay(item.confirmed_dt_utc);
+
+        if (!prev || !prev.status) {
+          if (item.status === 'proposed' && item.proposer_user_id !== currentUserId) {
+            notifyMeetupEvent(
+              notified,
+              `${id}:proposed`,
+              'Meetup proposed — needs your confirmation',
+              otherLabel && proposedDisplay ? `${otherLabel} proposed ${proposedDisplay}` : 'A meetup has been proposed.',
+            );
+          }
+          continue;
+        }
+
+        if (prev.status !== item.status) {
+          if (
+            item.status === 'proposed' &&
+            prev.status === 'confirmed' &&
+            item.proposer_user_id !== currentUserId &&
+            !wasRecentMeetupAction(id, 'unconfirm')
+          ) {
+            notifyMeetupEvent(
+              notified,
+              `${id}:unconfirmed:${item.confirmed_dt_utc || ''}`,
+              'Meetup unconfirmed',
+              otherLabel ? `${otherLabel} unconfirmed your meetup.` : 'Your meetup was unconfirmed. Check the dashboard for details.',
+            );
+          }
+          if (
+            item.status === 'confirmed' &&
+            item.confirmer_user_id !== currentUserId &&
+            !wasRecentMeetupAction(id, 'confirm')
+          ) {
+            notifyMeetupEvent(
+              notified,
+              `${id}:confirmed:${item.confirmed_dt_utc || ''}`,
+              'Meetup confirmed',
+              confirmedDisplay && otherLabel ? `${otherLabel} confirmed ${confirmedDisplay}` : 'Your meetup is confirmed.',
+            );
+          }
+          if (
+            item.status === 'canceled' &&
+            item.confirmer_user_id !== currentUserId &&
+            item.proposer_user_id !== currentUserId &&
+            !wasRecentMeetupAction(id, 'cancel')
+          ) {
+            notifyMeetupEvent(
+              notified,
+              `${id}:canceled:${item.confirmed_dt_utc || item.proposed_dt_utc || ''}`,
+              'Meetup canceled',
+              otherLabel ? `${otherLabel} canceled your meetup.` : 'A meetup was canceled.',
+            );
+          }
+        }
+
+        const prevConfirmed = prev.confirmed_dt_utc || null;
+        const prevProposed = prev.proposed_dt_utc || null;
+        if (prevConfirmed !== item.confirmed_dt_utc && item.confirmed_dt_utc && item.confirmer_user_id !== currentUserId) {
+          notifyMeetupEvent(
+            notified,
+            `${id}:confirmed:${item.confirmed_dt_utc}`,
+            'Meetup confirmed',
+            confirmedDisplay && otherLabel ? `${otherLabel} confirmed ${confirmedDisplay}` : 'Your meetup is confirmed.',
+          );
+        }
+        if (
+          prevProposed !== item.proposed_dt_utc &&
+          item.status === 'proposed' &&
+          item.proposer_user_id !== currentUserId &&
+          !wasRecentMeetupAction(id, 'propose')
+        ) {
+          notifyMeetupEvent(
+            notified,
+            `${id}:proposed:${item.proposed_dt_utc || Date.now()}`,
+            'Meetup proposal updated',
+            otherLabel && proposedDisplay ? `${otherLabel} proposed ${proposedDisplay}` : 'A meetup has been proposed.',
+          );
+        }
+      }
+
+      lastMeetupSnapshot = snapshot;
+      saveNotifiedMeetupEvents(notified);
     } catch {}
   }
 
@@ -530,7 +672,6 @@
       const cont = document.getElementById('meetups');
       if (cont) {
         // Prepare notification tracking set
-        const notified = getNotifiedMeetups();
         // Filter to upcoming meetups only (either proposed or confirmed is in the future)
         const now = new Date();
         const upcoming = (data || []).filter((item) => {
@@ -544,6 +685,10 @@
           const bd = new Date(b.confirmed_dt_utc || b.proposed_dt_utc || 0).getTime();
           return ad - bd;
         });
+
+        for (const item of upcoming) {
+          meetupIdMap.set(`${item.match_id}:${item.other_user_id}`, item.meetup_id);
+        }
 
         let items = '';
         for (const item of upcoming) {
@@ -621,20 +766,14 @@
             </li>`;
         }
         cont.innerHTML = `<ul class="list">${items}</ul>`;
+        try {
+          window.__meetupIdLookup = meetupIdMap;
+        } catch {}
 
-        // After render: send browser notifications for any newly proposed meetups awaiting confirmation
+        // After render: send browser notifications for meetup changes
         try {
           if (ensureNotificationPermission()) {
-            for (const item of upcoming) {
-              const isAwaiting = item.status === 'proposed' && item.proposed_dt_utc && item.proposer_user_id !== currentUserId;
-              if (!isAwaiting) continue;
-              const key = String(item.meetup_id);
-              if (!notified.has(key)) {
-                notifyProposedMeetup(item);
-                notified.add(key);
-              }
-            }
-            saveNotifiedMeetups(notified);
+            handleMeetupNotifications(upcoming);
           }
         } catch {}
       } else {
@@ -937,6 +1076,7 @@
         try {
           await api('/api/meetup/unconfirm', { method: 'POST', body: { meetup_id: meetupId }, auth: true });
           toast('Meetup unconfirmed');
+          markMeetupAction(meetupId, 'unconfirm');
           await fetchAndRenderMeetups();
         } catch (err) {
           toast(errorMessage(err, 'Failed to unconfirm meetup'), 'error');
@@ -952,6 +1092,7 @@
         try {
           await api('/api/meetup/cancel', { method: 'POST', body: { meetup_id: meetupId }, auth: true });
           toast('Meetup canceled');
+          markMeetupAction(meetupId, 'cancel');
           await fetchAndRenderMeetups();
         } catch (err) {
           toast(errorMessage(err, 'Failed to cancel meetup'), 'error');
@@ -965,6 +1106,7 @@
         try {
           await api(`/api/meetup/${meetupId}`, { method: 'DELETE', auth: true });
           toast('Meetup deleted');
+          markMeetupAction(meetupId, 'delete');
           try { if (window.fetchAndRenderMeetups) await window.fetchAndRenderMeetups(); } catch {}
         } catch (err) {
           toast(errorMessage(err, 'Failed to delete meetup'), 'error');
@@ -979,6 +1121,7 @@
         try {
           await api(`/api/meetup/confirm`, { method: 'POST', body: { meetup_id: meetupId, confirmed_dt_utc: dt }, auth: true });
           toast('Meetup confirmed');
+          markMeetupAction(meetupId, 'confirm');
           await fetchAndRenderMeetups();
         } catch (err) {
           toast(errorMessage(err, 'Failed to confirm meetup'), 'error');
@@ -1113,8 +1256,13 @@
         try {
           // Create a match between current user and candidate, then propose at selected time
           const mc = await api('/api/match/create', { method: 'POST', auth: true, body: { a_user_id: currentUserId, b_user_id: candId } });
-          await api('/api/meetup/propose', { method: 'POST', auth: true, body: { match_id: mc.match_id, proposed_dt_utc: startDt } });
+          const { meetup_id } = await api('/api/meetup/propose', { method: 'POST', auth: true, body: { match_id: mc.match_id, proposed_dt_utc: startDt } });
           toast('Meetup proposed');
+          const proposedMeetupId = meetup_id
+            || (window.__meetupIdLookup ? window.__meetupIdLookup.get(`${mc.match_id}:${candId}`) : null)
+            || mc.meetup_id
+            || 'pending';
+          markMeetupAction(proposedMeetupId, 'propose');
           // Replace the button with a status badge in-place
           const actions = btn.closest('.item-actions');
           if (actions) actions.innerHTML = '<span class="badge info">Proposed — awaiting confirm</span>';

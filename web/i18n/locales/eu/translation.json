@@ -198,7 +198,18 @@
     "note": "Zure profilak bat-etortzeak pertsonalizatzen eta ordu-zona egokia bistaratzen laguntzen du.",
     "primary_language_label": "Hizkuntza nagusia (UI)",
     "other_languages_label": "Beste hizkuntzak (bat-etortzeetarako)",
-    "language_input_placeholder": "Idatzi hizkuntzak gehitzeko..."
+    "language_input_placeholder": "Idatzi hizkuntzak gehitzeko...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "radix": {
     "title": "Zure radix",
@@ -230,7 +241,27 @@
     "slot_help_step3": "Gainjartzearen txarteletan leiho partekatua erakusten da: UTC, zure tokiko ordua eta bestearen tokiko ordua.",
     "slot_help_step4": "Egin klik \"Proposatu ordu hau\" botoian, topaketa prozesua hasteko tarte horrekin.",
     "slot_help_step5": "Zerbait aldatzen bada, eguneratu edo ezabatu tartea gomendio zaharkituak saihesteko.",
-    "slot_help_more": "Laguntza behar? Ireki gida osoa Docs menutik."
+    "slot_help_more": "Laguntza behar? Ireki gida osoa Docs menutik.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "login": {
     "page_title": "SoulTribe.chat — Saioa hasi / Eman izena",

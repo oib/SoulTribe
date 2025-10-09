@@ -18,7 +18,27 @@
     "slot_help_step2": "При извличане на съвпадения сравняваме вашите прозорци с тези на другите членове, за да намерим припокривания, които все още са в бъдещето.",
     "slot_help_step3": "Табчетата за припокриване в секцията „Съвпадения“ показват общия прозорец: UTC, вашето местно време и местното време на събеседника.",
     "slot_help_step4": "Щракнете „Предложи това време“ при припокриване, за да стартирате процеса със предварително попълнен прозорец.",
-    "slot_help_step5": "Ако нещо се промени, редактирайте или изтрийте прозореца, за да не предлагаме остарели времена."
+    "slot_help_step5": "Ако нещо се промени, редактирайте или изтрийте прозореца, за да не предлагаме остарели времена.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "landing": {
     "features": {
@@ -168,7 +188,18 @@
       "lon_placeholder": "Географска дължина (напр. 16.3738)",
       "instructions": "Задайте датата и мястото на раждане, за да изчислим вашия radix. Ако не знаете точния час, оставете полето за час празно и ще използваме обяд като стойност по подразбиране."
     },
-    "note": "Вашият профил се използва за персонализиране на съвпаденията и показване на часовия пояс."
+    "note": "Вашият профил се използва за персонализиране на съвпаденията и показване на часовия пояс.",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "welcome": {
     "subtitle": "Намерете своята душевна общност",

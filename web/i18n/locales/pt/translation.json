@@ -18,7 +18,27 @@
     "slot_help_step2": "Quando as correspondências são buscadas, comparamos seus slots com os de outros membros para encontrar sobreposições que ainda estejam no futuro.",
     "slot_help_step3": "Os “chips” de sobreposição na seção “Matches” mostram a janela compartilhada: UTC, seu horário local e o horário local do seu par.",
     "slot_help_step4": "Clique em “Propor este horário” numa sobreposição para iniciar o fluxo de encontro com esse slot pré‑preenchido.",
-    "slot_help_step5": "Se algo mudar, edite ou exclua o slot para que deixemos de sugerir horários desatualizados."
+    "slot_help_step5": "Se algo mudar, edite ou exclua o slot para que deixemos de sugerir horários desatualizados.",
+    "notifications": {
+      "proposed_title": "Encontro proposto — precisa da tua confirmação",
+      "proposed_body": "{other} propôs {time}",
+      "proposed_body_fallback": "Foi proposto um encontro.",
+      "confirmed_title": "Encontro confirmado",
+      "confirmed_body": "{other} confirmou {time}",
+      "confirmed_body_fallback": "O teu encontro está confirmado.",
+      "unconfirmed_title": "Encontro por confirmar",
+      "unconfirmed_body": "{other} voltou a colocar o encontro como proposto.",
+      "unconfirmed_body_fallback": "O teu encontro ficou pendente. Consulta o painel para mais detalhes.",
+      "canceled_title": "Encontro cancelado",
+      "canceled_body": "{other} cancelou o encontro.",
+      "canceled_body_fallback": "Um encontro foi cancelado.",
+      "deleted_title": "Encontro eliminado",
+      "deleted_body": "{other} eliminou o registo do encontro.",
+      "deleted_body_fallback": "Foi eliminado um registo de encontro.",
+      "permission_request": "Permite as notificações do navegador para te manteres atualizado sobre os encontros.",
+      "permission_denied": "As notificações do navegador estão atualmente bloqueadas.",
+      "permission_granted": "Notificações do navegador ativadas."
+    }
   },
   "landing": {
     "features": {
@@ -168,7 +188,18 @@
       "lon_placeholder": "Longitude (ex.: 16.3738)",
       "instructions": "Define a tua data e local de nascimento para calcular o teu radix. Se não souberes a hora exata, deixa o campo da hora em branco e usaremos o meio‑dia como valor predefinido."
     },
-    "note": "O teu perfil é usado para personalizar as correspondências e a apresentação do fuso horário."
+    "note": "O teu perfil é usado para personalizar as correspondências e a apresentação do fuso horário.",
+    "notifications": {
+      "legend": "Notificações",
+      "browser_label": "Notificações do navegador",
+      "browser_help": "Mostra alertas neste dispositivo quando um encontro precisa da tua atenção.",
+      "browser_grant": "Ativar notificações do navegador",
+      "browser_denied": "As notificações do navegador estão bloqueadas nas definições do navegador.",
+      "email_label": "Notificações por e-mail",
+      "email_help": "Enviar atualizações de encontros para o teu e-mail verificado.",
+      "email_disabled": "Verifica o teu e-mail para receber atualizações de encontros.",
+      "save_notice": "Estas preferências aplicam-se aos próximos encontros."
+    }
   },
   "welcome": {
     "subtitle": "Encontra a tua tribo de alma",

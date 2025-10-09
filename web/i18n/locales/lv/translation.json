@@ -268,7 +268,18 @@
     "note": "Tavu profilu izmanto, lai personalizētu atbilstības un parādītu laika joslu.",
     "primary_language_label": "Primārā valoda (lietotnes saskarnei)",
     "other_languages_label": "Citas valodas (izmanto atbilstībām)",
-    "language_input_placeholder": "Rakstiet, lai pievienotu valodas..."
+    "language_input_placeholder": "Rakstiet, lai pievienotu valodas...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "search": {
     "noResults": "Nav rezultātu",
@@ -331,7 +342,27 @@
     "slot_help_step2": "Iegūstot atbilstības, salīdzinām jūsu laika logus ar citu dalībnieku logiem, lai atrastu pārklāšanās, kas vēl ir nākotnē.",
     "slot_help_step3": "Pārklāšanās žetoni sadaļā “Matches” parāda kopīgo logu: UTC, jūsu vietējo laiku un jūsu pāra vietējo laiku.",
     "slot_help_step4": "Noklikšķiniet uz “Ierosināt šo laiku” pārklāšanās vietā, lai sāktu tikšanās procesu ar šo laika logu jau aizpildītu.",
-    "slot_help_step5": "Ja kas mainās, rediģējiet vai dzēsiet laika logu, lai mēs vairs nepiedāvātu novecojušus laikus."
+    "slot_help_step5": "Ja kas mainās, rediģējiet vai dzēsiet laika logu, lai mēs vairs nepiedāvātu novecojušus laikus.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "imprint": {
     "title": "Impressum"

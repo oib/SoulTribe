@@ -19,6 +19,8 @@ class ProfileUpdateIn(BaseModel):
     lang_secondary: Optional[str] = None
     languages: Optional[list[str]] = None
     house_system: Optional[str] = Field(default=None, description="House system code (e.g., 'P' Placidus, 'W' Whole Sign, 'K' Koch, 'E' Equal)")
+    notify_email_meetups: Optional[bool] = Field(default=None, description="Receive meetup updates via email")
+    notify_browser_meetups: Optional[bool] = Field(default=None, description="Receive meetup updates via browser notifications")
 
 class ProfileOut(BaseModel):
     user_id: int
@@ -35,3 +37,5 @@ class ProfileOut(BaseModel):
     lang_secondary: Optional[str]
     languages: Optional[list[str]]
     house_system: Optional[str]
+    notify_email_meetups: bool = True
+    notify_browser_meetups: bool = True

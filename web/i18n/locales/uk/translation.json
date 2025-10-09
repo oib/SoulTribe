@@ -18,7 +18,27 @@
     "slot_help_step2": "Під час отримання збігів ми порівнюємо ваші слоти зі слотами інших учасників, щоб знайти перетини, які ще в майбутньому.",
     "slot_help_step3": "Жетони перетинів у розділі «Відповідності» показують спільне вікно: UTC, ваш місцевий час і місцевий час співрозмовника.",
     "slot_help_step4": "Клацніть «Запропонувати цей час» на перетині, щоб запустити процес зустрічі з попередньо заповненим слотом.",
-    "slot_help_step5": "Якщо щось змінилося, відредагуйте або видаліть слот, щоб ми не пропонували застарілі часи."
+    "slot_help_step5": "Якщо щось змінилося, відредагуйте або видаліть слот, щоб ми не пропонували застарілі часи.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "landing": {
     "features": {
@@ -165,7 +185,18 @@
       "lon_placeholder": "Довгота (наприклад, 16.3738)",
       "instructions": "Вкажіть дату та місце народження, щоб обчислити ваш radix. Якщо ви не знаєте точний час, залиште поле часу порожнім — ми використаємо значення за замовчуванням (полудень)."
     },
-    "note": "Ваш профіль використовується для персоналізації збігів і відображення часового поясу."
+    "note": "Ваш профіль використовується для персоналізації збігів і відображення часового поясу.",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "welcome": {
     "subtitle": "Знайди свою споріднену спільноту",

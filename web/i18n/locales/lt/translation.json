@@ -268,7 +268,18 @@
     "note": "Jūsų profilis naudojamas atitikmenims pritaikyti ir laiko juostos rodymui.",
     "primary_language_label": "Pirminė kalba (naudojama sąsajoje)",
     "other_languages_label": "Kitos kalbos (naudojama atitikimui)",
-    "language_input_placeholder": "Rašykite norėdami pridėti kalbas..."
+    "language_input_placeholder": "Rašykite norėdami pridėti kalbas...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "search": {
     "noResults": "Rezultatų nerasta",
@@ -331,7 +342,27 @@
     "slot_help_step2": "Kai gaunami atitikmenys, lyginame jūsų laiko langus su kitų narių, kad rastume sutapimus, kurie vis dar yra ateityje.",
     "slot_help_step3": "Skiltyje „Matches“ rodomi sutapimo ženkleliai parodo bendrą langą: UTC, jūsų vietinį laiką ir jūsų poros vietinį laiką.",
     "slot_help_step4": "Spustelėkite „Pasiūlyti šį laiką“ sutapime, kad pradėtumėte susitikimo srautą su iš anksto užpildytu laiko langu.",
-    "slot_help_step5": "Jei kas pasikeičia, redaguokite arba ištrinkite langą, kad nebesiūlytume pasenusių laikų."
+    "slot_help_step5": "Jei kas pasikeičia, redaguokite arba ištrinkite langą, kad nebesiūlytume pasenusių laikų.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "imprint": {
     "title": "Teisinė informacija"

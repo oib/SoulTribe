@@ -198,7 +198,18 @@
     "note": "Tvoj profil pomaže u personalizaciji poklapanja i prikazu vremenskih zona.",
     "primary_language_label": "Primarni jezik (za interfejs)",
     "other_languages_label": "Drugi jezici (za uparivanje)",
-    "language_input_placeholder": "Upiši da dodaš jezike..."
+    "language_input_placeholder": "Upiši da dodaš jezike...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "radix": {
     "title": "Tvoj radix",
@@ -230,7 +241,27 @@
     "slot_help_step3": "Kartice preklapanja pokazuju zajednički termin: UTC, tvoje lokalno vrijeme i lokalno vrijeme tvog poklapanja.",
     "slot_help_step4": "Klikni \"Predloži ovaj termin\" kako bi pokrenuo/la zakazivanje susreta s tim slotom.",
     "slot_help_step5": "Ako se nešto promijeni, uredi ili izbriši termin da prestanemo predlagati zastarjele opcije.",
-    "slot_help_more": "Treba dodatna pomoć? Otvori kompletan vodič o dostupnosti iz menija Dokumenti."
+    "slot_help_more": "Treba dodatna pomoć? Otvori kompletan vodič o dostupnosti iz menija Dokumenti.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
   },
   "login": {
     "page_title": "SoulTribe.chat — Prijava / Registracija",

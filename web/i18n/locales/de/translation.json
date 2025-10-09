@@ -254,7 +254,27 @@
     "slot_help_step2": "Wenn Treffer abgerufen werden, vergleichen wir deine Slots mit denen anderer Mitglieder, um Überschneidungen zu finden, die noch in der Zukunft liegen.",
     "slot_help_step3": "Überlappungs‑Chips im Bereich „Matches“ zeigen das gemeinsame Zeitfenster: UTC, deine lokale Zeit und die lokale Zeit deines Matches.",
     "slot_help_step4": "Klicke bei einer Überschneidung auf „Diesen Zeitpunkt vorschlagen“, um den Meetup‑Ablauf mit diesem Slot vorausgefüllt zu starten.",
-    "slot_help_step5": "Wenn sich etwas ändert, bearbeite oder lösche den Slot, damit wir keine veralteten Zeiten mehr vorschlagen."
+    "slot_help_step5": "Wenn sich etwas ändert, bearbeite oder lösche den Slot, damit wir keine veralteten Zeiten mehr vorschlagen.",
+    "notifications": {
+      "proposed_title": "Meetup vorgeschlagen — bitte bestätigen",
+      "proposed_body": "{other} hat {time} vorgeschlagen",
+      "proposed_body_fallback": "Ein Meetup wurde vorgeschlagen.",
+      "confirmed_title": "Meetup bestätigt",
+      "confirmed_body": "{other} hat {time} bestätigt",
+      "confirmed_body_fallback": "Dein Meetup ist bestätigt.",
+      "unconfirmed_title": "Meetup zurückgesetzt",
+      "unconfirmed_body": "{other} hat euer Meetup wieder auf vorgeschlagen gesetzt.",
+      "unconfirmed_body_fallback": "Dein Meetup wurde zurückgesetzt. Prüfe das Dashboard für Details.",
+      "canceled_title": "Meetup abgesagt",
+      "canceled_body": "{other} hat euer Meetup abgesagt.",
+      "canceled_body_fallback": "Ein Meetup wurde abgesagt.",
+      "deleted_title": "Meetup gelöscht",
+      "deleted_body": "{other} hat den Meetup-Eintrag gelöscht.",
+      "deleted_body_fallback": "Ein Meetup-Eintrag wurde gelöscht.",
+      "permission_request": "Browser-Benachrichtigungen zulassen, um über Meetups informiert zu bleiben.",
+      "permission_denied": "Browser-Benachrichtigungen sind derzeit blockiert.",
+      "permission_granted": "Browser-Benachrichtigungen aktiviert."
+    }
   },
   "login": {
     "page_title": "SoulTribe.chat — Anmelden / Registrieren",
@@ -344,7 +364,18 @@
       "lon_placeholder": "Längengrad (z. B. 16.3738)",
       "instructions": "Setze dein Geburtsdatum und deinen Geburtsort, um deinen Radix zu berechnen. Wenn du die genaue Uhrzeit nicht kennst, lasse das Zeitfeld leer; wir verwenden dann standardmäßig 12:00 Uhr."
     },
-    "note": "Dein Profil wird zur Personalisierung der Matches und zur Zeitzonenanzeige verwendet."
+    "note": "Dein Profil wird zur Personalisierung der Matches und zur Zeitzonenanzeige verwendet.",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
   },
   "notifications": {
     "language_set_to": "Sprache gesetzt auf"

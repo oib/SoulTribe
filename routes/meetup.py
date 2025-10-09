@@ -18,8 +18,11 @@ from services.audit import log_meetup_event
 from services.email import send_email
 from services.email_templates import (
     SUPPORTED_EMAIL_LANGS,
+    get_cancel_copy,
     get_confirm_copy,
+    get_delete_copy,
     get_propose_copy,
+    get_unconfirm_copy,
 )
 from services.activity_log import log_event
 
@@ -342,12 +345,87 @@ def unconfirm(inp: SimpleMeetupIn, session=Depends(get_session), user_id: int = 
     if mm.confirmer_user_id != user_id:
         log_meetup_event(meetup=mm, actor_user_id=user_id, action="unconfirm", success=False, metadata={"reason": "not_confirmer"})
         raise HTTPException(status_code=403, detail="Only the confirmer can unconfirm the meetup")
+
+    actor_profile = session.get(Profile, user_id)
+    actor_user = session.get(User, user_id)
+    actor_name = (
+        actor_profile.display_name
+        if actor_profile and actor_profile.display_name
+        else (actor_user.email if actor_user else "Someone")
+    )
+
+    match = session.get(Match, mm.match_id) if mm.match_id else None
+
     mm.status = "proposed"
     mm.confirmed_dt_utc = None
     mm.jitsi_room = None
     mm.confirmer_user_id = None
     session.add(mm)
     session.commit()
+
+    # Determine proposer to notify
+    proposer_id = None
+    if mm.proposer_user_id and mm.proposer_user_id != user_id:
+        proposer_id = mm.proposer_user_id
+    elif match:
+        if match.a_user_id == user_id:
+            proposer_id = match.b_user_id
+        elif match.b_user_id == user_id:
+            proposer_id = match.a_user_id
+
+    if proposer_id:
+        proposer_user = session.get(User, proposer_id)
+        proposer_profile = session.get(Profile, proposer_id)
+        proposer_name = (
+            proposer_profile.display_name
+            if proposer_profile and proposer_profile.display_name
+            else (proposer_user.email if proposer_user else "there")
+        )
+        if proposer_user and proposer_user.email_verified_at:
+            lang = _resolve_email_lang(proposer_profile)
+            copy = get_unconfirm_copy(lang)
+            dashboard_url = "https://soultribe.chat/login.html"
+            proposed_time = None
+            if mm.proposed_dt_utc:
+                proposed_time = mm.proposed_dt_utc.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+            html_parts = [
+                f"<p>{copy['intro_html'].format(recipient=proposer_name)}</p>",
+                f"<p>{copy['body_html'].format(other=actor_name)}</p>",
+            ]
+            text_parts = [
+                f"{copy['intro_text'].format(recipient=proposer_name)}\n\n",
+                f"{copy['body_text'].format(other=actor_name)}\n",
+            ]
+            if proposed_time:
+                html_parts.append(f"<p><strong>{copy['time_label']}:</strong> {proposed_time}</p>")
+                text_parts.append(f"{copy['time_label']}: {proposed_time}\n")
+            html_parts.append(f"<p><a href=\"{dashboard_url}\">{copy['cta_html']}</a></p>")
+            text_parts.append(f"{copy['cta_text']}: {dashboard_url}")
+
+            try:
+                send_email(
+                    proposer_user.email,
+                    copy["subject"],
+                    "".join(html_parts),
+                    "".join(text_parts),
+                )
+                log_meetup_event(
+                    meetup=mm,
+                    actor_user_id=user_id,
+                    action="email_unconfirm",
+                    success=True,
+                    metadata={"recipient": proposer_id},
+                )
+            except Exception as exc:  # pragma: no cover - best effort
+                log_meetup_event(
+                    meetup=mm,
+                    actor_user_id=user_id,
+                    action="email_unconfirm",
+                    success=False,
+                    metadata={"recipient": proposer_id, "error": str(exc)},
+                )
+
     log_meetup_event(meetup=mm, actor_user_id=user_id, action="unconfirm", success=True, metadata={})
     log_event(
         "meetup.unconfirm",
@@ -378,8 +456,67 @@ def delete_meetup(meetup_id: int, session=Depends(get_session), user_id: int = D
     if not (m.a_user_id == user_id or m.b_user_id == user_id):
         log_meetup_event(meetup=mm, actor_user_id=user_id, action="delete", success=False, metadata={"reason": "not_participant"})
         raise HTTPException(status_code=403, detail="Not authorized to delete this meetup")
+
+    actor_profile = session.get(Profile, user_id)
+    actor_user = session.get(User, user_id)
+    actor_name = (
+        actor_profile.display_name
+        if actor_profile and actor_profile.display_name
+        else (actor_user.email if actor_user else "Someone")
+    )
+
+    proposed_dt_utc = mm.proposed_dt_utc
+    confirmed_dt_utc = mm.confirmed_dt_utc
+    other_user_id = m.b_user_id if m.a_user_id == user_id else m.a_user_id
+    other_user = session.get(User, other_user_id) if other_user_id else None
+    other_profile = session.get(Profile, other_user_id) if other_user_id else None
+    other_name = (
+        other_profile.display_name
+        if other_profile and other_profile.display_name
+        else (other_user.email if other_user else "there")
+    )
+
     session.delete(mm)
     session.commit()
+
+    if other_user and other_user.email_verified_at:
+        lang = _resolve_email_lang(other_profile)
+        copy = get_delete_copy(lang)
+        dashboard_url = "https://soultribe.chat/login.html"
+        time_source = confirmed_dt_utc or proposed_dt_utc
+        time_label = None
+        if time_source:
+            time_label = time_source.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        html_sections = [
+            f"<p>{copy['intro_html'].format(recipient=other_name)}</p>",
+            f"<p>{copy['body_html'].format(other=actor_name)}</p>",
+        ]
+        text_sections = [
+            f"{copy['intro_text'].format(recipient=other_name)}\n\n",
+            f"{copy['body_text'].format(other=actor_name)}\n",
+        ]
+        if time_label:
+            html_sections.append(f"<p><strong>{copy['time_label']}:</strong> {time_label}</p>")
+            text_sections.append(f"{copy['time_label']}: {time_label}\n")
+        html_sections.append(f"<p><a href=\"{dashboard_url}\">{copy['cta_html']}</a></p>")
+        text_sections.append(f"{copy['cta_text']}: {dashboard_url}")
+        try:
+            send_email(
+                other_user.email,
+                copy["subject"],
+                "".join(html_sections),
+                "".join(text_sections),
+            )
+            log_meetup_event(meetup=mm, actor_user_id=user_id, action="email_delete", success=True, metadata={"recipient": other_user_id})
+        except Exception as exc:  # pragma: no cover - best effort
+            log_meetup_event(
+                meetup=mm,
+                actor_user_id=user_id,
+                action="email_delete",
+                success=False,
+                metadata={"recipient": other_user_id, "error": str(exc)},
+            )
+
     log_meetup_event(meetup=mm, actor_user_id=user_id, action="delete", success=True, metadata={})
     log_event(
         "meetup.delete",

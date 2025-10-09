@@ -20,7 +20,27 @@
     "slot_help_step2": "Lorsque les correspondances sont récupérées, nous comparons vos créneaux à ceux des autres membres pour trouver des chevauchements encore à venir.",
     "slot_help_step3": "Les pastilles de chevauchement dans la section « Matches » affichent la fenêtre partagée : UTC, votre heure locale et l’heure locale de votre correspondant.",
     "slot_help_step4": "Cliquez sur « Proposer ce créneau » pour lancer le flux de meetup avec ce créneau prérempli.",
-    "slot_help_step5": "Si quelque chose change, modifiez ou supprimez le créneau afin d’éviter de proposer des horaires obsolètes."
+    "slot_help_step5": "Si quelque chose change, modifiez ou supprimez le créneau afin d’éviter de proposer des horaires obsolètes.",
+    "notifications": {
+      "proposed_title": "Rencontre proposée — veuillez confirmer",
+      "proposed_body": "{other} a proposé {time}",
+      "proposed_body_fallback": "Une rencontre a été proposée.",
+      "confirmed_title": "Rencontre confirmée",
+      "confirmed_body": "{other} a confirmé {time}",
+      "confirmed_body_fallback": "Votre rencontre est confirmée.",
+      "unconfirmed_title": "Rencontre à replanifier",
+      "unconfirmed_body": "{other} a remis votre rencontre au statut proposé.",
+      "unconfirmed_body_fallback": "Votre rencontre doit être replanifiée. Consultez le tableau de bord pour plus de détails.",
+      "canceled_title": "Rencontre annulée",
+      "canceled_body": "{other} a annulé votre rencontre.",
+      "canceled_body_fallback": "Une rencontre a été annulée.",
+      "deleted_title": "Rencontre supprimée",
+      "deleted_body": "{other} a supprimé l’entrée de la rencontre.",
+      "deleted_body_fallback": "Une entrée de rencontre a été supprimée.",
+      "permission_request": "Autorisez les notifications du navigateur pour rester informé des rencontres.",
+      "permission_denied": "Les notifications du navigateur sont actuellement bloquées.",
+      "permission_granted": "Notifications du navigateur activées."
+    }
   },
   "footer": {
     "imprint": "Mentions légales",
@@ -145,7 +165,18 @@
     "other_languages_label": "Autres langues (pour l'appariement)",
     "primary_language_label": "Langue principale (pour l'interface)",
     "save": "Enregistrer",
-    "title": "Ton profil"
+    "title": "Ton profil",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Notifications du navigateur",
+      "browser_help": "Afficher des alertes sur cet appareil lorsque des rencontres nécessitent votre attention.",
+      "browser_grant": "Activer les notifications du navigateur",
+      "browser_denied": "Les notifications du navigateur sont bloquées dans les paramètres de votre navigateur.",
+      "email_label": "Notifications par e-mail",
+      "email_help": "Envoyer les mises à jour des rencontres à votre adresse e-mail vérifiée.",
+      "email_disabled": "Vérifiez votre e-mail pour recevoir les mises à jour des rencontres.",
+      "save_notice": "Ces préférences s’appliquent aux prochaines rencontres."
+    }
   },
   "radix": {
     "placeholder": "If you have set your birth data, your radix snapshot will appear here.",

@@ -760,9 +760,72 @@ _CONFIRM_COPY: Dict[str, Dict[str, str]] = {
 }
 
 
+_DEFAULT_UNCONFIRM_COPY = {
+    "subject": "SoulTribe meetup needs a new confirmation",
+    "intro_html": "Hi {recipient},",
+    "intro_text": "Hi {recipient},",
+    "body_html": "{other} unconfirmed your SoulTribe meetup. You can propose a new time or check in with them to coordinate next steps.",
+    "body_text": "{other} unconfirmed your SoulTribe meetup. You can propose a new time or check in with them to coordinate next steps.",
+    "time_label": "Current proposed time (UTC)",
+    "cta_html": "Open your SoulTribe dashboard",
+    "cta_text": "Visit your SoulTribe dashboard",
+}
+
+_UNCONFIRM_COPY: Dict[str, Dict[str, str]] = {
+    lang: _DEFAULT_UNCONFIRM_COPY.copy() for lang in SUPPORTED_EMAIL_LANGS
+}
+_UNCONFIRM_COPY["en"] = _DEFAULT_UNCONFIRM_COPY
+
+
+_DEFAULT_CANCEL_COPY = {
+    "subject": "SoulTribe meetup canceled",
+    "intro_html": "Hi {recipient},",
+    "intro_text": "Hi {recipient},",
+    "body_html": "{other} canceled your SoulTribe meetup. You can reach out or propose a new time when you're ready.",
+    "body_text": "{other} canceled your SoulTribe meetup. You can reach out or propose a new time when you're ready.",
+    "time_label": "Most recent meetup time (UTC)",
+    "cta_html": "Open your SoulTribe dashboard",
+    "cta_text": "Visit your SoulTribe dashboard",
+}
+
+_CANCEL_COPY: Dict[str, Dict[str, str]] = {
+    lang: _DEFAULT_CANCEL_COPY.copy() for lang in SUPPORTED_EMAIL_LANGS
+}
+_CANCEL_COPY["en"] = _DEFAULT_CANCEL_COPY
+
+
+_DEFAULT_DELETE_COPY = {
+    "subject": "SoulTribe meetup deleted",
+    "intro_html": "Hi {recipient},",
+    "intro_text": "Hi {recipient},",
+    "body_html": "{other} deleted your SoulTribe meetup entry. Feel free to reach out if you'd like to start again.",
+    "body_text": "{other} deleted your SoulTribe meetup entry. Feel free to reach out if you'd like to start again.",
+    "time_label": "Most recent meetup time (UTC)",
+    "cta_html": "Open your SoulTribe dashboard",
+    "cta_text": "Visit your SoulTribe dashboard",
+}
+
+_DELETE_COPY: Dict[str, Dict[str, str]] = {
+    lang: _DEFAULT_DELETE_COPY.copy() for lang in SUPPORTED_EMAIL_LANGS
+}
+_DELETE_COPY["en"] = _DEFAULT_DELETE_COPY
+
+
 def get_propose_copy(lang: str) -> Dict[str, str]:
     return _PROPOSE_COPY.get(lang, _PROPOSE_COPY["en"])
 
 
 def get_confirm_copy(lang: str) -> Dict[str, str]:
     return _CONFIRM_COPY.get(lang, _CONFIRM_COPY["en"])
+
+
+def get_unconfirm_copy(lang: str) -> Dict[str, str]:
+    return _UNCONFIRM_COPY.get(lang, _UNCONFIRM_COPY["en"])
+
+
+def get_cancel_copy(lang: str) -> Dict[str, str]:
+    return _CANCEL_COPY.get(lang, _CANCEL_COPY["en"])
+
+
+def get_delete_copy(lang: str) -> Dict[str, str]:
+    return _DELETE_COPY.get(lang, _DELETE_COPY["en"])

@@ -18,7 +18,27 @@
     "slot_help_step2": "Kun haku löytää osumia, vertaamme aikaikkunasi muiden jäsenten aikaikkunoihin löytääksemme vielä tulevaisuudessa olevat päällekkäisyydet.",
     "slot_help_step3": "Päällekkäisyysmerkit ”Matches”-osiossa näyttävät yhteisen ikkunan: UTC, paikallisaikasi ja vastinparisi paikallisaika.",
     "slot_help_step4": "Napsauta ”Ehdota tätä aikaa” päällekkäisyydessä aloittaaksesi tapaamisprosessin esitäytetyllä aikaikkunalla.",
-    "slot_help_step5": "Jos jokin muuttuu, muokkaa tai poista aikaikkuna, jotta emme ehdota vanhentuneita aikoja."
+    "slot_help_step5": "Jos jokin muuttuu, muokkaa tai poista aikaikkuna, jotta emme ehdota vanhentuneita aikoja.",
+    "notifications": {
+      "proposed_title": "Tapaaminen ehdotettu — odottaa vahvistusta",
+      "proposed_body": "{other} ehdotti ajaksi {time}",
+      "proposed_body_fallback": "Tapaaminen on ehdotettu.",
+      "confirmed_title": "Tapaaminen vahvistettu",
+      "confirmed_body": "{other} vahvisti ajan {time}",
+      "confirmed_body_fallback": "Tapaaminen on vahvistettu.",
+      "unconfirmed_title": "Tapaaminen palautettu ehdotukseksi",
+      "unconfirmed_body": "{other} palautti tapaamisen ehdotetuksi.",
+      "unconfirmed_body_fallback": "Tapaaminen vaatii uuden vahvistuksen. Tarkista lisätiedot kojelaudalta.",
+      "canceled_title": "Tapaaminen peruttu",
+      "canceled_body": "{other} perui tapaamisen.",
+      "canceled_body_fallback": "Tapaaminen peruttiin.",
+      "deleted_title": "Tapaaminen poistettu",
+      "deleted_body": "{other} poisti tapaamismerkinnän.",
+      "deleted_body_fallback": "Tapaamismerkintä poistettiin.",
+      "permission_request": "Salli selainilmoitukset pysyäksesi ajan tasalla tapaamisista.",
+      "permission_denied": "Selainilmoitukset ovat tällä hetkellä estetty.",
+      "permission_granted": "Selainilmoitukset otettu käyttöön."
+    }
   },
   "language": {
     "de": "Saksa",
@@ -95,7 +115,18 @@
       "lon_placeholder": "Pituusaste (esim. 16.3738)",
       "instructions": "Aseta syntymäaikasi ja -paikkasi radixin laskemista varten. Jos et tiedä tarkkaa aikaa, jätä aika tyhjäksi — käytämme oletuksena klo 12.00."
     },
-    "note": "Profiiliasi käytetään mätsien personointiin ja aikavyöhykkeen näyttämiseen."
+    "note": "Profiiliasi käytetään mätsien personointiin ja aikavyöhykkeen näyttämiseen.",
+    "notifications": {
+      "legend": "Ilmoitukset",
+      "browser_label": "Selainilmoitukset",
+      "browser_help": "Näytä ilmoitukset tällä laitteella, kun tapaamiset vaativat huomiotasi.",
+      "browser_grant": "Ota selainilmoitukset käyttöön",
+      "browser_denied": "Selainilmoitukset on estetty selaimen asetuksissa.",
+      "email_label": "Sähköposti-ilmoitukset",
+      "email_help": "Lähetä tapaamispäivitykset vahvistettuun sähköpostiosoitteeseesi.",
+      "email_disabled": "Vahvista sähköpostisi saadaksesi tapaamispäivityksiä.",
+      "save_notice": "Nämä asetukset koskevat tulevia tapaamisia."
+    }
   },
   "welcome": {
     "subtitle": "Löydä sielunheimolaiset",

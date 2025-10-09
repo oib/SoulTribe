@@ -18,7 +18,27 @@
     "slot_help_step2": "Quando vengono recuperate le corrispondenze, confrontiamo i tuoi slot con quelli degli altri membri per trovare sovrapposizioni ancora future.",
     "slot_help_step3": "I badge di sovrapposizione nella sezione “Matches” mostrano la finestra condivisa: UTC, la tua ora locale e l’ora locale del tuo match.",
     "slot_help_step4": "Clicca su “Proponi questo orario” su una sovrapposizione per avviare il flusso del meetup con quello slot precompilato.",
-    "slot_help_step5": "Se qualcosa cambia, modifica o elimina lo slot così smetteremo di suggerire orari obsoleti."
+    "slot_help_step5": "Se qualcosa cambia, modifica o elimina lo slot così smetteremo di suggerire orari obsoleti.",
+    "notifications": {
+      "proposed_title": "Incontro proposto — da confermare",
+      "proposed_body": "{other} ha proposto {time}",
+      "proposed_body_fallback": "È stato proposto un incontro.",
+      "confirmed_title": "Incontro confermato",
+      "confirmed_body": "{other} ha confermato {time}",
+      "confirmed_body_fallback": "Il tuo incontro è confermato.",
+      "unconfirmed_title": "Incontro da ripianificare",
+      "unconfirmed_body": "{other} ha riportato l’incontro allo stato proposto.",
+      "unconfirmed_body_fallback": "Il tuo incontro deve essere ripianificato. Controlla la dashboard per i dettagli.",
+      "canceled_title": "Incontro annullato",
+      "canceled_body": "{other} ha annullato l’incontro.",
+      "canceled_body_fallback": "Un incontro è stato annullato.",
+      "deleted_title": "Incontro eliminato",
+      "deleted_body": "{other} ha eliminato la voce dell’incontro.",
+      "deleted_body_fallback": "È stata eliminata una voce di incontro.",
+      "permission_request": "Consenti le notifiche del browser per restare aggiornato sugli incontri.",
+      "permission_denied": "Le notifiche del browser sono attualmente bloccate.",
+      "permission_granted": "Notifiche del browser abilitate."
+    }
   },
   "landing": {
     "features": {
@@ -168,7 +188,18 @@
       "lon_placeholder": "Longitudine (es., 16.3738)",
       "instructions": "Imposta la tua data e il tuo luogo di nascita per calcolare il tuo radix. Se non conosci l'ora esatta, lascia vuoto il campo dell'ora e useremo le 12:00 come valore predefinito."
     },
-    "note": "Il tuo profilo viene utilizzato per personalizzare le corrispondenze e mostrare il fuso orario."
+    "note": "Il tuo profilo viene utilizzato per personalizzare le corrispondenze e mostrare il fuso orario.",
+    "notifications": {
+      "legend": "Notifiche",
+      "browser_label": "Notifiche del browser",
+      "browser_help": "Mostra avvisi su questo dispositivo quando un incontro richiede la tua attenzione.",
+      "browser_grant": "Abilita le notifiche del browser",
+      "browser_denied": "Le notifiche del browser sono bloccate nelle impostazioni del browser.",
+      "email_label": "Notifiche e-mail",
+      "email_help": "Invia aggiornamenti sugli incontri al tuo indirizzo e-mail verificato.",
+      "email_disabled": "Verifica la tua e-mail per ricevere aggiornamenti sugli incontri.",
+      "save_notice": "Queste preferenze si applicano agli incontri futuri."
+    }
   },
   "welcome": {
     "subtitle": "Trova la tua tribù dell'anima",
