@@ -229,6 +229,8 @@
   "profile": {
     "title": "O teu perfil",
     "save": "Gardar",
+    "delete_account": "Eliminar a miña conta",
+    "delete_account_confirm": "Estás seguro de que queres eliminar a túa conta? Esta acción non se pode desfacer.",
     "cancel": "Cancelar",
     "basic_info": {
       "legend": "Información básica",
@@ -431,5 +433,12 @@
       "cta": "Start your SoulTribe journey",
       "footer": "Your tribe is already out there — let the stars guide you home."
     }
+  },
+  "ai": {
+    "get_interpretation": "Obter interpretación",
+    "followup_placeholder": "Formula unha pregunta adicional…",
+    "send": "Enviar",
+    "error_initial": "Non se puido obter a interpretación",
+    "error_followup": "Non se puido enviar a mensaxe"
   }
 }

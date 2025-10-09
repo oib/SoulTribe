@@ -134,6 +134,8 @@
   },
   "profile": {
     "cancel": "Avbryt",
+    "delete_account": "Ta bort mitt konto",
+    "delete_account_confirm": "Är du säker på att du vill ta bort ditt konto? Den här åtgärden kan inte ångras.",
     "language_input_placeholder": "Skriv för att lägga till språk...",
     "other_languages_label": "Andra språk (för matchning)",
     "primary_language_label": "Primärt språk (för gränssnittet)",
@@ -180,7 +182,9 @@
   "ai": {
     "get_interpretation": "Hämta tolkning",
     "followup_placeholder": "Ställ en följdfråga…",
-    "send": "Skicka"
+    "send": "Skicka",
+    "error_initial": "Det gick inte att hämta tolkningen",
+    "error_followup": "Det gick inte att skicka meddelandet"
   },
   "imprint": {
     "title": "Juridisk information"

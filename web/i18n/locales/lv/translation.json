@@ -235,6 +235,8 @@
     },
     "title": "Tavs profils",
     "save": "Saglabāt",
+    "delete_account": "Dzēst manu kontu",
+    "delete_account_confirm": "Vai esi pārliecināts, ka vēlies dzēst savu kontu? Šo darbību nevar atsaukt.",
     "cancel": "Atcelt",
     "basic_info": {
       "legend": "Pamatinformācija",
@@ -306,7 +308,9 @@
   "ai": {
     "get_interpretation": "Saņemt interpretāciju",
     "followup_placeholder": "Uzdodiet papildu jautājumu…",
-    "send": "Sūtīt"
+    "send": "Sūtīt",
+    "error_initial": "Neizdevās iegūt interpretāciju",
+    "error_followup": "Neizdevās nosūtīt ziņu"
   },
   "dashboard": {
     "title": "Kontrolpanelis",

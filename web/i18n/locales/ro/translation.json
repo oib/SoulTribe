@@ -61,6 +61,8 @@
   },
   "profile": {
     "cancel": "Anulează",
+    "delete_account": "Șterge contul meu",
+    "delete_account_confirm": "Ești sigur că vrei să îți ștergi contul? Această acțiune nu poate fi anulată.",
     "language_input_placeholder": "Tastează pentru a adăuga limbi...",
     "other_languages_label": "Alte limbi (pentru potriviri)",
     "primary_language_label": "Limba principală (pentru interfață)",
@@ -177,7 +179,9 @@
   "ai": {
     "get_interpretation": "Obține interpretare",
     "followup_placeholder": "Pune o întrebare suplimentară…",
-    "send": "Trimite"
+    "send": "Trimite",
+    "error_initial": "Nu s-a putut obține interpretarea",
+    "error_followup": "Nu s-a putut trimite mesajul"
   },
   "imprint": {
     "title": "Imprint"

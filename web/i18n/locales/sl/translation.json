@@ -250,6 +250,8 @@
     },
     "title": "Tvoj profil",
     "save": "Shrani",
+    "delete_account": "Izbriši moj račun",
+    "delete_account_confirm": "Si prepričan/a, da želiš izbrisati svoj račun? Tega dejanja ni mogoče razveljaviti.",
     "cancel": "Prekliči",
     "basic_info": {
       "legend": "Osnovne informacije",
@@ -300,7 +302,9 @@
   "ai": {
     "get_interpretation": "Pridobi interpretacijo",
     "followup_placeholder": "Postavi dodatno vprašanje…",
-    "send": "Pošlji"
+    "send": "Pošlji",
+    "error_initial": "Ni uspelo pridobiti interpretacijo",
+    "error_followup": "Ni uspelo poslati sporočilo"
   },
   "dashboard": {
     "title": "Nadzorna plošča",

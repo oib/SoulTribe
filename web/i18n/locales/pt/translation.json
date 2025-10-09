@@ -134,6 +134,8 @@
   },
   "profile": {
     "cancel": "Cancelar",
+    "delete_account": "Eliminar a minha conta",
+    "delete_account_confirm": "Tens a certeza de que queres eliminar a tua conta? Esta ação não pode ser anulada.",
     "language_input_placeholder": "Escreve para adicionar idiomas...",
     "other_languages_label": "Outros idiomas (para correspondências)",
     "primary_language_label": "Idioma principal (para a interface)",
@@ -180,7 +182,9 @@
   "ai": {
     "get_interpretation": "Obter interpretação",
     "followup_placeholder": "Faz uma pergunta de seguimento…",
-    "send": "Enviar"
+    "send": "Enviar",
+    "error_initial": "Falha ao obter a interpretação",
+    "error_followup": "Falha ao enviar a mensagem"
   },
   "imprint": {
     "title": "Aviso legal"

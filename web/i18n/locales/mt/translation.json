@@ -250,6 +250,8 @@
     },
     "title": "Il-Profil Tiegħek",
     "save": "Issejvja",
+    "delete_account": "Ħassar il-kont tiegħi",
+    "delete_account_confirm": "Żgur li trid tħassar il-kont tiegħek? Din l-azzjoni ma tistax tiġi revokata.",
     "cancel": "Ikkanċella",
     "basic_info": {
       "legend": "Informazzjoni Bażika",
@@ -317,7 +319,9 @@
   "ai": {
     "get_interpretation": "Ikseb Interpretazzjoni",
     "followup_placeholder": "Staqsi mistoqsija sussegwenti…",
-    "send": "Ibgħat"
+    "send": "Ibgħat",
+    "error_initial": "Ma setgħniex niksbu l-interpretazzjoni",
+    "error_followup": "Ma setgħniex nibagħtu l-messaġġ"
   },
   "imprint": {
     "title": "Impressum"

@@ -131,6 +131,8 @@
   },
   "profile": {
     "cancel": "Avbryt",
+    "delete_account": "Slett kontoen min",
+    "delete_account_confirm": "Er du sikker på at du vil slette kontoen din? Denne handlingen kan ikke angres.",
     "language_input_placeholder": "Skriv for å legge til språk...",
     "other_languages_label": "Andre språk (for matching)",
     "primary_language_label": "Primærspråk (for grensesnittet)",
@@ -177,7 +179,9 @@
   "ai": {
     "get_interpretation": "Hent tolkning",
     "followup_placeholder": "Still et oppfølgingsspørsmål…",
-    "send": "Send"
+    "send": "Send",
+    "error_initial": "Kunne ikke hente tolkningen",
+    "error_followup": "Kunne ikke sende meldingen"
   },
   "imprint": {
     "title": "Juridisk informasjon"

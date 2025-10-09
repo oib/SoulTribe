@@ -134,6 +134,8 @@
   },
   "profile": {
     "cancel": "Отказ",
+    "delete_account": "Изтрий акаунта ми",
+    "delete_account_confirm": "Сигурен ли си, че искаш да изтриеш акаунта си? Това действие не може да бъде отменено.",
     "language_input_placeholder": "Пишете, за да добавите езици...",
     "other_languages_label": "Други езици (за съвпадения)",
     "primary_language_label": "Основен език (за интерфейса)",
@@ -180,7 +182,9 @@
   "ai": {
     "get_interpretation": "Вземи интерпретация",
     "followup_placeholder": "Задайте допълнителен въпрос…",
-    "send": "Изпрати"
+    "send": "Изпрати",
+    "error_initial": "Неуспешно зареждане на интерпретацията",
+    "error_followup": "Неуспешно изпращане на съобщението"
   },
   "imprint": {
     "title": "Импресум"

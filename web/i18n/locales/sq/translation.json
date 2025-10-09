@@ -229,6 +229,8 @@
   "profile": {
     "title": "Profili yt",
     "save": "Ruaj",
+    "delete_account": "Fshi llogarinë time",
+    "delete_account_confirm": "Je i sigurt që dëshiron të fshish llogarinë tënde? Ky veprim nuk mund të zhbëhet.",
     "cancel": "Anulo",
     "basic_info": {
       "legend": "Informacion bazë",
@@ -431,5 +433,12 @@
       "cta": "Start your SoulTribe journey",
       "footer": "Your tribe is already out there — let the stars guide you home."
     }
+  },
+  "ai": {
+    "get_interpretation": "Merr interpretim",
+    "followup_placeholder": "Bëj pyetje shtesë…",
+    "send": "Dërgo",
+    "error_initial": "Nuk u arrit të merrej interpretimi",
+    "error_followup": "Nuk u arrit të dërgohej mesazhi"
   }
 }

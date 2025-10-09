@@ -165,6 +165,8 @@
   "profile": {
     "title": "Zure profila",
     "save": "Gorde",
+    "delete_account": "Ezabatu nire kontua",
+    "delete_account_confirm": "Ziur zaude zure kontua ezabatu nahi duzula? Ekintza hau ezin da desegin.",
     "cancel": "Utzi",
     "basic_info": {
       "legend": "Oinarrizko informazioa",
@@ -367,5 +369,12 @@
       "cta": "Hasi zure SoulTribe bidaia",
       "footer": "Zure tribua dagoeneko han dago — utzi izarrei etxerako bidea erakusten."
     }
+  },
+  "ai": {
+    "get_interpretation": "Lortu interpretazioa",
+    "followup_placeholder": "Egin jarraipen-galdera…",
+    "send": "Bidali",
+    "error_initial": "Ezin izan da interpretazioa eskuratu",
+    "error_followup": "Ezin izan da mezua bidali"
   }
 }

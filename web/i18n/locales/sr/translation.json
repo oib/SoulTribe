@@ -229,6 +229,8 @@
   "profile": {
     "title": "Твој профил",
     "save": "Сачувај",
+    "delete_account": "Обриши мој налог",
+    "delete_account_confirm": "Јеси ли сигуран/сигурна да желиш да обришеш свој налог? Ова радња не може да се опозове.",
     "cancel": "Откажи",
     "basic_info": {
       "legend": "Основне информације",
@@ -431,5 +433,12 @@
       "cta": "Start your SoulTribe journey",
       "footer": "Your tribe is already out there — let the stars guide you home."
     }
+  },
+  "ai": {
+    "get_interpretation": "Добиј тумачење",
+    "followup_placeholder": "Постави додатно питање…",
+    "send": "Пошаљи",
+    "error_initial": "Није успело преузимање интерпретације",
+    "error_followup": "Није успело слање поруке"
   }
 }

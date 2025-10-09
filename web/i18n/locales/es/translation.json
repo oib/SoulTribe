@@ -2,7 +2,9 @@
   "ai": {
     "followup_placeholder": "Haz una pregunta de seguimiento…",
     "get_interpretation": "Obtener interpretación",
-    "send": "Enviar"
+    "send": "Enviar",
+    "error_initial": "No se pudo obtener la interpretación",
+    "error_followup": "No se pudo enviar el mensaje"
   },
   "dashboard": {
     "availability": "Disponibilidad",
@@ -293,6 +295,8 @@
   },
   "profile": {
     "cancel": "Cancelar",
+    "delete_account": "Eliminar mi cuenta",
+    "delete_account_confirm": "¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer.",
     "language_input_placeholder": "Escribe para añadir idiomas...",
     "other_languages_label": "Otros idiomas (para emparejar)",
     "primary_language_label": "Idioma principal (para la interfaz)",

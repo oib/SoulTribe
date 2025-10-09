@@ -304,11 +304,15 @@
   "ai": {
     "get_interpretation": "Interpretation abrufen",
     "followup_placeholder": "Stelle eine Anschlussfrage…",
-    "send": "Senden"
+    "send": "Senden",
+    "error_initial": "Interpretation konnte nicht abgerufen werden",
+    "error_followup": "Nachricht konnte nicht gesendet werden"
   },
   "profile": {
     "title": "Dein Profil",
     "save": "Speichern",
+    "delete_account": "Mein Konto löschen",
+    "delete_account_confirm": "Bist du sicher, dass du dein Konto löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
     "cancel": "Abbrechen",
     "primary_language_label": "Hauptsprache (für die Oberfläche)",
     "other_languages_label": "Weitere Sprachen (für Matching)",

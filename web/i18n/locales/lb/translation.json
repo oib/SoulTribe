@@ -229,6 +229,8 @@
   "profile": {
     "title": "De Profil",
     "save": "Späicheren",
+    "delete_account": "Mäi Kont läschen",
+    "delete_account_confirm": "Bass du sécher, datt s du däi Kont läsche wëlls? Dës Aktioun kann net zeréckgeholl ginn.",
     "cancel": "Ofbriechen",
     "basic_info": {
       "legend": "Basisinformatiounen",
@@ -431,5 +433,12 @@
       "cta": "Start deng SoulTribe Rees",
       "footer": "Deng Tribi ass scho dobaussen — lass d'Stären dech heemféieren."
     }
+  },
+  "ai": {
+    "get_interpretation": "Interpretatioun ufroen",
+    "followup_placeholder": "Nofro stellen…",
+    "send": "Schécken",
+    "error_initial": "D'Interpretatioun konnt net ofgeruff ginn",
+    "error_followup": "D'Noriicht konnt net geschéckt ginn"
   }
 }

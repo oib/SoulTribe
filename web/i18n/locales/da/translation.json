@@ -61,6 +61,8 @@
   },
   "profile": {
     "cancel": "Annuller",
+    "delete_account": "Slet min konto",
+    "delete_account_confirm": "Er du sikker på, at du vil slette din konto? Denne handling kan ikke fortrydes.",
     "language_input_placeholder": "Skriv for at tilføje sprog...",
     "other_languages_label": "Andre sprog (til matching)",
     "primary_language_label": "Primærsprog (til grænsefladen)",
@@ -177,7 +179,9 @@
   "ai": {
     "get_interpretation": "Få fortolkning",
     "followup_placeholder": "Stil et opfølgende spørgsmål…",
-    "send": "Send"
+    "send": "Send",
+    "error_initial": "Kunne ikke hente fortolkningen",
+    "error_followup": "Kunne ikke sende beskeden"
   },
   "imprint": {
     "title": "Impressum"

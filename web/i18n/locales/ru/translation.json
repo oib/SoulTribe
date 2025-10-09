@@ -131,6 +131,8 @@
   },
   "profile": {
     "cancel": "Отмена",
+    "delete_account": "Удалить мой аккаунт",
+    "delete_account_confirm": "Вы уверены, что хотите удалить свой аккаунт? Это действие нельзя отменить.",
     "language_input_placeholder": "Печатай, чтобы добавить языки...",
     "other_languages_label": "Другие языки (для совпадений)",
     "primary_language_label": "Основной язык (для интерфейса)",
@@ -177,7 +179,9 @@
   "ai": {
     "get_interpretation": "Получить интерпретацию",
     "followup_placeholder": "Задайте уточняющий вопрос…",
-    "send": "Отправить"
+    "send": "Отправить",
+    "error_initial": "Не удалось получить интерпретацию",
+    "error_followup": "Не удалось отправить сообщение"
   },
   "imprint": {
     "title": "Выходные данные"

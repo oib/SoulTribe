@@ -941,6 +941,29 @@
       try { await fetchAndRenderRadix(); toast('Radix refreshed'); } catch {}
     });
 
+    bindClick('btn-account-delete', async () => {
+      if (!token()) {
+        toast('Please login again before deleting your account', 'error');
+        return;
+      }
+      const confirmText = window.SimpleI18n?.t ? window.SimpleI18n.t('profile.delete_account_confirm', 'Are you sure? This cannot be undone.') : 'Are you sure? This cannot be undone.';
+      if (!window.confirm(confirmText)) return;
+      const button = document.getElementById('btn-account-delete');
+      if (button) button.disabled = true;
+      try {
+        await api('/api/profile', { method: 'DELETE', auth: true });
+        toast('Account deleted');
+        try { localStorage.removeItem('access_token'); } catch {}
+        try { localStorage.removeItem('refresh_token'); } catch {}
+        window.location.href = '/goodbye.html';
+      } catch (err) {
+        console.error('Account deletion failed', err);
+        toast('Failed to delete account', 'error');
+      } finally {
+        if (button) button.disabled = false;
+      }
+    });
+
     // --- AI Interpretation ---
     const aiMessagesEl = document.getElementById('aiMessages');
     const aiInputEl = document.getElementById('aiUserMsg');
@@ -996,7 +1019,8 @@
         } catch {}
       } catch (e) {
         show('profile.interpret:ERROR', e);
-        toast('Failed to get interpretation', 'error');
+        const msg = window.SimpleI18n?.t('ai.error_initial') || 'Failed to get interpretation';
+        toast(msg, 'error');
       }
     });
 
@@ -1011,7 +1035,8 @@
         await callInterpret(msg);
       } catch (e) {
         show('profile.interpret.send:ERROR', e);
-        toast('Failed to send message', 'error');
+        const msg = window.SimpleI18n?.t('ai.error_followup') || 'Failed to send message';
+        toast(msg, 'error');
       }
     });
 

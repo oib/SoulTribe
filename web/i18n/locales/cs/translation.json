@@ -131,6 +131,8 @@
   },
   "profile": {
     "cancel": "Zrušit",
+    "delete_account": "Smazat můj účet",
+    "delete_account_confirm": "Opravdu chceš svůj účet smazat? Tuto akci nelze vrátit.",
     "language_input_placeholder": "Piš pro přidání jazyků...",
     "other_languages_label": "Další jazyky (pro párování)",
     "primary_language_label": "Hlavní jazyk (pro rozhraní)",
@@ -177,7 +179,9 @@
   "ai": {
     "get_interpretation": "Získat interpretaci",
     "followup_placeholder": "Zeptej se doplňující otázkou…",
-    "send": "Odeslat"
+    "send": "Odeslat",
+    "error_initial": "Nepodařilo se získat interpretaci",
+    "error_followup": "Nepodařilo se odeslat zprávu"
   },
   "imprint": {
     "title": "Tiráž"

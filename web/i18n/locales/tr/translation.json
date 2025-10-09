@@ -130,6 +130,8 @@
   },
   "profile": {
     "cancel": "İptal",
+    "delete_account": "Hesabımı sil",
+    "delete_account_confirm": "Hesabını silmek istediğinden emin misin? Bu işlem geri alınamaz.",
     "language_input_placeholder": "Dilleri eklemek için yaz...",
     "other_languages_label": "Diğer diller (eşleştirme için)",
     "primary_language_label": "Birincil dil (arayüz için)",
@@ -176,7 +178,9 @@
   "ai": {
     "get_interpretation": "Yorum al",
     "followup_placeholder": "Bir takip sorusu sorun…",
-    "send": "Gönder"
+    "send": "Gönder",
+    "error_initial": "Yorum alınamadı",
+    "error_followup": "Mesaj gönderilemedi"
   },
   "imprint": {
     "title": "Künye"

@@ -61,6 +61,8 @@
   },
   "profile": {
     "cancel": "Mégse",
+    "delete_account": "Fiókom törlése",
+    "delete_account_confirm": "Biztosan törölni szeretnéd a fiókodat? Ez a művelet nem visszavonható.",
     "language_input_placeholder": "Írj be a nyelvek hozzáadásához...",
     "other_languages_label": "Egyéb nyelvek (párosításhoz)",
     "primary_language_label": "Elsődleges nyelv (a felülethez)",
@@ -177,7 +179,9 @@
   "ai": {
     "get_interpretation": "Értelmezés kérése",
     "followup_placeholder": "Tegyél fel követő kérdést…",
-    "send": "Küldés"
+    "send": "Küldés",
+    "error_initial": "Nem sikerült lekérni az értelmezést",
+    "error_followup": "Nem sikerült elküldeni az üzenetet"
   },
   "imprint": {
     "title": "Impresszum"

@@ -7,12 +7,23 @@ from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 import subprocess, json
 from sqlmodel import select
+from sqlalchemy import delete, or_
 
 from db import get_session
-from models import User, Profile, Radix
+from models import (
+    User,
+    Profile,
+    Radix,
+    AvailabilitySlot,
+    Match,
+    RefreshToken,
+    EmailVerificationToken,
+    PasswordResetToken,
+)
 from schemas import ProfileUpdateIn, ProfileOut
 from services.radix import compute_radix_json
 from services.jwt_auth import get_current_user_id
+from services.activity_log import log_event
 
 router = APIRouter(prefix="/api/profile", tags=["profile"])
 
@@ -162,6 +173,44 @@ def interpret_profile(payload: InterpretIn, user_id: int = Depends(get_current_u
 
     reply = (completed.stdout or "").strip()
     return InterpretOut(reply=reply)
+
+
+class DeleteAccountOut(BaseModel):
+    ok: bool
+    message: str | None = None
+
+
+@router.delete("", response_model=DeleteAccountOut)
+def delete_account(user_id: int = Depends(get_current_user_id), session=Depends(get_session)):
+    user = session.get(User, user_id)
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    # Log intent before mutating
+    try:
+        log_event(
+            "profile.delete_account",
+            actor_user_id=user_id,
+            metadata={"email": user.email},
+        )
+    except Exception:
+        pass
+
+    # Remove related records explicitly to avoid dangling data
+    session.exec(delete(AvailabilitySlot).where(AvailabilitySlot.user_id == user_id))
+    session.exec(delete(Radix).where(Radix.user_id == user_id))
+    session.exec(delete(Profile).where(Profile.user_id == user_id))
+    session.exec(delete(EmailVerificationToken).where(EmailVerificationToken.user_id == user_id))
+    session.exec(delete(PasswordResetToken).where(PasswordResetToken.user_id == user_id))
+    session.exec(delete(RefreshToken).where(RefreshToken.user_id == user_id))
+    session.exec(
+        delete(Match).where(or_(Match.a_user_id == user_id, Match.b_user_id == user_id))
+    )
+
+    session.delete(user)
+    session.commit()
+
+    return DeleteAccountOut(ok=True, message="Account deleted")
 
 @router.get("/radix")
 def get_radix(user_id: int = Depends(get_current_user_id), session = Depends(get_session)):

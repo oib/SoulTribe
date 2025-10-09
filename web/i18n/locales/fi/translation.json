@@ -61,6 +61,8 @@
   },
   "profile": {
     "cancel": "Peruuta",
+    "delete_account": "Poista tilini",
+    "delete_account_confirm": "Haluatko varmasti poistaa tilisi? Tätä toimintoa ei voi perua.",
     "language_input_placeholder": "Kirjoita lisätäksesi kieliä...",
     "other_languages_label": "Muut kielet (matchausta varten)",
     "primary_language_label": "Pääkieli (käyttöliittymälle)",
@@ -177,7 +179,9 @@
   "ai": {
     "get_interpretation": "Hae tulkinta",
     "followup_placeholder": "Kysy jatkokysymys…",
-    "send": "Lähetä"
+    "send": "Lähetä",
+    "error_initial": "Tulkinnan hakeminen epäonnistui",
+    "error_followup": "Viestin lähetys epäonnistui"
   },
   "imprint": {
     "title": "Impressum"

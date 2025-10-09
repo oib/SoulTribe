@@ -165,6 +165,8 @@
   "profile": {
     "title": "Tvoj profil",
     "save": "Sačuvaj",
+    "delete_account": "Izbriši moj račun",
+    "delete_account_confirm": "Jesi li siguran/na da želiš izbrisati svoj račun? Ova radnja se ne može poništiti.",
     "cancel": "Otkaži",
     "basic_info": {
       "legend": "Osnovne informacije",
@@ -367,5 +369,12 @@
       "cta": "Započni svoje SoulTribe putovanje",
       "footer": "Tvoje pleme već postoji negdje tamo — dozvoli zvijezdama da te povedu kući."
     }
+  },
+  "ai": {
+    "get_interpretation": "Dobij tumačenje",
+    "followup_placeholder": "Postavi dodatno pitanje…",
+    "send": "Pošalji",
+    "error_initial": "Nije uspjelo dohvatiti interpretaciju",
+    "error_followup": "Slanje poruke nije uspjelo"
   }
 }

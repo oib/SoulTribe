@@ -250,6 +250,8 @@
     },
     "title": "Do Phróifíl",
     "save": "Sábháil",
+    "delete_account": "Scrios mo chuntas",
+    "delete_account_confirm": "An bhfuil tú cinnte gur mian leat do chuntas a scriosadh? Ní féidir an ghníomh seo a chur ar ceal.",
     "cancel": "Cealaigh",
     "basic_info": {
       "legend": "Eolas Bunúsach",
@@ -286,7 +288,9 @@
   "ai": {
     "get_interpretation": "Faigh léirmhíniú",
     "followup_placeholder": "Cuir ceist leanúnach…",
-    "send": "Seol"
+    "send": "Seol",
+    "error_initial": "Níor éirigh leis an léirmhíniú a fháil",
+    "error_followup": "Níor éirigh leis an teachtaireacht a sheoladh"
   },
   "dashboard": {
     "title": "Deais",

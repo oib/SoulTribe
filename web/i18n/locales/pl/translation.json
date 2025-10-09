@@ -64,6 +64,8 @@
   },
   "profile": {
     "cancel": "Anuluj",
+    "delete_account": "Usuń moje konto",
+    "delete_account_confirm": "Czy na pewno chcesz usunąć swoje konto? Tej czynności nie można cofnąć.",
     "language_input_placeholder": "Wpisz, aby dodać języki...",
     "other_languages_label": "Inne języki (do dopasowań)",
     "primary_language_label": "Język główny (dla interfejsu)",
@@ -180,7 +182,9 @@
   "ai": {
     "get_interpretation": "Uzyskaj interpretację",
     "followup_placeholder": "Zadaj pytanie uzupełniające…",
-    "send": "Wyślij"
+    "send": "Wyślij",
+    "error_initial": "Nie udało się pobrać interpretacji",
+    "error_followup": "Nie udało się wysłać wiadomości"
   },
   "imprint": {
     "title": "Impressum"

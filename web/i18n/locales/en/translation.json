@@ -287,6 +287,8 @@
   "profile": {
     "title": "Your Profile",
     "save": "Save",
+    "delete_account": "Delete my account",
+    "delete_account_confirm": "Are you sure you want to delete your account? This action cannot be undone.",
     "cancel": "Cancel",
     "basic_info": {
       "legend": "Basic Information",
@@ -430,5 +432,12 @@
   },
   "notifications": {
     "language_set_to": "Language set to"
+  },
+  "ai": {
+    "get_interpretation": "Get Interpretation",
+    "followup_placeholder": "Ask a follow-up…",
+    "send": "Send",
+    "error_initial": "Failed to get interpretation",
+    "error_followup": "Failed to send message"
   }
 }

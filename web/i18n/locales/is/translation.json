@@ -229,6 +229,8 @@
   "profile": {
     "title": "Prófíllinn þinn",
     "save": "Vista",
+    "delete_account": "Eyða aðganginum mínum",
+    "delete_account_confirm": "Ertu viss um að þú viljir eyða aðganginum þínum? Þessa aðgerð er ekki hægt að afturkalla.",
     "cancel": "Hætta við",
     "basic_info": {
       "legend": "Grunnupplýsingar",
@@ -431,5 +433,12 @@
       "cta": "Byrjaðu ferð þína með SoulTribe",
       "footer": "Ættkvísl þín er þegar þar úti — láttu stjörnurnar leiða þig heim."
     }
+  },
+  "ai": {
+    "get_interpretation": "Fá túlkun",
+    "followup_placeholder": "Spyrðu frekari spurningar…",
+    "send": "Senda",
+    "error_initial": "Tókst ekki að sækja túlkunina",
+    "error_followup": "Tókst ekki að senda skilaboðin"
   }
 }

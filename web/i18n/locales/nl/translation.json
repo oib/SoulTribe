@@ -134,6 +134,8 @@
   },
   "profile": {
     "cancel": "Annuleren",
+    "delete_account": "Mijn account verwijderen",
+    "delete_account_confirm": "Weet je zeker dat je je account wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
     "language_input_placeholder": "Typ om talen toe te voegen...",
     "other_languages_label": "Overige talen (voor matching)",
     "primary_language_label": "Primaire taal (voor de interface)",
@@ -180,7 +182,9 @@
   "ai": {
     "get_interpretation": "Krijg interpretatie",
     "followup_placeholder": "Stel een vervolgvraag…",
-    "send": "Verzenden"
+    "send": "Verzenden",
+    "error_initial": "Interpretatie ophalen is mislukt",
+    "error_followup": "Bericht verzenden is mislukt"
   },
   "imprint": {
     "title": "Impressum"

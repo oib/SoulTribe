@@ -2,7 +2,9 @@
   "ai": {
     "followup_placeholder": "Ask a follow-up…",
     "get_interpretation": "Get Interpretation",
-    "send": "Send"
+    "send": "Send",
+    "error_initial": "Échec de la récupération de l'interprétation",
+    "error_followup": "Échec de l'envoi du message"
   },
   "dashboard": {
     "availability": "Disponibilités",
@@ -137,6 +139,8 @@
   },
   "profile": {
     "cancel": "Annuler",
+    "delete_account": "Supprimer mon compte",
+    "delete_account_confirm": "Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.",
     "language_input_placeholder": "Tape pour ajouter des langues...",
     "other_languages_label": "Autres langues (pour l'appariement)",
     "primary_language_label": "Langue principale (pour l'interface)",

@@ -246,7 +246,9 @@
       "interests": "Huvid",
       "lastSeen": "Viimati nähtud",
       "memberSince": "Liitus"
-    }
+    },
+    "delete_account": "Kustuta minu konto",
+    "delete_account_confirm": "Kas oled kindel, et soovid oma konto kustutada? Seda toimingut ei saa tagasi võtta."
   },
   "search": {
     "noResults": "Tulemusi ei leitud",
@@ -515,5 +517,9 @@
       "cta": "Alusta oma SoulTribe teekonda",
       "footer": "Sinu hõim on juba kusagil olemas — lase tähtedel su koduteed näidata."
     }
+  },
+  "ai": {
+    "error_initial": "Tõlgenduse hankimine ebaõnnestus",
+    "error_followup": "Sõnumi saatmine ebaõnnestus"
   }
 }

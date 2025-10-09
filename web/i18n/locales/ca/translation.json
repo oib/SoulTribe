@@ -229,6 +229,8 @@
   "profile": {
     "title": "El teu perfil",
     "save": "Desa",
+    "delete_account": "Suprimeix el meu compte",
+    "delete_account_confirm": "Estàs segur que vols suprimir el teu compte? Aquesta acció no es pot desfer.",
     "cancel": "Cancel·la",
     "basic_info": {
       "legend": "Informació bàsica",
@@ -431,5 +433,12 @@
       "cta": "Comença el teu viatge a SoulTribe",
       "footer": "El teu clan ja és allà fora — deixa que les estrelles et guiïn a casa."
     }
+  },
+  "ai": {
+    "get_interpretation": "Rep una interpretació",
+    "followup_placeholder": "Fes una pregunta de seguiment…",
+    "send": "Envia",
+    "error_initial": "No s'ha pogut obtenir la interpretació",
+    "error_followup": "No s'ha pogut enviar el missatge"
   }
 }

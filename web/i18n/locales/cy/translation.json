@@ -141,5 +141,13 @@
       "cta": "Dechreuwch eich taith SoulTribe",
       "footer": "Mae eich llwyth eisoes yno — gadewch i'r sêr eich arwain adref."
     }
+  },
+  "profile": {
+    "delete_account": "Dileu fy nghyfrif",
+    "delete_account_confirm": "Wyt ti'n siŵr dy fod am ddileu dy gyfrif? Ni ellir dadwneud y weithred hon."
+  },
+  "ai": {
+    "error_initial": "Methu cael y dehongliad",
+    "error_followup": "Methu anfon y neges"
   }
 }

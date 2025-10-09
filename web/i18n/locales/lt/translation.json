@@ -235,6 +235,8 @@
     },
     "title": "Jūsų profilis",
     "save": "Išsaugoti",
+    "delete_account": "Ištrinti mano paskyrą",
+    "delete_account_confirm": "Ar tikrai nori ištrinti savo paskyrą? Šio veiksmo nebus galima atšaukti.",
     "cancel": "Atšaukti",
     "basic_info": {
       "legend": "Pagrindinė informacija",
@@ -306,7 +308,9 @@
   "ai": {
     "get_interpretation": "Gauti interpretaciją",
     "followup_placeholder": "Užduokite papildomą klausimą…",
-    "send": "Siųsti"
+    "send": "Siųsti",
+    "error_initial": "Nepavyko gauti interpretacijos",
+    "error_followup": "Nepavyko išsiųsti pranešimo"
   },
   "dashboard": {
     "title": "Prietaisų skydelis",
