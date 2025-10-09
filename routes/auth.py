@@ -27,6 +27,7 @@ from services.auth_tokens import (
     is_refresh_token_active,
 )
 from services.bot_slot_scheduler import schedule_random_bot_slot
+from services.activity_log import log_event
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 ph = PasswordHasher()
@@ -269,6 +270,14 @@ def login(payload: LoginIn, request: Request, session=Depends(get_session)):
         pass
 
     token = create_access_token({"sub": str(user.id), "email": user.email})
+    log_event(
+        "auth.login",
+        actor_user_id=user.id,
+        metadata={
+            "email": user.email,
+            "client_ip": _client_ip(request),
+        },
+    )
     return LoginOut(ok=True, access_token=token, token_type="bearer", refresh_token=refresh_raw)
 
 

@@ -21,6 +21,7 @@ from services.email_templates import (
     get_confirm_copy,
     get_propose_copy,
 )
+from services.activity_log import log_event
 
 router = APIRouter(prefix="/api/meetup", tags=["meetup"])
 logger = logging.getLogger("soultribe.meetup")
@@ -121,6 +122,15 @@ def propose(inp: ProposeIn, session=Depends(get_session), user_id: int = Depends
             log_meetup_event(meetup=mm, actor_user_id=user_id, action="email_propose", success=False, metadata={"error": str(exc)})
 
     log_meetup_event(meetup=mm, actor_user_id=user_id, action="propose", success=True, metadata={})
+    log_event(
+        "meetup.propose",
+        actor_user_id=user_id,
+        metadata={
+            "meetup_id": mm.id,
+            "match_id": m.id if m else None,
+            "proposed_dt_utc": mm.proposed_dt_utc.isoformat() if mm.proposed_dt_utc else None,
+        },
+    )
     return ProposeOut(meetup_id=mm.id, status=mm.status)
 
 
@@ -215,6 +225,16 @@ def confirm(inp: ConfirmIn, session=Depends(get_session), user_id: int = Depends
                 log_meetup_event(meetup=mm, actor_user_id=user_id, action="email_confirm", success=False, metadata={"recipient": label, "error": str(exc)})
 
     log_meetup_event(meetup=mm, actor_user_id=user_id, action="confirm", success=True, metadata={})
+    log_event(
+        "meetup.confirm",
+        actor_user_id=user_id,
+        metadata={
+            "meetup_id": mm.id,
+            "match_id": mm.match_id,
+            "jitsi_room": mm.jitsi_room,
+            "confirmed_dt_utc": mm.confirmed_dt_utc.isoformat() if mm.confirmed_dt_utc else None,
+        },
+    )
 
     return ConfirmOut(meetup_id=mm.id, jitsi_url=url, status=mm.status)
 
@@ -329,6 +349,14 @@ def unconfirm(inp: SimpleMeetupIn, session=Depends(get_session), user_id: int = 
     session.add(mm)
     session.commit()
     log_meetup_event(meetup=mm, actor_user_id=user_id, action="unconfirm", success=True, metadata={})
+    log_event(
+        "meetup.unconfirm",
+        actor_user_id=user_id,
+        metadata={
+            "meetup_id": mm.id,
+            "match_id": mm.match_id,
+        },
+    )
     return SimpleMeetupOut(meetup_id=mm.id, status=mm.status)
 
 
@@ -353,6 +381,14 @@ def delete_meetup(meetup_id: int, session=Depends(get_session), user_id: int = D
     session.delete(mm)
     session.commit()
     log_meetup_event(meetup=mm, actor_user_id=user_id, action="delete", success=True, metadata={})
+    log_event(
+        "meetup.delete",
+        actor_user_id=user_id,
+        metadata={
+            "meetup_id": meetup_id,
+            "match_id": mm.match_id,
+        },
+    )
     return DeleteOut(deleted=True)
 
 @router.post("/cancel", response_model=SimpleMeetupOut, dependencies=[Depends(rate_limit("meetup:cancel", limit=5, window_seconds=60))])
@@ -366,4 +402,12 @@ def cancel(inp: SimpleMeetupIn, session=Depends(get_session), user_id: int = Dep
     session.add(mm)
     session.commit()
     log_meetup_event(meetup=mm, actor_user_id=user_id, action="cancel", success=True, metadata={})
+    log_event(
+        "meetup.cancel",
+        actor_user_id=user_id,
+        metadata={
+            "meetup_id": mm.id,
+            "match_id": mm.match_id,
+        },
+    )
     return SimpleMeetupOut(meetup_id=mm.id, status=mm.status)

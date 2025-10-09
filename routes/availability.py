@@ -11,6 +11,7 @@ from sqlalchemy import text
 from db import get_session
 from models import AvailabilitySlot
 from services.jwt_auth import get_current_user_id
+from services.activity_log import log_event
 
 router = APIRouter(prefix="/api/availability", tags=["availability"])
 
@@ -196,6 +197,16 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
     session.add(slot)
     session.commit()
     session.refresh(slot)
+    log_event(
+        "availability.create",
+        actor_user_id=user_id,
+        metadata={
+            "slot_id": slot.id,
+            "start_dt_utc": slot.start_dt_utc.isoformat(),
+            "end_dt_utc": slot.end_dt_utc.isoformat(),
+            "timezone": slot.timezone,
+        },
+    )
     print(f"Backend returning: start={slot.start_dt_utc} (tz={getattr(slot.start_dt_utc, 'tzinfo', None)})")
     # Best-effort dual write into availability_once tstzrange table (Postgres)
     try:
@@ -361,6 +372,16 @@ def update_slot(slot_id: int, payload: SlotUpdateIn, session=Depends(get_session
     session.add(slot)
     session.commit()
     session.refresh(slot)
+    log_event(
+        "availability.update",
+        actor_user_id=user_id,
+        metadata={
+            "slot_id": slot.id,
+            "start_dt_utc": slot.start_dt_utc.isoformat(),
+            "end_dt_utc": slot.end_dt_utc.isoformat(),
+            "timezone": slot.timezone,
+        },
+    )
     # Best-effort: maintain availability_once range index
     try:
         stmt2 = text(
@@ -396,6 +417,13 @@ def delete_slot(slot_id: int, session=Depends(get_session), user_id: int = Depen
     slot = session.get(AvailabilitySlot, slot_id)
     if not slot or slot.user_id != user_id:
         raise HTTPException(status_code=404, detail="Slot not found")
+    metadata = {
+        "slot_id": slot.id,
+        "start_dt_utc": slot.start_dt_utc.isoformat(),
+        "end_dt_utc": slot.end_dt_utc.isoformat(),
+        "timezone": slot.timezone,
+    }
     session.delete(slot)
     session.commit()
-    return {"ok": True}
+    log_event("availability.delete", actor_user_id=user_id, metadata=metadata)
+    return {"deleted": True}
