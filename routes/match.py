@@ -211,9 +211,9 @@ def match_score(inp: MatchScoreIn) -> MatchScoreOut:
 
 class MatchFindIn(BaseModel):
     user_id: int
-    limit: Optional[int] = 20
+    limit: Optional[int] = 100
     offset: Optional[int] = 0
-    min_score: Optional[int] = None
+    min_score: Optional[int] = 0
     lookahead_days: Optional[int] = 3
     max_overlaps: Optional[int] = 5
 

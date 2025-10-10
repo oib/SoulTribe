@@ -394,15 +394,22 @@
 
   // Helper to fetch and render matches based on current input fields
   const matchPagination = {
-    limit: 10,
+    limit: 100,
     offset: 0,
     total: 0,
     hasMore: false,
     filters: {
-      min_score: 50,
+      min_score: 0,
       lookahead_days: 14,
       max_overlaps: 5,
     },
+  };
+
+  const meetupIdMap = new Map();
+  const meetupPairKey = (a, b) => {
+    const n1 = Number(a) || 0;
+    const n2 = Number(b) || 0;
+    return n1 < n2 ? `pair:${n1}:${n2}` : `pair:${n2}:${n1}`;
   };
 
   const renderMatchesPager = () => {
@@ -491,6 +498,17 @@
         const otherName = (cand.other_display_name && String(cand.other_display_name).trim())
           ? String(cand.other_display_name).trim()
           : `user ${cand.user_id}`;
+        const meetupKeyMatch = (cand.match_id !== null && typeof cand.match_id !== 'undefined') ? `match:${cand.match_id}` : null;
+        let activeMeetup = meetupKeyMatch ? meetupIdMap.get(meetupKeyMatch) : undefined;
+        if (!activeMeetup && currentUserId != null) {
+          activeMeetup = meetupIdMap.get(meetupPairKey(currentUserId, cand.user_id));
+        }
+        const meetupStatus = activeMeetup && activeMeetup.status ? String(activeMeetup.status).toLowerCase() : null;
+        const hasActiveMeetup = Boolean(activeMeetup && meetupStatus && meetupStatus !== 'canceled');
+        const statusBadgeClass = meetupStatus === 'confirmed' ? 'success' : 'info';
+        const statusLabel = meetupStatus === 'confirmed' ? 'Meetup confirmed' : 'Meetup proposed';
+        const statusTimeIso = activeMeetup ? (activeMeetup.confirmed_dt_utc || activeMeetup.proposed_dt_utc) : null;
+        const statusTime = statusTimeIso ? formatUtcDisplay(statusTimeIso) : '';
         let chips = '';
         if (Array.isArray(cand.overlaps) && cand.overlaps.length) {
           for (const ov of cand.overlaps) {
@@ -517,6 +535,11 @@
                   <div class=\"meta\">${dur}</div>
                 </div>
               ` : '';
+            const actionHtml = hasActiveMeetup ? '' : `
+                <div class="item-actions">
+                  <button class="button btn-meet-from-overlap" data-cand="${cand.user_id}" data-start="${startIso}" data-i18n="dashboard.propose_time">Propose time</button>
+                </div>
+            `;
             chips += `
               <div class="chip">
                 <div class="chip-grid">
@@ -529,9 +552,7 @@
                   ${youBlock}
                   ${otherBlock}
                 </div>
-                <div class="item-actions">
-                  <button class="button btn-meet-from-overlap" data-cand="${cand.user_id}" data-start="${startIso}" data-i18n="dashboard.propose_time">Propose time</button>
-                </div>
+                ${actionHtml}
               </div>`;
           }
         }
@@ -599,6 +620,17 @@
           `;
         }
 
+        const meetupStatusBlock = hasActiveMeetup ? `
+          <div class="chips">
+            <div class="chip">
+              <div class="item-sub">
+                <span class="badge ${statusBadgeClass}">${statusLabel}</span>
+                ${statusTime ? `<span class="meta muted">${statusTime}</span>` : ''}
+              </div>
+            </div>
+          </div>
+        ` : '';
+
         const preferredLang = viewerLang || 'en';
         const baseAnnotateLabel = (window.SimpleI18n && typeof window.SimpleI18n.t === 'function')
           ? window.SimpleI18n.t('dashboard.generate_ai_comment')
@@ -620,6 +652,7 @@
               <div style="display:flex; gap:8px; align-items:center;">${headerLangBadge}${score}</div>
             </div>
             ${chips ? `<div class="chips">${chips}</div>` : ''}
+            ${meetupStatusBlock}
             ${commentBlock}
             ${annotateBtn}
           </li>`;
@@ -674,20 +707,28 @@
         // Prepare notification tracking set
         // Filter to upcoming meetups only (either proposed or confirmed is in the future)
         const now = new Date();
+        meetupIdMap.clear();
         const upcoming = (data || []).filter((item) => {
+          const isProposed = String(item.status || '').toLowerCase() === 'proposed';
           const p = item.proposed_dt_utc ? new Date(item.proposed_dt_utc) : null;
           const c = item.confirmed_dt_utc ? new Date(item.confirmed_dt_utc) : null;
           const pFuture = p && p.getTime() >= now.getTime();
           const cFuture = c && c.getTime() >= now.getTime();
-          return pFuture || cFuture; // keep if any future time exists
+          return isProposed || pFuture || cFuture; // always keep proposed meetups, even without a future timestamp
         }).sort((a,b) => {
           const ad = new Date(a.confirmed_dt_utc || a.proposed_dt_utc || 0).getTime();
           const bd = new Date(b.confirmed_dt_utc || b.proposed_dt_utc || 0).getTime();
           return ad - bd;
         });
-
         for (const item of upcoming) {
-          meetupIdMap.set(`${item.match_id}:${item.other_user_id}`, item.meetup_id);
+          if (item && typeof item === 'object') {
+            if (item.match_id !== null && typeof item.match_id !== 'undefined') {
+              meetupIdMap.set(`match:${item.match_id}`, item);
+            }
+            if (currentUserId != null && item.other_user_id != null) {
+              meetupIdMap.set(meetupPairKey(currentUserId, item.other_user_id), item);
+            }
+          }
         }
 
         let items = '';
@@ -1258,8 +1299,12 @@
           const mc = await api('/api/match/create', { method: 'POST', auth: true, body: { a_user_id: currentUserId, b_user_id: candId } });
           const { meetup_id } = await api('/api/meetup/propose', { method: 'POST', auth: true, body: { match_id: mc.match_id, proposed_dt_utc: startDt } });
           toast('Meetup proposed');
+          const lookupEntry = window.__meetupIdLookup
+            ? (window.__meetupIdLookup.get(`match:${mc.match_id}`)
+                || window.__meetupIdLookup.get(meetupPairKey(currentUserId, candId)))
+            : null;
           const proposedMeetupId = meetup_id
-            || (window.__meetupIdLookup ? window.__meetupIdLookup.get(`${mc.match_id}:${candId}`) : null)
+            || (lookupEntry ? lookupEntry.meetup_id : null)
             || mc.meetup_id
             || 'pending';
           markMeetupAction(proposedMeetupId, 'propose');
@@ -1268,6 +1313,7 @@
           if (actions) actions.innerHTML = '<span class="badge info">Proposed — awaiting confirm</span>';
           // Refresh meetups (list is auto-run on dashboard but ensure visibility)
           try { if (window.fetchAndRenderMeetups) await window.fetchAndRenderMeetups(); } catch {}
+          try { if (window.fetchAndRenderMatches) await window.fetchAndRenderMatches(); } catch {}
         } catch (err) {
           // Revert UI on error
           btn.disabled = false;
