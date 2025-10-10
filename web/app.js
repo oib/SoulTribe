@@ -14,6 +14,8 @@ const bindClick = (id, handler) => {
 };
   const out = $("out");
   let token = null;
+  let refreshToken = null;
+  let refreshInFlight = null;
   let currentUserId = null;
   // Expose initial currentUserId to window so other modules can read it as a value
   try { window.currentUserId = currentUserId; } catch {}
@@ -390,7 +392,14 @@ const bindClick = (id, handler) => {
     } catch (e) { show("availability.delete:ERROR", e); }
   });
 
-  const api = async (path, { method = "GET", body, auth = false, returnResponse = false } = {}) => {
+  const api = async (path, options = {}) => {
+    const {
+      method = "GET",
+      body,
+      auth = false,
+      returnResponse = false,
+      _retrying = false,
+    } = options;
     const headers = { "Content-Type": "application/json" };
     if (auth && token) headers["Authorization"] = `Bearer ${token}`;
     const res = await fetch(path, {
@@ -401,8 +410,28 @@ const bindClick = (id, handler) => {
     const text = await res.text();
     let data;
     try { data = JSON.parse(text); } catch { data = text; }
-    if (!res.ok) throw { status: res.status, data, response: res };
-    return returnResponse ? { data, response: res } : data;
+    if (!res.ok) {
+      const canRefresh = auth && res.status === 401 && !_retrying && refreshToken;
+      if (canRefresh) {
+        try {
+          await refreshAccessToken();
+          const nextOpts = { ...options, _retrying: true };
+          return api(path, nextOpts);
+        } catch (refreshErr) {
+          // fall through to throw original error after clearing tokens
+        }
+      }
+      throw { status: res.status, data, response: res };
+    }
+    const result = returnResponse ? { data, response: res } : data;
+    try {
+      if (auth && path === '/api/profile' && !returnResponse && result && typeof result === 'object') {
+        window.profileMeta = {
+          email_verified: !!result.email_verified,
+        };
+      }
+    } catch {}
+    return result;
   };
 
   const show = (label, data) => {
@@ -468,6 +497,45 @@ const bindClick = (id, handler) => {
       try { localStorage.removeItem("access_token"); } catch {}
     }
     updateTokenPreview();
+  };
+
+  const setRefreshToken = (rt) => {
+    refreshToken = rt || null;
+    try { window.refreshToken = refreshToken; } catch {}
+    if (refreshToken) {
+      try { localStorage.setItem("refresh_token", refreshToken); } catch {}
+    } else {
+      try { localStorage.removeItem("refresh_token"); } catch {}
+    }
+  };
+
+  const refreshAccessToken = async () => {
+    if (!refreshToken) {
+      throw { status: 401, detail: 'No refresh token available' };
+    }
+    if (!refreshInFlight) {
+      refreshInFlight = (async () => {
+        const res = await fetch('/api/auth/refresh', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ refresh_token: refreshToken })
+        });
+        const raw = await res.text();
+        let payload;
+        try { payload = JSON.parse(raw); } catch { payload = raw; }
+        if (!res.ok) {
+          setToken(null);
+          setRefreshToken(null);
+          throw { status: res.status, data: payload, response: res };
+        }
+        if (payload && typeof payload === 'object') {
+          if (payload.access_token) setToken(payload.access_token);
+          if (payload.refresh_token) setRefreshToken(payload.refresh_token);
+        }
+        return payload;
+      })().finally(() => { refreshInFlight = null; });
+    }
+    return refreshInFlight;
   };
 
   // Login handler moved to login.js
@@ -806,6 +874,11 @@ const bindClick = (id, handler) => {
 
   // Restore token from localStorage on load
   try {
+    const savedRefresh = localStorage.getItem('refresh_token');
+    if (savedRefresh) setRefreshToken(savedRefresh);
+  } catch (e) { /* ignore */ }
+
+  try {
     const savedToken = localStorage.getItem("access_token");
     if (savedToken) {
       setToken(savedToken);
@@ -830,5 +903,7 @@ const bindClick = (id, handler) => {
   window.parseJwt = parseJwt;
   window.setToken = setToken;
   window.updateAuthUI = updateAuthUI;
+  window.setRefreshToken = setRefreshToken;
+  window.refreshAccessToken = refreshAccessToken;
   window.fetchAndRenderRadix = null; // Will be set by profile.js
 })();

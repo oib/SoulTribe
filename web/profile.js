@@ -601,6 +601,66 @@
 
   // Profile-specific event handlers
   document.addEventListener('DOMContentLoaded', async () => {
+    const notifyBrowserEl = document.getElementById('notifyBrowser');
+    const notifyEmailEl = document.getElementById('notifyEmail');
+    const notifyEmailDisabled = document.getElementById('notifyEmailDisabled');
+    let emailVerified = !!(window.profileMeta && window.profileMeta.email_verified);
+    let profileData = null;
+
+    const updateEmailToggleState = () => {
+      if (notifyEmailEl && notifyEmailDisabled) {
+        notifyEmailEl.disabled = !emailVerified;
+        notifyEmailDisabled.style.display = emailVerified ? 'none' : '';
+      }
+    };
+
+    const applyNotificationPrefs = (source) => {
+      if (!source) return;
+      if (notifyBrowserEl && typeof source.notify_browser_meetups === 'boolean') {
+        notifyBrowserEl.checked = source.notify_browser_meetups;
+      }
+      if (notifyEmailEl && typeof source.notify_email_meetups === 'boolean') {
+        notifyEmailEl.checked = source.notify_email_meetups;
+      }
+      updateEmailToggleState();
+    };
+
+    updateEmailToggleState();
+
+    if (notifyBrowserEl) {
+      notifyBrowserEl.addEventListener('change', async () => {
+        try {
+          if (notifyBrowserEl.checked && ('Notification' in window)) {
+            const granted = await window.ensureNotificationPermission?.();
+            if (!granted) {
+              notifyBrowserEl.checked = false;
+            }
+          }
+        } catch (err) {
+          console.error('notifyBrowser change failed', err);
+          notifyBrowserEl.checked = false;
+        }
+      });
+    }
+
+    try {
+      const me = await api('/api/profile/me', { auth: true });
+      if (me && typeof me.email_verified !== 'undefined') {
+        window.profileMeta = { email_verified: !!me.email_verified };
+        emailVerified = !!me.email_verified;
+        updateEmailToggleState();
+      }
+    } catch (err) {
+      console.error('profile.loadMe failed', err);
+    }
+
+    try {
+      profileData = await api('/api/profile', { auth: true });
+      applyNotificationPrefs(profileData);
+    } catch (err) {
+      console.error('profile.loadProfile failed', err);
+    }
+
     // Initialize top timezone badge and keep it updated when live_tz changes
     try { updateTopTzBadge(); } catch {}
     try {
@@ -614,6 +674,9 @@
     attachLivePlaceAutocomplete();
 
     // Initialize i18n and language tag input
+    let selectedLanguages = new Set(['en']);
+    let renderTags = () => {};
+
     try {
       // Load i18n system
       if (window.SimpleI18n) {
@@ -628,7 +691,6 @@
       
       if (primarySelect && tagInput && input && selectedTags && autocomplete) {
         const languages = window.SimpleI18n?.languages || {};
-        let selectedLanguages = new Set(['en']); // Default to English
         // Expose globally for save handler
         try { window.selectedLanguages = selectedLanguages; } catch {}
         let highlightedIndex = -1;
@@ -656,7 +718,7 @@
         };
         
         // Render selected language tags
-        const renderTags = () => {
+        renderTags = () => {
           selectedTags.innerHTML = Array.from(selectedLanguages).map(langCode => {
             const langName = languages[langCode] || langCode;
             return `<span class="language-tag" data-lang="${langCode}" title="Click to make primary">${langName} <button type="button" class="tag-remove" data-lang="${langCode}" aria-label="Remove">×</button></span>`;
@@ -807,7 +869,9 @@
         
         // Prefill from backend profile (sanitize to available European languages)
         try {
-          const prof = await api('/api/profile', { auth: true });
+          const prof = profileData || await api('/api/profile', { auth: true });
+          if (!profileData) profileData = prof;
+          applyNotificationPrefs(prof);
           const isValid = (code) => !!languages[code];
           // Resolve primary
           const storedPrimary = prof && prof.lang_primary;
@@ -1193,6 +1257,12 @@
         }
         // Build birth_dt. If time is provided, include it; if not, send date-only (00:00) for backend noon fallback
         console.log('profile.update:BODY', body);
+        body.notify_browser_meetups = notifyBrowserEl ? !!notifyBrowserEl.checked : undefined;
+        body.notify_email_meetups = notifyEmailEl ? !!notifyEmailEl.checked : undefined;
+        if (profileData) {
+          profileData = { ...profileData, ...body };
+        }
+
         const data = await api("/api/profile", { method: "PUT", body, auth: true });
         console.info('profile.update', data);
         show("profile.update", data);
@@ -1208,26 +1278,35 @@
             try { window.selectedLanguages = selectedLanguages; } catch {}
             renderTags();
           }
-        } catch {}
+          profileData = { ...profileData, ...data };
+          applyNotificationPrefs(profileData);
+        } catch (syncErr) {
+          console.error('profile.update:sync failed', syncErr);
+          toast('Profile update failed', 'error');
+        }
         try { if (window.setNavbarTzBadge) window.setNavbarTzBadge(); } catch {}
         try {
           const lbl = document.getElementById('birthLocalLabel');
           if (lbl && data && data.birth_dt_utc && (data.birth_tz || body.birth_tz)) {
             const btz2 = data.birth_tz || body.birth_tz;
-            const isoUtc2 = /Z$/i.test(String(data.birth_dt_utc)) ? String(data.birth_dt_utc) : String(data.birth_dt_utc) + 'Z';
+            const isoUtc2 = /Z$/i.test(String(data.birth_dt_utc)) ? String(data.birth_dt_utc) : `${data.birth_dt_utc}Z`;
             const d2 = new Date(isoUtc2);
             const fmt2 = new Intl.DateTimeFormat('en-CA', { timeZone: btz2, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false });
             const parts2 = Object.fromEntries(fmt2.formatToParts(d2).map(p => [p.type, p.value]));
             lbl.textContent = `${parts2.year}-${parts2.month}-${parts2.day} ${parts2.hour}:${parts2.minute} (${btz2})`;
           }
-        } catch {}
-        try { window.setNavbarTzBadge && window.setNavbarTzBadge(); } catch {}
+        } catch (err) {
+          console.error('profile.update:render failed', err);
+          toast('Profile update failed', 'error');
+        }
         // Reflect new display_name in topbar immediately
         const uidEl = $('currentUserId');
         if (uidEl && display_name) uidEl.textContent = display_name;
-        // Reload radix if section exists
-        try { await fetchAndRenderRadix(); } catch {}
-        toast('Profile updated successfully');
+        // Force a quick page reload so all components pick up the freshest profile state
+        try {
+          toast('Profile updated successfully');
+          setTimeout(() => { try { window.location.reload(); } catch {} }, 80);
+        } catch {}
       } catch (e) { 
         console.error('profile.update:ERROR', e);
         try { if (e && e.status) console.error('status', e.status); } catch {}

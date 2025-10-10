@@ -55,6 +55,10 @@ def get_profile(user_id: int = Depends(get_current_user_id), session = Depends(g
         prof = Profile(user_id=user_id)
         session.add(prof)
         session.commit()
+        try:
+            session.refresh(prof)
+        except Exception:
+            pass
     # Compute local birth datetime label if possible
     birth_dt_local: Optional[str] = None
     try:
@@ -79,6 +83,8 @@ def get_profile(user_id: int = Depends(get_current_user_id), session = Depends(g
         lang_secondary=prof.lang_secondary,
         languages=prof.languages,
         house_system=prof.house_system,
+        notify_email_meetups=prof.notify_email_meetups,
+        notify_browser_meetups=prof.notify_browser_meetups,
     )
 
 
@@ -314,6 +320,8 @@ def update_profile(
     if payload.lang_secondary is not None:  prof.lang_secondary = payload.lang_secondary
     if payload.languages is not None:       prof.languages = payload.languages
     if payload.house_system is not None:    prof.house_system = payload.house_system
+    if payload.notify_email_meetups is not None:   prof.notify_email_meetups = payload.notify_email_meetups
+    if payload.notify_browser_meetups is not None: prof.notify_browser_meetups = payload.notify_browser_meetups
 
     session.commit()
 
@@ -346,6 +354,11 @@ def update_profile(
             print("[profile.update] radix recompute FAILED:", e)
             traceback.print_exc()
             # Keep profile update successful even if radix fails; return profile fields
+
+    try:
+        session.refresh(prof)
+    except Exception:
+        pass
 
     # Also compute birth_dt_local for response
     birth_dt_local_resp: Optional[str] = None

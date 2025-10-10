@@ -6,10 +6,16 @@
   // Get global functions from app.js
   const api = window.api;
   const show = window.show;
-  const toast = window.toast;
+  const toast = (...args) => {
+    try {
+      const fn = (typeof window !== 'undefined') ? window.toast : null;
+      if (typeof fn === 'function') return fn(...args);
+    } catch {}
+  };
   const bindClick = window.bindClick;
   const parseJwt = window.parseJwt;
   const setToken = window.setToken;
+  const setRefreshToken = window.setRefreshToken;
   const updateAuthUI = window.updateAuthUI;
 
   // Login/Auth specific event handlers
@@ -41,6 +47,7 @@
 
         const data = await api("/api/auth/register", { method: "POST", body: { email, password, display_name } });
         setToken(data.access_token);
+        if (data.refresh_token) setRefreshToken(data.refresh_token);
         // Notify user and then redirect to profile to complete details (including display name)
         try { toast(SimpleI18n.t('login.registration_success'), "success"); } catch {}
         setTimeout(() => { try { window.location.href = "/profile.html"; } catch {} }, 700);
@@ -109,7 +116,7 @@
         
         if (res.access_token) {
           setToken(res.access_token);
-          try { localStorage.setItem("access_token", res.access_token); } catch {}
+          if (res.refresh_token) setRefreshToken(res.refresh_token);
           updateAuthUI();
           window.location.href = "/dashboard.html";
         }
@@ -143,7 +150,9 @@
     // Logout button handler
     bindClick("btn-logout", () => {
       setToken(null);
+      setRefreshToken(null);
       try { localStorage.removeItem("access_token"); } catch {}
+      try { localStorage.removeItem("refresh_token"); } catch {}
       updateAuthUI();
       window.location.href = "/login.html";
     });
@@ -158,6 +167,7 @@
           const password = $("password").value;
           const data = await api("/api/auth/login", { method: "POST", body: { email, password } });
           setToken(data.access_token);
+          if (data.refresh_token) setRefreshToken(data.refresh_token);
           show("login", data);
           // Clear password and strip query params to avoid auto-login loops
           $("password").value = "";

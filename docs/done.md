@@ -10,3 +10,6 @@
 - Finalized full UI + guest guide translations for Bosnian (`web/i18n/locales/bs/translation.json`), Catalan (`web/i18n/locales/ca/translation.json`), Galician (`web/i18n/locales/gl/translation.json`), dhe Icelandic (`web/i18n/locales/is/translation.json`).
 - Drafted Luxembourgish UI strings and prepared Albanian translation package for review; added manual follow-up instructions.
 - Refreshed translation documentation in `docs/Translation_Status.md`, `docs/Translation_Needs.md`, dhe `docs/UI_Translation.md` to reflect the latest locale progress.
+
+## 2025-10-09
+- Persisted profile notification preferences end-to-end (`routes/profile.py`) and refreshed the frontend save flow (`web/profile.js`) to reload the page post-update so browser/email toggles accurately reflect stored state.

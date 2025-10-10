@@ -390,6 +390,7 @@
     "title": "Welcome",
     "intro": "Login with an existing account or register a new one.",
     "email": "email",
+    "password": "password",
     "confirm_password": "confirm password (for register)",
     "display_name": "display name (for register)",
     "register": "Register",

@@ -138,6 +138,20 @@
       <div class="row small" data-i18n="profile.birth.instructions">Set your birth date and location to compute your radix. If you don't know the exact time, leave the time field empty and we will use a noon fallback.</div>
       <div class="row small" data-i18n="profile.note">Your profile is used to personalize matches and time zone display.</div>
     </fieldset>
+    <fieldset id="notificationsFieldset">
+      <legend data-i18n="profile.notifications.legend">Notifications</legend>
+      <div class="row" style="display:flex; flex-direction:column; gap:12px;">
+        <label class="notification-toggle">
+          <input type="checkbox" id="notifyBrowser" />
+          <span data-i18n="profile.notifications.browser_label">Browser notifications</span>
+        </label>
+        <label class="notification-toggle">
+          <input type="checkbox" id="notifyEmail" />
+          <span data-i18n="profile.notifications.email_label">Email notifications</span>
+        </label>
+        <p class="small" id="notifyEmailDisabled" style="display:none;" data-i18n="profile.notifications.email_disabled">Verify your email to receive meetup updates.</p>
+      </div>
+    </fieldset>
       <div class="row" style="margin-top:12px;">
         <button id="btn-profile-update" class="primary" data-i18n="profile.save">Save</button>
       </div>

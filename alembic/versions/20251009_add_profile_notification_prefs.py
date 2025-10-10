@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
 revision = "20251009_add_profile_notification_prefs"
-down_revision = "20250913_profile_house_system"
+down_revision = "20251007_add_live_location_to_profile"
 branch_labels = None
 depends_on = None
 

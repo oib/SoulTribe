@@ -57,6 +57,7 @@ Last updated: 2025-10-06
 
 ## Longer-Term Ideas
 - Notifications (email/push) when a strong match appears or a meetup is scheduled
+- **DONE (2025-10-09)**: Profile notification preference UI persists browser/email toggle state end-to-end with automatic post-save reload.
 - Group matching or events
 - Admin dashboard for moderation (partially done: admin stats dashboard + dev console under `/admin/*`)
 - Export/import user data and profiles

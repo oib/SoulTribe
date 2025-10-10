@@ -1,6 +1,17 @@
 /* Profile page-specific styles */
 #radixSection { margin-top: 16px; }
 
+.notification-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+#notificationsFieldset .row {
+  align-items: flex-start;
+}
+
 /* Radix pretty table: normalize header/body cell sizing */
 #radixPretty table.list {
   display: table;
