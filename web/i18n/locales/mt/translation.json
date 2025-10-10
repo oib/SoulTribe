@@ -151,7 +151,8 @@
       "title": "Pariri",
       "item1": "Żid xi slots ta’ disponibbiltà fuq jiem differenti għal konnessjoni aktar mgħaġġla.",
       "item2": "Kun sinċier fil‑introduzzjoni tiegħek — id‑dettall jgħin lill‑persuni t-tajbin isibuk.",
-      "item3": "Il‑kunsens l-ewwel u dejjem. Mexxi bir‑ritmu li jħossok komdu."
+      "item3": "Il‑kunsens l-ewwel u dejjem. Mexxi bir‑ritmu li jħossok komdu.",
+      "item2b": "Personalizza l-approċċ tiegħek — irreferi għas-sommarju ta’ saħħa AI meta tibgħat messaġġi jew tissuġġerixxi laqgħat."
     },
     "next": {
       "title": "Il-passi li jmiss",
@@ -174,7 +175,49 @@
       "native_text": "Iċċatta bil‑lingwa preferuta tiegħek bl‑għajnuna tat‑traduzzjoni mibnija ġewwa.",
       "tz_title": "Skedar konxju taż‑żoni horarji",
       "tz_text": "M’għadekx bżonn tikkalkula ż‑żoni horarji — aħna nieħdu ħsieb il‑konverżjonijiet kollha.",
-      "select_label": "Agħżel lingwa:"
+      "select_label": "Agħżel lingwa:",
+      "translated_title": "Interfaċċa tradotta",
+      "translated_text": "Innaviga l-UI fil-lingwa tiegħek u ara sommarji ta’ taqbila AI fil-lokalità preferita tiegħek."
+    },
+    "how_full": {
+      "title": "Kif taħdem SoulTribe",
+      "step1": "Oħloq l-ispazju tiegħek — irreġistra u aqsam l-elementi essenzjali li jiffurmaw l-impronta unika tal-enerġija tiegħek.",
+      "step2": "Issettja l-bażijiet tiegħek — agħżel il-lingwa primarja tiegħek, sekondarji fakultattivi, data tat-twelid, u ikkonferma ż-żona tal-ħin lokali attwali tiegħek.",
+      "step3": "Iftaħ l-iskeda tiegħek — oħloq slots ta’ disponibbiltà biex is-sistema tkun taf meta tkun liberu.",
+      "step4": "Skopri taqbiliet ibbażati fuq ir-reżonanza — l-intelliġenza tad-diagramma tagħna tenfasizza nies li l-enerġija tagħhom taqbel ma’ dik tiegħek.",
+      "step5": "Innota l-inkroċjar — disponibbiltà li tinqasam turi meta sieħeb potenzjali ta’ taqbila jkun liberu fl-istess ħin.",
+      "step6": "Issuġġerixxi jew ikkonferma laqgħa — ibgħat jew aċċetta stedniniet meta l-ħin jidher tajjeb.",
+      "step7": "Ingħaqad mal-chat ta’ Jitsi — iltaqa’ wiċċ imb wiċċ f’kamra ta’ video sigura, privata meta kulħadd lest.",
+      "summary": "Kull pass huwa mmexxi mill-kunsens u ddisinjat biex jirrispetta l-limiti tiegħek."
+    },
+    "different": {
+      "title": "Għaliex SoulTribe differenti",
+      "item1": "Astroloġija-l-ewwel taqbila li tirrispetta n-nuances lil hinn mis-simboli tax-Xemx.",
+      "item2": "Privatezza ċentrata fuq il-bniedem mingħajr reklamar, pixels ta’ tracking jew algoritmi sorpriżanti.",
+      "item3": "Pjanifikazzjoni mmexxija mill-kunsens b’verifika, suġġerimenti ċari, konfermi, u kanċellazzjonijiet sempliċi.",
+      "item4": "Konnessjoni mmexxija permezz ta’ AI insights ta’ taqbila, enfasi ta’ saħħa, u prompts ta’ interpretazzjoni ta’ profil."
+    },
+    "experience": {
+      "title": "X'se tesperjenza",
+      "item1": "Introduzzjonijiet ta’ reżonanza-l-ewwel derivati minn punteġġi sinastriċi u disponibbiltà li tinqasam — mingħajr scrolling infinit.",
+      "item2": "Insights mmexxija minn AI b’sommarji ta’ saħħa ta’ taqbila u interpretazzjonijiet ta’ profil biex jappoġġjaw konversazzjonijiet riflessivi.",
+      "item3": "Ritm mmexxi mill-kunsens fejn tissuġġerixxi, tikkonferma jew tikkanċella laqgħat u tistieden lil oħrajn għal Jitsi meta kulħadd jaqbel.",
+      "summary": "Mexxi fir-ritmu li jaqbel miegħek — waqqaf fi kwalunkwe mument u kompli bil-ħajt meta tkun lest."
+    },
+    "matching_full": {
+      "title": "Kif taħdem it-taqbila",
+      "step1": "Sintesi tad-diagramma — nagħmlu kombinazzjoni tad-dejta tat-twelid ta’ kull membru biex niċċalkulaw aspetti sinastriċi, bilanċ elementali, u inkroċjar ta’ djar.",
+      "step2": "Valutazzjoni ta’ kompatibbiltà — l-indikaturi jsiru punteġġ u vettur ta’ saħħa; meta jaqbeż il-limitu ta’ viżibilità tagħna u d-disponibbiltà tinqasam, it-taqbila tidher fuq id-dashboard tiegħek.",
+      "step3": "Kuntest għall-azzjoni — itlob sommarju miktub minn AI biex jenfasizza temi ewlenin u saħħa qabel il-kuntatt.",
+      "summary": "L-ebda scrolling, biss konteksti astroloġiċi ċari għall-għażla attenta tal-konnessjoni li jmiss tiegħek."
+    },
+    "support": {
+      "title": "Appoġġ & Riżorsi",
+      "item1": "Concierge onboarding b’prompts biex jgħinuk taqsam eżattament kemm hemm bżonn.",
+      "item2": "Kontrolli mmexxija permezz ta’ sommarji ta’ taqbila ġġenerati minn AI u riflessjonijiet ta’ profil li jżommu l-konversazzjonijiet ankrat.",
+      "item3": "Laqgħat 1:1 bl-għażla li tistieden lil oħrajn għall-kamra Jitsi tiegħek meta kulħadd jaqbel.",
+      "item4": "Librerija ta’ riżorsi li tinkludi gwidi ta’ komunikazzjoni, prattiki ta’ sigurtà, u pariri għal laqgħat 1:1 sinifikanti.",
+      "summary": "Aħna hawn qabel, matul, u wara kull konnessjoni li toħloq."
     }
   },
   "login": {

@@ -176,7 +176,8 @@
       "title": "Vinkkejä",
       "item1": "Lisää muutama saatavuusaika eri päiville nopeampia yhteyksiä varten.",
       "item2": "Ole aito esittelyssäsi — yksityiskohdat auttavat oikeita ihmisiä löytämään sinut.",
-      "item3": "Suostumus ensin — aina. Etene sinulle sopivaa vauhtia."
+      "item3": "Suostumus ensin — aina. Etene sinulle sopivaa vauhtia.",
+      "item2b": "Henkilöistä lähestymistapasi — viittaa AI-voimien yhteenvetoon kun lähetät viestejä tai ehdotat tapaamisia."
     },
     "next": {
       "title": "Seuraavat askeleet",
@@ -199,7 +200,49 @@
       "native_text": "Chattaa haluamallasi kielellä sisäänrakennetun käännöksen avulla.",
       "tz_title": "Aikavyöhyketietoinen aikataulutus",
       "tz_text": "Ei enää aikavyöhykelaskentaa — me hoidamme muunnokset puolestasi.",
-      "select_label": "Valitse kieli:"
+      "select_label": "Valitse kieli:",
+      "translated_title": "Käännetty käyttöliittymä",
+      "translated_text": "Selaa käyttöliittymää omalla kielelläsi ja näe AI-ottelu-yhteenvetoja haluamassasi lokalisaatiossa."
+    },
+    "how_full": {
+      "title": "Miten SoulTribe toimii",
+      "step1": "Luo tilasi — rekisteröidy ja jaa olennaiset elementit, jotka muodostavat ainutlaatuisen energiataittosi.",
+      "step2": "Aseta perustuksesi — valitse ensisijainen kielesi, valinnaiset toissijaiset, syntymäpäiväsi ja vahvista nykyinen paikallinen aikavyöhykkeesi.",
+      "step3": "Avaa aikataulusi — luo saatavuusaukkoja, jotta järjestelmä tietää milloin olet vapaa.",
+      "step4": "Tutustu resonanssiin perustuviin otteluihin — kaavio-intelligenttimme korostaa ihmisiä, joiden energia sopii sinun energiaasi.",
+      "step5": "Huomaa päällekkäisyydet — päällekkäinen saatavuus paljastaa milloin potentiaalinen ottelukumppani on vapaa samaan aikaan.",
+      "step6": "Ehdota tai vahvista tapaaminen — lähetä tai hyväksy kutsut, kun ajoitus tuntuu oikealta.",
+      "step7": "Liity Jitsi-keskusteluun — tapaudu kasvotusten turvallisessa, yksityisessä videohuoneessa, kun kaikki ovat valmiita.",
+      "summary": "Jokainen askel on suostumukseen perustuva ja suunniteltu kunnioittamaan rajoja."
+    },
+    "different": {
+      "title": "Miksi SoulTribe on erilainen",
+      "item1": "Astroologia-ensimmäinen ottelu, joka kunnioittaa nyansseja aurinkomerkin lisäksi.",
+      "item2": "Ihminen-keskeinen yksityisyys ilman mainoksia, seuranta-pikseleitä tai yllättäviä algoritmeja.",
+      "item3": "Suostumukseen perustuva suunnittelu vahvistuksella, selkeillä ehdotuksilla, vahvistuksilla ja helppoilla peruutuksilla.",
+      "item4": "Ohjattu yhteys AI-ottelu-insightien, vahvuuksien korostusten ja profiilin tulkintakehotusten kautta."
+    },
+    "experience": {
+      "title": "Mitä kokemasi",
+      "item1": "Resonanssi-ensimmäiset esittelyt, jotka johdetaan synastrisista pisteytyksistä ja päällekkäisestä saatavuudesta — ilman loputonta vieritystä.",
+      "item2": "AI-ohjaamat insightit ottelu-voimien yhteenvetojen kanssa ja profiilin tulkintojen kanssa tukemaan reflektiivisiä keskusteluja.",
+      "item3": "Suostumukseen perustuva rytmi, jossa ehdotat, vahvistat tai peruutat tapaamisia ja kutsut muita Jitsi:iin kun kaikki ovat samaa mieltä.",
+      "summary": "Liiku rytmissä, joka sopii sinulle — pysähdy milloin tahansa ja jatka lankaa kun olet valmis."
+    },
+    "matching_full": {
+      "title": "Miten ottelu toimii",
+      "step1": "Kaavion synteesi — yhdistämme jokaisen jäsenen syntymätiedot laskeakseen synastrisia aspekteja, elementaarista tasapainoa ja talojen päällekkäisyyksiä.",
+      "step2": "Yhteensopivuuden arviointi — indikaattorit muuttuvat pisteeksi ja vahvuus-vektoriksi; kun se ylittää näkyvyyskynnysarvomme ja saatavuus päällekkäin, ottelu ilmestyy kojetauluusi.",
+      "step3": "Konteksti toimintaa varten — pyydä AI-kirjoitettua yhteenvetoa korostaaksesi avainteemoja ja vahvuuksia ennen yhteydenottoa.",
+      "summary": "Ei vieritystä, vain selkeät astrologiset kontekstit seuraavan yhteytesi huolellista valitsemista varten."
+    },
+    "support": {
+      "title": "Tuki & Resurssit",
+      "item1": "Concierge onboarding kehotuksilla, jotka auttavat sinua jakamaan juuri niin paljon kuin tarvitset.",
+      "item2": "Ohjatut check-in:t AI-luomien ottelu-yhteenvetojen ja profiili-pohdintojen kautta, jotka pitävät keskustelut ankkuroituina.",
+      "item3": "1:1 tapaamiset mahdollisuudella kutsua muita Jitsi-huoneeseesi kun kaikki ovat samaa mieltä.",
+      "item4": "Resurssikirjasto, joka sisältää viestintäoppaita, turvallisuuskäytäntöjä ja vinkkejä merkityksellisiin 1:1 tapaamisiin.",
+      "summary": "Olemme täällä ennen, aikana ja jälkeen jokaisen yhteyden, jonka luot."
     }
   },
   "radix": {

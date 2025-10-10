@@ -44,7 +44,8 @@
       "title": "Consells",
       "item1": "Afegeix diverses franges de disponibilitat en dies diferents per accelerar les connexions.",
       "item2": "Sigues genuí/na a la teva presentació — els detalls concrets ajuden a trobar les persones adequades.",
-      "item3": "El consentiment és el primer. Avança al teu ritme."
+      "item3": "El consentiment és el primer. Avança al teu ritme.",
+      "item2b": "Personalitza el teu outreach — referència el resum de forces AI quan enviïs missatges o proposis reunions."
     },
     "next": {
       "title": "Pròxims passos",
@@ -67,7 +68,49 @@
       "native_text": "Xateja en el teu idioma preferit amb la traducció integrada.",
       "tz_title": "Programació conscient del fus horari",
       "tz_text": "Oblida't de fer càlculs — nosaltres els fem per tu.",
-      "select_label": "Tria idioma:"
+      "select_label": "Tria idioma:",
+      "translated_title": "Interfície traduïda",
+      "translated_text": "Navega la UI en el teu idioma i veu resums de coincidència AI a la teva localització preferida."
+    },
+    "how_full": {
+      "title": "Com funciona SoulTribe",
+      "step1": "Crea el teu espai — registra’t i comparteix els elements essencials que formen la teva empremta energètica única.",
+      "step2": "Estableix les teves bases — tria el teu idioma principal i secundaris opcionals, introdueix la data de naixement i confirma la teva zona horària local actual.",
+      "step3": "Obre el teu horari — crea ranures de disponibilitat perquè el sistema sàpiga quan ets lliure.",
+      "step4": "Descobreix coincidències basades en ressonància — la nostra intel·ligència de diagrames destaca persones la energia de les quals coincideix amb la teva.",
+      "step5": "Nota les superposicions — una disponibilitat superposada mostra quan un company potencial de coincidència és lliure al mateix temps.",
+      "step6": "Proposa o confirma una reunió — envia o accepta invitacions quan el moment sigui adequat.",
+      "step7": "Uneix-te al xat Jitsi — reuneix-te cara a cara en un espai de vídeo segur i privat quan tots estiguin preparats.",
+      "summary": "Cada pas és consensuat i dissenyat per respectar els teus límits."
+    },
+    "different": {
+      "title": "Per què SoulTribe és diferent",
+      "item1": "Coincidència astrològica-primer, que respecta matisos més enllà dels signes solars.",
+      "item2": "Privacitat centrada en l’ésser humà sense anuncis, píxels de seguiment o algoritmes sorprenents.",
+      "item3": "Planificació consensuada amb verificació, propostes clares, confirmacions i cancel·lacions fàcils.",
+      "item4": "Connexió guiada mitjançant insights AI de coincidència, destacats de forces i prompts d’interpretació de perfil."
+    },
+    "experience": {
+      "title": "Què experimentaràs",
+      "item1": "Introduccions ressonància-primer derivades de puntuacions sinàstriques i disponibilitat superposada — sense lliscar infinit.",
+      "item2": "Insights guiats per IA amb resums de força de coincidència i interpretacions de perfil per donar suport a converses reflexives.",
+      "item3": "Ritme consensuat on proposes, confirmes o cancel·les reunions i convides altres a Jitsi quan tots hi estan d’acord.",
+      "summary": "Mou-te al ritme que et convingui — atura en qualsevol moment i reprèn el fil quan estiguis preparat."
+    },
+    "matching_full": {
+      "title": "Com funciona la coincidència",
+      "step1": "Síntesi de diagrama — combinem les dades natals de cada membre per calcular aspectes sinàstrics, balanç elemental i superposicions de cases.",
+      "step2": "Avaluació de compatibilitat — els indicadors es converteixen en una puntuació i vector de forces; quan supera el nostre llindar de visibilitat i la disponibilitat es superposa, la coincidència apareix al teu tauler.",
+      "step3": "Context per a l’acció — demana un resum escrit per IA per destacar temes clau i forces abans de contactar.",
+      "summary": "Sense lliscar, només contextos astrològics clars per triar acuradament la teva propera connexió."
+    },
+    "support": {
+      "title": "Suport & Recursos",
+      "item1": "Onboarding concierge amb prompts que t’ajuden a compartir exactament el que cal.",
+      "item2": "Check-ins guiats mitjançant resums de coincidència generats per IA i reflexions de perfil que mantenen les converses arrelades.",
+      "item3": "Reunions 1:1 amb l’opció de convidar altres a la teva sala Jitsi quan tots hi estan d’acord.",
+      "item4": "Biblioteca de recursos amb guies de comunicació, pràctiques de seguretat i consells per a reunions 1:1 significatives.",
+      "summary": "Som aquí abans, durant i després de cada connexió que crees."
     }
   },
   "guestGuide": {

@@ -66,7 +66,9 @@
       "text": "Spreek je taal, verbind je met de wereld. SoulTribe.chat ondersteunt meerdere talen om je zielsstam dichterbij te brengen, waar je ook bent.",
       "title": "Wereldwijde gemeenschap",
       "tz_text": "Automatische tijdzonedetectie en -conversie, zodat je altijd weet wanneer je matches beschikbaar zijn.",
-      "tz_title": "Tijdzonebewust"
+      "tz_title": "Tijdzonebewust",
+      "translated_title": "Vertaalde interface",
+      "translated_text": "Navigeer de UI in je taal en bekijk AI matchsamenvattingen in je gewenste lokalisatie."
     },
     "hero": {
       "subtitle": "SoulTribe.chat is een ruimte gecreëerd om je te helpen je zielsstam te vinden en ermee in contact te komen — mensen die resoneren met jouw energie, je geest en je reis. ✨",
@@ -106,9 +108,50 @@
       "item1": "Voeg een paar beschikbare tijdsloten toe op verschillende dagen voor snellere verbindingen.",
       "item2": "Wees oprecht in je introductie — specifieke details helpen de juiste mensen je te vinden.",
       "item3": "Eerst toestemming, altijd. Ga in het tempo dat goed voelt.",
-      "title": "Pro-tips"
+      "title": "Pro-tips",
+      "item2b": "Personaliseer je outreach — verwijs naar de AI krachtsamenvatting wanneer je berichten stuurt of ontmoetingen voorstelt."
     },
-    "page_title": "SoulTribe.chat – Vind jouw zielsstam"
+    "page_title": "SoulTribe.chat – Vind jouw zielsstam",
+    "how_full": {
+      "title": "Hoe SoulTribe werkt",
+      "step1": "Creëer je ruimte — registreer je en deel de essentiële elementen die je unieke energie-vingerafdruk vormen.",
+      "step2": "Stel je fundamenten in — kies je primaire taal, optionele secundaire, geboortedatum en bevestig je huidige lokale tijdzone.",
+      "step3": "Open je schema — maak beschikbaarheidsslots aan zodat het systeem weet wanneer je vrij bent.",
+      "step4": "Ontdek resonantie-gebaseerde matches — onze diagramintelligentie benadrukt mensen wiens energie overeenkomt met de jouwe.",
+      "step5": "Merk overlappingen op — overlappende beschikbaarheid onthult wanneer een potentiële matchpartner tegelijkertijd vrij is.",
+      "step6": "Stel voor of bevestig een ontmoeting — verzend of accepteer uitnodigingen wanneer de timing goed lijkt.",
+      "step7": "Doe mee aan de Jitsi-chat — ontmoet elkaar face-to-face in een veilige, privé videoruimte wanneer iedereen klaar is.",
+      "summary": "Elke stap wordt geleid door toestemming en ontworpen om je grenzen te respecteren."
+    },
+    "different": {
+      "title": "Waarom SoulTribe anders is",
+      "item1": "Astrologie-eerste matching die nuances respecteert buiten zonne-tekens.",
+      "item2": "Mensgericht privacy zonder advertenties, tracking pixels of verrassende algoritmen.",
+      "item3": "Toestemming-gedreven planning met verificatie, duidelijke voorstellen, bevestigingen en eenvoudige annuleringen.",
+      "item4": "Geleide verbinding via AI match inzichten, krachtaccenten en profielinterpretatie prompts."
+    },
+    "experience": {
+      "title": "Wat je zult ervaren",
+      "item1": "Resonantie-eerste introducties afgeleid van synastrische scores en overlappende beschikbaarheid — zonder eindeloos scrollen.",
+      "item2": "AI-geleide inzichten met matchkrachtsamenvattingen en profielinterpretaties om reflectieve gesprekken te ondersteunen.",
+      "item3": "Toestemming-gedreven ritme waarin je voorstellen doet, bevestigt of annuleert ontmoetingen en anderen uitnodigt voor Jitsi wanneer iedereen instemt.",
+      "summary": "Beweeg in het ritme dat bij je past — stop op elk moment en hervat de draad wanneer je klaar bent."
+    },
+    "matching_full": {
+      "title": "Hoe matching werkt",
+      "step1": "Diagramsynthese — we combineren geboortegegevens van elke lid om synastrische aspecten, elementaire balans en huisoverlappen te berekenen.",
+      "step2": "Compatibiliteitsevaluatie — indicatoren worden een score en krachtvector; wanneer het onze zichtbaarheiddrempel overschrijdt en beschikbaarheid overlapt, verschijnt de match op je dashboard.",
+      "step3": "Context voor actie — vraag een AI-geschreven samenvatting aan om kernonderwerpen en krachten te benadrukken voordat contact.",
+      "summary": "Geen scrollen, alleen duidelijke astrologische contexten voor zorgvuldige keuze van je volgende verbinding."
+    },
+    "support": {
+      "title": "Ondersteuning & Bronnen",
+      "item1": "Concierge onboarding met prompts om je te helpen precies te delen wat nodig is.",
+      "item2": "Geleide check-ins via AI-gegenereerde matchsamenvattingen en profielreflecties die gesprekken verankerd houden.",
+      "item3": "1:1 ontmoetingen met de optie om anderen uit te nodigen in je Jitsi-ruimte wanneer iedereen instemt.",
+      "item4": "Bronnenbibliotheek met communicatiehandleidingen, veiligheidspraktijken en tips voor betekenisvolle 1:1 ontmoetingen.",
+      "summary": "We zijn hier voor, tijdens en na elke verbinding die je creëert."
+    }
   },
   "language": {
     "de": "Duits",

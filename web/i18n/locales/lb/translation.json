@@ -44,7 +44,8 @@
       "title": "Tipps",
       "item1": "Setz e puer Disponibilitéiten iwwer verschidde Deeg fir méi séier Connectiounen.",
       "item2": "Sief éierlech an dengem Intro – konkret Detailer hëllefen déi richteg Leit ze fannen.",
-      "item3": "Zoustëmmung ass d'Basis. Huet däin eegene Tempo."
+      "item3": "Zoustëmmung ass d'Basis. Huet däin eegene Tempo.",
+      "item2b": "Personaliséier deng Outreach — referenzéier d'AI Stäerkt-Résumé wann du Messagen sende oder Meetingen virschléis."
     },
     "next": {
       "title": "Nächst Schrëtt",
@@ -67,7 +68,49 @@
       "native_text": "Chat am Sprooch déi dir léif ass dank integréierter Iwwersetzung.",
       "tz_title": "Zäit-Zon bewosst Scheduling",
       "tz_text": "Kee Rechnen méi – mir maachen et fir dech.",
-      "select_label": "Sprooch auswielen:"
+      "select_label": "Sprooch auswielen:",
+      "translated_title": "Iwwersat Interface",
+      "translated_text": "Navigéier d'UI an denger Sprooch an gesinn AI Match-Résuméen an denger preferéierter Lokalitéit."
+    },
+    "how_full": {
+      "title": "Wéi SoulTribe funktionéiert",
+      "step1": "Erstelle däin Raum — mellech an deele déi wesentlech Elementer, déi däin eenzegaartegen Energie-Fingerprint formen.",
+      "step2": "Setze däin Fundamenter — wiel däin primäre Sprooch, optional Sekundär, Gebuertsdatum an bestätegt däin aktuelle lokalt Zäitzon.",
+      "step3": "Oppe däin Zäitplang — erstelle Verfügbarkeets-Slots, sou datt d'System weess, wann du fräi bass.",
+      "step4": "Entdecke Resonanz-baséiert Matchen — eis Diagramm-Intelligenz markéiert Leit, deren Energie mat denger passt.",
+      "step5": "Bemierk d'Iwwerlappungen — iwwerlappend Verfügbarkeet weist, wann e potentiellen Match-Partner gläichzäiteg fräi ass.",
+      "step6": "Proposéier oder bestätegt e Meeting — sende oder akzeptéier Invitatiounen, wann d'Zäit richteg schéngt.",
+      "step7": "Gitt an d'Jitsi Chat — trëfft Iech vu Gesiicht zu Gesiicht an engem sécheren, privaten Video-Raum, wann all Bereet sinn.",
+      "summary": "Jeden Schrëtt ass Zoustëmmung-gefouert an entworf, fir deng Grenzen ze respektéieren."
+    },
+    "different": {
+      "title": "Firwat SoulTribe anescht ass",
+      "item1": "Astrologie-éischten Match, de Nuancen ausserhalb vun der Sonnezäichen respektéiert.",
+      "item2": "Mensch-zentréiert Privatsphär ouni Reklamen, Tracking-Pixelen oder iwwerraschend Algorithmen.",
+      "item3": "Zoustëmmung-gefouert Planung mat Verifikatioun, klore Virschléi, Bestätegungen an einfache Annulatiounen.",
+      "item4": "Gefouerten Connectioun duerch AI Match-Insighten, Highlighten vun Stäerkten an Prompts fir Profil-Interpretatioun."
+    },
+    "experience": {
+      "title": "Wat du erliews",
+      "item1": "Resonanz-éischten Introduktiounen ofgeleet aus synastrësche Score an iwwerlappend Verfügbarkeet — ouni endlos Scrollen.",
+      "item2": "AI-gefouert Insighten mat Match-Stäerkt-Zesumme a Profil-Interpretatiounen fir reflexiv Konversatiounen ze ënnerstëtzen.",
+      "item3": "Zoustëmmung-gefouerten Rhythmus wou du virschléis, bestätegs oder annuléiers Meetingen an invitéiers anerer an Jitsi wann all averstane sinn.",
+      "summary": "Beweeg dech am Rhythmus, dee fir dech passt — stoppen zu all Moment an fuert d'Thread weider wann du prett bass."
+    },
+    "matching_full": {
+      "title": "Wéi Matching funktionéiert",
+      "step1": "Diagramm-Synthese — mir kombinéieren d'Gebuertsdaten vun all Member fir synastrësch Aspekter, elementar Gläichgewiicht an Haus-Iwwerlappungen ze berechnen.",
+      "step2": "Kompatibilitéit Evaluatioun — d'Indikatoren ginn zu engem Score an Stäerkt-Vektor; wann et iwwer eise Visibilitéit-Schwell geet an Verfügbarkeet se iwwerlapp, erschéngt d'Match op dengem Dashboard.",
+      "step3": "Kontext fir Aktioun — fro AI-geschriwene Résumé fir Schlëssel-Themen an Stäerkten ze highlighten virum Kontakt.",
+      "summary": "Keng Scrollen, just klare astrologesch Kontexter fir deng nächst Connectioun sécher auszewielen."
+    },
+    "support": {
+      "title": "Support & Ressourcen",
+      "item1": "Concierge Onboarding mat Prompts fir dir ze hëllefen exakt sou vill ze deelen, wéi néideg.",
+      "item2": "Gefouert Check-ins duerch AI-generéiert Match-Résuméen an Profil-Reflexiounen déi d'Konversatiounen verankeren.",
+      "item3": "1:1 Meetingen mat der Méiglechkeet anerer an deng Jitsi-Raum ze invitéieren wann all averstane sinn.",
+      "item4": "Ressource-Bibliothéik mat Kommunikatiouns-Guider, Sécherheets-Praktiken an Tipps fir bedeitend 1:1 Meetingen.",
+      "summary": "Mir sinn hei virun, während an no all Connectioun, déi du erstells."
     }
   },
   "guestGuide": {

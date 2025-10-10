@@ -176,7 +176,8 @@
       "title": "Sfaturi",
       "item1": "Adaugă câteva intervale de disponibilitate în zile diferite pentru conexiuni mai rapide.",
       "item2": "Fii autentic(ă) în introducere — detaliile îi ajută pe oamenii potriviți să te găsească.",
-      "item3": "Consimțământul pe primul loc, mereu. Mergi în ritmul care ți se potrivește."
+      "item3": "Consimțământul pe primul loc, mereu. Mergi în ritmul care ți se potrivește.",
+      "item2b": "Personalizează-ți outreach-ul — referă-te la rezumatul de forță AI când trimiți mesaje sau propui întâlniri."
     },
     "next": {
       "title": "Pașii următori",
@@ -199,7 +200,49 @@
       "native_text": "Chatuiește în limba preferată cu traducerea noastră integrată.",
       "tz_title": "Programare conștientă de fusul orar",
       "tz_text": "Fără calcule de fus orar — noi facem toate conversiile pentru tine.",
-      "select_label": "Selectează limba:"
+      "select_label": "Selectează limba:",
+      "translated_title": "Interfață tradusă",
+      "translated_text": "Navighează UI-ul în limba ta și vezi rezumate de potrivire AI în localizarea preferată."
+    },
+    "how_full": {
+      "title": "Cum funcționează SoulTribe",
+      "step1": "Creează-ți spațiul — înregistrează-te și împărtășește elementele esențiale care formează amprenta ta unică de energie.",
+      "step2": "Stabilește-ți fundamentele — alege-ți limba primară, secundare opționale, data nașterii și confirmă-ți fusul orar local actual.",
+      "step3": "Deschide-ți programul — creează sloturi de disponibilitate pentru ca sistemul să știe când ești liber.",
+      "step4": "Descoperă potriviri bazate pe rezonanță — inteligența noastră de diagramă evidențiază persoanele a căror energie se potrivește cu a ta.",
+      "step5": "Observă suprapunerile — disponibilitatea suprapusă dezvăluie când un partener potential de potrivire este liber simultan.",
+      "step6": "Propune sau confirmă o întâlnire — trimite sau acceptă invitații când timpul pare potrivit.",
+      "step7": "Alătură-te chat-ului Jitsi — întâlnește-te față în față într-o cameră video sigură, privată când toți sunt pregătiți.",
+      "summary": "Fiecare pas este ghidat de consimțământ și proiectat să respecte limitele tale."
+    },
+    "different": {
+      "title": "De ce SoulTribe este diferit",
+      "item1": "Potrivire astrologie-întâi care respectă nuanțe dincolo de semnele solare.",
+      "item2": "Confidențialitate centrată pe om fără reclame, pixeli de urmărire sau algoritmi surprinzători.",
+      "item3": "Planificare ghidată de consimțământ cu verificare, propuneri clare, confirmări și anulări simple.",
+      "item4": "Conexiune ghidată prin insights AI de potrivire, evidențieri de forță și prompts de interpretare a profilului."
+    },
+    "experience": {
+      "title": "Ce vei experimenta",
+      "item1": "Introduceri rezonanță-întâi derivate din scoruri sinastice și disponibilitate suprapusă — fără defilare infinită.",
+      "item2": "Insights ghidate de AI cu rezumate de forță de potrivire și interpretări de profil pentru a sprijini conversații reflexive.",
+      "item3": "Ritmul ghidat de consimțământ unde propui, confirmi sau anulezi întâlniri și inviți alții la Jitsi când toți sunt de acord.",
+      "summary": "Mișcă-te în ritmul care ți se potrivește — oprește-te în orice moment și reia firul când ești pregătit."
+    },
+    "matching_full": {
+      "title": "Cum funcționează potrivirea",
+      "step1": "Sinteză diagramă — combinăm datele de naștere ale fiecărui membru pentru a calcula aspecte sinastice, echilibru elementar și suprapuneri de case.",
+      "step2": "Evaluare compatibilitate — indicatorii devin un scor și vector de forță; când depășește pragul nostru de vizibilitate și disponibilitatea se suprapune, potrivirea apare pe tabloul tău.",
+      "step3": "Context pentru acțiune — cere un rezumat scris de AI pentru a evidenția teme cheie și forțe înainte de contact.",
+      "summary": "Fără defilare, doar contexte astrologice clare pentru alegerea atentă a următoarei tale conexiuni."
+    },
+    "support": {
+      "title": "Suport & Resurse",
+      "item1": "Onboarding concierge cu prompts pentru a te ajuta să împărtășești exact ce este necesar.",
+      "item2": "Verificări ghidate prin rezumate de potrivire generate de AI și reflecții de profil care mențin conversațiile ancorate.",
+      "item3": "Întâlniri 1:1 cu opțiunea de a invita alții în camera ta Jitsi când toți sunt de acord.",
+      "item4": "Bibliotecă de resurse inclusiv ghiduri de comunicare, practici de siguranță și sfaturi pentru întâlniri 1:1 semnificative.",
+      "summary": "Suntem aici înainte, în timpul și după fiecare conexiune pe care o creezi."
     }
   },
   "radix": {

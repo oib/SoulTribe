@@ -146,7 +146,8 @@
       "title": "Nipid",
       "item1": "Lisa kiiremaks ühenduseks mõned saadavuse ajavahemikud eri päevadele.",
       "item2": "Ole tutvustuses siiras — konkreetsus aitab õigetele inimestele sind leida.",
-      "item3": "Alati nõusolek esikohal. Liigu endale sobivas tempos."
+      "item3": "Alati nõusolek esikohal. Liigu endale sobivas tempos.",
+      "item2b": "Isikupärasta oma väljundit — viita AI tugevuste kokkuvõttele, kui saadad sõnumeid või pakud kohtumisi."
     },
     "next": {
       "title": "Järgmised sammud",
@@ -169,7 +170,49 @@
       "native_text": "Vestle oma eelistatud keeles sisseehitatud tõlke abil.",
       "tz_title": "Ajavöönditeadlik ajastamine",
       "tz_text": "Ajavööndite arvutamist enam pole — teeme kõik teisendused sinu eest.",
-      "select_label": "Vali keel:"
+      "select_label": "Vali keel:",
+      "translated_title": "Tõlgitud liides",
+      "translated_text": "Navigeeri UI-s oma keeles ja vaata AI sobivuse kokkuvõtteid oma eelistatud lokaliseeringus."
+    },
+    "how_full": {
+      "title": "Kuidas SoulTribe töötab",
+      "step1": "Loo oma ruum — registreeru ja jaga olulisi elemente, mis kujundavad sinu unikaalse energiajalje.",
+      "step2": "Määra oma alused — vali oma peamine keel, valikulised teisesed, sünnikuupäev ja kinnita oma praegune kohalik ajavöönd.",
+      "step3": "Ava oma ajakava — loo saadavuslüngad, et süsteem teaks, millal sa vaba oled.",
+      "step4": "Avastage resonantsipõhised sobivused — meie diagrammi intelligents rõhutab inimesi, kelle energia sobib sinu omaga.",
+      "step5": "Pange tähele kattumisi — kattuv saadavus paljastab, millal potentsiaalne sobivuspartner on samaaegselt vaba.",
+      "step6": "Paku ette või kinnita kohtumine — saada või aktsepteeri kutseid, kui ajastus tundub õige.",
+      "step7": "Liitu Jitsi vestlusega — kohtuge silmast silma turvalises, privaatses videoruumis, kui kõik on valmis.",
+      "summary": "Iga samm on nõusolekujuht ja loodud austama sinu piire."
+    },
+    "different": {
+      "title": "Miks SoulTribe on erinev",
+      "item1": "Astroloogia-esimene sobitus, mis austab nüansse päikesemärkide kaugemale.",
+      "item2": "Inimesekeskne privaatsus ilma reklaamideta, jälgimispiksliteta või üllatavate algoritmideta.",
+      "item3": "Nõusolekujuht planeerimine verifitseerimisega, selged ettepanekud, kinnitused ja lihtsad tühistamised.",
+      "item4": "Juhitud ühendus AI sobivuse ülevaadetega, tugevuste esiletõstetega ja profiili tõlgendamise viipetega."
+    },
+    "experience": {
+      "title": "Mida sa koged",
+      "item1": "Resonantsi-esimesed tutvustused, mis tulenevad sinastrilistest hindamistest ja kattuvast saadavusest — ilma lõputu kerimiseta.",
+      "item2": "AI-juhitud ülevaated sobivuse tugevuse kokkuvõtetega ja profiili tõlgendustega, et toetada refleksiivseid vestlusi.",
+      "item3": "Nõusolekujuht rütm kus sa ettepaned, kinnitad või tühistad kohtumisi ja kutsud teisi Jitsi-sse, kui kõik nõustuvad.",
+      "summary": "Liigu rütmis, mis sulle sobib — peatu igal ajal ja jätka lõimega, kui oled valmis."
+    },
+    "matching_full": {
+      "title": "Kuidas sobitus töötab",
+      "step1": "Diagrammi süntees — me kombineerime iga liikme sünnitusandmed, et arvutada sinastrilised aspektid, elementaarne tasakaal ja majade kattumised.",
+      "step2": "Ühilduvuse hindamine — näitajad muutuvad skooriks ja tugevuste vektoriks; kui see ületab meie nähtavuse läve ja saadavus kattub, ilmub sobitus sinu armatuurlauale.",
+      "step3": "Kontekst tegevuseks — palu AI-kirjutatud kokkuvõtet, et esile tõsta võtmetemaad ja tugevused enne kontakti.",
+      "summary": "Kerimist pole, vaid selged astroloogilised kontekstid järgmise ühenduse hoolika valimise jaoks."
+    },
+    "support": {
+      "title": "Toetus & Ressursid",
+      "item1": "Concierge sisseelamine viipetega, mis aitavad sul jagada täpselt nii palju, kui vaja.",
+      "item2": "Juhitud kontrollid AI-lootud sobivuse kokkuvõtete ja profiili mõtiskluste kaudu, mis hoiavad vestlused ankurdatud.",
+      "item3": "1:1 kohtumised võimalusega kutsuda teisi oma Jitsi ruumi, kui kõik nõustuvad.",
+      "item4": "Ressursite raamatukogu, mis sisaldab suhtlusjuhendeid, turvapraktikaid ja näpunäiteid mõttekate 1:1 kohtumiste jaoks.",
+      "summary": "Oleme siin enne, ajal ja pärast iga ühendust, mille loote."
     }
   },
   "login": {

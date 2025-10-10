@@ -176,7 +176,8 @@
       "title": "Gode råd",
       "item1": "Tilføj nogle tilgængelige tidsrum på flere dage for hurtigere forbindelser.",
       "item2": "Vær ærlig i din intro — konkrete detaljer hjælper de rette med at finde dig.",
-      "item3": "Samtykke først, altid. Gå i det tempo, der føles rigtigt."
+      "item3": "Samtykke først, altid. Gå i det tempo, der føles rigtigt.",
+      "item2b": "Personliggør din outreach — henvis til AI styrke resumé når du sender beskeder eller foreslår møder."
     },
     "next": {
       "title": "Næste skridt",
@@ -199,7 +200,49 @@
       "native_text": "Chat på dit foretrukne sprog med vores indbyggede oversættelse.",
       "tz_title": "Tidszone‑bevidst planlægning",
       "tz_text": "Ingen flere tidszoneberegninger — vi håndterer alle konverteringer for dig.",
-      "select_label": "Vælg sprog:"
+      "select_label": "Vælg sprog:",
+      "translated_title": "Oversat grænseflade",
+      "translated_text": "Naviger UI på dit sprog og se AI match resuméer i din foretrukne lokalisering."
+    },
+    "how_full": {
+      "title": "Hvordan SoulTribe fungerer",
+      "step1": "Opret dit rum — tilmeld dig og del de grundlæggende elementer, der former dit unikke energiske fingeraftryk.",
+      "step2": "Sæt dine grundlag — vælg dit primære sprog, valgfri sekundære, fødselsdato og bekræft din aktuelle lokale tidszone.",
+      "step3": "Åbn din tidsplan — opret tilgængelighedsslots, så systemet ved, hvornår du er ledig.",
+      "step4": "Opdag resonansbaserede matches — vores diagramintelligens fremhæver mennesker, hvis energi matcher din.",
+      "step5": "Bemærk overlapninger — overlappende tilgængelighed afslører, hvornår en potentiel matchpartner er ledig på samme tid.",
+      "step6": "Foreslå eller bekræft et møde — send eller accepter invitationer, når timingen føles rigtig.",
+      "step7": "Deltag i Jitsi-chatten — mød ansigt til ansigt i et sikkert, privat videorum, når alle er klar.",
+      "summary": "Hvert trin er samtykke-ledet og designet til at respektere dine grænser."
+    },
+    "different": {
+      "title": "Hvorfor SoulTribe er anderledes",
+      "item1": "Astrologi-første matching, der respekterer nuancer ud over soltegn.",
+      "item2": "Menneske-centreret privatliv uden reklamer, sporings pixels eller overraskende algoritmer.",
+      "item3": "Samtykke-ledet planlægning med verifikation, klare forslag, bekræftelser og nemme aflysninger.",
+      "item4": "Guidet forbindelse via AI match indsigter, fremhævninger af styrker og prompts til profilfortolkning."
+    },
+    "experience": {
+      "title": "Hvad du vil opleve",
+      "item1": "Resonans-første introduktioner udledt af synastriske scores og overlappende tilgængelighed — ingen endeløs scrolling.",
+      "item2": "AI-guede indsigter med match styrke resuméer og profilfortolkninger til støtte for refleksive samtaler.",
+      "item3": "Samtykke-ledet tempo hvor du foreslår, bekræfter eller aflyser møder og inviterer andre til Jitsi når alle er enige.",
+      "summary": "Bevæg dig i det tempo, der passer dig — pause når som helst og genoptag tråden når du er klar."
+    },
+    "matching_full": {
+      "title": "Hvordan matching fungerer",
+      "step1": "Diagram syntese — vi kombinerer hver medlems fødselsdata for at beregne synastriske aspekter, elementær balance og hus overlapninger.",
+      "step2": "Kompatibilitet vurdering — indikatorer bliver til en score og styrke vektor; når det overstiger vores synlighedstærskel og tilgængelighed overlapper, vises matchen på dit dashboard.",
+      "step3": "Kontekst til handling — anmod om et AI-skrevet resumé for at fremhæve nøgle temaer og styrker før kontakt.",
+      "summary": "Ingen scrolling, kun klare astrologiske kontekster for omhyggeligt at vælge din næste forbindelse."
+    },
+    "support": {
+      "title": "Support & Ressourcer",
+      "item1": "Concierge onboarding med prompts der hjælper dig med at dele præcis hvad der er nødvendigt.",
+      "item2": "Guidede check-ins via AI-genererede match resuméer og profil refleksioner der holder samtaler forankrede.",
+      "item3": "1:1 møder med mulighed for at invitere andre til dit Jitsi rum når alle er enige.",
+      "item4": "Ressource bibliotek med kommunikationsguider, sikkerhedspraksis og tips til meningsfulde 1:1 møder.",
+      "summary": "Vi er her før, under og efter hver forbindelse du skaber."
     }
   },
   "radix": {

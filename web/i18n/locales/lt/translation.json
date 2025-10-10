@@ -151,7 +151,8 @@
       "title": "Patarimai",
       "item1": "Pridėkite kelis pasiekiamumo intervalus skirtingomis dienomis, kad greičiau užmegztumėte ryšius.",
       "item2": "Būkite nuoširdūs pristatyme — konkretumas padeda jus rasti tinkamiems žmonėms.",
-      "item3": "Pirmiausia — sutikimas. Judėkite tokiu tempu, kuris jums tinka."
+      "item3": "Pirmiausia — sutikimas. Judėkite tokiu tempu, kuris jums tinka.",
+      "item2b": "Pritaikykite savo požiūrį — nurodykite AI stiprybių santrauką, kai siunčiate žinutes arba siūlote susitikimus."
     },
     "next": {
       "title": "Kiti žingsniai",
@@ -174,7 +175,49 @@
       "native_text": "Bendraukite pageidaujama kalba su mūsų integruotu vertimu.",
       "tz_title": "Laiko juostoms jautrus planavimas",
       "tz_text": "Nebereikia skaičiuoti laiko juostų — visus konvertavimus atliksime mes.",
-      "select_label": "Pasirinkite kalbą:"
+      "select_label": "Pasirinkite kalbą:",
+      "translated_title": "Išverstas sąsaja",
+      "translated_text": "Naršykite UI savo kalba ir žiūrėkite AI derinimo santraukas savo pageidaujamoje lokalizacijoje."
+    },
+    "how_full": {
+      "title": "Kaip veikia SoulTribe",
+      "step1": "Sukurkite savo erdvę — užsiregistruokite ir pasidalinkite pagrindiniais elementais, kurie formuoja jūsų unikalią energijos pėdsaką.",
+      "step2": "Nustatykite savo pagrindus — pasirinkite savo pirminę kalbą, neprivalomus antrinius, gimimo datą ir patvirtinkite dabartinę vietinę laiko juostą.",
+      "step3": "Atidarykite savo tvarkaraštį — sukurkite prieinamumo laiko tarpus, kad sistema žinotų, kada esate laisvi.",
+      "step4": "Atraskite rezonanso pagrindu suderintus — mūsų diagramos intelektas pabrėžia žmones, kurių energija atitinka jūsų.",
+      "step5": "Pastebėkite persidengimus — persidengiantis prieinamumas atskleidžia, kada potencialus atitikimo partneris yra laisvas tuo pačiu metu.",
+      "step6": "Pasiūlykite arba patvirtinkite susitikimą — siųskite arba priimkite kvietimus, kai laikas atrodo tinkamas.",
+      "step7": "Prisijunkite prie Jitsi pokalbio — susitikite akis į akį saugiai, privačioje vaizdo kambaryje, kai visi pasiruošę.",
+      "summary": "Kiekvienas žingsnis yra sutikimo vadovaujamas ir sukurtas gerbti jūsų ribas."
+    },
+    "different": {
+      "title": "Kodėl SoulTribe skiriasi",
+      "item1": "Astrologija-pirmas derinimas, kuris gerbia niuansus už Saulės ženklų ribų.",
+      "item2": "Žmogaus centruota privatumas be reklamų, sekimo pikselių ar netikėtų algoritmų.",
+      "item3": "Sutikimo vadovaujamas planavimas su patvirtinimu, aiškiais pasiūlymais, patvirtinimais ir paprastais atšaukimais.",
+      "item4": "Vadovaujamas ryšys per AI derinimo įžvalgas, stiprybių paryškinimus ir profilio interpretacijos raginimus."
+    },
+    "experience": {
+      "title": "Ką patirsite",
+      "item1": "Rezonanso-pirmos įžangos išvestos iš sinastrinių balų ir persidengiančio prieinamumo — be begalinio slinkimo.",
+      "item2": "AI vadovaujamos įžvalgos su derinimo stiprybės santraukomis ir profilio interpretacijomis, kad palaikytų refleksinius pokalbius.",
+      "item3": "Sutikimo vadovaujamas ritmas, kuriame siūlote, patvirtinate arba atšaukiate susitikimus ir kviečiate kitus į Jitsi, kai visi sutinka.",
+      "summary": "Judėkite ritmu, kuris jums tinka — sustokite bet kuriuo metu ir tęskite giją, kai būsite pasiruošę."
+    },
+    "matching_full": {
+      "title": "Kaip veikia derinimas",
+      "step1": "Diagramos sintezė — kombinuojame kiekvieno nario gimimo duomenis, kad apskaičiuotume sinastrinius aspektus, elementarią pusiausvyrą ir namų persidengimus.",
+      "step2": "Suderinamumo vertinimas — rodikliai tampa rezultatu ir stiprybių vektoriumi; kai jis viršija mūsų matomumo slenkstį ir prieinamumas persidengia, derinimas pasirodo jūsų prietaisų skydelyje.",
+      "step3": "Kontekstas veiksmui — paprašykite AI parašytos santraukos, kad paryškintumėte pagrindines temas ir stiprybes prieš kontaktą.",
+      "summary": "Nėra slinkimo, tik aiškūs astrologiniai kontekstai jūsų kito ryšio kruopščiam pasirinkimui."
+    },
+    "support": {
+      "title": "Palaikymas & Išteklių",
+      "item1": "Concierge onboarding su raginimais, kurie padeda jums pasidalinti tiksliai tiek, kiek reikia.",
+      "item2": "Vadovaujamos patikros per AI generuotas derinimo santraukas ir profilio refleksijas, kurios laikosi pokalbius įtvirtintus.",
+      "item3": "1:1 susitikimai su galimybe pakviesti kitus į savo Jitsi kambarį, kai visi sutinka.",
+      "item4": "Išteklių biblioteka, apimanti komunikacijos vadovus, saugumo praktikas ir patarimus reikšmingiems 1:1 susitikimams.",
+      "summary": "Mes esame čia prieš, per ir po kiekvieno ryšio, kurį sukuriate."
     }
   },
   "login": {

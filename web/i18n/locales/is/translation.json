@@ -44,7 +44,8 @@
       "title": "Góð ráð",
       "item1": "Bættu við nokkrum framboðstímum á mismunandi dögum til að hraða tengingum.",
       "item2": "Vertu hreinskilin(n) í kynningunni þinni — nákvæmir punktar hjálpa réttum einstaklingum að finna þig.",
-      "item3": "Samþykki kemur fyrst. Hreyfðu þig á þínum hraða."
+      "item3": "Samþykki kemur fyrst. Hreyfðu þig á þínum hraða.",
+      "item2b": "Sérsníddu nálgun þína — vísaðu til AI styrk-samantektar þegar þú sendir skilaboð eða stingur upp á fundum."
     },
     "next": {
       "title": "Næstu skref",
@@ -67,7 +68,49 @@
       "native_text": "Spjallaðu á þínu uppáhalds tungumáli með innbyggðri þýðingu.",
       "tz_title": "Tímabeltavitund í skipulagningu",
       "tz_text": "Engar fleiri reikningar – við sjáum um þá fyrir þig.",
-      "select_label": "Veldu tungumál:"
+      "select_label": "Veldu tungumál:",
+      "translated_title": "Þýtt viðmót",
+      "translated_text": "Flettu um UI á þínu tungumáli og sjáðu AI samsvörunar samantektir í kjörstæðinu þínu."
+    },
+    "how_full": {
+      "title": "Hvernig SoulTribe virkar",
+      "step1": "Búðu til rýmið þitt — skráðu þig og deildu grunnþáttum sem móta einstaka orku-fótspor þitt.",
+      "step2": "Settu upp grunna þína — veldu aðal tungumálið þitt, valkvæð aukatungumál, fæðingardag og staðfestu núverandi staðbundna tímabeltið þitt.",
+      "step3": "Opnaðu áætlun þína — búðu til tíma-slits fyrir tiltæki svo að kerfið viti hvenær þú ert laus.",
+      "step4": "Uppgötvaðu samsvörun byggða á hljóði — gervigreind kortanna okkar leggur áherslu á fólk þar sem orka passar við þína.",
+      "step5": "Taktu eftir yfirliðum — yfirliðandi tiltæki sýnir hvenær mögulegur samsvörunar félagi er laus á sama tíma.",
+      "step6": "Stingdu upp á eða staðfestu fund — sendu eða samþykktu boð þegar tíminn virðist réttur.",
+      "step7": "Gakktu í Jitsi spjallið — hittist andspænis í öruggum, einkamálum myndherbergum þegar allir eru tilbúnir.",
+      "summary": "Sérhver skref er knúið af samþykki og hannað til að virða mörk þín."
+    },
+    "different": {
+      "title": "Af hverju SoulTribe er frábrugðið",
+      "item1": "Stjörnufræði-fyrst samsvörun sem virðir fíngerðir út fyrir sólarmörk.",
+      "item2": "Mannlega miðað næði án auglýsinga, fylgjandi pixla eða óvæntra reiknirita.",
+      "step3": "Skipulagning knúin af samþykki með staðfestingu, skýrum tillögum, staðfestingum og einföldum hættum.",
+      "item4": "Leiðbeind tengsl í gegnum AI samsvörunar innsýn, áherslum styrka og uppástungum fyrir túlkun prófíls."
+    },
+    "experience": {
+      "title": "Hvað þú munt upplifa",
+      "item1": "Hljóð-fyrstu kynningar afleiddu úr sínastrískum stigum og yfirliðandi tiltæki — án endalausrar skrunningar.",
+      "item2": "AI-leidd innsýn með samantektum styrka samsvörunar og túlkunum prófíls til að styðja íhugandi samtöl.",
+      "item3": "Rytmur knúinn af samþykki þar sem þú stingur upp á, staðfestir eða hættir fundum og býður öðrum í Jitsi þegar allir eru sammála.",
+      "summary": "Færðu þig í rytmi sem passar þér — stöðvaðu hvenær sem er og haltu áfram þræði þegar þú ert tilbúinn."
+    },
+    "matching_full": {
+      "title": "Hvernig samsvörun virkar",
+      "step1": "Syntes kort — við sameinum fæðingargögn hvers meðlims til að reikna út sínastrískar þætti, grundvallar jafnvægi og yfirlið húsnæðis.",
+      "step2": "Mat á samhæfni — vísar breytast í stig og styrk-vektor; þegar það fer yfir sýnileika þröskuld okkar og tiltæki yfirliður, birtist samsvörunin á stjórnborði þínu.",
+      "step3": "Samhengi fyrir aðgerð — óskaðu eftir AI-ritaðri samantekt til að leggja áherslu á lykil þemu og styrk fyrir samband.",
+      "summary": "Engin skrun, aðeins skýr stjörnufræðileg samhengi fyrir vandlega val á næstu tengingu þinni."
+    },
+    "support": {
+      "title": "Stuðningur & Tilföng",
+      "item1": "Concierge onboarding með uppástungum til að hjálpa þér að deila nákvæmlega því sem þú þarft.",
+      "item2": "Leiðbeindar athuganir í gegnum AI-myndaðar samantektir samsvörunar og prófíls-íhuganir sem halda samtölum ákveðnum.",
+      "item3": "1:1 fundir með möguleika á að bjóða öðrum í Jitsi herbergi þitt þegar allir eru sammála.",
+      "item4": "Tílfanga safn með leiðbeiningum fyrir samskipti, öryggisæfingar og ráðum fyrir merkjamikla 1:1 fundi.",
+      "summary": "Við erum hér áður, meðan og eftir hverja tengingu sem þú býrð til."
     }
   },
   "guestGuide": {

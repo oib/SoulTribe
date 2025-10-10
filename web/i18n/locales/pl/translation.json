@@ -179,7 +179,8 @@
       "title": "Wskazówki",
       "item1": "Dodaj kilka przedziałów dostępności w różnych dniach, aby szybciej się łączyć.",
       "item2": "Bądź autentyczny/a w opisie — konkretne informacje pomagają właściwym osobom Cię znaleźć.",
-      "item3": "Zgoda przede wszystkim. Działaj w tempie, które jest dla Ciebie odpowiednie."
+      "item3": "Zgoda przede wszystkim. Działaj w tempie, które jest dla Ciebie odpowiednie.",
+      "item2b": "Spersonalizuj swoje outreach — odwołaj się do podsumowania siły AI, gdy wysyłasz wiadomości lub proponujesz spotkania."
     },
     "next": {
       "title": "Następne kroki",
@@ -202,7 +203,49 @@
       "native_text": "Rozmawiaj w preferowanym języku z wbudowanym tłumaczeniem.",
       "tz_title": "Planowanie świadome stref czasowych",
       "tz_text": "Koniec z matematyką stref czasowych — konwersje wykonujemy za Ciebie.",
-      "select_label": "Wybierz język:"
+      "select_label": "Wybierz język:",
+      "translated_title": "Przetłumaczony interfejs",
+      "translated_text": "Nawiguj UI w swoim języku i zobacz podsumowania dopasowań AI w preferowanej lokalizacji."
+    },
+    "how_full": {
+      "title": "Jak działa SoulTribe",
+      "step1": "Stwórz swoją przestrzeń — zarejestruj się i podziel podstawowymi elementami, które kształtują twój unikalny odcisk energii.",
+      "step2": "Ustal swoje fundamenty — wybierz swój język główny, opcjonalne wtórne, datę urodzenia i potwierdź swoją obecną lokalną strefę czasową.",
+      "step3": "Otwórz swój harmonogram — utwórz sloty dostępności, aby system wiedział, kiedy jesteś wolny.",
+      "step4": "Odkryj dopasowania oparte na rezonansie — nasza inteligencja diagramów podkreśla ludzi, których energia pasuje do twojej.",
+      "step5": "Zauważ nakładania — nakładająca się dostępność ujawnia, kiedy potencjalny partner dopasowania jest wolny jednocześnie.",
+      "step6": "Zaproponuj lub potwierdź spotkanie — wyślij lub zaakceptuj zaproszenia, gdy czas wydaje się właściwy.",
+      "step7": "Dołącz do czatu Jitsi — spotkaj się twarzą w twarz w bezpiecznym, prywatnym pokoju wideo, gdy wszyscy są gotowi.",
+      "summary": "Każdy krok jest kierowany przez zgodę i zaprojektowany, aby szanować twoje granice."
+    },
+    "different": {
+      "title": "Dlaczego SoulTribe jest inny",
+      "item1": "Astrologia-pierwsze dopasowanie, które szanuje niuanse poza znakami słonecznymi.",
+      "item2": "Centrowana na człowieku prywatność bez reklam, pikseli śledzenia lub zaskakujących algorytmów.",
+      "item3": "Planowanie kierowane zgodą z weryfikacją, jasnymi propozycjami, potwierdzeniami i prostymi anulowaniami.",
+      "item4": "Kierowane połączenie poprzez AI dopasowania insights, wyróżnienia siły i prompts interpretacji profilu."
+    },
+    "experience": {
+      "title": "Co doświadczysz",
+      "item1": "Rezonans-pierwsze wprowadzenia wyprowadzone z synastycznych wyników i nakładającej się dostępności — bez nieskończonego przewijania.",
+      "item2": "Insights kierowane przez AI z podsumowaniami siły dopasowania i interpretacjami profilu, aby wspierać refleksyjne rozmowy.",
+      "item3": "Rytm kierowany zgodą, w którym proponujesz, potwierdzasz lub anulujesz spotkania i zapraszasz innych do Jitsi, gdy wszyscy się zgadzają.",
+      "summary": "Poruszaj się w rytmie, który do ciebie pasuje — zatrzymaj się w dowolnym momencie i wznow wątek, gdy będziesz gotowy."
+    },
+    "matching_full": {
+      "title": "Jak działa dopasowanie",
+      "step1": "Synteza diagramu — łączymy dane urodzeniowe każdego członka, aby obliczyć synastyczne aspekty, elementarną równowagę i nakładania domów.",
+      "step2": "Ocena kompatybilności — wskaźniki stają się wynikiem i wektorem siły; gdy przekracza nasz próg widoczności i dostępność się nakłada, dopasowanie pojawia się na twoim panelu.",
+      "step3": "Kontekst dla akcji — poproś o podsumowanie napisane przez AI, aby wyróżnić kluczowe tematy i siły przed kontaktem.",
+      "summary": "Bez przewijania, tylko jasne konteksty astrologiczne dla starannego wyboru twojego następnego połączenia."
+    },
+    "support": {
+      "title": "Wsparcie & Zasoby",
+      "item1": "Concierge onboarding z prompts, aby pomóc ci podzielić się dokładnie tym, co jest potrzebne.",
+      "item2": "Kierowane sprawdzenia poprzez AI wygenerowane podsumowania dopasowań i refleksje profilu, które utrzymują rozmowy zakotwiczone.",
+      "item3": "Spotkania 1:1 z opcją zaproszenia innych do twojego pokoju Jitsi, gdy wszyscy się zgadzają.",
+      "item4": "Biblioteka zasobów zawierająca przewodniki komunikacji, praktyki bezpieczeństwa i wskazówki dotyczące znaczących spotkań 1:1.",
+      "summary": "Jesteśmy tutaj przed, podczas i po każdym połączeniu, które tworzysz."
     }
   },
   "radix": {

@@ -17,6 +17,53 @@
       "step5": "Cynigiwch neu gadarnhewch gyfarfod",
       "step6": "Ymunwch â'r sgwrs Jitsi",
       "read_more": "Darllen y canllaw manwl →"
+    },
+    "how_full": {
+      "title": "Sut Mae SoulTribe yn Gweithio",
+      "step1": "Creu eich gofod — cofrestrwch a rhannwch yr hanfodion sy'n siapio eich ôl troed ynni unigryw.",
+      "step2": "Sefydlu eich sylfeini — dewiswch eich iaith gynradd, eilaidd dewisol, dyddiad geni, a chadarnhau eich parth amser lleol presennol.",
+      "step3": "Agor eich amserlen — creu slotiau argaeledd fel bod y system yn gwybod pryd rydych chi'n rhydd.",
+      "step4": "Darganfod paru yn seiliedig ar atgyrch — mae ein deallusrwydd siart yn amlygu pobl y mae eu hegni yn cyfateb i'ch un chi.",
+      "step5": "Sylwch ar y gorgyffyrddiadau — mae argaeledd gorgyffyrddol yn datgelu pryd mae partner paru posibl yn rhydd ar yr un pryd.",
+      "step6": "Cynnig neu gadarnhau cyfarfod — anfonwch neu derbynwch wahoddiadau pan fydd yr amseriad yn teimlo'n iawn.",
+      "step7": "Ymunwch â'r sgwrs Jitsi — cyfarfod wyneb yn wyneb mewn ystafell fideo ddiogel, preifat pan fydd pawb yn barod.",
+      "summary": "Mae pob cam yn arweiniad consensws ac wedi'i ddylunio i barchu eich ffiniau."
+    },
+    "different": {
+      "title": "Pam Mae SoulTribe yn Wahanol",
+      "item1": "Paru astrolegol-cyntaf sy'n parchu mân arwyddion y tu hwnt i arwyddion yr haul.",
+      "item2": "Preifatrwydd canolbwyntio ar bobl heb hysbysebion, picselau olrhain neu algorithmiau annisgwyl.",
+      "item3": "Cynllunio consensws gyda dilysiad, cynigion clir, cadarnhau a chanslo hawdd.",
+      "item4": "Cysylltiad arweiniad drwy fewnwelediadau AI paru, amlygiadau cryfderau a promptiau dehongli proffil."
+    },
+    "experience": {
+      "title": "Beth Fyddwch Chi'n Ei Brofi",
+      "item1": "Cyflwyniadau atgyrch-cyntaf yn deillio o sgoriau synastrog a argaeledd gorgyffyrddol — dim llithro di-ben-draw.",
+      "item2": "Mewnwelediadau arweiniad AI gyda crynodebau cryfder paru a dehongliadau proffil i gefnogi sgyrsiau adfyfyriol.",
+      "item3": "Rhythm consensws lle rydych chi'n cynnig, cadarnhau neu ganslo cyfarfodydd ac yn gwahodd eraill i Jitsi pan fydd pawb yn cytuno.",
+      "summary": "Symudwch yn y rhythm sy'n gweddu i chi — saibwch ar unrhyw adeg ac ailymuno â'r edau pan fyddwch chi'n barod."
+    },
+    "matching_full": {
+      "title": "Sut Mae Paru yn Gweithio",
+      "step1": "Synthesis siart — rydym yn cyfuno data geni pob aelod i gyfrifo agweddau synastrog, cydbwysedd elfenol a gorgyffyrddiadau tai.",
+      "step2": "Asesiad cydweddoldeb — mae dangosyddion yn dod yn sgôr a fector cryfderau; pan fydd yn croesi ein trothwy gwelededd ac argaeledd yn gorgyffwrdd, mae'r paru yn ymddangos ar eich dangosfwrdd.",
+      "step3": "Cyd-destun ar gyfer gweithredu — gofynnwch am grynodeb ysgrifenedig AI i amlygu themâu allweddol a chryfderau cyn cysylltu.",
+      "summary": "Dim llithro, dim ond cyd-destunau astrolegol clir i ddewis eich cysylltiad nesaf yn ofalus."
+    },
+    "support": {
+      "title": "Cefnogaeth & Adnoddau",
+      "item1": "Onboarding concierge gyda promptiau sy'n eich helpu i rannu union faint sydd ei angen.",
+      "item2": "Check-ins arweiniad drwy grynodebau paru a gynhyrchir gan AI a myfyriadau proffil sy'n cadw sgyrsiau wedi'u hangori.",
+      "item3": "Cyfarfodydd 1:1 gyda'r opsiwn i wahodd eraill i'ch ystafell Jitsi pan fydd pawb yn cytuno.",
+      "item4": "Llyfrgell adnoddau yn cynnwys canllawiau cyfathrebu, arferion diogelwch a chynghorion ar gyfer cyfarfodydd 1:1 ystyrlon.",
+      "summary": "Rydym yma cyn, yn ystod ac ar ôl pob cysylltiad rydych chi'n ei greu."
+    },
+    "protips": {
+      "item2b": "Personoli eich outreach — cyfeiriwch at grynodeb cryfderau AI pan fyddwch chi'n anfon negeseuon neu'n cynnig cyfarfodydd."
+    },
+    "global": {
+      "translated_title": "Rhyngwyneb Weddïedig",
+      "translated_text": "Llywio'r UI yn eich iaith a gweld crynodebau paru AI yn eich lleoliad dewisol."
     }
   },
   "nextStepsGuide": {

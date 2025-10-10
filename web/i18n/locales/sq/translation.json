@@ -44,7 +44,8 @@
       "title": "Këshilla",
       "item1": "Shto disa orare të disponueshme në ditë të ndryshme për lidhje më të shpejta.",
       "item2": "Ji i sinqertë në hyrjen tënde — detajet konkrete ndihmojnë njerëzit e duhur të të gjejnë.",
-      "item3": "Pëlqimi i ndërsjellë vjen i pari. Ec me ritmin tënd."
+      "item3": "Pëlqimi i ndërsjellë vjen i pari. Ec me ritmin tënd.",
+      "item2b": "Personalizoni shtrirjen tuaj — referohuni përmbledhjes forcë AI kur dërgoni mesazhe ose propozoni takime."
     },
     "next": {
       "title": "Hapat e radhës",
@@ -67,7 +68,49 @@
       "native_text": "Bisedo në gjuhën që të përshtatet më shumë falë përkthimit të integruar.",
       "tz_title": "Planifikim i vetëdijshëm për zonën kohore",
       "tz_text": "S’ka më llogaritje — ne i bëjmë për ty.",
-      "select_label": "Zgjidh gjuhën:"
+      "select_label": "Zgjidh gjuhën:",
+      "translated_title": "Ndërfaqe e përkthyer",
+      "translated_text": "Lundroni UI-në në gjuhën tuaj dhe shihni përmbledhje përputhjesh AI në lokalizimin tuaj të preferuar."
+    },
+    "how_full": {
+      "title": "Si funksionon SoulTribe",
+      "step1": "Krijoni hapësirën tuaj — regjistrohuni dhe ndani elementet thelbësore që formojnë shenjën tuaj unike të energjisë.",
+      "step2": "Vendosni bazat tuaja — zgjidhni gjuhën tuaj primare, opsionale sekondare, datën e lindjes dhe konfirmoni zonën tuaj aktuale kohore lokale.",
+      "step3": "Hapni orarin tuaj — krijoni slotet e disponueshmërisë që sistemi të dijë kur jeni i lirë.",
+      "step4": "Zbuloni përputhjet bazuar në rezonancë — inteligjenca jonë e diagramit thekson njerëzit energjia e të cilëve përputhet me tuajën.",
+      "step5": "Vini re mbivendosjet — disponueshmëria mbivendosur zbulon kur një partner potencial përputhjeje është i lirë njëkohësisht.",
+      "step6": "Propononi ose konfirmoni një takim — dërgoni ose pranoni ftesa kur koha duket e përshtatshme.",
+      "step7": "Bashkohuni me chat-in Jitsi — takohuni ballë për ballë në një dhomë video të sigurt, private kur të gjithë janë gati.",
+      "summary": "Çdo hap drejtohet nga pëlqimi dhe dizajnohet për të respektuar kufijtë tuaj."
+    },
+    "different": {
+      "title": "Pse SoulTribe është ndryshe",
+      "item1": "Përputhje astrologji-së pari që respekton nuancat përtej shenjave të diellit.",
+      "item2": "Privatësia qendrore njerëzore pa reklama, pikselë gjurmimi ose algoritme të befasishme.",
+      "item3": "Planifikim i drejtuar nga pëlqimi me verifikim, propozime të qarta, konfirmime dhe anulime të thjeshta.",
+      "item4": "Lidhje e drejtuar përmes insights përputhjesh AI, theksime forcë dhe prompts interpretimi profili."
+    },
+    "experience": {
+      "title": "Çfarë do të përjetoni",
+      "item1": "Hyrje rezonancë-së pari të nxjerra nga pikët sinastrike dhe disponueshmëria mbivendosur — pa rrëshqitje të pafundme.",
+      "item2": "Insights të drejtuara nga AI me përmbledhje forcë përputhjesh dhe interpretime profili për të mbështetur biseda refleksive.",
+      "item3": "Ritëm i drejtuar nga pëlqimi ku propozoni, konfirmoni ose anuloni takime dhe ftoni të tjerët në Jitsi kur të gjithë bien dakord.",
+      "summary": "Lëvizni në ritmin që ju përshtatet — ndaloni në çdo moment dhe rifilloni fijen kur të jeni gati."
+    },
+    "matching_full": {
+      "title": "Si funksionojnë përputhjet",
+      "step1": "Sintetizë diagrame — kombinojmë të dhënat e lindjes së çdo anëtari për të llogaritur aspektet sinastrike, ekuilibrin elementar dhe mbivendosjet e shtëpive.",
+      "step2": "Vlerësimi i përputhshmërisë — treguesit bëhen rezultat dhe vektor force; kur tejkalon pragun tonë të dukshmërisë dhe disponueshmëria mbivendoset, përputhja shfaqet në panelin tuaj.",
+      "step3": "Kontekst për veprim — kërkoni një përmbledhje të shkruar nga AI për të theksuar temat kyçe dhe forcat para kontaktit.",
+      "summary": "Pa rrëshqitje, vetëm kontekste astrolo gjike të qarta për zgjedhjen e kujdesshme të lidhjes tuaj të radhës."
+    },
+    "support": {
+      "title": "Mbështetje & Burime",
+      "item1": "Onboarding concierge me prompts për t'ju ndihmuar të ndani saktësisht atë që është e nevojshme.",
+      "item2": "Kontrollime të drejtuara përmes përmbledhjeve përputhjesh të gjeneruara nga AI dhe refleksione profili që mbajnë bisedat e ankoruara.",
+      "item3": "Takime 1:1 me mundësinë për të ftuar të tjerët në dhomën tuaj Jitsi kur të gjithë bien dakord.",
+      "item4": "Bibliotekë burimesh duke përfshirë udhëzues komunikimi, praktika sigurie dhe këshilla për takime 1:1 kuptimplotë.",
+      "summary": "Jemi këtu përpara, gjatë dhe pas çdo lidhjeje që krijoni."
     }
   },
   "guestGuide": {

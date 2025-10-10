@@ -44,7 +44,8 @@
       "title": "Aholkuak",
       "item1": "Gehitu eskuragarritasun-tarte batzuk egun ezberdinetan konexio azkarragoetarako.",
       "item2": "Izan zintzo sarreran — xehetasun zehatzek laguntzen dute jende egokia zu aurkitzen.",
-      "item3": "Adostasuna lehenik. Egin aurrera zure erritmoan."
+      "item3": "Adostasuna lehenik. Egin aurrera zure erritmoan.",
+      "item2b": "Pertsonalizatu zure irteera — erreferentzia AI indar laburpenari mezuak bidaltzen dituzunean edo bilerak proposatzen dituzunean."
     },
     "next": {
       "title": "Hurrengo urratsak",
@@ -67,7 +68,49 @@
       "native_text": "Txateatu gogoko duzun hizkuntzan txertatutako itzulpenarekin.",
       "tz_title": "Ordu-zonaz kontzientea den planifikazioa",
       "tz_text": "Ez dago kalkulu gehiagorik — guk egiten ditugu zure ordez.",
-      "select_label": "Hautatu hizkuntza:"
+      "select_label": "Hautatu hizkuntza:",
+      "translated_title": "Itzulitako interfaze",
+      "translated_text": "Nabigatu UI zure hizkuntzan eta ikusi AI bat-etortze laburpenak zure hobetsitako lokalizazioan."
+    },
+    "how_full": {
+      "title": "Nola funtzionatzen du SoulTribe-k",
+      "step1": "Sortu zure espazioa — eman izena eta partekatu zure energia-orma unibertsalaren forma ematen duten oinarrizko elementuak.",
+      "step2": "Ezarri zure oinarriak — aukeratu zure hizkuntza nagusia, aukerako bigarrenak, jaiotze-data eta baieztatu zure uneko tokiko ordu-zona.",
+      "step3": "Ireki zure egutegia — sortu erabilgarritasun-hutsuneak sistemak jakin dezan noiz zauden libre.",
+      "step4": "Aurkitu erresonantzia-oinarritutako bat-etortzeak — gure diagrama-adimendunak zurearekin bat datorren energia duten pertsonak nabarmendu ditu.",
+      "step5": "Ohartu gainjartzeak — gainjartutako erabilgarritasunak agerian uzten du noiz bat-etortze- bikote potentzial bat denboran libre.",
+      "step6": "Proposatu edo baieztatu bilera bat — bidali edo onartu gonbidapenak une egokia dirudienean.",
+      "step7": "Sartu Jitsi txatera — aurrean aurre elkartu bideo-gela seguru eta pribatu batean denak prest daudenean.",
+      "summary": "Urrats bakoitza baimen- gidatua da eta zure mugak errespetatzeko diseinatua."
+    },
+    "different": {
+      "title": "Zergatik da SoulTribe desberdina",
+      "item1": "Astrolo gia-lehen bat-etortzea, eguzki-ikurrak baino haratago doanak.",
+      "item2": "Giza-zentratutako pribatutasuna iragarkirik gabe, jarraipen-pikselak edo algoritmo harrigarrik gabe.",
+      "item3": "Baimen-gidatutako antolaketa egiaztapenarekin, proposamen argiekin, baieztapenak eta erraz bertan behera uzteak.",
+      "item4": "Gidatutako konexioa AI bat-etortze ikuspegiak, indarren nabarmentzeak eta profilaren interpretazio gonbidapenak bidez."
+    },
+    "experience": {
+      "title": "Zer biziko duzu",
+      "item1": "Erresonantzia-lehen sarrerak sinastriko puntuazioetatik eta gainjartutako erabilgarritasunetatik eratorriak — korritze amaigabe gabe.",
+      "item2": "AI-gidatutako ikuspegiak bat-etortze indarren laburpenekin eta profil interpretazioekin elkarrizketa hauskorren laguntzeko.",
+      "item3": "Baimen-gidatutako erritmoa non proposatzen, baieztatzen edo bertan behera uzten dituzun bilerak eta beste batzuk Jitsi-ra gonbidatzen dituzun denak ados daudenean.",
+      "summary": "Mugitu zuretzat egokitzen den erritmoan — gelditu edozein unetan eta jarraitu hariak prest zaudenean."
+    },
+    "matching_full": {
+      "title": "Nola funtzionatzen du bat-etortzeak",
+      "step1": "Diagrama sintesia — kide bakoitzaren jaiotze-datuak konbinatzen ditugu sinastrik aspektuak, elementu oreka eta etxe gainjartzeak kalkulatzeko.",
+      "step2": "Bateragarritasun ebaluazioa — adierazleak puntuazio eta indar bektore bihurtzen dira; gure ikusgaitasun atalasea gainditzen duenean eta erabilgarritasuna gainjartzen denean, bat-etortzea zure aginte-panelean agertzen da.",
+      "step3": "Ekintzarako testuingurua — eskatu AI-idatzitako laburpena gai garrantzitsuak eta indarrak nabarmentzeko kontaktua baino lehen.",
+      "summary": "Korritzerik gabe, zure hurrengo konexioa arretaz aukeratzeko astrolo gia testuinguru argiak soilik."
+    },
+    "support": {
+      "title": "Laguntza & Baliabideak",
+      "item1": "Concierge onboarding gonbidapenekin zure behar dena partekatzen laguntzeko.",
+      "item2": "Gidatutako check-inak AI-sortutako bat-etortze laburpenen eta profil hausnarketen bidez elkarrizketak ainguratzeko.",
+      "item3": "1:1 bilerak beste batzuk zure Jitsi gelara gonbidatzeko aukerarekin denak ados daudenean.",
+      "item4": "Baliabide liburutegia komunikazio gidak, segurtasun praktikak eta 1:1 bilera esanguratsuak aholkuak barne.",
+      "summary": "Hemen gaude sortzen duzun konexio bakoitzaren aurretik, bitartean eta ondoren."
     }
   },
   "guestGuide": {

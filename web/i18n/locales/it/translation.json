@@ -66,7 +66,9 @@
       "text": "Parla la tua lingua, connettiti con il mondo. SoulTribe.chat supporta più lingue per avvicinare la tua tribù dell'anima, ovunque tu sia.",
       "title": "Comunità globale",
       "tz_text": "Rilevamento e conversione automatica dei fusi orari, così saprai sempre quando le tue corrispondenze sono disponibili.",
-      "tz_title": "Rilevamento fuso orario"
+      "tz_title": "Rilevamento fuso orario",
+      "translated_title": "Interfaccia tradotta",
+      "translated_text": "Naviga l’UI nella tua lingua e vedi riassunti corrispondenza AI nella tua localizzazione preferita."
     },
     "hero": {
       "subtitle": "SoulTribe.chat è uno spazio creato per aiutarti a trovare e connetterti con la tua tribù dell'anima — persone che risuonano con la tua energia, il tuo spirito e il tuo percorso. ✨",
@@ -106,9 +108,50 @@
       "item1": "Aggiungi alcune fasce orarie in diversi giorni per connessioni più veloci.",
       "item2": "Sii autentico/a nella tua presentazione — i dettagli specifici aiutano le persone giuste a trovarti.",
       "item3": "Prima il consenso, sempre. Procedi al ritmo che ti fa sentire a tuo agio.",
-      "title": "Consigli da esperti"
+      "title": "Consigli da esperti",
+      "item2b": "Personalizza il tuo outreach — fai riferimento al riassunto forze AI quando invii messaggi o proponi incontri."
     },
-    "page_title": "SoulTribe.chat – Trova la tua tribù dell'anima"
+    "page_title": "SoulTribe.chat – Trova la tua tribù dell'anima",
+    "how_full": {
+      "title": "Come funziona SoulTribe",
+      "step1": "Crea il tuo spazio — registrati e condividi gli essenziali che formano la tua unica impronta energetica.",
+      "step2": "Stabilisci le tue basi — scegli la tua lingua primaria e secondarie opzionali, inserisci la data di nascita e conferma il tuo fuso orario locale attuale.",
+      "step3": "Apri il tuo programma — crea slot di disponibilità così il sistema sa quando sei libero.",
+      "step4": "Scopri corrispondenze basate su risonanza — la nostra intelligenza diagramma evidenzia persone la cui energia corrisponde alla tua.",
+      "step5": "Nota le sovrapposizioni — una disponibilità sovrapposta indica quando un potenziale partner di corrispondenza è libero allo stesso tempo.",
+      "step6": "Propóni o conferma un incontro — invia o accetta inviti quando il momento è giusto.",
+      "step7": "Unisciti alla chat Jitsi — incontrati faccia a faccia in uno spazio video sicuro e privato quando tutti sono pronti.",
+      "summary": "Ogni passo è consensuale e progettato per rispettare i tuoi limiti."
+    },
+    "different": {
+      "title": "Perché SoulTribe è diverso",
+      "item1": "Corrispondenza astrologia-primo, rispettando sfumature oltre i segni solari.",
+      "item2": "Privacy centrata sull’uomo senza pubblicità, pixel di tracciamento o algoritmi sorprendenti.",
+      "item3": "Programmazione consensuale con verifica, proposte chiare, conferme e cancellazioni facili.",
+      "item4": "Connessione guidata tramite insights AI di corrispondenza, evidenziazioni di forze e prompt di interpretazione profilo."
+    },
+    "experience": {
+      "title": "Cosa sperimenterai",
+      "item1": "Introduzioni risonanza-primo emerse da punteggi sinastici e disponibilità sovrapposta — senza scorrere infinito.",
+      "item2": "Insights guidati da IA con riassunti di forza corrispondenza e interpretazioni profilo per supportare conversazioni riflessive.",
+      "item3": "Ritmo consensuale dove proponi, confermi o annulli incontri e inviti altri in Jitsi quando tutti acconsentono.",
+      "summary": "Muovi al ritmo che ti conviene — pausa in qualsiasi momento e riprendi il filo quando sei pronto."
+    },
+    "matching_full": {
+      "title": "Come funziona la corrispondenza",
+      "step1": "Sintesi diagramma — combiniamo i dati natali di ogni membro per calcolare aspetti sinastici, equilibrio elementale e sovrapposizioni di case.",
+      "step2": "Valutazione compatibilità — gli indicatori diventano un punteggio e vettore forze; quando supera la nostra soglia visibilità e disponibilità si sovrappone, la corrispondenza appare nel tuo cruscotto.",
+      "step3": "Contesto per azione — richiedi un riassunto scritto da IA per evidenziare temi chiave e forze prima di contattare.",
+      "summary": "Nessuno scorrimento, solo contesti astrologici chiari per scegliere con cura la tua prossima connessione."
+    },
+    "support": {
+      "title": "Supporto & Risorse",
+      "item1": "Onboarding concierge con prompt per aiutarti a condividere solo ciò che è giusto.",
+      "item2": "Check-in guidati tramite riassunti corrispondenza generati da IA e riflessioni profilo che mantengono le conversazioni ancorate.",
+      "item3": "Incontri 1:1 con la possibilità di invitare altri nella tua stanza Jitsi quando tutti acconsentono.",
+      "item4": "Biblioteca risorse con guide comunicazione, pratiche sicurezza e consigli per incontri 1:1 significativi.",
+      "summary": "Siamo qui prima, durante e dopo ogni connessione che crei."
+    }
   },
   "language": {
     "de": "Tedesco",

@@ -66,7 +66,9 @@
       "text": "Kendi dilinizi konuşun, dünyaya bağlanın. SoulTribe.chat, nerede olursanız olun ruh kabilelerinizi bir araya getirmek için çoklu dil desteği sunar.",
       "title": "Küresel Topluluk",
       "tz_text": "Eşleşmelerinizin ne zaman müsait olduğunu her zaman bilmeniz için otomatik saat dilimi algılama ve dönüştürme.",
-      "tz_title": "Saat Dilimi Duyarlı"
+      "tz_title": "Saat Dilimi Duyarlı",
+      "translated_title": "Çevrilmiş Arayüz",
+      "translated_text": "UI'yi dilinizde gezin ve tercih ettiğiniz yerelleştirmede AI eşleşme özetlerini görün."
     },
     "hero": {
       "subtitle": "SoulTribe.chat, enerjiniz, ruhunuz ve yolculuğunuzla uyumlu insanlarla bağlantı kurmanızı sağlayan bir platformdur. ✨",
@@ -106,9 +108,50 @@
       "item1": "Daha hızlı bağlantılar için farklı günlerde birkaç müsaitlik zamanı ekleyin.",
       "item2": "Profilinizde samimi olun — belirli detaylar doğru insanların sizi bulmasına yardımcı olur.",
       "item3": "Önce rıza, her zaman. Kendi hızınızda ilerleyin.",
-      "title": "Uzman İpuçları"
+      "title": "Uzman İpuçları",
+      "item2b": "Ulaşımınızı kişiselleştirin — mesaj gönderdiğinizde veya toplantı önerdiğinizde AI güç özetine başvurun."
     },
-    "page_title": "SoulTribe.chat – Ruh kabileini bul"
+    "page_title": "SoulTribe.chat – Ruh kabileini bul",
+    "how_full": {
+      "title": "SoulTribe Nasıl Çalışır",
+      "step1": "Alanınızı oluşturun — kaydolun ve benzersiz enerji parmak izinizi oluşturan temel unsurları paylaşın.",
+      "step2": "Temellerinizi ayarlayın — birincil dilinizi, isteğe bağlı ikincil dilleri, doğum tarihinizi seçin ve mevcut yerel saat diliminizi onaylayın.",
+      "step3": "Takviminizi açın — sistemin ne zaman boş olduğunuzu bilmesi için kullanılabilirlik yuvaları oluşturun.",
+      "step4": "Rezonansa dayalı eşleşmeleri keşfedin — diagram zekamız enerjisi sizinkiyle eşleşen insanları vurgular.",
+      "step5": "Çakışmaları fark edin — çakışan kullanılabilirlik, potansiyel bir eşleşme ortağının aynı anda boş olduğunu ortaya çıkarır.",
+      "step6": "Bir toplantı önerin veya onaylayın — zaman uygun göründüğünde davetiyeler gönderin veya kabul edin.",
+      "step7": "Jitsi sohbetine katılın — herkes hazır olduğunda güvenli, özel bir video odasında yüz yüze buluşun.",
+      "summary": "Her adım rıza ile yönlendirilir ve sınırlarınıza saygı göstermek için tasarlanır."
+    },
+    "different": {
+      "title": "SoulTribe Neden Farklı",
+      "item1": "Güneş işaretlerinin ötesindeki nüansları saygıyla karşılayan astroloji-önce eşleşme.",
+      "item2": "Reklamlar, izleme pikselleri veya şaşırtıcı algoritmalar olmadan insan merkezli gizlilik.",
+      "item3": "Doğrulama, net öneriler, onaylar ve basit iptallerle rıza yönlendirmeli planlama.",
+      "item4": "AI eşleşme içgörüleri, güç vurguları ve profil yorumu istemleri aracılığıyla yönlendirmeli bağlantı."
+    },
+    "experience": {
+      "title": "Ne Yaşayacaksınız",
+      "item1": "Sinastrik puanlardan ve çakışan kullanılabilirlikten çıkarılan rezonans-önce tanıtımlar — sonsuz kaydırma olmadan.",
+      "item2": "Yansıtıcı konuşmaları desteklemek için eşleşme gücü özetleri ve profil yorumları ile AI yönlendirmeli içgörüler.",
+      "item3": "Rıza yönlendirmeli ritim nerede öneri yaptığınız, onayladığınız veya iptal ettiğiniz toplantılar ve herkes kabul ettiğinde başkalarını Jitsi'ye davet ettiğiniz.",
+      "summary": "Size uyan ritimde hareket edin — istediğiniz zaman durun ve hazır olduğunuzda ipliği yeniden başlatın."
+    },
+    "matching_full": {
+      "title": "Eşleşme Nasıl Çalışır",
+      "step1": "Diyagram sentezi — sinastrik yönleri, temel dengeyi ve ev çakışmalarını hesaplamak için her üyenin doğum verilerini birleştiririz.",
+      "step2": "Uyumluluk değerlendirmesi — göstergeler puan ve güç vektörü haline gelir; görünürlük eşiğimizi aştığında ve kullanılabilirlik çakıştığında, eşleşme kontrol panelinizde görünür.",
+      "step3": "Eylem için bağlam — iletişimden önce temel temaları ve güçleri vurgulamak için AI tarafından yazılmış bir özet isteyin.",
+      "summary": "Kaydırma yok, sadece bir sonraki bağlantınızı dikkatle seçmek için net astrolojik bağlamlar."
+    },
+    "support": {
+      "title": "Destek & Kaynaklar",
+      "item1": "Gerekli olanı tam olarak paylaşmanıza yardımcı olmak için istemlerle concierge onboarding.",
+      "item2": "AI tarafından oluşturulan eşleşme özetleri ve profil yansımaları aracılığıyla yönlendirmeli kontroller konuşmaları sabit tutar.",
+      "item3": "Herkes kabul ettiğinde başkalarını Jitsi odanıza davet etme seçeneğiyle 1:1 toplantılar.",
+      "item4": "İletişim kılavuzları, güvenlik uygulamaları ve anlamlı 1:1 toplantılar için ipuçları dahil kaynak kütüphanesi.",
+      "summary": "Oluşturduğunuz her bağlantının önünde, sırasında ve sonrasında buradayız."
+    }
   },
   "language": {
     "de": "Almanca",

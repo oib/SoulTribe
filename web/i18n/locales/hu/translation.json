@@ -176,7 +176,8 @@
       "title": "Tippek",
       "item1": "Adj meg néhány elérhetőségi idősávot több napra is a gyorsabb kapcsolódásért.",
       "item2": "Légy őszinte a bemutatkozásban — a konkrétumok segítenek, hogy a megfelelő emberek megtaláljanak.",
-      "item3": "Mindig a beleegyezés az első. Haladj a számodra megfelelő tempóban."
+      "item3": "Mindig a beleegyezés az első. Haladj a számodra megfelelő tempóban.",
+      "item2b": "Személyre szabja a megközelítését — hivatkozzon az AI erő-összefoglalóra, amikor üzeneteket küld vagy találkozókat javasol."
     },
     "next": {
       "title": "Következő lépések",
@@ -199,7 +200,49 @@
       "native_text": "Csevegj az általad preferált nyelven a beépített fordítással.",
       "tz_title": "Időzóna-tudatos ütemezés",
       "tz_text": "Nem kell többé időzónákkal számolni — a konverziókat mi intézzük.",
-      "select_label": "Válassz nyelvet:"
+      "select_label": "Válassz nyelvet:",
+      "translated_title": "Lefordított interfész",
+      "translated_text": "Navigáljon a UI-ban az Ön nyelvén és lássa az AI egyezés-összefoglalókat a preferált lokalizációjában."
+    },
+    "how_full": {
+      "title": "Hogyan működik a SoulTribe",
+      "step1": "Hozza létre a terét — regisztráljon és ossza meg az alapvető elemeket, amelyek alakítják az egyedi energia-lenyomatát.",
+      "step2": "Állítsa be az alapjait — válassza ki az elsődleges nyelvét, opcionális másodlagosakat, születési dátumot és erősítse meg jelenlegi helyi időzónáját.",
+      "step3": "Nyissa meg az ütemtervét — hozzon létre elérhetőségi időrészeket, hogy a rendszer tudja, mikor szabad.",
+      "step4": "Fedezze fel a rezonancia-alapú egyezéseket — a diagram-intelligenciánk kiemeli azokat az embereket, akiknek az energiája illeszkedik az önéhez.",
+      "step5": "Figyelje meg az átfedéseket — az átfedő elérhetőség felfedi, mikor szabad egy potenciális egyezés-partner egyszerre.",
+      "step6": "Javasoljon vagy erősítsen meg egy találkozót — küldjön vagy fogadjon el meghívókat, amikor az idő megfelelőnek tűnik.",
+      "step7": "Csatlakozzon a Jitsi csevegéshez — találkozzon személyesen egy biztonságos, privát videoszobában, amikor mindenki készen áll.",
+      "summary": "Minden lépés hozzájárulás-vezérelt és arra tervezték, hogy tiszteletben tartsa a határait."
+    },
+    "different": {
+      "title": "Miért különbözik a SoulTribe",
+      "item1": "Asztrológia-első egyezés, amely tiszteletben tartja a finomságokat a napjelzéseken túl.",
+      "item2": "Ember-központú adatvédelem hirdetések, követő pixelek vagy meglepő algoritmusok nélkül.",
+      "item3": "Hozzájárulás-vezérelt tervezés ellenőrzéssel, világos javaslatokkal, megerősítésekkel és egyszerű lemondásokkal.",
+      "item4": "Vezetett kapcsolat AI egyezés-betekintéseken keresztül, erősségek kiemelésén és profilértelmezés-promptokon keresztül."
+    },
+    "experience": {
+      "title": "Mit fog tapasztalni",
+      "item1": "Rezonancia-első bevezetések szinásztrális pontszámokból és átfedő elérhetőségből származnak — végtelen görgetés nélkül.",
+      "item2": "AI-vezérelt betekintések egyezés-erő összefoglalókkal és profilértelmezésekkel a reflexív beszélgetések támogatására.",
+      "item3": "Hozzájárulás-vezérelt ritmus, ahol javasol, erősít vagy lemond találkozókat és meghív másokat a Jitsi-be, amikor mindenki egyetért.",
+      "summary": "Mozogjon abban a ritmusban, ami illik Önhöz — álljon meg bármikor és folytassa a szálat, amikor készen áll."
+    },
+    "matching_full": {
+      "title": "Hogyan működik az egyezés",
+      "step1": "Diagram-szintézis — kombináljuk minden tag születési adatait, hogy kiszámítsuk a szinásztrális aspektusokat, elemi egyensúlyt és házak átfedését.",
+      "step2": "Kompatibilitás értékelés — az indikátorok pontszámmá és erővektorrá válnak; amikor meghaladja a láthatóság küszöbünket és az elérhetőség átfed, az egyezés megjelenik az irányítópulton.",
+      "step3": "Kontextus cselekvésre — kérjen AI-írásos összefoglalót a kulcsfontosságú témák és erők kiemeléséhez kapcsolatfelvétel előtt.",
+      "summary": "Görgetés nélkül, csak világos asztrológiai kontextusok a következő kapcsolatának gondos kiválasztására."
+    },
+    "support": {
+      "title": "Támogatás & Erőforrások",
+      "item1": "Concierge onboarding promptokkal, amelyek segítenek pontosan annyit megosztani, amennyit kell.",
+      "item2": "Vezetett ellenőrzések AI-generált egyezés-összefoglalók és profil-reflexiók révén, amelyek a beszélgetéseket lehorgonyozzák.",
+      "item3": "1:1 találkozók a lehetőséggel, hogy meghívjon másokat a Jitsi szobájába, amikor mindenki egyetért.",
+      "item4": "Erőforrás-könyvtár, amely kommunikációs útmutatókat, biztonsági gyakorlatokat és tippeket tartalmaz a jelentős 1:1 találkozókhoz.",
+      "summary": "Itt vagyunk minden kapcsolat előtt, alatt és után, amit létrehoz."
     }
   },
   "radix": {

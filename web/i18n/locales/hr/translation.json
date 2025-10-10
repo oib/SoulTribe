@@ -621,7 +621,8 @@
       "title": "Savjeti",
       "item1": "Dodaj nekoliko termina dostupnosti kroz različite dane za brža povezivanja.",
       "item2": "Budi autentičan u uvodu — konkretnosti pomažu pravim ljudima da te nađu.",
-      "item3": "Pristanak na prvom mjestu. Kreći se tempom koji ti odgovara."
+      "item3": "Pristanak na prvom mjestu. Kreći se tempom koji ti odgovara.",
+      "item2b": "Personalizirajte svoj pristup — pozovite se na AI rezime snaga kada šaljete poruke ili predlažete sastanke."
     },
     "next": {
       "title": "Sljedeći koraci",
@@ -644,7 +645,49 @@
       "native_text": "Razgovaraj na preferiranom jeziku uz naš ugrađeni prijevod.",
       "tz_title": "Planiranje svjesno vremenskih zona",
       "tz_text": "Nema više računanja s vremenskim zonama — konverzije odrađujemo mi.",
-      "select_label": "Odaberi jezik:"
+      "select_label": "Odaberi jezik:",
+      "translated_title": "Prevedeno sučelje",
+      "translated_text": "Navigirajte UI na svom jeziku i vidite AI rezimee podudaranja u svojoj preferiranoj lokalizaciji."
+    },
+    "how_full": {
+      "title": "Kako SoulTribe funkcionira",
+      "step1": "Stvorite svoj prostor — registrirajte se i podijelite bitne elemente koji oblikuju vaš jedinstveni energetski otisak.",
+      "step2": "Postavite svoje temelje — odaberite svoj primarni jezik, opcionalne sekundarne, datum rođenja i potvrdite svoju trenutnu lokalnu vremensku zonu.",
+      "step3": "Otvorite svoj raspored — stvorite prozore dostupnosti kako bi sustav znao kada ste slobodni.",
+      "step4": "Otkrijte podudaranja temeljena na rezonanciji — naša inteligencija dijagrama ističe ljude čija energija odgovara vašoj.",
+      "step5": "Primijetite preklapanja — preklapajuća dostupnost otkriva kada je potencijalni partner za podudaranje slobodan u isto vrijeme.",
+      "step6": "Predložite ili potvrdite sastanak — pošaljite ili prihvatite pozivnice kada vrijeme izgleda ispravno.",
+      "step7": "Pridružite se Jitsi chatu — sastajte se licem u lice u sigurnoj, privatnoj video sobi kada su svi spremni.",
+      "summary": "Svaki korak je vođen pristankom i dizajniran da poštuje vaše granice."
+    },
+    "different": {
+      "title": "Zašto je SoulTribe drugačiji",
+      "item1": "Astrološki-prvo podudaranje koje poštuje nijanse izvan sunčevih znakova.",
+      "item2": "Čovjeko-centrirana privatnost bez oglasa, piksela za praćenje ili iznenađujućih algoritama.",
+      "item3": "Planiranje vođeno pristankom s verifikacijom, jasnim prijedlozima, potvrdama i jednostavnim otkazivanjima.",
+      "item4": "Vođena veza putem AI uvida o podudaranju, isticanja snaga i upita za tumačenje profila."
+    },
+    "experience": {
+      "title": "Što ćete doživjeti",
+      "item1": "Rezonancija-prve uvode izvedene iz sinastričkih ocjena i preklapajuće dostupnosti — bez beskonačnog pomicanja.",
+      "item2": "AI-vođeni uvidi s rezimeima snage podudaranja i tumačenjima profila za podršku refleksivnim razgovorima.",
+      "item3": "Ritmo vođen pristankom gdje predlažete, potvrđujete ili otkazujete sastanke i pozivate druge u Jitsi kada se svi slažu.",
+      "summary": "Krećite se ritmom koji vam odgovara — zaustavite se u bilo kojem trenutku i nastavite nit kada ste spremni."
+    },
+    "matching_full": {
+      "title": "Kako funkcionira podudaranje",
+      "step1": "Sinteza dijagrama — kombinujemo podatke o rođenju svakog člana kako bismo izračunali sinastričke aspekte, elementarnu ravnotežu i preklapanja kuća.",
+      "step2": "Procjena kompatibilnosti — indikatori se pretvaraju u rezultat i vektor snaga; kada premaši naš prag vidljivosti i dostupnost se preklapa, podudaranje se pojavljuje na vašoj kontrolnoj ploči.",
+      "step3": "Kontekst za akciju — zatražite AI-pisani rezime kako biste istaknuli ključne teme i snage prije kontakta.",
+      "summary": "Bez pomicanja, samo jasni astrološki konteksti za pažljiv odabir vaše sljedeće veze."
+    },
+    "support": {
+      "title": "Podrška & Resursi",
+      "item1": "Concierge onboarding s upitima koji vam pomažu podijeliti točno onoliko koliko trebate.",
+      "item2": "Vođene provjere putem AI-generiranih rezimea podudaranja i profilih refleksija koje drže razgovore usidrenima.",
+      "item3": "1:1 sastanci s mogućnošću pozivanja drugih u svoju Jitsi sobu kada se svi slažu.",
+      "item4": "Biblioteka resursa koja uključuje vodiče za komunikaciju, prakse sigurnosti i savjete za značajne 1:1 sastanke.",
+      "summary": "Ovdje smo prije, tijekom i nakon svake veze koju kreirate."
     }
   },
   "login": {

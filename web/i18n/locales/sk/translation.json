@@ -66,7 +66,9 @@
       "text": "Hovorte svojím jazykom, spojte sa so svetom. SoulTribe.chat podporuje viacero jazykov, aby ste mohli nájsť svoju duševnú komunitu, nech ste kdekoľvek.",
       "title": "Globálna komunita",
       "tz_text": "Automatická detekcia a konverzia časových pásiem, takže vždy viete, kedy sú vaše zhody k dispozícii.",
-      "tz_title": "Vedomie o časových pásmach"
+      "tz_title": "Vedomie o časových pásmach",
+      "translated_title": "Preložené rozhranie",
+      "translated_text": "Prechádzajte UI vo vašom jazyku a pozrite si súhrny zhôd AI vo vašej preferovanej lokalizácii."
     },
     "hero": {
       "subtitle": "SoulTribe.chat je priestor vytvorený na to, aby vám pomohol nájsť a spojiť sa s vašou duševnou komunitou — ľuďmi, ktorí rezonujú s vašou energiou, duchom a cestou. ✨",
@@ -106,9 +108,50 @@
       "item1": "Pridajte niekoľko časových slotov v rôznych dňoch pre rýchlejšie spojenia.",
       "item2": "Buďte vo svojom predstavení autentickí — konkrétne detaily pomáhajú správnym ľuďom vás nájsť.",
       "item3": "Súhlas je na prvom mieste, vždy. Postupujte svojim vlastným tempom.",
-      "title": "Odborné tipy"
+      "title": "Odborné tipy",
+      "item2b": "Prispôsobte svoj outreach — odkazujte na súhrn sily AI pri odosielaní správ alebo navrhovaní stretnutí."
     },
-    "page_title": "SoulTribe.chat – Nájdite svoju duševnú komunitu"
+    "page_title": "SoulTribe.chat – Nájdite svoju duševnú komunitu",
+    "how_full": {
+      "title": "Ako funguje SoulTribe",
+      "step1": "Vytvorte si svoj priestor — zaregistrujte sa a zdieľajte základné prvky, ktoré formujú váš unikátny energetický odtlačok.",
+      "step2": "Nastavte si základy — vyberte si svoj primárny jazyk, voliteľné sekundárne, dátum narodenia a potvrďte svoju aktuálnu miestnu časovú zónu.",
+      "step3": "Otvorte svoj harmonogram — vytvorte sloty dostupnosti, aby systém vedel, kedy ste voľný.",
+      "step4": "Objavte zhody založené na rezonancii — naša inteligencia diagramov zvýrazňuje ľudí, ktorých energia sa zhoduje s vašou.",
+      "step5": "Všimnite si prekryvy — prekrývajúca sa dostupnosť odhaľuje, kedy je potenciálny partner zhody voľný súčasne.",
+      "step6": "Navrhnite alebo potvrďte stretnutie — pošlite alebo prijmite pozvánky, keď čas vyzerá správne.",
+      "step7": "Pripojte sa k chatu Jitsi — stretnite sa tvárou v tvár v bezpečnej, súkromnej video miestnosti, keď sú všetci pripravení.",
+      "summary": "Každý krok je riadený súhlasom a navrhnutý na rešpektovanie vašich hraníc."
+    },
+    "different": {
+      "title": "Prečo je SoulTribe iný",
+      "item1": "Astrológia-prvá zhoda, ktorá rešpektuje nuansy okrem slnečných znamení.",
+      "item2": "Človek-centrované súkromie bez reklám, sledovacích pixlov alebo prekvapivých algoritmov.",
+      "item3": "Plánovanie riadené súhlasom s overením, jasnými návrhmi, potvrdeniami a jednoduchými zrušeniami.",
+      "item4": "Riadené spojenie prostredníctvom AI zhôd insights, zvýraznení sily a prompts interpretácie profilu."
+    },
+    "experience": {
+      "title": "Čo zažijete",
+      "item1": "Rezonancia-prvé zavedenia odvodené zo synastrických bodov a prekrývajúcej sa dostupnosti — bez nekonečného posúvania.",
+      "item2": "Insights riadené AI s súhrnmi sily zhody a interpretáciami profilu na podporu reflexívnych rozhovorov.",
+      "item3": "Rytmus riadený súhlasom, kde navrhujete, potvrdzujete alebo rušíte stretnutia a pozývate iných do Jitsi, keď sú všetci súhlasia.",
+      "summary": "Pohybujte sa v rytme, ktorý vám vyhovuje — zastavte sa kedykoľvek a obnovte vlákno, keď ste pripravení."
+    },
+    "matching_full": {
+      "title": "Ako funguje zhoda",
+      "step1": "Syntéza diagramu — kombinujeme údaje o narodení každého člena na výpočet synastrických aspektov, elementárnej rovnováhy a prekrytí domov.",
+      "step2": "Hodnotenie kompatibility — indikátory sa stávajú skóre a vektorom sily; keď prekročí náš prah viditeľnosti a dostupnosť sa prekrýva, zhoda sa objaví na vašom paneli.",
+      "step3": "Kontext pre akciu — požiadajte o súhrn napísaný AI na zvýraznenie kľúčových tém a síl pred kontaktom.",
+      "summary": "Žiadne posúvanie, iba jasné astrológické kontexty pre starostlivý výber vašej ďalšej spojenia."
+    },
+    "support": {
+      "title": "Podpora & Zdroje",
+      "item1": "Concierge onboarding s prompts na pomoc vám zdieľať presne to, čo je potrebné.",
+      "item2": "Riadené kontroly prostredníctvom AI generovaných súhrnov zhôd a reflexií profilu, ktoré udržiavajú rozhovory ukotvené.",
+      "item3": "Stretnutia 1:1 s možnosťou pozvať iných do vašej miestnosti Jitsi, keď sú všetci súhlasia.",
+      "item4": "Knižnica zdrojov vrátane sprievodcov komunikácie, praktík bezpečnosti a tipov na zmysluplné stretnutia 1:1.",
+      "summary": "Sme tu pred, počas a po každom spojení, ktoré vytvoríte."
+    }
   },
   "language": {
     "de": "Nemčina",

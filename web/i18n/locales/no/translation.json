@@ -66,7 +66,9 @@
       "text": "Snakk ditt språk, koble deg til verden. SoulTribe.chat støtter flere språk for å bringe ditt sjelstamme nærmere, uansett hvor du er.",
       "title": "Globalt fellesskap",
       "tz_text": "Automatisk tidssoneoppdagelse og -konvertering, slik at du alltid vet når dine treff er tilgjengelige.",
-      "tz_title": "Tidssonebevisst"
+      "tz_title": "Tidssonebevisst",
+      "translated_title": "Oversatt grensesnitt",
+      "translated_text": "Naviger UI-en på ditt språk og se AI treffsammendrag i din foretrukne lokalisering."
     },
     "hero": {
       "subtitle": "SoulTribe.chat er et rom skapt for å hjelpe deg med å finne og koble deg til din sjelefrende — mennesker som resonerer med din energi, din ånd og din reise. ✨",
@@ -106,9 +108,50 @@
       "item1": "Legg til noen få tilgjengelige tidsluker på forskjellige dager for raskere forbindelser.",
       "item2": "Vær ekte i din presentasjon — spesifikke detaljer hjelper de rette menneskene med å finne deg.",
       "item3": "Samtykke først, alltid. Gå i ditt eget tempo.",
-      "title": "Profftips"
+      "title": "Profftips",
+      "item2b": "Tilpass din outreach — referer til AI styrke-sammendrag når du sender meldinger eller foreslår møter."
     },
-    "page_title": "SoulTribe.chat – Finn din sjelsstamme"
+    "page_title": "SoulTribe.chat – Finn din sjelsstamme",
+    "how_full": {
+      "title": "Hvordan SoulTribe fungerer",
+      "step1": "Opprett ditt rom — registrer deg og del de essensielle elementene som former ditt unike energi-fingeravtrykk.",
+      "step2": "Sett dine fundamenter — velg ditt primære språk, valgfrie sekundære, fødselsdato og bekreft din nåværende lokale tidssone.",
+      "step3": "Åpne tidsplanen din — opprett tilgjengelighetsslots slik at systemet vet når du er ledig.",
+      "step4": "Oppdag resonansbaserte treff — vår diagramintelligens fremhever mennesker hvis energi matcher din.",
+      "step5": "Legg merke til overlappinger — overlappende tilgjengelighet avslører når en potensiell treffpartner er ledig samtidig.",
+      "step6": "Foreslå eller bekreft et møte — send eller aksepter invitasjoner når tiden virker riktig.",
+      "step7": "Bli med i Jitsi-chatten — møt hverandre ansikt til ansikt i et sikkert, privat videorom når alle er klare.",
+      "summary": "Hvert steg er samtykke-drevet og designet for å respektere dine grenser."
+    },
+    "different": {
+      "title": "Hvorfor SoulTribe er annerledes",
+      "item1": "Astrologi-først treff som respekterer nyanser utover soltegn.",
+      "item2": "Menneskesentrert personvern uten annonser, sporings-piksler eller overraskende algoritmer.",
+      "item3": "Samtykke-drevet planlegging med verifisering, klare forslag, bekreftelser og enkle kanselleringer.",
+      "item4": "Veiledet tilkobling via AI treff innsikter, styrke-utelatelser og profilfortolkning-prompter."
+    },
+    "experience": {
+      "title": "Hva du vil oppleve",
+      "item1": "Resonans-første introduksjoner utledet fra synastriske poeng og overlappende tilgjengelighet — uten uendelig scrolling.",
+      "item2": "AI-veiledede innsikter med treffstyrke-sammendrag og profilfortolkninger for å støtte reflekterende samtaler.",
+      "item3": "Samtykke-drevet rytme hvor du foreslår, bekrefter eller kansellerer møter og inviterer andre til Jitsi når alle er enige.",
+      "summary": "Beveg deg i rytmen som passer deg — stopp når som helst og fortsett tråden når du er klar."
+    },
+    "matching_full": {
+      "title": "Hvordan matching fungerer",
+      "step1": "Diagramsyntese — vi kombinerer fødselsdata for hvert medlem for å beregne synastriske aspekter, elementær balanse og husoverlappinger.",
+      "step2": "Kompatibilitetsvurdering — indikatorer blir en poengsum og styrke-vektor; når det overstiger vår synlighetsterskel og tilgjengelighet overlapper, vises treffet på dashbordet ditt.",
+      "step3": "Kontekst for handling — be om en AI-skrevet sammendrag for å fremheve nøkkeltemaer og styrker før kontakt.",
+      "summary": "Ingen scrolling, bare klare astrologiske kontekster for nøye valg av din neste tilkobling."
+    },
+    "support": {
+      "title": "Støtte & Ressurser",
+      "item1": "Concierge onboarding med promter for å hjelpe deg å dele nøyaktig hva som trengs.",
+      "item2": "Veiledede sjekker via AI-genererte treffsammendrag og profilrefleksjoner som holder samtaler forankret.",
+      "item3": "1:1 møter med muligheten til å invitere andre inn i ditt Jitsi-rom når alle er enige.",
+      "item4": "Ressursbibliotek som inkluderer kommunikasjonsveiledere, sikkerhetspraksis og tips for meningsfulle 1:1 møter.",
+      "summary": "Vi er her før, under og etter hver tilkobling du skaper."
+    }
   },
   "language": {
     "de": "Tysk",

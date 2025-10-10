@@ -66,7 +66,9 @@
       "text": "Fala a tua língua, conecta-te com o mundo. SoulTribe.chat suporta vários idiomas para aproximar a tua tribo de alma, onde quer que estejas.",
       "title": "Comunidade Global",
       "tz_text": "Deteção e conversão automática de fuso horário, para que saibas sempre quando as tuas correspondências estão disponíveis.",
-      "tz_title": "Consciência de Fuso Horário"
+      "tz_title": "Consciência de Fuso Horário",
+      "translated_title": "Interface traduzida",
+      "translated_text": "Navegue pela UI em seu idioma e veja resumos de combinação AI em sua localização preferida."
     },
     "hero": {
       "subtitle": "SoulTribe.chat é um espaço criado para te ajudar a encontrar e conectar com a tua tribo de alma — pessoas que ressoam com a tua energia, o teu espírito e a tua jornada. ✨",
@@ -106,9 +108,50 @@
       "item1": "Adiciona alguns horários disponíveis em dias diferentes para conexões mais rápidas.",
       "item2": "Sê genuíno/a na tua apresentação — detalhes específicos ajudam as pessoas certas a encontrar-te.",
       "item3": "Consentimento primeiro, sempre. Avança ao teu próprio ritmo.",
-      "title": "Dicas de especialista"
+      "title": "Dicas de especialista",
+      "item2b": "Personalize seu outreach — referencie o resumo de força AI quando enviar mensagens ou propor encontros."
     },
-    "page_title": "SoulTribe.chat – Encontra a tua tribo de alma"
+    "page_title": "SoulTribe.chat – Encontra a tua tribo de alma",
+    "how_full": {
+      "title": "Como SoulTribe funciona",
+      "step1": "Crie seu espaço — registre-se e compartilhe os elementos essenciais que formam sua impressão digital de energia única.",
+      "step2": "Defina seus fundamentos — escolha seu idioma primário, secundários opcionais, data de nascimento e confirme seu fuso horário local atual.",
+      "step3": "Abra sua agenda — crie slots de disponibilidade para que o sistema saiba quando você está livre.",
+      "step4": "Descubra combinações baseadas em ressonância — nossa inteligência de diagrama destaca pessoas cuja energia combina com a sua.",
+      "step5": "Observe as sobreposições — disponibilidade sobreposta revela quando um parceiro potencial de combinação está livre ao mesmo tempo.",
+      "step6": "Sugira ou confirme um encontro — envie ou aceite convites quando o momento parecer certo.",
+      "step7": "Junte-se ao chat Jitsi — encontre-se cara a cara em uma sala de vídeo segura, privada quando todos estiverem prontos.",
+      "summary": "Cada passo é guiado por consentimento e projetado para respeitar seus limites."
+    },
+    "different": {
+      "title": "Por que SoulTribe é diferente",
+      "item1": "Combinação astrologia-primeiro que respeita nuances além dos signos solares.",
+      "item2": "Privacidade centrada no humano sem anúncios, pixels de rastreamento ou algoritmos surpreendentes.",
+      "item3": "Planejamento guiado por consentimento com verificação, propostas claras, confirmações e cancelamentos simples.",
+      "item4": "Conexão guiada via insights AI de combinação, destaques de força e prompts de interpretação de perfil."
+    },
+    "experience": {
+      "title": "O que você experimentará",
+      "item1": "Introduções ressonância-primeiro derivadas de pontuações sinástricas e disponibilidade sobreposta — sem rolagem infinita.",
+      "item2": "Insights guiados por AI com resumos de força de combinação e interpretações de perfil para apoiar conversas reflexivas.",
+      "item3": "Ritmo guiado por consentimento onde você sugere, confirma ou cancela encontros e convida outros para Jitsi quando todos concordam.",
+      "summary": "Mova-se no ritmo que se adapta a você — pare a qualquer momento e retome o fio quando estiver pronto."
+    },
+    "matching_full": {
+      "title": "Como funciona a combinação",
+      "step1": "Síntese de diagrama — combinamos dados de nascimento de cada membro para calcular aspectos sinástricos, equilíbrio elementar e sobreposições de casas.",
+      "step2": "Avaliação de compatibilidade — indicadores se tornam uma pontuação e vetor de força; quando excede nosso limite de visibilidade e disponibilidade se sobrepõe, a combinação aparece em seu painel.",
+      "step3": "Contexto para ação — solicite um resumo escrito por AI para destacar temas chave e forças antes do contato.",
+      "summary": "Sem rolagem, apenas contextos astrológicos claros para escolha cuidadosa de sua próxima conexão."
+    },
+    "support": {
+      "title": "Suporte & Recursos",
+      "item1": "Onboarding concierge com prompts para ajudá-lo a compartilhar exatamente o que é necessário.",
+      "item2": "Check-ins guiados via resumos de combinação gerados por AI e reflexões de perfil que mantêm conversas ancoradas.",
+      "item3": "Encontros 1:1 com a opção de convidar outros para sua sala Jitsi quando todos concordam.",
+      "item4": "Biblioteca de recursos incluindo guias de comunicação, práticas de segurança e dicas para encontros 1:1 significativos.",
+      "summary": "Estamos aqui antes, durante e depois de cada conexão que você cria."
+    }
   },
   "language": {
     "de": "Alemão",

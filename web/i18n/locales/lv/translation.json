@@ -151,7 +151,8 @@
       "title": "Padomi",
       "item1": "Pievienojiet dažus pieejamības laikus dažādās dienās, lai ātrāk sazinātos.",
       "item2": "Esi patiess savā ievadā — konkrētība palīdz pareizajiem cilvēkiem jūs atrast.",
-      "item3": "Piekrišana vispirms, vienmēr. Virzieties tādā tempā, kas jūtas pareizs."
+      "item3": "Piekrišana vispirms, vienmēr. Virzieties tādā tempā, kas jūtas pareizs.",
+      "item2b": "Personalizējiet savu pieeju — atsaucaties uz AI stiprības kopsavilkumu, kad sūtāt ziņas vai piedāvājat tikšanās reizes."
     },
     "next": {
       "title": "Nākamie soļi",
@@ -174,7 +175,49 @@
       "native_text": "Tērzējiet savā vēlamajā valodā ar mūsu iebūvēto tulkošanu.",
       "tz_title": "Laika joslu apzināta plānošana",
       "tz_text": "Vairs nav jāskaita laika joslas — mēs veicam visus pārrēķinus jūsu vietā.",
-      "select_label": "Izvēlieties valodu:"
+      "select_label": "Izvēlieties valodu:",
+      "translated_title": "Tulkots interfeiss",
+      "translated_text": "Pārvietojieties UI savā valodā un skatiet AI sakritības kopsavilkumus savā vēlamajā lokalizācijā."
+    },
+    "how_full": {
+      "title": "Kā darbojas SoulTribe",
+      "step1": "Izveidojiet savu telpu — reģistrējieties un dalieties ar būtiskajiem elementiem, kas veido jūsu unikālo enerģijas nospiedumu.",
+      "step2": "Iestatiet savus pamatus — izvēlieties savu primāro valodu, izvēles sekundāros, dzimšanas datumu un apstipriniet savu pašreizējo vietējo laika zonu.",
+      "step3": "Atveriet savu grafiku — izveidojiet pieejamības slotus, lai sistēma zinātu, kad esat brīvs.",
+      "step4": "Atklājiet rezonansā balstītus sakritības — mūsu diagrammas inteliģence izceļ cilvēkus, kuru enerģija atbilst jūsu.",
+      "step5": "Pievērsiet uzmanību pārklājumiem — pārklājošā pieejamība atklāj, kad potenciālais sakritības partneris ir brīvs vienlaikus.",
+      "step6": "Piedāvājiet vai apstipriniet tikšanos — nosūtiet vai pieņemiet uzaicinājumus, kad laiks šķiet pareizs.",
+      "step7": "Pievienojieties Jitsi tērzēšanai — tikieties aci pret aci drošā, privātā video telpā, kad visi ir gatavi.",
+      "summary": "Katrs solis ir piekrišanas vadīts un izstrādāts, lai respektētu jūsu robežas."
+    },
+    "different": {
+      "title": "Kāpēc SoulTribe ir atšķirīgs",
+      "item1": "Astroloģija-pirmā sakritība, kas respektē nianses ārpus Saules zīmēm.",
+      "item2": "Cilvēka centrēta privātums bez reklāmām, izsekošanas pikseļiem vai pārsteidzošiem algoritmiem.",
+      "item3": "Piekrišanas vadīta plānošana ar verificēšanu, skaidriem priekšlikumiem, apstiprinājumiem un vienkāršām atcelšanām.",
+      "item4": "Vadīta savienojums caur AI sakritības ieskatiem, stiprību izcelšanu un profila interpretācijas uzvednēm."
+    },
+    "experience": {
+      "title": "Ko jūs piedzīvosiet",
+      "item1": "Rezonansā pirmās ievadīšanas, kas izvestas no sinastriskiem punktiem un pārklājošās pieejamības — bez bezgalīgas ritināšanas.",
+      "item2": "AI vadītās ieskatas ar sakritības stiprības kopsavilkumiem un profila interpretācijām, lai atbalstītu reflektīvās sarunas.",
+      "item3": "Piekrišanas vadīts ritms, kurā jūs piedāvājat, apstiprināt vai atceļat tikšanās un uzaicināt citus uz Jitsi, kad visi piekrīt.",
+      "summary": "Pārvietojieties ritmā, kas jums der — apstājieties jebkurā brīdī un turpiniet pavedienu, kad esat gatavs."
+    },
+    "matching_full": {
+      "title": "Kā darbojas sakritība",
+      "step1": "Diagrammas sintezēšana — mēs apvienojam katra dalībnieka dzimšanas datus, lai aprēķinātu sinastriskos aspektus, elementāro līdzsvaru un māju pārklājumus.",
+      "step2": "Saderības novērtēšana — indikatori kļūst par punktu un stiprības vektoru; kad tas pārsniedz mūsu redzamības slieksni un pieejamība pārklājas, sakritība parādās jūsu panelī.",
+      "step3": "Konteksts darbībai — pieprasiet AI rakstītu kopsavilkumu, lai izceltu galvenās tēmas un stiprības pirms saziņas.",
+      "summary": "Bez ritināšanas, tikai skaidri astroloģiski konteksti jūsu nākamās saiknes rūpīgai izvēlei."
+    },
+    "support": {
+      "title": "Atbalsts & Resursi",
+      "item1": "Concierge onboarding ar uzvednēm, kas palīdz jums dalīties tieši ar to, kas nepieciešams.",
+      "item2": "Vadītās pārbaudes caur AI ģenerētiem sakritības kopsavilkumiem un profila pārdomām, kas notur sarunas nostiprinātas.",
+      "item3": "1:1 tikšanās ar iespēju uzaicināt citus savā Jitsi telpā, kad visi piekrīt.",
+      "item4": "Resursu bibliotēka, kas ietver komunikācijas ceļvežus, drošības praksi un padomus nozīmīgām 1:1 tikšanās reizēm.",
+      "summary": "Mēs esam šeit pirms, laikā un pēc katras saiknes, kuru jūs izveidojat."
     }
   },
   "login": {

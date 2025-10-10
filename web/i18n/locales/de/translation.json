@@ -43,7 +43,8 @@
       "title": "Profi-Tipps",
       "item1": "Füge einige Verfügbarkeitsfenster an verschiedenen Tagen hinzu, um schneller Verbindungen zu knüpfen.",
       "item2": "Sei in deiner Vorstellung authentisch – spezifische Angaben helfen den richtigen Leuten, dich zu finden.",
-      "item3": "Immer zuerst die Zustimmung einholen. Gehe das Tempo, das sich für dich richtig anfühlt."
+      "item3": "Immer zuerst die Zustimmung einholen. Gehe das Tempo, das sich für dich richtig anfühlt.",
+      "item2b": "Personalisiere deinen Outreach — referenziere die AI-Stärken-Zusammenfassung, wenn du Nachrichten sendest oder Treffen vorschlägst."
     },
     "next": {
       "title": "Nächste Schritte",
@@ -66,9 +67,51 @@
       "native_text": "Vollständig übersetzte Oberfläche in mehreren Sprachen, mit regelmäßigen Erweiterungen.",
       "tz_title": "Zeitzonenbewusst",
       "tz_text": "Automatische Zeitzonenerkennung und -umrechnung, damit du immer weißt, wann deine Matches verfügbar sind.",
-      "select_label": "Sprache wählen:"
+      "select_label": "Sprache wählen:",
+      "translated_title": "Übersetzte Schnittstelle",
+      "translated_text": "Navigiere die UI in deiner Sprache und siehe AI-Match-Zusammenfassungen in deiner bevorzugten Lokalisierung."
     },
-    "page_title": "SoulTribe.chat – Finde deinen Seelenstamm"
+    "page_title": "SoulTribe.chat – Finde deinen Seelenstamm",
+    "how_full": {
+      "title": "Wie SoulTribe funktioniert",
+      "step1": "Erstelle deinen Raum — melde dich an und teile die Essentials, die deine einzigartige energetische Fingerabdruck formen.",
+      "step2": "Setze deine Grundlagen — wähle deine primäre Sprache und optionale Sekundärsprachen, gib dein Geburtsdatum ein und bestätige deine aktuelle lokale Zeitzone.",
+      "step3": "Öffne deinen Zeitplan — erstelle Zeitfenster, damit das System weiß, wann du verfügbar bist.",
+      "step4": "Entdecke resonanzbasierte Übereinstimmungen — unsere Diagramm-Intelligenz hebt Menschen hervor, deren Energie mit deiner übereinstimmt.",
+      "step5": "Beachte Überlappungen — überlappende Verfügbarkeit zeigt an, wann ein potenzieller Übereinstimmungs-Partner gleichzeitig frei ist.",
+      "step6": "Schlage vor oder bestätige ein Treffen — sende oder akzeptiere Einladungen, wenn die Zeit stimmt.",
+      "step7": "Betrete den Jitsi-Chat — triff dich von Angesicht zu Angesicht in einem sicheren, privaten Videoraum, wenn alle bereit sind.",
+      "summary": "Jeder Schritt ist einvernehmlich und darauf ausgelegt, deine Grenzen zu respektieren."
+    },
+    "different": {
+      "title": "Warum SoulTribe anders ist",
+      "item1": "Astrologie-erstes Matching, das Nuancen jenseits von Sonnzeichen respektiert.",
+      "item2": "Mensch-zentrierte Privatsphäre ohne Werbung, Tracking-Pixel oder überraschende Algorithmen.",
+      "item3": "Einvernehmlichkeits-erstes Scheduling mit Verifizierung, klaren Vorschlägen, Bestätigungen und einfachen Widerrufen.",
+      "item4": "Geführte Verbindung durch AI-Match-Einblicke, Stärken-Highlights und Profil-Interpretations-Prompts."
+    },
+    "experience": {
+      "title": "Was du erleben wirst",
+      "item1": "Resonanz-erste Einführungen, die aus Synastry-Punktzahlen und überlappender Verfügbarkeit hervorgehen — kein endloses Swipen.",
+      "item2": "AI-geführte Einblicke mit Match-Stärken-Zusammenfassungen und Profil-Interpretationen zur Unterstützung reflektierender Gespräche.",
+      "item3": "Einvernehmlichkeits-geleitetes Tempo, bei dem du Treffen vorschlägst, bestätigst oder widerrufst und andere in Jitsi einlädst, wenn alle zustimmen.",
+      "summary": "Bewege dich im Rhythmus, der für dich richtig ist—pausiere jederzeit und nimm den Faden wieder auf, wenn du bereit bist."
+    },
+    "matching_full": {
+      "title": "Wie Matching funktioniert",
+      "step1": "Diagramm-Synthese — wir kombinieren die natal Daten jedes Mitglieds, um Synastry-Aspekte, elementale Balance und Haus-Overlays zu berechnen.",
+      "step2": "Kompatibilitäts-Bewertung — Indikatoren werden zu einer Punktzahl und einem Stärken-Vektor; wenn es unsere Sichtbarkeitsschwelle überschreitet und Verfügbarkeit überlappt, erscheint die Übereinstimmung in deinem Dashboard.",
+      "step3": "Kontext für Aktion — fordere eine AI-geschriebene Zusammenfassung an, um Schlüsselthemen und Stärken hervorzuheben, bevor du dich meldest.",
+      "summary": "Kein Swipen, nur klare astrologische Kontexte, um deine nächste Verbindung sorgfältig zu wählen."
+    },
+    "support": {
+      "title": "Unterstützung & Ressourcen",
+      "item1": "Concierge-Onboarding mit Prompts, die dir helfen, nur das Richtige zu teilen.",
+      "item2": "Geführte Check-ins durch AI-generierte Match-Zusammenfassungen und Profil-Reflexionen, die Gespräche geerdet halten.",
+      "item3": "1:1-Treffen mit der Möglichkeit, andere in deinen Jitsi-Raum einzuladen, wenn alle zustimmen.",
+      "item4": "Ressourcen-Bibliothek mit Kommunikationsleitfäden, Sicherheitspraktiken und Tipps für bedeutungsvolle 1:1-Treffen.",
+      "summary": "Wir sind da, bevor, während und nach jeder Verbindung, die du schaffst."
+    }
   },
   "guestGuide": {
     "title": "Schnellstart für Jitsi-Gäste von SoulTribe",

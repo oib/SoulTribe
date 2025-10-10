@@ -151,7 +151,8 @@
       "title": "Leideanna",
       "item1": "Cuir cúpla sliotán infhaighteachta le laethanta éagsúla chun nascadh níos tapúla.",
       "item2": "Bí fírinneach i d’intro — cuidíonn sonraí sonracha leis na daoine cearta tú a aimsiú.",
-      "item3": "Toiliú ar dtús, i gcónaí. Gluais ar luas a bhraitheann ceart."
+      "item3": "Toiliú ar dtús, i gcónaí. Gluais ar luas a bhraitheann ceart.",
+      "item2b": "Déan do chur chuige a phearsantú — tagairt d'achoimre láidre AI nuair a sheolann tú teachtaireachtaí nó nuair a mholann tú cruinnithe."
     },
     "next": {
       "title": "Na Chéad Chéimeanna",
@@ -174,7 +175,49 @@
       "native_text": "Déan comhrá i do theanga is fearr lenár n-aistriúchán ionsuite.",
       "tz_title": "Sceidealú Eolach ar Chriosanna Ama",
       "tz_text": "Gan níos mó matamaitice crios ama — déanaimid na tiontaithe ar fad duitse.",
-      "select_label": "Roghnaigh Teanga:"
+      "select_label": "Roghnaigh Teanga:",
+      "translated_title": "Comhéadan Aistrithe",
+      "translated_text": "Nasclean an UI i do theanga féin agus féach ar achoimrí cluiche AI i do logánú roghnaithe."
+    },
+    "how_full": {
+      "title": "Conas a Oibríonn SoulTribe",
+      "step1": "Cruthaigh do spás — cláraigh agus roinn na heilimintí riachtanacha a chruthaíonn d'fingerprint fuinnimh uathúil.",
+      "step2": "Socraigh do bhunús — roghnaigh do phríomhtheanga, tánaisteacha roghnacha, dáta breithe, agus dearbhaigh do chrios ama áitiúil reatha.",
+      "step3": "Oscail do sceideal — cruthaigh sliotáin infhaighteachta ionas go mbeidh a fhios ag an gcóras cathain a bhíonn tú saor.",
+      "step4": "Faigh amach cluichí atá bunaithe ar athshondas — leagann ár n-intleacht charta béim ar dhaoine a bhfuil a gcuid fuinnimh ag teacht le do cheann féin.",
+      "step5": "Tabhair faoi deara na forluí — nochtann infhaighteacht fhorluí cathain a bhíonn comhpháirtí cluiche féideartha saor ag an am céanna.",
+      "step6": "Mol nó dearbhaigh cruinniú — seol nó glac le cuirí nuair a bhraitheann an t-am ceart.",
+      "step7": "Glac páirt sa chomhrá Jitsi — buail le chéile aghaidh ar aghaidh i seomra físe sábháilte, príobháideach nuair a bhíonn gach duine réidh.",
+      "summary": "Tá gach céim faoi threoir comhaontú agus deartha chun do theorainneacha a urramú."
+    },
+    "different": {
+      "title": "Cén Fáth a bhfuil SoulTribe Difriúil",
+      "item1": "Cluiche réalteolaíochta ar dtús, a thugann urraim do nuances thar chomharthaí na gréine.",
+      "item2": "Príobháideacht atá dírithe ar dhaoine gan fógraí, picteilíní rianaithe nó halgartaim gan choinne.",
+      "item3": "Pleanáil faoi threoir comhaontú le fíorú, moltaí soiléire, dearbhuithe agus cealuithe éasca.",
+      "item4": "Ceangal treoraithe trí léargais AI cluiche, béimeanna láidre agus leideanna léirmhínithe próifíle."
+    },
+    "experience": {
+      "title": "Cad a Bhraithfidh Tú",
+      "item1": "Réamhráitheanna athshondais ar dtús a dhíorthaítear ó scóráil sínastrach agus infhaighteacht fhorluí — gan scrollaigh gan deireadh.",
+      "item2": "Léargais faoi threoir AI le achoimrí láidre cluiche agus léirmhínithe próifíle chun tacú le comhráite machnamhacha.",
+      "item3": "Rithim faoi threoir comhaontú ina molann tú, dearbhaíonn nó cealaíonn tú cruinnithe agus cuireann tú cuireadh ar dhaoine eile chuig Jitsi nuair a aontaíonn gach duine.",
+      "summary": "Bog sa rithim a oireann duit — stop ag am ar bith agus lean ar aghaidh leis an snáithe nuair a bhíonn tú réidh."
+    },
+    "matching_full": {
+      "title": "Conas a Oibríonn Cluiche",
+      "step1": "Sintéisiú cairte — comhcheanglaímid sonraí breithe gach ball chun gnéithe sínastracha, cothromaíocht eiliminteach agus forluí tithe a ríomh.",
+      "step2": "Meastóireacht chomhoiriúnachta — déantar scór agus veicteoir láidre de na táscairí; nuair a sháraíonn sé ár dtairseach infheictheachta agus nuair a fhorluíonn infhaighteacht, feictear an cluiche ar do dheais.",
+      "step3": "Comhthéacs le haghaidh gníomhaíochta — iarr achoimre scríofa AI chun téamaí lárnacha agus láidreachtaí a leagan béim orthu roimh theagmháil.",
+      "summary": "Gan scrollaigh, ach comhthéacsanna réalteolaíochta soiléire chun do nasc seo chugainn a roghnú go cúramach."
+    },
+    "support": {
+      "title": "Tacaíocht & Acmhainní",
+      "item1": "Onboarding concierge le leidí chun cabhrú leat an méid ceart a roinnt.",
+      "item2": "Seiceálacha treoraithe trí achoimrí cluiche a chruthaítear le AI agus machnaimh próifíle chun comhráite a choinneáil ar ancaire.",
+      "item3": "Cruinnithe 1:1 leis an rogha daoine eile a thabhairt isteach i do sheomra Jitsi nuair a aontaíonn gach duine.",
+      "item4": "Leabharlann acmhainní ina bhfuil treoracha cumarsáide, cleachtais sábháilteachta agus leideanna maidir le cruinnithe 1:1 bríoch.",
+      "summary": "Táimid anseo roimh, le linn agus tar éis gach nasc a chruthaíonn tú."
     }
   },
   "login": {
