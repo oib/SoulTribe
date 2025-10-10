@@ -121,7 +121,8 @@
       "step5": "Lägg märke till överlappningar — överlappande tillgänglighet avslöjar när en potentiell matchningspartner är ledig samtidigt.",
       "step6": "Föreslå eller bekräfta ett möte — skicka eller acceptera inbjudningar när tiden känns rätt.",
       "step7": "Gå med i Jitsi-chatten — träffas ansikte mot ansikte i ett säkert, privat videorum när alla är redo.",
-      "summary": "Varje steg styrs av samtycke och designas för att respektera dina gränser."
+      "summary": "Varje steg styrs av samtycke och designas för att respektera dina gränser.",
+      "step8": "Detaljerad guide för nästa steg"
     },
     "different": {
       "title": "Varför SoulTribe är annorlunda",
