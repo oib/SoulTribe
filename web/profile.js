@@ -6,7 +6,12 @@
   // Get global functions from app.js
   const api = window.api;
   const show = window.show;
-  const toast = window.toast;
+  const toast = (...args) => {
+    try {
+      const fn = (typeof window !== 'undefined') ? window.toast : null;
+      if (typeof fn === 'function') return fn(...args);
+    } catch {}
+  };
   const bindClick = window.bindClick;
   const token = () => window.token;
 
@@ -1016,10 +1021,13 @@
       if (button) button.disabled = true;
       try {
         await api('/api/profile', { method: 'DELETE', auth: true });
-        toast('Account deleted');
-        try { localStorage.removeItem('access_token'); } catch {}
-        try { localStorage.removeItem('refresh_token'); } catch {}
-        window.location.href = '/goodbye.html';
+        const message = window.SimpleI18n?.t ? window.SimpleI18n.t('profile.account_deleted', 'Your account has been deleted.') : 'Your account has been deleted.';
+        toast(message, 'success');
+        try { window.setToken?.(null); } catch {}
+        try { window.setRefreshToken?.(null); } catch {}
+        setTimeout(() => {
+          window.location.href = '/index.html';
+        }, 400);
       } catch (err) {
         console.error('Account deletion failed', err);
         toast('Failed to delete account', 'error');
