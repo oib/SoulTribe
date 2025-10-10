@@ -1,6 +1,6 @@
 # SoulTribe.chat — Current State (Backend, API, DB, Frontend)
 
-Last updated: 2025-09-16
+Last updated: 2025-10-10
 
 ## Backend and DB
 - Postgres-only via `DATABASE_URL` in `.env`.
@@ -97,6 +97,26 @@ Last updated: 2025-09-16
 ### Welcome Page
 - Simplified welcome heading
 - Updated layout and styling
+
+### UI/UX Updates (2025-10-10)
+
+#### Landing Page Redesign
+- Consolidated duplicate sections ("How It Works", "Getting Started", "Next Steps") into streamlined cards.
+- Updated "How SoulTribe Works" with detailed 7-step onboarding flow.
+- Revised "Why SoulTribe is Different" with accurate feature highlights (consent-first scheduling, AI insights).
+- Refactored "What You'll Experience" to focus on resonance-first introductions and AI-guided conversations.
+- Expanded "How Matching Works" with technical details on chart synthesis, scoring, and AI context.
+- Refined "Support & Resources" to emphasize concierge onboarding and 1:1 meetups.
+- Global community section now highlights translated interface and timezone awareness.
+
+#### Internationalization (i18n)
+- All 35 supported locales now have draft translations for landing page content.
+- Translation system updated with new keys under `landing.*` sections.
+- UI now loads localized strings for the landing page across all languages.
+
+#### Toast and Auth Fixes
+- Fixed login page toast notifications by loading `toast.js` before `app.js`.
+- Account deletion now shows success toast, clears tokens, and redirects to landing page.
 
 ### Previous Updates (2025‑09‑14)
 - Availability inputs are compact and aligned in a single row (date, start, end). Mobile reflows to one column.

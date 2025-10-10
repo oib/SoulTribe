@@ -65,8 +65,8 @@ The application supports the following languages:
 | ca | Català (Catalan) | ✅ Complete |
 | gl | Galego (Galician) | ✅ Complete |
 | is | Íslenska (Icelandic) | ✅ Complete |
-| lb | Lëtzebuergesch (Luxembourgish) | ⚠️ Basic |
-| sq | Shqip (Albanian) | ❌ Not started |
+| lb | Lëtzebuergesch (Luxembourgish) | ✅ Complete (draft) |
+| sq | Shqip (Albanian) | ✅ Complete (draft) |
 
 ## How to Use
 
@@ -133,6 +133,10 @@ Users can change their language preference, which:
 ### Translation Loading
 
 Translations are loaded asynchronously when needed and cached in memory. The system will only make a network request for a translation file once per session.
+
+## Recent Updates (2025-10-10)
+- All 35 locales now have draft translations for landing page content.
+- New keys added under `landing.*` sections.
 
 ## Best Practices
 

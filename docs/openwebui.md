@@ -164,3 +164,8 @@ def openwebui_comment(res, ua, ub, lang="en"):
 ## Conclusion
 
 SoulTribe.chat's integration with OpenWebUI demonstrates a robust approach to incorporating AI-generated content into a web application. By adapting the components and patterns described, other Windsurf projects can leverage AI capabilities through OpenWebUI for various use cases, enhancing user experience with personalized, dynamic content.
+
+
+## Recent Updates (2025-10-10)
+- AI integration now supports localized match summaries for all 35 locales.
+- Landing page content includes detailed descriptions of AI-powered features.
