@@ -1,4 +1,14 @@
 /* Login page-specific styles */
+.container {
+  padding-top: calc(var(--navbar-height, 60px) + 24px);
+}
+
+/* Login page does not need the mobile burger menu */
+.navbar-toggle,
+.navbar-menu-close {
+  display: none !important;
+}
+
 .form { max-width: 420px; margin: 24px auto; }
 
 /* Moved from styles.css */

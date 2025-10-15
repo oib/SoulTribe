@@ -238,19 +238,54 @@ section h2 { margin: 0 0 12px; font-size: 18px; color: #111827; }
 
 /* Make inputs in the profile form take full width on mobile */
 @media (max-width: 640px) {
-  .row > input,
-  .row > select,
   .row > button {
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
   }
 }
 .small { font-size: 12px; color: #6b7280; }
 
 
-input { height: 36px; padding: 0 12px; border: 1px solid #d1d5db; border-radius: 8px; outline: none; min-width: 220px; background: #fff; }
+input {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  min-width: 0;
+  background: #fff;
+  width: auto;
+  max-width: 100%;
+  flex: 1 1 0;
+}
 input:focus { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15); }
-select { height: 36px; padding: 0 12px; border: 1px solid #d1d5db; border-radius: 8px; outline: none; min-width: 140px; background: #fff; }
+select {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  min-width: 0;
+  background: #fff;
+  width: auto;
+  max-width: 100%;
+  flex: 1 1 0;
+}
 select:focus { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15); }
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row > input,
+.row > select,
+.row > .autocomplete {
+  flex: 1 1 240px;
+  max-width: 100%;
+}
 
 /* Base button styles */
 button,
@@ -339,8 +374,138 @@ button:active:not(:disabled),
 /* Disabled state */
 button:disabled,
 .button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+button,
+.button,
+.btn-confirm-meetup,
+.btn-cancel-meetup,
+a.button {
+  height: 36px;
+  min-width: 80px;
+  padding: 0 16px;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  text-align: center;
+}
+
+#btn-profile-update {
+  height: 44px;
+  min-width: 160px;
+  width: min(240px, 100%);
+  padding: 0 24px;
+  border-radius: 12px;
+}
+
+#btn-live-geolocate,
+#btn-birth-geolocate {
+  min-width: 160px;
+  width: min(220px, 100%);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+#btn-account-delete {
+  width: min(240px, 100%);
+  min-width: 180px;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 12px;
+}
+
+#livePlace,
+#birthPlace,
+#birthDate,
+#birthLat,
+#birthLon,
+#primaryLanguage,
+#languageInput {
+  flex: 1 1 280px;
+  max-width: 100%;
+}
+
+#birthLat,
+#birthLon {
+  flex: 1 1 160px;
+  max-width: 200px;
+}
+
+@media (max-width: 640px) {
+  #birthLat,
+  #birthLon {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Width tuning for birth date */
+#birthDate {
+  width: min(240px, 100%);
+}
+
+/* Ensure consistent control heights for key profile fields */
+#primaryLanguage,
+#birthDate,
+#birthLat,
+#birthLon {
+  height: 40px;
+}
+
+/* Fine-tune primaryLanguage select to match common height and align text */
+#primaryLanguage {
+  line-height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.time-select {
+  height: 40px;
+}
+
+/* Reserve space for fixed navbar on authenticated pages */
+body.authenticated .container {
+  padding-top: calc(var(--navbar-height, 60px) + 16px);
+}
+
+/* Normalize fieldset sizing inside cards to match card width (all nesting levels) */
+.card fieldset {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 12px 0;
+  box-sizing: border-box;
+}
+
+/* Ensure legends (e.g., profile.location.legend, profile.birth.legend) don't overflow card */
+.card fieldset > legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+/* Align fieldset contents to the left */
+.card fieldset .row {
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 pre { background: #0b1020; color: #e2e8f0; border-radius: 12px; padding: 12px; overflow: auto; max-height: 380px; border: 1px solid #1f2937; }
@@ -497,7 +662,7 @@ html[data-theme="dark"] .small { color: #9ca3af; }
 .card .row + .small { margin-top: -6px; }
 html[data-theme="dark"] .brand { background: linear-gradient(135deg, #a78bfa, #22d3ee); -webkit-background-clip: text; background-clip: text; color: transparent; }
 html[data-theme="dark"] input { background: #0b1020; color: #e5e7eb; border: 1px solid #334155; }
-html[data-theme="dark"] select { background: #0b1020; color: #e5e7eb; border: 1px solid #334155; }
+html[data-theme="dark"] select { background: #0b1020; color: #e5e7eb; border: 1px solid #334155; height: 40px; }
 html[data-theme="dark"] input::placeholder { color: #64748b; }
 html[data-theme="dark"] input:focus { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25); }
 html[data-theme="dark"] select:focus { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25); }

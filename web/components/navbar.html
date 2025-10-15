@@ -1,21 +1,6 @@
 <!-- Navigation will be loaded here by components.js -->
 <nav class="navbar">
   <div class="navbar-container">
-    <!-- Left-aligned items (Language + Timezone) -->
-    <div class="navbar-left">
-      <div class="language-selector-container">
-        <select id="language-selector" class="language-selector" aria-label="Select language">
-          <option value="de">DE - Deutsch</option>
-          <option value="en" selected>EN - English</option>
-          <option value="es">ES - Español</option>
-          <option value="fr">FR - Français</option>
-          <option value="it">IT - Italiano</option>
-          <option value="pt">PT - Português</option>
-        </select>
-      </div>
-      <span class="badge mono" id="tzTopBadgeText" style="margin-left:8px; display:none;">Using timezone: …</span>
-    </div>
-
     <!-- Brand/logo (centered) -->
     <div class="navbar-logo-container">
       <a href="/" class="navbar-logo">
@@ -43,20 +28,40 @@
       </a>
     </div>
 
-    <!-- Right-aligned items (Buttons) -->
-    <div class="navbar-right">
-      <!-- User Menu -->
-      <div class="user-menu" style="display: flex; align-items: center; gap: 10px;">
-        <a href="/login.html" id="login-link" class="btn btn-primary" style="display: inline-block;" data-i18n="landing.next.login_register">Login / Register</a>
-        <a href="/profile.html" id="profile-btn" class="btn btn-primary" style="display: none;" data-i18n="nav.profile">Profile</a>
-        <a href="/dashboard.html" id="dashboard-btn" class="btn btn-primary" style="display: none;" data-i18n="nav.dashboard">Dashboard</a>
-        <button id="logout-btn" class="btn btn-secondary" data-i18n="nav.logout" style="display: none;">Log Out</button>
-      </div>
-    </div>
-    
-    <button class="navbar-toggle" aria-label="Toggle navigation">
+    <button class="navbar-toggle" aria-label="Toggle navigation" type="button" aria-expanded="false" aria-controls="navbar-menu">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
       <span class="hamburger"></span>
     </button>
+
+    <div class="navbar-menu" id="navbar-menu">
+      <button class="navbar-menu-close" type="button" aria-label="Close menu">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-left">
+        <div class="language-selector-container">
+          <select id="language-selector" class="language-selector" aria-label="Select language">
+            <option value="de">Deutsch</option>
+            <option value="en" selected>English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+          </select>
+        </div>
+        <span class="badge mono" id="tzTopBadgeText" style="margin-left:8px; display:none;">Using timezone: …</span>
+      </div>
+
+      <div class="navbar-right">
+        <div class="user-menu" style="display: flex; align-items: center; gap: 10px;">
+          <a href="/login.html" id="login-link" class="btn btn-primary" style="display: inline-block;" data-i18n="landing.next.login_register">Login / Register</a>
+          <a href="/profile.html" id="profile-btn" class="btn btn-primary" style="display: none;" data-i18n="nav.profile">Profile</a>
+          <a href="/dashboard.html" id="dashboard-btn" class="btn btn-primary" style="display: none;" data-i18n="nav.dashboard">Dashboard</a>
+          <button id="logout-btn" class="btn btn-secondary" data-i18n="nav.logout" style="display: none;">Log Out</button>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 

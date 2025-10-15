@@ -458,7 +458,10 @@
     "messages": "Messages",
     "profile": "Profile",
     "login": "Log In",
-    "logout": "Log Out"
+    "logout": "Log Out",
+    "about": "About",
+    "next_steps": "Next Steps",
+    "guest_guide": "Guest Guide"
   },
   "imprint": {
     "title": "Imprint"

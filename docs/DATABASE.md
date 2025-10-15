@@ -178,3 +178,23 @@ SELECT pg_size_pretty(pg_database_size('soultribe'));
 - Database credentials should never be hardcoded in the application
 - Regular backups are recommended
 - Consider using a connection pooler in production for better performance
+
+## Cascade MCP Access
+- Ensure the MCP Postgres server CLI is installed:
+  ```bash
+  npm install -g @modelcontextprotocol/server-postgres
+  ```
+- Configure `/.windsurf/mcp.config.json` so Cascade points to the correct database:
+  ```json
+  {
+    "servers": {
+      "postgres": {
+        "command": "server-postgres",
+        "args": [
+          "postgresql://soultribe:660165ff44a860a5@localhost:5432/soultribe"
+        ]
+      }
+    }
+  }
+  ```
+- Reload Windsurf’s MCP tooling (or restart the IDE) before issuing Cascade queries such as `List the tables in the SoulTribe database`.

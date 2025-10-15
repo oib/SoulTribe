@@ -1,6 +1,9 @@
 /* Profile page-specific styles */
 #radixSection { margin-top: 16px; }
 
+/* Reserve space for the fixed navbar on this page */
+body .container { padding-top: calc(var(--navbar-height, 60px) + 16px); }
+
 .notification-toggle {
   display: flex;
   align-items: center;
@@ -111,6 +114,7 @@
 
 /* Profile autocomplete (birth place) */
 .autocomplete { position: relative; display: inline-block; min-width: 320px; }
+.card .autocomplete { min-width: 0; width: 100%; box-sizing: border-box; display: block; }
 .autocomplete-list { position: absolute; top: 38px; left: 0; right: 0; z-index: 50; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
 .autocomplete-item { padding: 8px 12px; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
 .autocomplete-item:hover { background: #f3f4f6; }

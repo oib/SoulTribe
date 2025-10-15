@@ -138,12 +138,34 @@ async function loadComponents() {
 function initMobileMenu() {
   const toggle = document.querySelector('.navbar-toggle');
   const menu = document.querySelector('.navbar-menu');
+  const closeBtn = document.querySelector('.navbar-menu-close');
   
   if (toggle && menu) {
+    if (toggle.dataset.bound === 'true') return;
+
+    const closeMenu = () => {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('navbar-menu-open');
+    };
+
     toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-      toggle.classList.toggle('active');
+      const isOpen = menu.classList.toggle('active');
+      toggle.classList.toggle('active', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      document.body.classList.toggle('navbar-menu-open', isOpen);
     });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => closeMenu());
+    }
+
+    menu.querySelectorAll('a, button').forEach((item) => {
+      item.addEventListener('click', () => closeMenu());
+    });
+
+    toggle.dataset.bound = 'true';
   }
 }
 
@@ -172,7 +194,7 @@ async function initLanguageSelector(selectorId) {
     
     if (availableLanguages.length === 0) {
       // Fallback to English if no languages are available
-      selector.innerHTML = `<option value="en" selected>EN - English</option>`;
+      selector.innerHTML = `<option value="en" selected>English</option>`;
       return;
     }
     
@@ -182,7 +204,7 @@ async function initLanguageSelector(selectorId) {
     // Generate options
     selector.innerHTML = availableLanguages
       .map(([code, name]) => {
-        const displayName = `${code.toUpperCase()} - ${name}`;
+        const displayName = name;
         return `<option value="${code}" ${code === currentLang ? 'selected' : ''}>${displayName}</option>`;
       })
       .join('');

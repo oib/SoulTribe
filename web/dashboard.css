@@ -4,6 +4,12 @@
 .two-col { display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 980px) { .two-col { grid-template-columns: 1fr 1fr; } }
 
+@media (min-width: 769px) {
+  .navbar-menu-close {
+    display: none !important;
+  }
+}
+
 .avail-grid { display:flex; gap:8px; flex-wrap:wrap; }
 .avail-group select, .avail-group input { min-width: 120px; }
 

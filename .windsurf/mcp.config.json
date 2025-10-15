@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "postgres": {
+      "command": "server-postgres",
+      "args": [
+        "postgresql://soultribe:660165ff44a860a5@localhost:5432/soultribe"
+      ]
+    }
+  }
+}
