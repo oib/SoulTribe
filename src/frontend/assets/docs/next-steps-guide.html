@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="nextStepsGuide.page_title">Getting Started • Detailed Next Steps</title>
+  <link rel="stylesheet" href="/css/theme.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <style>
+    .guide-container { max-width: 920px; margin: 100px auto 0; padding: 2rem 1.5rem 4rem; }
+    .guide-card { background: rgba(15, 23, 42, 0.75); border-radius: 24px; padding: 2.25rem 2.5rem; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.35); }
+    .guide-card h1, .guide-card h2, .guide-card h3 { margin-top: 0; }
+    .guide-card ol, .guide-card ul { padding-left: 1.25rem; }
+    .callout { background: rgba(56, 189, 248, 0.08); padding: 1rem 1.25rem; border-radius: 12px; margin: 1rem 0 1.25rem; }
+    .step { margin: 2rem 0; }
+    .step header { display: flex; align-items: baseline; gap: .5rem; }
+    .step-number { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 999px; background: linear-gradient(135deg, #a855f7, #38bdf8); color: #fff; font-weight: 700; font-size: .95rem; }
+    .link-row { margin-top: 1rem; }
+    .link-row a { display: inline-block; padding: 0.6rem 1.1rem; background: rgba(148, 163, 184, .12); border: 1px solid rgba(148, 163, 184, .25); border-radius: 10px; text-decoration: none; margin-right: .5rem; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    @media (max-width: 600px) {
+      .guide-card { padding: 1.5rem; border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div data-component="navbar"></div>
+
+  <main class="guide-container">
+    <article class="guide-card">
+      <h1 data-i18n="nextStepsGuide.title">Detailed Next Steps Guide</h1>
+      <p data-i18n="nextStepsGuide.intro">This guide expands the landing page steps and walks you through each action with tips and links.</p>
+
+      <section class="step" id="step-1">
+        <header>
+          <span class="step-number">1</span>
+          <h2 data-i18n="nextStepsGuide.steps.step1.heading">Create an account</h2>
+        </header>
+        <p data-i18n="nextStepsGuide.steps.step1.description">Register with your email to access your dashboard and profile. No social logins required.</p>
+        <ul>
+          <li data-i18n="nextStepsGuide.steps.step1.bullets.item1">Use a valid email; verification links expire after 24 hours.</li>
+          <li data-i18n="nextStepsGuide.steps.step1.bullets.item2">After confirming, you'll be redirected to login.</li>
+        </ul>
+        <div class="link-row">
+          <a href="/login.html" data-i18n="nextStepsGuide.steps.step1.link">Go to Login / Register</a>
+        </div>
+      </section>
+
+      <section class="step" id="step-2">
+        <header>
+          <span class="step-number">2</span>
+          <h2 data-i18n="nextStepsGuide.steps.step2.heading">Fill your profile</h2>
+        </header>
+        <p data-i18n="nextStepsGuide.steps.step2.description">Add your birth details to enable resonance-based matching. Approximate birth time is fine; more accurate improves results.</p>
+        <ul>
+          <li data-i18n="nextStepsGuide.steps.step2.bullets.item1">Enter birth date, time, and place. If you don't know the exact time, pick an estimate.</li>
+          <li data-i18n="nextStepsGuide.steps.step2.bullets.item2">Write a short intro that reflects your interests and intentions. Be specific and genuine.</li>
+        </ul>
+        <div class="callout" data-i18n="nextStepsGuide.steps.step2.callout">Tip: Your profile timezone is detected automatically; you can review it in your dashboard.</div>
+        <div class="link-row">
+          <a href="/profile.html" data-i18n="nextStepsGuide.steps.step2.link">Edit Profile</a>
+        </div>
+      </section>
+
+      <section class="step" id="step-3">
+        <header>
+          <span class="step-number">3</span>
+          <h2 data-i18n="nextStepsGuide.steps.step3.heading">Create a time slot</h2>
+        </header>
+        <p data-i18n="nextStepsGuide.steps.step3.description">Offer one or more time slots when you'd be open to connect. We store your local time and convert to UTC for scheduling.</p>
+        <ul>
+          <li data-i18n="nextStepsGuide.steps.step3.bullets.item1">Pick a start time in your local timezone; choose a duration (e.g., 1–3 hours).</li>
+          <li data-i18n="nextStepsGuide.steps.step3.bullets.item2">Adding slots on multiple days increases the chance of quick matches.</li>
+        </ul>
+        <div class="callout" data-i18n-html="nextStepsGuide.steps.step3.callout">Timezone aware: We handle conversions between your local time and UTC automatically (<span class="mono">UTC±HH:MM</span>).</div>
+        <div class="link-row">
+          <a href="/dashboard.html" data-i18n="nextStepsGuide.steps.step3.link">Open Dashboard</a>
+        </div>
+      </section>
+
+      <section class="step" id="step-4">
+        <header>
+          <span class="step-number">4</span>
+          <h2 data-i18n="nextStepsGuide.steps.step4.heading">Watch out for matches</h2>
+        </header>
+        <p data-i18n="nextStepsGuide.steps.step4.description">Browse suggested matches based on resonance. Check compatibility notes and shared interests.</p>
+        <ul>
+          <li data-i18n="nextStepsGuide.steps.step4.bullets.item1">New suggestions appear as your profile and slots are available.</li>
+          <li data-i18n="nextStepsGuide.steps.step4.bullets.item2">Use filters and notes to track who you'd like to contact.</li>
+        </ul>
+        <div class="callout" data-i18n="nextStepsGuide.steps.step4.callout">Privacy first: Your details remain private. You choose when and how to engage.</div>
+      </section>
+
+      <section class="step" id="step-5">
+        <header>
+          <span class="step-number">5</span>
+          <h2 data-i18n="nextStepsGuide.steps.step5.heading">Propose a meetup or confirm</h2>
+        </header>
+        <p data-i18n="nextStepsGuide.steps.step5.description">When interest is mutual, propose a time within overlapping slots or accept a proposal from your match.</p>
+        <ul>
+          <li data-i18n="nextStepsGuide.steps.step5.bullets.item1">Send a friendly, specific invitation. Suggest one or two time windows.</li>
+          <li data-i18n="nextStepsGuide.steps.step5.bullets.item2">Confirm the plan in chat, then move to a call when both are ready.</li>
+        </ul>
+        <div class="callout" data-i18n="nextStepsGuide.steps.step5.callout">Consent and comfort: move at your own pace. It's okay to keep it text-only.</div>
+      </section>
+
+      <section class="step" id="step-6">
+        <header>
+          <span class="step-number">6</span>
+          <h2 data-i18n="nextStepsGuide.steps.step6.heading">Join the Jitsi chat</h2>
+        </header>
+        <p data-i18n="nextStepsGuide.steps.step6.description">Use Jitsi for optional voice/video. Desktop browsers (Firefox, Chrome) are supported. Text chat is always available.</p>
+        <ul>
+          <li data-i18n="nextStepsGuide.steps.step6.bullets.item1">Test mic/camera, or keep them off and use text only.</li>
+          <li data-i18n="nextStepsGuide.steps.step6.bullets.item2">Pick the right devices via the small arrow next to mic/cam icons.</li>
+        </ul>
+        <div class="link-row">
+          <a href="/docs/guest-jitsi-guide.html" data-i18n="nextStepsGuide.steps.step6.link">Read the Jitsi quick-start</a>
+        </div>
+      </section>
+
+      <hr />
+      <p class="closing" data-i18n="nextStepsGuide.closing">Enjoy connecting in a way that feels right for you.</p>
+    </article>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="/i18n/i18n.js"></script>
+  <script src="/js/components.js"></script>
+  <script>
+    // Ensure language selector is visible on docs pages as well
+    (function ensureLanguageSelector() {
+      function revealSelector() {
+        const wrap = document.querySelector('.language-selector-container');
+        const select = document.getElementById('language-selector');
+        if (!wrap || !select) return false;
+        wrap.style.display = '';
+        wrap.style.visibility = 'visible';
+        wrap.style.opacity = '1';
+        return true;
+      }
+
+      if (revealSelector()) return;
+
+      const observer = new MutationObserver(() => {
+        if (revealSelector()) {
+          observer.disconnect();
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

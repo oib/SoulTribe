@@ -5,8 +5,8 @@ const path = require('path');
 const { glob } = require('glob');
 
 // Configuration
-const SOURCE_DIRS = ['web'];
-const OUTPUT_FILE = path.join(__dirname, '../../web/i18n/translation-keys.json');
+const SOURCE_DIRS = ['src/frontend/pages', 'src/frontend/js'];
+const OUTPUT_FILE = path.join(__dirname, '../../src/frontend/i18n/translation-keys.json');
 const EXCLUDE_PATTERNS = ['**/node_modules/**', '**/i18n/**', '**/*.min.js'];
 
 // Regular expressions to find translation keys

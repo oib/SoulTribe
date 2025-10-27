@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imprint • SoulTribe.chat</title>
+  <link rel="stylesheet" href="/css/theme.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/mobile.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+</head>
+<body class="legal-page">
+  <!-- Navigation will be loaded here by components.js -->
+  <div data-component="navbar"></div>
+  
+  <div class="container">
+    <section class="card md">
+      <div class="two-col">
+        <div>
+          <h1 data-i18n="imprint.title">Imprint</h1>
+          <div class="card">
+            <p><strong data-i18n="imprintPage.contact_name">Andreas Michael Fleckl</strong></p>
+            <p data-i18n="imprintPage.address_line1">Johnstrassse 7/6</p>
+            <p data-i18n="imprintPage.address_line2">1140 Vienna</p>
+            <p data-i18n="imprintPage.address_line3">Austria / Europe</p>
+            <p><a href="mailto:andreas.fleckl@soultribe.chat" class="link" data-i18n="imprintPage.contact_email">andreas.fleckl@soultribe.chat</a></p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/Imprint.jpg" alt="Imprint" style="max-width:391px;width:100%;height:auto;border-radius:10px;border:1px solid #e5e7eb;object-fit:contain;" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer will be loaded here by components.js -->
+  <div data-component="footer"></div>
+
+  <script src="/i18n/i18n.js"></script>
+  <script>
+    try { window.SimpleI18n && window.SimpleI18n.init(); } catch {}
+  </script>
+  <script src="/js/app.js"></script>
+  <script src="/js/components.js"></script>
+</body>
+</html>

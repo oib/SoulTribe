@@ -13,3 +13,11 @@
 
 ## 2025-10-09
 - Persisted profile notification preferences end-to-end (`routes/profile.py`) and refreshed the frontend save flow (`web/profile.js`) to reload the page post-update so browser/email toggles accurately reflect stored state.
+
+## 2025-10-27
+- Repaired backend import paths post-`src/` migration and restored Gunicorn/systemd services; verified `/api/health` and user unit restart.
+- Finished landing-page asset rewiring: build script now copies `pages/`, `assets/components/`, and `assets/css/`; `index.html` ships critical heading styles with deferred JS to eliminate layout thrash.
+- Hardened dynamic component loader (`components.js`) by guarding inline script replacement to avoid null dereferences and added timezone badge/footer fixes.
+- Polished profile UI: redesigned `#primaryLanguage` select styling and ensured component assets are bundled via `make build-frontend`.
+- Updated `docs/dirs.md` to reflect the generated `src/frontend/public/` bundle and remaining reference-rewire tasks.
+- Added esbuild minification to `scripts/build-frontend.js`, shrinking shipped JS/CSS and keeping the generated bundle optimized.

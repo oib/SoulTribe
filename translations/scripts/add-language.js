@@ -29,7 +29,7 @@ async function addLanguage() {
       process.exit(1);
     }
 
-    const translationsDir = path.join(__dirname, '../../web/i18n/locales');
+    const translationsDir = path.join(__dirname, '../../src/frontend/i18n/locales');
     const newLangDir = path.join(translationsDir, langCode);
     const enDir = path.join(translationsDir, 'en');
     
@@ -89,7 +89,7 @@ function addTodoPlaceholders(obj) {
 }
 
 async function updateI18nConfig(langCode, langName) {
-  const i18nPath = path.join(__dirname, '../../web/i18n/i18n.js');
+  const i18nPath = path.join(__dirname, '../../src/frontend/i18n/i18n.js');
   let content = await readFile(i18nPath, 'utf8');
   
   // Find the languages object in the i18n.js file

@@ -1,1 +1,1 @@
-See docs/README.md for full project documentation.
+See docs/ for full project documentation.

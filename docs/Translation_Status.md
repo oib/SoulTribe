@@ -45,6 +45,6 @@
 ## Notes:
 - Guest Jitsi guide currently localized in `en`, `de`, `es`. Other locales fall back to English placeholders until native translations are provided.
 - Draft translations for landing page content completed for all 35 locales (2025-10-10).
-- The translation system supports adding new languages by creating corresponding JSON files in `/web/i18n/locales/`.
+- The translation system supports adding new languages by creating corresponding JSON files in `/src/frontend/i18n/locales/`.
 
 Last updated: 2025-10-10 — All 35 locales now have draft translations for landing page content. Guest guide still limited to en/de/es.

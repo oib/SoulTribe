@@ -1,0 +1,455 @@
+{
+  "landing": {
+    "page_title": "SoulTribe.chat - Aurkitu zure soul tribea",
+    "hero": {
+      "title": "Ongi etorri",
+      "subtitle": "SoulTribe.chat zure soul tribea aurkitzen eta konektatzen laguntzeko sortutako espazioa da — zure energiaren, espirituaren eta ibilbidearen oihartzuna duten pertsonak. ✨",
+      "learn_more": "Ezagutu SoulTribe ikuspegia →"
+    },
+    "how": {
+      "title": "Nola funtzionatzen du",
+      "step1": "Sortu zure profila — sartu jaiotze data, ordua eta tokia zure mapa astral bakarra sortzeko.",
+      "step2": "Deskubritu bat-etortzeak — bateragarritasun eta erresonantzia oinarritutako loturak nabarmentzen ditugu.",
+      "step3": "Hasi elkarrizketa — gonbidatu bat-etortzeak txatera; segurua eta pribatua diseinuz.",
+      "step4": "Elkartu (aukerakoa) — antolatu Jitsi dei bat edo aurrez aurreko topaketa elkarrekiko adostasunarekin."
+    },
+    "getting_started": {
+      "title": "Hasteko",
+      "step1": "Sortu kontua — ez da sare sozialetako saiorik behar.",
+      "step2": "Osatu profila — gehitu jaiotza-datuak; ordu hurbil bat nahikoa da.",
+      "step3": "Ezarri eskuragarritasuna — proposatu ordu-tarte lokalak; guk egingo ditugu UTC bihurketak.",
+      "step4": "Deskubritu bat-etortzeak — arakatu erresonantzian oinarritutako gomendioak.",
+      "step5": "Txateatu eta, nahi izanez gero, elkartu — aplikazioan bertan; antolatu prest zaudenean."
+    },
+    "features": {
+      "title": "Ezaugarriak",
+      "item1": "Astrologia bidezko bat-etortzea — konektatu zure natal karten bidez.",
+      "item2": "Ordu-zonen kudeaketa adimenduna — guk egiten ditugu UTC bihurketak zure ordez.",
+      "item3": "Jitsi bidezko komunikazio zuzena — testua/audioa/bideoa; ezer ez da gordetzen edo grabatzen SoulTribe.chaten.",
+      "item4": "Sarbide erraza loturaz — Jitsi gela pribatua baieztatutako topaketetarako; pribatutasunarekiko errespetuzkoa.",
+      "item5": "Interfaze minimalista — elkarrizketa esanguratsuetarako diseinatua.",
+      "read_more": "Irakurri Jitsi gonbidatuentzako gida azkarra →"
+    },
+    "privacy": {
+      "title": "Pribatutasuna eta segurtasuna",
+      "item1": "Soilik beharrezkoa dena eskatzen dugu benetako loturak ahalbidetzeko.",
+      "item2": "Zure profil-datuak ez dira saltzen edo iragarki-sareekin partekatzen.",
+      "item3": "Zuk erabakitzen duzu norbaitek noiz eta zer informazio parteka dezakeen zurekin."
+    },
+    "matching": {
+      "title": "Nola funtzionatzen du bat-etortzeak (labur)",
+      "text": "Zure kartatik harreman-adierazle nagusiak kalkulatzen ditugu eta besteekin alderatzen ditugu erresonantzia bilatzeko. Lehentasuna: harmonia, osagarritasuna eta hazteko aukera."
+    },
+    "protips": {
+      "title": "Aholkuak",
+      "item1": "Gehitu eskuragarritasun-tarte batzuk egun ezberdinetan konexio azkarragoetarako.",
+      "item2": "Izan zintzo sarreran — xehetasun zehatzek laguntzen dute jende egokia zu aurkitzen.",
+      "item3": "Adostasuna lehenik. Egin aurrera zure erritmoan.",
+      "item2b": "Pertsonalizatu zure irteera — erreferentzia AI indar laburpenari mezuak bidaltzen dituzunean edo bilerak proposatzen dituzunean."
+    },
+    "next": {
+      "title": "Hurrengo urratsak",
+      "go_dashboard": "Joan panelean",
+      "login_register": "Hasi saioa / Eman izena",
+      "step1": "Sortu kontu bat",
+      "step2": "Osatu zure profila",
+      "step3": "Sortu ordu-tarte bat",
+      "step4": "Adi bat-etortzeei",
+      "step5": "Proposatu edo baieztatu topaketa",
+      "step6": "Sartu Jitsi txatean",
+      "read_more": "Irakurri gida xehea →"
+    },
+    "global": {
+      "title": "Komunitate globala, ordu lokala",
+      "text": "Konektatu antzeko arimadun pertsonekin mundu osoan ordu-zonen bihurketa automatikoarekin.",
+      "auto_title": "Ordu-zonaren detekzio automatikoa",
+      "auto_text": "Zure ordu-zona automatikoki antzematen dugu planifikazioa errazteko.",
+      "native_title": "Ama-hizkuntzaren euskarria",
+      "native_text": "Txateatu gogoko duzun hizkuntzan txertatutako itzulpenarekin.",
+      "tz_title": "Ordu-zonaz kontzientea den planifikazioa",
+      "tz_text": "Ez dago kalkulu gehiagorik — guk egiten ditugu zure ordez.",
+      "select_label": "Hautatu hizkuntza:",
+      "translated_title": "Itzulitako interfaze",
+      "translated_text": "Nabigatu UI zure hizkuntzan eta ikusi AI bat-etortze laburpenak zure hobetsitako lokalizazioan."
+    },
+    "how_full": {
+      "title": "Nola funtzionatzen du SoulTribe-k",
+      "step1": "Sortu zure espazioa — eman izena eta partekatu zure energia-orma unibertsalaren forma ematen duten oinarrizko elementuak.",
+      "step2": "Ezarri zure oinarriak — aukeratu zure hizkuntza nagusia, aukerako bigarrenak, jaiotze-data eta baieztatu zure uneko tokiko ordu-zona.",
+      "step3": "Ireki zure egutegia — sortu erabilgarritasun-hutsuneak sistemak jakin dezan noiz zauden libre.",
+      "step4": "Aurkitu erresonantzia-oinarritutako bat-etortzeak — gure diagrama-adimendunak zurearekin bat datorren energia duten pertsonak nabarmendu ditu.",
+      "step5": "Ohartu gainjartzeak — gainjartutako erabilgarritasunak agerian uzten du noiz bat-etortze- bikote potentzial bat denboran libre.",
+      "step6": "Proposatu edo baieztatu bilera bat — bidali edo onartu gonbidapenak une egokia dirudienean.",
+      "step7": "Sartu Jitsi txatera — aurrean aurre elkartu bideo-gela seguru eta pribatu batean denak prest daudenean.",
+      "summary": "Urrats bakoitza baimen- gidatua da eta zure mugak errespetatzeko diseinatua.",
+      "step8": "Hurrengo urratsen gida zehatza"
+    },
+    "different": {
+      "title": "Zergatik da SoulTribe desberdina",
+      "item1": "Astrolo gia-lehen bat-etortzea, eguzki-ikurrak baino haratago doanak.",
+      "item2": "Giza-zentratutako pribatutasuna iragarkirik gabe, jarraipen-pikselak edo algoritmo harrigarrik gabe.",
+      "item3": "Baimen-gidatutako antolaketa egiaztapenarekin, proposamen argiekin, baieztapenak eta erraz bertan behera uzteak.",
+      "item4": "Gidatutako konexioa AI bat-etortze ikuspegiak, indarren nabarmentzeak eta profilaren interpretazio gonbidapenak bidez."
+    },
+    "experience": {
+      "title": "Zer biziko duzu",
+      "item1": "Erresonantzia-lehen sarrerak sinastriko puntuazioetatik eta gainjartutako erabilgarritasunetatik eratorriak — korritze amaigabe gabe.",
+      "item2": "AI-gidatutako ikuspegiak bat-etortze indarren laburpenekin eta profil interpretazioekin elkarrizketa hauskorren laguntzeko.",
+      "item3": "Baimen-gidatutako erritmoa non proposatzen, baieztatzen edo bertan behera uzten dituzun bilerak eta beste batzuk Jitsi-ra gonbidatzen dituzun denak ados daudenean.",
+      "summary": "Mugitu zuretzat egokitzen den erritmoan — gelditu edozein unetan eta jarraitu hariak prest zaudenean."
+    },
+    "matching_full": {
+      "title": "Nola funtzionatzen du bat-etortzeak",
+      "step1": "Diagrama sintesia — kide bakoitzaren jaiotze-datuak konbinatzen ditugu sinastrik aspektuak, elementu oreka eta etxe gainjartzeak kalkulatzeko.",
+      "step2": "Bateragarritasun ebaluazioa — adierazleak puntuazio eta indar bektore bihurtzen dira; gure ikusgaitasun atalasea gainditzen duenean eta erabilgarritasuna gainjartzen denean, bat-etortzea zure aginte-panelean agertzen da.",
+      "step3": "Ekintzarako testuingurua — eskatu AI-idatzitako laburpena gai garrantzitsuak eta indarrak nabarmentzeko kontaktua baino lehen.",
+      "summary": "Korritzerik gabe, zure hurrengo konexioa arretaz aukeratzeko astrolo gia testuinguru argiak soilik."
+    },
+    "support": {
+      "title": "Laguntza & Baliabideak",
+      "item1": "Concierge onboarding gonbidapenekin zure behar dena partekatzen laguntzeko.",
+      "item2": "Gidatutako check-inak AI-sortutako bat-etortze laburpenen eta profil hausnarketen bidez elkarrizketak ainguratzeko.",
+      "item3": "1:1 bilerak beste batzuk zure Jitsi gelara gonbidatzeko aukerarekin denak ados daudenean.",
+      "item4": "Baliabide liburutegia komunikazio gidak, segurtasun praktikak eta 1:1 bilera esanguratsuak aholkuak barne.",
+      "summary": "Hemen gaude sortzen duzun konexio bakoitzaren aurretik, bitartean eta ondoren."
+    }
+  },
+  "guestGuide": {
+    "title": "SoulTribe Jitsi gonbidatuentzako gida azkarra",
+    "intro": "Gida honek lehen aldiz SoulTribe Jitsi geletan sartzen direnei laguntzen die. Erabili behar dituzun urratsak soilik. Testua, audioa eta bideoa aukerakoak dira.",
+    "prejoin": {
+      "heading": "Sartu aurretik",
+      "steps": {
+        "options": "Ezagutu erabilgarri dauden aukerak. Jitsik testu-txata, audioa eta bideoa onartzen ditu. Zuk erabakitzen duzu zer aktibatu.",
+        "permissions": "Eman eskatutako baimenak. Orrialdeak eskatzen duenean, onartu arakatzaileak mikrofonoa eta kamera erabiltzea.",
+        "setup": "Hartu une bat prestatzeko gelan sartu aurretik."
+      },
+      "substeps": {
+        "name": "Izena: idatzi nola agertu nahi duzun besteentzat.",
+        "background": "Atzeko planoa: aukeratu lausotzea edo atzeko plano birtuala pribatutasun handiagoa izateko."
+      },
+      "mic_camera_label": "Mikrofonoa eta kamera",
+      "mic_camera_text": "Erabili lehen bi botoiak mikrofonoa eta kamera piztu/itzaltzeko sartu aurretik.",
+      "devices_label": "Gailuak",
+      "devices_before_arrow": "Ireki gezi txikia kontrol bakoitzaren ondoan",
+      "devices_after_arrow": "eta hautatu erabili nahi duzun mikrofonoa edo kamera.",
+      "audio_tip_label": "Audio aholkuak",
+      "audio_tip_text": "Aurikularrek oihartzuna saihesten laguntzen dute. Bozgorailuak erabiltzen badituzu, mantendu bolumena baxu feedback-a ekiditeko."
+    },
+    "browser": {
+      "heading": "Arakatzaileak",
+      "supported": "Firefox eta Chrome-k audio, bideo eta txat osoa onartzen dute.",
+      "unsupported": "Safari, Edge, Opera, Brave eta DuckDuckGo ez daude onartuta oraingoz.",
+      "note": "Beste arakatzaile espezifikoak ez dira egiaztatu",
+      "tip1": "Agertzen bada, baimendu mikrofono eta kamerarako sarbidea helbide-barratik.",
+      "tip2": "Desaktibatu jarraipen-blokeatzaileak edo gehitu Jitsi baimenduen zerrendan.",
+      "tip3": "Kargatu berriro fitxa baimenak aldatzean, aldaketak aplikatzeko."
+    },
+    "layout": {
+      "heading": "Gelaren ikuspegi orokorra",
+      "description": "Erdiko bideo eremuak kamera aktibatuta dutenak bistaratzen ditu. Behealdeko kontrol-barrak mikrofonoa, kamera, pantaila partekatzea, txata, parte-hartzaileak eta bestelako ikonoak ditu. Eskuineko panelak parte-hartzaileen zerrenda eta partekatutako pantailak irekitzen ditu."
+    },
+    "toolbar": {
+      "heading": "Kontrol-barrako ikonoak",
+      "columns": {
+        "icon": "Ikonoa",
+        "label": "Etiketa",
+        "description": "Zer egiten du"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Mikrofonoa",
+          "description": "Piztu/itzali mikrofonoa eta aukeratu gailua."
+        },
+        "camera": {
+          "label": "Kamera",
+          "description": "Piztu/itzali kamera eta aukeratu iturria."
+        },
+        "screen": {
+          "label": "Pantaila partekatu",
+          "description": "Partekatu pantaila osoa, leiho bat edo fitxa bat."
+        },
+        "chat": {
+          "label": "Txata",
+          "description": "Ireki testu-txata mezuak edo estekak bidaltzeko."
+        },
+        "participants": {
+          "label": "Parte-hartzaileak / Gonbidatu",
+          "description": "Ikusi nor dagoen gelan, gonbidatu beste batzuk eta onartu zain daudenak."
+        },
+        "more": {
+          "label": "Aukera gehiago",
+          "description": "Sarbidea segurtasun ezarpenetara, gailu hobespenetara eta beste tresna batzuetara."
+        },
+        "hangup": {
+          "label": "Amaitu",
+          "description": "Amaitu deia eta irten gelatik."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Esteka azkarra",
+      "cta": "Sartu berehala jitsi.bubuit.net/soultribe helbidean",
+      "note": "Probatu zure konfigurazioa edo ezagutu gonbidatu adeitsuak. Ez da konturik behar."
+    },
+    "closing": {
+      "heading": "Amaierako oharra",
+      "text": "Gozatu konektatzen zuretzat egokien den eran eta erritmoan."
+    }
+  },
+  "language": {
+    "en": "Ingelesa",
+    "de": "Alemaniera",
+    "eu": "Euskara"
+  },
+  "welcome": {
+    "title": "Ongi etorri SoulTribe.chatera",
+    "subtitle": "Aurkitu zure soul tribea"
+  },
+  "profile": {
+    "title": "Zure profila",
+    "save": "Gorde",
+    "delete_account": "Ezabatu nire kontua",
+    "delete_account_confirm": "Ziur zaude zure kontua ezabatu nahi duzula? Ekintza hau ezin da desegin.",
+    "cancel": "Utzi",
+    "basic_info": {
+      "legend": "Oinarrizko informazioa",
+      "username_label": "Erabiltzaile izena",
+      "username_placeholder": "erabiltzaile izena"
+    },
+    "languages": {
+      "legend": "Hizkuntzak"
+    },
+    "location": {
+      "legend": "Uneko kokapena",
+      "city_placeholder": "Uneko hiria (autobetetzea)",
+      "use_my_location": "Erabili nire kokapena",
+      "detected_tz_label": "Antzemandako ordu-zona:",
+      "detected_tz_hint": "(automatikoa edo aukeratu)"
+    },
+    "birth": {
+      "legend": "Jaiotzako datuak (astrologiarako)",
+      "date_placeholder": "Jaiotze data",
+      "hour_label": "Ordua",
+      "minute_label": "Min",
+      "place_placeholder": "Jaiotze tokia (hiria, herrialdea)",
+      "detected_tz_label": "Antzemandako ordu-zona:",
+      "detected_tz_hint": "(automatikoa)",
+      "lat_placeholder": "Latitudea (adib. 43.2630)",
+      "lon_placeholder": "Longitudea (adib. -2.9350)",
+      "instructions": "Ezarri jaiotze data eta tokia zure radix kalkulatzeko. Ordua ez badakizu, utzi hutsik eta eguerdia erabiliko dugu."
+    },
+    "note": "Zure profilak bat-etortzeak pertsonalizatzen eta ordu-zona egokia bistaratzen laguntzen du.",
+    "primary_language_label": "Hizkuntza nagusia (UI)",
+    "other_languages_label": "Beste hizkuntzak (bat-etortzeetarako)",
+    "language_input_placeholder": "Idatzi hizkuntzak gehitzeko...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
+  },
+  "radix": {
+    "title": "Zure radix",
+    "placeholder": "Jaiotzako datuak ezarrita badituzu, hemen agertuko da zure radix.",
+    "show_raw_json": "Erakutsi JSON gordina",
+    "ai": {
+      "get_interpretation": "Lortu interpretazioa",
+      "followup_placeholder": "Egin jarraipen-galdera…",
+      "send": "Bidali"
+    }
+  },
+  "dashboard": {
+    "title": "Panela",
+    "availability": "Eskuragarritasuna",
+    "create_slot": "Sortu tartea",
+    "duration_hours": "Iraupena (ordu)",
+    "meetups": "Topaketak",
+    "matches": "Bat-etortzeak",
+    "overlap_hint": "Bat-etortzea dagoenean, egin klik \"Proposatu ordu hau\" botoian.",
+    "propose_time": "Proposatu ordua",
+    "generate_ai_comment": "Sortu AI iruzkina",
+    "slot_delete": "Ezabatu",
+    "slot_edit": "Editatu",
+    "active_filter_hint": "Azken 30 egunetan aktibo egon diren erabiltzaileak erakusten dira soilik.",
+    "slot_help_summary": "Zer da eskuragarritasun tarte bat?",
+    "slot_help_intro": "Tarteak argitaratzen dituzun denbora leihoak dira, SoulTribe-k bat-etortzeetan proposatu ahal izateko.",
+    "slot_help_step1": "Gehitu tarte bat edo gehiago libre zauden egun eta ordutarako. Sistemak zure eta UTC ordu-zonetan gordeko ditu.",
+    "slot_help_step2": "Bat-etortzeak bilatzean, zure tarteak beste erabiltzaileren tarteekin alderatzen ditugu, betiere etorkizunekoak badira.",
+    "slot_help_step3": "Gainjartzearen txarteletan leiho partekatua erakusten da: UTC, zure tokiko ordua eta bestearen tokiko ordua.",
+    "slot_help_step4": "Egin klik \"Proposatu ordu hau\" botoian, topaketa prozesua hasteko tarte horrekin.",
+    "slot_help_step5": "Zerbait aldatzen bada, eguneratu edo ezabatu tartea gomendio zaharkituak saihesteko.",
+    "slot_help_more": "Laguntza behar? Ireki gida osoa Docs menutik.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
+  },
+  "login": {
+    "page_title": "SoulTribe.chat — Saioa hasi / Eman izena",
+    "title": "Ongi etorri",
+    "intro": "Hasi saioa dagoen kontu batekin edo sortu berri bat.",
+    "email": "email",
+    "confirm_password": "berretsi pasahitza (erregistrorako)",
+    "display_name": "bistaratzeko izena (erregistrorako)",
+    "register": "Eman izena",
+    "login": "Hasi saioa",
+    "redirect_hint": "Saioa hasi ondoren, panelera berbideratuko zara.",
+    "go_dashboard": "Joan panelera",
+    "reset_password": "Berrezarri pasahitza",
+    "resend_verification": "Bidali berriro egiaztapen-mezua",
+    "email_not_verified": "Emaila ez dago egiaztatuta? ",
+    "verification_sent": "Zure emaila egiaztatuta ez badago, mezu berria bidali dugu.",
+    "reset_sent": "Helbide honekin kontua badago, berrezartzeko jarraibideak bidaliko ditugu.",
+    "enter_email_first": "Sartu lehenik zure emaila.",
+    "password_mismatch": "Pasahitzak ez datoz bat.",
+    "required_fields": "Emaila, pasahitza eta bistaratzeko izena derrigorrezkoak dira.",
+    "registration_success": "Kontua sortua. Egiaztatu zure emaila, mesedez.",
+    "login_required": "Emaila eta pasahitza derrigorrezkoak dira."
+  },
+  "nav": {
+    "home": "Hasiera",
+    "dashboard": "Panela",
+    "discover": "Deskubritu",
+    "matches": "Bat-etortzeak",
+    "messages": "Mezuak",
+    "profile": "Profila",
+    "login": "Saioa hasi",
+    "logout": "Amaitu saioa"
+  },
+  "imprint": {
+    "title": "Inprimakia"
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrasse 7/6",
+    "address_line2": "1140 Viena",
+    "address_line3": "Austria / Europa",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "footer": {
+    "terms": "Baldintzak",
+    "privacy": "Pribatutasuna",
+    "imprint": "Inprimakia"
+  },
+  "privacyPage": {
+    "title": "Pribatutasun politika",
+    "summary_intro": "Zure pribatutasuna errespetatzen dugu. Orrialde honek azaltzen du SoulTribe.chat-ek nola kudeatzen dituen zure datuak.",
+    "summary_heading": "Laburpena",
+    "summary_item1": "Zerbitzua eskaintzeko beharrezkoa dena soilik gordetzen dugu.",
+    "summary_item2": "Autentifikazio tokenak tokian bertan gordetzen dira zure gailuan.",
+    "summary_item3": "Datuak ez dira inoiz saltzen.",
+    "contact_note": "Pribatutasunari buruzko galderetarako, jarri harremanetan laguntzarekin.",
+    "image_alt": "Pribatutasuna eta segurtasuna"
+  },
+  "termsPage": {
+    "title": "Zerbitzu-baldintzak",
+    "intro": "Baldintza hauek SoulTribe.chat zerbitzuaren erabilera arautzen dute. Orrialdea erabiliz, baldintzak onartzen dituzu.",
+    "summary_heading": "Laburpena",
+    "summary_item1": "Izan errespetuzkoa. Ez eduki iraingarririk edo legez kontrakorik.",
+    "summary_item2": "18 urte edo gehiago izan behar dituzu izena emateko.",
+    "summary_item3": "Noizean behin zerbitzua eta baldintzak eguneratu ditzakegu.",
+    "contact_note": "Galderetarako, jarri harremanetan laguntzarekin.",
+    "image_alt": "Baldintzak"
+  },
+  "reset_password": {
+    "title": "Berrezarri pasahitza",
+    "intro": "Aukeratu pasahitz berria zure konturako.",
+    "new_password_label": "Pasahitz berria",
+    "new_password_placeholder": "pasahitz berria",
+    "confirm_password_label": "Berretsi pasahitz berria",
+    "confirm_password_placeholder": "berretsi pasahitz berria",
+    "submit": "Ezarri pasahitz berria"
+  },
+  "notifications": {
+    "language_set_to": "Hizkuntza ezarri da"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Konexioen konstelazioa",
+      "subtitle": "Kosmoseko diseinua gizakiaren loturarekin bat datorren tokia — izarrek gidatutako arima senideen babeslekua."
+    },
+    "vision": {
+      "heading": "✨ Ikuskizuna",
+      "body1": "SoulTribe.chatek jaiotza-kartak harmonian dituzten pertsonak konektatzen ditu — astrologian oinarritutako loturak, txat pribatuak eta aukerazko topaketak eskainiz, arima senideek elkar kontzienteki eta zentzu osoz aurki dezaten. Plataformatik harago doa: konexio kosmikoaren esperimentu bizia, non astrologia iragarpen baten ordez enpatia partekatuaren hizkuntza bihurtzen den.",
+      "body2": "Karta bakoitza sinadura bakarra da — izarretan dabilen melodia, besteekin bat eginda, aitortza eta sakontasuna pizten dituena. Espazio honek bilatzaileak hartzen ditu, hitzordu orok helburua duela sumatzen dutenak — sinkroniak gidatzen duela lotura, eta hazkundea eta poza aurrez erabakita dauden harremanetan agertzen direla. SoulTribe.chatek giro segurua, minimalista eta kontzientea eskaintzen du, lotura hauek modu naturalean lor daitezen."
+    },
+    "transition": "Sakonago joan aurretik, egin dezagun jauzi konexio kosmikoaren ideiatik sortzen duen komunitatera — SoulTribe berera.",
+    "soultribe": {
+      "heading": "🌠 Zer da SoulTribe bat?",
+      "body1": "SoulTribe ez da soilik sare bat edo lagunen zerrenda — erresonantzia-eremua da. Frekuentzia, asmo eta espirituaren erritmo bera partekatzen dutenak lotzen dituen ikusezin sare fina. Zure tribeko kideekin topo egiten duzunean, aitortza berehala dator: elkarrizketa aurkezpen bat baino, oroitzapen bat balitz bezala da. Denborak ertzak biribildu eta hitzen arteko tartea sakratu bihurtzen da.",
+      "body2": "Zure SoulTribe barruan osotasunean ikusten zaituzte — zure esentziagatik baloratzen zaituzte, ez irudiagatik. Pertsona bakoitza ispilua bihurtzen da: batzuek indarguneak erakusten dizkizute, beste batzuek ikasgaiak eta gutxi batzuek nor bilaka zaitezkeen gogorarazten dizute. Ausardia, benetakotasuna eta jakintza pizten dute; pertenentzia ez dela antzekotasuna, baizik eta erresonantzia.",
+      "body3": "Zure tribua artistek, ameslariek, sendagileek, zientzialariek edo beren egia isilean ibiltzen diren arimek osatu dezakete. Elkartutzen zaituena ez da jatorria edo sinesmena — bibrazioa baizik."
+    },
+    "power": {
+      "heading": "🔥 Tribu baten indarra",
+      "body1": "SoulTribe oro erresonantzia partekatuaren bitartez eratzen den bezala, bere egiazko indarra lotura horietatik hazten den energia kolektiboan agertzen da.",
+      "body2": "Azkarago hazten gara, sakonago sendatzen eta handiago amesten dugu besteak gure ondoan doazenean eta lekuko direnean. Gizakiak betidanik egin du aurrera zirkuluetan — gure diseinu zaharrena da. Tribu batek energiaren indarra biderkatzen du: batek pizten duena besteak mantentzen du; batek amesten duena hirugarrenak lurretik lotzen du. Eremu partekatu honetan sinkroniak ugaritu eta bilakaera kolektiboa azkartzen da.",
+      "body3": "Parte hartzen duzunean, agian nabarituko duzu zeure energia nola hedatzen den. Ideiak abiadura hartzen dute, sormena isurtzen da, intuizioa zorrozten da. Tribua ispilu, irakasle eta ahalduntze-zirkulu bihurtzen da — gogoraraziz arimaren bidea ez zela inoiz bakarrik egiteko asmatua.",
+      "body4": "SoulTribe.chat barnean, <em>tribu</em>aren ideia ez da esklusibotasunaz, baizik eta sinergiaz. Hemen, indibidualtasuna eta elkarrekin egotea edertasunez bizikidetu. Pertsona bakoitzak bere frekuentzia eramaten du, kontzientziaren konstelazio bizia osatuz — argi-puntu bakoitzak besteak argitzen ditu."
+    },
+    "astro": {
+      "heading": "☀️ Astro eta arima",
+      "body1": "SoulTribe.chateko astrologiak intuizioa eta lotura uztartzen ditu, zure pribatutasuna eta baimena errespetatuz. Bateragarritasun-adierazleak sortzeko ezinbestekoak diren jaiotza-datuak soilik erabiltzen dira, eta zure esperientziarako beharrezkoa dena baino ez da partekatzen edo gordetzen.",
+      "body2": "Zure jaiotza xehetasunetatik abiatuta, plataformak planeten kokapenak kalkulatzen ditu eta besteenekin alderatzen ditu harmonia naturalaren, erresonantzia emozionalaren eta hazkunde potentzialaren eremuak agerian uzteko. Erabiltzaileari datuekin gainkargatu beharrean, emaitzak bateragarritasunaren adierazle argi bihurtzen dira — energiek non bat egiten duten eta harremanak nola eboluzionatu daitezkeen erakutsiz.",
+      "body3": "Ez da zodiakoaren arabera ligatzeko tresna; diseinu kontzienteko arima-erresonantzia da, non kartak ulermenera eta loturara gidatzen duten. Emaitza erromantika, lankidetza sortzailea edo adiskidetasun sakona izan, SoulTribe.chatek laguntzen dizu jakiten zergatik sentitzen diren pertsona jakin batzuk berehala ezagun, eta nola bihurtzen den topaketa oro zure arimaren ispilu."
+    },
+    "soulmates": {
+      "heading": "💫 Arima senideak eta haratago",
+      "body1": "<em>Hingesugulaua</em> hitzak maiz irudimena romantikara mugatzen du, baina arima senideak askotarikoak izan daitezke. Zure barrearen txinparta pizten duen laguna, zure mugak desafiatzen dituen irakaslea edo bere presentzia berehala ezaguna egiten zaizun ezezaguna. SoulTribe.chatek ideia hori zabaltzen du — ez zara pertsona bakarraren bila, baizik eta zure eboluzioaren zatiak daramatzaten askoren bila.",
+      "body2": "Zenbait loturak elektrizitatea pizten dute — intentsuak eta eraldatzaileak. Beste batzuk bake isila eskaintzen dute, zure energia partekatutako isiltasunean ainguratuz. Topaketa bakoitza osotasunerantz urratsa da, gogorarazten duena arimaren bidaia topaketa sakratuen mosaikoa dela. Zure tribua ezagutzea zeure burua ezagutzea da — mila ispilutan islatua."
+    },
+    "benefit": {
+      "heading": "🌍 Nola baliatu",
+      "items": {
+        "item1": "Sortu zure arimaren mapa — sartu zure jaiotza-datuak, zure kosmoseko eredu bakarra marrazteko eta zure energia berezi bihurtzen duena aurkitzeko.",
+        "item2": "Aurkitu erresonantzia — bilatu zure karta islatzen edo osatzen duten kideak. Ikasi nola adierazten dituzten planeten lerrokatzeek harmonia, inspirazio edo karmako xedea.",
+        "item3": "Konektatu benetan — parte hartu elkarrizketa kontzienteetan. SoulTribe.chatek presentzia, jakin-mina eta errespetua sustatzen ditu. Hitzak ulermen tresna bihurtzen dira, ez antzezpena.",
+        "item4": "Hazi elkarrekin — topaketa bakoitza argi-trukea da. Erresonantziaren, kontrastearen edo ukitu leun baten bidez eboluzionatzen duzu. Sistemak ikasteko ispilu onenak nabarmentzen ditu — kontzientzia zabaltzen duten horiek, ez mugikortasun eremu bera islatzen dutenak.",
+        "item5": "Biltzaitezte presentzian — prestasuna modu naturalean agertzen denean, igaro testutik ahotsera, elkarrizketatik elkar-sorkuntzara. Topaketa bakoitza — digitalean edo aurrez aurre — arimen elkarrizketa sakratua bihurtzen da."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest arimarekin konektatzeko",
+      "intro": "Aurkitu zure maiztasuna eta aurkituko duzu zure tribua.",
+      "body1": "Konexioa sakratua da — presente egotean errotzen den elkarrizketa bakoitza kontzientziarako atari bihur daiteke. Teknologiak kontzientziari zerbitzatu behar dio, hurbiltasuna elikatuz eta ez desbideratuz. Astrolojiak, erruki eta argitasunarekin erabilita, ez du patua agerian uzten baizik eta askatasuna ulermenaren bidez. Heliak bat datozenean, elkarrekin bakarrik baino distiratsuagoak diren konstelazioak sortzen dituzte.",
+      "body2": "SoulTribe.chatek gogorarazten digu ez garela zeru urrunpeko ibiltariak, sortzearen partekatutako tapizerian dantzan doazen hari argitsuak baizik. Topaketa bakoitza esnatze-su handiagoan piztutako txinparta da, elkarrizketa bakoitza zerbait handi eta sakratuaren erritmoan dabilen bihotz taupada.",
+      "closing": "Elkarrekin gogoratzen dugu nor garen — arima askoren tribe bakarra."
+    },
+    "join": {
+      "heading": "🌌 Hasi bidaia hau",
+      "body": "Hitzez hauetan oihartzuna aurkitzen baduzu, sortu zure profila, esploratu zure arimaren mapa eta hasi zure maiztasuna partekatzen duten arima kidetasunak ezagutzen. Konexio berri bakoitza aurkikuntzarako, islapenerako eta hazkunderako ate bat da.",
+      "cta": "Hasi zure SoulTribe bidaia",
+      "footer": "Zure tribua dagoeneko han dago — utzi izarrei etxerako bidea erakusten."
+    }
+  },
+  "ai": {
+    "get_interpretation": "Lortu interpretazioa",
+    "followup_placeholder": "Egin jarraipen-galdera…",
+    "send": "Bidali",
+    "error_initial": "Ezin izan da interpretazioa eskuratu",
+    "error_followup": "Ezin izan da mezua bidali"
+  }
+}

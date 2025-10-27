@@ -1,11 +1,16 @@
 #!/bin/bash
 
 # Log the start of the script
-echo "[$(date)] Starting SoulTribe application" >> /home/oib/windsurf/soultribe.chat/soultribe.log
+LOG_DIR=/home/oib/windsurf/soultribe.chat/dev/logs
+mkdir -p "$LOG_DIR"
+APP_LOG="$LOG_DIR/soultribe.log"
+GUNICORN_LOG="$LOG_DIR/gunicorn.log"
+
+echo "[$(date)] Starting SoulTribe application" >> "$APP_LOG"
 
 # Kill any process using port 8001
-echo "[$(date)] Checking for processes on port 8001..." >> /home/oib/windsurf/soultribe.chat/soultribe.log
-fuser -k 8001/tcp 2>&1 | tee -a /home/oib/windsurf/soultribe.chat/soultribe.log || true
+echo "[$(date)] Checking for processes on port 8001..." >> "$APP_LOG"
+fuser -k 8001/tcp 2>&1 | tee -a "$APP_LOG" || true
 
 # Change to project directory
 cd /home/oib/windsurf/soultribe.chat
@@ -22,12 +27,12 @@ export REDIS_DB="1"
 source .venv/bin/activate
 
 # Log environment
-echo "[$(date)] Environment:" >> /home/oib/windsurf/soultribe.chat/soultribe.log
-env | sort >> /home/oib/windsurf/soultribe.chat/soultribe.log
+echo "[$(date)] Environment:" >> "$APP_LOG"
+env | sort >> "$APP_LOG"
 
 # Run the application with output to log file
-echo "[$(date)] Starting Gunicorn..." >> /home/oib/windsurf/soultribe.chat/soultribe.log
+echo "[$(date)] Starting Gunicorn..." >> "$APP_LOG"
 exec gunicorn -k uvicorn.workers.UvicornWorker --bind 127.0.0.1:8001 \
   --log-level debug \
-  --log-file /home/oib/windsurf/soultribe.chat/gunicorn.log \
-  main:app >> /home/oib/windsurf/soultribe.chat/soultribe.log 2>&1
+  --log-file "$GUNICORN_LOG" \
+  src.backend.main:app >> "$APP_LOG" 2>&1

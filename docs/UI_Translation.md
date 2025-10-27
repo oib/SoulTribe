@@ -10,7 +10,7 @@ The application uses a client-side JavaScript-based i18n system that loads trans
 
 ### 1. i18n.js
 
-The main translation logic is in `web/i18n/i18n.js`. This file provides:
+The main translation logic is in `src/frontend/i18n/i18n.js`. This file provides:
 - Language detection and management
 - Translation loading and caching
 - DOM update functionality
@@ -18,7 +18,7 @@ The main translation logic is in `web/i18n/i18n.js`. This file provides:
 
 ### 2. Translation Files
 
-Translation files are stored in `web/i18n/locales/{language_code}/translation.json` where `{language_code}` is a two-letter language code (e.g., 'en', 'de', 'fr').
+Translation files are stored in `src/frontend/i18n/locales/{language_code}/translation.json` where `{language_code}` is a two-letter language code (e.g., 'en', 'de', 'fr').
 
 ### 3. HTML Integration
 
@@ -72,7 +72,7 @@ The application supports the following languages:
 
 ### 1. Adding a New Translation
 
-1. Create or edit the translation file for the target language at `web/i18n/locales/{code}/translation.json`
+1. Create or edit the translation file for the target language at `src/frontend/i18n/locales/{code}/translation.json`
 2. Follow the structure of the English translation file (`en/translation.json`)
 3. Add or update key-value pairs as needed
 
@@ -109,7 +109,7 @@ Would be referenced as:
 ### 4. Adding a New Language
 
 1. Add the language to the `languages` object in `i18n.js`
-2. Create a new directory in `web/i18n/locales/` with the language code (skip if it already exists)
+2. Create a new directory in `src/frontend/i18n/locales/` with the language code (skip if it already exists)
 3. Add a `translation.json` file with all the required translations
 
 ## Technical Details

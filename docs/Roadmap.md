@@ -1,6 +1,6 @@
 # SoulTribe.chat — roadmap & TODOs
 
-Last updated: 2025-10-10
+Last updated: 2025-10-27
 
 ## Near-Term (High Priority)
 - Auth
@@ -52,7 +52,9 @@ Last updated: 2025-10-10
   - ~~Add localization/i18n for UI strings~~ ✅ Completed (28 languages)
   - Toast system: small queue & durations per severity (partial: center‑bottom, palette, click‑to‑dismiss done)
   - CSS reorg by page/theme (done)
-  - Add language selector in user profile
+  - ✅ Frontend build step: `make build-frontend` / `npm run build-frontend` generates static bundle from `src/frontend` into `src/frontend/public/` (includes components/css/assets).
+  - ✅ Primary language selector styled in profile UI; build bundles updated navbar/footer/components.
+  - Add richer language metadata (proficiency levels) & multi-select polish (pending)
   - Implement RTL language support for Arabic, Hebrew, etc.
 
 ## Longer-Term Ideas
@@ -79,6 +81,7 @@ Last updated: 2025-10-10
 - Timezone support with local time display and storage (done)
 - Simplified meetup card UI (removed redundant status text, reorganized actions)
 - Updated welcome page heading and layout
+- ✅ Frontend restructure: source under `src/frontend/{pages,css,js,i18n,assets}`; build step via `make build-frontend`.
 
 ## Notes
 - The console is for development. The production UI should be a proper web client.

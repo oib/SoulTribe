@@ -1,0 +1,575 @@
+{
+  "app": {
+    "about": "Fúinn",
+    "and": "agus",
+    "back": "Siar",
+    "cancel": "Cealaigh",
+    "contact": "Teagmháil",
+    "continue": "Lean ar aghaidh",
+    "createAccount": "Cruthaigh Cuntas",
+    "delete": "Scrios",
+    "done": "Críochnaithe",
+    "edit": "Cuir in eagar",
+    "error": "Tharla earráid",
+    "help": "Cabhair",
+    "loading": "Ag lódáil...",
+    "login": "Logáil isteach",
+    "logout": "Logáil amach",
+    "name": "SoulTribe",
+    "next": "Ar aghaidh",
+    "noResults": "Gan aon torthaí",
+    "or": "nó",
+    "previous": "Siar",
+    "privacy": "Príobháideachas",
+    "profile": "Próifíl",
+    "retry": "Déan iarracht arís",
+    "save": "Sábháil",
+    "search": "Cuardaigh",
+    "settings": "Socruithe",
+    "skip": "Scipeáil",
+    "submit": "Seol",
+    "tagline": "Ceangail le daoine a roinneann do luachanna",
+    "terms": "Téarmaí",
+    "welcome": "Fáilte"
+  },
+  "auth": {
+    "login": {
+      "email": "Ríomhphost",
+      "forgotPassword": "Dearmad ar do phasfhocal?",
+      "noAccount": "Gan chuntas?",
+      "password": "Focal Faire",
+      "signUp": "Cláraigh",
+      "title": "Logáil Isteach"
+    },
+    "register": {
+      "agreeTerms": "Aontaím leis na Téarmaí Úsáide",
+      "confirmPassword": "Deimhnigh Focal Faire",
+      "email": "Ríomhphost",
+      "name": "Ainm agus Sloinne",
+      "password": "Focal Faire",
+      "title": "Cláraigh"
+    }
+  },
+  "errors": {
+    "invalidEmail": "Cuir seoladh ríomhphoist bailí isteach",
+    "passwordTooShort": "Tá an focal faire ró-ghairid",
+    "passwordsDontMatch": "Ní bhíonn na focail fhaire comhshuite",
+    "required": "Tá an réimse seo riachtanach"
+  },
+  "events": {
+    "create": "Cruthaigh Imeacht",
+    "title": "Imeachtaí",
+    "upcoming": "Imeachtaí le Teacht"
+  },
+  "friends": {
+    "addFriend": "Cuir Cara Leis",
+    "allFriends": "Gach Cara",
+    "friendRequests": "Iarratais Chairdeas",
+    "title": "Cairde"
+  },
+  "groups": {
+    "create": "Cruthaigh Grúpa",
+    "discover": "Faigh Amach Grúpaí",
+    "myGroups": "Mo Ghrúpaí",
+    "title": "Grúpaí"
+  },
+  "landing": {
+    "features": {
+      "items": [
+        {
+          "description": "Tá ár bpobal bunaithe ar mheas, ar chuimsiú agus ar shábháilteacht gach ball.",
+          "title": "Pobal sábháilte"
+        },
+        {
+          "description": "Faigh moltaí saincheaptha bunaithe ar do chuid spéiseanna agus luachanna.",
+          "title": "Taithí phearsanta"
+        },
+        {
+          "description": "Déan ceangal le daoine ó gach cearn den domhan a roinneann do chuid paisean.",
+          "title": "Nasc dhomhanda"
+        }
+      ],
+      "title": "Cén fáth a bheith linn?",
+      "item1": "Meaitseáil ar eolas na réalteolaíochta — ceangail ag úsáid do chairt bhreithe.",
+      "item2": "Sceidealú cliste crios ama — déanaimid tiontuithe UTC duitse.",
+      "item3": "Cumarsáid dhíreach trí Jitsi — téacs/fuaim/físeán; ní stóráiltear ná taifeadtar aon rud ar SoulTribe.chat.",
+      "item4": "Nasc éasca le páirt a ghlacadh — seomra príobháideach Jitsi do chruinnithe deimhnithe; cairdiúil don phríobháideachas, gan suiteáil deisce.",
+      "item5": "Comhéadan íostach, dírithe — deartha do chomhráite bríocha."
+    },
+    "hero": {
+      "cta": "Tosaigh do thuras",
+      "subtitle": "Déan ceangal le daoine a roinneann do luachanna, do chuid spéiseanna agus do chuid paisean. Le chéile, is féidir linn naisc bhríocha a chruthú a mhaireann.",
+      "title": "Bí linn sa phobal dhomhanda",
+      "learn_more": "Faigh amach fís SoulTribe →"
+    },
+    "howItWorks": {
+      "steps": [
+        {
+          "description": "Inis dúinn faoi do chuid spéiseanna, luachanna agus an méid atá á lorg agat sa phobal.",
+          "title": "Cruthaigh do phróifíl"
+        },
+        {
+          "description": "Déanfaidh ár n-algartam ceangal a dhéanamh idir tú féin agus daoine a roinneann do luachanna agus do chuid spéiseanna.",
+          "title": "Aimsigh do mhuintir"
+        },
+        {
+          "description": "Tosaigh comhráite, bí rannpháirteach d'imeachtaí agus cruthaigh caidrimh fhadtéarmacha.",
+          "title": "Bí páirteach agus fás"
+        }
+      ],
+      "title": "Conas a oibríonn sé"
+    },
+    "privacy": {
+      "description": "Cosnaímid do shonraí agus cuirimid timpeallacht shábháilte ar fáil do gach ball dár bpobal.",
+      "learnMore": "Tuilleadh eolais faoinár mbeartas príobháideachta",
+      "title": "Tá do phríobháideachas ina thosaíocht againn",
+      "item1": "Ní iarrann muid ach an méid is gá chun naisc anamúla a chumasú.",
+      "item2": "Ní dhíoltar ná ní roinntear sonraí do phróifíle le gréasáin fógraí.",
+      "item3": "Tá smacht agat ar cé a théann i dteagmháil leat agus cathain a roinneann tú tuilleadh."
+    },
+    "page_title": "SoulTribe.chat – Faigh Do Threibh Anama",
+    "how": {
+      "title": "Conas a Oibríonn Sé",
+      "step1": "Cruthaigh Do Phróifíl — cuir dáta, am agus áit bhreithe leis chun do léarscáil anama uathúil a ghiniúint.",
+      "step2": "Aimsigh Do Mheaitseálacha — leagaimid béim ar naisc bunaithe ar chomhoiriúnacht agus ar athshondas.",
+      "step3": "Tosaigh an Comhrá — tabhair cuireadh do mheaitseálacha le haghaidh comhrá; sábháilte agus príobháideach ó thús.",
+      "step4": "Buail le Chéile (Roghnach) — sceidealigh glao Jitsi nó cruinniú duine le duine le toiliú frithpháirteach."
+    },
+    "getting_started": {
+      "title": "Ag Tosú",
+      "step1": "Cruthaigh do chuntas — níl logáil isteach sóisialta de dhíth.",
+      "step2": "Comhlánaigh do phróifíl — cuir sonraí breithe leis; tá am thart inghlactha.",
+      "step3": "Socraigh d’infhaighteacht — mol sliotáin ama áitiúla; déanaimid UTC.",
+      "step4": "Aimsigh meaitseálacha — breathnaigh ar mholtaí bunaithe ar athshondas.",
+      "step5": "Seol comhrá & bualadh le chéile más mian leat — fan san aip; sceideal nuair a bhíonn tú réidh."
+    },
+    "matching": {
+      "title": "Conas a Oibríonn Meaitseáil (Leagan Gearr)",
+      "text": "Ríomhtar againn táscairí caidrimh tábhachtacha as do chairt agus cuirimid i gcomparáid le daoine eile chun athshondas a aimsiú. Tugaimid tosaíocht do chomhchuibheas, do chomhlántacht agus do chumhacht fáis thar mhéadrachtaí coitiantachta."
+    },
+    "protips": {
+      "title": "Leideanna",
+      "item1": "Cuir cúpla sliotán infhaighteachta le laethanta éagsúla chun nascadh níos tapúla.",
+      "item2": "Bí fírinneach i d’intro — cuidíonn sonraí sonracha leis na daoine cearta tú a aimsiú.",
+      "item3": "Toiliú ar dtús, i gcónaí. Gluais ar luas a bhraitheann ceart.",
+      "item2b": "Déan do chur chuige a phearsantú — tagairt d'achoimre láidre AI nuair a sheolann tú teachtaireachtaí nó nuair a mholann tú cruinnithe."
+    },
+    "next": {
+      "title": "Na Chéad Chéimeanna",
+      "go_dashboard": "Téigh chuig an Deasc",
+      "login_register": "Logáil Isteach / Cláraigh",
+      "step1": "Cruthaigh cuntas",
+      "step2": "Líon isteach do phróifíl",
+      "step3": "Cruthaigh sliotán ama",
+      "step4": "Bí ag faire ar mheaitseálacha",
+      "step5": "Mol nó deimhnigh cruinniú",
+      "step6": "Glac páirt sa chomhrá Jitsi",
+      "read_more": "Léigh an treoir mhionsonraithe →"
+    },
+    "global": {
+      "title": "Pobal Domhanda, Am Áitiúil",
+      "text": "Ceangail le hanamnacha comhchosúla ar fud an domhain le tiontú uathoibríoch criosanna ama.",
+      "auto_title": "Braite uathoibríoch crios ama",
+      "auto_text": "Braithimid do chrios ama go huathoibríoch le haghaidh sceidealaithe gan stró.",
+      "native_title": "Tacaíocht Teanga Dúchais",
+      "native_text": "Déan comhrá i do theanga is fearr lenár n-aistriúchán ionsuite.",
+      "tz_title": "Sceidealú Eolach ar Chriosanna Ama",
+      "tz_text": "Gan níos mó matamaitice crios ama — déanaimid na tiontaithe ar fad duitse.",
+      "select_label": "Roghnaigh Teanga:",
+      "translated_title": "Comhéadan Aistrithe",
+      "translated_text": "Nasclean an UI i do theanga féin agus féach ar achoimrí cluiche AI i do logánú roghnaithe."
+    },
+    "how_full": {
+      "title": "Conas a Oibríonn SoulTribe",
+      "step1": "Cruthaigh do spás — cláraigh agus roinn na heilimintí riachtanacha a chruthaíonn d'fingerprint fuinnimh uathúil.",
+      "step2": "Socraigh do bhunús — roghnaigh do phríomhtheanga, tánaisteacha roghnacha, dáta breithe, agus dearbhaigh do chrios ama áitiúil reatha.",
+      "step3": "Oscail do sceideal — cruthaigh sliotáin infhaighteachta ionas go mbeidh a fhios ag an gcóras cathain a bhíonn tú saor.",
+      "step4": "Faigh amach cluichí atá bunaithe ar athshondas — leagann ár n-intleacht charta béim ar dhaoine a bhfuil a gcuid fuinnimh ag teacht le do cheann féin.",
+      "step5": "Tabhair faoi deara na forluí — nochtann infhaighteacht fhorluí cathain a bhíonn comhpháirtí cluiche féideartha saor ag an am céanna.",
+      "step6": "Mol nó dearbhaigh cruinniú — seol nó glac le cuirí nuair a bhraitheann an t-am ceart.",
+      "step7": "Glac páirt sa chomhrá Jitsi — buail le chéile aghaidh ar aghaidh i seomra físe sábháilte, príobháideach nuair a bhíonn gach duine réidh.",
+      "summary": "Tá gach céim faoi threoir comhaontú agus deartha chun do theorainneacha a urramú.",
+      "step8": "Treoir mhionsonraithe ar na chéad chéimeanna eile"
+    },
+    "different": {
+      "title": "Cén Fáth a bhfuil SoulTribe Difriúil",
+      "item1": "Cluiche réalteolaíochta ar dtús, a thugann urraim do nuances thar chomharthaí na gréine.",
+      "item2": "Príobháideacht atá dírithe ar dhaoine gan fógraí, picteilíní rianaithe nó halgartaim gan choinne.",
+      "item3": "Pleanáil faoi threoir comhaontú le fíorú, moltaí soiléire, dearbhuithe agus cealuithe éasca.",
+      "item4": "Ceangal treoraithe trí léargais AI cluiche, béimeanna láidre agus leideanna léirmhínithe próifíle."
+    },
+    "experience": {
+      "title": "Cad a Bhraithfidh Tú",
+      "item1": "Réamhráitheanna athshondais ar dtús a dhíorthaítear ó scóráil sínastrach agus infhaighteacht fhorluí — gan scrollaigh gan deireadh.",
+      "item2": "Léargais faoi threoir AI le achoimrí láidre cluiche agus léirmhínithe próifíle chun tacú le comhráite machnamhacha.",
+      "item3": "Rithim faoi threoir comhaontú ina molann tú, dearbhaíonn nó cealaíonn tú cruinnithe agus cuireann tú cuireadh ar dhaoine eile chuig Jitsi nuair a aontaíonn gach duine.",
+      "summary": "Bog sa rithim a oireann duit — stop ag am ar bith agus lean ar aghaidh leis an snáithe nuair a bhíonn tú réidh."
+    },
+    "matching_full": {
+      "title": "Conas a Oibríonn Cluiche",
+      "step1": "Sintéisiú cairte — comhcheanglaímid sonraí breithe gach ball chun gnéithe sínastracha, cothromaíocht eiliminteach agus forluí tithe a ríomh.",
+      "step2": "Meastóireacht chomhoiriúnachta — déantar scór agus veicteoir láidre de na táscairí; nuair a sháraíonn sé ár dtairseach infheictheachta agus nuair a fhorluíonn infhaighteacht, feictear an cluiche ar do dheais.",
+      "step3": "Comhthéacs le haghaidh gníomhaíochta — iarr achoimre scríofa AI chun téamaí lárnacha agus láidreachtaí a leagan béim orthu roimh theagmháil.",
+      "summary": "Gan scrollaigh, ach comhthéacsanna réalteolaíochta soiléire chun do nasc seo chugainn a roghnú go cúramach."
+    },
+    "support": {
+      "title": "Tacaíocht & Acmhainní",
+      "item1": "Onboarding concierge le leidí chun cabhrú leat an méid ceart a roinnt.",
+      "item2": "Seiceálacha treoraithe trí achoimrí cluiche a chruthaítear le AI agus machnaimh próifíle chun comhráite a choinneáil ar ancaire.",
+      "item3": "Cruinnithe 1:1 leis an rogha daoine eile a thabhairt isteach i do sheomra Jitsi nuair a aontaíonn gach duine.",
+      "item4": "Leabharlann acmhainní ina bhfuil treoracha cumarsáide, cleachtais sábháilteachta agus leideanna maidir le cruinnithe 1:1 bríoch.",
+      "summary": "Táimid anseo roimh, le linn agus tar éis gach nasc a chruthaíonn tú."
+    }
+  },
+  "login": {
+    "confirm_password": "deimhnigh an focal faire (le haghaidh clárú)",
+    "display_name": "ainm taispeána (le haghaidh clárú)",
+    "email": "ríomhphost",
+    "email_not_verified": "Níl an ríomhphost deimhnithe? ",
+    "enter_email_first": "Cuir do sheoladh ríomhphoist isteach ar dtús, le do thoil.",
+    "go_dashboard": "Téigh chuig an Deasc",
+    "intro": "Logáil isteach le cuntas atá agat cheana nó cláraigh cuntas nua.",
+    "login": "Logáil Isteach",
+    "login_required": "Tá ríomhphost agus focal faire ag teastáil.",
+    "page_title": "SoulTribe.chat — Logáil Isteach / Cláraigh",
+    "password": "focal faire",
+    "password_mismatch": "Ní bhíonn na focail fhaire comhshuite.",
+    "redirect_hint": "Tar éis duit logáil isteach, tabharfar thú chuig do dheasc.",
+    "register": "Cláraigh",
+    "registration_success": "Cruthaíodh an cuntas. Déan do ríomhphost a dheimhniú, le do thoil.",
+    "required_fields": "Tá ríomhphost, focal faire, agus ainm taispeána ag teastáil.",
+    "resend_verification": "Seol ríomhphost dearbhaithe arís",
+    "reset_password": "Athshocraigh Focal Faire",
+    "reset_sent": "Má tá cuntas ann leis an ríomhphost seo, seolfar ríomhphost athshocraithe fuaime chugat.",
+    "title": "Fáilte",
+    "verification_sent": "Mura bhfuil do ríomhphost deimhnithe fós, seolfar ríomhphost dearbhaithe nua chugat."
+  },
+  "messaging": {
+    "newMessage": "Teachtaireacht Nua",
+    "searchUsers": "Cuardaigh Úsáideoirí...",
+    "send": "Seol",
+    "title": "Teachtaireachtaí",
+    "typeMessage": "Clóscríobh teachtaireacht..."
+  },
+  "nav": {
+    "dashboard": "Deasc",
+    "login": "Logáil Isteach",
+    "logout": "Logáil Amach",
+    "profile": "Próifíl",
+    "welcome": "Baile",
+    "home": "Baile",
+    "discover": "Faigh amach",
+    "matches": "Meaitseálacha",
+    "messages": "Teachtaireachtaí"
+  },
+  "onboarding": {
+    "step1": {
+      "description": "Cuir do phictiúr agus cúpla focal fút féin leis.",
+      "title": "Cruthaigh Do Phróifíl"
+    },
+    "step2": {
+      "description": "Cad is maith leat a dhéanamh? Roghnaigh do chuid suimeanna.",
+      "title": "Roghnaigh Do Chuid Suimeanna"
+    },
+    "step3": {
+      "description": "Tosaigh comhrá le daoine a bhfuil suimeanna cosúla acu leat féin.",
+      "title": "Déan Cairde le Daoine"
+    },
+    "welcome": "Fáilte go SoulTribe"
+  },
+  "profile": {
+    "edit": {
+      "basicInfo": "Eolas Bunscoile",
+      "bio": "Fúm Féin",
+      "firstName": "Céad Ainm",
+      "interests": "Suimeanna",
+      "lastName": "Sloinne",
+      "location": "Suíomh",
+      "title": "Cuir Do Phróifíl in Eagar"
+    },
+    "view": {
+      "interests": "Suimeanna",
+      "lastSeen": "Feicthe Deireanach",
+      "memberSince": "Ina Bhall Ó"
+    },
+    "title": "Do Phróifíl",
+    "save": "Sábháil",
+    "delete_account": "Scrios mo chuntas",
+    "delete_account_confirm": "An bhfuil tú cinnte gur mian leat do chuntas a scriosadh? Ní féidir an ghníomh seo a chur ar ceal.",
+    "cancel": "Cealaigh",
+    "basic_info": {
+      "legend": "Eolas Bunúsach",
+      "username_label": "Ainm úsáideora",
+      "username_placeholder": "ainm úsáideora"
+    },
+    "languages": {
+      "legend": "Teangacha"
+    },
+    "location": {
+      "legend": "Suíomh Reatha",
+      "city_placeholder": "Cathair reatha (uathlíonadh)",
+      "use_my_location": "Úsáid mo shuíomh",
+      "detected_tz_label": "Crios ama braite:",
+      "detected_tz_hint": "(uathoibríoch nó roghnaigh)"
+    },
+    "birth": {
+      "legend": "Eolas breithe (le haghaidh réalteolaíochta)",
+      "date_placeholder": "Dáta breithe",
+      "hour_label": "Uair",
+      "minute_label": "Nóim",
+      "place_placeholder": "Áit bhreithe (cathair, tír)",
+      "detected_tz_label": "Crios ama braite:",
+      "detected_tz_hint": "(uathoibríoch)",
+      "lat_placeholder": "Leithead (m.sh., 48.2082)",
+      "lon_placeholder": "Fad (m.sh., 16.3738)",
+      "instructions": "Socraigh do dháta agus d’áit bhreithe chun do radix a ríomh. Mura bhfuil an t‑am cruinn ar eolas agat, fág an réimse ama folamh agus úsáidfimid meán lae mar réamhshocrú."
+    },
+    "note": "Úsáidtear do phróifíl chun meaitseálacha agus taispeáint crios ama a phearsanú.",
+    "primary_language_label": "Príomhtheanga (úsáidte don chomhéadan)",
+    "other_languages_label": "Teangacha eile (úsáidte don mheaitseáil)",
+    "language_input_placeholder": "Clóscríobh chun teangacha a chur leis...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
+  },
+  "ai": {
+    "get_interpretation": "Faigh léirmhíniú",
+    "followup_placeholder": "Cuir ceist leanúnach…",
+    "send": "Seol",
+    "error_initial": "Níor éirigh leis an léirmhíniú a fháil",
+    "error_followup": "Níor éirigh leis an teachtaireacht a sheoladh"
+  },
+  "dashboard": {
+    "title": "Deais",
+    "availability": "Infhaighteacht",
+    "create_slot": "Cruthaigh sliotán",
+    "duration_hours": "Fad (uair an chloig)",
+    "meetups": "Crinniúite",
+    "matches": "Meaitseálacha",
+    "overlap_hint": "Cliceáil “Mol an t‑am seo” ar fhorluí chun cruinniú a mholadh don sliotán sin.",
+    "propose_time": "Mol am",
+    "generate_ai_comment": "Gin trácht AI",
+    "slot_delete": "Scrios",
+    "slot_edit": "Cuir in eagar",
+    "active_filter_hint": "Ní thaispeántar ach úsáideoirí a bhí gníomhach le 30 lá anuas.",
+    "slot_help_summary": "Cad is sliotán infhaighteachta ann?",
+    "slot_help_intro": "Fuinneoga ama a fhoilsíonn tú ionas gur féidir le SoulTribe cruinnithe a mholadh nuair a bhíonn forluí le duine éigin ort.",
+    "slot_help_step1": "Cuir sliotán amháin nó níos mó leis do na laethanta agus na huaireanta ina bhfuil tú saor. Sábhálann an córas iad i d’amhchrios próifíle agus in UTC.",
+    "slot_help_step2": "Nuair a fhaightear meaitseálacha, cuirimid do shliotáin i gcomparáid le shliotáin baill eile chun forluíthe a aimsiú atá fós sa todhchaí.",
+    "slot_help_step3": "Taispeánann na sliseanna forluíte i rannán “Matches” an fhuinneog roinnte: UTC, d’am logánta agus am logánta do pháirtí.",
+    "slot_help_step4": "Cliceáil “Mol an t‑am seo” ar fhorluí chun an sreabhadh cruinnithe a thosú leis an sliotán sin réamhlíonta.",
+    "slot_help_step5": "Má athraíonn rud éigin, cuir an sliotán in eagar nó scrios é ionas nach molfaimid amanna as dáta.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
+  },
+  "imprint": {
+    "title": "Fógra dlí"
+  },
+  "footer": {
+    "terms": "Téarmaí",
+    "privacy": "Príobháideachas",
+    "imprint": "Impressum"
+  },
+  "reset_password": {
+    "title": "Athshocraigh Focal Faire",
+    "intro": "Roghnaigh focal faire nua do do chuntas.",
+    "new_password_label": "Focal faire nua",
+    "new_password_placeholder": "focal faire nua",
+    "confirm_password_label": "Deimhnigh focal faire nua",
+    "confirm_password_placeholder": "deimhnigh focal faire nua",
+    "submit": "Socraigh focal faire nua"
+  },
+  "notifications": {
+    "language_set_to": "Teanga socraithe mar"
+  },
+  "guestGuide": {
+    "title": "Treoir thapa Jitsi do aíonna SoulTribe",
+    "intro": "Cabhraíonn an treoir seo le haíonna nua dul isteach i seomraí Jitsi SoulTribe le muinín. Roghnaigh na céimeanna amháin a theastaíonn uait. Tá téacs, fuaim agus físeán roghnach go léir.",
+    "prejoin": {
+      "heading": "Roimh duit dul isteach",
+      "steps": {
+        "options": "Faigh amach do roghanna. Tacaíonn Jitsi le téacs, fuaim agus físeán. Is tú a roghnaíonn cad a ghníomhachtaítear; féadfaidh gach bealach fanacht múchta.",
+        "permissions": "Tabhair na ceadanna riachtanacha. Nuair a iarrann an leathanach logála isteach rochtain, ceadaigh don bhrabhsálaí an micreafón agus an ceamara a úsáid ionas gur féidir leat iad a chasadh air níos déanaí.",
+        "setup": "Glac nóiméad chun socrú sula dtéann tú isteach sa seomra."
+      },
+      "substeps": {
+        "name": "Ainm: cuir isteach an t-ainm is mian leat a thaispeáint do rannpháirtithe eile.",
+        "background": "Cúlra: roghnaigh doiléire nó cúlra fíorúil más mian leat príobháideachas breise."
+      },
+      "mic_camera_label": "Micreafón agus ceamara",
+      "mic_camera_text": "Úsáid an dá chéad deilbhín chun iad a chur ar siúl nó a mhúchadh sula dtéann tú isteach.",
+      "devices_label": "Gléasanna",
+      "devices_before_arrow": "Oscail an tsaighead bheag in aice le gach rialtán",
+      "devices_after_arrow": "agus roghnaigh an micreafón nó an ceamara gréasáin is mian leat a úsáid.",
+      "audio_tip_label": "Leid fuaime",
+      "audio_tip_text": "Cuidíonn cluasáin le macalla a sheachaint. Má tá gá le callairí, coinnigh an toirt íseal chun aiseolas a sheachaint."
+    },
+    "browser": {
+      "heading": "Comhoiriúnacht brabhsálaí",
+      "supported": "Soláthraíonn Firefox agus Chrome tacaíocht iomlán do fhuaim, do fhíseán agus do chomhrá.",
+      "unsupported": "Ní thacaítear le Safari, Edge, Opera, Brave agus DuckDuckGo faoi láthair.",
+      "note": "Níor tástáladh brabhsálaithe nideoige eile.",
+      "tip1": "Má iarrtar, ceadaigh rochtain ar an micreafón agus ar an gceamara ón mbarra seoltaí.",
+      "tip2": "Díchumasaigh blocálaithe rianaithe nó cuir Jitsi le do liosta ceadaithe.",
+      "tip3": "Athluchtaigh an cluaisín tar éis ceadanna a athrú chun na nuashonruithe a chur i bhfeidhm."
+    },
+    "layout": {
+      "heading": "Leagan amach an chomhéadain sa seomra",
+      "description": "Taispeánann an príomhlimistéar físe sa lár gach duine a bhfuil a gceamara ar siúl acu. Ar bun tá an barra rialaithe le deilbhíní tábhachtacha: micreafón, ceamara, comhroinnt scáileáin, comhrá, rannpháirtithe agus roghanna eile. Osclaíonn an painéal ar dheis liosta na rannpháirtithe agus scáileáin chomhroinnte."
+    },
+    "toolbar": {
+      "heading": "Deilbhíní an bharra uirlisí",
+      "columns": {
+        "icon": "Deilbhín",
+        "label": "Lipéad",
+        "description": "Cur síos"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Micreafón",
+          "description": "Cas an micreafón air nó as agus roghnaigh an gléas fuaime ceart."
+        },
+        "camera": {
+          "label": "Ceamara",
+          "description": "Cas an ceamara air nó as agus roghnaigh an fhoinse físe ceart."
+        },
+        "screen": {
+          "label": "Comhroinnt scáileáin",
+          "description": "Roinn an scáileán iomlán, cluaisín ar leith nó fuinneog."
+        },
+        "chat": {
+          "label": "Comhrá",
+          "description": "Oscail an comhrá téacs chun teachtaireachtaí nó naisc a sheoladh."
+        },
+        "participants": {
+          "label": "Rannpháirtithe / Tabhair cuireadh",
+          "description": "Féach cé atá sa seomra, tabhair cuireadh do dhaoine eile agus glac le haíonna atá ar feitheamh."
+        },
+        "more": {
+          "label": "Tuilleadh roghanna",
+          "description": "Faigh rochtain ar shocruithe slándála, roghanna gléis agus uirlisí breise."
+        },
+        "hangup": {
+          "label": "Fág",
+          "description": "Críochnaigh an glao agus fág an seomra."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Nasc gasta le páirt a ghlacadh",
+      "cta": "Glac páirt láithreach ag jitsi.bubuit.net/soultribe",
+      "note": "Déan do shocrú a thástáil nó cas le haíonna cairdiúla. Ní theastaíonn aon chuntas."
+    },
+    "closing": {
+      "heading": "Nóta deiridh",
+      "text": "Bain sult as nascadh le daoine eile ar do bhealach féin agus ar do luas féin."
+    }
+  },
+  "nextStepsGuide": {
+    "page_title": "Treoir mhionsonraithe do na chéad chéimeanna",
+    "title": "Treoir mhionsonraithe do na chéad chéimeanna",
+    "intro": "Leathnaíonn an treoir seo na céimeanna ón leathanach tuirlingthe agus treoraíonn sí tú trí gach gníomh le leideanna agus naisc.",
+    "steps": {
+      "step1": {
+        "heading": "Cruthaigh cuntas",
+        "description": "Cláraigh le do sheoladh ríomhphoist chun rochtain a fháil ar an deasc agus ar do phróifíl. Ní gá logáil sóisialta a úsáid.",
+        "bullets": {
+          "item1": "Úsáid ríomhphost bailí; rachaidh na naisc fíoraithe in éag i ndiaidh 24 uair an chloig.",
+          "item2": "Nuair a dheimhnítear é, atreorófar tú chuig an leathanach logála isteach."
+        },
+        "link": "Téigh go Logáil Isteach / Cláraigh"
+      },
+      "step2": {
+        "heading": "Líon isteach do phróifíl",
+        "description": "Cuir sonraí breithe leis chun an mheaitseáil bunaithe ar athshondas a chumasú. Glacfar le ham thart; feabhsaíonn cruinneas na torthaí.",
+        "bullets": {
+          "item1": "Cuir dáta, am agus áit bhreithe isteach. Mura bhfuil am cruinn agat, roghnaigh meastachán.",
+          "item2": "Scríobh forbhreathnú gairid a léiríonn do chuid spéiseanna agus d’intinn. Bí soiléir agus fíor."
+        },
+        "callout": "Leid: Aimsítear crios ama do phróifíle go huathoibríoch; is féidir leat é a sheiceáil ar an deasc.",
+        "link": "Cuir an próifíl in eagar"
+      },
+      "step3": {
+        "heading": "Cruthaigh sliotán ama",
+        "description": "Cuir sliotán amháin nó níos mó ar fáil nuair a bheadh tú sásta nascadh. Sábhálaimid d’am logánta agus tiontaímid go UTC é le haghaidh sceidealaithe.",
+        "bullets": {
+          "item1": "Roghnaigh am tosaigh i do chrios ama agus socraigh fad (m.sh. 1–3 uair).",
+          "item2": "Méadaíonn sliotáin ar laethanta éagsúla an seans go bhfaighfear meaitseáil go sciobtha."
+        },
+        "callout": "Criosanna ama faoi smacht: tiontaímid go huathoibríoch idir am logánta agus UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Oscail an deasc"
+      },
+      "step4": {
+        "heading": "Coinnigh súil ar mheaitseálacha",
+        "description": "Scrúdaigh na meaitseálacha molta bunaithe ar athshondas. Léigh nótaí comhoiriúnachta agus spéiseanna comhroinnte.",
+        "bullets": {
+          "item1": "Tagann moltaí nua chun solais nuair atá do phróifíl agus do shliotáin gníomhach.",
+          "item2": "Úsáid scagairí agus nótaí chun cuimhneamh cé leis ar mhaith leat dul i dteagmháil."
+        },
+        "callout": "Príobháideachas ar dtús: is tusa a shocraíonn cathain agus conas a nascann tú."
+      },
+      "step5": {
+        "heading": "Mol nó deimhnigh cruinniú",
+        "description": "Nuair a bhíonn suim ann ón dá thaobh, mol am laistigh de na sliotáin forluiteacha nó glac le moladh do mheaitseála.",
+        "bullets": {
+          "item1": "Seol cuireadh cairdiúil, soiléir. Tabhair ceann nó dhá rogha ama.",
+          "item2": "Deimhnigh an plean sa chomhrá agus bog chuig glao nuair atá sibh beirt réidh."
+        },
+        "callout": "Toiliú agus compord: gluais ar do luas féin. Tá sé ceart go leor fanacht le comhrá téacs amháin más fearr leat."
+      },
+      "step6": {
+        "heading": "Glac páirt sa chomhrá Jitsi",
+        "description": "Úsáid Jitsi le haghaidh guth nó físeán roghnach. Tacaítear le brabhsálaithe deisce (Firefox, Chrome); tá an comhrá téacs ar fáil i gcónaí.",
+        "bullets": {
+          "item1": "Tástáil do mhicreafón/camara nó fág iad múchta agus úsáid téacs amháin.",
+          "item2": "Roghnaigh na gléasanna cearta leis an tsaighead bheag in aice leis na deilbhíní."
+        },
+        "link": "Léigh an treoir thapa Jitsi"
+      }
+    },
+    "closing": "Bain taitneamh as nascadh ar an mbealach is fearr duit."
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  }
+}

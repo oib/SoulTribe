@@ -1,0 +1,42 @@
+// ollama.js – OpenAI-compatible API client for Open-WebUI
+
+export async function checkWithOllama(sequence) {
+    const prompt = sequence.join(" ");
+
+    const BASE = process.env.OLLAMA_BASE || process.env.OPENAI_BASE_URL || "https://at1.dynproxy.net";
+    const API_KEY = process.env.OLLAMA_API_KEY || process.env.OPENAI_API_KEY || "";
+    const MODEL = process.env.OLLAMA_MODEL || "gemma3:1b";
+
+    try {
+        const response = await fetch(`${BASE.replace(/\/$/, "")}/api/chat/completions`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                ...(API_KEY ? { "Authorization": `Bearer ${API_KEY}` } : {})
+            },
+            body: JSON.stringify({
+                model: MODEL,
+                messages: [
+                  {
+                    role: "system",
+                    content: "You are the SoulTribe Assistant. Always follow the user's instructions exactly and reply in the language requested by the user content (for example: if the prompt says 'Respond in German', reply fully in German). Keep responses concise and friendly."
+                  },
+                  { role: "user", content: prompt }
+                ],
+                stream: false
+            })
+        });
+
+        if (!response.ok) {
+            console.error("Ollama API Error:", response.status);
+            return "(Fehler beim LLM-Request)";
+        }
+
+        const data = await response.json();
+        return data.choices?.[0]?.message?.content?.trim() || "(keine Antwort vom Modell)";
+
+    } catch (error) {
+        console.error("LLM-Request fehlgeschlagen:", error);
+        return "(Verbindungsfehler mit Ollama)";
+    }
+}

@@ -1,0 +1,1368 @@
+{
+  "app": {
+    "about": "O nama",
+    "and": "i",
+    "back": "Natrag",
+    "cancel": "Odustani",
+    "contact": "Kontakt",
+    "continue": "Nastavi",
+    "cookies": "Kolačići",
+    "createAccount": "Kreiraj račun",
+    "darkMode": "Tamni način rada",
+    "daysAgo": "prije {{count}} dana",
+    "delete": "Izbriši",
+    "done": "Gotovo",
+    "edit": "Uredi",
+    "error": "Došlo je do pogreške",
+    "help": "Pomoć",
+    "hoursAgo": "prije {{count}} sata",
+    "justNow": "Upravo sada",
+    "language": "Jezik",
+    "lastSeen": "Zadnji put viđen",
+    "lightMode": "Svijetli način rada",
+    "loading": "Učitavanje...",
+    "login": "Prijava",
+    "logout": "Odjava",
+    "markAllAsRead": "Označi sve kao pročitano",
+    "minutesAgo": "{{count}} minuta prije",
+    "monthsAgo": "prije {{count}} mjeseci",
+    "name": "SoulTribe",
+    "next": "Sljedeće",
+    "noResults": "Nema rezultata",
+    "notifications": "Obavijesti",
+    "offline": "Izvan mreže",
+    "online": "Na mreži",
+    "or": "ili",
+    "previous": "Prethodno",
+    "privacy": "Privatnost",
+    "profile": "Profil",
+    "retry": "Pokušaj ponovno",
+    "save": "Spremi",
+    "search": "Traži",
+    "seeAll": "Pogledaj sve",
+    "settings": "Postavke",
+    "skip": "Preskoči",
+    "submit": "Pošalji",
+    "system": "Sustav",
+    "tagline": "Poveži se s ljudima koji dijele tvoje vrijednosti",
+    "terms": "Uvjeti korištenja",
+    "theme": "Tema",
+    "today": "Danas",
+    "typing": "kuca...",
+    "unread": "nepročitano",
+    "weeksAgo": "prije {{count}} tjedana",
+    "welcome": "Dobrodošli",
+    "yearsAgo": "prije {{count}} godina",
+    "yesterday": "Jučer"
+  },
+  "auth": {
+    "forgotPassword": {
+      "backToLogin": "Natrag na prijavu",
+      "email": "E-pošta",
+      "instructions": "Unesite svoju e-poštu i poslat ćemo vam upute za ponovno postavljanje lozinke.",
+      "submit": "Pošalji upute",
+      "title": "Zaboravljena lozinka"
+    },
+    "login": {
+      "email": "E-pošta",
+      "forgotPassword": "Zaboravili ste lozinku?",
+      "noAccount": "Nemate račun?",
+      "password": "Lozinka",
+      "signUp": "Registrirajte se",
+      "title": "Prijava"
+    },
+    "register": {
+      "agreeTerms": "Slažem se s Uvjetima korištenja i Politikom privatnosti",
+      "alreadyHaveAccount": "Već imate račun?",
+      "confirmPassword": "Potvrdi lozinku",
+      "email": "E-pošta",
+      "name": "Ime i prezime",
+      "password": "Lozinka",
+      "signIn": "Prijavite se",
+      "title": "Registracija"
+    },
+    "resetPassword": {
+      "confirmPassword": "Potvrdi novu lozinku",
+      "newPassword": "Nova lozinka",
+      "submit": "Postavi novu lozinku",
+      "title": "Ponovno postavi lozinku"
+    },
+    "verifyEmail": {
+      "checkSpam": "Provjerite i svoj neželjeni poštanski sandučić ako e-poštu ne vidite u svom glavnom pretincu.",
+      "instructions": "Poslali smo vam e-poštu s uputama za potvrdu vaše e-pošte. Provjerite svoj pretinac dolazne pošte i slijedite upute.",
+      "resend": "Ponovno pošalji e-poštu za potvrdu",
+      "title": "Potvrdi svoju e-poštu"
+    }
+  },
+  "common": {
+    "4k": "4K",
+    "8k": "8K",
+    "abort": "Prekini",
+    "about": "O programu",
+    "accept": "Prihvati",
+    "account": "Račun",
+    "actualSize": "Stvarna veličina",
+    "add": "Dodaj",
+    "addNew": "Dodaj novo",
+    "adjust": "Prilagodi",
+    "all": "Sve",
+    "allow": "Dopusti",
+    "approve": "Odobri",
+    "audioTrack": "Zvučni zapis",
+    "auto": "Automatski",
+    "back": "Natrag",
+    "backingUp": "Izrada sigurnosne kopije...",
+    "backward": "Nazad",
+    "block": "Blokiraj",
+    "blur": "Zamagljenje",
+    "brightness": "Svjetlina",
+    "cancel": "Odustani",
+    "captions": "Titlovi",
+    "changeEmail": "Promijeni e-poštu",
+    "changePassword": "Promijeni lozinku",
+    "clearSelection": "Očisti odabir",
+    "close": "Zatvori",
+    "collapse": "Sažmi",
+    "confirm": "Potvrdi",
+    "contrast": "Kontrast",
+    "copy": "Kopiraj",
+    "create": "Kreiraj",
+    "createNew": "Kreiraj novo",
+    "crop": "Obreži",
+    "cut": "Izreži",
+    "decline": "Odbij",
+    "delete": "Izbriši",
+    "deleteAccount": "Izbriši račun",
+    "deleting": "Brisanje...",
+    "deny": "Odbij",
+    "deselect": "Poništi odabir",
+    "deselectAll": "Poništi odabir",
+    "details": "Detalji",
+    "disable": "Onemogući",
+    "discard": "Odbaci",
+    "dismiss": "Odbaci",
+    "donating": "Doniranje...",
+    "downgrading": "Vraćanje na staru verziju...",
+    "download": "Preuzmi",
+    "downloading": "Preuzimanje...",
+    "duplicate": "Dupliciraj",
+    "edit": "Uredi",
+    "enable": "Omogući",
+    "enterFullscreen": "Prikaži preko cijelog zaslona",
+    "error": "Došlo je do pogreške",
+    "exitFullscreen": "Izađi iz prikaza cijelog zaslona",
+    "expand": "Proširi",
+    "export": "Izvezi",
+    "exporting": "Izvoz...",
+    "fast": "Brzo",
+    "fastForward": "Brzo naprijed",
+    "faster": "Brže",
+    "filter": "Filtar",
+    "finish": "Završi",
+    "first": "Prvo",
+    "fitToHeight": "Prilagodi visini",
+    "fitToScreen": "Prilagodi zaslonu",
+    "fitToWidth": "Prilagodi širini",
+    "flipHorizontal": "Okreni vodoravno",
+    "flipVertical": "Okreni okomito",
+    "forgotPassword": "Zaboravljena lozinka?",
+    "forward": "Naprijed",
+    "fullHd": "Full HD",
+    "fullscreen": "Puni zaslon",
+    "fullscreenOff": "Puni zaslon isključen",
+    "fullscreenOn": "Puni zaslon uključen",
+    "grant": "Odobri",
+    "grayscale": "Sivi tonovi",
+    "hd": "HD",
+    "help": "Pomoć",
+    "high": "Visoka",
+    "hue": "Nijansa",
+    "ignore": "Zanemari",
+    "import": "Uvezi",
+    "importing": "Uvoz...",
+    "info": "Informacija",
+    "invert": "Invertiraj boje",
+    "invertSelection": "Obrni odabir",
+    "invite": "Pozovi",
+    "join": "Pridruži se",
+    "last": "Zadnje",
+    "leave": "Napusti",
+    "less": "Manje",
+    "loading": "Učitavanje...",
+    "loop": "Ponavljaj sve",
+    "loopOff": "Ponavljaj sve isključeno",
+    "loopOn": "Ponavljaj sve uključeno",
+    "low": "Niska",
+    "maximize": "Povećaj",
+    "medium": "Srednja",
+    "minimize": "Smanji",
+    "more": "Više",
+    "mute": "Isključi zvuk",
+    "muteOff": "Uključi zvuk",
+    "muteOn": "Isključi zvuk",
+    "new": "Novo",
+    "next": "Sljedeće",
+    "no": "Ne",
+    "noData": "Nema podataka",
+    "noDataAvailable": "Nema dostupnih podataka",
+    "noDataToDisplay": "Nema podataka za prikaz",
+    "noDataToExport": "Nema podataka za izvoz",
+    "noDataToPrint": "Nema podataka za ispis",
+    "noDataToShow": "Nema podataka za prikaz",
+    "noItems": "Nema stavki",
+    "noItemsAvailable": "Nema dostupnih stavki",
+    "noItemsFound": "Nije pronađena nijedna stavka",
+    "noItemsToDisplay": "Nema stavki za prikaz",
+    "noItemsToExport": "Nema stavki za izvoz",
+    "noItemsToPrint": "Nema stavki za ispis",
+    "noItemsToShow": "Nema stavki za prikaz",
+    "noMatches": "Nema podudaranja",
+    "noMatchesAvailable": "Nema dostupnih podudaranja",
+    "noMatchesFound": "Nema pronađenih podudaranja",
+    "noMatchesToDisplay": "Nema podudaranja za prikaz",
+    "noMatchesToExport": "Nema podudaranja za izvoz",
+    "noMatchesToPrint": "Nema podudaranja za ispis",
+    "noMatchesToShow": "Nema podudaranja za prikaz",
+    "noMoreData": "Nema više podataka",
+    "noMoreItems": "Nema više stavki",
+    "noMoreRecords": "Nema više zapisa",
+    "noMoreResults": "Nema više rezultata",
+    "noRecordsFound": "Nije pronađen nijedan zapis",
+    "noResults": "Nema rezultata",
+    "noResultsAvailable": "Nema dostupnih rezultata",
+    "noResultsFound": "Nema pronađenih rezultata",
+    "noResultsToDisplay": "Nema rezultata za prikaz",
+    "noResultsToExport": "Nema rezultata za izvoz",
+    "noResultsToPrint": "Nema rezultata za ispis",
+    "noResultsToShow": "Nema rezultata za prikaz",
+    "none": "Nijedno",
+    "normal": "Normalno",
+    "ok": "U redu",
+    "open": "Otvori",
+    "paste": "Zalijepi",
+    "pause": "Pauza",
+    "play": "Reproduciraj",
+    "playPause": "Reproduciraj/Pauza",
+    "playbackSpeed": "Brzina reprodukcije",
+    "preferences": "Postavke",
+    "previous": "Prethodno",
+    "print": "Ispiši",
+    "processing": "Obrada...",
+    "processingPayment": "Obrada plaćanja...",
+    "profile": "Profil",
+    "quality": "Kvaliteta",
+    "question": "Pitanje",
+    "redo": "Vrati",
+    "refresh": "Osvježi",
+    "refunding": "Povrat novca...",
+    "register": "Registracija",
+    "reject": "Odbij",
+    "reload": "Ponovno učitaj",
+    "remove": "Ukloni",
+    "repeat": "Ponavljaj",
+    "repeatOff": "Ponavljaj isključeno",
+    "repeatOn": "Ponavljaj uključeno",
+    "repeatOne": "Ponavljaj jednu",
+    "repeatOneOff": "Ponavljaj jednu isključeno",
+    "repeatOneOn": "Ponavljaj jednu uključeno",
+    "report": "Prijavi",
+    "reset": "Vrati na početno",
+    "resetPassword": "Ponovno postavi lozinku",
+    "resetZoom": "Vrati uobičajeno",
+    "restore": "Vrati",
+    "restoring": "Vraćanje iz sigurnosne kopije...",
+    "resume": "Nastavi",
+    "retry": "Pokušaj ponovno",
+    "revoke": "Opozovi",
+    "rewind": "Premotaj unatrag",
+    "rotateLeft": "Rotiraj ulijevo",
+    "rotateRight": "Rotiraj udesno",
+    "saturation": "Zasićenje",
+    "save": "Spremi",
+    "saveAs": "Spremi kao",
+    "saving": "Spremanje...",
+    "search": "Traži...",
+    "select": "Odaberi",
+    "selectAll": "Odaberi sve",
+    "selectInverse": "Invertiraj odabir",
+    "selectNone": "Ne odabirati ništa",
+    "selectRange": "Odaberi raspon",
+    "sending": "Šalje se...",
+    "sepia": "Sepia",
+    "settings": "Postavke",
+    "share": "Podijeli",
+    "sharpen": "Izoštravanje",
+    "shuffle": "Nasumično",
+    "shuffleOff": "Nasumično isključeno",
+    "shuffleOn": "Nasumično uključeno",
+    "signIn": "Prijava",
+    "signOut": "Odjava",
+    "slow": "Sporo",
+    "slower": "Sporije",
+    "sort": "Sortiraj",
+    "start": "Početak",
+    "stop": "Zaustavi",
+    "submitting": "Slanje...",
+    "subscribing": "Pretplata...",
+    "subtitles": "Podnaslovi",
+    "success": "Uspjeh!",
+    "synchronizing": "Usklađivanje...",
+    "unblock": "Odblokiraj",
+    "undo": "Poništi",
+    "unmute": "Uključi zvuk",
+    "unsubscribing": "Odjava od pretplate...",
+    "update": "Ažuriraj",
+    "upgrading": "Nadogradnja...",
+    "upload": "Učitaj",
+    "uploading": "Učitavanje...",
+    "view": "Pregled",
+    "volumeDown": "Stišaj zvuk",
+    "volumeUp": "Pojačaj zvuk",
+    "warning": "Upozorenje!",
+    "yes": "Da",
+    "zoomIn": "Povećaj",
+    "zoomOut": "Smanji",
+    "zoomToFit": "Prikaži cijelo"
+  },
+  "errors": {
+    "accountLocked": "Vaš je račun privremeno zaključan zbog previše neuspjelih pokušaja prijave. Pokušajte ponovno kasnije.",
+    "ageRestriction": "Morate imati najmanje 13 godina za stvaranje računa.",
+    "cameraDenied": "Pristup kameri je odbijen. Omogućite pristup kameri u postavkama preglednika i pokušajte ponovno.",
+    "cameraUnavailable": "Kamera nije dostupna. Provjerite svoje postavke kamere i pokušajte ponovno.",
+    "contactSupport": "Ako se problem nastavi, kontaktirajte podršku.",
+    "couponExpired": "Kupon je istekao. Iskoristite drugi kupon ili kontaktirajte podršku.",
+    "dismiss": "Odbaci",
+    "emailInUse": "Ova e-adresa već se koristi. Pokušajte se prijaviti ili zatražite ponovno postavljanje lozinke.",
+    "emailNotVerified": "Vaša e-adresa nije potvrđena. Provjerite svoj pretinac dolazne pošte i potvrdite svoju e-adresu prije prijave.",
+    "fileTooLarge": "Datoteka je prevelika. Maksimalna veličina je 5MB.",
+    "geolocationDenied": "Pristup vašoj lokaciji je odbijen. Omogućite pristup lokaciji u postavkama preglednika i pokušajte ponovno.",
+    "geolocationUnavailable": "Lokacija nije dostupna. Provjerite svoje postavke lokacije i pokušajte ponovno.",
+    "goBack": "Vrati se natrag",
+    "invalidCoupon": "Nevažeći kupon. Provjerite kod kupona i pokušajte ponovno.",
+    "invalidCredentials": "Nevažeće vjerodajnice. Provjerite svoju e-poštu i lozinku.",
+    "invalidDateOfBirth": "Nevažeći datum rođenja. Morate imati najmanje 13 godina za stvaranje računa.",
+    "invalidEmail": "Unesite ispravnu e-adresu",
+    "invalidFileType": "Nevažeći tip datoteke. Dopuštene su samo slike (JPG, PNG, GIF).",
+    "invalidInput": "Nevažeći unos. Provjerite svoje podatke i pokušajte ponovno.",
+    "invalidInviteCode": "Nevažeći pozivni kod. Provjerite kod i pokušajte ponovno.",
+    "invalidPaymentMethod": "Nevažeći način plaćanja. Ažurirajte svoje podatke za plaćanje i pokušajte ponovno.",
+    "invalidPhoneNumber": "Nevažeći broj telefona. Unesite ispravan broj telefona.",
+    "invalidReceipt": "Nevažeća potvrda. Provjerite svoje podatke i pokušajte ponovno.",
+    "invalidRequest": "Nevažeći zahtjev. Provjerite svoje podatke i pokušajte ponovno.",
+    "invalidResetToken": "Nevažeći token za ponovno postavljanje. Zatražite novu poveznicu za ponovno postavljanje lozinke.",
+    "invalidSubscription": "Nevažeća pretplata. Kontaktirajte podršku za pomoć.",
+    "invalidToken": "Nevažeći token. Pokušajte se ponovno prijaviti.",
+    "invalidUsername": "Nevažeće korisničko ime. Korisničko ime smije sadržavati samo slova, brojeve i donje crte.",
+    "invalidVerificationCode": "Nevažeći verifikacijski kod. Provjerite svoju e-poštu i pokušajte ponovno.",
+    "inviteOnly": "Trenutno je otvorena registracija samo po pozivu. Kontaktirajte administratora za pozivni kod.",
+    "learnMore": "Saznaj više",
+    "maintenance": "Trenutno provodimo održavanje. Vratite se uskoro.",
+    "microphoneDenied": "Pristup mikrofonu je odbijen. Omogućite pristup mikrofonu u postavkama preglednika i pokušajte ponovno.",
+    "microphoneUnavailable": "Mikrofon nije dostupan. Provjerite svoje postavke mikrofona i pokušajte ponovno.",
+    "networkError": "Pogreška u mrežnoj vezi. Provjerite svoju internetsku vezu i pokušajte ponovno.",
+    "notFound": "Traženi resurs nije pronađen.",
+    "notImplemented": "Ova funkcionalnost još nije implementirana.",
+    "notificationDenied": "Pristup obavijestima je odbijen. Omogućite pristup obavijestima u postavkama preglednika i pokušajte ponovno.",
+    "notificationUnavailable": "Obavijesti nisu dostupne. Provjerite svoje postavke obavijesti i pokušajte ponovno.",
+    "operationNotAllowed": "Ova radnja nije dopuštena.",
+    "passwordTooShort": "Lozinka mora sadržavati najmanje 8 znakova",
+    "passwordsDontMatch": "Lozinke se ne podudaraju",
+    "paymentFailed": "Plaćanje nije uspjelo. Provjerite svoje podatke za plaćanje i pokušajte ponovno.",
+    "paymentRequired": "Za pristup ovoj funkcionalnosti potrebno je platiti pretplatu.",
+    "permissionDenied": "Nemate dopuštenje za izvršavanje ove radnje.",
+    "phoneNumberInUse": "Ovaj broj telefona već se koristi. Pokušajte se prijaviti ili zatražite ponovno postavljanje lozinke.",
+    "quotaExceeded": "Prekoračili ste svoju kvotu. Pokušajte ponovno kasnije ili nadogradite svoj račun.",
+    "receiptAlreadyUsed": "Ova potvrda je već iskorištena. Kontaktirajte podršku za pomoć.",
+    "requestTimeout": "Vrijeme čekanja na odgovor je isteklo. Pokušajte ponovno.",
+    "required": "Ovo polje je obavezno",
+    "resetTokenExpired": "Link za ponovno postavljanje lozinke je istekao. Zatražite novi link.",
+    "resourceNotFound": "Traženi resurs nije pronađen.",
+    "serverError": "Došlo je do pogreške na poslužitelju. Pokušajte ponovno kasnije.",
+    "serviceUnavailable": "Usluga je trenutno nedostupna. Pokušajte ponovno kasnije.",
+    "somethingWentWrong": "Nešto je pošlo po zlu. Pokušajte ponovno kasnije.",
+    "storageDenied": "Pristup pohrani je odbijen. Omogućite pristup pohrani u postavkama preglednika i pokušajte ponovno.",
+    "storageUnavailable": "Pohrana nije dostupna. Provjerite svoje postavke preglednika i pokušajte ponovno.",
+    "subscriptionAlreadyCanceled": "Ova pretplata je već otkazana.",
+    "subscriptionExpired": "Vaša pretplata je istekla. Obnovite svoju pretplatu za nastavak korištenja usluge.",
+    "subscriptionNotCanceled": "Nije moguće otkazati aktivnu pretplatu. Kontaktirajte podršku za pomoć.",
+    "timeout": "Vrijeme čekanja je isteklo. Pokušajte ponovno.",
+    "tokenExpired": "Token je istekao. Pokušajte se ponovno prijaviti.",
+    "tooManyRequests": "Previše zahtjeva. Pokušajte ponovno kasnije.",
+    "trialExpired": "Vaš probni rok je istekao. Nadogradite na punu verziju za nastavak korištenja usluge.",
+    "tryAgain": "Pokušaj ponovno",
+    "unauthorized": "Niste ovlašteni za ovu radnju. Prijavite se i pokušajte ponovno.",
+    "unknownError": "Došlo je do nepoznate pogreške. Pokušajte ponovno kasnije.",
+    "unsupportedBrowser": "Vaš preglednik nije podržan. Nadogradite na najnoviju verziju Chromea, Firefoxa, Safarija ili Edgea.",
+    "updateRequired": "Dostupna je nova verzija aplikacije. Ažurirajte aplikaciju za nastavak korištenja.",
+    "uploadFailed": "Prijenos datoteke nije uspio. Pokušajte ponovno.",
+    "usernameTaken": "Korisničko ime je već zauzeto. Pokušajte s drugim korisničkim imenom.",
+    "usernameTooLong": "Korisničko ime ne smije biti duže od 30 znakova.",
+    "usernameTooShort": "Korisničko ime mora sadržavati najmanje 3 znaka.",
+    "verificationCodeExpired": "Verifikacijski kod je istekao. Zatražite novi kod.",
+    "weakPassword": "Lozinka je preslaba. Koristite kombinaciju slova, brojeva i posebnih znakova."
+  },
+  "events": {
+    "attendees": "Sudionici",
+    "create": "Kreiraj događaj",
+    "date": "Datum",
+    "description": "Opis",
+    "details": "Detalji događaja",
+    "eventCreated": "Događaj je uspješno kreiran!",
+    "eventDeleted": "Događaj je uspješno izbrisan!",
+    "eventUpdated": "Događaj je uspješno ažuriran!",
+    "going": "Dolazim",
+    "inviteFriends": "Pozovi prijatelje",
+    "location": "Lokacija",
+    "maybe": "Možda",
+    "noEvents": "Nema nadolazećih događaja",
+    "noEventsDescription": "Pridružite se događajima kako biste upoznali nove ljude i proširili svoju mrežu.",
+    "notGoing": "Ne dolazim",
+    "past": "Prošli događaji",
+    "rsvp": "Javite nam hoćete li doći",
+    "saveEvent": "Spremi događaj",
+    "shareEvent": "Podijeli događaj",
+    "time": "Vrijeme",
+    "title": "Događaji",
+    "upcoming": "Nadolazeći događaji"
+  },
+  "friends": {
+    "accept": "Prihvati",
+    "addFriend": "Dodaj prijatelja",
+    "allFriends": "Svi prijatelji",
+    "block": "Blokiraj",
+    "cancelRequest": "Otkaži zahtjev",
+    "decline": "Odbij",
+    "friendRequests": "Zahtjevi za prijateljstvom",
+    "mutualFriends": "{{count}} zajedničkih prijatelja",
+    "noFriends": "Još nemate prijatelja",
+    "noFriendsDescription": "Pridružite se grupama i pošaljite zahtjeve za prijateljstvo kako biste se povezali s ljudima.",
+    "online": "Na mreži",
+    "pending": "Na čekanju",
+    "removeFriend": "Ukloni prijatelja",
+    "title": "Prijatelji",
+    "unfriend": "Ukloni prijateljstvo"
+  },
+  "groups": {
+    "create": "Kreiraj grupu",
+    "createButton": "Kreiraj grupu",
+    "createGroup": "Kreiraj grupu",
+    "discover": "Otkrij grupe",
+    "groupCreated": "Grupa je uspješno kreirana!",
+    "groupDeleted": "Grupa je uspješno izbrisana!",
+    "groupDescription": "Opis grupe",
+    "groupImage": "Slika grupe",
+    "groupName": "Naziv grupe",
+    "groupSettings": "Postavke grupe",
+    "groupType": "Vrsta grupe",
+    "groupUpdated": "Grupa je uspješno ažurirana!",
+    "inviteMembers": "Pozovi članove",
+    "inviteOnly": "Samo po pozivu",
+    "join": "Pridruži se",
+    "leave": "Napusti grupu",
+    "makeAdmin": "Postavi administratora",
+    "member": "član",
+    "members": "članova",
+    "myGroups": "Moje grupe",
+    "noGroups": "Niste se pridružili nijednoj grupi",
+    "noGroupsDescription": "Otkrijte i pridružite se grupama koje odgovaraju vašim interesima.",
+    "private": "Privatna",
+    "public": "Javna",
+    "removeMember": "Ukloni člana",
+    "reportGroup": "Prijavi grupu",
+    "title": "Grupe"
+  },
+  "landing": {
+    "cta": {
+      "description": "Pridruži se zajednici danas i započni svoje putovanje prema smislenim vezama.",
+      "primary": "Kreiraj svoj račun",
+      "secondary": "Saznaj više",
+      "title": "Spreman si za početak?"
+    },
+    "faq": {
+      "items": [
+        {
+          "answer": "Da, osnovno članstvo je potpuno besplatno. Također nudimo premium članstvo s dodatnim značajkama.",
+          "question": "Je li korištenje SoulTribea besplatno?"
+        },
+        {
+          "answer": "Štedimo vaše podatke i ne dijelimo ih s trećim stranama bez vašeg pristanka. Pročitajte našu politiku privatnosti za više informacija.",
+          "question": "Kako se moja privatnost štiti?"
+        },
+        {
+          "answer": "Apsolutno! Naša zajednica uključuje i slavi sve osobnosti. Imamo prostora za sve, od onih koji vole tihe razgovore do onih koji uživaju u živahnim raspravama.",
+          "question": "Mogu li se pridružiti ako sam introvert?"
+        },
+        {
+          "answer": "Naš algoritam uzima u obzir vaše interese, vrijednosti i ciljeve kako bi vam predložio kompatibilne članove.",
+          "question": "Kako funkcionira uparivanje?"
+        },
+        {
+          "answer": "Da! Organiziramo virtualne i uživo događaje za naše članove kako biste se mogli povezati na način koji vam najviše odgovara.",
+          "question": "Mogu li se pridružiti događajima uživo?"
+        }
+      ],
+      "title": "Često postavljana pitanja"
+    },
+    "features": {
+      "items": [
+        {
+          "description": "Naša zajednica gradi se na poštovanju, inkluzivnosti i sigurnosti svakog člana.",
+          "title": "Sigurna zajednica"
+        },
+        {
+          "description": "Dobivaš prilagođene preporuke temeljene na svojim interesima i vrijednostima.",
+          "title": "Personalizirani doživljaj"
+        },
+        {
+          "description": "Poveži se s ljudima iz cijelog svijeta koji dijele tvoje strasti.",
+          "title": "Globalna povezanost"
+        }
+      ],
+      "title": "Zašto se pridružiti?",
+      "item1": "Uparivanje uz uvažavanje astrologije — poveži se uz pomoć svoje natalne karte.",
+      "item2": "Pametno planiranje vremenskih zona — mi odrađujemo UTC konverzije za tebe.",
+      "item3": "Izravna komunikacija putem Jitsija — tekst/audio/video; ništa se ne pohranjuje niti snima na SoulTribe.chat.",
+      "item4": "Jednostavno pridruživanje putem poveznice — privatna Jitsi soba za potvrđene susrete; prilagođeno privatnosti, bez instalacije na računalu.",
+      "item5": "Minimalističko, fokusirano sučelje — dizajnirano za smislen razgovor."
+    },
+    "gettingStarted": {
+      "cta": "Pridruži se besplatno",
+      "description": "Pridruži se zajednici od više od 1 milijuna ljudi koji već grade značajne veze.",
+      "title": "Započni danas"
+    },
+    "globalCommunity": {
+      "countries": "{{count}} zemalja",
+      "description": "Pridruži se ljudima iz preko 100 zemalja koji već grade značajne veze.",
+      "languages": "{{count}} jezika",
+      "members": "{{count}} članova i raste",
+      "title": "Pridruži se našoj globalnoj zajednici"
+    },
+    "hero": {
+      "cta": "Započni svoju avanturu",
+      "subtitle": "Poveži se s ljudima koji dijele tvoje vrijednosti, interese i strasti. Zajedno možemo graditi značajne veze koje traju.",
+      "title": "Pridruži se našoj globalnoj zajednici",
+      "learn_more": "Otkrij viziju SoulTribe →"
+    },
+    "howItWorks": {
+      "steps": [
+        {
+          "description": "Prikaži svoje interese, vrijednosti i što tražiš u zajednici.",
+          "title": "Kreiraj svoj profil"
+        },
+        {
+          "description": "Naš algoritam će te spojiti s ljudima koji dijele tvoje vrijednosti i interese.",
+          "title": "Pronađi svoje ljude"
+        },
+        {
+          "description": "Započni razgovore, sudjeluj u događajima i izgrađuj trajne veze.",
+          "title": "Poveži se i napreduj"
+        }
+      ],
+      "title": "Kako funkcionira"
+    },
+    "matching": {
+      "cta": "Saznaj više",
+      "description": "Naš napredni algoritam pronalazi podudaranja na temelju tvojih interesa, vrijednosti i ciljeva.",
+      "title": "Kako funkcionira uparivanje (sažetak)",
+      "text": "Izračunavamo ključne relacijske pokazatelje iz tvoje karte i uspoređujemo ih s drugima kako bismo pronašli rezonancu. Dajemo prednost harmoniji, komplementarnosti i potencijalu rasta u odnosu na opće metrike popularnosti."
+    },
+    "privacy": {
+      "description": "Štitimo tvoje podatke i osiguravamo sigurnu i sigurnu okolinu za sve naše članove.",
+      "learnMore": "Saznaj više o našoj politici privatnosti",
+      "title": "Tvoja privatnost je naš prioritet",
+      "item1": "Tražimo samo ono što je potrebno za istinske povezanosti.",
+      "item2": "Podaci tvog profila ne prodaju se niti se dijele oglašivačkim mrežama.",
+      "item3": "Ti kontroliraš tko te može kontaktirati i kada ćeš podijeliti više."
+    },
+    "proTips": {
+      "tips": [
+        "Budi autentičan u svom profilu",
+        "Redovito ažuriraj svoje interese",
+        "Budući otvoren za nove razgovore",
+        "Poštuj različitosti i uključi sve",
+        "Budući strpljiv u izgradnji veza"
+      ],
+      "title": "Savjeti za uspjeh"
+    },
+    "testimonials": {
+      "items": [
+        {
+          "author": "Ivana, 28",
+          "quote": "Našao sam prijatelje za cijeli život kroz ovu zajednicu. Zahvaljujući SoulTribeu, sada imam ljude koji me stvarno razumiju."
+        },
+        {
+          "author": "Marko, 32",
+          "quote": "Kao netko tko se nedavno preselio u novi grad, ova aplikacija mi je pomogla da pronađem ljude s istim interesima. Već sam se upoznao s nevjerojatnim ljudima!"
+        },
+        {
+          "author": "Petra, 25",
+          "quote": "Volim kako me ova zajednica povezuje s ljudima koje inače nikada ne bih upoznao. Već sam naučio toliko toga novog!"
+        }
+      ],
+      "title": "Što naši članovi kažu"
+    },
+    "page_title": "SoulTribe.chat – Pronađi svoje duhovno pleme",
+    "how": {
+      "title": "Kako funkcionira",
+      "step1": "Kreiraj svoj profil — unesi datum, vrijeme i mjesto rođenja kako bi se izradio tvoj jedinstveni ‘soul’ prikaz.",
+      "step2": "Otkrij podudaranja — ističemo veze prema kompatibilnosti i rezonanci.",
+      "step3": "Započni razgovor — pozovi podudaranja na chat; sigurno i privatno po dizajnu.",
+      "step4": "Upoznaj se (neobavezno) — dogovori Jitsi poziv ili susret uživo uz obostrani pristanak."
+    },
+    "getting_started": {
+      "title": "Početak",
+      "step1": "Kreiraj račun — nije potreban društveni prijavosustav.",
+      "step2": "Popuni profil — dodaj podatke o rođenju; okvirno vrijeme je u redu.",
+      "step3": "Postavi dostupnost — predloži lokalne termine; mi rješavamo UTC.",
+      "step4": "Otkrij podudaranja — pregledaj prijedloge temeljene na rezonanci.",
+      "step5": "Razgovaraj i po želji se upoznaj — ostani u aplikaciji; dogovori termin kad budeš spreman."
+    },
+    "protips": {
+      "title": "Savjeti",
+      "item1": "Dodaj nekoliko termina dostupnosti kroz različite dane za brža povezivanja.",
+      "item2": "Budi autentičan u uvodu — konkretnosti pomažu pravim ljudima da te nađu.",
+      "item3": "Pristanak na prvom mjestu. Kreći se tempom koji ti odgovara.",
+      "item2b": "Personalizirajte svoj pristup — pozovite se na AI rezime snaga kada šaljete poruke ili predlažete sastanke."
+    },
+    "next": {
+      "title": "Sljedeći koraci",
+      "go_dashboard": "Idi na nadzornu ploču",
+      "login_register": "Prijava / Registracija",
+      "step1": "Kreiraj račun",
+      "step2": "Popuni svoj profil",
+      "step3": "Kreiraj vremenski termin",
+      "step4": "Prati nove podudarnosti",
+      "step5": "Predloži ili potvrdi susret",
+      "step6": "Pridruži se Jitsi chatu",
+      "read_more": "Pročitaj detaljan vodič →"
+    },
+    "global": {
+      "title": "Globalna zajednica, lokalno vrijeme",
+      "text": "Poveži se s istomišljenicima širom svijeta uz automatsku konverziju vremenskih zona.",
+      "auto_title": "Automatsko prepoznavanje vremenske zone",
+      "auto_text": "Automatski prepoznajemo tvoju vremensku zonu radi lakšeg dogovaranja.",
+      "native_title": "Podrška za materinski jezik",
+      "native_text": "Razgovaraj na preferiranom jeziku uz naš ugrađeni prijevod.",
+      "tz_title": "Planiranje svjesno vremenskih zona",
+      "tz_text": "Nema više računanja s vremenskim zonama — konverzije odrađujemo mi.",
+      "select_label": "Odaberi jezik:",
+      "translated_title": "Prevedeno sučelje",
+      "translated_text": "Navigirajte UI na svom jeziku i vidite AI rezimee podudaranja u svojoj preferiranoj lokalizaciji."
+    },
+    "how_full": {
+      "title": "Kako SoulTribe funkcionira",
+      "step1": "Stvorite svoj prostor — registrirajte se i podijelite bitne elemente koji oblikuju vaš jedinstveni energetski otisak.",
+      "step2": "Postavite svoje temelje — odaberite svoj primarni jezik, opcionalne sekundarne, datum rođenja i potvrdite svoju trenutnu lokalnu vremensku zonu.",
+      "step3": "Otvorite svoj raspored — stvorite prozore dostupnosti kako bi sustav znao kada ste slobodni.",
+      "step4": "Otkrijte podudaranja temeljena na rezonanciji — naša inteligencija dijagrama ističe ljude čija energija odgovara vašoj.",
+      "step5": "Primijetite preklapanja — preklapajuća dostupnost otkriva kada je potencijalni partner za podudaranje slobodan u isto vrijeme.",
+      "step6": "Predložite ili potvrdite sastanak — pošaljite ili prihvatite pozivnice kada vrijeme izgleda ispravno.",
+      "step7": "Pridružite se Jitsi chatu — sastajte se licem u lice u sigurnoj, privatnoj video sobi kada su svi spremni.",
+      "summary": "Svaki korak je vođen pristankom i dizajniran da poštuje vaše granice.",
+      "step8": "Detaljni vodič za sljedeće korake"
+    },
+    "different": {
+      "title": "Zašto je SoulTribe drugačiji",
+      "item1": "Astrološki-prvo podudaranje koje poštuje nijanse izvan sunčevih znakova.",
+      "item2": "Čovjeko-centrirana privatnost bez oglasa, piksela za praćenje ili iznenađujućih algoritama.",
+      "item3": "Planiranje vođeno pristankom s verifikacijom, jasnim prijedlozima, potvrdama i jednostavnim otkazivanjima.",
+      "item4": "Vođena veza putem AI uvida o podudaranju, isticanja snaga i upita za tumačenje profila."
+    },
+    "experience": {
+      "title": "Što ćete doživjeti",
+      "item1": "Rezonancija-prve uvode izvedene iz sinastričkih ocjena i preklapajuće dostupnosti — bez beskonačnog pomicanja.",
+      "item2": "AI-vođeni uvidi s rezimeima snage podudaranja i tumačenjima profila za podršku refleksivnim razgovorima.",
+      "item3": "Ritmo vođen pristankom gdje predlažete, potvrđujete ili otkazujete sastanke i pozivate druge u Jitsi kada se svi slažu.",
+      "summary": "Krećite se ritmom koji vam odgovara — zaustavite se u bilo kojem trenutku i nastavite nit kada ste spremni."
+    },
+    "matching_full": {
+      "title": "Kako funkcionira podudaranje",
+      "step1": "Sinteza dijagrama — kombinujemo podatke o rođenju svakog člana kako bismo izračunali sinastričke aspekte, elementarnu ravnotežu i preklapanja kuća.",
+      "step2": "Procjena kompatibilnosti — indikatori se pretvaraju u rezultat i vektor snaga; kada premaši naš prag vidljivosti i dostupnost se preklapa, podudaranje se pojavljuje na vašoj kontrolnoj ploči.",
+      "step3": "Kontekst za akciju — zatražite AI-pisani rezime kako biste istaknuli ključne teme i snage prije kontakta.",
+      "summary": "Bez pomicanja, samo jasni astrološki konteksti za pažljiv odabir vaše sljedeće veze."
+    },
+    "support": {
+      "title": "Podrška & Resursi",
+      "item1": "Concierge onboarding s upitima koji vam pomažu podijeliti točno onoliko koliko trebate.",
+      "item2": "Vođene provjere putem AI-generiranih rezimea podudaranja i profilih refleksija koje drže razgovore usidrenima.",
+      "item3": "1:1 sastanci s mogućnošću pozivanja drugih u svoju Jitsi sobu kada se svi slažu.",
+      "item4": "Biblioteka resursa koja uključuje vodiče za komunikaciju, prakse sigurnosti i savjete za značajne 1:1 sastanke.",
+      "summary": "Ovdje smo prije, tijekom i nakon svake veze koju kreirate."
+    }
+  },
+  "login": {
+    "confirm_password": "potvrdi lozinku (za registraciju)",
+    "display_name": "prikazno ime (za registraciju)",
+    "email": "e-pošta",
+    "email_not_verified": "E-pošta nije potvrđena? ",
+    "enter_email_first": "Molimo prvo unesite svoju adresu e-pošte.",
+    "go_dashboard": "Idi na nadzornu ploču",
+    "intro": "Prijavite se s postojećim računom ili registrirajte novi.",
+    "login": "Prijava",
+    "login_required": "Potrebni su e-pošta i lozinka.",
+    "page_title": "SoulTribe.chat — Prijava / Registracija",
+    "password": "lozinka",
+    "password_mismatch": "Lozinke se ne podudaraju.",
+    "redirect_hint": "Nakon prijave bit ćete preusmjereni na svoju nadzornu ploču.",
+    "register": "Registracija",
+    "registration_success": "Račun je kreiran. Molimo potvrdite svoju adresu e-pošte.",
+    "required_fields": "Potrebni su e-pošta, lozinka i prikazno ime.",
+    "resend_verification": "Ponovno pošalji e-poštu za potvrdu",
+    "reset_password": "Ponovno postavi lozinku",
+    "reset_sent": "Ako račun s ovom adresom e-pošte postoji, poslana je poruka za ponovno postavljanje lozinke.",
+    "title": "Dobrodošli",
+    "verification_sent": "Ako vaša adresa e-pošte još nije potvrđena, poslana je nova poruka za potvrdu."
+  },
+  "messaging": {
+    "addFile": "Dodaj datoteku",
+    "addFiles": "Dodaj datoteke",
+    "addPhoto": "Dodaj fotografiju",
+    "delivered": "Dostavljeno",
+    "lastSeen": "Zadnja aktivnost",
+    "newMessage": "Nova poruka",
+    "noConversations": "Nema razgovora",
+    "noConversationsDescription": "Pošaljite poruku nekome kako biste započeli razgovor.",
+    "offline": "Izvan mreže",
+    "online": "Na mreži",
+    "searchUsers": "Pretraži korisnike...",
+    "seen": "Pročitano",
+    "send": "Pošalji",
+    "sending": "Šalje se...",
+    "title": "Poruke",
+    "typeMessage": "Napišite poruku...",
+    "typing": "kuca...",
+    "unreadMessages": "nepročitane poruke"
+  },
+  "nav": {
+    "dashboard": "Nadzorna ploča",
+    "login": "Prijava",
+    "logout": "Odjava",
+    "profile": "Profil",
+    "welcome": "Početna",
+    "home": "Početna",
+    "discover": "Otkrij",
+    "matches": "Podudaranja",
+    "messages": "Poruke"
+  },
+  "onboarding": {
+    "completeProfile": "Dovršite svoj profil",
+    "getStarted": "Započni",
+    "next": "Sljedeće",
+    "profileCompletion": "Dovršeno {{percentage}}%",
+    "skip": "Preskoči",
+    "step1": {
+      "description": "Dodajte svoju sliku i nekoliko riječi o vama kako biste pomogli drugima da vas bolje upoznaju.",
+      "title": "Kreiraj svoj profil"
+    },
+    "step2": {
+      "description": "Što volite raditi? Odaberite svoje interese kako biste pronašli ljude s istim interesima.",
+      "title": "Odaberi svoje interese"
+    },
+    "step3": {
+      "description": "Započnite razgovor s ljudima koji dijele vaše interese i vrijednosti.",
+      "title": "Poveži se s ljudima"
+    },
+    "welcome": "Dobrodošli u SoulTribe"
+  },
+  "profile": {
+    "edit": {
+      "addInterest": "Dodaj interes",
+      "basicInfo": "Osnovni podaci",
+      "bio": "O meni",
+      "changePhoto": "Promijeni sliku",
+      "firstName": "Ime",
+      "interests": "Interesi",
+      "lastName": "Prezime",
+      "location": "Lokacija",
+      "profilePicture": "Profilna slika",
+      "removePhoto": "Ukloni sliku",
+      "saveChanges": "Spremi promjene",
+      "title": "Uredi profil"
+    },
+    "view": {
+      "addFriend": "Dodaj za prijatelja",
+      "friends": "Prijatelji",
+      "interests": "Interesi",
+      "lastSeen": "Zadnja aktivnost",
+      "memberSince": "Član od",
+      "mutualFriends": "Zajednički prijatelji",
+      "noBio": "Korisnik nije dodao bio.",
+      "noMutualFriends": "Nema zajedničkih prijatelja",
+      "sendMessage": "Pošalji poruku"
+    },
+    "title": "Tvoj profil",
+    "save": "Spremi",
+    "delete_account": "Izbriši moj račun",
+    "delete_account_confirm": "Jesi li siguran/na da želiš izbrisati svoj račun? Ova radnja se ne može poništiti.",
+    "cancel": "Odustani",
+    "basic_info": {
+      "legend": "Osnovne informacije",
+      "username_label": "Korisničko ime",
+      "username_placeholder": "korisničko ime"
+    },
+    "languages": {
+      "legend": "Jezici"
+    },
+    "location": {
+      "legend": "Trenutna lokacija",
+      "city_placeholder": "Trenutni grad (automatsko dovršavanje)",
+      "use_my_location": "Koristi moju lokaciju",
+      "detected_tz_label": "Prepoznata vremenska zona:",
+      "detected_tz_hint": "(automatski ili odaberi)"
+    },
+    "birth": {
+      "legend": "Podaci o rođenju (za astrologiju)",
+      "date_placeholder": "Datum rođenja",
+      "hour_label": "Sat",
+      "minute_label": "Minuta",
+      "place_placeholder": "Mjesto rođenja (grad, država)",
+      "detected_tz_label": "Prepoznata vremenska zona:",
+      "detected_tz_hint": "(automatski)",
+      "lat_placeholder": "Zemljopisna širina (npr. 48.2082)",
+      "lon_placeholder": "Zemljopisna dužina (npr. 16.3738)",
+      "instructions": "Postavi datum i mjesto rođenja za izračun tvog radixa. Ako ne znaš točno vrijeme, ostavi polje za vrijeme prazno — koristit ćemo zadano 12:00."
+    },
+    "note": "Tvoj profil se koristi za personalizaciju podudaranja i prikaz vremenske zone.",
+    "primary_language_label": "Primarni jezik (za sučelje)",
+    "other_languages_label": "Drugi jezici (za podudaranja)",
+    "language_input_placeholder": "Upiši za dodavanje jezika...",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
+  },
+  "settings": {
+    "account": {
+      "changeEmail": "Promijeni e-poštu",
+      "changePassword": "Promijeni lozinku",
+      "deactivate": "Deaktiviraj račun",
+      "delete": "Izbriši račun",
+      "title": "Račun"
+    },
+    "language": {
+      "dateFormat": "Format datuma",
+      "language": "Jezik",
+      "timeFormat": "Vremenski format",
+      "timezone": "Vremenska zona",
+      "title": "Jezik i regija"
+    },
+    "notifications": {
+      "email": "E-pošta",
+      "eventReminders": "Podsjetnici na događaje",
+      "friendRequests": "Zahtjevi za prijateljstvom",
+      "messages": "Nove poruke",
+      "push": "Push obavijesti",
+      "title": "Obavijesti"
+    },
+    "privacy": {
+      "activityStatus": "Prikaži moj status aktivnosti",
+      "friends": "Samo prijatelji",
+      "private": "Privatno",
+      "profileVisibility": "Vidljivost profila",
+      "public": "Javno",
+      "readReceipts": "Potvrde o čitanju",
+      "title": "Privatnost"
+    },
+    "saveChanges": "Spremi promjene",
+    "title": "Postavke"
+  },
+  "success": {
+    "accountDeactivated": "Račun je uspješno deaktiviran!",
+    "accountDeleted": "Račun je uspješno izbrisan!",
+    "accountReactivated": "Račun je uspješno reaktiviran!",
+    "accountSettingsUpdated": "Postavke računa su uspješno ažurirane!",
+    "backupSuccessful": "Sigurnosna kopija je uspješno napravljena!",
+    "bioUpdated": "Biografija je uspješno ažurirana!",
+    "commentAdded": "Komentar je uspješno dodan!",
+    "commentDeleted": "Komentar je uspješno izbrisan!",
+    "commentUpdated": "Komentar je uspješno ažuriran!",
+    "coverPhotoUpdated": "Naslovna fotografija je uspješno ažurirana!",
+    "donationSuccessful": "Donacija je uspješno obavljena! Hvala vam na podršci!",
+    "downgradeSuccessful": "Vraćanje na staru verziju je uspješno obavljeno!",
+    "downloadSuccessful": "Preuzimanje je uspješno obavljeno!",
+    "emailPreferencesUpdated": "Postavke e-pošte su uspješno ažurirane!",
+    "emailSent": "E-poruka je uspješno poslana!",
+    "emailUpdated": "E-adresa je uspješno ažurirana!",
+    "emailVerified": "E-adresa je uspješno potvrđena!",
+    "eventCreated": "Događaj je uspješno kreiran!",
+    "eventDeleted": "Događaj je uspješno izbrisan!",
+    "eventUpdated": "Događaj je uspješno ažuriran!",
+    "exportSuccessful": "Izvoz je uspješno obavljen!",
+    "friendRemoved": "Prijatelj je uklonjen!",
+    "friendRequestAccepted": "Zahtjev za prijateljstvo je prihvaćen!",
+    "friendRequestDeclined": "Zahtjev za prijateljstvo je odbijen!",
+    "friendRequestSent": "Zahtjev za prijateljstvo je poslan!",
+    "groupCreated": "Grupa je uspješno kreirana!",
+    "groupDeleted": "Grupa je uspješno izbrisana!",
+    "groupUpdated": "Grupa je uspješno ažurirana!",
+    "importSuccessful": "Uvoz je uspješno obavljen!",
+    "interestsUpdated": "Interesi su uspješno ažurirani!",
+    "invitationAccepted": "Pozivnica je uspješno prihvaćena!",
+    "invitationDeclined": "Pozivnica je odbijena!",
+    "invitationSent": "Pozivnica je uspješno poslana!",
+    "likeAdded": "Sviđa vam se!",
+    "likeRemoved": "Uklonjeno iz omiljenih!",
+    "locationUpdated": "Lokacija je uspješno ažurirana!",
+    "loginSuccessful": "Uspješno ste se prijavili!",
+    "logoutSuccessful": "Uspješno ste se odjavili!",
+    "messageSent": "Poruka je uspješno poslana!",
+    "notificationPreferencesUpdated": "Postavke obavijesti su uspješno ažurirane!",
+    "notificationSettingsUpdated": "Postavke obavijesti su uspješno ažurirane!",
+    "passwordChanged": "Lozinka je uspješno promijenjena!",
+    "passwordResetEmailSent": "E-poruka za ponovno postavljanje lozinke je poslana!",
+    "passwordResetSuccessful": "Lozinka je uspješno ponovno postavljena!",
+    "passwordUpdated": "Lozinka je uspješno ažurirana!",
+    "paymentSuccessful": "Plaćanje je uspješno obavljeno!",
+    "phoneNumberUpdated": "Broj telefona je uspješno ažuriran!",
+    "postCreated": "Objava je uspješno kreirana!",
+    "postDeleted": "Objava je uspješno izbrisana!",
+    "postUpdated": "Objava je uspješno ažurirana!",
+    "preferencesUpdated": "Postavke su uspješno ažurirane!",
+    "privacyPreferencesUpdated": "Postavke privatnosti su uspješno ažurirane!",
+    "privacySettingsUpdated": "Postavke privatnosti su uspješno ažurirane!",
+    "profilePictureUpdated": "Profilna slika je uspješno ažurirana!",
+    "profileUpdated": "Profil je uspješno ažuriran!",
+    "refundSuccessful": "Povrat novca je uspješno obavljen!",
+    "registrationSuccessful": "Registracija je uspješna!",
+    "requestApproved": "Zahtjev je odobren!",
+    "requestRejected": "Zahtjev je odbijen!",
+    "requestSent": "Zahtjev je uspješno poslan!",
+    "restoreSuccessful": "Vraćanje iz sigurnosne kopije je uspješno obavljeno!",
+    "saved": "Spremljeno!",
+    "securityPreferencesUpdated": "Sigurnosne postavke su uspješno ažurirane!",
+    "settingsSaved": "Postavke su uspješno spremljene!",
+    "socialLinksUpdated": "Društvene mreže su uspješno ažurirane!",
+    "subscriptionSuccessful": "Pretplata je uspješno obavljena!",
+    "syncSuccessful": "Usklađivanje je uspješno obavljeno!",
+    "unsaved": "Uklonjeno iz spremljenih!",
+    "unsubscriptionSuccessful": "Odjava od pretplate je uspješno obavljena!",
+    "upgradeSuccessful": "Nadogradnja je uspješno obavljena!",
+    "uploadSuccessful": "Prijenos je uspješno obavljen!",
+    "verificationEmailSent": "E-poruka za potvrdu je poslana!"
+  },
+  "validation": {
+    "after": "Mora biti nakon {{date}}",
+    "alpha": "Mogu sadržavati samo slova",
+    "alphaDash": "Mogu sadržavati samo slova, brojeve i crtice",
+    "alphaNumeric": "Mogu sadržavati samo slova i brojeve",
+    "array": {
+      "exactItems": "Morate izabrati točno {{count}} stavki",
+      "maxItems": "Možete izabrati najviše {{count}} stavki",
+      "minItems": "Izaberite najmanje {{count}} stavku"
+    },
+    "ascii": "Mogu sadržavati samo ASCII znakove",
+    "base64": "Nije valjani Base64 niz",
+    "before": "Mora biti prije {{date}}",
+    "between": "Mora biti između {{min}} i {{max}}",
+    "color": "Unesite ispravnu boju u heksadecimalnom formatu",
+    "creditCard": "Unesite ispravan broj kreditne kartice",
+    "custom": {
+      "differentFrom": "Vrijednost mora biti različita od {{field}}",
+      "exists": "Ova vrijednost ne postoji",
+      "regex": "Neispravan format",
+      "requiredIf": "Ovo polje je obavezno kada je {{field}} postavljeno",
+      "requiredUnless": "Ovo polje je obavezno osim ako {{field}} nije postavljeno",
+      "sameAs": "Vrijednosti se moraju podudarati s {{field}}",
+      "unique": "Ova vrijednost već postoji"
+    },
+    "date": {
+      "future": "Datum mora biti u budućnosti",
+      "invalid": "Unesite ispravan datum",
+      "maxAge": "Ne možete imati više od {{age}} godina",
+      "minAge": "Morate imati najmanje {{age}} godina",
+      "past": "Datum mora biti u prošlosti"
+    },
+    "decimal": "Mora biti decimalni broj",
+    "different": "Vrijednosti moraju biti različite",
+    "email": {
+      "invalid": "Unesite ispravnu e-adresu",
+      "notAvailable": "Ova e-adresa se već koristi"
+    },
+    "file": {
+      "invalidType": "Tip datoteke nije podržan. Podržani formati su: {{types}}",
+      "tooFewFiles": "Morate učitati najmanje {{count}} datoteku",
+      "tooLarge": "Datoteka je prevelika. Maksimalna veličina je {{size}}MB",
+      "tooManyFiles": "Možete učitati najviše {{count}} datoteka"
+    },
+    "fileExtension": "Ekstenzija datoteke nije dopuštena",
+    "fileSize": "Veličina datoteke premašuje dopušteni limit",
+    "imageAspectRatio": "Omjer širine i visine slike mora biti {{ratio}}",
+    "imageDimensions": "Dimenzije slike moraju biti {{width}}x{{height}} piksela",
+    "in": "Odabrana vrijednost nije valjana",
+    "integer": "Mora biti cijeli broj",
+    "ipAddress": "Unesite ispravnu IP adresu",
+    "json": "Nije valjani JSON niz",
+    "macAddress": "Unesite ispravnu MAC adresu",
+    "match": "Vrijednosti se moraju podudarati",
+    "maxLength": "Ne smije biti duže od {{count}} znakova",
+    "maxValue": "Ne smije biti veće od {{count}}",
+    "mimetype": "Tip datoteke nije podržan",
+    "minLength": "Mora sadržavati najmanje {{count}} znakova",
+    "minValue": "Mora biti najmanje {{count}}",
+    "notIn": "Odabrana vrijednost nije valjana",
+    "numeric": "Mora biti broj",
+    "object": {
+      "exactProperties": "Mora sadržavati točno {{count}} svojstava",
+      "maxProperties": "Ne smije sadržavati više od {{count}} svojstava",
+      "minProperties": "Mora sadržavati najmanje {{count}} svojstva"
+    },
+    "password": {
+      "maxLength": "Lozinka ne smije biti duža od {{count}} znakova",
+      "minLength": "Lozinka mora sadržavati najmanje {{count}} znakova",
+      "notCommon": "Lozinka ne smije biti uobičajena lozinka",
+      "notSimilarToUsername": "Lozinka ne smije biti slična korisničkom imenu",
+      "requireLowercase": "Lozinka mora sadržavati najmanje jedno malo slovo",
+      "requireNumber": "Lozinka mora sadržavati najmanje jedan broj",
+      "requireSpecialChar": "Lozinka mora sadržavati najmanje jedan poseban znak",
+      "requireUppercase": "Lozinka mora sadržavati najmanje jedno veliko slovo"
+    },
+    "phone": {
+      "invalid": "Unesite ispravan broj telefona",
+      "notAvailable": "Ovaj broj telefona se već koristi"
+    },
+    "phoneNumber": "Unesite ispravan broj telefona",
+    "postalCode": "Unesite ispravan poštanski broj",
+    "required": "Ovo polje je obavezno",
+    "ssn": "Unesite ispravan OIB",
+    "time": {
+      "after": "Vrijeme mora biti nakon {{time}}",
+      "before": "Vrijeme mora biti prije {{time}}",
+      "between": "Vrijeme mora biti između {{start}} i {{end}}",
+      "invalid": "Unesite ispravno vrijeme"
+    },
+    "url": {
+      "invalid": "Unesite ispravan URL",
+      "notSecure": "URL mora počinjati s https://"
+    },
+    "username": {
+      "available": "Korisničko ime je dostupno",
+      "invalid": "Korisničko ime može sadržavati samo slova, brojeve, donje crte i točke",
+      "maxLength": "Korisničko ime ne smije biti duže od {{count}} znakova",
+      "minLength": "Korisničko ime mora sadržavati najmanje {{count}} znakova",
+      "notAvailable": "Korisničko ime je zauzeto"
+    },
+    "uuid": "Unesite ispravan UUID"
+  },
+  "language": {
+    "en": "English",
+    "de": "German"
+  },
+  "welcome": {
+    "title": "Dobrodošli na SoulTribe.chat",
+    "subtitle": "Pronađite svoje duhovno pleme"
+  },
+  "radix": {
+    "title": "Tvoj Radix",
+    "placeholder": "Ako si postavio/la podatke o rođenju, ovdje će se pojaviti pregled tvog radixa.",
+    "show_raw_json": "Prikaži sirovi JSON"
+  },
+  "ai": {
+    "get_interpretation": "Dohvati interpretaciju",
+    "followup_placeholder": "Postavi dodatno pitanje…",
+    "send": "Pošalji",
+    "error_initial": "Nije uspjelo dohvatiti interpretaciju",
+    "error_followup": "Nije uspjelo poslati poruku"
+  },
+  "dashboard": {
+    "title": "Nadzorna ploča",
+    "availability": "Dostupnost",
+    "create_slot": "Kreiraj termin",
+    "duration_hours": "Trajanje (sati)",
+    "meetups": "Susreti",
+    "matches": "Podudaranja",
+    "overlap_hint": "Klikni na \"Predloži ovaj termin\" na preklapanju kako bi predložio/la susret za taj termin.",
+    "propose_time": "Predloži vrijeme",
+    "generate_ai_comment": "Generiraj AI komentar",
+    "slot_delete": "Izbriši",
+    "slot_edit": "Uredi",
+    "active_filter_hint": "Prikazuju se samo korisnici aktivni u posljednjih 30 dana.",
+    "slot_help_summary": "Što je termin dostupnosti?",
+    "slot_help_intro": "Vremenski prozori koje objavljujete kako bi SoulTribe mogao predlagati susrete kada se netko preklapa s vama.",
+    "slot_help_step1": "Dodajte jedan ili više termina za dane i sate kada ste slobodni. Sustav ih sprema u vašoj profilnoj vremenskoj zoni i u UTC-u.",
+    "slot_help_step2": "Kada se dohvaćaju podudaranja, uspoređujemo vaše termine s terminima drugih članova kako bismo pronašli preklapanja koja su još u budućnosti.",
+    "slot_help_step3": "Oznake preklapanja u odjeljku „Matches” prikazuju zajednički prozor: UTC, vaše lokalno vrijeme i lokalno vrijeme vašeg para.",
+    "slot_help_step4": "Kliknite „Predloži ovaj termin” na preklapanju kako biste pokrenuli proces susreta s unaprijed popunjenim terminom.",
+    "slot_help_step5": "Ako se nešto promijeni, uredite ili izbrišite termin kako više ne bismo predlagali zastarjele termine.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
+  },
+  "imprint": {
+    "title": "Impressum"
+  },
+  "footer": {
+    "terms": "Uvjeti",
+    "privacy": "Privatnost",
+    "imprint": "Impresum"
+  },
+  "reset_password": {
+    "title": "Ponovno postavi lozinku",
+    "intro": "Odaberi novu lozinku za svoj račun.",
+    "new_password_label": "Nova lozinka",
+    "new_password_placeholder": "nova lozinka",
+    "confirm_password_label": "Potvrdi novu lozinku",
+    "confirm_password_placeholder": "potvrdi novu lozinku",
+    "submit": "Postavi novu lozinku"
+  },
+  "notifications": {
+    "language_set_to": "Jezik postavljen na"
+  },
+  "guestGuide": {
+    "title": "Brzi vodič Jitsi za goste SoulTribe",
+    "intro": "Ovaj vodič pomaže novim gostima da se s pouzdanjem pridruže Jitsi sobama SoulTribe. Odaberite samo korake koji su vam potrebni. Tekst, zvuk i video su opcionalni.",
+    "prejoin": {
+      "heading": "Upute prije ulaska",
+      "steps": {
+        "options": "Upoznajte svoje mogućnosti. Jitsi podržava tekst, zvuk i video. Vi odlučujete što će biti uključeno i svaki kanal može ostati isključen.",
+        "permissions": "Dodijelite potrebne dozvole. Kada stranica za prijavu zatraži pristup, dopustite pregledniku da koristi mikrofon i kameru kako biste ih kasnije mogli uključiti.",
+        "setup": "Pripremite se prije nego uđete u sobu."
+      },
+      "substeps": {
+        "name": "Ime: upišite kako želite da se vaše ime prikazuje ostalim sudionicima.",
+        "background": "Pozadina: odaberite zamućenje ili virtualnu pozadinu ako želite više privatnosti."
+      },
+      "mic_camera_label": "Mikrofon i kamera",
+      "mic_camera_text": "Upotrijebite prva dva gumba kako biste uređaje uključili ili isključili prije ulaska.",
+      "devices_label": "Uređaji",
+      "devices_before_arrow": "Kliknite na strelicu pokraj svake ikone",
+      "devices_after_arrow": "kako biste odabrali odgovarajući mikrofon ili kameru.",
+      "audio_tip_label": "Savjet za zvuk",
+      "audio_tip_text": "Slušalice pomažu u izbjegavanju jeke. Ako morate koristiti zvučnike, držite glasnoću niskom kako biste spriječili mikrofoniju."
+    },
+    "browser": {
+      "heading": "Kompatibilnost preglednika",
+      "supported": "Preglednici Firefox i Chrome u potpunosti podržavaju zvuk, video i chat.",
+      "unsupported": "Safari, Edge, Opera, Brave i DuckDuckGo trenutačno nisu podržani.",
+      "note": "Drugi specijalizirani preglednici još nisu testirani.",
+      "tip1": "Kada se pojavi upit, omogućite pristup mikrofonu i kameri u adresnoj traci.",
+      "tip2": "Isključite blokatore praćenja ili dodajte Jitsi na popis dopuštenih web-mjesta.",
+      "tip3": "Nakon promjene dozvola osvježite karticu kako bi se primijenile postavke."
+    },
+    "layout": {
+      "heading": "Raspored sučelja u sobi",
+      "description": "Glavno područje s videom u sredini prikazuje sve koji imaju uključenu kameru. Na dnu se nalazi traka s kontrolama koja sadrži ikone za mikrofon, kameru, dijeljenje zaslona, chat, popis sudionika i dodatne opcije. Desna bočna traka otvara popis sudionika i prikaze dijeljenih zaslona."
+    },
+    "toolbar": {
+      "heading": "Ikone na traci s alatima",
+      "columns": {
+        "icon": "Ikona",
+        "label": "Naziv",
+        "description": "Opis"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Mikrofon",
+          "description": "Uključite ili isključite mikrofon i odaberite željeni uređaj u izborniku uređaja."
+        },
+        "camera": {
+          "label": "Kamera",
+          "description": "Uključite ili isključite kameru i odaberite izvor videa koji vam odgovara."
+        },
+        "screen": {
+          "label": "Dijeljenje zaslona",
+          "description": "Podijelite cijeli zaslon, određenu karticu ili prozor."
+        },
+        "chat": {
+          "label": "Chat",
+          "description": "Otvorite tekstualni chat kako biste slali poruke ili poveznice."
+        },
+        "participants": {
+          "label": "Sudionici / Pozovite",
+          "description": "Provjerite tko je u sobi, pozovite nove sudionike i odobrite ulazak gostima koji čekaju."
+        },
+        "more": {
+          "label": "Dodatne opcije",
+          "description": "Pristupite sigurnosnim postavkama, postavkama uređaja i ostalim alatima."
+        },
+        "hangup": {
+          "label": "Završite poziv",
+          "description": "Napustite sobu."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Brza poveznica za priključivanje",
+      "cta": "Pridružite se odmah na jitsi.bubuit.net/soultribe",
+      "note": "Testirajte svoje postavke ili upoznajte nove goste. Nije potreban korisnički račun."
+    },
+    "closing": {
+      "heading": "Završna poruka",
+      "text": "Uživajte u povezivanju na način i tempom koji vama odgovara."
+    }
+  },
+  "nextStepsGuide": {
+    "page_title": "Detaljni vodič za sljedeće korake",
+    "title": "Detaljni vodič za sljedeće korake",
+    "intro": "Ovaj vodič produbljuje korake s početne stranice i vodi vas kroz svaku radnju uz savjete i poveznice.",
+    "steps": {
+      "step1": {
+        "heading": "Kreiraj račun",
+        "description": "Registriraj se svojom e‑poštom kako bi pristupio/la nadzornoj ploči i profilu. Prijava putem društvenih mreža nije potrebna.",
+        "bullets": {
+          "item1": "Koristi valjanu e‑adresu; poveznice za potvrdu ističu nakon 24 sata.",
+          "item2": "Nakon potvrde bit ćeš preusmjeren/a na prijavu."
+        },
+        "link": "Idi na Prijava / Registracija"
+      },
+      "step2": {
+        "heading": "Ispuni svoj profil",
+        "description": "Dodaj podatke o rođenju kako bi omogućio/la uparivanje temeljeno na rezonanci. Približno vrijeme je u redu; veća točnost poboljšava rezultate.",
+        "bullets": {
+          "item1": "Unesi datum, vrijeme i mjesto rođenja. Ako ne znaš točno vrijeme, odaberi procjenu.",
+          "item2": "Napiši kratak uvod koji odražava tvoje interese i namjere. Budi konkretan/na i autentičan/na."
+        },
+        "callout": "Savjet: Tvoj vremenski pojas automatski se detektira; možeš ga provjeriti na nadzornoj ploči.",
+        "link": "Uredi profil"
+      },
+      "step3": {
+        "heading": "Kreiraj vremenski termin",
+        "description": "Ponudi jedan ili više termina kada si spreman/na za povezivanje. Spremamo tvoje lokalno vrijeme i pretvaramo ga u UTC za planiranje.",
+        "bullets": {
+          "item1": "Odaberi početno vrijeme u svom vremenskom pojasu i postavi trajanje (npr. 1–3 sata).",
+          "item2": "Više termina kroz različite dane povećava šansu za brza podudaranja."
+        },
+        "callout": "Vremenski pojasevi pod kontrolom: automatski pretvaramo između lokalnog vremena i UTC‑a (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Otvori nadzornu ploču"
+      },
+      "step4": {
+        "heading": "Prati podudaranja",
+        "description": "Pregledaj predložena podudaranja temeljena na rezonanci. Pogledaj bilješke o kompatibilnosti i zajedničkim interesima.",
+        "bullets": {
+          "item1": "Novi prijedlozi pojavljuju se kada su tvoj profil i termini aktivni.",
+          "item2": "Koristi filtre i bilješke kako bi pratio/la s kime želiš stupiti u kontakt."
+        },
+        "callout": "Privatnost na prvom mjestu: ti odlučuješ kada i kako ćeš se uključiti."
+      },
+      "step5": {
+        "heading": "Predloži ili potvrdi susret",
+        "description": "Kada postoji obostrani interes, predloži vrijeme unutar preklapajućih termina ili prihvati prijedlog svog podudaranja.",
+        "bullets": {
+          "item1": "Pošalji ljubaznu i konkretnu pozivnicu. Ponudi jednu ili dvije vremenske opcije.",
+          "item2": "Potvrdi plan u chatu i prijeđi na poziv kada budete spremni."
+        },
+        "callout": "Pristanak i udobnost: kreći se svojim tempom. U redu je ostati samo na tekstualnom razgovoru."
+      },
+      "step6": {
+        "heading": "Pridruži se Jitsi chatu",
+        "description": "Koristi Jitsi za opcionalni glas/video. Preglednici za računala (Firefox, Chrome) su podržani; tekstualni chat je uvijek dostupan.",
+        "bullets": {
+          "item1": "Isprobaj mikrofon/kameru ili ih ostavi isključene i koristi samo tekst.",
+          "item2": "Odaberi ispravne uređaje putem male strelice pokraj ikona."
+        },
+        "link": "Pročitaj brzi Jitsi vodič"
+      }
+    },
+    "closing": "Uživaj u povezivanju na način koji je tebi najprirodniji."
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Konstelacija povezivanja",
+      "subtitle": "Gdje se kozmički dizajn susreće s ljudskim povezivanjem — utočište za srodne duše vođene zvijezdama."
+    },
+    "vision": {
+      "heading": "✨ Vizija",
+      "body1": "SoulTribe.chat povezuje ljude čije se natalne karte usklađuju — nudi astrologijom temeljeno uparivanje, privatne chatove i opcionalne susrete kako bi srodne duše mogle susresti na svjestan i značajan način. To nije samo platforma: živi eksperiment kozmičke povezanosti, gdje astrologija postaje zajednički jezik empatije umjesto predviđanja.",
+      "body2": "Svaka karta je jedinstvena potpis — melodija u zvijezdama koja odjekuje s drugima i pali prepoznavanje i dubinu. Ovaj prostor prima tražitelje koji osjećaju da svaki susret nosi svrhu — da sinkroničnost vodi povezivanje, i da rast i radost proizlaze iz odnosa koji se čine sudbinskim. SoulTribe.chat pruža sigurno, minimalističko i svjesno okruženje gdje se takve veze mogu prirodno razvijati."
+    },
+    "transition": "Prije nego što dublje zaronimo, prijeđimo od ideje kozmičke povezanosti do zajednice koju ona stvara — same SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 Što je SoulTribe?",
+      "body1": "SoulTribe nije samo mreža ili lista prijatelja — to je polje rezonancije. Nevidljiva mreža koja povezuje one koji dijele frekvenciju, svrhu i ritam duha. Kad susretnete članove svog plemena, prepoznavanje je trenutno: razgovor se osjeća kao sjećanje, a ne kao upoznavanje. Vrijeme omekšava svoje rubove i prostor između riječi postaje svet.",
+      "body2": "Unutar vaše SoulTribe, vi ste potpuno vidljivi — cijenjeni zbog vaše biti, ne vaše slike. Svaka osoba postaje zrcalo: neki odražavaju vaše snage, drugi vaše lekcije, a neki malo podsjećaju što možete postati. Oni bude hrabrost, autentičnost i znanje da pripadnost ne proizlazi iz sličnosti, već iz rezonancije.",
+      "body3": "Vaše pleme može se sastojati od umjetnika, sanjara, iscjelitelja, znanstvenika ili tihih duša koje hodaju svojom istinom. Ono što vas povezuje nije pozadina ili vjera — to je vibracija."
+    },
+    "power": {
+      "heading": "🔥 Snaga plemena",
+      "body1": "Kao što se svaka SoulTribe oblikuje kroz rezonanciju zajedničku, njena prava snaga izranja iz kolektivne energije koja raste iz tih povezivanja.",
+      "body2": "Rastemo brže, liječimo dublje i sanjamo veće kada drugi hodaju uz nas i svjedoče našem putu. Ljudi su uvijek cvjetali u krugovima — to je naš drevni dizajn. Pleme pojačava energiju: ono što jedan zapali, drugi održava; ono što jedan sanja, treći ukotvljuje. U ovom polju zajedničkom sinkroničnosti se množe i kolektivna evolucija se ubrzava.",
+      "body3": "Kad se uključite, možete primijetiti kako se vaša energija širi. Ideje dobivaju zamah, kreativnost teče, intuicija se izoštrava. Pleme postaje zrcalo, učitelj i krug osnaživanja — podsjećajući vas da put duše nikada nije bio namijenjen hodanju samom.",
+      "body4": "U SoulTribe.chat, ideja 'plemena' ne bavi se ekskluzivnošću, već sinergijom. Ovdje individualnost i zajedništvo koegzistiraju lijepo. Svaka osoba doprinosi svojom frekvencijom, stvarajući živu konstelaciju svijesti — svaka točka svjetla osvjetljava druge."
+    },
+    "astro": {
+      "heading": "☀️ Astro i duša",
+      "body1": "Astrologija u SoulTribe.chat povezuje uvid i povezivanje poštujući vašu privatnost i pristanak. Koriste se samo bitni podaci o rođenju za generiranje uvida u kompatibilnost, i ništa se ne dijeli ili pohranjuje izvan onoga što zahtijeva vaše iskustvo.",
+      "body2": "Koristeći vaše detalje rođenja, platforma izračunava položaje planeta i uspoređuje ih s drugima kako bi otkrila područja prirodne harmonije, emocionalne rezonancije i potencijala rasta. Umjesto da preopterećuje korisnike podacima, rezultati se destiliraju u jasne indikatore kompatibilnosti — pokazujući gdje se energije poravnavaju i kako se odnosi mogu razvijati.",
+      "body3": "Ovo nije upoznavanje po znaku; to je rezonancija duše po dizajnu, gdje karte vode razumijevanju i povezivanju. Bilo da je rezultat romantična kemija, kreativna suradnja ili duboko prijateljstvo, SoulTribe.chat pomaže vam prepoznati zašto se određene osobe osjećaju trenutno poznatima — i kako svaki susret postaje zrcalo za vašu dušu."
+    },
+    "soulmates": {
+      "heading": "💫 Duševni parovi i dalje",
+      "body1": "Riječ 'duševni par' često sužava maštu na romantiku, ali duševni parovi pojavljuju se u mnogim oblicima. Mogu biti prijatelj koji ponovno budi vaš smijeh, učitelj koji izaziva vaše granice, ili stranac čija se prisutnost osjeća trenutno poznatom. SoulTribe.chat proširuje ovu ideju — vodi vas ne ka 'jednoj', već ka mnogima koji nose dijelove vaše evolucije.",
+      "body2": "Neka povezivanja pale elektriku — intenzivna i transformativna. Druga nude tihi mir, ukotvljujući vašu energiju u zajedničkoj tišini. Svaki susret je korak prema cjelovitosti, podsjetnik da je put duše mozaik svetih susreta. Susresti svoje pleme znači susresti sebe — odraženo u tisuću živih zrcala."
+    },
+    "benefit": {
+      "heading": "🌍 Kako iskoristiti",
+      "items": {
+        "item1": "Stvorite svoju kartu duše — unesite svoje podatke o rođenju kako biste generirali svoj jedinstveni kozmički uzorak i otkrili što čini vašu energiju posebnom.",
+        "item2": "Otkrijte rezonanciju — pronađite članove čije karte odjekuju ili dopunjuju vaše. Naučite kako planetarni poravnanja ukazuju na harmoniju, inspiraciju ili karmičku svrhu.",
+        "item3": "Povežite se autentično — sudjelujte u svjesnim razgovorima. SoulTribe.chat potiče prisutnost, znatiželju i poštovanje. Riječi postaju instrumenti razumijevanja, ne izvedbe.",
+        "item4": "Rastite zajedno — svaki susret je izmjena svjetla. Kroz rezonanciju, kontrast ili nježnu trenje, evoluirate. Sustav ističe vaše najbolje zrcala učenja — ona koja proširuju vašu svijest umjesto da odražavaju vašu zonu udobnosti.",
+        "item5": "Sretnite se u prisutnosti — kada se spremnost prirodno razvija, prijeđite od teksta do glasa, od razgovora do zajedničkog stvaranja. Svaki susret — digitalni ili licem u lice — postaje svet razgovor duša."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest za duševnu povezanost",
+      "intro": "Pronađi svoju frekvenciju i pronađi svoje pleme.",
+      "body1": "Povezivanje je sveto — svaki razgovor ukorijenjen u prisutnosti može postati portal prema svijesti. Tehnologija treba služiti svijesti, njegujući intimnost umjesto distrakcije. Astrologija, korištena s suosjećanjem i jasnoćom, otkriva ne sudbinu već slobodu kroz razumijevanje. Kad se plemena poravnaju, formiraju zračaste konstelacije koje sjaje jače zajedno nego odvojeno.",
+      "body2": "SoulTribe.chat podsjeća nas da nismo lutalice pod dalekim nebom, već sjajni niti u zajedničkom tapiseriju stvaranja. Svaki susret je iskra u velikoj vatri buđenja, svaki razgovor otkucaj srca u ritmu nečega širokog i svetog.",
+      "closing": "Zajedno se sjećamo tko smo — jedno pleme mnogih duša."
+    },
+    "join": {
+      "heading": "🌌 Pridružite se putovanju",
+      "body": "Ako ove riječi odjekuju u vama, stvorite svoj profil, istražite svoju kartu duše i počnite susretati srodne duhove koji dijele vašu frekvenciju. Svaka nova veza je vrata otkriću, refleksiji i rastu.",
+      "cta": "Započnite svoje SoulTribe putovanje",
+      "footer": "Vaše pleme već je tamo vani — pustite zvijezdama da vas vode kući."
+    }
+  }
+}

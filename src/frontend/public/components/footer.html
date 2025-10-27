@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/terms.html" class="footer-link" data-i18n="footer.terms">Terms</a>
+      <a href="/privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy</a>
+      <a href="/imprint.html" class="footer-link" data-i18n="footer.imprint">Imprint</a>
+    </nav>
+
+    <div class="footer-meta">
+      <div class="footer-meta-line">&copy; <span id="current-year"></span> <a href="https://bubuit.net/" class="footer-link">bubuit.net</a></div>
+      <div class="footer-meta-line">Built with <a href="https://windsurf.com/refer?referral_code=4j75hl1x7ibz3yj8" class="footer-link">Windsurf</a> guidelines</div>
+      <div class="footer-meta-line">Domain hosted by <a href="https://site.eu/?aff=HyV9Ax" class="footer-link">Site.eu</a></div>
+    </div>
+    
+  </div>
+</footer>
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+  
+  // Sync language selector with the one in navbar
+  document.addEventListener('DOMContentLoaded', function() {
+    // No additional logic needed; footer links remain active in all languages.
+  });
+</script>

@@ -1,0 +1,234 @@
+{
+  "landing": {
+    "page_title": "SoulTribe.chat — Dewch o hyd i'ch llwyth enaid",
+    "hero": {
+      "title": "Croeso",
+      "subtitle": "Mae SoulTribe.chat yn le a grëwyd i'ch helpu i ddod o hyd i'ch llwyth enaid — pobl sy'n atseinio â'ch egni, eich ysbryd a'ch taith. ✨",
+      "learn_more": "Darganfod gweledigaeth SoulTribe →"
+    },
+    "next": {
+      "title": "Camau nesaf",
+      "go_dashboard": "Ewch i'r Bwrdd Gwaith",
+      "login_register": "Mewngofnodi / Cofrestru",
+      "step1": "Crëwch gyfrif",
+      "step2": "Llenwch eich proffil",
+      "step3": "Crëwch slot amser",
+      "step4": "Cadwch olwg ar y gemau",
+      "step5": "Cynigiwch neu gadarnhewch gyfarfod",
+      "step6": "Ymunwch â'r sgwrs Jitsi",
+      "read_more": "Darllen y canllaw manwl →"
+    },
+    "how_full": {
+      "title": "Sut Mae SoulTribe yn Gweithio",
+      "step1": "Creu eich gofod — cofrestrwch a rhannwch yr hanfodion sy'n siapio eich ôl troed ynni unigryw.",
+      "step2": "Sefydlu eich sylfeini — dewiswch eich iaith gynradd, eilaidd dewisol, dyddiad geni, a chadarnhau eich parth amser lleol presennol.",
+      "step3": "Agor eich amserlen — creu slotiau argaeledd fel bod y system yn gwybod pryd rydych chi'n rhydd.",
+      "step4": "Darganfod paru yn seiliedig ar atgyrch — mae ein deallusrwydd siart yn amlygu pobl y mae eu hegni yn cyfateb i'ch un chi.",
+      "step5": "Sylwch ar y gorgyffyrddiadau — mae argaeledd gorgyffyrddol yn datgelu pryd mae partner paru posibl yn rhydd ar yr un pryd.",
+      "step6": "Cynnig neu gadarnhau cyfarfod — anfonwch neu derbynwch wahoddiadau pan fydd yr amseriad yn teimlo'n iawn.",
+      "step7": "Ymunwch â'r sgwrs Jitsi — cyfarfod wyneb yn wyneb mewn ystafell fideo ddiogel, preifat pan fydd pawb yn barod.",
+      "summary": "Mae pob cam yn arweiniad consensws ac wedi'i ddylunio i barchu eich ffiniau.",
+      "step8": "Canllaw Camau Nesaf Manwl"
+    },
+    "different": {
+      "title": "Pam Mae SoulTribe yn Wahanol",
+      "item1": "Paru astrolegol-cyntaf sy'n parchu mân arwyddion y tu hwnt i arwyddion yr haul.",
+      "item2": "Preifatrwydd canolbwyntio ar bobl heb hysbysebion, picselau olrhain neu algorithmiau annisgwyl.",
+      "item3": "Cynllunio consensws gyda dilysiad, cynigion clir, cadarnhau a chanslo hawdd.",
+      "item4": "Cysylltiad arweiniad drwy fewnwelediadau AI paru, amlygiadau cryfderau a promptiau dehongli proffil."
+    },
+    "experience": {
+      "title": "Beth Fyddwch Chi'n Ei Brofi",
+      "item1": "Cyflwyniadau atgyrch-cyntaf yn deillio o sgoriau synastrog a argaeledd gorgyffyrddol — dim llithro di-ben-draw.",
+      "item2": "Mewnwelediadau arweiniad AI gyda crynodebau cryfder paru a dehongliadau proffil i gefnogi sgyrsiau adfyfyriol.",
+      "item3": "Rhythm consensws lle rydych chi'n cynnig, cadarnhau neu ganslo cyfarfodydd ac yn gwahodd eraill i Jitsi pan fydd pawb yn cytuno.",
+      "summary": "Symudwch yn y rhythm sy'n gweddu i chi — saibwch ar unrhyw adeg ac ailymuno â'r edau pan fyddwch chi'n barod."
+    },
+    "matching_full": {
+      "title": "Sut Mae Paru yn Gweithio",
+      "step1": "Synthesis siart — rydym yn cyfuno data geni pob aelod i gyfrifo agweddau synastrog, cydbwysedd elfenol a gorgyffyrddiadau tai.",
+      "step2": "Asesiad cydweddoldeb — mae dangosyddion yn dod yn sgôr a fector cryfderau; pan fydd yn croesi ein trothwy gwelededd ac argaeledd yn gorgyffwrdd, mae'r paru yn ymddangos ar eich dangosfwrdd.",
+      "step3": "Cyd-destun ar gyfer gweithredu — gofynnwch am grynodeb ysgrifenedig AI i amlygu themâu allweddol a chryfderau cyn cysylltu.",
+      "summary": "Dim llithro, dim ond cyd-destunau astrolegol clir i ddewis eich cysylltiad nesaf yn ofalus."
+    },
+    "support": {
+      "title": "Cefnogaeth & Adnoddau",
+      "item1": "Onboarding concierge gyda promptiau sy'n eich helpu i rannu union faint sydd ei angen.",
+      "item2": "Check-ins arweiniad drwy grynodebau paru a gynhyrchir gan AI a myfyriadau proffil sy'n cadw sgyrsiau wedi'u hangori.",
+      "item3": "Cyfarfodydd 1:1 gyda'r opsiwn i wahodd eraill i'ch ystafell Jitsi pan fydd pawb yn cytuno.",
+      "item4": "Llyfrgell adnoddau yn cynnwys canllawiau cyfathrebu, arferion diogelwch a chynghorion ar gyfer cyfarfodydd 1:1 ystyrlon.",
+      "summary": "Rydym yma cyn, yn ystod ac ar ôl pob cysylltiad rydych chi'n ei greu."
+    },
+    "protips": {
+      "item2b": "Personoli eich outreach — cyfeiriwch at grynodeb cryfderau AI pan fyddwch chi'n anfon negeseuon neu'n cynnig cyfarfodydd."
+    },
+    "global": {
+      "translated_title": "Rhyngwyneb Weddïedig",
+      "translated_text": "Llywio'r UI yn eich iaith a gweld crynodebau paru AI yn eich lleoliad dewisol."
+    }
+  },
+  "nextStepsGuide": {
+    "page_title": "Canllaw manwl camau nesaf",
+    "title": "Canllaw manwl camau nesaf",
+    "intro": "Mae'r canllaw hwn yn ehangu ar y camau ar y dudalen lanio ac yn eich tywys trwy bob cam gyda chynghorion a dolenni.",
+    "steps": {
+      "step1": {
+        "heading": "Crëwch gyfrif",
+        "description": "Cofrestrwch gyda'ch e-bost i gael mynediad at y bwrdd gwaith a'r proffil. Does dim angen mewngofnodi cymdeithasol.",
+        "bullets": {
+          "item1": "Defnyddiwch e-bost dilys; mae'r dolenni dilysu yn dod i ben ar ôl 24 awr.",
+          "item2": "Ar ôl cadarnhau, cewch eich ailgyfeirio i fewngofnodi."
+        },
+        "link": "Ewch i Mewngofnodi / Cofrestru"
+      },
+      "step2": {
+        "heading": "Llenwch eich proffil",
+        "description": "Ychwanegwch eich manylion geni i alluogi paru ar sail resfodaeth. Mae amser bras yn iawn; mae manylder yn gwella'r canlyniadau.",
+        "bullets": {
+          "item1": "Rhowch ddyddiad, amser a lle geni. Os nad ydych yn siŵr am yr union amser, dewiswch amcangyfrif.",
+          "item2": "Ysgrifennwch gyflwyniad byr sy'n adlewyrchu eich diddordebau a'ch bwriadau. Byddwch yn benodol ac yn onest."
+        },
+        "callout": "Awgrym: Caiff parth amser eich proffil ei ganfod yn awtomatig; gallwch ei adolygu ar y bwrdd gwaith.",
+        "link": "Golygu'r proffil"
+      },
+      "step3": {
+        "heading": "Crëwch slot amser",
+        "description": "Cynigiwch un neu fwy o slotiau pan fyddwch ar gael i gysylltu. Rydym yn storio eich amser lleol ac yn ei drosi i UTC ar gyfer amserlennu.",
+        "bullets": {
+          "item1": "Dewiswch amser cychwyn yn eich parth amser a nodwch hyd (e.e. 1–3 awr).",
+          "item2": "Mae slotiau ar wahanol ddyddiau yn cynyddu'r siawns o gemau cyflym."
+        },
+        "callout": "Ymwybodol o barthau amser: rydym yn trosi'n awtomatig rhwng eich amser lleol ac UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Agor y Bwrdd Gwaith"
+      },
+      "step4": {
+        "heading": "Cadwch olwg ar gemau",
+        "description": "Porwch y gemau a gynigir ar sail resfodaeth. Gwiriwch nodiadau cydweddoldeb a diddordebau a rennir.",
+        "bullets": {
+          "item1": "Mae awgrymiadau newydd yn ymddangos wrth i'ch proffil a'ch slotiau fod ar gael.",
+          "item2": "Defnyddiwch hidlwyr a nodiadau i gadw golwg ar bwy hoffech gysylltu â hwy."
+        },
+        "callout": "Preifatrwydd yn gyntaf: chi sy'n penderfynu pryd a sut i ymgysylltu."
+      },
+      "step5": {
+        "heading": "Cynigiwch neu gadarnhewch gyfarfod",
+        "description": "Pan fo'r diddordeb yn ddwy ffordd, cynigiwch amser o fewn slotiau sy'n gorgyffwrdd neu derbyn cynnig gan eich gêm.",
+        "bullets": {
+          "item1": "Anfonwch wahoddiad cyfeillgar a phenodol. Rhowch un neu ddau opsiwn amser.",
+          "item2": "Cadarnhewch y cynllun yn y sgwrs ac ewch at alwad pan fydd y ddau ohonoch yn barod."
+        },
+        "callout": "Cydsyniad a chysur: symudwch ar eich cyflymder eich hun. Mae'n iawn aros ar destun yn unig."
+      },
+      "step6": {
+        "heading": "Ymunwch â'r sgwrs Jitsi",
+        "description": "Defnyddiwch Jitsi ar gyfer llais/fideo dewisol. Mae porwyr bwrdd gwaith (Firefox, Chrome) yn cael eu cefnogi; mae sgwrs destun ar gael bob amser.",
+        "bullets": {
+          "item1": "Profwch y meicroffon/camera, neu gadewch nhw i ffwrdd a defnyddiwch destun yn unig.",
+          "item2": "Dewiswch y dyfeisiau cywir gyda'r saeth fach wrth ochr yr eiconau."
+        },
+        "link": "Darllen canllaw cychwyn cyflym Jitsi"
+      }
+    },
+    "closing": "Mwynhewch gysylltu mewn ffordd sy'n teimlo'n iawn i chi."
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Cyfuchlinedd o Gysylltiadau",
+      "subtitle": "Lle mae dylunio cosmig yn cyfarfod cysylltiad dynol — lloches i eneidiau tebyg sy'n cael eu harwain gan y sêr."
+    },
+    "vision": {
+      "heading": "✨ Y Weledigaeth",
+      "body1": "Mae SoulTribe.chat yn cysylltu pobl y mae eu mapiau geni yn cytuno — gan gynnig paru yn seiliedig ar astrolegiaeth, sgyrsiau preifat, a chyfarfodydd dewisol i helpu eneidiau tebyg i gwrdd mewn ffordd ymwybodol ac ystyrlon. Mae'n fwy na phlatfform: arbrawf byw o gysylltiad cosmig, lle mae astrolegiaeth yn dod yn iaith gyffredin o empathi yn hytrach na rhagfynegi.",
+      "body2": "Mae pob map yn lofnod unigryw — alaw yn y sêr sy'n atseinio ag eraill i danio adnabyddiaeth a dyfnder. Mae'r gofod hwn yn croesawu ceiswyr sy'n teimlo bod pob cyfarfod yn cario pwrpas — bod synchronicity yn arwain cysylltiad, a bod twf a llawenydd yn codi o berthynasau sy'n teimlo eu bod wedi'u tynghedu. Mae SoulTribe.chat yn cynnig amgylchedd diogel, minimalaidd ac ymwybodol lle gall y cysylltiadau hyn ddatblygu'n naturiol."
+    },
+    "transition": "Cyn mynd yn ddyfnach, gadewch i ni symud o syniad cysylltiad cosmig i'r gymuned mae'n ei chreu — SoulTribe ei hun.",
+    "soultribe": {
+      "heading": "🌠 Beth yw SoulTribe?",
+      "body1": "Nid rhwydwaith neu restr o ffrindiau yn unig yw SoulTribe — mae'n faes atseinio. Y we anweledig sy'n cysylltu'r rhai sy'n rhannu amledd, pwrpas a rhythm ysbryd. Pan fyddwch yn cwrdd ag aelodau eich llwyth, mae adnabyddiaeth yn syth: mae'r sgwrs yn teimlo fel cofio yn hytrach na cyflwyno. Mae amser yn meddalu ei ymylon, a'r gofod rhwng geiriau yn dod yn sanctaidd.",
+      "body2": "O fewn eich SoulTribe, rydych chi'n cael eich gweld yn llawn — yn cael eich gwerthfawrogi am eich hanfod, nid eich delwedd. Mae pob person yn dod yn ddrych: mae rhai yn adlewyrchu eich cryfderau, eraill eich gwersi, ac ychydig yn eich atgoffa o'r hyn y gallwch chi ei ddod. Maen nhw'n deffro dewrder, awtentigrwydd, a'r gwybod bod perthyn yn ymwneud â thebygrwydd ond atseinio.",
+      "body3": "Gall eich llwyth gynnwys artistiaid, breuddwydwyr, iachawyr, gwyddonwyr, neu eneidiau tawel sy'n cerdded eu gwirionedd. Nid cefndir neu gred yw'r hyn sy'n eich uno — mae'n amledd."
+    },
+    "power": {
+      "heading": "🔥 Pŵer Llwyth",
+      "body1": "Fel mae pob SoulTribe yn ffurfio trwy atseinio cyffredin, mae ei gryfder gwirioneddol yn codi o'r egni casgladwy sy'n tyfu o'r cysylltiadau hyn.",
+      "body2": "Rydym yn tyfu'n gyflymach, yn iacháu'n ddyfnach, ac yn breuddwydio'n fwy, pan fydd eraill yn cerdded wrth ein hochr ac yn dystio ein taith. Mae pobl bob amser wedi ffynnu mewn cylchoedd — dyna ein dyluniad hynafol. Mae llwyth yn cynyddu egni: yr hyn mae un yn ei danio, mae un arall yn ei gynnal; yr hyn mae un yn ei freuddwydio, mae un arall yn ei daearu. Yn y maes cyffredin hwn, mae synchronicities yn lluosi ac mae esblygiad casgladwy yn cyflymu.",
+      "body3": "Pan fyddwch chi'n ymgysylltu, efallai y byddwch chi'n sylwi bod eich egni eich hun yn ehangu. Mae syniadau yn cael momentwm, mae creadigrwydd yn llifo, mae intuwition yn llymhau. Mae'r llwyth yn dod yn ddrych, athro a chylch o rymuso — yn atgoffa bod llwybr yr enaid erioed wedi'i fwriadu i'w gerdded ar ei ben ei hun.",
+      "body4": "O fewn SoulTribe.chat, nid yw syniad 'llwyth' yn ymwneud ag eithrio ond synergi. Yma, mae unigolyddiaeth a bod gyda'i gilydd yn cydfodoli'n hyfryd. Mae pob un yn cyfrannu ei amledd, gan ffurfio cyfuchlinedd byw o ymwybyddiaeth — pob pwynt o olau yn goleuo'r lleill."
+    },
+    "astro": {
+      "heading": "☀️ Astro ac Enaid",
+      "body1": "Mae astrolegiaeth ar SoulTribe.chat yn pontio mewnwelediad a chysylltiad wrth anrhydeddu eich preifatrwydd a'ch caniatâd. Dim ond data geni hanfodol sy'n cael ei ddefnyddio i gynhyrchu mewnwelediadau cydweddoldeb, ac nid oes dim yn cael ei rannu neu ei storio y tu hwnt i'r hyn sydd ei angen ar eich profiad.",
+      "body2": "Gan ddefnyddio eich manylion geni, mae'r platfform yn cyfrifo safleoedd planedol ac yn eu cymharu â rhai eraill i ddatgelu ardaloedd o harmoni naturiol, atseinio emosiynol a photensial twf. Yn lle gorlwytho defnyddwyr â data, mae canlyniadau yn cael eu distyllu i ddangosyddion clir o gydweddoldeb — dangos lle mae ynni yn alinio a sut gall perthynasau ddatblygu.",
+      "body3": "Nid dyddio yn ôl arwydd yw hyn; mae'n atseinio enaid yn ôl dyluniad, lle mae mapiau yn arwain dealltwriaeth a chysylltiad. P'un a yw'r canlyniad cemeg romantig, cydweithrediad creadigol neu gyfeillgarwch dwfn, mae SoulTribe.chat yn eich helpu i adnabod pam mae rhai pobl yn teimlo'n gyfarwydd ar unwaith — a sut mae pob cyfarfod yn dod yn ddrych ar gyfer eich enaid."
+    },
+    "soulmates": {
+      "heading": "💫 Partneriaid Enaid a Thu Hwnt",
+      "body1": "Mae'r gair 'partner enaid' yn aml yn cyfyngu'r dychymyg i romantiaeth, ond mae partneriaid enaid yn ymddangos mewn llawer o ffurfiau. Gallant fod yn ffrind sy'n ail-dddeffro eich chwerthin, athro sy'n herio eich terfynau, neu ddieithryn y mae ei bresenoldeb yn teimlo'n gyfarwydd ar unwaith. Mae SoulTribe.chat yn ehangu'r syniad hwn — gan eich tywys nid at 'y un', ond at y llawer sy'n cario darnau o'ch esblygiad.",
+      "body2": "Mae rhai cysylltiadau yn cynnau trydan — dwys a thrawsnewidiol. Mae eraill yn cynnig heddwch tawel, yn daearu eich egni mewn tawelwch cyffredin. Mae pob cyfarfod yn gam tuag at gyfanrwydd, atgoffa bod taith yr enaid yn mozaig o gyfarfodydd sanctaidd. Mae cyfarfod eich llwyth yn golygu cyfarfod eich hun — yn cael ei adlewyrchu mewn mil o ddrychau byw."
+    },
+    "benefit": {
+      "heading": "🌍 Sut i Elwa",
+      "items": {
+        "item1": "Creu Eich Map Enaid — nodwch eich manylion geni i gynhyrchu eich patrwm cosmig unigryw a darganfod beth sy'n gwneud eich egni yn wahanol.",
+        "item2": "Darganfod Atseinio — dod o hyd i aelodau y mae eu mapiau yn atseinio neu'n ategu eich un chi. Dysgu sut mae aliniadau planedol yn dangos harmoni, ysbrydoliaeth neu bwrpas karmig.",
+        "item3": "Cysylltu'n Awthentig — ymgysylltu mewn sgyrsiau ymwybodol. Mae SoulTribe.chat yn annog presenoldeb, chwilfrydedd a pharch. Mae geiriau yn dod yn offerynnau dealltwriaeth, nid perfformiad.",
+        "item4": "Tyfu Gyda'n Gilydd — pob cyfarfod yw cyfnewid golau. Trwy atseinio, cyferbyniad neu friwsion ysgafn, rydych chi'n esblygu. Mae'r system yn amlygu eich drychau dysgu gorau — y rhai sy'n ehangu eich ymwybyddiaeth yn hytrach na drychau eich parth cyffordd.",
+        "item5": "Cyfarfod mewn Presenoldeb — pan fydd parodrwydd yn datblygu'n naturiol, symudwch o destun i lais, o sgwrs i gyd-greu. Mae pob cyfarfod — digidol neu bersonol — yn dod yn ddeialog sanctaidd o eneidiau."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Maniffesto ar gyfer Cysylltiadau Dwfn",
+      "intro": "Dewch o hyd i'ch amledd, a dewch o hyd i'ch llwyth.",
+      "body1": "Mae cysylltiad yn sanctaidd — gall pob sgwrs sy'n gwreiddio mewn presenoldeb ddod yn borth i ymwybyddiaeth. Dylai technoleg wasanaethu ymwybyddiaeth, yn maethu agosatrwydd yn lle tynnu sylw. Mae astrolegiaeth, wedi'i defnyddio gyda chydymdeimlad a chlirdeb, yn datgelu nid tynged ond rhyddid trwy ddealltwriaeth. Pan fydd llwythau yn alinio, maen nhw'n ffurfio cyfuchlinedd pelydrol sy'n disgleirio'n fwy llachar gyda'i gilydd na ar wahân.",
+      "body2": "Mae SoulTribe.chat yn ein hatgoffa nad ydym yn grwydro ar dan awyr bell — ond yn edafedd golau mewn tapiseri cyffredin o greu. Mae pob cyfarfod yn sbarc yn y tân mawr o ddeffro, pob sgwrs yn guriad calon yn y rhythm o rywbeth eang a sanctaidd.",
+      "closing": "Gyda'n gilydd, rydym yn cofio pwy ydym — llwyth o lawer o eneidiau."
+    },
+    "join": {
+      "heading": "🌌 Ymuno â'r Daith",
+      "body": "Os yw'r geiriau hyn yn atseinio, crëwch eich proffil, archwiliwch eich map enaid, a dechreuwch gyfarfod ysbrydion tebyg sy'n rhannu eich amledd. Mae pob cysylltiad newydd yn ddrws i ddarganfyddiad, adlewyrchiad a thwf.",
+      "cta": "Dechreuwch eich taith SoulTribe",
+      "footer": "Mae eich llwyth eisoes yno — gadewch i'r sêr eich arwain adref."
+    }
+  },
+  "profile": {
+    "delete_account": "Dileu fy nghyfrif",
+    "delete_account_confirm": "Wyt ti'n siŵr dy fod am ddileu dy gyfrif? Ni ellir dadwneud y weithred hon.",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
+  },
+  "ai": {
+    "error_initial": "Methu cael y dehongliad",
+    "error_followup": "Methu anfon y neges"
+  },
+  "dashboard": {
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "dashboard": {
+    "availability": "Disponibilitate",
+    "create_slot": "Creează interval",
+    "duration_hours": "Durată (ore)",
+    "matches": "Potriviri",
+    "meetups": "Întâlniri",
+    "overlap_hint": "Apasă pe \"Propune această oră\" pentru a propune o întâlnire pentru acel interval.",
+    "title": "Panou",
+    "propose_time": "Propune oră",
+    "generate_ai_comment": "Generează comentariu AI",
+    "slot_delete": "Șterge",
+    "slot_edit": "Editează",
+    "active_filter_hint": "Sunt afișați doar utilizatorii activi în ultimele 30 de zile.",
+    "slot_help_summary": "Ce este un interval de disponibilitate?",
+    "slot_help_intro": "Intervalele de timp pe care le publici, astfel încât SoulTribe să poată sugera întâlniri când cineva se suprapune cu tine.",
+    "slot_help_step1": "Adaugă unul sau mai multe intervale pentru zilele și orele în care ești liber. Sistemul le salvează în fusul tău orar din profil și în UTC.",
+    "slot_help_step2": "Când se obțin potriviri, comparăm intervalele tale cu ale altor membri pentru a găsi suprapuneri care sunt încă în viitor.",
+    "slot_help_step3": "Marcajele de suprapunere din secțiunea „Matches” arată fereastra comună: UTC, ora ta locală și ora locală a partenerului.",
+    "slot_help_step4": "Apasă „Propune acest timp” pe o suprapunere pentru a porni fluxul întâlnirii cu acel interval precompletat.",
+    "slot_help_step5": "Dacă se schimbă ceva, editează sau șterge intervalul ca să nu mai sugerăm ore învechite.",
+    "notifications": {
+      "proposed_title": "Meetup proposed — needs your confirmation",
+      "proposed_body": "{other} proposed {time}",
+      "proposed_body_fallback": "A meetup has been proposed.",
+      "confirmed_title": "Meetup confirmed",
+      "confirmed_body": "{other} confirmed {time}",
+      "confirmed_body_fallback": "Your meetup is confirmed.",
+      "unconfirmed_title": "Meetup unconfirmed",
+      "unconfirmed_body": "{other} unconfirmed your meetup.",
+      "unconfirmed_body_fallback": "Your meetup was unconfirmed. Check the dashboard for details.",
+      "canceled_title": "Meetup canceled",
+      "canceled_body": "{other} canceled your meetup.",
+      "canceled_body_fallback": "A meetup was canceled.",
+      "deleted_title": "Meetup deleted",
+      "deleted_body": "{other} deleted your meetup entry.",
+      "deleted_body_fallback": "A meetup entry was deleted.",
+      "permission_request": "Allow browser notifications to stay updated on meetups.",
+      "permission_denied": "Browser notifications are currently blocked.",
+      "permission_granted": "Browser notifications enabled."
+    }
+  },
+  "language": {
+    "de": "Germană",
+    "en": "Engleză",
+    "ro": "Română"
+  },
+  "login": {
+    "confirm_password": "confirmă parola (pentru înregistrare)",
+    "display_name": "nume afișat (pentru înregistrare)",
+    "email": "email",
+    "email_not_verified": "Email-ul nu a fost verificat? ",
+    "enter_email_first": "Te rog introdu mai întâi adresa ta de email.",
+    "go_dashboard": "Mergi la Panou",
+    "intro": "Autentifică-te sau creează un cont nou.",
+    "login": "Autentificare",
+    "login_required": "Sunt necesare adresa de email și parola.",
+    "page_title": "SoulTribe.chat — Autentificare / Înregistrare",
+    "password": "parolă",
+    "password_mismatch": "Parolele nu se potrivesc.",
+    "redirect_hint": "După autentificare vei fi redirecționat la panou.",
+    "register": "Înregistrare",
+    "registration_success": "Cont creat. Te rugăm să-ți verifici adresa de email.",
+    "required_fields": "Sunt necesare adresa de email, parola și numele afișat.",
+    "resend_verification": "Retrimite email de verificare",
+    "reset_password": "Resetează parola",
+    "reset_sent": "Dacă există un cont cu această adresă de email, a fost trimis un email de resetare a parolei.",
+    "title": "Bine ai venit",
+    "verification_sent": "Dacă adresa ta de email nu a fost încă verificată, a fost trimis un nou email de verificare."
+  },
+  "nav": {
+    "dashboard": "Panou",
+    "login": "Autentificare",
+    "logout": "Deconectare",
+    "profile": "Profil",
+    "welcome": "Acasă",
+    "home": "Acasă",
+    "discover": "Descoperă",
+    "matches": "Potriviri",
+    "messages": "Mesaje"
+  },
+  "profile": {
+    "cancel": "Anulează",
+    "delete_account": "Șterge contul meu",
+    "delete_account_confirm": "Ești sigur că vrei să îți ștergi contul? Această acțiune nu poate fi anulată.",
+    "language_input_placeholder": "Tastează pentru a adăuga limbi...",
+    "other_languages_label": "Alte limbi (pentru potriviri)",
+    "primary_language_label": "Limba principală (pentru interfață)",
+    "save": "Salvează",
+    "title": "Profilul tău",
+    "basic_info": {
+      "legend": "Informații de bază",
+      "username_label": "Nume utilizator",
+      "username_placeholder": "nume utilizator"
+    },
+    "languages": {
+      "legend": "Limbi"
+    },
+    "location": {
+      "legend": "Locație curentă",
+      "city_placeholder": "Oraș curent (completare automată)",
+      "use_my_location": "Folosește locația mea",
+      "detected_tz_label": "Fus orar detectat:",
+      "detected_tz_hint": "(automat sau selectează)"
+    },
+    "birth": {
+      "legend": "Informații de naștere (pentru astrologie)",
+      "date_placeholder": "Data nașterii",
+      "hour_label": "Oră",
+      "minute_label": "Minut",
+      "place_placeholder": "Locul nașterii (oraș, țară)",
+      "detected_tz_label": "Fus orar detectat:",
+      "detected_tz_hint": "(automat)",
+      "lat_placeholder": "Latitudine (ex.: 48.2082)",
+      "lon_placeholder": "Longitudine (ex.: 16.3738)",
+      "instructions": "Setează data și locul nașterii pentru a-ți calcula radix-ul. Dacă nu știi ora exactă, lasă câmpul orei gol și vom folosi implicit ora 12:00."
+    },
+    "note": "Profilul tău este folosit pentru personalizarea potrivirilor și afișarea fusului orar.",
+    "notifications": {
+      "legend": "Notifications",
+      "browser_label": "Browser notifications",
+      "browser_help": "Show alerts on this device when meetups need your attention.",
+      "browser_grant": "Enable browser notifications",
+      "browser_denied": "Browser notifications are blocked in your browser settings.",
+      "email_label": "Email notifications",
+      "email_help": "Send meetup updates to your verified email address.",
+      "email_disabled": "Verify your email to receive meetup updates.",
+      "save_notice": "These preferences apply to future meetups."
+    }
+  },
+  "welcome": {
+    "subtitle": "Găsește-ți tribul sufletului",
+    "title": "Bine ai venit pe SoulTribe.chat"
+  },
+  "landing": {
+    "page_title": "SoulTribe.chat – Găsește-ți tribul sufletului",
+    "hero": {
+      "title": "Bine ai venit",
+      "subtitle": "SoulTribe.chat este un spațiu creat pentru a te ajuta să îți găsești și să te conectezi cu tribul sufletului — oameni care rezonează cu energia, spiritul și călătoria ta. ✨",
+      "learn_more": "Descoperă viziunea SoulTribe →"
+    },
+    "how": {
+      "title": "Cum funcționează",
+      "step1": "Creează-ți profilul — introdu data, ora și locul nașterii pentru a genera harta ta unică a sufletului.",
+      "step2": "Descoperă potrivirile — evidențiem conexiunile în funcție de compatibilitate și rezonanță.",
+      "step3": "Începe conversația — invită potrivirile la chat; sigur și privat prin design.",
+      "step4": "Întâlnește-te (opțional) — programează un apel Jitsi sau o întâlnire față în față cu consimțământ reciproc."
+    },
+    "getting_started": {
+      "title": "Începe",
+      "step1": "Creează-ți contul — fără autentificări sociale.",
+      "step2": "Completează-ți profilul — adaugă detalii de naștere; ora aproximativă este în regulă.",
+      "step3": "Stabilește-ți disponibilitatea — propune intervale orare locale; de UTC ne ocupăm noi.",
+      "step4": "Descoperă potrivirile — parcurge sugestii bazate pe rezonanță.",
+      "step5": "Chatuiește și, opțional, întâlnește-te — rămâi în aplicație; programează când ești gata."
+    },
+    "features": {
+      "title": "Funcționalități",
+      "item1": "Potrivire cu conștientizare astrologică — conectează-te folosind harta natală.",
+      "item2": "Planificare inteligentă a fusurilor orare — noi facem conversiile UTC pentru tine.",
+      "item3": "Comunicare directă prin Jitsi — text/audio/video; nimic nu este stocat sau înregistrat pe SoulTribe.chat.",
+      "item4": "Alăturare ușoară prin link — cameră Jitsi privată pentru întâlniri confirmate; prietenoasă cu confidențialitatea, fără instalare pe desktop.",
+      "item5": "Interfață minimalistă și concentrată — proiectată pentru conversații cu sens."
+    },
+    "privacy": {
+      "title": "Confidențialitate și siguranță",
+      "item1": "Cerem doar ceea ce este necesar pentru a permite conexiuni autentice.",
+      "item2": "Detaliile profilului tău nu sunt vândute și nici partajate rețelelor de publicitate.",
+      "item3": "Tu controlezi cine te poate contacta și când să împărtășești mai mult."
+    },
+    "matching": {
+      "title": "Cum funcționează potrivirea (pe scurt)",
+      "text": "Calculăm indicatori relaționali cheie din harta ta și îi comparăm cu ai altora pentru a găsi rezonanță. Prioritizăm armonia, complementaritatea și potențialul de creștere, nu metrici generici de popularitate."
+    },
+    "protips": {
+      "title": "Sfaturi",
+      "item1": "Adaugă câteva intervale de disponibilitate în zile diferite pentru conexiuni mai rapide.",
+      "item2": "Fii autentic(ă) în introducere — detaliile îi ajută pe oamenii potriviți să te găsească.",
+      "item3": "Consimțământul pe primul loc, mereu. Mergi în ritmul care ți se potrivește.",
+      "item2b": "Personalizează-ți outreach-ul — referă-te la rezumatul de forță AI când trimiți mesaje sau propui întâlniri."
+    },
+    "next": {
+      "title": "Pașii următori",
+      "go_dashboard": "Mergi la Panou",
+      "login_register": "Autentificare / Înregistrare",
+      "step1": "Creează un cont",
+      "step2": "Completează-ți profilul",
+      "step3": "Creează un slot de timp",
+      "step4": "Ține evidența potrivirilor",
+      "step5": "Propune sau confirmă o întâlnire",
+      "step6": "Alătură-te chatului Jitsi",
+      "read_more": "Citește ghidul detaliat →"
+    },
+    "global": {
+      "title": "Comunitate globală, timp local",
+      "text": "Conectează-te cu suflete asemănătoare din toată lumea cu conversie automată a fusului orar.",
+      "auto_title": "Detectare automată a fusului orar",
+      "auto_text": "Detectăm automat fusul tău orar pentru programare fără întreruperi.",
+      "native_title": "Suport pentru limba maternă",
+      "native_text": "Chatuiește în limba preferată cu traducerea noastră integrată.",
+      "tz_title": "Programare conștientă de fusul orar",
+      "tz_text": "Fără calcule de fus orar — noi facem toate conversiile pentru tine.",
+      "select_label": "Selectează limba:",
+      "translated_title": "Interfață tradusă",
+      "translated_text": "Navighează UI-ul în limba ta și vezi rezumate de potrivire AI în localizarea preferată."
+    },
+    "how_full": {
+      "title": "Cum funcționează SoulTribe",
+      "step1": "Creează-ți spațiul — înregistrează-te și împărtășește elementele esențiale care formează amprenta ta unică de energie.",
+      "step2": "Stabilește-ți fundamentele — alege-ți limba primară, secundare opționale, data nașterii și confirmă-ți fusul orar local actual.",
+      "step3": "Deschide-ți programul — creează sloturi de disponibilitate pentru ca sistemul să știe când ești liber.",
+      "step4": "Descoperă potriviri bazate pe rezonanță — inteligența noastră de diagramă evidențiază persoanele a căror energie se potrivește cu a ta.",
+      "step5": "Observă suprapunerile — disponibilitatea suprapusă dezvăluie când un partener potential de potrivire este liber simultan.",
+      "step6": "Propune sau confirmă o întâlnire — trimite sau acceptă invitații când timpul pare potrivit.",
+      "step7": "Alătură-te chat-ului Jitsi — întâlnește-te față în față într-o cameră video sigură, privată când toți sunt pregătiți.",
+      "summary": "Fiecare pas este ghidat de consimțământ și proiectat să respecte limitele tale.",
+      "step8": "Ghid detaliat pentru pașii următori"
+    },
+    "different": {
+      "title": "De ce SoulTribe este diferit",
+      "item1": "Potrivire astrologie-întâi care respectă nuanțe dincolo de semnele solare.",
+      "item2": "Confidențialitate centrată pe om fără reclame, pixeli de urmărire sau algoritmi surprinzători.",
+      "item3": "Planificare ghidată de consimțământ cu verificare, propuneri clare, confirmări și anulări simple.",
+      "item4": "Conexiune ghidată prin insights AI de potrivire, evidențieri de forță și prompts de interpretare a profilului."
+    },
+    "experience": {
+      "title": "Ce vei experimenta",
+      "item1": "Introduceri rezonanță-întâi derivate din scoruri sinastice și disponibilitate suprapusă — fără defilare infinită.",
+      "item2": "Insights ghidate de AI cu rezumate de forță de potrivire și interpretări de profil pentru a sprijini conversații reflexive.",
+      "item3": "Ritmul ghidat de consimțământ unde propui, confirmi sau anulezi întâlniri și inviți alții la Jitsi când toți sunt de acord.",
+      "summary": "Mișcă-te în ritmul care ți se potrivește — oprește-te în orice moment și reia firul când ești pregătit."
+    },
+    "matching_full": {
+      "title": "Cum funcționează potrivirea",
+      "step1": "Sinteză diagramă — combinăm datele de naștere ale fiecărui membru pentru a calcula aspecte sinastice, echilibru elementar și suprapuneri de case.",
+      "step2": "Evaluare compatibilitate — indicatorii devin un scor și vector de forță; când depășește pragul nostru de vizibilitate și disponibilitatea se suprapune, potrivirea apare pe tabloul tău.",
+      "step3": "Context pentru acțiune — cere un rezumat scris de AI pentru a evidenția teme cheie și forțe înainte de contact.",
+      "summary": "Fără defilare, doar contexte astrologice clare pentru alegerea atentă a următoarei tale conexiuni."
+    },
+    "support": {
+      "title": "Suport & Resurse",
+      "item1": "Onboarding concierge cu prompts pentru a te ajuta să împărtășești exact ce este necesar.",
+      "item2": "Verificări ghidate prin rezumate de potrivire generate de AI și reflecții de profil care mențin conversațiile ancorate.",
+      "item3": "Întâlniri 1:1 cu opțiunea de a invita alții în camera ta Jitsi când toți sunt de acord.",
+      "item4": "Bibliotecă de resurse inclusiv ghiduri de comunicare, practici de siguranță și sfaturi pentru întâlniri 1:1 semnificative.",
+      "summary": "Suntem aici înainte, în timpul și după fiecare conexiune pe care o creezi."
+    }
+  },
+  "radix": {
+    "title": "Radix-ul tău",
+    "placeholder": "Dacă ai setat datele de naștere, aici va apărea instantaneul radix.",
+    "show_raw_json": "Afișează JSON brut"
+  },
+  "ai": {
+    "get_interpretation": "Obține interpretare",
+    "followup_placeholder": "Pune o întrebare suplimentară…",
+    "send": "Trimite",
+    "error_initial": "Nu s-a putut obține interpretarea",
+    "error_followup": "Nu s-a putut trimite mesajul"
+  },
+  "imprint": {
+    "title": "Imprint"
+  },
+  "footer": {
+    "terms": "Termeni",
+    "privacy": "Confidențialitate",
+    "imprint": "Imprimare"
+  },
+  "reset_password": {
+    "title": "Resetează parola",
+    "intro": "Alege o parolă nouă pentru contul tău.",
+    "new_password_label": "Parolă nouă",
+    "new_password_placeholder": "parolă nouă",
+    "confirm_password_label": "Confirmă parola nouă",
+    "confirm_password_placeholder": "confirmă parola nouă",
+    "submit": "Setează parola nouă"
+  },
+  "notifications": {
+    "language_set_to": "Limba setată la"
+  },
+  "guestGuide": {
+    "title": "Ghid rapid Jitsi pentru oaspeții SoulTribe",
+    "intro": "Acest ghid îi ajută pe noii oaspeți să se alăture cu încredere camerelor Jitsi SoulTribe. Alege doar pașii de care ai nevoie. Textul, audio și video sunt opționale.",
+    "prejoin": {
+      "heading": "Instrucțiuni înainte de conectare",
+      "steps": {
+        "options": "Cunoaște-ți opțiunile. Jitsi suportă text, audio și video. Tu decizi ce activezi; fiecare canal poate rămâne dezactivat.",
+        "permissions": "Acordă permisiunile necesare. Când pagina de autentificare solicită acces, permite browserului să folosească microfonul și camera pentru a le putea activa ulterior.",
+        "setup": "Pregătește-te înainte de a intra în sală."
+      },
+      "substeps": {
+        "name": "Nume: introdu numele pe care dorești să-l vadă ceilalți participanți.",
+        "background": "Fundal: alege o estompare sau un fundal virtual dacă îți dorești mai multă intimitate."
+      },
+      "mic_camera_label": "Microfon și cameră:",
+      "mic_camera_text": "Folosește primele două pictograme pentru a le activa sau dezactiva înainte de conectare.",
+      "devices_label": "Dispozitive:",
+      "devices_before_arrow": "Fă clic pe săgeata mică de lângă fiecare pictogramă",
+      "devices_after_arrow": "pentru a selecta microfonul sau camera potrivită.",
+      "audio_tip_label": "Sfat audio:",
+      "audio_tip_text": "Căștile ulterioare previn ecoul. Dacă trebuie să folosești difuzoarele, menține volumul scăzut pentru a evita feedback-ul."
+    },
+    "browser": {
+      "heading": "Compatibilitate cu browserele",
+      "supported": "Firefox și Chrome oferă suport complet pentru audio, video și chat.",
+      "unsupported": "Safari, Edge, Opera, Brave și DuckDuckGo nu sunt deocamdată compatibile.",
+      "note": "Alte browsere de nișă nu au fost verificate.",
+      "tip1": "Când ești întrebat, activează accesul la microfon și cameră din bara de adrese.",
+      "tip2": "Dezactivează blocanții de urmăritori sau adaugă Jitsi pe lista de site-uri permise.",
+      "tip3": "Reîncarcă fila după ce ai modificat permisiunile pentru a aplica schimbările."
+    },
+    "layout": {
+      "heading": "Cum este organizată interfața în cameră",
+      "description": "Zona principală de video din centru arată toate persoanele cu camera activată. În partea de jos găsești bara de control cu pictograme cheie: microfon, cameră, partajare ecran, chat, participanți și alte opțiuni. Folosește panoul din dreapta pentru a deschide lista participanților și ecranele partajate."
+    },
+    "toolbar": {
+      "heading": "Pictograme în bara de instrumente",
+      "columns": {
+        "icon": "Pictogramă",
+        "label": "Etichetă",
+        "description": "Descriere"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Microfon",
+          "description": "Activează sau dezactivează microfonul și selectează dispozitivul dorit din meniul de dispozitive."
+        },
+        "camera": {
+          "label": "Cameră",
+          "description": "Activează sau dezactivează camera și alege sursa video potrivită."
+        },
+        "screen": {
+          "label": "Partajare ecran",
+          "description": "Partajează întregul ecran, o anumită filă sau o fereastră."
+        },
+        "chat": {
+          "label": "Chat",
+          "description": "Deschide chatul text pentru a trimite mesaje sau link-uri."
+        },
+        "participants": {
+          "label": "Participanți / Invită",
+          "description": "Vezi cine este în cameră, invită persoane noi și permite accesul oaspeților în așteptare."
+        },
+        "more": {
+          "label": "Mai multe opțiuni",
+          "description": "Accesează setări de securitate, opțiuni de dispozitiv și alte instrumente."
+        },
+        "hangup": {
+          "label": "Încheie apelul",
+          "description": "Părăsește camera."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Link rapid pentru a intra",
+      "cta": "Intră imediat pe jitsi.bubuit.net/soultribe",
+      "note": "Testează-ți configurația sau întâlnește oaspeți prietenoși. Nu este necesar un cont."
+    },
+    "closing": {
+      "heading": "Mesaj de închidere",
+      "text": "Bucură-te de conexiuni în felul tău și în ritmul tău."
+    }
+  },
+  "nextStepsGuide": {
+    "page_title": "Ghid detaliat pentru pașii următori",
+    "title": "Ghid detaliat pentru pașii următori",
+    "intro": "Acest ghid aprofundează pașii din pagina de start și te însoțește în fiecare acțiune cu sfaturi și link-uri utile.",
+    "steps": {
+      "step1": {
+        "heading": "Creează un cont",
+        "description": "Înregistrează-te cu adresa de email pentru a accesa panoul și profilul. Autentificarea prin rețele sociale nu este necesară.",
+        "bullets": {
+          "item1": "Folosește un email valid; link-urile de verificare expiră după 24 de ore.",
+          "item2": "După confirmare, vei fi redirecționat către pagina de autentificare."
+        },
+        "link": "Mergi la Autentificare / Înregistrare"
+      },
+      "step2": {
+        "heading": "Completează-ți profilul",
+        "description": "Adaugă datele de naștere pentru a activa potrivirile bazate pe rezonanță. O oră aproximativă este suficientă; mai multă precizie îmbunătățește rezultatele.",
+        "bullets": {
+          "item1": "Introdu data, ora și locul nașterii. Dacă nu cunoști ora exactă, alege o estimare.",
+          "item2": "Scrie o scurtă prezentare care reflectă interesele și intențiile tale. Fii concret(ă) și autentic(ă)."
+        },
+        "callout": "Sfat: fusul orar al profilului este detectat automat; îl poți verifica în panou.",
+        "link": "Editează profilul"
+      },
+      "step3": {
+        "heading": "Creează un interval de timp",
+        "description": "Oferă unul sau mai multe intervale în care vrei să te conectezi. Salvăm ora ta locală și o convertim în UTC pentru programare.",
+        "bullets": {
+          "item1": "Alege ora de start în fusul tău orar și setează durata (de exemplu, 1–3 ore).",
+          "item2": "Intervalele în zile diferite cresc șansa unor potriviri rapide."
+        },
+        "callout": "Fusuri orare sub control: convertim automat între ora locală și UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Deschide panoul"
+      },
+      "step4": {
+        "heading": "Monitorizează potrivirile",
+        "description": "Explorează potrivirile sugerate pe baza rezonanței. Verifică notele de compatibilitate și interesele comune.",
+        "bullets": {
+          "item1": "Sugestiile noi apar când profilul și intervalele tale sunt active.",
+          "item2": "Folosește filtre și note pentru a ține evidența persoanelor cu care dorești să vorbești."
+        },
+        "callout": "Confidențialitate înainte de toate: tu decizi când și cum te implici."
+      },
+      "step5": {
+        "heading": "Propune sau confirmă o întâlnire",
+        "description": "Când interesul este reciproc, propune o oră în intervalele care se suprapun sau acceptă propunerea potrivirii tale.",
+        "bullets": {
+          "item1": "Trimite o invitație prietenoasă și clară. Oferă una sau două ferestre orare.",
+          "item2": "Confirmă planul în chat și trece la un apel când amândoi sunteți pregătiți."
+        },
+        "callout": "Consimțământ și confort: mergi în ritmul tău. Este perfect în regulă să rămâi doar la text."
+      },
+      "step6": {
+        "heading": "Alătură-te chatului Jitsi",
+        "description": "Folosește Jitsi pentru audio/video opționale. Browserele desktop (Firefox, Chrome) sunt suportate; chatul text este mereu disponibil.",
+        "bullets": {
+          "item1": "Testează microfonul/camera sau lasă-le oprite și folosește doar textul.",
+          "item2": "Alege dispozitivele corecte din săgeata mică de lângă pictograme."
+        },
+        "link": "Citește ghidul rapid Jitsi"
+      }
+    },
+    "closing": "Bucură-te de conectare în modul care ți se potrivește cel mai bine."
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — O constelație de conexiuni",
+      "subtitle": "Unde designul cosmic întâlnește conexiunea umană — un sanctuar pentru suflete înrudite ghidate de stele."
+    },
+    "vision": {
+      "heading": "✨ Viziunea",
+      "body1": "SoulTribe.chat conectează oameni ale căror hărți natale armonizează — oferind potrivire bazată pe astrologie, chaturi private și întâlniri opționale pentru a ajuta suflete înrudite să se întâlnească într-un mod conștient și semnificativ. Este mai mult decât o platformă: un experiment viu în conexiune cosmică, unde astrologia devine o limbă comună de empatie în loc de predicție.",
+      "body2": "Fiecare hartă este o semnătură unică — o melodie în stele care rezonă cu alții pentru a aprinde recunoașterea și profunzimea. Acest spațiu întâmpină căutătorii care simt că fiecare întâlnire poartă un scop — că sincronicitatea ghidează conexiunea, și că creșterea și bucuria emerg din relații care par destinate. SoulTribe.chat oferă un mediu sigur, minimalist și conștient unde aceste conexiuni pot evolua natural."
+    },
+    "transition": "Înainte de a ne scufunda mai adânc, să trecem de la ideea de conexiune cosmică la comunitatea pe care o creează — SoulTribe în sine.",
+    "soultribe": {
+      "heading": "🌠 Ce este o SoulTribe?",
+      "body1": "SoulTribe nu este doar o rețea sau o listă de prieteni — este un câmp de rezonanță. Pânza invizibilă care conectează pe cei care împărtășesc frecvența, scopul și ritmul spiritului. Când întâlnești membri ai tribului tău, recunoașterea este instantanee: conversația se simte ca amintirea în loc de introducere. Timpul își înmoaie marginile, și spațiul dintre cuvinte devine sacru.",
+      "body2": "În SoulTribe-ul tău, ești văzut complet — apreciat pentru esența ta, nu pentru imaginea ta. Fiecare persoană devine o oglindă: unii reflectă puterile tale, alții lecțiile tale, și câțiva îți amintesc de ceea ce poți deveni. Ei trezesc curaj, autenticitate și cunoașterea că apartenența nu este despre asemănare ci despre rezonanță.",
+      "body3": "Tribul tău poate consta din artiști, visători, vindecători, oameni de știință sau suflete liniștite mergând pe adevărul lor. Ceea ce vă unește nu este fundal sau credință — este vibrație."
+    },
+    "power": {
+      "heading": "🔥 Puterea unui trib",
+      "body1": "La fel cum fiecare SoulTribe se formează prin rezonanță împărtășită, adevărata ei putere emerge în energia colectivă care crește din aceste conexiuni.",
+      "body2": "Crescem mai repede, vindecăm mai profund și visăm mai mare când alții merg alături de noi și mărturisesc calea noastră. Oamenii au prosperat întotdeauna în cercuri — este designul nostru antic. Un trib amplifică energia: ceea ce unul aprinde, altul susține; ceea ce unul visează, altul încorporează. În acest câmp împărtășit, sincronicitățile se multiplică și evoluția colectivă accelerează.",
+      "body3": "Când te implici, poți observa cum energia ta proprie se extinde. Ideile câștigă momentum, creativitatea curge, intuiția se ascuțește. Tribul devine oglindă, profesor și cerc de împuternicire — amintind că calea sufletului nu a fost niciodată menită să fie parcursă singură.",
+      "body4": "În cadrul SoulTribe.chat, ideea de 'trib' nu este despre exclusivitate ci despre sinergie. Aici, individualitatea și împreună coexistă frumos. Fiecare persoană contribuie cu frecvența sa, formând o constelație vie de conștiință — fiecare punct de lumină luminând pe ceilalți."
+    },
+    "astro": {
+      "heading": "☀️ Astro și suflet",
+      "body1": "Astrologia pe SoulTribe.chat conectează insight și conexiune onorând confidențialitatea și consimțământul tău. Doar date esențiale de naștere sunt folosite pentru a genera insights de compatibilitate, și nimic nu este împărtășit sau stocat dincolo de ceea ce experiența ta necesită.",
+      "body2": "Folosind detaliile tale de naștere, platforma calculează poziții planetare și le compară cu altele pentru a revela zone de armonie naturală, rezonanță emoțională și potențial de creștere. În loc să copleșească utilizatorii cu date, rezultatele sunt distilate în indicatori clari de compatibilitate — arătând unde energiile se aliniază și cum relațiile pot evolua.",
+      "body3": "Acest lucru nu este dating după semn; este rezonanță de suflet prin design, unde hărțile ghidează înțelegerea și conexiunea. Indiferent de rezultat — chimie romantică, colaborare creativă sau prietenie profundă — SoulTribe.chat te ajută să recunoști de ce anumite persoane par instant familiare — și cum fiecare întâlnire devine oglindă pentru sufletul tău."
+    },
+    "soulmates": {
+      "heading": "💫 Suflete pereche și dincolo",
+      "body1": "Cuvântul 'suflet pereche' adesea restrânge imaginația la romantism, dar suflete pereche apar în multe forme. Ele pot fi prietena care îți reînvie râsul, profesoara care îți provoacă limitele, sau străinul a cărui prezență se simte instant familiară. SoulTribe.chat extinde această idee — ghidându-te nu către 'cel unul', ci către mulți care poartă bucăți din evoluția ta.",
+      "body2": "Unele conexiuni aprind electricitate — intense și transformative. Altele oferă pace liniștită, înrădăcinând energia ta în liniște împărtășită. Fiecare întâlnire este un pas către întregire, un memento că călătoria sufletului este un mozaic de întâlniri sacre. Întâlnirea tribului tău înseamnă întâlnirea cu tine însuți — reflectat în o mie de oglinzi vii."
+    },
+    "benefit": {
+      "heading": "🌍 Cum să beneficiezi",
+      "items": {
+        "item1": "Creează-ți harta sufletului — introdu detaliile tale de naștere pentru a genera modelul tău cosmic unic și descoperi ce face energia ta distinctă.",
+        "item2": "Descoperă rezonanță — găsește membri ale căror hărți răsună sau completează pe a ta. Învață cum alinierile planetare indică armonie, inspirație sau scop karmic.",
+        "item3": "Conectează-te autentic — implică-te în conversații conștiente. SoulTribe.chat încurajează prezență, curiozitate și respect. Cuvintele devin instrumente de înțelegere, nu performanță.",
+        "item4": "Creșteți împreună — fiecare întâlnire este un schimb de lumină. Prin rezonanță, contrast sau frecare ușoară, evoluezi. Sistemul evidențiază cele mai bune oglinzi de învățare ale tale — cele care îți extind conștiința în loc să reflecteze zona ta de confort.",
+        "item5": "Întâlniți-vă în prezență — când pregătirea se desfășoară natural, treceți de la text la voce, de la conversație la co-creare. Fiecare întâlnire — digitală sau personală — devine un dialog sacru al sufletelor."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifest pentru conexiuni profunde",
+      "intro": "Găsește-ți frecvența și găsește-ți tribul.",
+      "body1": "Conexiunea este sacră — fiecare conversație înrădăcinată în prezență poate deveni un portal către conștiință. Tehnologia ar trebui să servească conștiința, hrănind intimitatea în loc de distragere. Astrologia, folosită cu compasiune și claritate, revelează nu destin ci libertate prin înțelegere. Când triburile se aliniază, formează constelații radiante care strălucesc mai luminos împreună decât separat.",
+      "body2": "SoulTribe.chat ne amintește că nu suntem rătăcitori sub un cer îndepărtat, ci fire luminoase într-un tapet împărtășit de creație. Fiecare întâlnire este o scânteie în marele foc al trezirii, fiecare conversație o bătaie a inimii în ritmul a ceva vast și sacru.",
+      "closing": "Împreună ne amintim cine suntem — un trib de multe suflete."
+    },
+    "join": {
+      "heading": "🌌 Alătură-te călătoriei",
+      "body": "Dacă aceste cuvinte rezonă, creează-ți profilul, explorează-ți harta sufletului și începe să întâlnești spirite înrudite care împărtășesc frecvența ta. Fiecare nouă conexiune este o ușă către descoperire, reflecție și creștere.",
+      "cta": "Începe-ți călătoria SoulTribe",
+      "footer": "Tribul tău este deja acolo afară — lasă stelele să te ghideze acasă."
+    }
+  }
+}

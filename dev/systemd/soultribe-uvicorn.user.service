@@ -1,0 +1,20 @@
+# ~/.config/systemd/user/soultribe-uvicorn.service
+# User-level systemd unit (no sudo). Uses %h for your home directory.
+[Unit]
+Description=SoulTribe FastAPI (uvicorn, user service)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# User services must not set User=/Group=
+WorkingDirectory=%h/windsurf/soultribe.chat
+EnvironmentFile=%h/windsurf/soultribe.chat/.env
+ExecStart=%h/windsurf/soultribe.chat/.venv/bin/uvicorn src.backend.main:app --host 0.0.0.0 --port 8001 --workers 2
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

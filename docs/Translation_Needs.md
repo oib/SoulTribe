@@ -65,7 +65,7 @@ This document tracks the internationalization (i18n) status of the SoulTribe.cha
 
 To add support for a new language:
 
-1. Create a new directory in `web/i18n/locales/` with the language code (e.g., `fr` for French)
+1. Create a new directory in `src/frontend/i18n/locales/` with the language code (e.g., `fr` for French)
 2. Copy the English translation file (`en/translation.json`) as a starting point
 3. Translate all strings while maintaining the same JSON structure
 4. Add the language to the language selector in the UI
@@ -113,9 +113,7 @@ When making changes to the English source strings:
   - Integrate Albanian (`sq`) full translation package when delivered.
 
 - **Implement stepwise i18n directory migration** *(unchanged)*
-  1. Mirror the current `web/i18n/` tree into `src/frontend/i18n/` without removing legacy files.
-  2. Update `web/i18n/i18n.js` loaders to read from the new path while keeping compatibility with existing deployments.
-  3. Extend the interim build process (see `docs/dirs.md`) to copy compiled translations into `web/i18n/` until the full migration completes.
-  4. Validate all 28 language bundles, then delete the redundant `web/i18n/` sources once references are updated.
-
-
+  - Mirror the current `web/i18n/` tree into `src/frontend/i18n/` without removing legacy files.
+  - Update `src/frontend/i18n/i18n.js` loaders to read from the new path while keeping compatibility with existing deployments.
+  - Extend the interim build process (see `docs/dirs.md`) to copy compiled translations into `src/frontend/public/i18n/` until the full migration completes.
+  - Validate all 28 language bundles, then delete the redundant `web/i18n/` sources once references are updated.

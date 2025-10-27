@@ -1,0 +1,55 @@
+[Unit]
+Description=SoulTribe Chat Application
+After=network.target
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=oib
+WorkingDirectory=/home/oib/windsurf/soultribe.chat
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=/home/oib/windsurf/soultribe.chat
+EnvironmentFile=/home/oib/windsurf/soultribe.chat/.env
+
+# Security
+NoNewPrivileges=true
+ProtectSystem=full
+PrivateTmp=true
+ProtectHome=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictRealtime=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+RestrictNamespaces=true
+MemoryDenyWriteExecute=true
+LockPersonality=true
+
+# Process management
+Restart=on-failure
+RestartSec=5s
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Resource limits
+LimitNOFILE=65535
+LimitNPROC=65535
+
+# Gunicorn configuration
+ExecStart=/home/oib/windsurf/soultribe.chat/.venv/bin/gunicorn \
+  --config /home/oib/windsurf/soultribe.chat/dev/config/gunicorn_config.py \
+  --capture-output \
+  --enable-stdio-inheritance \
+  --chdir /home/oib/windsurf/soultribe.chat \
+  src.backend.main:app
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=soultribe
+
+[Install]
+WantedBy=default.target

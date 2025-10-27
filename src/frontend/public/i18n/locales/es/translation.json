@@ -1,0 +1,513 @@
+{
+  "ai": {
+    "followup_placeholder": "Haz una pregunta de seguimiento…",
+    "get_interpretation": "Obtener interpretación",
+    "send": "Enviar",
+    "error_initial": "No se pudo obtener la interpretación",
+    "error_followup": "No se pudo enviar el mensaje"
+  },
+  "dashboard": {
+    "availability": "Disponibilidad",
+    "create_slot": "Crear franja",
+    "duration_hours": "Duración (horas)",
+    "matches": "Coincidencias",
+    "meetups": "Quedadas",
+    "overlap_hint": "Haz clic en “Proponer esta hora” para proponer una quedada para esa franja.",
+    "propose_time": "Proponer hora",
+    "generate_ai_comment": "Generar comentario IA",
+    "slot_delete": "Eliminar",
+    "slot_edit": "Editar",
+    "title": "Panel",
+    "active_filter_hint": "Solo se muestran los usuarios activos en los últimos 30 días.",
+    "slot_help_summary": "¿Qué es un intervalo de disponibilidad?",
+    "slot_help_intro": "Los “slots” son ventanas de tiempo que publicas para que SoulTribe pueda sugerir encuentros cuando alguien se superpone contigo.",
+    "slot_help_step1": "Añade uno o varios slots para los días y horas en que estás libre. El sistema los guarda en tu zona horaria de perfil y en UTC.",
+    "slot_help_step2": "Al obtener coincidencias, comparamos tus slots con los de otros miembros para encontrar superposiciones que aún estén en el futuro.",
+    "slot_help_step3": "Las fichas de superposición en la sección “Matches” muestran la ventana compartida: UTC, tu hora local y la hora local de tu match.",
+    "slot_help_step4": "Haz clic en “Proponer esta hora” en una superposición para iniciar el flujo de meetup con ese slot pre‑rellenado.",
+    "slot_help_step5": "Si algo cambia, edita o elimina el slot para que dejemos de sugerir horas desactualizadas.",
+    "notifications": {
+      "proposed_title": "Quedada propuesta — necesita tu confirmación",
+      "proposed_body": "{other} propuso {time}",
+      "proposed_body_fallback": "Se ha propuesto una quedada.",
+      "confirmed_title": "Quedada confirmada",
+      "confirmed_body": "{other} confirmó {time}",
+      "confirmed_body_fallback": "Tu quedada está confirmada.",
+      "unconfirmed_title": "Quedada sin confirmar",
+      "unconfirmed_body": "{other} devolvió la quedada al estado propuesto.",
+      "unconfirmed_body_fallback": "Tu quedada quedó sin confirmar. Revisa el panel para más detalles.",
+      "canceled_title": "Quedada cancelada",
+      "canceled_body": "{other} canceló la quedada.",
+      "canceled_body_fallback": "Se canceló una quedada.",
+      "deleted_title": "Quedada eliminada",
+      "deleted_body": "{other} eliminó el registro de la quedada.",
+      "deleted_body_fallback": "Se eliminó un registro de quedada.",
+      "permission_request": "Permite las notificaciones del navegador para mantenerte al día con las quedadas.",
+      "permission_denied": "Las notificaciones del navegador están bloqueadas actualmente.",
+      "permission_granted": "Notificaciones del navegador activadas."
+    }
+  },
+  "footer": {
+    "imprint": "Aviso legal",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "imprint": {
+    "title": "Aviso legal"
+  },
+  "landing": {
+    "features": {
+      "item1": "Emparejamiento astrológico — conéctate usando tu carta natal.",
+      "item2": "Planificación inteligente de zonas horarias — nosotros manejamos las conversiones UTC por ti.",
+      "item3": "Comunicación directa vía Jitsi — texto/audio/vídeo; nada se almacena ni se graba en SoulTribe.chat.",
+      "item4": "Acceso fácil por enlace — sala privada de Jitsi para encuentros confirmados; respetuosa con la privacidad, sin instalación en escritorio.",
+      "item5": "Interfaz minimalista y enfocada — diseñada para conversaciones significativas.",
+      "title": "Características"
+    },
+    "getting_started": {
+      "step1": "Crea tu cuenta — no se requieren inicios de sesión con redes sociales.",
+      "step2": "Completa tu perfil — añade los detalles de nacimiento; la hora aproximada es suficiente.",
+      "step3": "Establece tu disponibilidad — propone franjas horarias locales; nosotros nos encargamos de la conversión UTC.",
+      "step4": "Descubre coincidencias — explora sugerencias basadas en la resonancia.",
+      "step5": "Chatea y reúnete — todo dentro de la aplicación; programa cuando estés listo/a.",
+      "title": "Empezar"
+    },
+    "global": {
+      "auto_text": "Chatea con tus coincidencias en tu idioma preferido, con traducción automática cuando sea necesario.",
+      "auto_title": "Traducción automática",
+      "native_text": "Interfaz completamente traducida a múltiples idiomas, con adiciones regulares.",
+      "native_title": "Soporte multilingüe",
+      "select_label": "Seleccionar idioma:",
+      "text": "Habla tu idioma, conéctate con el mundo. SoulTribe.chat admite múltiples idiomas para acercar a tu tribu del alma, sin importar de dónde seas.",
+      "title": "Comunidad global",
+      "tz_text": "Detección y conversión automática de zonas horarias, para que siempre sepas cuándo están disponibles tus coincidencias.",
+      "tz_title": "Conciencia de zona horaria",
+      "translated_title": "Interfaz traducida",
+      "translated_text": "Navega la UI en tu idioma y ve resúmenes de coincidencia AI en tu localización preferida."
+    },
+    "hero": {
+      "subtitle": "SoulTribe.chat es un espacio creado para ayudarte a encontrar y conectar con tu tribu del alma — personas que resuenan con tu energía, tu espíritu y tu viaje. ✨",
+      "title": "Bienvenido/a",
+      "learn_more": "Descubre la visión de SoulTribe →"
+    },
+    "how": {
+      "step1": "Crea tu perfil — ingresa tu fecha, hora y lugar de nacimiento para generar tu mapa del alma único.",
+      "step2": "Descubre tus coincidencias — destacamos conexiones basadas en compatibilidad y resonancia.",
+      "step3": "Inicia la conversación — invita a tus coincidencias a chatear; seguro y privado por diseño.",
+      "step4": "Reúnanse (opcional) — programa una videollamada por Jitsi o una cita en persona con consentimiento mutuo.",
+      "title": "Cómo funciona"
+    },
+    "matching": {
+      "text": "Calculamos indicadores relacionales clave de tu carta astral y los comparamos con los de otros para encontrar resonancia. Priorizamos la armonía, la complementariedad y el potencial de crecimiento sobre métricas genéricas de popularidad.",
+      "title": "Cómo funciona el emparejamiento (versión corta)"
+    },
+    "next": {
+      "go_dashboard": "Ir al panel de control",
+      "login_register": "Iniciar sesión / Registrarse",
+      "title": "Próximos pasos",
+      "step1": "Crea una cuenta",
+      "step2": "Completa tu perfil",
+      "step3": "Crea una franja horaria",
+      "step4": "Estate atento/a a las coincidencias",
+      "step5": "Propón o confirma un encuentro",
+      "step6": "Únete al chat de Jitsi",
+      "read_more": "Lee la guía detallada →"
+    },
+    "privacy": {
+      "item1": "Solo pedimos lo necesario para permitir conexiones significativas.",
+      "item2": "Los detalles de tu perfil no se venden ni comparten con redes publicitarias.",
+      "item3": "Tú controlas quién puede contactarte y cuándo compartir más información.",
+      "title": "Privacidad y seguridad"
+    },
+    "protips": {
+      "item1": "Añade algunas franjas de disponibilidad en diferentes días para conexiones más rápidas.",
+      "item2": "Sé auténtico/a en tu presentación — los detalles específicos ayudan a que las personas adecuadas te encuentren.",
+      "item3": "El consentimiento primero, siempre. Avanza al ritmo que te resulte cómodo.",
+      "title": "Consejos profesionales",
+      "item2b": "Personaliza tu outreach — referencia el resumen de fortalezas AI cuando envías mensajes o propones reuniones."
+    },
+    "page_title": "SoulTribe.chat – Encuentra tu tribu del alma",
+    "how_full": {
+      "title": "Cómo funciona SoulTribe",
+      "step1": "Crea tu espacio — regístrate y comparte los esenciales que forman tu huella energética única.",
+      "step2": "Establece tus bases — elige tu idioma primario y secundarios opcionales, ingresa tu fecha de nacimiento y confirma tu zona horaria local actual.",
+      "step3": "Abre tu horario — crea ventanas de disponibilidad para que el sistema sepa cuándo estás libre.",
+      "step4": "Descubre coincidencias basadas en resonancia — nuestra inteligencia de diagramas resalta a las personas cuya energía coincide con la tuya.",
+      "step5": "Nota las superposiciones — una disponibilidad superpuesta indica cuándo un compañero de coincidencia potencial está libre al mismo tiempo.",
+      "step6": "Propón o confirma una reunión — envía o acepta invitaciones cuando el momento sea adecuado.",
+      "step7": "Únete al chat Jitsi — reúnete cara a cara en un espacio de video seguro y privado cuando todos estén listos.",
+      "summary": "Cada paso es consensuado y diseñado para respetar tus límites.",
+      "step8": "Guía detallada de próximos pasos"
+    },
+    "different": {
+      "title": "Por qué SoulTribe es diferente",
+      "item1": "Coincidencia astrología-primero, respetando matices más allá de los signos solares.",
+      "item2": "Privacidad centrada en humanos sin anuncios, píxeles de rastreo o algoritmos sorpresivos.",
+      "item3": "Programación consensuada con verificación, propuestas claras, confirmaciones y cancelaciones fáciles.",
+      "item4": "Conexión guiada vía insights AI de coincidencia, resaltados de fortalezas y prompts de interpretación de perfil."
+    },
+    "experience": {
+      "title": "Lo que experimentarás",
+      "item1": "Introducciones resonancia-primero surgidas de puntuaciones sinástricas y disponibilidad superpuesta — sin deslizar infinito.",
+      "item2": "Insights guiados por IA con resúmenes de fortaleza de coincidencia e interpretaciones de perfil para apoyar conversaciones reflexivas.",
+      "item3": "Ritmo consensuado donde propones, confirmas o cancelas reuniones e invitas a otros a Jitsi cuando todos consienten.",
+      "summary": "Muévete al ritmo que te convenga — pausa en cualquier momento y retoma el hilo cuando estés listo."
+    },
+    "matching_full": {
+      "title": "Cómo funciona la coincidencia",
+      "step1": "Síntesis de diagrama — combinamos los datos natales de cada miembro para calcular aspectos sinástricos, equilibrio elemental y superposiciones de casas.",
+      "step2": "Evaluación de compatibilidad — los indicadores se convierten en una puntuación y vector de fortalezas; cuando supera nuestro umbral de visibilidad y la disponibilidad se superpone, la coincidencia aparece en tu panel.",
+      "step3": "Contexto para acción — solicita un resumen escrito por IA para resaltar temas clave y fortalezas antes de contactar.",
+      "summary": "Sin deslizar, solo contextos astrológicos claros para elegir cuidadosamente tu próxima conexión."
+    },
+    "support": {
+      "title": "Soporte & Recursos",
+      "item1": "Onboarding concierge con prompts para ayudarte a compartir solo lo correcto.",
+      "item2": "Check-ins guiados vía resúmenes de coincidencia generados por IA y reflexiones de perfil que mantienen las conversaciones conectadas.",
+      "item3": "Reuniones 1:1 con la posibilidad de invitar a otros a tu sala Jitsi cuando todos consienten.",
+      "item4": "Biblioteca de recursos con guías de comunicación, prácticas de seguridad y consejos para reuniones 1:1 significativas.",
+      "summary": "Estamos aquí antes, durante y después de cada conexión que creas."
+    }
+  },
+  "guestGuide": {
+    "title": "Guía rápida de Jitsi para invitados de SoulTribe",
+    "intro": "Esta guía ayuda a los invitados primerizos a participar en salas Jitsi de SoulTribe con confianza. Elige solo los pasos que necesites. Texto, audio y video son opcionales.",
+    "prejoin": {
+      "heading": "Antes de unirte",
+      "steps": {
+        "options": "Conoce tus opciones. Jitsi permite texto, audio y video. Tú decides qué activar; cualquier canal puede permanecer apagado.",
+        "permissions": "Concede los permisos necesarios. Cuando la página de acceso lo solicite, permite que el navegador use el micrófono y la cámara para poder encenderlos más tarde.",
+        "setup": "Haz los ajustes que necesites antes de entrar a la sala."
+      },
+      "substeps": {
+        "name": "Nombre: indica cómo quieres que los demás vean tu nombre en la reunión.",
+        "background": "Fondo: elige desenfoque o un fondo virtual si prefieres mayor privacidad."
+      },
+      "mic_camera_label": "Micrófono y cámara",
+      "mic_camera_text": "Utiliza los dos primeros botones para encenderlos o apagarlos antes de unirte.",
+      "devices_label": "Dispositivos",
+      "devices_after_arrow": "Selecciona el micrófono o la cámara que quieras utilizar cuando se te pida.",
+      "audio_tip_label": "Consejo de audio",
+      "audio_tip_text": "Unos auriculares ayudan a evitar el eco. Si usas altavoces, mantén el volumen bajo para evitar retroalimentación."
+    },
+    "browser": {
+      "heading": "Compatibilidad de navegadores",
+      "supported": "Firefox y Chrome ofrecen soporte completo para audio, video y chat.",
+      "unsupported": "Safari, Edge, Opera, Brave y DuckDuckGo no están soportados actualmente.",
+      "note": "Otros navegadores de nicho no se han verificado.",
+      "tip1": "Cuando se te solicite, permite el acceso al micrófono y la cámara desde la barra de direcciones.",
+      "tip2": "Desactiva bloqueadores de seguimiento o añade Jitsi a la lista de sitios permitidos.",
+      "tip3": "Recarga la pestaña después de cambiar permisos para que los ajustes surtan efecto."
+    },
+    "layout": {
+      "heading": "Cómo está organizada la sala",
+      "description": "El área de video central muestra a todos los que tengan la cámara encendida. En la parte inferior está la barra de controles con iconos para el micrófono, la cámara, compartir pantalla, el chat, la lista de participantes y otras opciones. El panel lateral derecho muestra la lista de asistentes y las pantallas compartidas."
+    },
+    "toolbar": {
+      "heading": "Iconos de la barra de herramientas",
+      "columns": {
+        "icon": "Icono",
+        "label": "Etiqueta",
+        "description": "Descripción"
+      },
+      "rows": {
+        "microphone": {
+          "label": "Micrófono",
+          "description": "Activa o desactiva tu micrófono y elige el dispositivo correcto en el menú correspondiente."
+        },
+        "camera": {
+          "label": "Cámara",
+          "description": "Enciende o apaga tu cámara y selecciona la fuente de video adecuada."
+        },
+        "screen": {
+          "label": "Compartir pantalla",
+          "description": "Comparte todo tu escritorio, una pestaña en particular o una ventana."
+        },
+        "chat": {
+          "label": "Chat",
+          "description": "Abre el chat de texto para enviar mensajes o compartir enlaces."
+        },
+        "participants": {
+          "label": "Participantes / Invitar",
+          "description": "Revisa quién está en la sala, invita a más personas y autoriza la entrada a los invitados que aguardan."
+        },
+        "more": {
+          "label": "Más opciones",
+          "description": "Configura la seguridad, elige dispositivos y accede a herramientas adicionales."
+        },
+        "hangup": {
+          "label": "Abandonar",
+          "description": "Sal de la sala y termina la llamada."
+        }
+      }
+    },
+    "quick": {
+      "heading": "Enlace rápido para unirse",
+      "cta": "Únete de inmediato en jitsi.bubuit.net/soultribe",
+      "note": "Prueba tu configuración o conoce a nuevos invitados en un entorno seguro. No es necesario tener cuenta."
+    },
+    "closing": {
+      "heading": "Mensaje final",
+      "text": "Disfruta de conectar con otros a tu manera y a tu ritmo."
+    }
+  },
+  "nextStepsGuide": {
+    "page_title": "Guía detallada de próximos pasos",
+    "title": "Guía detallada de próximos pasos",
+    "intro": "Esta guía amplía los pasos de la página principal y te guía en cada acción con consejos y enlaces.",
+    "steps": {
+      "step1": {
+        "heading": "Crea una cuenta",
+        "description": "Regístrate con tu correo electrónico para acceder al panel y al perfil. No se necesitan inicios de sesión sociales.",
+        "bullets": {
+          "item1": "Utiliza un correo válido; los enlaces de verificación caducan tras 24 horas.",
+          "item2": "Después de confirmar, serás redirigido/a al inicio de sesión."
+        },
+        "link": "Ir a Iniciar sesión / Registrarse"
+      },
+      "step2": {
+        "heading": "Completa tu perfil",
+        "description": "Añade tus datos de nacimiento para habilitar el emparejamiento basado en la resonancia. Una hora aproximada es suficiente; cuanto más precisa, mejor.",
+        "bullets": {
+          "item1": "Introduce fecha, hora y lugar de nacimiento. Si no conoces la hora exacta, elige una estimación.",
+          "item2": "Escribe una breve presentación que refleje tus intereses e intenciones. Sé específico/a y auténtico/a."
+        },
+        "callout": "Consejo: Detectamos automáticamente la zona horaria de tu perfil; puedes revisarla en el panel.",
+        "link": "Editar perfil"
+      },
+      "step3": {
+        "heading": "Crea una franja horaria",
+        "description": "Ofrece una o varias franjas en las que estés disponible para conectar. Guardamos tu hora local y la convertimos a UTC para programar.",
+        "bullets": {
+          "item1": "Elige una hora de inicio en tu zona horaria y define la duración (por ejemplo, 1–3 horas).",
+          "item2": "Franjas en varios días diferentes aumentan las posibilidades de coincidencias rápidas."
+        },
+        "callout": "Zonas horarias bajo control: convertimos automáticamente entre tu hora local y UTC (<span class=\"mono\">UTC±HH:MM</span>).",
+        "link": "Abrir panel"
+      },
+      "step4": {
+        "heading": "Estate atento/a a las coincidencias",
+        "description": "Explora las coincidencias sugeridas en función de la resonancia. Revisa notas de compatibilidad e intereses compartidos.",
+        "bullets": {
+          "item1": "Aparecen nuevas sugerencias cuando tu perfil y tus franjas están disponibles.",
+          "item2": "Usa filtros y notas para llevar un registro de a quién te gustaría contactar."
+        },
+        "callout": "Privacidad primero: tú decides cuándo y cómo interactuar."
+      },
+      "step5": {
+        "heading": "Propón o confirma un encuentro",
+        "description": "Si el interés es mutuo, propón un horario dentro de las franjas superpuestas o acepta la propuesta de tu match.",
+        "bullets": {
+          "item1": "Envía una invitación amable y concreta. Sugiere uno o dos horarios posibles.",
+          "item2": "Confirma el plan en el chat y pasa a una llamada cuando ambos estén listos."
+        },
+        "callout": "Consentimiento y comodidad: avanza a tu ritmo. Está bien quedarse solo en el chat de texto."
+      },
+      "step6": {
+        "heading": "Únete al chat de Jitsi",
+        "description": "Usa Jitsi para audio/vídeo opcional. Los navegadores de escritorio (Firefox, Chrome) están soportados; el chat de texto siempre está disponible.",
+        "bullets": {
+          "item1": "Prueba micrófono/cámara o mantenlos apagados y usa solo texto.",
+          "item2": "Elige los dispositivos correctos con la flecha pequeña junto a los iconos."
+        },
+        "link": "Lee la guía rápida de Jitsi"
+      }
+    },
+    "closing": "Disfruta de conectar de la forma que mejor se adapte a ti."
+  },
+  "language": {
+    "de": "Alemán",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "login": {
+    "confirm_password": "confirmar contraseña (para registro)",
+    "display_name": "nombre mostrado (para registro)",
+    "email": "correo electrónico",
+    "email_not_verified": "¿Correo no verificado? ",
+    "enter_email_first": "Por favor, introduce tu dirección de correo electrónico primero.",
+    "go_dashboard": "Ir al panel",
+    "intro": "Inicia sesión con una cuenta existente o regístrate.",
+    "login": "Iniciar sesión",
+    "login_required": "Se requieren correo electrónico y contraseña.",
+    "page_title": "SoulTribe.chat — Iniciar sesión / Registrarse",
+    "password": "contraseña",
+    "password_mismatch": "Las contraseñas no coinciden.",
+    "redirect_hint": "Después de iniciar sesión serás redirigido a tu panel.",
+    "register": "Registrarse",
+    "registration_success": "Cuenta creada. Por favor, verifica tu correo electrónico.",
+    "required_fields": "Se requieren correo electrónico, contraseña y nombre mostrado.",
+    "resend_verification": "Reenviar correo de verificación",
+    "reset_password": "Restablecer contraseña",
+    "reset_sent": "Si existe una cuenta con este correo, se ha enviado un correo para restablecer la contraseña.",
+    "title": "Bienvenido/a",
+    "verification_sent": "Si tu correo aún no está verificado, se ha enviado un nuevo correo de verificación."
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "profile": "Perfil",
+    "welcome": "Inicio",
+    "home": "Inicio",
+    "discover": "Descubrir",
+    "matches": "Coincidencias",
+    "messages": "Mensajes"
+  },
+  "notifications": {
+    "language_set_to": "Idioma establecido a"
+  },
+  "profile": {
+    "cancel": "Cancelar",
+    "delete_account": "Eliminar mi cuenta",
+    "delete_account_confirm": "¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer.",
+    "language_input_placeholder": "Escribe para añadir idiomas...",
+    "other_languages_label": "Otros idiomas (para emparejar)",
+    "primary_language_label": "Idioma principal (para la interfaz)",
+    "save": "Guardar",
+    "title": "Tu perfil",
+    "basic_info": {
+      "legend": "Información básica",
+      "username_label": "Nombre de usuario",
+      "username_placeholder": "nombre de usuario"
+    },
+    "languages": {
+      "legend": "Idiomas"
+    },
+    "location": {
+      "legend": "Ubicación actual",
+      "city_placeholder": "Ciudad actual (autocompletar)",
+      "use_my_location": "Usar mi ubicación",
+      "detected_tz_label": "Zona horaria detectada:",
+      "detected_tz_hint": "(automática o seleccionar)"
+    },
+    "birth": {
+      "legend": "Información de nacimiento (para Astrología)",
+      "date_placeholder": "Fecha de nacimiento",
+      "hour_label": "Hora",
+      "minute_label": "Minuto",
+      "place_placeholder": "Lugar de nacimiento (ciudad, país)",
+      "detected_tz_label": "Zona horaria detectada:",
+      "detected_tz_hint": "(automática)",
+      "lat_placeholder": "Latitud (p. ej., 48.2082)",
+      "lon_placeholder": "Longitud (p. ej., 16.3738)",
+      "instructions": "Establece tu fecha y lugar de nacimiento para calcular tu radix. Si no conoces la hora exacta, deja el campo de hora vacío y usaremos el mediodía por defecto."
+    },
+    "note": "Tu perfil se utiliza para personalizar coincidencias y mostrar la zona horaria.",
+    "notifications": {
+      "legend": "Notificaciones",
+      "browser_label": "Notificaciones del navegador",
+      "browser_help": "Muestra avisos en este dispositivo cuando una quedada necesita tu atención.",
+      "browser_grant": "Activar notificaciones del navegador",
+      "browser_denied": "Las notificaciones del navegador están bloqueadas en la configuración del navegador.",
+      "email_label": "Notificaciones por correo",
+      "email_help": "Enviar actualizaciones de quedadas a tu correo verificado.",
+      "email_disabled": "Verifica tu correo para recibir actualizaciones de quedadas.",
+      "save_notice": "Estas preferencias se aplican a las próximas quedadas."
+    }
+  },
+  "radix": {
+    "placeholder": "Si has configurado tus datos de nacimiento, aquí aparecerá una vista previa de tu radix.",
+    "show_raw_json": "Mostrar JSON sin procesar",
+    "title": "Tu Radix"
+  },
+  "reset_password": {
+    "confirm_password_label": "Confirmar nueva contraseña",
+    "confirm_password_placeholder": "confirmar nueva contraseña",
+    "intro": "Elige una nueva contraseña para tu cuenta.",
+    "new_password_label": "Nueva contraseña",
+    "new_password_placeholder": "nueva contraseña",
+    "submit": "Establecer nueva contraseña",
+    "title": "Restablecer contraseña"
+  },
+  "welcome": {
+    "subtitle": "Encuentra tu tribu del alma",
+    "title": "Bienvenido a SoulTribe.chat"
+  },
+  "imprintPage": {
+    "contact_name": "Andreas Michael Fleckl",
+    "address_line1": "Johnstrassse 7/6",
+    "address_line2": "1140 Vienna",
+    "address_line3": "Austria / Europe",
+    "contact_email": "andreas.fleckl@soultribe.chat"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "summary_intro": "We respect your privacy. This page outlines how SoulTribe.chat handles your data.",
+    "summary_heading": "Summary",
+    "summary_item1": "We store only what is required to provide the service.",
+    "summary_item2": "Authentication tokens are stored locally on your device.",
+    "summary_item3": "Data is never sold.",
+    "contact_note": "For questions or requests related to privacy, please contact support.",
+    "image_alt": "Privacy & Safety"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "intro": "These Terms of Service (\"Terms\") govern your use of SoulTribe.chat. By accessing or using the site, you agree to be bound by these Terms.",
+    "summary_heading": "Summary",
+    "summary_item1": "Be respectful. No abusive or illegal content.",
+    "summary_item2": "You must be at least 18 years old to register.",
+    "summary_item3": "We may update the service and these Terms from time to time.",
+    "contact_note": "For questions, please contact support.",
+    "image_alt": "Terms"
+  },
+  "aboutSoulTribe": {
+    "hero": {
+      "title": "🌌 SoulTribe.chat — Una constelación de conexión",
+      "subtitle": "Donde el diseño cósmico se encuentra con la conexión humana — un refugio para almas afines guiadas por las estrellas."
+    },
+    "vision": {
+      "heading": "✨ La visión",
+      "body1": "SoulTribe.chat conecta a personas cuyos mapas natales armonizan — ofrece emparejamientos basados en la astrología, chats privados y encuentros opcionales para que las almas afines se reúnan de forma consciente y significativa. Es más que una plataforma: un experimento vivo de conexión cósmica, donde la astrología se convierte en un lenguaje compartido de empatía, no de predicción.",
+      "body2": "Cada carta es una firma única — una melodía en las estrellas que resuena con otras y enciende el reconocimiento y la profundidad. Este espacio acoge a quienes sienten que cada encuentro tiene un propósito — que la sincronía guía la conexión y que el crecimiento y la alegría brotan de relaciones que se sienten destinadas. SoulTribe.chat brinda un entorno seguro, minimalista y consciente donde estas conexiones pueden desplegarse de manera natural."
+    },
+    "transition": "Antes de profundizar, pasemos de la idea de la conexión cósmica a la comunidad que crea — la propia SoulTribe.",
+    "soultribe": {
+      "heading": "🌠 ¿Qué es una SoulTribe?",
+      "body1": "Una SoulTribe no es solo una red ni una lista de amistades — es un campo de resonancia. Es la red invisible que conecta a quienes comparten frecuencia, propósito y ritmo del espíritu. Cuando encuentras a miembros de tu tribu, el reconocimiento es inmediato: la conversación se siente como recordar más que como presentarse. El tiempo suaviza sus bordes y el espacio entre las palabras se vuelve sagrado.",
+      "body2": "Dentro de tu SoulTribe te ven por completo — valoran tu esencia, no tu imagen. Cada persona se convierte en un espejo: algunas reflejan tus fortalezas, otras tus lecciones y unas pocas te recuerdan lo que puedes llegar a ser. Despiertan coraje, autenticidad y la certeza de que pertenecer no se trata de similitud, sino de resonancia.",
+      "body3": "Tu tribu puede estar compuesta por artistas, soñadores, sanadores, científicos o almas silenciosas que caminan su verdad. Lo que os une no es el origen ni la creencia — es la vibración."
+    },
+    "power": {
+      "heading": "🔥 El poder de la tribu",
+      "body1": "Así como cada SoulTribe nace de la resonancia compartida, su verdadera fuerza surge de la energía colectiva que crece a partir de esas conexiones.",
+      "body2": "Crecemos más rápido, sanamos más profundo y soñamos en grande cuando otros caminan a nuestro lado y son testigos de nuestro camino. La humanidad siempre ha prosperado en círculos — es nuestro diseño ancestral. Una tribu magnifica la energía: lo que una persona enciende, otra lo sostiene; lo que una sueña, otra lo materializa. En este campo compartido las sincronicidades se multiplican y la evolución colectiva se acelera.",
+      "body3": "A medida que participas, quizá notes cómo tu propia energía se expande. Las ideas toman impulso, la creatividad fluye, la intuición se afina. La tribu se convierte en espejo, maestra y círculo de empoderamiento — recordándote que el camino del alma nunca estuvo pensado para recorrerse en soledad.",
+      "body4": "En SoulTribe.chat la idea de una «tribu» no trata de exclusividad sino de sinergia. Aquí la individualidad y el estar juntos conviven con belleza. Cada persona aporta su frecuencia, formando una constelación viva de conciencia — cada punto de luz ilumina a los demás."
+    },
+    "astro": {
+      "heading": "☀️ Astro y alma",
+      "body1": "La astrología en SoulTribe.chat une la intuición con la conexión, respetando tu privacidad y tu consentimiento. Solo se utilizan los datos de nacimiento imprescindibles para generar indicadores de compatibilidad, y nada se comparte o almacena más allá de lo que tu experiencia requiere.",
+      "body2": "Con tus datos de nacimiento, la plataforma calcula posiciones planetarias y las compara con las de otras personas para revelar áreas de armonía natural, resonancia emocional y potencial de crecimiento. En lugar de abrumarte con datos, los resultados se destilan en indicadores claros de compatibilidad — muestran dónde se alinean las energías y cómo pueden evolucionar las relaciones.",
+      "body3": "No es una cita por signo; es resonancia de alma por diseño, donde los mapas guían la comprensión y la conexión. Ya sea química romántica, colaboración creativa o una amistad profunda, SoulTribe.chat te ayuda a reconocer por qué ciertas personas se sienten instantáneamente familiares — y cómo cada encuentro se convierte en un espejo de tu alma."
+    },
+    "soulmates": {
+      "heading": "💫 Almas afines y más allá",
+      "body1": "La palabra «alma gemela» suele reducir la imaginación al romance, pero las almas afines adoptan muchas formas. Puede ser la amiga que reaviva tu risa, el maestro que desafía tus límites o la desconocida cuya presencia se siente inmediatamente familiar. SoulTribe.chat amplía esa idea — te guía no solo hacia «la persona», sino hacia las muchas que llevan piezas de tu evolución.",
+      "body2": "Algunas conexiones encienden electricidad — intensas y transformadoras. Otras ofrecen una paz tranquila y arraigan tu energía en una quietud compartida. Cada encuentro es un paso hacia la plenitud, un recordatorio de que el viaje del alma es un mosaico de encuentros sagrados. Encontrar tu tribu es encontrarte a ti mismo — reflejado en mil espejos vivientes."
+    },
+    "benefit": {
+      "heading": "🌍 Cómo aprovecharlo",
+      "items": {
+        "item1": "Crea tu mapa del alma — introduce tus datos de nacimiento para generar tu patrón cósmico único y descubrir qué hace especial a tu energía.",
+        "item2": "Descubre la resonancia — encuentra miembros cuyos mapas reflejen o complementen el tuyo. Aprende cómo las alineaciones planetarias indican armonía, inspiración o propósito kármico.",
+        "item3": "Conecta de manera auténtica — participa en conversaciones conscientes. SoulTribe.chat fomenta la presencia, la curiosidad y el respeto. Las palabras se vuelven instrumentos de comprensión en lugar de desempeño.",
+        "item4": "Crezcan juntos — cada encuentro es un intercambio de luz. A través de la resonancia, el contraste o una suave fricción evolucionas. El sistema destaca tus mejores espejos de aprendizaje — aquellos que expanden tu conciencia en lugar de reflejar tu zona de confort.",
+        "item5": "Reúnanse con presencia — cuando la disponibilidad surja de forma natural, pasen del texto a la voz, de la conversación a la co-creación. Cada encuentro — digital o presencial — se convierte en un diálogo sagrado de almas."
+      }
+    },
+    "manifesto": {
+      "title": "🌿 Manifiesto para una conexión con alma",
+      "intro": "Encuentra tu frecuencia y encontrarás tu tribu.",
+      "body1": "La conexión es sagrada — cada conversación enraizada en la presencia puede convertirse en un portal hacia la consciencia. La tecnología debe servir a la consciencia, alimentando la intimidad en lugar de la distracción. La astrología, usada con compasión y claridad, no revela destino sino libertad a través de la comprensión. Cuando las tribus se alinean, forman constelaciones radiantes que brillan más juntas que por separado.",
+      "body2": "SoulTribe.chat nos recuerda que no somos caminantes bajo un cielo distante, sino hilos luminosos en un tapiz compartido de creación. Cada encuentro es una chispa en el fuego mayor del despertar, cada conversación un latido en el ritmo de algo vasto y sagrado.",
+      "closing": "Juntos recordamos quiénes somos — una sola tribu de muchas almas."
+    },
+    "join": {
+      "heading": "🌌 Súmate a este viaje",
+      "body": "Si estas palabras resuenan contigo, crea tu perfil, explora tu mapa del alma y comienza a conocer espíritus afines que compartan tu frecuencia. Cada nueva conexión es una puerta hacia el descubrimiento, la reflexión y el crecimiento.",
+      "cta": "Inicia tu viaje con SoulTribe",
+      "footer": "Tu tribu ya está ahí afuera — deja que las estrellas te guíen de regreso a casa."
+    }
+  }
+}

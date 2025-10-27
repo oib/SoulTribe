@@ -8,7 +8,7 @@ const readdir = promisify(fs.readdir);
 const readFile = promisify(fs.readFile);
 
 // Configuration
-const TRANSLATIONS_DIR = path.join(__dirname, '../../web/i18n/locales');
+const TRANSLATIONS_DIR = path.join(__dirname, '../../src/frontend/i18n/locales');
 const REFERENCE_LANG = 'en';
 
 async function validateTranslations() {
