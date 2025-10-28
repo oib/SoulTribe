@@ -43,6 +43,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+dev/logs/
+log/
 
 # IDE
 .idea/
@@ -71,6 +73,7 @@ htmlcov/
 
 # Build artifacts (already includes many, keep additions here)
 site/
+src/public/
 
 # Backup files
 *.bak

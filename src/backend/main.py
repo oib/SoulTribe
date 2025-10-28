@@ -35,5 +35,5 @@ def create_app() -> FastAPI:
 app = create_app()
 
 # Mount the built/static frontend bundle
-FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend" / "public"
+FRONTEND_DIR = Path(__file__).resolve().parent.parent / "public"
 app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="web")

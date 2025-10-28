@@ -19,10 +19,10 @@ We continue to migrate toward a tidy `src/`-centric layout using the incremental
 | `src/frontend/css/` | Page-specific and shared CSS (theme, layout, admin styles). | ✅ Migrated |
 | `src/frontend/js/` | Shared JS modules (`app.js`, `dashboard.js`, `profile.js`, `components.js`, etc.). | ✅ Migrated |
 | `src/frontend/assets/` | Components, legacy partials, and staging area for assets still being sorted. | ⚠️ Needs tidy-up |
-| `src/frontend/public/` | Generated static bundle served by FastAPI; populated via `npm run build-frontend` / `make build-frontend`. | ✅ Generated |
+| `src/frontend/public/` | Generated static bundle served by FastAPI; populated via `npm run build-frontend` / `make build-frontend` referencing `dev/scripts/build-frontend.js`. | ✅ Generated |
 | `dev/scripts/`, `dev/node/`, `dev/systemd/`, `dev/shell/`, `dev/config/`, `dev/logs/` | Development utilities, Node helpers, systemd units, shell launchers, config, and log archives. | ✅ Sorted |
 | `docs/` | Product and engineering documentation. | ✅ |
-| `alembic/`, `translations/`, `web/` | Alembic migrations, translation automation, legacy static directory (now unused; should become build output once the new pipeline lands). | ⚠️ Review/cleanup pending |
+| `alembic/`, `dev/translations/`, `web/` | Alembic migrations, translation automation (`dev/translations/scripts/*.js`), legacy static directory (now unused; should become build output once the new pipeline lands). | ⚠️ Review/cleanup pending |
 
 ## Phase 0 — Prep (current sprint)
 - Confirm no runtime code reads from `web/` at import time (only FastAPI static mount). ✅
@@ -37,7 +37,7 @@ We continue to migrate toward a tidy `src/`-centric layout using the incremental
    - Landing (`index.html`) now pulls CSS/JS from the new `/css/**`, `/js/**`, `/components/**` paths with inline critical styles to avoid layout flashes.
    - Continue updating remaining HTML pages, service worker cache list, and Node tooling to the new layout.
 3. **Introduce build step** ✅
-   - `make build-frontend` / `npm run build-frontend` use `scripts/build-frontend.js` to copy `src/frontend/{pages,css,js,i18n,assets}` into `src/frontend/public/` (favicons included).
+   - `make build-frontend` / `npm run build-frontend` use `dev/scripts/build-frontend.js` to copy `src/frontend/{pages,css,js,i18n,assets}` into `src/frontend/public/` (favicons included).
    - Future enhancement: evaluate `esbuild`/`Vite` if bundling becomes necessary.
 4. **Remove legacy `web/` directory**
    - Once the build pipeline is in place, drop the residual `web/` tree from git and ensure FastAPI serves the generated output.
@@ -54,14 +54,14 @@ We continue to migrate toward a tidy `src/`-centric layout using the incremental
    - Ensure every page-specific asset is sourced from `src/frontend/{css,js}` and bundled via the build step.
 2. **Service worker & tooling adjustments**
    - Refresh `sw.js` cache list to the new asset locations.
-   - Update translation scripts (`translations/scripts/*.js`) and any Node helpers under `dev/node/` to read from `src/frontend/pages/css/js` instead of the legacy layout.
+   - Update translation scripts (`dev/translations/scripts/*.js`) and any Node helpers under `dev/node/` to read from `src/frontend/pages/css/js` instead of the legacy layout.
 3. **Docs pages**
    - Update files under `src/frontend/public/docs/` to new asset paths and ensure build step can regenerate them if needed.
 4. **Cleanup**
    - Remove redundant files once the build pipeline is in place, and prune placeholder directories (e.g., `src/frontend/assets/` once components are sorted).
 
 ### Build Step (implemented)
-- **Script**: `scripts/build-frontend.js` copies `src/frontend/{pages,css,js,i18n,assets/img,assets/components,assets/css}` into `src/frontend/public/` and places top-level favicons.
+- **Script**: `dev/scripts/build-frontend.js` copies `src/frontend/{pages,css,js,i18n,assets/img,assets/components,assets/css}` into `src/frontend/public/` and places top-level favicons.
 - **NPM / Make**: Run with `npm run build-frontend` or `make build-frontend` (`make clean-frontend` removes generated assets).
 - **Result**: `src/frontend/public/` is a generated bundle; source of truth lives under `src/frontend/{pages,css,js,i18n,assets}`.
 - **Next**: Ensure deployment docs invoke the build before serving and consider future bundling if needed.

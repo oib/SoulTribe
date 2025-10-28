@@ -20,4 +20,4 @@
 - Hardened dynamic component loader (`components.js`) by guarding inline script replacement to avoid null dereferences and added timezone badge/footer fixes.
 - Polished profile UI: redesigned `#primaryLanguage` select styling and ensured component assets are bundled via `make build-frontend`.
 - Updated `docs/dirs.md` to reflect the generated `src/frontend/public/` bundle and remaining reference-rewire tasks.
-- Added esbuild minification to `scripts/build-frontend.js`, shrinking shipped JS/CSS and keeping the generated bundle optimized.
+- Added esbuild minification to `dev/scripts/build-frontend.js`, shrinking shipped JS/CSS and keeping the generated bundle optimized.

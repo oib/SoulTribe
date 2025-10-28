@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "SoulTribe.chat - Connect with your soul tribe",
   "scripts": {
-    "build": "node scripts/build-frontend.js",
-    "build-frontend": "node scripts/build-frontend.js"
+    "build": "node dev/scripts/build-frontend.js",
+    "build-frontend": "node dev/scripts/build-frontend.js"
   },
   "dependencies": {
     "i18next": "^23.2.0",

@@ -27,7 +27,7 @@ translations/
 To extract all translatable strings from the source code:
 
 ```bash
-node translations/scripts/extract-strings.js
+node dev/translations/scripts/extract-strings.js
 ```
 
 This will scan the codebase for strings marked for translation and update the reference translation file.
@@ -37,7 +37,7 @@ This will scan the codebase for strings marked for translation and update the re
 To add support for a new language (e.g., French):
 
 ```bash
-node translations/scripts/add-language.js fr "French"
+node dev/translations/scripts/add-language.js fr "French"
 ```
 
 This will:
@@ -51,7 +51,7 @@ This will:
 To check for missing or invalid translations:
 
 ```bash
-node translations/scripts/validate.js
+node dev/translations/scripts/validate.js
 ```
 
 This will:

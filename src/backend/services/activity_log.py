@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from logging.handlers import RotatingFileHandler
 from typing import Any, Mapping, MutableMapping
 
-LOG_DIR = os.getenv("SOULTRIBE_LOG_DIR", "/home/oib/windsurf/soultribe.chat/log")
+LOG_DIR = os.getenv("SOULTRIBE_LOG_DIR", "/home/oib/windsurf/soultribe.chat/dev/logs")
 LOG_FILE = os.path.join(LOG_DIR, "activity.log")
 
 _logger = logging.getLogger("activity")
