@@ -81,8 +81,6 @@ const bindClick = (id, handler) => {
       const h = parseInt(hourStr, 10);
       if (!y || !m || !d || isNaN(h)) return null;
       
-      console.log(`Converting ${dateStr} ${h}:00 from ${tz} to UTC`);
-      
       // Create a date representing the wall time in the target timezone
       // Use a more reliable method with Intl.DateTimeFormat
       const wallTimeStr = `${dateStr}T${h.toString().padStart(2, '0')}:00:00`;
@@ -90,13 +88,10 @@ const bindClick = (id, handler) => {
       // Parse as if it's in the target timezone
       const tempDate = new Date(wallTimeStr);
       const offsetAtTime = tzOffsetMinutesAt(tempDate, tz);
-      console.log(`Timezone offset for ${tz} at ${wallTimeStr}: ${offsetAtTime} minutes`);
       
       // Create UTC timestamp by subtracting the timezone offset
       const utcTimestamp = Date.UTC(y, m - 1, d, h, 0, 0, 0) - (offsetAtTime * 60000);
       const result = new Date(utcTimestamp).toISOString().replace(/\.\d{3}Z$/, 'Z');
-      
-      console.log(`Result: ${wallTimeStr} ${tz} → ${result} UTC`);
       return result;
     } catch (e) { 
       console.error('buildUtcIsoFromTz error:', e);

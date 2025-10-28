@@ -621,7 +621,7 @@ pre { background: #0b1020; color: #e2e8f0; border-radius: 12px; padding: 12px; o
 
 /* Make the date input compact so three controls fit on one row */
 .avail-grid #availStartDate[type="date"] {
-  width: 18ch;   /* room for mm/dd/yyyy and calendar icon */
+  width: 20ch;   /* room for yyyy-mm-dd and calendar icon */
   min-width: 0;
 }
 

@@ -32,6 +32,10 @@
   <link rel="stylesheet" href="/css/footer.css" />
 </head>
 <body class="welcome-page">
+  <div class="page-preloader" id="page-preloader" aria-hidden="true">
+    <div class="page-preloader__spinner" role="presentation"></div>
+    <span class="page-preloader__text">Loading SoulTribe…</span>
+  </div>
   <!-- Navigation will be loaded here by components.js -->
   <div data-component="navbar"></div>
 
@@ -43,7 +47,7 @@
         <h1 data-i18n="landing.hero.title">Welcome</h1>
         <p data-i18n="landing.hero.subtitle">SoulTribe.chat is a space created to help you find and connect with your soul tribe — people who resonate with your energy, your spirit, and your journey. ✨</p>
         <p>
-          <a class="subtle-link" href="/docs/about-soultribe.html" data-i18n="landing.hero.learn_more">Discover the SoulTribe vision →</a>
+          <a class="subtle-link" href="/about-soultribe.html" data-i18n="landing.hero.learn_more">Discover the SoulTribe vision →</a>
         </p>
       </div>
       <div class="col illustration">
@@ -67,7 +71,7 @@
           <li data-i18n="landing.how_full.step6"></li>
           <li data-i18n="landing.how_full.step7"></li>
           <li>
-            <a class="subtle-link" href="/docs/next-steps-guide.html" data-i18n="landing.how_full.step8"></a>
+            <a class="subtle-link" href="/next-steps-guide.html" data-i18n="landing.how_full.step8"></a>
           </li>
         </ol>
         <p class="muted" data-i18n="landing.how_full.summary">Every step is consent-led and designed to honor your boundaries.</p>
@@ -197,6 +201,26 @@
   <!-- Scripts -->
   <script src="/i18n/i18n.js" defer></script>
   <script src="/js/components.js" defer></script>
+  <script>
+    (function () {
+      function hidePreloader() {
+        const preloader = document.getElementById('page-preloader');
+        if (!preloader) return;
+        preloader.classList.add('page-preloader--hide');
+        setTimeout(() => {
+          if (preloader && preloader.parentNode) {
+            preloader.parentNode.removeChild(preloader);
+          }
+        }, 450);
+      }
+
+      if (document.readyState === 'complete') {
+        hidePreloader();
+      } else {
+        window.addEventListener('load', hidePreloader, { once: true });
+      }
+    })();
+  </script>
   <!-- Removed obsolete topbar toggle script -->
 </body>
 </html>

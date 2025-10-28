@@ -48,7 +48,7 @@
   min-width: 0;
   max-width: 180px;
 }
-.avail-grid #availStartDate[type="date"] { width: 18ch; min-width: 0; }
+.avail-grid #availStartDate[type="date"] { width: 20ch; min-width: 0; }
 .avail-grid #availStartHour,
 .avail-grid #availEndHour {
   width: 11ch;

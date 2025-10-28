@@ -202,6 +202,52 @@
 }
 
 /* Buttons */
+body.welcome-page {
+  background: radial-gradient(circle at top, rgba(124, 58, 237, 0.15), transparent 55%),
+    linear-gradient(180deg, #0b1220 0%, #05070d 45%, #02030a 100%);
+  color: #e5e7eb;
+}
+
+.page-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 6000;
+  background: #0b1220;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.page-preloader__spinner {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #7c3aed;
+  animation: preloader-spin 0.85s linear infinite;
+}
+
+.page-preloader__text {
+  font-size: 0.85rem;
+  color: rgba(229, 231, 235, 0.75);
+}
+
+.page-preloader--hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes preloader-spin {
+  to { transform: rotate(360deg); }
+}
+
 .welcome-page .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -210,7 +256,6 @@
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  margin-top: 1rem;
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;

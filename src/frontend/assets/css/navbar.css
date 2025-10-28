@@ -35,13 +35,15 @@
 
 /* Logo Container - centered brand */
 .navbar-logo-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  left: auto;
+  transform: none;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   height: 100%;
   pointer-events: auto;
+  z-index: 2;
 }
 
 .navbar-menu.active {
@@ -78,35 +80,41 @@ body.navbar-menu-open {
   padding: 0 0.5rem;
 }
 
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .user-menu .btn {
-  white-space: nowrap;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  height: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  line-height: 1; /* ensure vertical centering */
+  white-space: nowrap;
+  height: 36px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
 }
 
 .user-menu .btn.btn-primary {
-  background: transparent; /* outlined style, match Log Out */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  font-weight: 500;
+  border-color: rgba(124, 58, 237, 0.45);
 }
 
 .user-menu .btn.btn-secondary {
-  background: transparent; /* align with generic .btn-secondary */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  font-weight: 500;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .user-menu .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25);
+  background: rgba(124, 58, 237, 0.12);
 }
 
 /* Navigation Menu */
@@ -348,7 +356,6 @@ body.navbar-menu-open {
   /* On mobile, align brand to the left */
   .navbar-logo-container {
     position: static;
-    transform: none;
     margin-right: auto;
   }
   
