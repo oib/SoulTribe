@@ -25,7 +25,6 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
   line-height: 1.5;
   position: relative;
-  padding-top: 60px; /* Add space for the fixed navbar */
 }
 
 /* Ensure navbar is visible on welcome page */

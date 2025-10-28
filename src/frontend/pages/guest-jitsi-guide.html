@@ -10,32 +10,17 @@
   <link rel="stylesheet" href="/css/components.css" />
   <link rel="stylesheet" href="/css/navbar.css" />
   <link rel="stylesheet" href="/css/footer.css" />
-  <style>
-    .guide-container { max-width: 840px; margin: 100px auto 0; padding: 2rem 1.5rem 4rem; }
-    .guide-card { background: rgba(15, 23, 42, 0.75); border-radius: 24px; padding: 2.5rem; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.35); }
-    .guide-card h1, .guide-card h2 { margin-top: 0; }
-    .guide-card ol { padding-left: 1.4rem; }
-    .browser-compat { background: rgba(56, 189, 248, 0.08); padding: 1rem 1.5rem; border-radius: 12px; margin: 1.5rem 0; }
-    .toolbar-table { width: 100%; margin: 1.5rem 0; border-collapse: collapse; }
-    .toolbar-table th, .toolbar-table td { border: 1px solid rgba(148, 163, 184, 0.4); padding: 0.75rem; text-align: left; }
-    .toolbar-table thead { background: rgba(15, 23, 42, 0.9); }
-    .toolbar-table svg { width: 28px; height: 28px; vertical-align: middle; fill: currentColor; }
-    .toolbar-table .arrow-icon, .arrow-icon { width: 12px; height: 12px; margin-left: 4px; vertical-align: middle; }
-    .link-block { text-align: center; margin: 2.5rem 0 1rem; }
-    .link-block a { display: inline-block; padding: 0.85rem 1.75rem; background: linear-gradient(135deg, #a855f7, #38bdf8); color: #fff; border-radius: 999px; text-decoration: none; font-weight: 600; }
-    .closing { text-align: center; font-size: 1.1rem; margin-top: 1rem; opacity: 0.9; }
-    .subpoints ul { margin: 0.75rem 0 0 1.1rem; }
-    @media (max-width: 600px) {
-      .guide-card { padding: 1.5rem; border-radius: 18px; }
-      .toolbar-table { display: block; overflow-x: auto; }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/about-guides.css" />
 </head>
 <body class="legal-page">
+  <div class="page-preloader" id="page-preloader" aria-hidden="true">
+    <div class="page-preloader__spinner" role="presentation"></div>
+    <span class="page-preloader__text">Loading SoulTribe…</span>
+  </div>
   <div data-component="navbar"></div>
 
-  <main class="guide-container">
-    <article class="guide-card">
+  <main class="doc-container doc-container--narrow doc-container--offset">
+    <article class="doc-card">
       <h1 data-i18n="guestGuide.title">SoulTribe Jitsi Guest Quick-Start</h1>
       <p data-i18n="guestGuide.intro">This guide shows first-time guests how to join SoulTribe Jitsi rooms with confidence. Choose the steps you need. Text, audio, and video are all optional.</p>
 
@@ -44,7 +29,7 @@
         <ol>
           <li data-i18n-html="guestGuide.prejoin.steps.options"><strong>Know your options.</strong> Jitsi supports <strong>text</strong>, <strong>audio</strong>, and <strong>video</strong>. You decide what to enable, and each channel can stay off.</li>
           <li data-i18n-html="guestGuide.prejoin.steps.permissions"><strong>Grant permissions.</strong> When the login page requests access, allow your browser to use the microphone and camera so you can turn them on later.</li>
-          <li class="subpoints" data-i18n="guestGuide.prejoin.steps.setup"><strong>Set up before entering.</strong>
+          <li class="doc-subpoints" data-i18n="guestGuide.prejoin.steps.setup"><strong>Set up before entering.</strong>
             <ul>
               <li data-i18n-html="guestGuide.prejoin.substeps.name"><strong>Name:</strong> Enter how you’d like others to see you in the meeting.</li>
               <li><strong data-i18n="guestGuide.prejoin.mic_camera_label">Mic & camera:</strong> <span data-i18n="guestGuide.prejoin.mic_camera_text">Use the first two icons to toggle them on or off before you join.</span></li>
@@ -60,7 +45,7 @@
           </li>
         </ol>
 
-        <div class="browser-compat">
+        <div class="doc-browser-compat">
           <h3 data-i18n="guestGuide.browser.heading">Browser Compatibility</h3>
           <p data-i18n-html="guestGuide.browser.supported"><strong>✅ Firefox & Chrome:</strong> Full support for audio, video, and chat.</p>
           <p data-i18n-html="guestGuide.browser.unsupported"><strong>🚫 Safari, Edge, Opera, Brave, DuckDuckGo:</strong> Not supported.</p>
@@ -80,8 +65,8 @@
 
       <section>
         <h2 data-i18n="guestGuide.toolbar.heading">Toolbar Icons</h2>
-        <div class="table-wrapper">
-          <table class="toolbar-table">
+        <div class="doc-table-wrapper">
+          <table class="doc-table">
             <thead>
               <tr>
                 <th data-i18n="guestGuide.toolbar.columns.icon">Icon</th>
@@ -149,15 +134,15 @@
 
       <section>
         <h2 data-i18n="guestGuide.quick.heading">Quick Join Link</h2>
-        <div class="link-block">
+        <div class="doc-cta">
           <a href="https://jitsi.bubuit.net/soultribe" target="_blank" rel="noopener" data-i18n="guestGuide.quick.cta">💫 Join instantly at jitsi.bubuit.net/soultribe</a>
         </div>
-        <p class="closing" data-i18n="guestGuide.quick.note">Test your setup or meet friendly guests. No account needed.</p>
+        <p class="doc-closing" data-i18n="guestGuide.quick.note">Test your setup or meet friendly guests. No account needed.</p>
       </section>
 
       <section>
         <h2 data-i18n="guestGuide.closing.heading">Closing Line</h2>
-        <p class="closing" data-i18n="guestGuide.closing.text">Enjoy connecting in your own way, on your own terms.</p>
+        <p class="doc-closing" data-i18n="guestGuide.closing.text">Enjoy connecting in your own way, on your own terms.</p>
       </section>
     </article>
   </main>
@@ -167,6 +152,24 @@
   <script src="/i18n/i18n.js"></script>
   <script src="/js/components.js"></script>
   <script>
+    (function () {
+      function hidePreloader() {
+        const preloader = document.getElementById('page-preloader');
+        if (!preloader) return;
+        preloader.classList.add('page-preloader--hide');
+        setTimeout(() => {
+          if (preloader && preloader.parentNode) {
+            preloader.parentNode.removeChild(preloader);
+          }
+        }, 450);
+      }
+
+      if (document.readyState === 'complete') {
+        hidePreloader();
+      } else {
+        window.addEventListener('load', hidePreloader, { once: true });
+      }
+    })();
     (function ensureLanguageSelector() {
       function revealSelector() {
         const wrap = document.querySelector('.language-selector-container');

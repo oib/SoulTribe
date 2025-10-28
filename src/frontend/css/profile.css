@@ -1,8 +1,11 @@
 /* Profile page-specific styles */
 #radixSection { margin-top: 16px; }
 
+/* Profile page layout tweaks */
+.card .row + .small { margin-top: -6px; }
+
 /* Reserve space for the fixed navbar on this page */
-body .container { padding-top: calc(var(--navbar-height, 60px) + 16px); }
+body .container { }
 
 .notification-toggle {
   display: flex;
@@ -38,6 +41,25 @@ body .container { padding-top: calc(var(--navbar-height, 60px) + 16px); }
 @media (min-width: 980px) { #radixPretty .radix-layout { grid-template-columns: 1fr; } }
 #radixPretty .radix-panel { background: #0f172a; border: 1px solid #1f2937; border-radius: 12px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); width: 100%; }
 @media (prefers-color-scheme: light) { #radixPretty .radix-panel { background: #ffffff; border-color: #e5e7eb; box-shadow: 0 1px 4px rgba(0,0,0,0.06); } }
+#radixPretty .radix-table-scroll { overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
+#radixPretty .radix-table-scroll::-webkit-scrollbar { height: 6px; }
+#radixPretty .radix-table-scroll::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.4); border-radius: 999px; }
+#radixPretty .radix-table-scroll::-webkit-scrollbar-track { background: transparent; }
+#radixPretty .radix-mobile { display: none; margin-top: 16px; }
+#radixPretty .radix-cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+#radixPretty .radix-card { border: 1px solid rgba(148, 163, 184, 0.24); border-radius: 12px; padding: 12px; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(6px); }
+@media (prefers-color-scheme: light) {
+  #radixPretty .radix-card { background: rgba(255,255,255,0.85); border-color: rgba(100,116,139,0.35); }
+}
+#radixPretty .radix-card .card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+#radixPretty .radix-card .card-icon { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: rgba(124,58,237,0.16); color: #c4b5fd; font-size: 1.2rem; }
+#radixPretty .radix-card .card-title { font-weight: 600; font-size: 0.95rem; color: #e2e8f0; }
+#radixPretty .radix-card .card-meta { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0; }
+#radixPretty .radix-card .card-meta dt { font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; letter-spacing: 0.05em; margin-bottom: 2px; flex: 0 0 40px; }
+#radixPretty .radix-card .card-meta dd { margin: 0; font-size: 0.9rem; color: #f1f5f9; flex: 1; }
+#radixPretty .radix-card .card-aspects { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+#radixPretty .radix-card .aspect-badge { padding: 4px 8px; border-radius: 999px; background: rgba(59,130,246,0.16); color: #93c5fd; font-size: 0.75rem; letter-spacing: 0.02em; }
+#radixPretty .radix-card .aspect-badge::after { content: attr(data-label); margin-left: 6px; color: rgba(226,232,240,0.72); font-size: 0.7rem; }
 
 /* Combined planets/aspects table */
 #radixPretty .planets-table { width: 100%; table-layout: fixed; }
@@ -52,6 +74,16 @@ body .container { padding-top: calc(var(--navbar-height, 60px) + 16px); }
 #radixPretty .planets-table td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 #radixPretty .planets-table thead th { overflow: visible; text-overflow: clip; white-space: nowrap; font-weight: 700; }
 #radixPretty .aspect-grid { width: 100%; }
+@media (max-width: 768px) {
+  #radixPretty .radix-panel { padding: 10px; }
+  #radixPretty .planets-table col.sign { width: 48px; }
+  #radixPretty .planets-table col.deg { width: 80px; }
+  #radixPretty .planets-table col.house { width: 56px; }
+  #radixPretty .planets-table col.cusp { width: 80px; }
+  #radixPretty .radix-panel table { font-size: 13px; }
+  #radixPretty .radix-table-scroll { display: none; }
+  #radixPretty .radix-mobile { display: block; }
+}
 
 /* Alignments similar to legacy radix.css */
 #radixPretty .planets-table th:nth-child(1),

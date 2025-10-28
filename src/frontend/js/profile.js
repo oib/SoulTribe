@@ -285,6 +285,93 @@
 
           combined += '</tbody></table>';
 
+          // Build mobile cards for planets/aspects
+          const planetCards = planetOrder
+            .filter(([k]) => planets[k])
+            .map(([k, name, sym]) => {
+              const body = planets[k];
+              const lon = body?.lon;
+              const hIdx = (typeof lon === 'number' && typeof houseIdxFn === 'function') ? houseIdxFn(lon) : -1;
+              const houseCell = (hIdx >= 0) ? String(hIdx + 1) : '';
+              const d = (typeof lon === 'number') ? ((lon % 360) + 360) % 360 : NaN;
+              const signIdx = Number.isFinite(d) ? Math.floor(d / 30) : -1;
+              const within = Number.isFinite(d) ? d - signIdx * 30 : NaN;
+              const deg = Number.isFinite(within) ? Math.floor(within) : '';
+              const min = Number.isFinite(within) ? Math.round((within - deg) * 60) : '';
+              const dd = Number.isFinite(deg) ? String(deg).padStart(2, '0') : '';
+              const mm = Number.isFinite(min) ? String(min).padStart(2, '0') : '';
+              const signGlyph = zsigns[signIdx] || '';
+              let cuspDisp = '';
+              if (hIdx >= 0 && Array.isArray(houseCusps)) {
+                const cLon = houseCusps[hIdx];
+                if (typeof cLon === 'number' && !Number.isNaN(cLon)) {
+                  const cx = ((cLon % 360) + 360) % 360;
+                  const cWithin = cx - Math.floor(cx / 30) * 30;
+                  const cDeg = Math.floor(cWithin);
+                  const cMin = Math.round((cWithin - cDeg) * 60);
+                  const cdd = String(cDeg).padStart(2, '0');
+                  const cmm = String(cMin).padStart(2, '0');
+                  cuspDisp = `${cdd}°${cmm}′`;
+                }
+              }
+              const aspectBadges = aspects.map((a) => {
+                const hits = [];
+                for (const [otherKey, , otherSym] of planetOrder) {
+                  if (otherKey === k || !planets[otherKey]) continue;
+                  const asp = aspectHits(planets[k].lon, planets[otherKey].lon);
+                  if (asp && asp.deg === a.deg) {
+                    hits.push(otherSym);
+                  }
+                }
+                return hits.length ? `<span class="aspect-badge" data-label="${a.sym} ${a.label}">${hits.join(' ')}</span>` : '';
+              }).join('');
+
+              return `
+                <article class="radix-card">
+                  <header class="card-head">
+                    <span class="card-icon mono">${sym}</span>
+                    <span class="card-title">${name}</span>
+                  </header>
+                  <dl class="card-meta">
+                    <dt>Sign</dt><dd class="mono">${signGlyph}</dd>
+                    <dt>Deg</dt><dd class="mono">${dd}°${mm}′</dd>
+                    <dt>House</dt><dd class="mono">${houseCell}</dd>
+                    <dt>Cusp</dt><dd class="mono">${cuspDisp}</dd>
+                  </dl>
+                  ${aspectBadges ? `<footer class="card-aspects">${aspectBadges}</footer>` : ''}
+                </article>`;
+            }).join('');
+
+          const anglesHtml = (() => {
+            const housesData = data && data.houses ? data.houses : null;
+            if (!housesData) return '';
+            const build = (label, lonVal) => {
+              if (typeof lonVal !== 'number') return '';
+              const x = ((lonVal % 360) + 360) % 360;
+              const signIdx = Math.floor(x / 30);
+              const within = x - signIdx * 30;
+              const dg = Math.floor(within);
+              const mn = Math.round((within - dg) * 60);
+              const dd = String(dg).padStart(2, '0');
+              const mm = String(mn).padStart(2, '0');
+              const signGlyph = zsigns[signIdx] || '';
+              return `
+                <article class="radix-card">
+                  <header class="card-head">
+                    <span class="card-icon mono">${label}</span>
+                    <span class="card-title">${label}</span>
+                  </header>
+                  <dl class="card-meta">
+                    <dt>Sign</dt><dd class="mono">${signGlyph}</dd>
+                    <dt>Deg</dt><dd class="mono">${dd}°${mm}′</dd>
+                  </dl>
+                </article>`;
+            };
+            return [build('ASC', housesData.asc), build('MC', housesData.mc)].join('');
+          })();
+
+          const mobileStack = `<div class="radix-cards">${planetCards}${anglesHtml}</div>`;
+
           // Build houses table with planets per house if available
           let housesHtml = '';
           const houses = data && data.houses ? data.houses : null;
@@ -384,8 +471,12 @@
           // Legend no longer needed; symbols are included in table header
           const legend = '';
           // Render a single panel with the combined table
-          const singlePanel = `<div class=\"radix-panel\">${combined}</div>`;
-          pretty.innerHTML = `<div class=\"radix-layout\">${singlePanel}</div>`;
+          const singlePanel = `
+            <div class="radix-panel">
+              <div class="radix-table-scroll">${combined}</div>
+              <div class="radix-mobile">${mobileStack}</div>
+            </div>`;
+          pretty.innerHTML = `<div class="radix-layout">${singlePanel}</div>`;
         }
       } catch {}
     } catch (e) {

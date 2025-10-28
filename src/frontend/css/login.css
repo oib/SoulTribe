@@ -1,7 +1,5 @@
 /* Login page-specific styles */
-.container {
-  padding-top: calc(var(--navbar-height, 60px) + 24px);
-}
+.container { }
 
 /* Login page does not need the mobile burger menu */
 .navbar-toggle,

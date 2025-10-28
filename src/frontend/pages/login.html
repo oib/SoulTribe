@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-i18n="login.page_title">SoulTribe.chat — Login / Register</title>
+  <link rel="stylesheet" href="/css/index.css" />
   <link rel="stylesheet" href="/css/theme.css" />
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/login.css" />
@@ -15,6 +16,10 @@
   <link rel="stylesheet" href="/css/navbar.css" />
 </head>
 <body>
+  <div class="page-preloader" id="page-preloader" aria-hidden="true">
+    <div class="page-preloader__spinner" role="presentation"></div>
+    <span class="page-preloader__text">Loading SoulTribe…</span>
+  </div>
   <!-- Navigation will be loaded here by components.js -->
   <div data-component="navbar"></div>
   
@@ -56,6 +61,24 @@
   <script src="/js/components.js"></script>
   <script src="/js/login.js"></script>
   <script>
+    (function () {
+      function hidePreloader() {
+        const preloader = document.getElementById('page-preloader');
+        if (!preloader) return;
+        preloader.classList.add('page-preloader--hide');
+        setTimeout(() => {
+          if (preloader && preloader.parentNode) {
+            preloader.parentNode.removeChild(preloader);
+          }
+        }, 450);
+      }
+
+      if (document.readyState === 'complete') {
+        hidePreloader();
+      } else {
+        window.addEventListener('load', hidePreloader, { once: true });
+      }
+    })();
     // Redirect to dashboard if already logged in
     function checkTokenAndRedirect() {
       try {

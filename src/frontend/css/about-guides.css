@@ -1,0 +1,130 @@
+/* Shared styles for about/guide documentation pages */
+.doc-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.doc-container--offset { margin-top: 100px; }
+
+.doc-container--wide { max-width: 920px; }
+.doc-container--narrow { max-width: 840px; }
+
+.doc-card {
+  background: rgba(15, 23, 42, 0.75);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.35);
+}
+
+.doc-card--compact { padding: 2.25rem 2.5rem; }
+
+.doc-card h1,
+.doc-card h2,
+.doc-card h3 {
+  margin-top: 0;
+}
+
+.doc-card section {
+  margin: 3rem 0;
+}
+
+.doc-card section:first-of-type { margin-top: 0; }
+.doc-card section:last-of-type { margin-bottom: 0; }
+
+.doc-card ul,
+.doc-card ol {
+  padding-left: 1.4rem;
+}
+
+.doc-cta,
+.doc-link-row {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.doc-cta a,
+.doc-link-row a {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  background: linear-gradient(135deg, #a855f7, #38bdf8);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.doc-callout {
+  background: rgba(56, 189, 248, 0.08);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0 1.5rem;
+}
+
+.doc-manifesto {
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin: 2rem 0;
+}
+.doc-manifesto strong { display: block; margin-bottom: 0.75rem; font-size: 1.05rem; }
+
+.doc-button-row {
+  margin-top: 1rem;
+}
+.doc-button-row a {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.doc-monospaced {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.doc-table-wrapper { margin: 1.5rem 0; overflow-x: auto; }
+.doc-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+.doc-table th,
+.doc-table td {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 0.75rem;
+  text-align: left;
+}
+.doc-table thead { background: rgba(15, 23, 42, 0.9); }
+.doc-table svg { width: 28px; height: 28px; vertical-align: middle; fill: currentColor; }
+
+.doc-subpoints ul { margin: 0.75rem 0 0 1.1rem; }
+.doc-browser-compat { background: rgba(56, 189, 248, 0.08); padding: 1rem 1.5rem; border-radius: 12px; margin: 1.5rem 0; }
+.doc-closing { text-align: center; font-size: 1.1rem; margin-top: 1rem; opacity: 0.9; }
+
+.doc-table .arrow-icon,
+.doc-arrow-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.step { margin: 2rem 0; }
+.step header { display: flex; align-items: baseline; gap: 0.5rem; }
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #a855f7, #38bdf8);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .doc-card { padding: 1.5rem; border-radius: 18px; }
+}

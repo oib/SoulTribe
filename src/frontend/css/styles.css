@@ -178,7 +178,11 @@ html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe
 /* Reserve space so the fixed footer doesn't overlap page content */
 body { padding-bottom: 44px; }
 
-.container { max-width: 960px; margin: 40px auto; padding: 0 20px; }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+}
 
 .legal-page .container {
   margin-top: 100px;
@@ -532,11 +536,6 @@ a.button {
   height: 40px;
 }
 
-/* Reserve space for fixed navbar on authenticated pages */
-body.authenticated .container {
-  padding-top: calc(var(--navbar-height, 60px) + 16px);
-}
-
 /* Normalize fieldset sizing inside cards to match card width (all nesting levels) */
 .card fieldset {
   display: block;
@@ -712,7 +711,6 @@ html[data-theme="dark"] .small { color: #9ca3af; }
  
 
 /* Profile page layout tweaks */
-.container { padding-top: 4px; }
 .card .row + .small { margin-top: -6px; }
 html[data-theme="dark"] .brand { background: linear-gradient(135deg, #a78bfa, #22d3ee); -webkit-background-clip: text; background-clip: text; color: transparent; }
 html[data-theme="dark"] input { background: #0b1020; color: #e5e7eb; border: 1px solid #334155; }
