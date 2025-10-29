@@ -382,6 +382,7 @@
     "active_filter_hint": "Tiek rādīti tikai lietotāji, kuri pēdējo 30 dienu laikā bijuši aktīvi.",
     "slot_help_summary": "Kas ir pieejamības laiks?",
     "slot_help_intro": "Laika logi, kurus publicējat, lai „SoulTribe” varētu ieteikt tikšanās, kad kāds pārklājas ar jums.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Pievienojiet vienu vai vairākus laika logus dienām un stundām, kad esat brīvi. Sistēma tos saglabā jūsu profila laika joslā un UTC.",
     "slot_help_step2": "Iegūstot atbilstības, salīdzinām jūsu laika logus ar citu dalībnieku logiem, lai atrastu pārklāšanās, kas vēl ir nākotnē.",
     "slot_help_step3": "Pārklāšanās žetoni sadaļā “Matches” parāda kopīgo logu: UTC, jūsu vietējo laiku un jūsu pāra vietējo laiku.",

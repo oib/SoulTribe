@@ -382,6 +382,7 @@
     "active_filter_hint": "Rodomi tik per pastarąsias 30 dienų buvę aktyvūs naudotojai.",
     "slot_help_summary": "Kas yra prieinamumo laikas?",
     "slot_help_intro": "Laiko langai, kuriuos skelbiate, kad „SoulTribe“ galėtų siūlyti susitikimus, kai kas nors sutampa su jumis.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Pridėkite vieną ar daugiau laiko langų dienoms ir valandoms, kai esate laisvi. Sistema juos išsaugo jūsų profilio laiko juostoje ir UTC formatu.",
     "slot_help_step2": "Kai gaunami atitikmenys, lyginame jūsų laiko langus su kitų narių, kad rastume sutapimus, kurie vis dar yra ateityje.",
     "slot_help_step3": "Skiltyje „Matches“ rodomi sutapimo ženkleliai parodo bendrą langą: UTC, jūsų vietinį laiką ir jūsų poros vietinį laiką.",

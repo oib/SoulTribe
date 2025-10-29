@@ -14,6 +14,7 @@
     "active_filter_hint": "Csak az elmúlt 30 napban aktív felhasználók jelennek meg.",
     "slot_help_summary": "Mi az az elérhetőségi idősáv?",
     "slot_help_intro": "Időablakok, amelyeket közzéteszel, hogy a SoulTribe találkozókat javasolhasson, amikor valakivel átfedésed van.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Adj hozzá egy vagy több időablakot azokra a napokra és órákra, amikor ráérsz. A rendszer ezeket a profilod időzónájában és UTC-ben tárolja.",
     "slot_help_step2": "A találatok lekérésekor összevetjük az időablakaidat más tagokéival, hogy megtaláljuk a még jövőbeni átfedéseket.",
     "slot_help_step3": "Az „Matches” szakaszban lévő átfedés-jelvények megmutatják a közös idősávot: UTC, a helyi időd és a párod helyi ideje.",

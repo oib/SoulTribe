@@ -14,6 +14,7 @@
     "active_filter_hint": "Zobrazují se pouze uživatelé, kteří byli aktivní za posledních 30 dní.",
     "slot_help_summary": "Co je to čas dostupnosti?",
     "slot_help_intro": "Časová okna, která zveřejníte, aby SoulTribe mohl navrhovat setkání, když se s vámi někdo překrývá.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Přidejte jeden nebo více slotů pro dny a hodiny, kdy máte volno. Systém je ukládá ve vaší profilové časové zóně i v UTC.",
     "slot_help_step2": "Při načítání shod porovnáváme vaše sloty se sloty ostatních členů, abychom našli překryvy, které jsou stále v budoucnu.",
     "slot_help_step3": "Žetonky překryvů v sekci „Matches“ ukazují společné okno: UTC, váš místní čas a místní čas vašeho protějšku.",

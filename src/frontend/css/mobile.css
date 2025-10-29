@@ -6,23 +6,8 @@
     gap: 8px; 
   }
   
-  .container { 
-    padding: 0 12px; 
-  }
-  
   /* Navbar mobile styles */
   .navbar-container {
     padding: 0.75rem 1rem;
-  }
-  
-  
-  /* Adjust welcome page padding for mobile */
-  .welcome-page {
-    padding-top: 56px;
-  }
-  
-  .welcome-page .welcome-container {
-    padding: 16px 12px;
-    min-height: calc(100vh - 80px);
   }
 }

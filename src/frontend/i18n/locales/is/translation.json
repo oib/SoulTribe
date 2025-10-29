@@ -344,6 +344,7 @@
     "active_filter_hint": "Aðeins sýndir notendur sem voru virkir síðustu 30 daga.",
     "slot_help_summary": "Hvað er framboðstími?",
     "slot_help_intro": "Framboðstímar eru gluggar sem þú birtir svo SoulTribe geti boðið fundi þegar skörun finnst.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Bættu við einum eða fleiri tímum sem henta þér. Kerfið geymir þá bæði á þínu tímabelti og í UTC.",
     "slot_help_step2": "Við berum saman þína tíma við aðra sem eru enn í framtíðinni.",
     "slot_help_step3": "Skörunarkort sýna sameiginlegan glugga: UTC, þinn staðartíma og tíma hins aðilans.",

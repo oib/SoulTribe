@@ -14,6 +14,7 @@
     "active_filter_hint": "Alleen gebruikers die de afgelopen 30 dagen actief waren worden weergegeven.",
     "slot_help_summary": "Wat is een beschikbaarheidsslot?",
     "slot_help_intro": "Slots zijn tijdvakken die je publiceert zodat SoulTribe meetups kan voorstellen wanneer iemand met jou overlapt.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Voeg één of meer slots toe voor de dagen en uren dat je vrij bent. Het systeem slaat ze op in je profiel‑tijdzone en in UTC.",
     "slot_help_step2": "Wanneer matches worden opgehaald, vergelijken we jouw slots met die van andere leden om overlappende tijden te vinden die nog in de toekomst liggen.",
     "slot_help_step3": "Overlapchips in de sectie “Matches” tonen het gedeelde venster: UTC, jouw lokale tijd en de lokale tijd van je match.",

@@ -14,6 +14,7 @@
     "active_filter_hint": "Apenas os utilizadores ativos nos últimos 30 dias são mostrados.",
     "slot_help_summary": "O que é um intervalo de disponibilidade?",
     "slot_help_intro": "Os slots são janelas de tempo que você publica para que o SoulTribe possa sugerir encontros quando alguém tiver sobreposição com você.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Adicione um ou mais slots para os dias e horários em que você está livre. O sistema os salva no seu fuso horário de perfil e em UTC.",
     "slot_help_step2": "Quando as correspondências são buscadas, comparamos seus slots com os de outros membros para encontrar sobreposições que ainda estejam no futuro.",
     "slot_help_step3": "Os “chips” de sobreposição na seção “Matches” mostram a janela compartilhada: UTC, seu horário local e o horário local do seu par.",

@@ -376,6 +376,7 @@
     "active_filter_hint": "Prikazani so le uporabniki, ki so bili aktivni v zadnjih 30 dneh.",
     "slot_help_summary": "Kaj je termin razpoložljivosti?",
     "slot_help_intro": "Časovna okna, ki jih objavite, da lahko SoulTribe predlaga srečanja, ko se nekdo prekriva z vami.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Dodajte enega ali več terminov za dneve in ure, ko ste prosti. Sistem jih shrani v vašem časovnem pasu profila in v UTC.",
     "slot_help_step2": "Ko pridobimo ujemanja, primerjamo vaše termine z termini drugih članov, da najdemo prekrivanja, ki so še v prihodnosti.",
     "slot_help_step3": "Žetončki prekrivanja v razdelku »Matches« prikažejo skupno okno: UTC, vaš lokalni čas in lokalni čas vaše povezave.",

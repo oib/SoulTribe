@@ -14,6 +14,7 @@
     "active_filter_hint": "Wyświetlani są tylko użytkownicy aktywni w ciągu ostatnich 30 dni.",
     "slot_help_summary": "Czym jest przedział dostępności?",
     "slot_help_intro": "Sloty to okna czasowe, które publikujesz, aby SoulTribe mógł sugerować spotkania, gdy ktoś pokrywa się z Twoją dostępnością.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Dodaj jeden lub więcej slotów na dni i godziny, w których jesteś wolny. System zapisuje je w Twojej strefie czasowej profilu oraz w UTC.",
     "slot_help_step2": "Podczas pobierania dopasowań porównujemy Twoje sloty ze slotami innych członków, aby znaleźć nakładające się terminy, które są jeszcze w przyszłości.",
     "slot_help_step3": "Etykiety nakładania w sekcji „Dopasowania” pokazują wspólne okno: UTC, Twój czas lokalny i czas lokalny Twojego dopasowania.",

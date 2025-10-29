@@ -1086,6 +1086,7 @@
     "active_filter_hint": "Prikazuju se samo korisnici aktivni u posljednjih 30 dana.",
     "slot_help_summary": "Što je termin dostupnosti?",
     "slot_help_intro": "Vremenski prozori koje objavljujete kako bi SoulTribe mogao predlagati susrete kada se netko preklapa s vama.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Dodajte jedan ili više termina za dane i sate kada ste slobodni. Sustav ih sprema u vašoj profilnoj vremenskoj zoni i u UTC-u.",
     "slot_help_step2": "Kada se dohvaćaju podudaranja, uspoređujemo vaše termine s terminima drugih članova kako bismo pronašli preklapanja koja su još u budućnosti.",
     "slot_help_step3": "Oznake preklapanja u odjeljku „Matches” prikazuju zajednički prozor: UTC, vaše lokalno vrijeme i lokalno vrijeme vašeg para.",

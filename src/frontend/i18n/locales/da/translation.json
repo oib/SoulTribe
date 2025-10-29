@@ -14,6 +14,7 @@
     "active_filter_hint": "Kun brugere, der har været aktive inden for de sidste 30 dage, vises.",
     "slot_help_summary": "Hvad er en tilgængelighedstid?",
     "slot_help_intro": "Tidsrum, du udgiver, så SoulTribe kan foreslå møder, når nogen overlapper med dig.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Tilføj et eller flere tidsrum for de dage og timer, hvor du er ledig. Systemet gemmer dem i din profil‑tidszone og i UTC.",
     "slot_help_step2": "Når matches hentes, sammenligner vi dine tidsrum med andre medlemmers for at finde overlap, som stadig ligger i fremtiden.",
     "slot_help_step3": "Overlap‑chips i afsnittet ”Matches” viser det fælles vindue: UTC, din lokale tid og din matchs lokale tid.",

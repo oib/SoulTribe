@@ -16,6 +16,7 @@
     "title": "Tableau de bord",
     "slot_help_summary": "Qu’est-ce qu’un créneau de disponibilité ?",
     "slot_help_intro": "Les créneaux sont des plages horaires que vous publiez afin que SoulTribe puisse proposer des rencontres lorsqu’une personne se chevauche avec vous.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Ajoutez un ou plusieurs créneaux pour les jours et heures où vous êtes disponible. Le système les enregistre dans votre fuseau horaire de profil et en UTC.",
     "slot_help_step2": "Lorsque les correspondances sont récupérées, nous comparons vos créneaux à ceux des autres membres pour trouver des chevauchements encore à venir.",
     "slot_help_step3": "Les pastilles de chevauchement dans la section « Matches » affichent la fenêtre partagée : UTC, votre heure locale et l’heure locale de votre correspondant.",

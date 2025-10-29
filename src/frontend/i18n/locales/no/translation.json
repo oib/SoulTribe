@@ -14,6 +14,7 @@
     "active_filter_hint": "Bare brukere som har vært aktive de siste 30 dagene vises.",
     "slot_help_summary": "Hva er en tilgjengelighetsslot?",
     "slot_help_intro": "Tidsluker du publiserer slik at SoulTribe kan foreslå møter når noen overlapper med deg.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Legg til én eller flere tidsluker for dagene og timene du er ledig. Systemet lagrer dem i profilens tidssone og i UTC.",
     "slot_help_step2": "Når treff hentes, sammenligner vi tidslukene dine med andre medlemmers for å finne overlapper som fortsatt ligger frem i tid.",
     "slot_help_step3": "Overlapp-brikker i seksjonen «Matches» viser det delte vinduet: UTC, din lokale tid og din matchs lokale tid.",

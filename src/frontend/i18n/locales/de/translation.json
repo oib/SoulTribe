@@ -297,6 +297,7 @@
     "active_filter_hint": "Es werden nur Nutzer angezeigt, die in den letzten 30 Tagen aktiv waren.",
     "slot_help_summary": "Was ist ein Verfügbarkeits-Slot?",
     "slot_help_intro": "Slots sind Zeitfenster, die du veröffentlichst, damit SoulTribe Treffen vorschlagen kann, wenn sich jemand mit dir überschneidet.",
+    "slot_help_button": "Slot-Anleitung",
     "slot_help_step1": "Füge ein oder mehrere Slots für die Tage und Stunden hinzu, in denen du frei bist. Das System speichert sie in deiner Profil‑Zeitzone und in UTC.",
     "slot_help_step2": "Wenn Treffer abgerufen werden, vergleichen wir deine Slots mit denen anderer Mitglieder, um Überschneidungen zu finden, die noch in der Zukunft liegen.",
     "slot_help_step3": "Überlappungs‑Chips im Bereich „Matches“ zeigen das gemeinsame Zeitfenster: UTC, deine lokale Zeit und die lokale Zeit deines Matches.",

@@ -400,6 +400,7 @@
     "active_filter_hint": "Only users active in the last 30 days are shown.",
     "slot_help_summary": "What is an availability slot?",
     "slot_help_intro": "Slots are the windows of time you publish so SoulTribe can suggest meetups when someone overlaps with you.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Add one or more slots for the days and hours you are free. The system saves them in your profile timezone and in UTC.",
     "slot_help_step2": "When matches are fetched, we compare your slots with other members' slots to find overlapping times that are still in the future.",
     "slot_help_step3": "Overlap chips in the Matches section show the shared window: UTC, your local time, and your match's local time.",

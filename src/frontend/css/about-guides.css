@@ -2,10 +2,10 @@
 .doc-container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 20px 0 32px;
 }
 
-.doc-container--offset { margin-top: 100px; }
+.doc-container--offset { margin-top: 0; }
 
 .doc-container--wide { max-width: 920px; }
 .doc-container--narrow { max-width: 840px; }
@@ -13,20 +13,41 @@
 .doc-card {
   background: rgba(15, 23, 42, 0.75);
   border-radius: 24px;
-  padding: 2.5rem;
+  border: 1px solid #1f2937;
+  padding: 32px;
   box-shadow: 0 18px 48px rgba(15, 23, 42, 0.35);
 }
 
-.doc-card--compact { padding: 2.25rem 2.5rem; }
+.doc-card--compact { padding: 32px; }
 
-.doc-card h1,
-.doc-card h2,
+.doc-card h1 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #f8fafc;
+}
+
+.doc-card h2 {
+  font-size: 1.35rem;
+  margin: 0 0 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #f8fafc;
+}
+
 .doc-card h3 {
   margin-top: 0;
 }
 
+.doc-card p {
+  margin: 1.25rem 0;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
 .doc-card section {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .doc-card section:first-of-type { margin-top: 0; }
@@ -35,6 +56,16 @@
 .doc-card ul,
 .doc-card ol {
   padding-left: 1.4rem;
+}
+
+.doc-help-steps {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.doc-help-steps li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .doc-cta,

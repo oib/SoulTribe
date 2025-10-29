@@ -14,6 +14,7 @@
     "active_filter_hint": "Vain viimeisten 30 päivän aikana aktiiviset käyttäjät näytetään.",
     "slot_help_summary": "Mitä on saatavuusaika?",
     "slot_help_intro": "Aikaikkunat, joita julkaiset, jotta SoulTribe voi ehdottaa tapaamisia, kun joku menee päällekkäin kanssasi.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Lisää yksi tai useampi aikaikkuna päiville ja tunneille, jolloin olet vapaa. Järjestelmä tallentaa ne profiilisi aikavyöhykkeellä ja UTC‑muodossa.",
     "slot_help_step2": "Kun haku löytää osumia, vertaamme aikaikkunasi muiden jäsenten aikaikkunoihin löytääksemme vielä tulevaisuudessa olevat päällekkäisyydet.",
     "slot_help_step3": "Päällekkäisyysmerkit ”Matches”-osiossa näyttävät yhteisen ikkunan: UTC, paikallisaikasi ja vastinparisi paikallisaika.",

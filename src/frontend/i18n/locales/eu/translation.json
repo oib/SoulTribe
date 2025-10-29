@@ -280,6 +280,7 @@
     "active_filter_hint": "Azken 30 egunetan aktibo egon diren erabiltzaileak erakusten dira soilik.",
     "slot_help_summary": "Zer da eskuragarritasun tarte bat?",
     "slot_help_intro": "Tarteak argitaratzen dituzun denbora leihoak dira, SoulTribe-k bat-etortzeetan proposatu ahal izateko.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Gehitu tarte bat edo gehiago libre zauden egun eta ordutarako. Sistemak zure eta UTC ordu-zonetan gordeko ditu.",
     "slot_help_step2": "Bat-etortzeak bilatzean, zure tarteak beste erabiltzaileren tarteekin alderatzen ditugu, betiere etorkizunekoak badira.",
     "slot_help_step3": "Gainjartzearen txarteletan leiho partekatua erakusten da: UTC, zure tokiko ordua eta bestearen tokiko ordua.",

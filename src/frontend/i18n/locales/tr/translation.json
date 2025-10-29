@@ -14,6 +14,7 @@
     "active_filter_hint": "Son 30 gün içinde aktif olan kullanıcılar gösterilir.",
     "slot_help_summary": "Uygunluk dilimi nedir?",
     "slot_help_intro": "Slotlar, biri seninle çakıştığında SoulTribe’ın buluşmalar önermesi için yayınladığın zaman aralıklarıdır.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Müsait olduğun gün ve saatler için bir veya daha fazla slot ekle. Sistem bunları profil saat diliminde ve UTC’de saklar.",
     "slot_help_step2": "Eşleşmeler getirildiğinde, gelecekte kalan çakışmaları bulmak için slotlarını diğer üyelerin slotlarıyla karşılaştırırız.",
     "slot_help_step3": "“Eşleşmeler” bölümündeki çakışma rozetleri ortak pencereyi gösterir: UTC, yerel saatin ve eşleşmenin yerel saati.",

@@ -476,6 +476,7 @@
   "dashboard": {
     "slot_help_summary": "Mis on saadavusvahemik?",
     "slot_help_intro": "Ajavahemikud, mille avaldad, et SoulTribe saaks soovitada kohtumisi, kui keegi sinuga kattub.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Lisa üks või mitu ajavahemikku päevade ja tundide jaoks, mil oled vaba. Süsteem salvestab need sinu profiili ajavööndis ja UTC‑s.",
     "slot_help_step2": "Kui vasteid tuuakse, võrdleme sinu ajavahemikke teiste liikmete omadega, et leida kattuvusi, mis on veel tulevikus.",
     "slot_help_step3": "Kattuvusmärkmed jaotises „Matches” näitavad jagatud akent: UTC, sinu kohalik aeg ja sinu vaste kohalik aeg.",

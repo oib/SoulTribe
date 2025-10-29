@@ -14,6 +14,7 @@
     "active_filter_hint": "Sunt afișați doar utilizatorii activi în ultimele 30 de zile.",
     "slot_help_summary": "Ce este un interval de disponibilitate?",
     "slot_help_intro": "Intervalele de timp pe care le publici, astfel încât SoulTribe să poată sugera întâlniri când cineva se suprapune cu tine.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Adaugă unul sau mai multe intervale pentru zilele și orele în care ești liber. Sistemul le salvează în fusul tău orar din profil și în UTC.",
     "slot_help_step2": "Când se obțin potriviri, comparăm intervalele tale cu ale altor membri pentru a găsi suprapuneri care sunt încă în viitor.",
     "slot_help_step3": "Marcajele de suprapunere din secțiunea „Matches” arată fereastra comună: UTC, ora ta locală și ora locală a partenerului.",

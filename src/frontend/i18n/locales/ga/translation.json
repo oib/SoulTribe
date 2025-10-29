@@ -362,6 +362,7 @@
     "active_filter_hint": "Ní thaispeántar ach úsáideoirí a bhí gníomhach le 30 lá anuas.",
     "slot_help_summary": "Cad is sliotán infhaighteachta ann?",
     "slot_help_intro": "Fuinneoga ama a fhoilsíonn tú ionas gur féidir le SoulTribe cruinnithe a mholadh nuair a bhíonn forluí le duine éigin ort.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Cuir sliotán amháin nó níos mó leis do na laethanta agus na huaireanta ina bhfuil tú saor. Sábhálann an córas iad i d’amhchrios próifíle agus in UTC.",
     "slot_help_step2": "Nuair a fhaightear meaitseálacha, cuirimid do shliotáin i gcomparáid le shliotáin baill eile chun forluíthe a aimsiú atá fós sa todhchaí.",
     "slot_help_step3": "Taispeánann na sliseanna forluíte i rannán “Matches” an fhuinneog roinnte: UTC, d’am logánta agus am logánta do pháirtí.",

@@ -15,10 +15,11 @@
 <body>
   <div data-component="navbar"></div>
 
-  <main class="doc-container doc-container--wide doc-container--offset">
-    <article class="doc-card doc-card--compact">
-      <h1 data-i18n="nextStepsGuide.title">Detailed Next Steps Guide</h1>
-      <p data-i18n="nextStepsGuide.intro">This guide expands the landing page steps and walks you through each action with tips and links.</p>
+  <div class="container">
+      <section>
+        <h1 data-i18n="nextStepsGuide.title">Detailed Next Steps Guide</h1>
+        <p data-i18n="nextStepsGuide.intro">This guide expands the landing page steps and walks you through each action with tips and links.</p>
+      </section>
 
       <section class="step" id="step-1">
         <header>
@@ -57,11 +58,17 @@
           <h2 data-i18n="nextStepsGuide.steps.step3.heading">Create a time slot</h2>
         </header>
         <p data-i18n="nextStepsGuide.steps.step3.description">Offer one or more time slots when you'd be open to connect. We store your local time and convert to UTC for scheduling.</p>
+        <div class="doc-callout" data-i18n-html="nextStepsGuide.steps.step3.callout">Timezone aware: We handle conversions between your local time and UTC automatically (<span class="doc-monospaced">UTC±HH:MM</span>).</div>
         <ul>
           <li data-i18n="nextStepsGuide.steps.step3.bullets.item1">Pick a start time in your local timezone; choose a duration (e.g., 1–3 hours).</li>
           <li data-i18n="nextStepsGuide.steps.step3.bullets.item2">Adding slots on multiple days increases the chance of quick matches.</li>
+          <li data-i18n="dashboard.slot_help_step1">Add one or more slots for the days and hours you are free. The system saves them in your profile timezone and in UTC.</li>
+          <li data-i18n="dashboard.slot_help_step2">When matches are fetched, we compare your slots with other members' slots to find overlapping times that are still in the future.</li>
+          <li data-i18n="dashboard.slot_help_step3">Overlap chips in the Matches section show the shared window: UTC, your local time, and your match's local time.</li>
+          <li data-i18n="dashboard.slot_help_step4">Click "Propose this time" on an overlap to launch the meetup flow with that slot pre-filled.</li>
+          <li data-i18n="dashboard.slot_help_step5">If something changes, edit or delete the slot so we stop suggesting outdated times.</li>
         </ul>
-        <div class="doc-callout" data-i18n-html="nextStepsGuide.steps.step3.callout">Timezone aware: We handle conversions between your local time and UTC automatically (<span class="doc-monospaced">UTC±HH:MM</span>).</div>
+        
         <div class="doc-button-row">
           <a href="/dashboard.html" data-i18n="nextStepsGuide.steps.step3.link">Open Dashboard</a>
         </div>
@@ -110,8 +117,7 @@
 
       <hr />
       <p class="doc-closing" data-i18n="nextStepsGuide.closing">Enjoy connecting in a way that feels right for you.</p>
-    </article>
-  </main>
+  </div>
 
   <div data-component="footer"></div>
 

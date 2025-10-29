@@ -344,6 +344,7 @@
     "active_filter_hint": "Mir weisen nëmme Benotzer déi an de leschte 30 Deeg aktiv waren.",
     "slot_help_summary": "Wat ass e Disponibilitéits-Slot?",
     "slot_help_intro": "Slots si Zäitraim, déi s du publizéiers, sou datt SoulTribe proposéiert wann eng Iwwerlappung mat anere Membere besteet.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Setz ee oder méi Slots fir Deeg a Stonnen, wou s du fräi bass. Mir späicheren se a denger Zäitzon an a UTC.",
     "slot_help_step2": "Beim Matching vergläiche mir deng Slots mat deenen, déi anerer nach fräi hunn.",
     "slot_help_step3": "Overlap-Kaarte weisen den gemeinsamen Zäitraum: UTC, deng Zäit an déi vum Match.",

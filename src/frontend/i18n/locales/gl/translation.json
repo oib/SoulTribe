@@ -344,6 +344,7 @@
     "active_filter_hint": "Só mostramos usuarias/os activos nos últimos 30 días.",
     "slot_help_summary": "Que é unha franxa de dispoñibilidade?",
     "slot_help_intro": "As franxas son períodos que publicas para que SoulTribe propoña encontros cando haxa solapamento.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Engade unha ou máis franxas para os días e horas nos que estás libre. O sistema gárdaas no teu fuso e en UTC.",
     "slot_help_step2": "Ao buscar coincidencias, comparamos as túas franxas coas doutras persoas que aínda están no futuro.",
     "slot_help_step3": "As tarxetas de solapamento mostran a xanela compartida: UTC, a túa hora local e a da coincidencia.",

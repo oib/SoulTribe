@@ -14,6 +14,7 @@
     "active_filter_hint": "Sono mostrati solo gli utenti attivi negli ultimi 30 giorni.",
     "slot_help_summary": "Che cos’è una fascia di disponibilità?",
     "slot_help_intro": "Gli slot sono finestre di tempo che pubblichi affinché SoulTribe possa suggerire incontri quando qualcuno si sovrappone ai tuoi orari.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Aggiungi uno o più slot per i giorni e le ore in cui sei libero. Il sistema li salva nel tuo fuso orario di profilo e in UTC.",
     "slot_help_step2": "Quando vengono recuperate le corrispondenze, confrontiamo i tuoi slot con quelli degli altri membri per trovare sovrapposizioni ancora future.",
     "slot_help_step3": "I badge di sovrapposizione nella sezione “Matches” mostrano la finestra condivisa: UTC, la tua ora locale e l’ora locale del tuo match.",

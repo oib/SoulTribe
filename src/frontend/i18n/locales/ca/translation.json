@@ -344,6 +344,7 @@
     "active_filter_hint": "Només mostrem usuaris actius en els darrers 30 dies.",
     "slot_help_summary": "Què és una franja de disponibilitat?",
     "slot_help_intro": "Les franges són finestres de temps que publiques perquè SoulTribe pugui suggerir coincidències quan hi ha solapament.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Afegeix una o més franges per als dies i hores en què estàs lliure. El sistema les guarda en el teu fus i en UTC.",
     "slot_help_step2": "Quan es calculen coincidències, comparem les teves franges amb les d'altres usuaris que encara són futures.",
     "slot_help_step3": "Les targetes de solapament mostren l'espai compartit: UTC, la teva hora local i la de la coincidència.",

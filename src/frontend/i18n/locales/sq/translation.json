@@ -344,6 +344,7 @@
     "active_filter_hint": "Shfaqen vetëm përdoruesit aktivë në 30 ditët e fundit.",
     "slot_help_summary": "Çfarë është një kohë e disponueshme?",
     "slot_help_intro": "Kohët janë dritare që publikon kështu që SoulTribe mund të propozojë takime kur ka përputhje.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Shto një ose më shumë kohë për ditët dhe orët kur je i lirë. Sistemi i ruan si në zonën tënde, ashtu edhe në UTC.",
     "slot_help_step2": "Kur kërkojmë përputhje, krahasojmë kohët e tua me ato të të tjerëve që janë ende në të ardhmen.",
     "slot_help_step3": "Kartelat e përputhjes tregojnë kohën e përbashkët: UTC, ora jote lokale dhe ajo e tjetrit.",

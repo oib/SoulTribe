@@ -14,6 +14,7 @@
     "active_filter_hint": "Endast användare som varit aktiva de senaste 30 dagarna visas.",
     "slot_help_summary": "Vad är en tillgänglighetstid?",
     "slot_help_intro": "Tidsfönster som du publicerar så att SoulTribe kan föreslå möten när någon överlappar med dig.",
+    "slot_help_button": "Slot Guide",
     "slot_help_step1": "Lägg till ett eller flera tidsfönster för de dagar och timmar du är ledig. Systemet sparar dem i din profiltidszon och i UTC.",
     "slot_help_step2": "När matchningar hämtas jämför vi dina tidsfönster med andras för att hitta överlapp som fortfarande ligger i framtiden.",
     "slot_help_step3": "Överlappningschip i avsnittet ”Matches” visar det delade fönstret: UTC, din lokala tid och din matchs lokala tid.",
