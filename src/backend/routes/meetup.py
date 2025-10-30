@@ -193,7 +193,7 @@ def confirm(inp: ConfirmIn, session=Depends(get_session), user_id: int = Depends
     text_body = (
         f"{{confirm_text}}\n"
         f"{{join_label}}: {url}\n\n"
-        "{{manage_hint}}"
+        "{manage_hint}"
     )
 
     for recipient, name, label in (
