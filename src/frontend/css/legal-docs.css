@@ -29,20 +29,7 @@
   color: #e5e7eb;
 }
 
-/* Two-column layout matching landing page */
-.legal-page .two-col {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-  align-items: center;
-}
-
-@media (min-width: 760px) {
-  .legal-page .two-col {
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 24px;
-  }
-}
+/* Two-column layout handled in styles.css */
 
 .legal-page .card.md .card {
   background: transparent;

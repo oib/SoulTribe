@@ -1,8 +1,7 @@
 /* Dashboard page-specific styles */
 
 /* Override or extend base theme here for dashboard */
-.two-col { display: grid; grid-template-columns: 1fr; gap: 16px; }
-@media (min-width: 980px) { .two-col { grid-template-columns: 1fr 1fr; } }
+/* Two-column layout handled in styles.css */
 
 @media (min-width: 769px) {
   .navbar-menu-close {

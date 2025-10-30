@@ -114,20 +114,12 @@
   margin-right: 0.5rem;
 }
 
-.doc-monospaced {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
+/* Monospace font handled in global styles.css */
 
-.doc-table-wrapper { margin: 1.5rem 0; overflow-x: auto; }
-.doc-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
-.doc-table th,
-.doc-table td {
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  padding: 0.75rem;
-  text-align: left;
-}
-.doc-table thead { background: rgba(15, 23, 42, 0.9); }
-.doc-table svg { width: 28px; height: 28px; vertical-align: middle; fill: currentColor; }
+/* Table styling handled in global styles.css */
+
+.doc-table { /* Keep for backward compatibility, use .table */ }
+.doc-table-wrapper { /* Keep for backward compatibility, use .table-wrapper */ }
 
 .doc-subpoints ul { margin: 0.75rem 0 0 1.1rem; }
 .doc-browser-compat { background: rgba(56, 189, 248, 0.08); padding: 1rem 1.5rem; border-radius: 12px; margin: 1.5rem 0; }

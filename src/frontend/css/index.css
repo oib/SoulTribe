@@ -63,17 +63,7 @@
 }
 
 /* Two-column layout */
-.two-col {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 32px;
-}
-
-.two-col .col {
-  flex: 1;
-  min-width: 300px;
-}
+/* Two-column layout handled in styles.css */
 
 .two-col .text {
   display: flex;
@@ -332,22 +322,7 @@ html[data-theme="dark"] .welcome-page .md code {
 }
 
 /* Two-column sections */
-.welcome-page .two-col {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-  align-items: center;
-}
-
-@media (min-width: 760px) {
-  .welcome-page .two-col {
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 24px;
-  }
-  .welcome-page .two-col.reverse {
-    grid-template-columns: 0.9fr 1.1fr;
-  }
-}
+/* Welcome page two-column handled in styles.css */
 
 .welcome-page .two-col .col.text h1 {
   font-size: 2rem;

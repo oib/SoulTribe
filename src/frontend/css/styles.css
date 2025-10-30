@@ -1,4 +1,39 @@
-/* Language Selector */
+/* Global monospace font utility */
+.mono { 
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+}
+
+/* Generic table classes */
+.table-wrapper { 
+  margin: 1.5rem 0; 
+  overflow-x: auto; 
+}
+
+.table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin: 1.5rem 0; 
+}
+
+.table th,
+.table td {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.table thead { 
+  background: rgba(15, 23, 42, 0.9); 
+}
+
+.table svg { 
+  width: 28px; 
+  height: 28px; 
+  vertical-align: middle; 
+  fill: currentColor; 
+}
+
+/* Language Selector - unified for navbar and profile */
 .language-selector {
   background: transparent;
   color: inherit;
@@ -11,7 +46,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%239ca3af%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat, repeat;
   background-position: right 0.5em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
@@ -22,6 +57,57 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Profile page language selector variant */
+.language-selector--profile {
+  margin: 16px 0;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
+  min-height: 48px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  padding: 12px 42px 12px 16px;
+  background: linear-gradient(145deg, rgba(15,23,42,0.96), rgba(17,24,39,0.92));
+  color: #e2e8f0;
+  box-shadow: inset 0 1px 1px rgba(148, 163, 184, 0.08), 0 8px 24px rgba(15,23,42,0.28);
+  font-size: 15px;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath fill='%2394a3b8' d='M1.172 0L7 5.828 12.828 0 14 1.172 7 8.172 0 1.172z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 14px 9px;
+  backdrop-filter: blur(4px);
+  color-scheme: dark;
+}
+
+.language-selector--profile:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.language-selector--profile:hover {
+  border-color: #475569;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.22), 0 6px 18px rgba(15,23,42,0.24);
+}
+
+.language-selector--profile option {
+  background: #0b1220;
+  color: #e2e8f0;
+  padding: 10px 16px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.language-selector--profile option:hover,
+.language-selector--profile option:checked {
+  background: #7c3aed;
+  color: #ffffff;
 }
 
 .language-selector option {
@@ -54,111 +140,6 @@ html[data-theme="dark"] .language-selector option {
 html[data-theme="dark"] .language-selector:hover {
   border-color: #6b7280;
 }
-
-/* Radix pretty table: normalize header/body cell sizing */
-#radixPretty table.list {
-  display: table;            /* override global .list display:grid */
-  table-layout: fixed;
-  border-collapse: collapse;
-}
-
-/* welcome-page footer overrides moved to index.css */
-#radixPretty table.list th,
-#radixPretty table.list td {
-  border: 1px solid var(--border-color, #1f2937);
-  vertical-align: middle;
-}
-#radixPretty table.list thead th { border-bottom: 1px solid var(--border-color, #1f2937); }
-#radixPretty table.list thead + tbody tr:first-child td {
-  /* Remove double seam between header and first row */
-  border-top: none;
-}
-#radixPretty table.list thead th,
-#radixPretty table.list tfoot th {
-  text-align: center;
-  font-weight: 600;
-}
-#radixPretty .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
-/* Radix two-panel layout */
-#radixPretty .radix-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin-top: 8px;
-  width: 100%;
-}
-/* Force single-column layout for radix section on all widths */
-@media (min-width: 980px) {
-  #radixPretty .radix-layout { grid-template-columns: 1fr; }
-}
-#radixPretty .radix-panel {
-  background: #0f172a;
-  border: 1px solid #1f2937;
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  width: 100%;
-}
-@media (prefers-color-scheme: light) {
-  #radixPretty .radix-panel {
-    background: #ffffff;
-    border-color: #e5e7eb;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    color: #0f172a;
-  }
-
-  #radixPretty table.list thead th {
-    background-color: #e2e8f0;
-  }
-
-  #radixPretty table.list th,
-  #radixPretty table.list td {
-    background-color: #f8fafc;
-    color: #0f172a;
-    border-color: #d4d4d8;
-  }
-
-  #radixPretty table.list tbody tr:nth-child(even) td {
-    background-color: #edf2f7;
-  }
-}
-
-#radixPretty .planets-table { width: 100%; table-layout: fixed; }
-#radixPretty .planets-table col.icon { width: auto; }
-#radixPretty .planets-table col.planet { width: auto; }
-#radixPretty .planets-table col.sign { width: 56px; }
-#radixPretty .planets-table col.deg { width: 90px; }
-#radixPretty .planets-table col.pos { width: 120px; }
-#radixPretty .planets-table col.house { width: 72px; }
-#radixPretty .planets-table col.cusp { width: 100px; }
-#radixPretty .planets-table col.aspect { width: 80px; }
-#radixPretty .planets-table th, 
-#radixPretty .planets-table td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-#radixPretty .planets-table thead th { overflow: visible; text-overflow: clip; white-space: nowrap; }
-#radixPretty .planets-table th,
-#radixPretty .planets-table td { padding: 6px 8px; }
-#radixPretty .planets-table thead th { font-weight: 700; }
-#radixPretty .aspect-grid { width: 100%; }
-
-#radixPretty .badge { margin-right: 6px; }
-
-/* Ensure fixed column widths for houses table regardless of content */
-#radixPretty table.houses-table { table-layout: auto; }
-#radixPretty table.houses-table th:nth-child(1),
-#radixPretty table.houses-table td:nth-child(1) { width: auto; }
-#radixPretty table.houses-table th:nth-child(2),
-#radixPretty table.houses-table td:nth-child(2) { width: auto; }
-#radixPretty table.houses-table th:nth-child(3),
-#radixPretty table.houses-table td:nth-child(3) { width: auto; }
-
-/* Prevent wrapping and stretching; clip long content in fixed-layout tables */
-#radixPretty table.list td,
-#radixPretty table.list th { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-#radixPretty table.list td.mono { white-space: nowrap; }
-/* Allow wrapping inside the Planets column for houses table so content can flex */
-#radixPretty table.houses-table td:nth-child(3),
-#radixPretty table.houses-table th:nth-child(3) { white-space: normal; overflow: visible; text-overflow: clip; }
 
 /* Force 24-hour format for time inputs */
 input[type="time"]::-webkit-datetime-edit-ampm-field {
@@ -588,10 +569,54 @@ pre { background: #0b1020; color: #e2e8f0; border-radius: 12px; padding: 12px; o
 .chip-col { display: flex; flex-direction: column; gap: 2px; }
 .chip-col:not(:last-child) { border-right: 1px dashed #e5e7eb; padding-right: 10px; }
 
-/* Two-column layout on wide screens */
-.two-col { display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 960px; }
+/* Two-column layout - flexible for different contexts */
+.two-col { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+  max-width: 960px; 
+}
+
+/* Default two-column for general content */
 @media (min-width: 980px) {
-  .two-col { grid-template-columns: 1fr 1fr; align-items: start; }
+  .two-col { 
+    grid-template-columns: 1fr 1fr; 
+    align-items: start; 
+  }
+}
+
+/* Legal page two-column (image + content) */
+.legal-page .two-col {
+  gap: 18px;
+  align-items: center;
+}
+@media (min-width: 760px) {
+  .legal-page .two-col {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+  }
+}
+
+/* Welcome page two-column */
+.welcome-page .two-col {
+  gap: 18px;
+  align-items: center;
+}
+@media (min-width: 760px) {
+  .welcome-page .two-col {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+  }
+  .welcome-page .two-col.reverse {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+/* Dashboard two-column */
+@media (min-width: 980px) { 
+  .two-col.dashboard { 
+    grid-template-columns: 1fr 1fr; 
+  } 
 }
 
 /* Availability grid layout */
@@ -866,18 +891,3 @@ button.primary { background: linear-gradient(135deg, #7c3aed, #06b6d4); color: w
   }
 }
 
-/* === Page-specific styles migrated from inline <style> blocks === */
-
-/* dashboard.html moved to dashboard.css */
-
-/* dev.html moved to admin/dev.css */
-
-/* login.html moved to login.css */
-
-/* profile.html moved to profile.css */
-
-/* welcome-page moved to index.css */
-
-/* Force dark theme when data-theme="dark" is set */
-/* moved to index.css: html[data-theme="dark"] .welcome-page vars */
-/* moved to index.css: html[data-theme="dark"] .welcome-page .md code */
