@@ -1,6 +1,6 @@
 # SoulTribe.chat — Current State (Backend, API, DB, Frontend)
 
-Last updated: 2025-10-10
+Last updated: 2025-11-02
 
 ## Backend and DB
 - Postgres-only via `DATABASE_URL` in `.env`.

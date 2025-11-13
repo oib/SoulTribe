@@ -49,11 +49,15 @@ async function build() {
   copyRecursive(path.join(srcRoot, 'assets/components'), path.join(publicRoot, 'components'));
   copyRecursive(path.join(srcRoot, 'assets/css'), path.join(publicRoot, 'css'));
 
-  // Copy top-level assets (favicons, etc.)
+  // Copy top-level assets (favicons, robots.txt, sitemap.xml, etc.)
   const faviconSvg = path.join(srcRoot, 'assets/img/favicon.svg');
   const faviconIco = path.join(srcRoot, 'assets/img/favicon.ico');
+  const robotsTxt = path.join(srcRoot, 'robots.txt');
+  const sitemapXml = path.join(srcRoot, 'sitemap.xml');
   if (fs.existsSync(faviconSvg)) fs.copyFileSync(faviconSvg, path.join(publicRoot, 'favicon.svg'));
   if (fs.existsSync(faviconIco)) fs.copyFileSync(faviconIco, path.join(publicRoot, 'favicon.ico'));
+  if (fs.existsSync(robotsTxt)) fs.copyFileSync(robotsTxt, path.join(publicRoot, 'robots.txt'));
+  if (fs.existsSync(sitemapXml)) fs.copyFileSync(sitemapXml, path.join(publicRoot, 'sitemap.xml'));
 
   // Minify/bundle JavaScript
   const jsEntries = globFiles(path.join(srcRoot, 'js/**/*.js'));

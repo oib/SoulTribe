@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://soultribe.com/sitemap.xml
+
+# Common bot directives
+Crawl-delay: 1

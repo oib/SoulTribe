@@ -1,9 +1,13 @@
 import os
+import sys
 from dotenv import load_dotenv
 from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
 from alembic import context
 from sqlmodel import SQLModel
+
+# Add src directory to Python path so we can import backend modules
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -26,7 +30,7 @@ if db_url:
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 # For SQLModel, this is the global SQLModel.metadata
-from models import *  # noqa: F401,F403
+from backend.models import *  # noqa: F401,F403
 
 target_metadata = SQLModel.metadata
 

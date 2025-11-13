@@ -1,6 +1,6 @@
 # SoulTribe.chat — roadmap & TODOs
 
-Last updated: 2025-10-27
+Last updated: 2025-11-02
 
 ## Near-Term (High Priority)
 - Auth
@@ -33,7 +33,7 @@ Last updated: 2025-10-27
   - ✅ Guest Jitsi guide updated with full `data-i18n` coverage and localized strings (EN/DE/ES)
   - ✅ Provide native translations for remaining locales beyond English fallbacks (35 languages with draft AI translations)
   - ✅ Automate translation handoff (draft translations generated via AI for all locales)
-  - ✅ Refresh docs in `docs/Translation_Status.md` and `docs/Translation_Needs.md` once locales ship
+  - ✅ Add SEO assets: `robots.txt` and `sitemap.xml` with proper metadata and build integration
 
 ## Medium-Term
 - Profile

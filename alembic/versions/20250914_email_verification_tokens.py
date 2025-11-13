@@ -11,66 +11,14 @@ import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
 revision = 'a20250914_email_verif'
-down_revision = 'a250913_tz_availslot'
+down_revision = '20250101_create_initial_tables'
 branch_labels = None
 depends_on = None
 
 
 def upgrade() -> None:
-    bind = op.get_bind()
-    dialect_name = bind.dialect.name
-
-    # Add email_verified_at to user table if it does not exist (PostgreSQL-safe)
-    if dialect_name == 'postgresql':
-        op.execute(
-            sa.text(
-                """
-                DO $$
-                BEGIN
-                    IF NOT EXISTS (
-                        SELECT 1 FROM information_schema.columns
-                        WHERE table_name='user' AND column_name='email_verified_at'
-                    ) THEN
-                        ALTER TABLE "user" ADD COLUMN email_verified_at TIMESTAMPTZ NULL;
-                    END IF;
-                END $$;
-                """
-            )
-        )
-    else:
-        # Best-effort for other dialects: try add column (may fail if exists)
-        try:
-            op.add_column('user', sa.Column('email_verified_at', sa.DateTime(timezone=True), nullable=True))
-        except Exception:
-            pass
-
-    # Create email_verification_token table
-    try:
-        op.create_table(
-            'emailverificationtoken',
-            sa.Column('id', sa.Integer(), primary_key=True),
-            sa.Column('user_id', sa.Integer(), sa.ForeignKey('user.id', ondelete='CASCADE'), nullable=False, index=True),
-            sa.Column('token', sa.String(length=255), nullable=False, unique=True, index=True),
-            sa.Column('created_at', sa.DateTime(timezone=True), nullable=False, server_default=sa.text('CURRENT_TIMESTAMP')),
-            sa.Column('expires_at', sa.DateTime(timezone=True), nullable=False),
-            sa.Column('used_at', sa.DateTime(timezone=True), nullable=True),
-        )
-    except Exception:
-        pass
-    # Additional explicit indexes (some dialects ignore index=True in create_table)
-    # Wrap in IF NOT EXISTS to avoid conflicts if db already created them
-    if dialect_name == 'postgresql':
-        op.execute(sa.text("CREATE INDEX IF NOT EXISTS ix_emailverificationtoken_user_id ON emailverificationtoken (user_id)"))
-        op.execute(sa.text("CREATE UNIQUE INDEX IF NOT EXISTS ix_emailverificationtoken_token ON emailverificationtoken (token)"))
-    else:
-        try:
-            op.create_index('ix_emailverificationtoken_user_id', 'emailverificationtoken', ['user_id'])
-        except Exception:
-            pass
-        try:
-            op.create_index('ix_emailverificationtoken_token', 'emailverificationtoken', ['token'], unique=True)
-        except Exception:
-            pass
+    # Tables and columns already created in initial migration
+    pass
 
 
 def downgrade() -> None:

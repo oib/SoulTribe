@@ -14,6 +14,11 @@
 ## 2025-10-09
 - Persisted profile notification preferences end-to-end (`routes/profile.py`) and refreshed the frontend save flow (`web/profile.js`) to reload the page post-update so browser/email toggles accurately reflect stored state.
 
+## 2025-11-02
+- Added SEO assets: created `robots.txt` and `sitemap.xml` with all website pages and appropriate metadata
+- Updated build script (`dev/scripts/build-frontend.js`) to copy SEO files from `src/frontend/` to `src/public/` during build process
+- Ensured `robots.txt` and `sitemap.xml` are properly served at root URLs after `make build-frontend`
+
 ## 2025-10-27
 - Repaired backend import paths post-`src/` migration and restored Gunicorn/systemd services; verified `/api/health` and user unit restart.
 - Finished landing-page asset rewiring: build script now copies `pages/`, `assets/components/`, and `assets/css/`; `index.html` ships critical heading styles with deferred JS to eliminate layout thrash.

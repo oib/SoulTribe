@@ -3,7 +3,7 @@ import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
 revision = 'a250913_tz_availslot'
-down_revision = 'a20250913_availability_once'
+down_revision = '20250101_create_initial_tables'
 branch_labels = None
 depends_on = None
 

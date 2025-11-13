@@ -37,6 +37,13 @@ export async function checkWithOllama(sequence) {
 
     } catch (error) {
         console.error("LLM-Request fehlgeschlagen:", error);
-        return "(Verbindungsfehler mit Ollama)";
+        // Provide a fallback response when Ollama is not available
+        if (prompt.includes("Match") || prompt.includes("Kommentar")) {
+            return "(KI-Kommentar nicht verfügbar - bitte später versuchen)";
+        } else if (prompt.includes("interpretieren") || prompt.includes("Deutung")) {
+            return "(KI-Interpretation nicht verfügbar - bitte später versuchen)";
+        } else {
+            return "(KI-Dienst nicht verfügbar)";
+        }
     }
 }

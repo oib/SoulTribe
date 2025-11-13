@@ -5,6 +5,9 @@ import os
 # Server socket
 bind = '0.0.0.0:8000'
 
+# Forwarded headers - allow all IPs to trust X-Forwarded-Proto headers
+forwarded_allow_ips = '*'
+
 # Worker processes
 workers = multiprocessing.cpu_count() * 2 + 1
 worker_class = 'gthread'
