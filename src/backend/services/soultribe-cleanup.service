@@ -8,7 +8,7 @@ WorkingDirectory=/var/www/soultribe
 Environment=PYTHONUNBUFFERED=1
 # Adjust parameters as needed. --users-hours 24 deletes unverified users older than 24h.
 # --slots-grace-hours 0 removes any slots whose end time is in the past with no grace.
-ExecStart=/var/www/soultribe/.venv/bin/python src/backend/services/soultribe_cleanup.py --users-hours 24 --slots-grace-hours 0 --meetups-grace-hours 0
+ExecStart=/var/www/soultribe/.venv/bin/python src/backend/soultribe_cleanup.py --users-hours 24 --slots-grace-hours 0 --meetups-grace-hours 0
 
 [Install]
 WantedBy=multi-user.target
