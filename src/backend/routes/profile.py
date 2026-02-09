@@ -131,7 +131,7 @@ def interpret_profile(payload: InterpretIn, user_id: int = Depends(get_current_u
     }
     lang_label = LANG_LABELS.get(target_lang, target_lang)
     try:
-        print("[interpret] target_lang=", target_lang, "label=", lang_label)
+        // print("[interpret] target_lang=", target_lang, "label=", lang_label)
     except Exception:
         pass
     intro = [
@@ -241,10 +241,10 @@ def update_profile(
 
     # 2) Upsert profile
     try:
-        print("[profile.update] user_id=", user_id)
+        # print("[profile.update] user_id=", user_id)
         try:
             # Avoid printing secrets; payload has no secrets
-            print("[profile.update] payload:", {
+            # print("[profile.update] payload:", {
                 k: getattr(payload, k)
                 for k in [
                     'display_name','birth_dt','birth_time_known','birth_place_name','birth_lat','birth_lon','birth_tz','live_tz','lang_primary','lang_secondary','languages','house_system'
@@ -274,7 +274,7 @@ def update_profile(
             if tz is not None:
                 dt = dt.replace(tzinfo=tz)
                 try:
-                    print("[profile.update] interpret naive as local", {
+                    # print("[profile.update] interpret naive as local", {
                         "naive": str(payload.birth_dt),
                         "tz": payload.birth_tz,
                         "utcoffset": str(dt.utcoffset()),
@@ -285,7 +285,7 @@ def update_profile(
                 # Fallback assumption: input already UTC
                 dt = dt.replace(tzinfo=timezone.utc)
                 try:
-                    print("[profile.update] naive with no tz provided; assuming UTC", {
+                    # print("[profile.update] naive with no tz provided; assuming UTC", {
                         "naive": str(payload.birth_dt)
                     })
                 except Exception:
@@ -293,7 +293,7 @@ def update_profile(
         # Convert to UTC
         dt_utc = dt.astimezone(timezone.utc)
         try:
-            print("[profile.update] computed birth_dt_utc", {
+            # print("[profile.update] computed birth_dt_utc", {
                 "local": str(dt),
                 "birth_tz": payload.birth_tz,
                 "utc": str(dt_utc)
@@ -328,7 +328,7 @@ def update_profile(
     # 3) Recompute radix if we have enough data (birth_dt_utc exists)
     if prof.birth_dt_utc is not None:
         try:
-            print("[profile.update] recomputing radix…", {
+            # print("[profile.update] recomputing radix…", {
                 "birth_dt_utc": str(prof.birth_dt_utc),
                 "birth_time_known": prof.birth_time_known,
                 "lat": prof.birth_lat,
@@ -351,7 +351,7 @@ def update_profile(
                 radix.json = rjson
             session.commit()
         except Exception as e:
-            print("[profile.update] radix recompute FAILED:", e)
+            # print("[profile.update] radix recompute FAILED:", e)
             traceback.print_exc()
             # Keep profile update successful even if radix fails; return profile fields
 

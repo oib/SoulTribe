@@ -42,9 +42,6 @@
           return toast(SimpleI18n.t('login.required_fields'), "error");
         }
 
-        // Debug: show payload being sent (without password)
-        try { console.debug("register:payload", { email, display_name }); } catch {}
-
         const data = await api("/api/auth/register", { method: "POST", body: { email, password, display_name } });
         setToken(data.access_token);
         if (data.refresh_token) setRefreshToken(data.refresh_token);
@@ -56,7 +53,6 @@
         try {
           const detail = e && e.data && e.data.detail ? e.data.detail : null;
           if (detail) {
-            console.error("register:ERROR.detail", detail);
             // If FastAPI validation error, surface first message
             const first = Array.isArray(detail) && detail.length ? detail[0] : null;
             const msg = first && first.msg ? first.msg : (typeof detail === 'string' ? detail : 'Registration failed');

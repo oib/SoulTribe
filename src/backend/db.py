@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from sqlalchemy import text
 
 load_dotenv()
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://soultribe:pass@localhost:5432/soultribe")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://localhost/soultribe")
 engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 
 def init_db() -> None:

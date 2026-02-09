@@ -2,6 +2,11 @@
   "name": "soultribe.chat",
   "version": "1.0.0",
   "description": "SoulTribe.chat - Connect with your soul tribe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oib/SoulTribe.git"
+  },
+  "homepage": "https://soultribe.chat",
   "scripts": {
     "build": "node dev/scripts/build-frontend.js",
     "build-frontend": "node dev/scripts/build-frontend.js"

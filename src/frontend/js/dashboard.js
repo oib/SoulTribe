@@ -201,7 +201,7 @@
       const t = (typeof window !== 'undefined') ? window.toast : null;
       if (typeof t === 'function') return t(...args);
     } catch {}
-    try { console.log('[toast]', ...args); } catch {}
+    // try { console.log('[toast]', ...args); } catch {}
   };
   const currentUserId = window.currentUserId;
   const token = () => window.token;
@@ -433,7 +433,7 @@
   const fetchAndRenderMatches = async ({ useOffset } = {}) => {
     const user_id = currentUserId;
     if (!user_id) {
-      console.warn('No user ID available for match finding');
+      // console.warn('No user ID available for match finding');
       return;
     }
     if (typeof useOffset === 'number') {
@@ -515,7 +515,7 @@
             const youCity = ov.a_tz || null;
             const otherCity = ov.b_tz || null;
             const startIso = String(ov.start_dt_utc);
-            const utc = `${ov.start_dt_utc} → ${ov.end_dt_utc} (UTC)`; // kept for fallback / debug
+            // const utc = `${ov.start_dt_utc} → ${ov.end_dt_utc} (UTC)`; // kept for fallback / debug
             const dur = humanDuration(ov.start_dt_utc, ov.end_dt_utc);
             const youBlock = (ov.a_local_start && ov.a_local_end && ov.a_tz)
               ? `

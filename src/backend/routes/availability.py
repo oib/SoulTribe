@@ -27,21 +27,21 @@ class SlotIn(BaseModel):
     @field_validator('start_dt_utc', 'end_dt_utc', mode='before')
     @classmethod
     def parse_utc_datetime(cls, v):
-        print(f"UTC validator received: {v} (type: {type(v)})")
+        # print(f"UTC validator received: {v} (type: {type(v)})")
         if isinstance(v, str):
             if v.endswith('Z'):
                 dt_str = v[:-1]
                 result = datetime.fromisoformat(dt_str).replace(tzinfo=timezone.utc)
-                print(f"Parsed UTC Z '{v}' -> {result}")
+                # print(f"Parsed UTC Z '{v}' -> {result}")
                 return result
             elif '+' in v or '-' in v[-6:]:
                 result = datetime.fromisoformat(v)
-                print(f"Parsed UTC with offset -> {result}")
+                # print(f"Parsed UTC with offset -> {result}")
                 return result
             else:
                 # naive string for UTC fields: attach UTC
                 result = datetime.fromisoformat(v).replace(tzinfo=timezone.utc)
-                print(f"Parsed UTC naive -> {result}")
+                # print(f"Parsed UTC naive -> {result}")
                 return result
         return v
 
@@ -49,7 +49,7 @@ class SlotIn(BaseModel):
     @field_validator('start_dt_local', 'end_dt_local', mode='before')
     @classmethod
     def parse_local_datetime(cls, v):
-        print(f"Local validator received: {v} (type: {type(v)})")
+        # print(f"Local validator received: {v} (type: {type(v)})")
         if isinstance(v, str):
             # Strip trailing 'Z' if any and parse to naive
             s = v[:-1] if v.endswith('Z') else v
@@ -58,10 +58,10 @@ class SlotIn(BaseModel):
                 # Ensure naive (no tzinfo)
                 if dt.tzinfo is not None:
                     dt = dt.replace(tzinfo=None)
-                print(f"Parsed LOCAL naive -> {dt}")
+                # print(f"Parsed LOCAL naive -> {dt}")
                 return dt
             except Exception as ex:
-                print(f"Local parse failed for '{v}': {ex}")
+                # print(f"Local parse failed for '{v}': {ex}")
         return v
 
 
@@ -124,17 +124,17 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
     s = payload.start_dt_utc
     e = payload.end_dt_utc
     # Datetimes should already be UTC from the validator
-    print(f"Backend received: start={s} (tz={s.tzinfo}), end={e} (tz={e.tzinfo})")
-    print(f"Raw payload: start_dt_utc={payload.start_dt_utc}, end_dt_utc={payload.end_dt_utc}")
+    # print(f"Backend received: start={s} (tz={s.tzinfo}), end={e} (tz={e.tzinfo})")
+    # print(f"Raw payload: start_dt_utc={payload.start_dt_utc}, end_dt_utc={payload.end_dt_utc}")
 
     # 1) If the incoming payload fields are still strings with 'Z', force-parse them to aware UTC
     #    This must happen BEFORE any recomputation below.
     if isinstance(payload.start_dt_utc, str) and payload.start_dt_utc.endswith('Z'):
         s = datetime.fromisoformat(payload.start_dt_utc[:-1]).replace(tzinfo=timezone.utc)
-        print(f"Force parsed start: {s}")
+        # print(f"Force parsed start: {s}")
     if isinstance(payload.end_dt_utc, str) and payload.end_dt_utc.endswith('Z'):
         e = datetime.fromisoformat(payload.end_dt_utc[:-1]).replace(tzinfo=timezone.utc)
-        print(f"Force parsed end: {e}")
+        # print(f"Force parsed end: {e}")
 
     # 2) If client also sent local times and timezone, ALWAYS recompute UTC on the server
     try:
@@ -155,10 +155,10 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
 
             recomputed_s = s_local.astimezone(timezone.utc)
             recomputed_e = e_local.astimezone(timezone.utc)
-            print(f"Recomputed from local: start={recomputed_s}, end={recomputed_e}")
+            # print(f"Recomputed from local: start={recomputed_s}, end={recomputed_e}")
             s, e = recomputed_s, recomputed_e
     except Exception as ex:
-        print(f"Warning: failed to recompute UTC from local/timezone: {ex}")
+        # print(f"Warning: failed to recompute UTC from local/timezone: {ex}")
     if e <= s:
         raise HTTPException(status_code=400, detail="end_dt_utc must be after start_dt_utc")
     # Disallow past slots
@@ -183,8 +183,8 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
     e_local = payload.end_dt_local
     tz = payload.timezone
     
-    print(f"Backend storing: start={s} (tz={s.tzinfo}), end={e} (tz={e.tzinfo})")
-    print(f"Local times: start_local={s_local}, end_local={e_local}, timezone={tz}")
+    # print(f"Backend storing: start={s} (tz={s.tzinfo}), end={e} (tz={e.tzinfo})")
+    # print(f"Local times: start_local={s_local}, end_local={e_local}, timezone={tz}")
     
     slot = AvailabilitySlot(
         user_id=user_id, 
@@ -207,7 +207,7 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
             "timezone": slot.timezone,
         },
     )
-    print(f"Backend returning: start={slot.start_dt_utc} (tz={getattr(slot.start_dt_utc, 'tzinfo', None)})")
+    # print(f"Backend returning: start={slot.start_dt_utc} (tz={getattr(slot.start_dt_utc, 'tzinfo', None)})")
     # Best-effort dual write into availability_once tstzrange table (Postgres)
     try:
         stmt = text(
@@ -221,7 +221,7 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
         session.commit()
     except Exception as ex:
         # Do not fail request if the auxiliary table is missing
-        print(f"availability_once dual-write skipped: {ex}")
+        # print(f"availability_once dual-write skipped: {ex}")
     # Ensure timezone info is preserved in response
     start_out = slot.start_dt_utc
     end_out = slot.end_dt_utc
@@ -329,7 +329,7 @@ def update_slot(slot_id: int, payload: SlotUpdateIn, session=Depends(get_session
             slot.start_dt_local = s_local.replace(tzinfo=None)
             slot.end_dt_local = e_local.replace(tzinfo=None)
     except Exception as ex:
-        print(f"update_slot: failed to recompute from local/timezone: {ex}")
+        # print(f"update_slot: failed to recompute from local/timezone: {ex}")
     if e <= s:
         raise HTTPException(status_code=400, detail="end_dt_utc must be after start_dt_utc")
 
@@ -393,7 +393,7 @@ def update_slot(slot_id: int, payload: SlotUpdateIn, session=Depends(get_session
         session.exec(stmt2)
         session.commit()
     except Exception as ex:
-        print(f"availability_once update skipped: {ex}")
+        # print(f"availability_once update skipped: {ex}")
 
     # Normalize UTC for response
     start_out = slot.start_dt_utc if slot.start_dt_utc.tzinfo else slot.start_dt_utc.replace(tzinfo=timezone.utc)

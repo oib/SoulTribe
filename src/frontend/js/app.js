@@ -94,7 +94,7 @@ const bindClick = (id, handler) => {
       const result = new Date(utcTimestamp).toISOString().replace(/\.\d{3}Z$/, 'Z');
       return result;
     } catch (e) { 
-      console.error('buildUtcIsoFromTz error:', e);
+      // console.error('buildUtcIsoFromTz error:', e);
       return null; 
     }
   }
@@ -670,7 +670,7 @@ const bindClick = (id, handler) => {
             toast(`Language changed to ${langName}`, 'success');
           }
         } catch (error) {
-          console.error('Error changing language:', error);
+          // console.error('Error changing language:', error);
           selector.value = previousLang || 'en';
           toast('An error occurred while changing the language.', 'error');
         } finally {
@@ -688,7 +688,7 @@ const bindClick = (id, handler) => {
       });
       
     } catch (error) {
-      console.error('Error initializing language selector:', error);
+      // console.error('Error initializing language selector:', error);
       // Fallback to English if there's an error
       selector.innerHTML = '<option value="en" selected>EN - English</option>';
     }
