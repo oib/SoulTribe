@@ -78,3 +78,6 @@ src/public/
 # Backup files
 *.bak
 *.backup_*
+
+# IDE specific
+.windsurf/
