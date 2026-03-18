@@ -62,6 +62,7 @@ class SlotIn(BaseModel):
                 return dt
             except Exception as ex:
                 # print(f"Local parse failed for '{v}': {ex}")
+                pass
         return v
 
 
@@ -159,6 +160,7 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
             s, e = recomputed_s, recomputed_e
     except Exception as ex:
         # print(f"Warning: failed to recompute UTC from local/timezone: {ex}")
+        pass
     if e <= s:
         raise HTTPException(status_code=400, detail="end_dt_utc must be after start_dt_utc")
     # Disallow past slots
@@ -222,6 +224,7 @@ def create_slot(payload: SlotIn, session=Depends(get_session), user_id: int = De
     except Exception as ex:
         # Do not fail request if the auxiliary table is missing
         # print(f"availability_once dual-write skipped: {ex}")
+        pass
     # Ensure timezone info is preserved in response
     start_out = slot.start_dt_utc
     end_out = slot.end_dt_utc
@@ -330,6 +333,7 @@ def update_slot(slot_id: int, payload: SlotUpdateIn, session=Depends(get_session
             slot.end_dt_local = e_local.replace(tzinfo=None)
     except Exception as ex:
         # print(f"update_slot: failed to recompute from local/timezone: {ex}")
+        pass
     if e <= s:
         raise HTTPException(status_code=400, detail="end_dt_utc must be after start_dt_utc")
 
@@ -394,6 +398,7 @@ def update_slot(slot_id: int, payload: SlotUpdateIn, session=Depends(get_session
         session.commit()
     except Exception as ex:
         # print(f"availability_once update skipped: {ex}")
+        pass
 
     # Normalize UTC for response
     start_out = slot.start_dt_utc if slot.start_dt_utc.tzinfo else slot.start_dt_utc.replace(tzinfo=timezone.utc)

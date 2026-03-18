@@ -131,7 +131,8 @@ def interpret_profile(payload: InterpretIn, user_id: int = Depends(get_current_u
     }
     lang_label = LANG_LABELS.get(target_lang, target_lang)
     try:
-        // print("[interpret] target_lang=", target_lang, "label=", lang_label)
+        # print("[interpret] target_lang=", target_lang, "label=", lang_label)
+        pass
     except Exception:
         pass
     intro = [
@@ -245,11 +246,12 @@ def update_profile(
         try:
             # Avoid printing secrets; payload has no secrets
             # print("[profile.update] payload:", {
-                k: getattr(payload, k)
-                for k in [
-                    'display_name','birth_dt','birth_time_known','birth_place_name','birth_lat','birth_lon','birth_tz','live_tz','lang_primary','lang_secondary','languages','house_system'
-                ]
-            })
+            #     k: getattr(payload, k)
+            #     for k in [
+            #         'display_name','birth_dt','birth_time_known','birth_place_name','birth_lat','birth_lon','birth_tz','live_tz','lang_primary','lang_secondary','languages','house_system'
+            #     ]
+            # })
+            pass
         except Exception:
             pass
     except Exception:
@@ -275,10 +277,11 @@ def update_profile(
                 dt = dt.replace(tzinfo=tz)
                 try:
                     # print("[profile.update] interpret naive as local", {
-                        "naive": str(payload.birth_dt),
-                        "tz": payload.birth_tz,
-                        "utcoffset": str(dt.utcoffset()),
-                    })
+                    #     "naive": str(payload.birth_dt),
+                    #     "tz": payload.birth_tz,
+                    #     "utcoffset": str(dt.utcoffset()),
+                    # })
+                    pass
                 except Exception:
                     pass
             else:
@@ -286,18 +289,20 @@ def update_profile(
                 dt = dt.replace(tzinfo=timezone.utc)
                 try:
                     # print("[profile.update] naive with no tz provided; assuming UTC", {
-                        "naive": str(payload.birth_dt)
-                    })
+                    #     "naive": str(payload.birth_dt)
+                    # })
+                    pass
                 except Exception:
                     pass
         # Convert to UTC
         dt_utc = dt.astimezone(timezone.utc)
         try:
             # print("[profile.update] computed birth_dt_utc", {
-                "local": str(dt),
-                "birth_tz": payload.birth_tz,
-                "utc": str(dt_utc)
-            })
+            #     "local": str(dt),
+            #     "birth_tz": payload.birth_tz,
+            #     "utc": str(dt_utc)
+            # })
+            pass
         except Exception:
             pass
         if not payload.birth_time_known:
@@ -329,12 +334,12 @@ def update_profile(
     if prof.birth_dt_utc is not None:
         try:
             # print("[profile.update] recomputing radix…", {
-                "birth_dt_utc": str(prof.birth_dt_utc),
-                "birth_time_known": prof.birth_time_known,
-                "lat": prof.birth_lat,
-                "lon": prof.birth_lon,
-                "house_system": prof.house_system,
-            })
+            #     "birth_dt_utc": str(prof.birth_dt_utc),
+            #     "birth_time_known": prof.birth_time_known,
+            #     "lat": prof.birth_lat,
+            #     "lon": prof.birth_lon,
+            #     "house_system": prof.house_system,
+            # })
             rjson = compute_radix_json(
                 birth_dt_utc=prof.birth_dt_utc,
                 birth_time_known=prof.birth_time_known,
