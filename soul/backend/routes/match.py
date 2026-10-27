@@ -106,6 +106,73 @@ _PERSPECTIVE_LABELS: Dict[str, tuple[str, str]] = {
 }
 
 
+def _strength(v: Any) -> Optional[str]:
+    if not isinstance(v, (int, float)) or v <= 0:
+        return None
+    if v >= 10:
+        return "strong"
+    if v >= 5:
+        return "noticeable"
+    return "subtle"
+
+
+def _readable_facts(bd: Dict[str, Any]) -> List[str]:
+    """Convert a scoring breakdown into human-readable facts for the LLM prompt.
+
+    Internal keys like ``same_sun_element`` or ``A.Sun→B.house`` must never reach
+    the model verbatim — it tends to copy them into the generated comment.
+    """
+    if not isinstance(bd, dict):
+        return []
+    facts: List[str] = []
+    core = bd.get("core") or {}
+    core_labels = {
+        "Sun-Sun": "Sun–Sun resonance",
+        "Moon-Moon": "Moon–Moon emotional resonance",
+        "Sun-Moon(A→B)": "Sun–Moon complement (A's Sun with B's Moon)",
+        "Sun-Moon(B→A)": "Sun–Moon complement (B's Sun with A's Moon)",
+    }
+    for k, label in core_labels.items():
+        s = _strength(core.get(k))
+        if s:
+            facts.append(f"{s} {label}")
+    secondary = bd.get("secondary") or {}
+    if _strength(secondary.get("Venus→Mars")):
+        facts.append("romantic chemistry (A's Venus with B's Mars)")
+    if _strength(secondary.get("Mars→Venus")):
+        facts.append("romantic chemistry (A's Mars with B's Venus)")
+    if _strength(secondary.get("same_sun_element")):
+        facts.append("both Suns share the same element")
+    houses = bd.get("houses") or {}
+    house_labels = {
+        "A.Sun→B.house": "A's Sun falls in B's {n}. house",
+        "A.Moon→B.house": "A's Moon falls in B's {n}. house",
+        "B.Sun→A.house": "B's Sun falls in A's {n}. house",
+        "B.Moon→A.house": "B's Moon falls in A's {n}. house",
+    }
+    for k, tpl in house_labels.items():
+        v = houses.get(k)
+        if isinstance(v, int) and v > 0:
+            facts.append(tpl.format(n=v))
+    sm = houses.get("sun_modality") or {}
+    if _strength(sm.get("bonus")):
+        facts.append("both Suns share the same house modality")
+    angle_labels = {
+        "Sun(A)↔ASC(B)": "A's Sun aspects B's Ascendant",
+        "Sun(B)↔ASC(A)": "B's Sun aspects A's Ascendant",
+        "Moon(A)↔ASC(B)": "A's Moon aspects B's Ascendant",
+        "Moon(B)↔ASC(A)": "B's Moon aspects A's Ascendant",
+        "ASC↔ASC": "the Ascendants are aligned",
+        "Sun(A)↔MC(B)": "A's Sun aspects B's Midheaven",
+        "Sun(B)↔MC(A)": "B's Sun aspects A's Midheaven",
+        "MC↔MC": "the Midheavens are aligned",
+    }
+    for k, label in angle_labels.items():
+        if _strength((bd.get("angles") or {}).get(k)):
+            facts.append(label)
+    return facts
+
+
 def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str]) -> tuple[Optional[str], Optional[str], List[str]]:
     """Return (comment_text, lang_code, available_langs_for_ui)."""
     if not match:
@@ -737,13 +804,15 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
         pass
 
     lang_name = LANG_DISPLAY.get(resp_lang, resp_lang)
+    facts = _readable_facts(bd_for_ai)
+    facts_str = "; ".join(facts) if facts else "no strong shared aspects"
     seq = [
         f"RESPONSE LANGUAGE CODE: {resp_lang}",
         f"Please respond ONLY in {lang_name} ({resp_lang}). Do not use any other language.",
-        f"Perspective: you are side {perspective}",
-        # Provide only the raw breakdown data (without language) to ground the analysis
-        f"Breakdown (languages removed): {json.dumps(bd_for_ai, ensure_ascii=False)}",
-        "Write a friendly, helpful interpretation based only on chart/radix aspects (core, houses, angles). Do not discuss languages. Do not mention scores, points, or the word 'match'. Do not include section headings or bullet lists; write continuous prose. Address 'you' and refer to the other simply as 'the other person'. Do not refer to A or B.",
+        f"Perspective: you are side {perspective} (\"you\"); the other person is side {'B' if perspective == 'A' else 'A'} (\"the other person\").",
+        # Readable facts (no internal keys, no scores) to ground the analysis
+        f"Compatibility facts: {facts_str}",
+        "Write a friendly, helpful interpretation based only on these chart facts. Do not discuss languages. Do not mention scores, points, or the word 'match'. Do not include section headings or bullet lists; write continuous prose. Address 'you' and refer to the other simply as 'the other person'. Do not refer to A or B, and do not quote the fact labels verbatim.",
     ]
 
     # Call Node wrapper that uses dev/ollama.js to get a comment
