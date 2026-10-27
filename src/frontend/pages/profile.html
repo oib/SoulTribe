@@ -131,10 +131,13 @@
       <div class="row">
         <button type="button" id="btn-birth-geolocate" class="button secondary" data-i18n="profile.location.use_my_location">Use my location</button>
       </div>
-      <div class="row">
-        <input id="birthLat" type="number" min="-90" max="90" aria-label="Birth latitude" data-i18n-aria-label="profile.birth.lat_placeholder" step="any" placeholder="Latitude (e.g., 48.2082)" data-i18n-placeholder="profile.birth.lat_placeholder" required />
-        <input id="birthLon" type="number" min="-180" max="180" aria-label="Birth longitude" data-i18n-aria-label="profile.birth.lon_placeholder" step="any" placeholder="Longitude (e.g., 16.3738)" data-i18n-placeholder="profile.birth.lon_placeholder" required />
-      </div>
+      <details class="advanced-row">
+        <summary class="small" data-i18n="profile.advanced">Advanced</summary>
+        <div class="row">
+          <input id="birthLat" type="number" min="-90" max="90" aria-label="Birth latitude" data-i18n-aria-label="profile.birth.lat_placeholder" step="any" placeholder="Latitude (e.g., 48.2082)" data-i18n-placeholder="profile.birth.lat_placeholder" />
+          <input id="birthLon" type="number" min="-180" max="180" aria-label="Birth longitude" data-i18n-aria-label="profile.birth.lon_placeholder" step="any" placeholder="Longitude (e.g., 16.3738)" data-i18n-placeholder="profile.birth.lon_placeholder" />
+        </div>
+      </details>
       <div class="row small" data-i18n="profile.birth.instructions">Set your birth date and location to compute your radix. If you don't know the exact time, leave the time field empty and we will use a noon fallback.</div>
       <div class="row small" data-i18n="profile.note">Your profile is used to personalize matches and time zone display.</div>
     </fieldset>

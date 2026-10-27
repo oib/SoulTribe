@@ -345,8 +345,8 @@
     "intro": "Mit bestehendem Konto anmelden oder neues registrieren.",
     "email": "E-Mail",
     "password": "Passwort",
-    "confirm_password": "Passwort bestätigen (für Registrierung)",
-    "display_name": "Anzeigename (für Registrierung)",
+    "confirm_password": "Passwort bestätigen",
+    "display_name": "Anzeigename",
     "register": "Registrieren",
     "login": "Anmelden",
     "redirect_hint": "Nach dem Login wirst du zu deinem Dashboard weitergeleitet.",
@@ -360,7 +360,8 @@
     "password_mismatch": "Die Passwörter stimmen nicht überein.",
     "required_fields": "E-Mail, Passwort und Anzeigename sind erforderlich.",
     "registration_success": "Konto erstellt. Bitte bestätige deine E-Mail.",
-    "login_required": "E-Mail und Passwort sind erforderlich."
+    "login_required": "E-Mail und Passwort sind erforderlich.",
+    "forgot_password": "Passwort vergessen?"
   },
   "imprint": {
     "title": "Impressum"
@@ -467,7 +468,8 @@
     "page_title": "Profil • SoulTribe.chat",
     "delete_login_again": "Bitte melde dich erneut an, bevor du dein Konto löschst",
     "account_deleted": "Dein Konto wurde gelöscht.",
-    "delete_failed": "Konto konnte nicht gelöscht werden"
+    "delete_failed": "Konto konnte nicht gelöscht werden",
+    "advanced": "Erweitert"
   },
   "notifications": {
     "language_set_to": "Sprache gesetzt auf"

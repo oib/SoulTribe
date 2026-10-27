@@ -20,8 +20,29 @@
 
   // Login/Auth specific event handlers
   document.addEventListener('DOMContentLoaded', () => {
+    // Auth mode: 'login' shows only email+password+login; 'register' reveals
+    // display name + confirm password and switches the submit action.
+    let authMode = 'login';
+    const setAuthMode = (mode) => {
+      authMode = mode === 'register' ? 'register' : 'login';
+      const isReg = authMode === 'register';
+      try { $('registerFields')?.classList.toggle('hidden', !isReg); } catch {}
+      try { $('btn-login')?.classList.toggle('hidden', isReg); } catch {}
+      try { $('btn-register')?.classList.toggle('hidden', !isReg); } catch {}
+      try { $('tab-login')?.classList.toggle('active', !isReg); } catch {}
+      try { $('tab-register')?.classList.toggle('active', isReg); } catch {}
+      try { $('tab-login')?.setAttribute('aria-selected', String(!isReg)); } catch {}
+      try { $('tab-register')?.setAttribute('aria-selected', String(isReg)); } catch {}
+      try { $('password')?.setAttribute('autocomplete', isReg ? 'new-password' : 'current-password'); } catch {}
+      try { $('passwordConfirm') && ($('passwordConfirm').required = isReg); } catch {}
+      try { $('displayName') && ($('displayName').required = isReg); } catch {}
+    };
+    bindClick("tab-login", () => setAuthMode('login'));
+    bindClick("tab-register", () => setAuthMode('register'));
+    setAuthMode('login');
+
     // Register (on login page)
-    bindClick("btn-register", async () => {
+    const doRegister = async () => {
       try {
         const email = $("email")?.value.trim();
         const password = $("password")?.value;
@@ -60,10 +81,12 @@
           }
         } catch {}
       }
-    });
+    };
+    bindClick("btn-register", doRegister);
 
     // Reset password request handler
-    bindClick("btn-reset-request", async () => {
+    bindClick("btn-reset-request", async (e) => {
+      try { if (e && e.preventDefault) e.preventDefault(); } catch {}
       try {
         const email = $("email")?.value.trim();
         if (!email) return toast(SimpleI18n.t('login.enter_email_first'), "error");
@@ -98,18 +121,18 @@
       }
     });
 
-    // Login button handler
-    bindClick("btn-login", async () => {
+    // Login action (shared by button click and form submit)
+    const doLogin = async () => {
       try {
         const email = $("email")?.value.trim();
         const password = $("password")?.value;
         if (!email || !password) return toast(SimpleI18n.t('login.login_required'), "error");
-        
+
         const res = await api("/api/auth/login", {
           method: "POST",
           body: { email, password }
         });
-        
+
         if (res.access_token) {
           setToken(res.access_token);
           if (res.refresh_token) setRefreshToken(res.refresh_token);
@@ -122,7 +145,7 @@
           const detail = e && e.data && e.data.detail ? e.data.detail : null;
           let msg = detail ? (typeof detail === 'string' ? detail : (detail[0]?.msg || 'Login failed'))
                           : (e.status === 401 ? 'Invalid credentials' : 'Login failed');
-          
+
           // Show resend verification link if email exists but is not verified
           if (e.status === 401 && detail === 'Email not verified') {
             const email = $("email")?.value.trim();
@@ -130,7 +153,6 @@
               const resendContainer = document.getElementById('resend-verification-container');
               if (resendContainer) {
                 resendContainer.classList.remove('hidden');
-                // Pre-fill the email in the resend link
                 const resendLink = document.getElementById('btn-resend-verification');
                 if (resendLink) {
                   resendLink.dataset.email = email;
@@ -141,7 +163,7 @@
           toast(msg, 'error');
         } catch {}
       }
-    });
+    };
 
     // Logout button handler
     bindClick("btn-logout", () => {
@@ -158,32 +180,8 @@
     if (form) {
       form.addEventListener("submit", async (ev) => {
         ev.preventDefault();
-        try {
-          const email = $("email").value.trim();
-          const password = $("password").value;
-          const data = await api("/api/auth/login", { method: "POST", body: { email, password } });
-          setToken(data.access_token);
-          if (data.refresh_token) setRefreshToken(data.refresh_token);
-          show("login", data);
-          // Clear password and strip query params to avoid auto-login loops
-          $("password").value = "";
-          try { history.replaceState(null, "", window.location.pathname); } catch {}
-          // Redirect to dashboard when logging in from login page
-          try {
-            const path = String(window.location.pathname || "");
-            if (path.endsWith("/login.html") || path === "/login") {
-              window.location.href = "/dashboard.html";
-            }
-          } catch {}
-        } catch (e) {
-          show("login:ERROR", e);
-          try {
-            const detail = e && e.data && e.data.detail ? e.data.detail : null;
-            const msg = detail ? (typeof detail === 'string' ? detail : (detail[0]?.msg || 'Login failed'))
-                               : (e.status === 401 ? 'Invalid credentials' : 'Login failed');
-            toast(msg, 'error');
-          } catch {}
-        }
+        if (authMode === 'register') { await doRegister(); return; }
+        await doLogin();
       });
     }
 

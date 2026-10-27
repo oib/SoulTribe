@@ -106,6 +106,18 @@ window.SimpleI18n = {
   },
 
   async init() {
+    // Deduplicate: several scripts call init() (components.js, page scripts).
+    // Without a guard each one fetches the same translation files again.
+    if (this._initPromise) return this._initPromise;
+    this._initPromise = this._doInit();
+    try {
+      return await this._initPromise;
+    } finally {
+      this._initPromise = null;
+    }
+  },
+
+  async _doInit() {
     this._ready = false;
     // Load saved language or detect from browser
     const saved = localStorage.getItem('selectedLanguage');
@@ -187,22 +199,33 @@ window.SimpleI18n = {
       this.applyLandingReadMore(lang);
       return true;
     }
-    
+
     // Check if we know this language is not available
     if (this.availableLanguages[lang] === false) {
       return false;
     }
-    
+
+    // Dedupe concurrent loads (init() + changeLanguage() can race)
+    this._inflight = this._inflight || {};
+    if (this._inflight[lang]) return this._inflight[lang];
+    this._inflight[lang] = this._fetchTranslations(lang);
+    try {
+      return await this._inflight[lang];
+    } finally {
+      delete this._inflight[lang];
+    }
+  },
+
+  async _fetchTranslations(lang) {
     try {
       // Always add cache-busting to avoid stale JSON (even behind a Service Worker)
       const base = `/i18n/locales/${lang}/translation.json`;
       const ver = (typeof window !== 'undefined' && window.APP_BUILD_VERSION) ? window.APP_BUILD_VERSION : Date.now();
       const url = `${base}?v=${encodeURIComponent(ver)}`;
       
-      const response = await fetch(url, { 
+      const response = await fetch(url, {
         headers: { 'Accept': 'application/json' },
-        cache: 'no-cache', // Ensure we're not getting a cached version
-        // Add a timeout to avoid hanging on missing files
+        // URL carries ?v=<build> — a new deploy is a new URL, so normal caching is safe
         signal: AbortSignal.timeout ? AbortSignal.timeout(5000) : null
       });
       

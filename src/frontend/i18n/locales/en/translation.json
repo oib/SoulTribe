@@ -382,7 +382,8 @@
     "page_title": "Profile • SoulTribe.chat",
     "delete_login_again": "Please log in again before deleting your account",
     "account_deleted": "Your account has been deleted.",
-    "delete_failed": "Failed to delete account"
+    "delete_failed": "Failed to delete account",
+    "advanced": "Advanced"
   },
   "radix": {
     "title": "Your Radix",
@@ -477,8 +478,8 @@
     "intro": "Login with an existing account or register a new one.",
     "email": "email",
     "password": "password",
-    "confirm_password": "confirm password (for register)",
-    "display_name": "display name (for register)",
+    "confirm_password": "confirm password",
+    "display_name": "display name",
     "register": "Register",
     "login": "Login",
     "redirect_hint": "After login you will be redirected to your dashboard.",
@@ -492,7 +493,8 @@
     "password_mismatch": "Passwords do not match.",
     "required_fields": "Email, password, and display name are required.",
     "registration_success": "Account created. Please verify your email.",
-    "login_required": "Email and password are required."
+    "login_required": "Email and password are required.",
+    "forgot_password": "Forgot password?"
   },
   "nav": {
     "home": "Home",

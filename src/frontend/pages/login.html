@@ -30,22 +30,27 @@
   <div class="container">
     <section class="card">
       <h2 data-i18n="login.title">Welcome</h2>
-      <p class="muted" data-i18n="login.intro">Login with an existing account or register a new one.</p>
+      <div class="auth-tabs" role="tablist" aria-label="Account actions">
+        <button type="button" id="tab-login" class="auth-tab active" role="tab" aria-selected="true" data-i18n="login.login">Login</button>
+        <button type="button" id="tab-register" class="auth-tab" role="tab" aria-selected="false" data-i18n="login.register">Register</button>
+      </div>
       <form id="authForm" autocomplete="on" class="auth-form">
         <div class="form-fields">
           <label class="visually-hidden" for="email">Email</label>
           <input id="email" name="email" placeholder="email" data-i18n-placeholder="login.email" type="email" autocomplete="email" inputmode="email" required />
-          <label class="visually-hidden" for="displayName">Display name</label>
-          <input id="displayName" name="display_name" placeholder="display name (for register)" data-i18n-placeholder="login.display_name" type="text" autocomplete="nickname" />
           <label class="visually-hidden" for="password">Password</label>
-          <input id="password" name="password" placeholder="password" data-i18n-placeholder="login.password" type="password" autocomplete="current-password" />
-          <label class="visually-hidden" for="passwordConfirm">Confirm password</label>
-          <input id="passwordConfirm" name="password_confirm" placeholder="confirm password (for register)" data-i18n-placeholder="login.confirm_password" type="password" autocomplete="new-password" />
+          <input id="password" name="password" placeholder="password" data-i18n-placeholder="login.password" type="password" autocomplete="current-password" required />
+          <div id="registerFields" class="form-fields hidden">
+            <label class="visually-hidden" for="displayName">Display name</label>
+            <input id="displayName" name="display_name" placeholder="display name" data-i18n-placeholder="login.display_name" type="text" autocomplete="nickname" />
+            <label class="visually-hidden" for="passwordConfirm">Confirm password</label>
+            <input id="passwordConfirm" name="password_confirm" placeholder="confirm password" data-i18n-placeholder="login.confirm_password" type="password" autocomplete="new-password" />
+          </div>
         </div>
         <div class="form-actions">
-          <button type="button" id="btn-register" class="secondary" data-i18n="login.register">Register</button>
           <button type="submit" id="btn-login" data-i18n="login.login">Login</button>
-          <button type="button" id="btn-reset-request" class="secondary" data-i18n="login.reset_password">Reset Password</button>
+          <button type="submit" id="btn-register" class="hidden" data-i18n="login.register">Register</button>
+          <a href="#" id="btn-reset-request" class="link-muted" data-i18n="login.forgot_password">Forgot password?</a>
           <div id="resend-verification-container" class="hidden">
             <span data-i18n="login.email_not_verified">Email not verified? </span>
             <a href="#" id="btn-resend-verification" data-i18n="login.resend_verification">Resend verification email</a>

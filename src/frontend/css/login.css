@@ -54,3 +54,11 @@
   display: none;
 }
 .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+
+/* Auth mode tabs (login / register) */
+.auth-tabs { display: flex; gap: 6px; margin-bottom: 14px; border-bottom: 1px solid rgba(148,163,184,.25); }
+.auth-tab { background: none; border: 0; border-bottom: 2px solid transparent; color: #94a3b8; padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer; margin-bottom: -1px; }
+.auth-tab:hover { color: #e2e8f0; }
+.auth-tab.active { color: #fff; border-bottom-color: #4CAF50; }
+.link-muted { color: #94a3b8; font-size: 13px; text-decoration: none; }
+.link-muted:hover { color: #e2e8f0; text-decoration: underline; }
