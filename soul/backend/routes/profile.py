@@ -6,6 +6,7 @@ import traceback
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 import subprocess, json
+from pathlib import Path
 from sqlmodel import select
 from sqlalchemy import delete, or_
 
