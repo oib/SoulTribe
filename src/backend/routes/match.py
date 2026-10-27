@@ -10,16 +10,16 @@ import hashlib
 import json
 from pathlib import Path
 
-from soul.backend.services.scoring import score_pair
-from soul.backend.services.availability import intersect_hourly_slots
+from src.backend.services.scoring import score_pair
+from src.backend.services.availability import intersect_hourly_slots
 from sqlalchemy import text
-from soul.backend.db import get_session
-from soul.backend.models import Radix, Profile, User, AvailabilitySlot
-from soul.backend.models import Match
-from soul.backend.services.jwt_auth import get_current_user_id
-from soul.backend.services.rate_limit import rate_limit
-from soul.backend.services.audit import log_match_annotation
-from soul.backend.services.redis_client import cache_get, cache_set
+from src.backend.db import get_session
+from src.backend.models import Radix, Profile, User, AvailabilitySlot
+from src.backend.models import Match
+from src.backend.services.jwt_auth import get_current_user_id
+from src.backend.services.rate_limit import rate_limit
+from src.backend.services.audit import log_match_annotation
+from src.backend.services.redis_client import cache_get, cache_set
 import re
 import subprocess
 

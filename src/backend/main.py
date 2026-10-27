@@ -5,14 +5,14 @@ from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from soul.backend.db import init_db
-from soul.backend.routes import profile as profile_routes
-from soul.backend.routes import match as match_routes
-from soul.backend.routes import auth as auth_routes
-from soul.backend.routes import meetup as meetup_routes
-from soul.backend.routes import availability as availability_routes
-from soul.backend.routes import timezone as timezone_routes
-from soul.backend.routes import admin as admin_routes
+from src.backend.db import init_db
+from src.backend.routes import profile as profile_routes
+from src.backend.routes import match as match_routes
+from src.backend.routes import auth as auth_routes
+from src.backend.routes import meetup as meetup_routes
+from src.backend.routes import availability as availability_routes
+from src.backend.routes import timezone as timezone_routes
+from src.backend.routes import admin as admin_routes
 
 
 class ProxyHeadersMiddleware(BaseHTTPMiddleware):

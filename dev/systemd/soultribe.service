@@ -44,7 +44,7 @@ ExecStart=/home/oib/windsurf/soultribe.chat/.venv/bin/gunicorn \
   --capture-output \
   --enable-stdio-inheritance \
   --chdir /home/oib/windsurf/soultribe.chat \
-  soul.backend.main:app
+  src.backend.main:app
 
 # Logging
 StandardOutput=journal

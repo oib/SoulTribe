@@ -8,7 +8,7 @@ from typing import Optional, Tuple
 
 from sqlmodel import Session, select
 
-from soul.backend.models import RefreshToken, User
+from src.backend.models import RefreshToken, User
 
 REFRESH_TOKEN_EXPIRE_DAYS = int(os.getenv("REFRESH_TOKEN_EXPIRE_DAYS", "14"))
 REFRESH_TOKEN_BYTES = int(os.getenv("REFRESH_TOKEN_BYTES", "48"))

@@ -35,4 +35,4 @@ exec gunicorn \
     --worker-tmp-dir /dev/shm \
     --reuse-port \
     --chdir "$PROJECT_ROOT" \
-    soul.backend.main:app
+    src.backend.main:app

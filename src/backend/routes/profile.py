@@ -10,8 +10,8 @@ from pathlib import Path
 from sqlmodel import select
 from sqlalchemy import delete, or_
 
-from soul.backend.db import get_session
-from soul.backend.models import (
+from src.backend.db import get_session
+from src.backend.models import (
     User,
     Profile,
     Radix,
@@ -21,10 +21,10 @@ from soul.backend.models import (
     EmailVerificationToken,
     PasswordResetToken,
 )
-from soul.backend.schemas import ProfileUpdateIn, ProfileOut
-from soul.backend.services.radix import compute_radix_json
-from soul.backend.services.jwt_auth import get_current_user_id
-from soul.backend.services.activity_log import log_event
+from src.backend.schemas import ProfileUpdateIn, ProfileOut
+from src.backend.services.radix import compute_radix_json
+from src.backend.services.jwt_auth import get_current_user_id
+from src.backend.services.activity_log import log_event
 
 _OLLAMA_CLI = str(Path(__file__).resolve().parents[1] / "services" / "llm" / "ollama_cli.mjs")
 

@@ -9,14 +9,14 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from sqlmodel import select
 
-from soul.backend.db import get_session
-from soul.backend.models import Match, Meetup, Profile, User
-from soul.backend.services.jitsi import make_room_url
-from soul.backend.services.jwt_auth import get_current_user_id
-from soul.backend.services.rate_limit import rate_limit
-from soul.backend.services.audit import log_meetup_event
-from soul.backend.services.email import send_email
-from soul.backend.services.email_templates import (
+from src.backend.db import get_session
+from src.backend.models import Match, Meetup, Profile, User
+from src.backend.services.jitsi import make_room_url
+from src.backend.services.jwt_auth import get_current_user_id
+from src.backend.services.rate_limit import rate_limit
+from src.backend.services.audit import log_meetup_event
+from src.backend.services.email import send_email
+from src.backend.services.email_templates import (
     SUPPORTED_EMAIL_LANGS,
     get_cancel_copy,
     get_confirm_copy,
@@ -24,7 +24,7 @@ from soul.backend.services.email_templates import (
     get_propose_copy,
     get_unconfirm_copy,
 )
-from soul.backend.services.activity_log import log_event
+from src.backend.services.activity_log import log_event
 
 router = APIRouter(prefix="/api/meetup", tags=["meetup"])
 logger = logging.getLogger("soultribe.meetup")

@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 
 from sqlmodel import select
 
-from soul.backend.models import User, Profile, AvailabilitySlot
+from src.backend.models import User, Profile, AvailabilitySlot
 
 BOT_EMAIL_PATTERN = "gen%@soultribe.chat"
 

@@ -22,7 +22,7 @@ ExecStart=/home/%i/windsurf/soultribe.chat/.venv/bin/gunicorn \
   --timeout 60 \
   --access-logfile - \
   --error-logfile - \
-  soul.backend.main:app
+  src.backend.main:app
 
 Restart=always
 RestartSec=3

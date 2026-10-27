@@ -10,7 +10,7 @@ SoulTribe is a web application that connects people for meaningful conversations
 
 ```
 soultribe/
-├── soul/                      # Main application source code
+├── src/                      # Main application source code
 │   ├── backend/              # Python backend services
 │   │   ├── routes/           # API route handlers
 │   │   ├── services/         # Business logic services
@@ -114,7 +114,7 @@ soultribe/
 - Environment variables in `.env`
 - Database settings in `alembic.ini`
 - Server configuration in `dev/config/`
-- Translation files in `soul/frontend/i18n/`
+- Translation files in `src/frontend/i18n/`
 
 ## Security Considerations
 

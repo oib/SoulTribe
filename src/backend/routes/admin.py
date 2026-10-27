@@ -7,10 +7,10 @@ import os
 from sqlmodel import select, func
 from sqlalchemy import delete
 
-from soul.backend.db import get_session
+from src.backend.db import get_session
 from sqlmodel import Session
-from soul.backend.models import User, Profile, Radix, AvailabilitySlot, Meetup, Match, EmailVerificationToken, PasswordResetToken
-from soul.backend.services.jwt_auth import get_current_user_id
+from src.backend.models import User, Profile, Radix, AvailabilitySlot, Meetup, Match, EmailVerificationToken, PasswordResetToken
+from src.backend.services.jwt_auth import get_current_user_id
 
 router = APIRouter(prefix="/api/admin", tags=["admin"]) 
 

@@ -5,7 +5,7 @@ import logging
 from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 
-from soul.backend.models import Match, Meetup
+from src.backend.models import Match, Meetup
 
 logger = logging.getLogger("audit")
 

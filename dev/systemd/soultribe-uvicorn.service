@@ -15,7 +15,7 @@ WorkingDirectory=/home/%i/windsurf/soultribe.chat
 # Load environment variables (expects DATABASE_URL, SECRET_KEY, etc.)
 EnvironmentFile=/home/%i/windsurf/soultribe.chat/.env
 # Activate virtualenv uvicorn
-ExecStart=/home/%i/windsurf/soultribe.chat/.venv/bin/uvicorn soul.backend.main:app --host 0.0.0.0 --port 8001 --workers 2
+ExecStart=/home/%i/windsurf/soultribe.chat/.venv/bin/uvicorn src.backend.main:app --host 0.0.0.0 --port 8001 --workers 2
 Restart=always
 RestartSec=3
 # Open file limit (optional)

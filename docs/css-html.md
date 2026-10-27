@@ -9,7 +9,7 @@ The project uses 11 CSS files with various class patterns. Some classes are purp
 ## CSS Files Structure
 
 ```
-soul/frontend/css/
+src/frontend/css/
 ├── about-guides.css    # Documentation pages
 ├── admin-dev.css       # Admin development tools
 ├── admin-stats.css     # Admin statistics

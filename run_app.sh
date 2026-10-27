@@ -35,4 +35,4 @@ echo "[$(date)] Starting Gunicorn..." >> "$APP_LOG"
 exec gunicorn -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8001 \
   --log-level debug \
   --log-file "$GUNICORN_LOG" \
-  soul.backend.main:app >> "$APP_LOG" 2>&1
+  src.backend.main:app >> "$APP_LOG" 2>&1

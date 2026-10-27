@@ -10,24 +10,24 @@ import secrets
 from argon2 import PasswordHasher
 import os
 
-from soul.backend.db import get_session
-from soul.backend.models import User, Profile, Radix, EmailVerificationToken, PasswordResetToken
-from soul.backend.services.radix import compute_radix_json
-from soul.backend.services.jwt_auth import create_access_token
-from soul.backend.services.jwt_auth import get_current_user_id
-from soul.backend.services.email import send_email
+from src.backend.db import get_session
+from src.backend.models import User, Profile, Radix, EmailVerificationToken, PasswordResetToken
+from src.backend.services.radix import compute_radix_json
+from src.backend.services.jwt_auth import create_access_token
+from src.backend.services.jwt_auth import get_current_user_id
+from src.backend.services.email import send_email
 from fastapi import Request
-from soul.backend.routes import admin as admin_routes
-from soul.backend.services.rate_limit import rate_limit
-from soul.backend.services.auth_tokens import (
+from src.backend.routes import admin as admin_routes
+from src.backend.services.rate_limit import rate_limit
+from src.backend.services.auth_tokens import (
     mint_refresh_token,
     get_refresh_token_record,
     revoke_refresh_token,
     purge_old_refresh_tokens,
     is_refresh_token_active,
 )
-from soul.backend.services.bot_slot_scheduler import schedule_random_bot_slot
-from soul.backend.services.activity_log import log_event
+from src.backend.services.bot_slot_scheduler import schedule_random_bot_slot
+from src.backend.services.activity_log import log_event
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 ph = PasswordHasher()
@@ -57,7 +57,7 @@ def _client_ip(request: Request | None) -> str | None:
     return None
 
 
-from soul.backend.schemas import _DISPLAY_NAME_FORBIDDEN_RE
+from src.backend.schemas import _DISPLAY_NAME_FORBIDDEN_RE
 
 
 class RegisterIn(BaseModel):

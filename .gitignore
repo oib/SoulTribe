@@ -73,7 +73,7 @@ htmlcov/
 
 # Build artifacts (already includes many, keep additions here)
 site/
-soul/public/
+src/public/
 
 # Backup files
 *.bak

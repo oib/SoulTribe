@@ -84,7 +84,7 @@ Visit `http://localhost:8000` to access the application.
 
 ```
 soultribe/
-├── soul/
+├── src/
 │   ├── backend/          # Python FastAPI backend
 │   ├── frontend/         # JavaScript, CSS, and static files
 │   └── public/           # Public HTML pages

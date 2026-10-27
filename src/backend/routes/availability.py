@@ -8,10 +8,10 @@ from pydantic import BaseModel, field_validator
 from sqlmodel import select
 from sqlalchemy import text
 
-from soul.backend.db import get_session
-from soul.backend.models import AvailabilitySlot
-from soul.backend.services.jwt_auth import get_current_user_id
-from soul.backend.services.activity_log import log_event
+from src.backend.db import get_session
+from src.backend.models import AvailabilitySlot
+from src.backend.services.jwt_auth import get_current_user_id
+from src.backend.services.activity_log import log_event
 
 router = APIRouter(prefix="/api/availability", tags=["availability"])
 

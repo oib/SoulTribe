@@ -5,7 +5,7 @@ async function main() {
   try {
     const arg = process.argv[2];
     if (!arg) {
-      console.error('Usage: node soul/backend/services/llm/ollama_cli.mjs <json_sequence_array>');
+      console.error('Usage: node src/backend/services/llm/ollama_cli.mjs <json_sequence_array>');
       process.exit(2);
     }
     let seq;

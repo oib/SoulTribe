@@ -58,9 +58,9 @@ Last updated: 2025-11-02
 - `routes/match.py /annotate` calls the Node wrapper and persists the reply in `Match.comment`.
 
 ## Frontend (Static)
-- Source lives under `soul/frontend/{pages,css,js,i18n,assets}`.
-- Built bundle is generated into `soul/frontend/public/` via `npm run build-frontend` or `make build-frontend`.
-- Mounted at `/` from `soul/frontend/public/`.
+- Source lives under `src/frontend/{pages,css,js,i18n,assets}`.
+- Built bundle is generated into `src/frontend/public/` via `npm run build-frontend` or `make build-frontend`.
+- Mounted at `/` from `src/frontend/public/`.
 - Landing page is `index.html` (formerly `welcome.html`).
 - Topbar includes an Admin button shown only for admins/localhost.
 - Admin pages are under `/admin`: `admin/stats.html`, `admin/dev.html` and perform a client‑side guard (`/api/admin/ping`) on load.
@@ -137,6 +137,6 @@ Last updated: 2025-11-02
 
 ## Deployment & Services
 - Dev: `make dev` runs Gunicorn with reload on port 8001.
-- Frontend build: `make build-frontend` (or `npm run build-frontend`) generates the static bundle into `soul/frontend/public/`.
+- Frontend build: `make build-frontend` (or `npm run build-frontend`) generates the static bundle into `src/frontend/public/`.
 - Systemd (system‑wide): `dev/soultribe-gunicorn.service` → `/etc/systemd/system/soultribe-gunicorn@.service`.
 - Systemd (user): `dev/soultribe-gunicorn.user.service`.

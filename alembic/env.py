@@ -6,7 +6,7 @@ from sqlalchemy import engine_from_config, pool
 from alembic import context
 from sqlmodel import SQLModel
 
-# Add repo root to Python path so we can import the soul package
+# Add repo root to Python path so we can import the src package
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 # this is the Alembic Config object, which provides
@@ -30,7 +30,7 @@ if db_url:
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 # For SQLModel, this is the global SQLModel.metadata
-target_metadata = __import__("soul.backend.models", fromlist=["SoulBase"]).SoulBase.metadata
+target_metadata = __import__("src.backend.models", fromlist=["SoulBase"]).SoulBase.metadata
 
 
 def run_migrations_offline():
