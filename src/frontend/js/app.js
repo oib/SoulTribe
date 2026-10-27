@@ -750,12 +750,7 @@ const bindClick = (id, handler) => {
       try {
         const btn = document.getElementById('btn-logout');
         if (btn) {
-          btn.onclick = () => {
-            try { setToken(null); } catch {}
-            try { localStorage.removeItem('access_token'); } catch {}
-            try { updateAuthUI(); } catch {}
-            try { window.location.href = '/login.html'; } catch {}
-          };
+          btn.onclick = () => { logout(); };
         }
       } catch {}
     } catch {}
@@ -861,6 +856,31 @@ const bindClick = (id, handler) => {
   // Form submission handler moved to login.js
 
   // Profile update handler moved to profile.js
+
+  // Single logout path for every page: revoke the refresh token server-side and
+  // clear BOTH stored tokens. Clearing only access_token left refresh_token in
+  // localStorage, so the next page load silently signed the user back in.
+  const logout = async () => {
+    let refresh = null;
+    try { refresh = localStorage.getItem('refresh_token'); } catch {}
+    try { setToken(null); } catch {}
+    try { setRefreshToken(null); } catch {}
+    try { localStorage.removeItem('access_token'); } catch {}
+    try { localStorage.removeItem('refresh_token'); } catch {}
+    if (refresh) {
+      try {
+        await fetch('/api/auth/logout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ refresh_token: refresh }),
+          keepalive: true,
+        });
+      } catch {}
+    }
+    try { updateAuthUI(); } catch {}
+    window.location.href = '/login.html';
+  };
+  try { window.logout = logout; } catch {}
 
   // Restore token from localStorage on load
   try {

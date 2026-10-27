@@ -62,3 +62,24 @@
 .auth-tab.active { color: #fff; border-bottom-color: #4CAF50; }
 .link-muted { color: #94a3b8; font-size: 13px; text-decoration: none; }
 .link-muted:hover { color: #e2e8f0; text-decoration: underline; }
+
+/* .form-fields sets display:flex, which out-ranks the global .hidden rule, so the
+   register-only fields (display name, confirm password) never hid on the Login tab. */
+.auth-form .form-fields.hidden { display: none; }
+
+/* theme.css gives every dark-theme button a gradient (html[data-theme="dark"]
+   button:not(.secondary)…, specificity 0,3,2), so active and inactive tabs looked
+   identical. Re-assert the tab look with a higher-specificity selector. */
+html[data-theme] .auth-tabs > button.auth-tab.auth-tab {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+  color: #94a3b8 !important; /* theme.css sets button color with !important */
+}
+html[data-theme] .auth-tabs > button.auth-tab.auth-tab:hover { color: #e2e8f0 !important; }
+html[data-theme] .auth-tabs > button.auth-tab.auth-tab.active {
+  color: #fff !important;
+  border-bottom-color: #06b6d4;
+}

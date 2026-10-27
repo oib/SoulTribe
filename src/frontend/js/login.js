@@ -167,6 +167,7 @@
 
     // Logout button handler
     bindClick("btn-logout", () => {
+      if (typeof window.logout === 'function') { window.logout(); return; }
       setToken(null);
       setRefreshToken(null);
       try { localStorage.removeItem("access_token"); } catch {}

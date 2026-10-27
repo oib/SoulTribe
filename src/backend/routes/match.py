@@ -192,6 +192,19 @@ def _readable_facts(bd: Dict[str, Any]) -> List[str]:
     return facts
 
 
+def _localize_perspective(text: str, lang: Optional[str]) -> str:
+    """Replace English 'you' / 'the other person' left in non-English comments.
+
+    Older comments were sanitized with English labels regardless of language.
+    """
+    if not lang or lang == "en" or lang not in _PERSPECTIVE_LABELS:
+        return text
+    you, other = _PERSPECTIVE_LABELS[lang]
+    t = re.sub(r"\bthe other person\b", other, text, flags=re.IGNORECASE)
+    t = re.sub(r"\byou\b", you, t)
+    return t
+
+
 def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str]) -> tuple[Optional[str], Optional[str], List[str]]:
     """Return (comment_text, lang_code, available_langs_for_ui)."""
     if not match:
@@ -208,7 +221,7 @@ def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str])
             text = val.strip()
             if not text or _is_llm_placeholder(text):
                 continue
-            mapping[norm_key] = _strip_leaked_keys(text)
+            mapping[norm_key] = _localize_perspective(_strip_leaked_keys(text), norm_key)
 
     available_for_ui = sorted({code for code in mapping.keys() if code != 'und'})
 

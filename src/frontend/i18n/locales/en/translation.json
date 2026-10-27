@@ -470,7 +470,9 @@
     "start_date": "Start date",
     "start_hour": "Start hour",
     "no_meetups": "No upcoming meetups yet. Propose a time on one of your matches below.",
-    "page_of": "Page {page} / {total}"
+    "page_of": "Page {page} / {total}",
+    "prev": "Previous",
+    "next": "Next"
   },
   "login": {
     "page_title": "SoulTribe.chat — Login / Register",

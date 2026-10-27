@@ -165,7 +165,12 @@
       const h = Math.floor(totalMin / 60);
       const m = totalMin % 60;
       if (h > 0 && m === 0) {
-        if (h <= 3) return tr(`dashboard.duration_${h}h`, h === 1 ? '1 hour' : `${h} hours`);
+        // Returned as markup with data-i18n so SimpleI18n.updateUI() can translate it
+        // even when this renders before the locale has finished loading.
+        if (h <= 3) {
+          const key = `dashboard.duration_${h}h`;
+          return `<span data-i18n="${key}">${escapeHtml(tr(key, h === 1 ? '1 hour' : `${h} hours`))}</span>`;
+        }
         return `${h} h`;
       }
       if (h > 0 && m > 0) return `${h}h ${m}m`;
@@ -690,7 +695,7 @@
       try { if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') window.SimpleI18n.updateUI(); } catch {}
       if (!items) {
         // Optional: hint when no overlaps found
-        cont.innerHTML = `<div class="muted">${escapeHtml(tr('dashboard.no_matches', 'No overlapping slots found. Add availability or try again later.'))}</div>`;
+        cont.innerHTML = `<div class="muted" data-i18n="dashboard.no_matches">${escapeHtml(tr('dashboard.no_matches', 'No overlapping slots found. Add availability or try again later.'))}</div>`;
       }
     } else {
       const ts = new Date().toISOString();
@@ -837,7 +842,7 @@
         }
         cont.innerHTML = items
           ? `<ul class="list">${items}</ul>`
-          : `<div class="muted">${escapeHtml(tr('dashboard.no_meetups', 'No upcoming meetups yet. Propose a time on one of your matches below.'))}</div>`;
+          : `<div class="muted" data-i18n="dashboard.no_meetups">${escapeHtml(tr('dashboard.no_meetups', 'No upcoming meetups yet. Propose a time on one of your matches below.'))}</div>`;
         try {
           window.__meetupIdLookup = meetupIdMap;
         } catch {}

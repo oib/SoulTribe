@@ -473,6 +473,31 @@ def refresh_access_token(payload: RefreshIn, session=Depends(get_session), reque
     return RefreshOut(ok=True, access_token=token, token_type="bearer", refresh_token=new_refresh_raw)
 
 
+class LogoutIn(BaseModel):
+    refresh_token: str = Field(min_length=1)
+
+
+class LogoutOut(BaseModel):
+    ok: bool
+
+
+@router.post(
+    "/logout",
+    response_model=LogoutOut,
+    dependencies=[Depends(rate_limit("auth:logout", limit=20, window_seconds=300))],
+)
+def logout(payload: LogoutIn, session=Depends(get_session)) -> LogoutOut:
+    """Revoke the caller's refresh token so the session cannot be silently renewed.
+
+    Always answers ok: an unknown or already revoked token reveals nothing.
+    """
+    record = get_refresh_token_record(session, payload.refresh_token)
+    if record is not None:
+        revoke_refresh_token(session, record)
+        session.commit()
+    return LogoutOut(ok=True)
+
+
 class VerifyIn(BaseModel):
     user_id: int
 

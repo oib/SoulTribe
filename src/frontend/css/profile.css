@@ -179,7 +179,8 @@ html[data-theme] .button.secondary.danger,
 html[data-theme] button.secondary.danger {
   background: transparent;
   border: 1px solid rgba(248, 113, 113, 0.55);
-  color: #fca5a5;
+  /* theme.css sets secondary button color with !important */
+  color: #fca5a5 !important;
   box-shadow: none;
   margin-top: 24px;
 }
@@ -189,5 +190,5 @@ html[data-theme] .button.secondary.danger:focus-visible,
 html[data-theme] button.secondary.danger:focus-visible {
   background: rgba(220, 38, 38, 0.18);
   border-color: rgba(248, 113, 113, 0.85);
-  color: #fecaca;
+  color: #fecaca !important;
 }

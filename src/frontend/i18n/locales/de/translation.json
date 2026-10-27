@@ -337,7 +337,9 @@
     "start_date": "Startdatum",
     "start_hour": "Startstunde",
     "no_meetups": "Noch keine anstehenden Treffen. Schlage unten bei einem deiner Matches eine Zeit vor.",
-    "page_of": "Seite {page} / {total}"
+    "page_of": "Seite {page} / {total}",
+    "prev": "Zurück",
+    "next": "Weiter"
   },
   "login": {
     "page_title": "SoulTribe.chat — Anmelden / Registrieren",
