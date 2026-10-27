@@ -847,6 +847,7 @@ const bindClick = (id, handler) => {
       }
       
       if (startHourEl && durationEl) {
+        populateHour(startHourEl);
         const now = new Date();
         const currentHour = now.getHours();
         startHourEl.value = String(currentHour);

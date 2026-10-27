@@ -109,7 +109,26 @@ async function build() {
     });
   }
 
-  console.log('Frontend built into soul/public/ (minified with esbuild)');
+  // Stamp build version for stable asset cache-busting (i18n.js/components.js
+  // append ?v=window.APP_BUILD_VERSION). Falls back to git short hash, then date.
+  let buildVer = process.env.BUILD_VERSION || '';
+  if (!buildVer) {
+    try {
+      buildVer = require('child_process')
+        .execSync('git rev-parse --short HEAD', { cwd: path.join(__dirname, '..', '..') })
+        .toString().trim();
+    } catch {}
+  }
+  if (!buildVer) buildVer = new Date().toISOString().slice(0, 10);
+  const i18nBuilt = path.join(publicRoot, 'i18n', 'i18n.js');
+  if (fs.existsSync(i18nBuilt)) {
+    const js = fs.readFileSync(i18nBuilt, 'utf8').replace(
+      /window\.APP_BUILD_VERSION = '[^']*'/,
+      `window.APP_BUILD_VERSION = '${buildVer}'`
+    );
+    fs.writeFileSync(i18nBuilt, js);
+  }
+  console.log(`Frontend built into soul/public/ (minified with esbuild), build=${buildVer}`);
 }
 
 build().catch((err) => {
