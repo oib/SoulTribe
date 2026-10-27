@@ -11,7 +11,7 @@ export async function checkWithOllama(sequence) {
                 "Authorization": "Bearer sk-d0e3a491b19c435a975b234969298cd0"
             },
             body: JSON.stringify({
-                model: "gemma3:1b",
+                model: process.env.OLLAMA_MODEL || "gpt-oss:20b-cloud",
                 messages: [
                   { role: "system", content: "Du bist ein Emoji-Detektiv für Kinder. Bewerte jedes Emoji in genau einer Zeile im Format: Position X: ✅ oder ❌ Emoji – einfache, freundliche Begründung." },
                   { role: "user", content: prompt }                ],

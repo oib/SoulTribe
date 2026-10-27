@@ -15,7 +15,7 @@ echo "Backup created at $BACKUP_DIR"
 
 # Update translations
 # Make sure to replace with the actual path to your local changes
-cp -r /home/oib/windsurf/soultribe.chat/src/frontend/i18n/* "$TRANSLATION_DIR/"
+cp -r /home/oib/windsurf/soultribe.chat/soul/frontend/i18n/* "$TRANSLATION_DIR/"
 
 # Set proper permissions (adjust as needed)
 chown -R www-data:www-data "$TRANSLATION_DIR"

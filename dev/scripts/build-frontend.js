@@ -5,8 +5,8 @@ const path = require('path');
 const esbuild = require('esbuild');
 const glob = require('glob');
 
-const srcRoot = path.join(__dirname, '../../src/frontend');
-const publicRoot = path.join(__dirname, '../../src/public');
+const srcRoot = path.join(__dirname, '../../soul/frontend');
+const publicRoot = path.join(__dirname, '../../soul/public');
 
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
@@ -109,7 +109,7 @@ async function build() {
     });
   }
 
-  console.log('Frontend built into src/public/ (minified with esbuild)');
+  console.log('Frontend built into soul/public/ (minified with esbuild)');
 }
 
 build().catch((err) => {

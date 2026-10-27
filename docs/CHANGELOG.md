@@ -8,7 +8,7 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 
 ### Added
 - SEO assets: `robots.txt` and `sitemap.xml` with proper metadata for all website pages
-- Build script integration to copy SEO files from `src/frontend/` to `src/public/` during `make build-frontend`
+- Build script integration to copy SEO files from `soul/frontend/` to `soul/public/` during `make build-frontend`
 
 ### Changed
 - Updated `AGENTS.md`: refreshed Agent Directory; documented interfaces; security notes. See sections: Agent Directory, Interfaces/Protocols, Security & Permissions, Interaction Flows, and Changelog.

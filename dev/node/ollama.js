@@ -5,7 +5,7 @@ export async function checkWithOllama(sequence) {
 
     const BASE = process.env.OLLAMA_BASE || process.env.OPENAI_BASE_URL || "https://at1.dynproxy.net";
     const API_KEY = process.env.OLLAMA_API_KEY || process.env.OPENAI_API_KEY || "";
-    const MODEL = process.env.OLLAMA_MODEL || "gemma3:1b";
+    const MODEL = process.env.OLLAMA_MODEL || "gpt-oss:20b-cloud";
 
     try {
         const response = await fetch(`${BASE.replace(/\/$/, "")}/api/chat/completions`, {
@@ -28,16 +28,21 @@ export async function checkWithOllama(sequence) {
         });
 
         if (!response.ok) {
-            console.error("Ollama API Error:", response.status);
-            return "(Fehler beim LLM-Request)";
+            throw new Error(`LLM API error: HTTP ${response.status}`);
         }
 
         const data = await response.json();
-        return data.choices?.[0]?.message?.content?.trim() || "(keine Antwort vom Modell)";
+        const content = data.choices?.[0]?.message?.content?.trim();
+        if (!content) {
+            throw new Error("LLM returned an empty response");
+        }
+        return content;
 
     } catch (error) {
-        console.error("LLM-Request fehlgeschlagen:", error);
-        return "(Verbindungsfehler mit Ollama)";
+        // Never return placeholder text as if it were model output: callers
+        // persist the result, so a transient outage would be stored forever.
+        console.error("LLM request failed:", error);
+        throw error;
     }
 }
 
