@@ -28,22 +28,22 @@ export async function checkWithOllama(sequence) {
         });
 
         if (!response.ok) {
-            console.error("Ollama API Error:", response.status);
-            return "(Fehler beim LLM-Request)";
+            throw new Error(`LLM API error: HTTP ${response.status}`);
         }
 
         const data = await response.json();
-        return data.choices?.[0]?.message?.content?.trim() || "(keine Antwort vom Modell)";
+        const content = data.choices?.[0]?.message?.content?.trim();
+        if (!content) {
+            throw new Error("LLM returned an empty response");
+        }
+        return content;
 
     } catch (error) {
-        console.error("LLM-Request fehlgeschlagen:", error);
-        // Provide a fallback response when Ollama is not available
-        if (prompt.includes("Match") || prompt.includes("Kommentar")) {
-            return "(KI-Kommentar nicht verfügbar - bitte später versuchen)";
-        } else if (prompt.includes("interpretieren") || prompt.includes("Deutung")) {
-            return "(KI-Interpretation nicht verfügbar - bitte später versuchen)";
-        } else {
-            return "(KI-Dienst nicht verfügbar)";
-        }
+        // Never return placeholder text as if it were model output: callers
+        // persist the result, so a transient outage would be stored forever.
+        // Let the error propagate so ollama_cli.mjs exits non-zero and the
+        // API responds with 502 instead of saving a fake comment.
+        console.error("LLM request failed:", error);
+        throw error;
     }
 }

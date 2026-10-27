@@ -83,6 +83,26 @@ def _viewer_lang_candidates(profile: Optional[Profile], override: Optional[str] 
     return deduped
 
 
+# Placeholder strings that older versions of the LLM client returned on failure
+# and that ended up stored as real comments. Treat them as "no comment" so the
+# UI offers regeneration instead of displaying an error as an interpretation.
+_LLM_PLACEHOLDER_RE = re.compile(
+    r"^\(\s*(?:KI-[\w-]*\s+nicht verfügbar|Verbindungsfehler mit Ollama|Fehler beim LLM-Request|keine Antwort vom Modell)[^)]*\)$",
+    re.IGNORECASE,
+)
+
+
+def _is_llm_placeholder(text: Optional[str]) -> bool:
+    return bool(text) and bool(_LLM_PLACEHOLDER_RE.match(text.strip()))
+
+
+# Localized labels used when rewriting A/B perspective tokens in AI output.
+_PERSPECTIVE_LABELS: Dict[str, tuple[str, str]] = {
+    "en": ("you", "the other person"),
+    "de": ("du", "die andere Person"),
+}
+
+
 def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str]) -> tuple[Optional[str], Optional[str], List[str]]:
     """Return (comment_text, lang_code, available_langs_for_ui)."""
     if not match:
@@ -97,7 +117,7 @@ def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str])
             if not isinstance(val, str):
                 continue
             text = val.strip()
-            if not text:
+            if not text or _is_llm_placeholder(text):
                 continue
             mapping[norm_key] = text
 
@@ -115,7 +135,7 @@ def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str])
         first_key = next(iter(mapping))
         return mapping[first_key], first_key, available_for_ui
 
-    if match.comment:
+    if match.comment and not _is_llm_placeholder(match.comment):
         return match.comment, None, available_for_ui
 
     return None, None, available_for_ui
@@ -656,7 +676,6 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
     other_prof = pb if user_id == m.a_user_id else pa
     # Do not expose display_name to the AI prompt/output; use a generic label
     other_name = (other_prof.display_name if (other_prof and other_prof.display_name) else f"user {other_id}")
-    public_other_label = "the other person"
     perspective = "A" if user_id == m.a_user_id else "B"
     # Determine viewer's preferred language for the AI response
     viewer_prof = pa if perspective == "A" else pb
@@ -742,24 +761,36 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
         raise HTTPException(status_code=502, detail=f"ollama client error: {err}")
 
     comment = (completed.stdout or "").strip()
-    # Post-process to enforce 'you' and other_name instead of A/B
-    def sanitize_comment(txt: str, perspective: str, other_name: str) -> str:
+    if not comment or _is_llm_placeholder(comment):
+        log_match_annotation(match=m, actor_user_id=user_id, success=False, metadata={"error": "empty_or_placeholder"})
+        raise HTTPException(status_code=502, detail="AI service unavailable, please try again later")
+
+    you_label, other_label = _PERSPECTIVE_LABELS.get(resp_lang, _PERSPECTIVE_LABELS["en"])
+
+    # Post-process to enforce a localized 'you' / 'other person' instead of A/B
+    def sanitize_comment(txt: str, perspective: str, you: str, other: str) -> str:
         t = txt
         # Replace common phrases first
-        t = re.sub(r"\bA and B\b", f"you and {other_name}", t)
-        t = re.sub(r"\bB and A\b", f"{other_name} and you", t)
+        t = re.sub(r"\bA and B\b", f"{you} and {other}", t)
+        t = re.sub(r"\bB and A\b", f"{other} and {you}", t)
         # Strip explicit match id or points if present
         t = re.sub(r"Match\s*#?\d+", "", t, flags=re.IGNORECASE)
-        t = re.sub(r"\b\d+\s*points\b", "", t, flags=re.IGNORECASE)
+        t = re.sub(r"\b\d+\s*(?:points|Punkte)\b", "", t, flags=re.IGNORECASE)
+        # Leaked breakdown keys such as "A.Sun→B.house" or "same_sun_element"
+        t = re.sub(r"\b[AB]\.\w+\s*→\s*[AB]\.\w+\b", "", t)
+        t = re.sub(r"[‘'\"]?\b[a-z]+(?:_[a-z]+)+\b[’'\"]?", "", t)
         # Token-level replacements by perspective
         if perspective == "A":
-            t = re.sub(r"\bA\b", "you", t)
-            t = re.sub(r"\bB\b", other_name, t)
+            t = re.sub(r"\bA\b", you, t)
+            t = re.sub(r"\bB\b", other, t)
         else:
-            t = re.sub(r"\bB\b", "you", t)
-            t = re.sub(r"\bA\b", other_name, t)
-        return t
-    comment = sanitize_comment(comment, perspective, public_other_label)
+            t = re.sub(r"\bB\b", you, t)
+            t = re.sub(r"\bA\b", other, t)
+        # Collapse whitespace left behind by removals
+        t = re.sub(r"\s{2,}", " ", t)
+        t = re.sub(r"\s+([.,;:])", r"\1", t)
+        return t.strip()
+    comment = sanitize_comment(comment, perspective, you_label, other_label)
 
     # Store in DB (localized map + legacy field)
     existing_map: Dict[str, str] = {}

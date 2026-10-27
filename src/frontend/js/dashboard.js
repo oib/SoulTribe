@@ -2,7 +2,26 @@
 (() => {
   // Helper functions for dashboard
   const $ = (id) => document.getElementById(id);
-  
+
+  // Escape untrusted text (display names, AI output) before interpolating into innerHTML
+  const escapeHtml = (value) => String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+  // Translate with an English fallback when i18n is not ready yet
+  const tr = (key, fallback) => {
+    try {
+      if (window.SimpleI18n && typeof window.SimpleI18n.t === 'function') {
+        const v = window.SimpleI18n.t(key);
+        if (v && v !== key) return v;
+      }
+    } catch {}
+    return fallback;
+  };
+
   // Helper to convert IANA tz to friendly city name
   function friendlyCity(tz) {
     try {
@@ -394,7 +413,7 @@
 
   // Helper to fetch and render matches based on current input fields
   const matchPagination = {
-    limit: 100,
+    limit: 20,
     offset: 0,
     total: 0,
     hasMore: false,
@@ -506,7 +525,9 @@
         const meetupStatus = activeMeetup && activeMeetup.status ? String(activeMeetup.status).toLowerCase() : null;
         const hasActiveMeetup = Boolean(activeMeetup && meetupStatus && meetupStatus !== 'canceled');
         const statusBadgeClass = meetupStatus === 'confirmed' ? 'success' : 'info';
-        const statusLabel = meetupStatus === 'confirmed' ? 'Meetup confirmed' : 'Meetup proposed';
+        const statusLabel = meetupStatus === 'confirmed'
+          ? tr('dashboard.meetup_confirmed', 'Meetup confirmed')
+          : tr('dashboard.meetup_proposed', 'Meetup proposed');
         const statusTimeIso = activeMeetup ? (activeMeetup.confirmed_dt_utc || activeMeetup.proposed_dt_utc) : null;
         const statusTime = statusTimeIso ? formatUtcDisplay(statusTimeIso) : '';
         let chips = '';
@@ -529,7 +550,7 @@
             const otherBlock = (ov.b_local_start && ov.b_local_end && ov.b_tz)
               ? `
                 <div class=\"chip-col\">
-                  <div class=\"meta\">${otherName.trim() || `user ${cand.user_id}`}${otherCity ? ' ('+otherCity+(tzOffsetLabel(otherCity, ov.start_dt_utc) ? ' ('+tzOffsetLabel(otherCity, ov.start_dt_utc)+')' : '')+')' : ''}</div>
+                  <div class=\"meta\">${escapeHtml(otherName.trim() || `user ${cand.user_id}`)}${otherCity ? ' ('+otherCity+(tzOffsetLabel(otherCity, ov.start_dt_utc) ? ' ('+tzOffsetLabel(otherCity, ov.start_dt_utc)+')' : '')+')' : ''}</div>
                   <div class=\"meta\">${extractDate(ov.b_local_start)}</div>
                   <div class=\"meta\">${extractTime(ov.b_local_start)}</div>
                   <div class=\"meta\">${dur}</div>
@@ -556,8 +577,8 @@
               </div>`;
           }
         }
-        const title = `${otherName}`;
-        const score = `<span class="badge">score ${cand.score}</span>`;
+        const title = escapeHtml(otherName);
+        const score = `<span class="badge" title="${escapeHtml(tr('dashboard.score_title', 'Compatibility score'))}">${escapeHtml(tr('dashboard.score', 'score'))} ${Number(cand.score) || 0}</span>`;
         // Prepare a single language badge (first shared language) to show in the header
         let headerLangBadge = '';
         try {
@@ -565,12 +586,12 @@
             const c = cand.shared_languages[0];
             const i18n = window.SimpleI18n;
             const name = (i18n && i18n.languages && i18n.languages[c]) ? i18n.languages[c] : c;
-            headerLangBadge = `<span class='badge'>${name}</span>`;
+            headerLangBadge = `<span class='badge'>${escapeHtml(name)}</span>`;
           }
         } catch {}
         // Remove languages block from body to avoid duplication
         const langBadges = '';
-        const safeComment = cand.comment ? String(cand.comment).replace(/</g,'&lt;') : '';
+        const safeComment = cand.comment ? escapeHtml(cand.comment) : '';
         const commentLang = cand.comment_lang ? String(cand.comment_lang).toLowerCase() : null;
         const availableLangsRaw = Array.isArray(cand.available_comment_langs) ? cand.available_comment_langs : [];
         const availableLangs = availableLangsRaw.map(code => String(code).toLowerCase());
@@ -580,7 +601,7 @@
           const badgeClass = (viewerLang && commentLang === viewerLang) ? 'badge success' : 'badge secondary';
           const otherLangs = availableLangs.filter(code => code !== commentLang);
           const viewerHint = (viewerLang && commentLang !== viewerLang)
-            ? `<span class="meta muted">${getLangName(viewerLang)} preferred</span>`
+            ? `<span class="meta muted">${escapeHtml(tr('dashboard.lang_preferred', '{lang} preferred').replace('{lang}', getLangName(viewerLang)))}</span>`
             : '';
           const otherHint = otherLangs.length
             ? `<span class="meta muted">${formatLangList(otherLangs)}</span>`
@@ -642,7 +663,7 @@
         const shouldOfferAnnotate = !cand.comment || cand.has_other_comment_langs;
         const matchAttr = cand.match_id ? ` data-match-id="${cand.match_id}"` : '';
         const annotateBtn = shouldOfferAnnotate
-          ? `<div class="item-actions center"><button class="button secondary btn-annotate-match" data-cand="${cand.user_id}" data-lang="${preferredLang}"${matchAttr}>${annotateLabel}</button></div>`
+          ? `<div class="item-actions center"><button class="button secondary btn-annotate-match" data-cand="${cand.user_id}" data-lang="${escapeHtml(preferredLang)}"${matchAttr}>${escapeHtml(annotateLabel)}</button></div>`
           : '';
 
         items += `
@@ -661,17 +682,17 @@
       try { if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') window.SimpleI18n.updateUI(); } catch {}
       if (!items) {
         // Optional: hint when no overlaps found
-        cont.innerHTML = `<div class="muted">No overlapping slots found. Add availability or try again later.</div>`;
+        cont.innerHTML = `<div class="muted">${escapeHtml(tr('dashboard.no_matches', 'No overlapping slots found. Add availability or try again later.'))}</div>`;
       }
     } else {
       const ts = new Date().toISOString();
       let html = `[${ts}] match.find:`;
       html += "<ul>";
       for (const cand of data) {
-        const otherName = cand.other_display_name ? cand.other_display_name : `user ${cand.user_id}`;
-        html += `<li>${otherName} — score ${cand.score}`;
+        const otherName = escapeHtml(cand.other_display_name ? cand.other_display_name : `user ${cand.user_id}`);
+        html += `<li>${otherName} — score ${Number(cand.score) || 0}`;
         if (cand.comment) {
-          html += `<br/><small>AI comment:</small> ${cand.comment}`;
+          html += `<br/><small>AI comment:</small> ${escapeHtml(cand.comment)}`;
         } else {
           html += ` <button class="btn-annotate-match" data-cand="${cand.user_id}" title="Generate a short AI summary for this match">Generate AI comment</button>`;
         }
@@ -737,7 +758,7 @@
           const otherLabel = (item.other_display_name && String(item.other_display_name).trim())
             ? String(item.other_display_name).trim()
             : `user ${item.other_user_id}`;
-          const subtitle = `Match #${item.match_id} • with ${otherLabel}`;
+          const subtitle = `Match #${item.match_id} • with ${escapeHtml(otherLabel)}`;
           const status = `<span class="badge ${item.status==='confirmed'?'success': (item.status==='canceled'?'error':'info')}">${item.status}</span>`;
 
           const buildChip = (label, dtUtc, byline) => {
@@ -1013,7 +1034,7 @@
           for (const item of upcoming) {
             const title = `Meetup #${item.meetup_id}`;
             const otherLabel = item.other_display_name ? item.other_display_name : `user ${item.other_user_id}`;
-            const subtitle = `Match #${item.match_id} • with ${otherLabel}`;
+            const subtitle = `Match #${item.match_id} • with ${escapeHtml(otherLabel)}`;
             const status = `<span class="badge ${item.status==='confirmed'?'success': (item.status==='canceled'?'error':'info')}">${item.status}</span>`;
 
             const buildChip = (label, dtUtc, byline) => {

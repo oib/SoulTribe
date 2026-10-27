@@ -322,7 +322,16 @@
       "permission_request": "Browser-Benachrichtigungen zulassen, um über Meetups informiert zu bleiben.",
       "permission_denied": "Browser-Benachrichtigungen sind derzeit blockiert.",
       "permission_granted": "Browser-Benachrichtigungen aktiviert."
-    }
+    },
+    "duration_1h": "1 Stunde",
+    "duration_2h": "2 Stunden",
+    "duration_3h": "3 Stunden",
+    "score": "Score",
+    "score_title": "Kompatibilitäts-Score",
+    "meetup_confirmed": "Treffen bestätigt",
+    "meetup_proposed": "Treffen vorgeschlagen",
+    "lang_preferred": "{lang} bevorzugt",
+    "no_matches": "Keine überlappenden Slots gefunden. Füge Verfügbarkeiten hinzu oder versuche es später erneut."
   },
   "login": {
     "page_title": "SoulTribe.chat — Anmelden / Registrieren",
