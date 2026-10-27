@@ -104,7 +104,7 @@
       if (!el) return;
       const tz = resolveLiveTz();
       const off = tzOffsetLabel(tz, new Date().toISOString());
-      el.textContent = `Using timezone: ${tz}${off ? ` (${off})` : ''}`;
+      el.textContent = tr('nav.tz_badge', 'Using timezone: {tz}').replace('{tz}', `${tz}${off ? ` (${off})` : ''}`);
     } catch {}
   }
 

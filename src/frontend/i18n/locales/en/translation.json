@@ -345,7 +345,8 @@
       "city_placeholder": "Current city (autocomplete)",
       "use_my_location": "Use my location",
       "detected_tz_label": "Detected timezone:",
-      "detected_tz_hint": "(auto or select)"
+      "detected_tz_hint": "(auto or select)",
+      "city_aria": "Current city"
     },
     "birth": {
       "legend": "Birth Information (for Astrology)",
@@ -357,7 +358,11 @@
       "detected_tz_hint": "(auto)",
       "lat_placeholder": "Latitude (e.g., 48.2082)",
       "lon_placeholder": "Longitude (e.g., 16.3738)",
-      "instructions": "Set your birth date and location to compute your radix. If you don't know the exact time, leave the time field empty and we will use a noon fallback."
+      "instructions": "Set your birth date and location to compute your radix. If you don't know the exact time, leave the time field empty and we will use a noon fallback.",
+      "date_required": "Birth date is required",
+      "hour_aria": "Birth hour (optional)",
+      "minute_aria": "Birth minute (optional)",
+      "place_aria": "Birth place"
     },
     "notifications": {
       "legend": "Notifications",
@@ -373,7 +378,11 @@
     "note": "Your profile is used to personalize matches and time zone display.",
     "primary_language_label": "Primary language (used for UI)",
     "other_languages_label": "Other languages (used for matching)",
-    "language_input_placeholder": "Type to add languages..."
+    "language_input_placeholder": "Type to add languages...",
+    "page_title": "Profile • SoulTribe.chat",
+    "delete_login_again": "Please log in again before deleting your account",
+    "account_deleted": "Your account has been deleted.",
+    "delete_failed": "Failed to delete account"
   },
   "radix": {
     "title": "Your Radix",
@@ -383,6 +392,26 @@
       "get_interpretation": "Get Interpretation",
       "followup_placeholder": "Ask a follow-up…",
       "send": "Send"
+    },
+    "table": {
+      "planet": "Planet",
+      "position": "Position",
+      "sign": "Sign",
+      "deg": "Deg",
+      "house": "House",
+      "cusp": "Cusp°"
+    },
+    "planets": {
+      "moon": "Moon",
+      "sun": "Sun",
+      "mercury": "Mercury",
+      "venus": "Venus",
+      "mars": "Mars",
+      "jupiter": "Jupiter",
+      "saturn": "Saturn",
+      "uranus": "Uranus",
+      "neptune": "Neptune",
+      "pluto": "Pluto"
     }
   },
   "dashboard": {
@@ -476,7 +505,8 @@
     "logout": "Log Out",
     "about": "About",
     "next_steps": "Next Steps",
-    "guest_guide": "Guest Guide"
+    "guest_guide": "Guest Guide",
+    "tz_badge": "Using timezone: {tz}"
   },
   "imprint": {
     "title": "Imprint"

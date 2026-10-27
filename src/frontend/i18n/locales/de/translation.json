@@ -3,7 +3,7 @@
     "hero": {
       "title": "Willkommen",
       "subtitle": "SoulTribe.chat ist ein Raum, der geschaffen wurde, um dir zu helfen, deinen Seelenstamm zu finden und dich mit ihm zu verbinden – Menschen, die mit deiner Energie, deinem Geist und deiner Reise in Resonanz stehen. ✨",
-      "learn_more": "Entdecken Sie die SoulTribe-Vision →"
+      "learn_more": "Entdecke die SoulTribe-Vision →"
     },
     "how": {
       "title": "So funktioniert's",
@@ -272,7 +272,8 @@
     "home": "Startseite",
     "discover": "Entdecken",
     "matches": "Matches",
-    "messages": "Nachrichten"
+    "messages": "Nachrichten",
+    "tz_badge": "Zeitzone: {tz}"
   },
   "language": {
     "en": "Englisch",
@@ -381,7 +382,27 @@
   "radix": {
     "title": "Dein Radix",
     "placeholder": "Wenn du deine Geburtsdaten gesetzt hast, erscheint hier eine Radix‑Vorschau.",
-    "show_raw_json": "Rohes JSON anzeigen"
+    "show_raw_json": "Rohes JSON anzeigen",
+    "table": {
+      "planet": "Planet",
+      "position": "Position",
+      "sign": "Zeichen",
+      "deg": "Grad",
+      "house": "Haus",
+      "cusp": "Spitze°"
+    },
+    "planets": {
+      "moon": "Mond",
+      "sun": "Sonne",
+      "mercury": "Merkur",
+      "venus": "Venus",
+      "mars": "Mars",
+      "jupiter": "Jupiter",
+      "saturn": "Saturn",
+      "uranus": "Uranus",
+      "neptune": "Neptun",
+      "pluto": "Pluto"
+    }
   },
   "ai": {
     "get_interpretation": "Interpretation abrufen",
@@ -412,7 +433,8 @@
       "city_placeholder": "Aktuelle Stadt (Autovervollständigung)",
       "use_my_location": "Meinen Standort verwenden",
       "detected_tz_label": "Erkannte Zeitzone:",
-      "detected_tz_hint": "(automatisch oder auswählen)"
+      "detected_tz_hint": "(automatisch oder auswählen)",
+      "city_aria": "Aktuelle Stadt"
     },
     "birth": {
       "legend": "Geburtsinformationen (für Astrologie)",
@@ -424,20 +446,28 @@
       "detected_tz_hint": "(automatisch)",
       "lat_placeholder": "Breitengrad (z. B. 48.2082)",
       "lon_placeholder": "Längengrad (z. B. 16.3738)",
-      "instructions": "Setze dein Geburtsdatum und deinen Geburtsort, um deinen Radix zu berechnen. Wenn du die genaue Uhrzeit nicht kennst, lasse das Zeitfeld leer; wir verwenden dann standardmäßig 12:00 Uhr."
+      "instructions": "Setze dein Geburtsdatum und deinen Geburtsort, um deinen Radix zu berechnen. Wenn du die genaue Uhrzeit nicht kennst, lasse das Zeitfeld leer; wir verwenden dann standardmäßig 12:00 Uhr.",
+      "date_required": "Geburtsdatum ist erforderlich",
+      "hour_aria": "Geburtsstunde (optional)",
+      "minute_aria": "Geburtsminute (optional)",
+      "place_aria": "Geburtsort"
     },
     "note": "Dein Profil wird zur Personalisierung der Matches und zur Zeitzonenanzeige verwendet.",
     "notifications": {
-      "legend": "Notifications",
-      "browser_label": "Browser notifications",
-      "browser_help": "Show alerts on this device when meetups need your attention.",
-      "browser_grant": "Enable browser notifications",
-      "browser_denied": "Browser notifications are blocked in your browser settings.",
-      "email_label": "Email notifications",
-      "email_help": "Send meetup updates to your verified email address.",
-      "email_disabled": "Verify your email to receive meetup updates.",
-      "save_notice": "These preferences apply to future meetups."
-    }
+      "legend": "Benachrichtigungen",
+      "browser_label": "Browser-Benachrichtigungen",
+      "browser_help": "Zeigt auf diesem Gerät Hinweise an, wenn Treffen deine Aufmerksamkeit brauchen.",
+      "browser_grant": "Browser-Benachrichtigungen aktivieren",
+      "browser_denied": "Browser-Benachrichtigungen sind in deinen Browser-Einstellungen blockiert.",
+      "email_label": "E-Mail-Benachrichtigungen",
+      "email_help": "Sendet Updates zu Treffen an deine bestätigte E-Mail-Adresse.",
+      "email_disabled": "Bestätige deine E-Mail-Adresse, um Updates zu Treffen zu erhalten.",
+      "save_notice": "Diese Einstellungen gelten für zukünftige Treffen."
+    },
+    "page_title": "Profil • SoulTribe.chat",
+    "delete_login_again": "Bitte melde dich erneut an, bevor du dein Konto löschst",
+    "account_deleted": "Dein Konto wurde gelöscht.",
+    "delete_failed": "Konto konnte nicht gelöscht werden"
   },
   "notifications": {
     "language_set_to": "Sprache gesetzt auf"

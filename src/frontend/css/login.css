@@ -12,11 +12,13 @@
 /* Moved from styles.css */
 .card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); max-width: 980px; width: 100%; margin: 24px auto; }
 .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.muted { color: #666; font-size: 12px; }
+.muted { color: #94a3b8; font-size: 13px; }
 .header { text-align: center; margin-top: 24px; }
 .auth-form { display: flex; flex-direction: column; gap: 12px; max-width: 520px; }
 .auth-form .form-fields { display: flex; flex-direction: column; gap: 10px; width: 100%; }
-.auth-form input { width: 100%; min-width: 0; }
+/* The global input rule sets flex: 1 1 0; in this column layout that collapses
+   inputs to ~17px. Keep their natural 46px height and inherit the page font. */
+.auth-form input { width: 100%; min-width: 0; flex: 0 0 auto; height: 46px; font: inherit; }
 .auth-form .form-actions { 
   display: flex; 
   gap: 10px; 

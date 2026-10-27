@@ -170,3 +170,24 @@ body .container { }
 .language-autocomplete-item:hover, .language-autocomplete-item.highlighted { background: #334155; }
 .language-autocomplete-item.disabled { color: #6b7280; cursor: not-allowed; }
 .language-autocomplete-item.disabled:hover { background: transparent; }
+
+/* Destructive action: must not look like the primary "Save" button.
+   Selectors out-rank html[data-theme="dark"] .button.secondary in styles.css. */
+html .button.secondary.danger,
+html button.secondary.danger,
+html[data-theme] .button.secondary.danger,
+html[data-theme] button.secondary.danger {
+  background: transparent;
+  border: 1px solid rgba(248, 113, 113, 0.55);
+  color: #fca5a5;
+  box-shadow: none;
+  margin-top: 24px;
+}
+html[data-theme] .button.secondary.danger:hover,
+html[data-theme] button.secondary.danger:hover,
+html[data-theme] .button.secondary.danger:focus-visible,
+html[data-theme] button.secondary.danger:focus-visible {
+  background: rgba(220, 38, 38, 0.18);
+  border-color: rgba(248, 113, 113, 0.85);
+  color: #fecaca;
+}

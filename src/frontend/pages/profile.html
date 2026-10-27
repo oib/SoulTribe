@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script>try{var l=localStorage.getItem('selectedLanguage')||(navigator.language||'en').split('-')[0];document.documentElement.lang=l}catch(e){}</script>
-  <title>Profile • SoulTribe.chat</title>
+  <title data-i18n="profile.page_title">Profile • SoulTribe.chat</title>
   <link rel="stylesheet" href="/css/theme.css" />
   <link rel="stylesheet" href="/css/components.css" />
   <link rel="stylesheet" href="/css/navbar.css" />
@@ -62,7 +62,7 @@
       <legend data-i18n="profile.location.legend">Current Location</legend>
       <div class="row">
         <div class="autocomplete">
-          <input id="livePlace" placeholder="Current city (autocomplete)" data-i18n-placeholder="profile.location.city_placeholder" autocomplete="off" />
+          <input id="livePlace" aria-label="Current city" data-i18n-aria-label="profile.location.city_aria" placeholder="Current city (autocomplete)" data-i18n-placeholder="profile.location.city_placeholder" autocomplete="off" />
           <div id="livePlaceList" class="autocomplete-list" style="display:none;"></div>
         </div>
         <button type="button" id="btn-live-geolocate" class="button secondary" data-i18n="profile.location.use_my_location">Use my location</button>
@@ -74,9 +74,9 @@
     <fieldset>
       <legend data-i18n="profile.birth.legend">Birth Information (for Astrology)</legend>
       <div class="row">
-        <input id="birthDate" type="date" placeholder="Birth date" data-i18n-placeholder="profile.birth.date_placeholder" required />
+        <input id="birthDate" type="date" aria-label="Birth date" data-i18n-aria-label="profile.birth.date_placeholder" placeholder="Birth date" data-i18n-placeholder="profile.birth.date_placeholder" required />
         <div style="display:flex; gap:4px;">
-          <select id="birthHour" class="time-select" style="flex:1;" required>
+          <select id="birthHour" class="time-select" style="flex:1;" aria-label="Birth hour (optional)" data-i18n-aria-label="profile.birth.hour_aria">
             <option value="" data-i18n="profile.birth.hour_label">Hour</option>
             <option value="00">00</option>
             <option value="01">01</option>
@@ -103,7 +103,7 @@
             <option value="22">22</option>
             <option value="23">23</option>
           </select>
-          <select id="birthMinute" class="time-select" style="flex:1;" required>
+          <select id="birthMinute" class="time-select" style="flex:1;" aria-label="Birth minute (optional)" data-i18n-aria-label="profile.birth.minute_aria">
             <option value="" data-i18n="profile.birth.minute_label">Min</option>
             <option value="00">00</option>
             <option value="05">05</option>
@@ -122,7 +122,7 @@
       </div>
       <div class="row">
         <div class="autocomplete">
-          <input id="birthPlace" placeholder="Birth place (city, country)" data-i18n-placeholder="profile.birth.place_placeholder" autocomplete="off" required />
+          <input id="birthPlace" aria-label="Birth place" data-i18n-aria-label="profile.birth.place_aria" placeholder="Birth place (city, country)" data-i18n-placeholder="profile.birth.place_placeholder" autocomplete="off" required />
           <div id="birthPlaceList" class="autocomplete-list" style="display:none;"></div>
         </div>
         <input id="birthTz" type="hidden" />
@@ -132,8 +132,8 @@
         <button type="button" id="btn-birth-geolocate" class="button secondary" data-i18n="profile.location.use_my_location">Use my location</button>
       </div>
       <div class="row">
-        <input id="birthLat" type="number" step="any" placeholder="Latitude (e.g., 48.2082)" data-i18n-placeholder="profile.birth.lat_placeholder" required />
-        <input id="birthLon" type="number" step="any" placeholder="Longitude (e.g., 16.3738)" data-i18n-placeholder="profile.birth.lon_placeholder" required />
+        <input id="birthLat" type="number" min="-90" max="90" aria-label="Birth latitude" data-i18n-aria-label="profile.birth.lat_placeholder" step="any" placeholder="Latitude (e.g., 48.2082)" data-i18n-placeholder="profile.birth.lat_placeholder" required />
+        <input id="birthLon" type="number" min="-180" max="180" aria-label="Birth longitude" data-i18n-aria-label="profile.birth.lon_placeholder" step="any" placeholder="Longitude (e.g., 16.3738)" data-i18n-placeholder="profile.birth.lon_placeholder" required />
       </div>
       <div class="row small" data-i18n="profile.birth.instructions">Set your birth date and location to compute your radix. If you don't know the exact time, leave the time field empty and we will use a noon fallback.</div>
       <div class="row small" data-i18n="profile.note">Your profile is used to personalize matches and time zone display.</div>
@@ -156,7 +156,7 @@
         <button id="btn-profile-update" class="primary" data-i18n="profile.save">Save</button>
       </div>
       <div class="row" style="margin-top:24px;">
-        <button id="btn-account-delete" class="button danger" data-i18n="profile.delete_account">Delete my account</button>
+        <button id="btn-account-delete" class="button secondary danger" data-i18n="profile.delete_account">Delete my account</button>
       </div>
   </section>
   <section class="card" id="radixSection">
@@ -176,7 +176,7 @@
         </div>
         <div id="aiMessages" class="list mt-8"></div>
         <div id="aiFollowRow" class="row mt-8 gap-8" style="display:none;">
-          <input id="aiUserMsg" placeholder="Ask a follow-up…" data-i18n-placeholder="ai.followup_placeholder" class="flex-1" />
+          <input id="aiUserMsg" aria-label="Follow-up question" data-i18n-aria-label="ai.followup_placeholder" placeholder="Ask a follow-up…" data-i18n-placeholder="ai.followup_placeholder" class="flex-1" />
           <button id="btn-interpret-send" class="button" data-i18n="ai.send">Send</button>
         </div>
       </div>

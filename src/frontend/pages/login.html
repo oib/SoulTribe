@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="/css/components.css" />
   <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
 </head>
 <body>
   <div class="page-preloader" id="page-preloader" aria-hidden="true">
@@ -33,7 +34,7 @@
       <form id="authForm" autocomplete="on" class="auth-form">
         <div class="form-fields">
           <label class="visually-hidden" for="email">Email</label>
-          <input id="email" name="email" placeholder="email" data-i18n-placeholder="login.email" type="email" autocomplete="username email" />
+          <input id="email" name="email" placeholder="email" data-i18n-placeholder="login.email" type="email" autocomplete="email" inputmode="email" required />
           <label class="visually-hidden" for="displayName">Display name</label>
           <input id="displayName" name="display_name" placeholder="display name (for register)" data-i18n-placeholder="login.display_name" type="text" autocomplete="nickname" />
           <label class="visually-hidden" for="password">Password</label>
@@ -42,9 +43,9 @@
           <input id="passwordConfirm" name="password_confirm" placeholder="confirm password (for register)" data-i18n-placeholder="login.confirm_password" type="password" autocomplete="new-password" />
         </div>
         <div class="form-actions">
-          <button type="button" id="btn-register" data-i18n="login.register">Register</button>
+          <button type="button" id="btn-register" class="secondary" data-i18n="login.register">Register</button>
           <button type="submit" id="btn-login" data-i18n="login.login">Login</button>
-          <button type="button" id="btn-reset-request" data-i18n="login.reset_password">Reset Password</button>
+          <button type="button" id="btn-reset-request" class="secondary" data-i18n="login.reset_password">Reset Password</button>
           <div id="resend-verification-container" class="hidden">
             <span data-i18n="login.email_not_verified">Email not verified? </span>
             <a href="#" id="btn-resend-verification" data-i18n="login.resend_verification">Resend verification email</a>

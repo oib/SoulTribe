@@ -2,7 +2,27 @@
 (() => {
   // Helper functions for profile
   const $ = (id) => document.getElementById(id);
-  
+
+  // Translate with an English fallback (SimpleI18n.t ignores a 2nd argument and
+  // returns the key itself when a translation is missing)
+  const tr = (key, fallback) => {
+    try {
+      if (window.SimpleI18n && typeof window.SimpleI18n.t === 'function') {
+        const v = window.SimpleI18n.t(key);
+        if (typeof v === 'string' && v && v !== key) return v;
+      }
+    } catch {}
+    return fallback;
+  };
+  const escapeHtml = (value) => String(value == null ? '' : value)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  // Degrees within a sign as DD°MM′, carrying 60′ into the next degree
+  const splitDegMin = (within) => {
+    const totalMin = Math.round(within * 60);
+    return [Math.floor(totalMin / 60), totalMin % 60];
+  };
+
   // Get global functions from app.js
   const api = window.api;
   const show = window.show;
@@ -77,7 +97,7 @@
       if (!el) return;
       const tz = resolveLiveTz();
       const off = tzOffsetLabel(tz, new Date().toISOString());
-      el.textContent = `Using timezone: ${tz}${off ? ` (${off})` : ''}`;
+      el.textContent = tr('nav.tz_badge', 'Using timezone: {tz}').replace('{tz}', `${tz}${off ? ` (${off})` : ''}`);
     } catch {}
   }
 
@@ -108,8 +128,7 @@
             const d = ((deg % 360) + 360) % 360;
             const sign = Math.floor(d / 30);
             const within = d - sign * 30; // 0..30
-            const degrees = Math.floor(within);
-            const minutes = Math.round((within - degrees) * 60);
+            const [degrees, minutes] = splitDegMin(within);
             const dd = String(degrees).padStart(2, '0');
             const mm = String(minutes).padStart(2, '0');
             return `${dd}°${zsigns[sign]}${mm}′`;
@@ -162,9 +181,9 @@
               <thead>
                 <tr>
                   <th>Pl</th>
-                  <th>Planet</th>
-                  <th>Position</th>
-                  <th>House</th>
+                  <th>${escapeHtml(tr('radix.table.planet', 'Planet'))}</th>
+                  <th>${escapeHtml(tr('radix.table.position', 'Position'))}</th>
+                  <th>${escapeHtml(tr('radix.table.house', 'House'))}</th>
                 </tr>
               </thead>
               <tbody>${rows}</tbody>
@@ -193,12 +212,13 @@
           let combined = '<table class="list planets-table">';
           const combinedColgroup = '<colgroup><col class="icon"><col class="planet"><col class="sign"><col class="deg"><col class="house"><col class="cusp">' + new Array(aspects.length).fill('<col class="aspect">').join('') + '</colgroup>';
           combined += combinedColgroup;
-          const headerCells = ['<th></th>','<th>Planet</th>','<th>Sign</th>','<th>Deg</th>','<th>House</th>','<th>Cusp°</th>'].concat(aspects.map(a=>`<th scope="col">${a.sym} ${a.label}</th>`)).join('');
+          const headerCells = ['<th></th>'].concat([['planet','Planet'],['sign','Sign'],['deg','Deg'],['house','House'],['cusp','Cusp°']].map(([k,f]) => `<th>${escapeHtml(tr(`radix.table.${k}`, f))}</th>`)).concat(aspects.map(a=>`<th scope="col">${a.sym} ${a.label}</th>`)).join('');
           combined += `<thead><tr>${headerCells}</tr></thead><tbody>`;
           for (let i=0;i<keys.length;i++) {
             const ki = keys[i];
             const nameSym = planetOrder.find(([k])=>k===ki)?.[2] || ki;
-            const pname = planetOrder.find(([k,n])=>k===ki)?.[1] || ki;
+            const pnameEn = planetOrder.find(([k,n])=>k===ki)?.[1] || ki;
+            const pname = escapeHtml(tr(`radix.planets.${String(ki).toLowerCase()}`, pnameEn));
             const lon = planets[ki]?.lon;
             const hIdx = (typeof lon === 'number' && typeof houseIdxFn === 'function') ? houseIdxFn(lon) : -1;
             const houseCell = (hIdx >= 0) ? String(hIdx + 1) : '';
@@ -206,8 +226,7 @@
             const d = ((lon % 360) + 360) % 360;
             const signIdx = Math.floor(d / 30);
             const within = d - signIdx * 30;
-            const deg = Math.floor(within);
-            const min = Math.round((within - deg) * 60);
+            const [deg, min] = splitDegMin(within);
             const dd = String(deg).padStart(2, '0');
             const mm = String(min).padStart(2, '0');
             const signGlyph = zsigns[signIdx] || '';
@@ -1101,16 +1120,16 @@
 
     bindClick('btn-account-delete', async () => {
       if (!token()) {
-        toast('Please login again before deleting your account', 'error');
+        toast(tr('profile.delete_login_again', 'Please log in again before deleting your account'), 'error');
         return;
       }
-      const confirmText = window.SimpleI18n?.t ? window.SimpleI18n.t('profile.delete_account_confirm', 'Are you sure? This cannot be undone.') : 'Are you sure? This cannot be undone.';
+      const confirmText = tr('profile.delete_account_confirm', 'Are you sure? This cannot be undone.');
       if (!window.confirm(confirmText)) return;
       const button = document.getElementById('btn-account-delete');
       if (button) button.disabled = true;
       try {
         await api('/api/profile', { method: 'DELETE', auth: true });
-        const message = window.SimpleI18n?.t ? window.SimpleI18n.t('profile.account_deleted', 'Your account has been deleted.') : 'Your account has been deleted.';
+        const message = tr('profile.account_deleted', 'Your account has been deleted.');
         toast(message, 'success');
         try { window.setToken?.(null); } catch {}
         try { window.setRefreshToken?.(null); } catch {}
@@ -1119,7 +1138,7 @@
         }, 400);
       } catch (err) {
         console.error('Account deletion failed', err);
-        toast('Failed to delete account', 'error');
+        toast(tr('profile.delete_failed', 'Failed to delete account'), 'error');
       } finally {
         if (button) button.disabled = false;
       }
@@ -1321,7 +1340,7 @@
         const birth_date = birth_date_input?.value || null; // YYYY-MM-DD
         if (!birth_date) {
           try { birth_date_input?.reportValidity?.(); } catch {}
-          toast('Birth date is required', 'error');
+          toast(tr('profile.birth.date_required', 'Birth date is required'), 'error');
           return;
         }
         const birth_hour = $("birthHour")?.value || "";
