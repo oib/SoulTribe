@@ -331,7 +331,11 @@
     "meetup_confirmed": "Treffen bestätigt",
     "meetup_proposed": "Treffen vorgeschlagen",
     "lang_preferred": "{lang} bevorzugt",
-    "no_matches": "Keine überlappenden Slots gefunden. Füge Verfügbarkeiten hinzu oder versuche es später erneut."
+    "no_matches": "Keine überlappenden Slots gefunden. Füge Verfügbarkeiten hinzu oder versuche es später erneut.",
+    "page_heading": "Dashboard",
+    "start_date": "Startdatum",
+    "start_hour": "Startstunde",
+    "no_meetups": "Noch keine anstehenden Treffen. Schlage unten bei einem deiner Matches eine Zeit vor."
   },
   "login": {
     "page_title": "SoulTribe.chat — Anmelden / Registrieren",

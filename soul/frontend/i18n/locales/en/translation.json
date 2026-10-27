@@ -435,7 +435,11 @@
     "meetup_confirmed": "Meetup confirmed",
     "meetup_proposed": "Meetup proposed",
     "lang_preferred": "{lang} preferred",
-    "no_matches": "No overlapping slots found. Add availability or try again later."
+    "no_matches": "No overlapping slots found. Add availability or try again later.",
+    "page_heading": "Dashboard",
+    "start_date": "Start date",
+    "start_hour": "Start hour",
+    "no_meetups": "No upcoming meetups yet. Propose a time on one of your matches below."
   },
   "login": {
     "page_title": "SoulTribe.chat — Login / Register",

@@ -65,3 +65,16 @@
   .avail-grid #availStartHour,
   .avail-grid #availEndHour { width: 100%; text-align: left; padding-left: 12px; padding-right: 12px; }
 }
+
+/* Screen-reader-only text (e.g. the dashboard's page heading) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

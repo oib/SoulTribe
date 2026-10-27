@@ -1,3 +1,10 @@
+// Static asset version used for cache-busting translations and components.
+// Bump on deploy (or have the build inject window.APP_BUILD_VERSION) — falling
+// back to Date.now() made every page load re-download ~65 kB of JSON/HTML.
+if (typeof window !== 'undefined' && !window.APP_BUILD_VERSION) {
+  window.APP_BUILD_VERSION = '2026.10.27';
+}
+
 window.SimpleI18n = {
   currentLang: 'en',
   translations: {},
@@ -447,6 +454,12 @@ window.SimpleI18n = {
       const key = el.getAttribute('data-i18n-placeholder');
       const val = this.t(key);
       if (val && typeof el.setAttribute === 'function') el.setAttribute('placeholder', val);
+    });
+    // Update aria-label attributes
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+      const key = el.getAttribute('data-i18n-aria-label');
+      const val = this.t(key);
+      if (val && typeof el.setAttribute === 'function') el.setAttribute('aria-label', val);
     });
     // Update title attributes
     document.querySelectorAll('[data-i18n-title]').forEach(el => {

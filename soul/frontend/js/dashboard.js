@@ -164,7 +164,10 @@
       const totalMin = Math.max(0, Math.round(ms / 60000));
       const h = Math.floor(totalMin / 60);
       const m = totalMin % 60;
-      if (h > 0 && m === 0) return h === 1 ? '1 hour' : `${h} hours`;
+      if (h > 0 && m === 0) {
+        if (h <= 3) return tr(`dashboard.duration_${h}h`, h === 1 ? '1 hour' : `${h} hours`);
+        return `${h} h`;
+      }
       if (h > 0 && m > 0) return `${h}h ${m}m`;
       return `${m}m`;
     } catch { return ''; }
@@ -827,7 +830,9 @@
               <div class="item-actions">${confirmBtn} ${unconfirmBtn} ${meetProposeBtn}</div>
             </li>`;
         }
-        cont.innerHTML = `<ul class="list">${items}</ul>`;
+        cont.innerHTML = items
+          ? `<ul class="list">${items}</ul>`
+          : `<div class="muted">${escapeHtml(tr('dashboard.no_meetups', 'No upcoming meetups yet. Propose a time on one of your matches below.'))}</div>`;
         try {
           window.__meetupIdLookup = meetupIdMap;
         } catch {}
@@ -930,12 +935,12 @@
                   <div class="edit-row" style="display:none; margin-top:8px;">
                     <div class="avail-grid">
                       <div class="avail-group">
-                        <input type="date" class="edit-start-date" />
-                        <select class="edit-start-hour" title="Start hour (0–23)"></select>
-                        <select class="edit-duration-hours" title="Duration (hours)">
-                          <option value="1">1 hour</option>
-                          <option value="2">2 hours</option>
-                          <option value="3">3 hours</option>
+                        <input type="date" class="edit-start-date" aria-label="${escapeHtml(tr('dashboard.start_date', 'Start date'))}" />
+                        <select class="edit-start-hour" title="Start hour (0–23)" aria-label="${escapeHtml(tr('dashboard.start_hour', 'Start hour'))}"></select>
+                        <select class="edit-duration-hours" title="Duration (hours)" aria-label="${escapeHtml(tr('dashboard.duration_hours', 'Duration (hours)'))}">
+                          <option value="1">${escapeHtml(tr('dashboard.duration_1h', '1 hour'))}</option>
+                          <option value="2">${escapeHtml(tr('dashboard.duration_2h', '2 hours'))}</option>
+                          <option value="3">${escapeHtml(tr('dashboard.duration_3h', '3 hours'))}</option>
                         </select>
                       </div>
                     </div>
@@ -1098,7 +1103,9 @@
                 <div class="item-actions">${confirmBtn} ${unconfirmBtn}</div>
               </li>`;
           }
-          cont.innerHTML = `<ul class="list">${items}</ul>`;
+          cont.innerHTML = items
+            ? `<ul class="list">${items}</ul>`
+            : `<div class="muted">${escapeHtml(tr('dashboard.no_meetups', 'No upcoming meetups yet. Propose a time on one of your matches below.'))}</div>`;
         } else {
           const ts = new Date().toISOString();
           let html = `[${ts}] meetup.list:`;

@@ -27,15 +27,16 @@
   <div data-component="navbar"></div>
   
 
-  <div class="container">
+  <main class="container" id="main">
+    <h1 class="visually-hidden" data-i18n="dashboard.page_heading">Dashboard</h1>
     <section class="card">
         <div class="card-head" style="display:flex; align-items:center; gap:12px;">
           <h2 data-i18n="dashboard.availability">Availability</h2>
         </div>
         <div class="avail-grid">
           <div class="avail-group">
-            <input id="availStartDate" type="date" />
-            <select id="availStartHour" title="Start hour (0–23)">
+            <input id="availStartDate" type="date" aria-label="Start date" data-i18n-aria-label="dashboard.start_date" />
+            <select id="availStartHour" title="Start hour (0–23)" aria-label="Start hour" data-i18n-aria-label="dashboard.start_hour">
               <option value="0">00:00</option>
               <option value="1">01:00</option>
               <option value="2">02:00</option>
@@ -63,7 +64,7 @@
             </select>
           </div>
           <div class="avail-group">
-            <select id="availDurationHours" data-i18n-title="dashboard.duration_hours" title="Duration (hours)">
+            <select id="availDurationHours" data-i18n-title="dashboard.duration_hours" data-i18n-aria-label="dashboard.duration_hours" title="Duration (hours)" aria-label="Duration (hours)">
               <option value="1" data-i18n="dashboard.duration_1h">1 hour</option>
               <option value="2" data-i18n="dashboard.duration_2h">2 hours</option>
               <option value="3" data-i18n="dashboard.duration_3h">3 hours</option>
@@ -82,7 +83,7 @@
 
     <section class="card">
         <h2 data-i18n="dashboard.meetups">Meetups</h2>
-        <div id="meetups"></div>
+        <div id="meetups" aria-live="polite"></div>
     </section>
 
     <section class="card">
@@ -92,7 +93,7 @@
         <div id="matches"></div>
         <div id="matchesPager" class="pager-controls"></div>
     </section>
-  </div>
+  </main>
 
   <script src="/js/app.js"></script>
   <script src="/i18n/i18n.js"></script>
