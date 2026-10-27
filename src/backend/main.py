@@ -31,11 +31,34 @@ class ProxyHeadersMiddleware(BaseHTTPMiddleware):
         return response
 
 
+class StaticCacheHeadersMiddleware(BaseHTTPMiddleware):
+    """Cache policy for the static frontend.
+
+    - URLs with a ?v= build version are immutable and cached for a year.
+    - Everything else (HTML, unversioned JS/CSS/JSON) must revalidate, so a
+      deploy is picked up on the next load (StaticFiles answers with ETag/304).
+    API responses are left untouched.
+    """
+
+    async def dispatch(self, request: Request, call_next):
+        response = await call_next(request)
+        path = request.url.path
+        if path.startswith("/api/") or "cache-control" in response.headers:
+            return response
+        if response.status_code in (200, 304):
+            if "v" in request.query_params and not path.endswith(".html"):
+                response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+            else:
+                response.headers["Cache-Control"] = "no-cache"
+        return response
+
+
 def create_app() -> FastAPI:
     app = FastAPI(title="SoulTribe.chat API")
-    
+
     # Add ProxyHeadersMiddleware to handle forwarded headers from Nginx
     app.add_middleware(ProxyHeadersMiddleware)
+    app.add_middleware(StaticCacheHeadersMiddleware)
     
     init_db()
     app.include_router(auth_routes.router)

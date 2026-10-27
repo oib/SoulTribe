@@ -442,12 +442,16 @@
     const totalPages = total ? Math.ceil(total / limit) : page;
     const prevDisabled = offset <= 0;
     const nextDisabled = !hasMore;
+    if (prevDisabled && nextDisabled) { pager.innerHTML = ''; return; }
+    const pageLabel = tr('dashboard.page_of', 'Page {page} / {total}')
+      .replace('{page}', String(page))
+      .replace('{total}', String(totalPages || page));
     pager.innerHTML = `
-      <div class="pager">
+      <nav class="pager" aria-label="${escapeHtml(tr('dashboard.matches', 'Matches'))}">
         <button class="button secondary pager-prev" ${prevDisabled ? 'disabled' : ''} data-i18n="dashboard.prev">Previous</button>
-        <span class="pager-status">Page ${page}${totalPages ? ` / ${totalPages}` : ''}</span>
+        <span class="pager-status" aria-live="polite">${escapeHtml(pageLabel)}</span>
         <button class="button secondary pager-next" ${nextDisabled ? 'disabled' : ''} data-i18n="dashboard.next">Next</button>
-      </div>
+      </nav>
     `;
     try { if (window.SimpleI18n && typeof window.SimpleI18n.updateUI === 'function') window.SimpleI18n.updateUI(); } catch {}
   };
@@ -472,6 +476,7 @@
     const hasMoreHeader = response.headers.get('X-Has-More');
     matchPagination.total = totalHeader ? parseInt(totalHeader, 10) || 0 : (Array.isArray(data) ? data.length : 0);
     matchPagination.hasMore = hasMoreHeader ? hasMoreHeader.toLowerCase() === 'true' : false;
+    renderMatchesPager();
 
     const determineViewerLang = () => {
       try {
@@ -1307,6 +1312,7 @@
       const nextOffset = matchPagination.offset + matchPagination.limit;
       await fetchAndRenderMatches({ useOffset: nextOffset });
     }
+    try { document.getElementById('matches')?.closest('section')?.scrollIntoView({ block: 'start', behavior: 'smooth' }); } catch {}
   });
 
   // Expose functions globally for cross-file calls

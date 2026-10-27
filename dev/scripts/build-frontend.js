@@ -109,26 +109,33 @@ async function build() {
     });
   }
 
-  // Stamp build version for stable asset cache-busting (i18n.js/components.js
-  // append ?v=window.APP_BUILD_VERSION). Falls back to git short hash, then date.
-  let buildVer = process.env.BUILD_VERSION || '';
-  if (!buildVer) {
-    try {
-      buildVer = require('child_process')
-        .execSync('git rev-parse --short HEAD', { cwd: path.join(__dirname, '..', '..') })
-        .toString().trim();
-    } catch {}
+  // Version every local asset reference so browsers fetch new JS/CSS after a
+  // deploy instead of running stale cached copies against fresh HTML.
+  const buildVersion = resolveBuildVersion();
+  const htmlFiles = globFiles(path.join(publicRoot, '**/*.html'));
+  const assetRef = /\b(src|href)="(\/(?:js|css|i18n)\/[^"?#]+\.(?:js|css))"/g;
+  const versionScript = `<script>window.APP_BUILD_VERSION=${JSON.stringify(buildVersion)};</script>`;
+  for (const file of htmlFiles) {
+    let html = fs.readFileSync(file, 'utf8');
+    html = html.replace(assetRef, (_m, attr, url) => `${attr}="${url}?v=${encodeURIComponent(buildVersion)}"`);
+    if (!html.includes('window.APP_BUILD_VERSION=') && /<head[^>]*>/i.test(html)) {
+      html = html.replace(/<head[^>]*>/i, (m) => `${m}\n  ${versionScript}`);
+    }
+    fs.writeFileSync(file, html);
   }
-  if (!buildVer) buildVer = new Date().toISOString().slice(0, 10);
-  const i18nBuilt = path.join(publicRoot, 'i18n', 'i18n.js');
-  if (fs.existsSync(i18nBuilt)) {
-    const js = fs.readFileSync(i18nBuilt, 'utf8').replace(
-      /window\.APP_BUILD_VERSION = '[^']*'/,
-      `window.APP_BUILD_VERSION = '${buildVer}'`
-    );
-    fs.writeFileSync(i18nBuilt, js);
-  }
-  console.log(`Frontend built into src/public/ (minified with esbuild), build=${buildVer}`);
+
+  console.log(`Frontend built into src/public/ (minified with esbuild, version ${buildVersion})`);
+}
+
+function resolveBuildVersion() {
+  if (process.env.APP_BUILD_VERSION) return process.env.APP_BUILD_VERSION;
+  let rev = 'dev';
+  try {
+    rev = require('child_process')
+      .execSync('git rev-parse --short HEAD', { cwd: path.join(__dirname, '../..'), stdio: ['ignore', 'pipe', 'ignore'] })
+      .toString().trim() || rev;
+  } catch {}
+  return `${rev}-${Date.now().toString(36)}`;
 }
 
 build().catch((err) => {

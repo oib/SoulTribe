@@ -99,6 +99,25 @@ def _is_llm_placeholder(text: Optional[str]) -> bool:
     return bool(text) and bool(_LLM_PLACEHOLDER_RE.match(text.strip()))
 
 
+_LEAKED_PAIR_KEY_RE = re.compile(
+    r"\(?\b(?:[AB]|you|the other person)(?:\.\w+)?\s*→\s*(?:[AB]|you|the other person)(?:\.\w+)?\b\)?"
+)
+_LEAKED_SNAKE_KEY_RE = re.compile(r"[‘'\"]?\b[a-z]+(?:_[a-z]+)+\b[’'\"]?")
+
+
+def _strip_leaked_keys(text: str) -> str:
+    """Remove raw score-breakdown keys the model copied into its prose.
+
+    Applied to new comments and, at read time, to comments stored before this
+    cleanup existed (e.g. "you.Sun→the other person.house", "same_sun_element").
+    """
+    t = _LEAKED_PAIR_KEY_RE.sub("", text)
+    t = _LEAKED_SNAKE_KEY_RE.sub("", t)
+    t = re.sub(r"\s{2,}", " ", t)
+    t = re.sub(r"\s+([.,;:])", r"\1", t)
+    return t.strip()
+
+
 # Localized labels used when rewriting A/B perspective tokens in AI output.
 _PERSPECTIVE_LABELS: Dict[str, tuple[str, str]] = {
     "en": ("you", "the other person"),
@@ -189,7 +208,7 @@ def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str])
             text = val.strip()
             if not text or _is_llm_placeholder(text):
                 continue
-            mapping[norm_key] = text
+            mapping[norm_key] = _strip_leaked_keys(text)
 
     available_for_ui = sorted({code for code in mapping.keys() if code != 'und'})
 
@@ -206,7 +225,7 @@ def _pick_comment_for_viewer(match: Optional[Match], lang_candidates: List[str])
         return mapping[first_key], first_key, available_for_ui
 
     if match.comment and not _is_llm_placeholder(match.comment):
-        return match.comment, None, available_for_ui
+        return _strip_leaked_keys(match.comment), None, available_for_ui
 
     return None, None, available_for_ui
 
@@ -849,8 +868,7 @@ def match_annotate(inp: MatchAnnotateIn, session=Depends(get_session), user_id: 
         t = re.sub(r"Match\s*#?\d+", "", t, flags=re.IGNORECASE)
         t = re.sub(r"\b\d+\s*(?:points|Punkte)\b", "", t, flags=re.IGNORECASE)
         # Leaked breakdown keys such as "A.Sun→B.house" or "same_sun_element"
-        t = re.sub(r"\b[AB]\.\w+\s*→\s*[AB]\.\w+\b", "", t)
-        t = re.sub(r"[‘'\"]?\b[a-z]+(?:_[a-z]+)+\b[’'\"]?", "", t)
+        t = _strip_leaked_keys(t)
         # Token-level replacements by perspective
         if perspective == "A":
             t = re.sub(r"\bA\b", you, t)
